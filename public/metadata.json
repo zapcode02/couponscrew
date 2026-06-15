@@ -1,0 +1,6 @@
+{
+  "name": "SaveMate",
+  "description": "Premium coupon website with verified deals, coupons, and discount offers from 500+ Indian brands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

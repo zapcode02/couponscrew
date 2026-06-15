@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-purple: #5B4FBE;
+  --color-primary-orange: #FF5722;
+  --color-dark-heading: #1A1A2E;
+  --color-body-text: #4A4A6A;
+  --color-light-bg: #F8F8FF;
+  --color-card-bg: #FFFFFF;
+  --color-border-custom: #E8E8F0;
+  --color-green-verified: #22C55E;
+  --color-purple-light-bg: #F0EEFF;
+
+  --font-sans: "Inter", "Outfit", system-ui, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+/* Custom utilities */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+}
