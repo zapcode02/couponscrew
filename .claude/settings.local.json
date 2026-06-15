@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(\\(Get-Content \"d:\\\\Couponscrew\\\\app\\\\_components\\\\Home.tsx\" -Raw\\) -replace \"from '../../components/\", \"from '../../src/components/\" | Set-Content \"d:\\\\Couponscrew\\\\app\\\\_components\\\\Home.tsx\" -Encoding utf8; Write-Output \"Home.tsx path fixed\")",
-      "PowerShell(Copy-Item \"d:\\\\Couponscrew\\\\src\\\\pages\\\\brands\\\\amazon\\\\AmazonBrand.tsx\" \"d:\\\\Couponscrew\\\\app\\\\brands\\\\amazon\\\\_components\\\\AmazonBrand.tsx\"; \\(Get-Content \"d:\\\\Couponscrew\\\\app\\\\brands\\\\amazon\\\\_components\\\\AmazonBrand.tsx\" -Raw\\) -replace \"from '../../../components/\", \"from '../../../../src/components/\" | Set-Content \"d:\\\\Couponscrew\\\\app\\\\brands\\\\amazon\\\\_components\\\\AmazonBrand.tsx\" -Encoding utf8; Write-Output \"AmazonBrand done\")"
-    ]
-  }
-}
