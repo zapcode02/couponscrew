@@ -77,7 +77,7 @@ export default function Contact() {
       color: "#FF5722",
       bg: "#FFF3F0",
       title: "Call Us",
-      value: "+91 98765 43210",
+      value: "+91 7838554882",
       sub: "Mon-Sat, 9AM to 7PM"
     },
     {
@@ -85,8 +85,8 @@ export default function Contact() {
       color: "#22C55E",
       bg: "#F0FDF4",
       title: "Visit Us",
-      value: "Bengaluru, Karnataka",
-      sub: "India 560001"
+      value: "Greater Noida, Uttar Pradesh",
+      sub: "India 201009"
     },
     {
       icon: Clock,
@@ -410,16 +410,18 @@ export default function Contact() {
                 <p className="text-white/70 text-xs mt-1">We post verified deals before they expire. Follow to catch them first.</p>
                 <div className="grid grid-cols-2 gap-3 mt-5">
                   {[
-                    { icon: Instagram, label: "Instagram", bg: "bg-pink-500/95" },
-                    { icon: Facebook, label: "Facebook", bg: "bg-blue-600/95" },
-                    { icon: Twitter, label: "Twitter/X", bg: "bg-sky-500/95" },
-                    { icon: Youtube, label: "YouTube", bg: "bg-red-600/95" }
+                    { icon: Instagram, label: "Instagram", bg: "bg-pink-500/95", href: "https://www.instagram.com/couponscrew" },
+                    { icon: Facebook, label: "Facebook", bg: "bg-blue-600/95", href: "#" },
+                    { icon: Twitter, label: "Twitter/X", bg: "bg-sky-500/95", href: "https://x.com/couponscrew?s=11" },
+                    { icon: Youtube, label: "YouTube", bg: "bg-red-600/95", href: "https://youtube.com/@couponscrew" }
                   ].map((soc, idx) => {
                     const SocIcon = soc.icon;
                     return (
                       <a
-                        href="#"
+                        href={soc.href}
                         key={idx}
+                        target={soc.href !== "#" ? "_blank" : undefined}
+                        rel={soc.href !== "#" ? "noopener noreferrer" : undefined}
                         className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-white text-xs font-semibold cursor-pointer hover:opacity-90 transition ${soc.bg}`}
                       >
                         <SocIcon className="w-4 h-4 shrink-0" />
@@ -434,13 +436,13 @@ export default function Contact() {
               <div className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden shadow-sm">
                 <div className="bg-gradient-to-br from-[#F0EEFF] to-[#E8E4FF] h-36 flex flex-col items-center justify-center relative select-none">
                   <MapPin className="w-10 h-10 text-[#5B4FBE] opacity-45 animate-bounce" />
-                  <p className="text-sm font-semibold text-[#5B4FBE] mt-2">Bengaluru, Karnataka</p>
+                  <p className="text-sm font-semibold text-[#5B4FBE] mt-2">Greater Noida, Uttar Pradesh</p>
                   <p className="text-[10px] text-gray-400 font-mono tracking-wider font-semibold uppercase mt-0.5">Google Maps Interactive Area</p>
                 </div>
                 <div className="p-4">
                   <h4 className="text-sm font-bold text-[#1A1A2E]">Our Office</h4>
                   <p className="text-xs text-[#4A4A6A] mt-1 leading-relaxed">
-                    Bengaluru, Karnataka - 560001
+                    Greater Noida, Uttar Pradesh - 201009
                   </p>
                   <p className="text-xs text-[#5B4FBE] font-bold mt-3 cursor-pointer hover:underline inline-block">
                     Get Directions
