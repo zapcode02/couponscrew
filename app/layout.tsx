@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import type React from 'react'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -40,6 +41,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DL0FC9NS5Q" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DL0FC9NS5Q');
+        `}</Script>
       </head>
       <body className="bg-[#F8F8FF] text-[#4A4A6A] selection:bg-[#5B4FBE] selection:text-white">{children}</body>
     </html>

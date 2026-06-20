@@ -31,7 +31,6 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
-  subject: string;
   category: string;
   message: string;
 }
@@ -55,12 +54,13 @@ export default function Contact() {
     name: '',
     email: '',
     phone: '',
-    subject: '',
     category: '',
     message: ''
   });
 
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [submitError, setSubmitError] = useState<string>('');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const contactInfoList: ContactInfo[] = [
@@ -133,9 +133,24 @@ export default function Contact() {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsLoading(true);
+    setSubmitError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+      setIsSubmitted(true);
+    } catch (err: any) {
+      setSubmitError(err.message || 'Failed to send. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const resetForm = () => {
@@ -143,7 +158,6 @@ export default function Contact() {
       name: '',
       email: '',
       phone: '',
-      subject: '',
       category: '',
       message: ''
     });
@@ -309,18 +323,6 @@ export default function Contact() {
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-sm font-semibold text-[#1A1A2E]">Subject *</label>
-                        <input
-                          type="text"
-                          required
-                          placeholder="Brief subject of your message"
-                          value={formData.subject}
-                          onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                          className="w-full border border-[#E8E8F0] rounded-xl px-4 py-3.5 text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5B4FBE] focus:ring-2 focus:ring-[#5B4FBE]/10 transition"
-                        />
-                      </div>
-
-                      <div className="space-y-2">
                         <label className="text-sm font-semibold text-[#1A1A2E]">Message *</label>
                         <textarea
                           rows={5}
@@ -334,11 +336,24 @@ export default function Contact() {
 
                       <button
                         type="submit"
-                        className="mt-6 w-full bg-gradient-to-r from-[#5B4FBE] to-[#7C3AED] text-white py-4 rounded-xl font-bold text-base hover:opacity-90 transition flex items-center justify-center gap-2 shadow-lg shadow-purple-500/30 cursor-pointer"
+                        disabled={isLoading}
+                        className="mt-6 w-full bg-gradient-to-r from-[#5B4FBE] to-[#7C3AED] text-white py-4 rounded-xl font-bold text-base hover:opacity-90 transition flex items-center justify-center gap-2 shadow-lg shadow-purple-500/30 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                       >
-                        <Send className="w-5 h-5" />
-                        <span>Send Message</span>
+                        {isLoading ? (
+                          <>
+                            <svg className="w-5 h-5 animate-spin" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                            <span>Sending...</span>
+                          </>
+                        ) : (
+                          <>
+                            <Send className="w-5 h-5" />
+                            <span>Send Message</span>
+                          </>
+                        )}
                       </button>
+                      {submitError && (
+                        <p className="mt-3 text-sm text-red-500 text-center font-medium">{submitError}</p>
+                      )}
                     </form>
                   </>
                 ) : (
