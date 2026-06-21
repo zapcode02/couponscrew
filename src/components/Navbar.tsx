@@ -67,10 +67,12 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [searchOpen]);
 
-  const renderSearchPanel = (align: 'left' | 'right') => (
+  const renderSearchPanel = (align: 'left' | 'right' | 'mobile') => (
     <div
-      className={`absolute top-full mt-3 w-80 sm:w-96 bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200 ${
-        align === 'right' ? 'right-0' : 'left-0'
+      className={`bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200 ${
+        align === 'mobile'
+          ? 'fixed top-16 left-1/2 -translate-x-1/2 w-[calc(100vw-2rem)] max-w-sm'
+          : `absolute top-full mt-3 w-80 sm:w-96 ${align === 'right' ? 'right-0' : 'left-0'}`
       }`}
     >
       <form onSubmit={handleSearchSubmit} className="p-3 border-b border-[#E8E8F0]">
@@ -237,7 +239,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             >
               <Search className="w-5 h-5" />
             </button>
-            {searchOpen && renderSearchPanel('left')}
+            {searchOpen && renderSearchPanel('mobile')}
           </div>
           <button aria-label="Notifications" className="p-2 text-[#4A4A6A] hover:text-[#5B4FBE] hover:bg-[#F0EEFF] rounded-full transition-all cursor-pointer">
             <Bell className="w-5 h-5" />
