@@ -840,6 +840,7 @@ export default function DealsOfTheDay() {
                         <div className="mt-2 flex items-center gap-2 w-full justify-center sm:justify-end">
                           <button
                             onClick={(e) => handleToggleWishlist(deal.id, e)}
+                            aria-label={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
                             className={`p-2.5 rounded-xl border transition-all duration-200 cursor-pointer ${isWishlisted ? 'bg-[#FEF2F2] text-[#EF4444] border-[#EF4444] scale-105' : 'bg-white border-[#E8E8F0] text-gray-400 hover:border-[#EF4444] hover:text-[#EF4444]'}`}
                           >
                             <Heart size={16} className={isWishlisted ? 'fill-current' : ''} />

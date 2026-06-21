@@ -8,20 +8,10 @@ import {
   BookOpen,
   PenTool,
   Users,
-  Star,
   Calendar,
   Clock,
   ArrowRight,
-  Tag,
-  Monitor,
-  ShoppingBag,
-  UtensilsCrossed,
-  Plane,
-  Mail,
-  PiggyBank,
-  CheckCircle,
-  X,
-  Sparkles
+  X
 } from 'lucide-react';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
@@ -43,16 +33,6 @@ export interface BlogPost {
   tags: string[];
   featured: boolean;
   content: string;
-}
-
-export interface PopularTopic {
-  id: string;
-  name: string;
-  iconType: 'tag' | 'book' | 'star' | 'piggy' | 'monitor' | 'bag' | 'food' | 'plane';
-  count: number;
-  colorClass: string;
-  bgClass: string;
-  iconColor: string;
 }
 
 // ==========================================
@@ -395,17 +375,6 @@ One more thing: always check for a bank card offer at checkout after applying th
   }
 ];
 
-const POPULAR_TOPICS: PopularTopic[] = [
-  { id: 't-1', name: 'Coupon Tips', iconType: 'tag', count: 3, colorClass: 'text-[#5B4FBE]', bgClass: 'bg-[#F0EEFF]', iconColor: '#5B4FBE' },
-  { id: 't-2', name: 'Shopping Guides', iconType: 'book', count: 2, colorClass: 'text-blue-600', bgClass: 'bg-[#EEF4FF]', iconColor: '#0056D2' },
-  { id: 't-3', name: 'Brand Reviews', iconType: 'star', count: 1, colorClass: 'text-amber-500', bgClass: 'bg-[#FFF8E7]', iconColor: '#FF9900' },
-  { id: 't-4', name: 'Money Saving', iconType: 'piggy', count: 2, colorClass: 'text-emerald-600', bgClass: 'bg-[#F4FBEA]', iconColor: '#22C55E' },
-  { id: 't-5', name: 'Tech Deals', iconType: 'monitor', count: 1, colorClass: 'text-purple-600', bgClass: 'bg-[#F5F2FF]', iconColor: '#7C3AED' },
-  { id: 't-6', name: 'Fashion Deals', iconType: 'bag', count: 2, colorClass: 'text-pink-600', bgClass: 'bg-[#FFF0F4]', iconColor: '#EC4899' },
-  { id: 't-7', name: 'Food & Grocery', iconType: 'food', count: 2, colorClass: 'text-orange-600', bgClass: 'bg-[#FFF5EC]', iconColor: '#FC8019' },
-  { id: 't-8', name: 'Travel Deals', iconType: 'plane', count: 1, colorClass: 'text-rose-600', bgClass: 'bg-[#FEF0F0]', iconColor: '#E8262A' }
-];
-
 const CATEGORIES_LIST = [
   'All',
   'Coupon Tips',
@@ -422,39 +391,6 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [visibleCount, setVisibleCount] = useState(6);
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
-
-  // Newsletter State
-  const [newsEmail, setNewsEmail] = useState('');
-  const [newsSubmitted, setNewsSubmitted] = useState(false);
-
-  // Categories map to render their corresponding Icons
-  const renderTopicIcon = (type: string, size: number = 18) => {
-    switch (type) {
-      case 'tag':
-        return <Tag size={size} />;
-      case 'book':
-        return <BookOpen size={size} />;
-      case 'star':
-        return <Star size={size} />;
-      case 'piggy':
-        return <PiggyBank size={size} />;
-      case 'monitor':
-        return <Monitor size={size} />;
-      case 'bag':
-        return <ShoppingBag size={size} />;
-      case 'food':
-        return <UtensilsCrossed size={size} />;
-      case 'plane':
-        return <Plane size={size} />;
-      default:
-        return <Tag size={size} />;
-    }
-  };
-
-  // Find Featured Post
-  const featuredPost = useMemo(() => {
-    return BLOG_POSTS_DATA.find((post) => post.featured) || BLOG_POSTS_DATA[0];
-  }, []);
 
   // Filtered post records based on active category
   const filteredPosts = useMemo(() => {
@@ -474,23 +410,6 @@ export default function Blog() {
   const displayedPosts = useMemo(() => {
     return filteredPosts.slice(0, visibleCount);
   }, [filteredPosts, visibleCount]);
-
-  const handleTopicClick = (catName: string) => {
-    setActiveCategory(catName);
-    const element = document.getElementById('blog-grid-section');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  const handleSubscribeNewsletter = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (newsEmail.trim()) {
-      setNewsSubmitted(true);
-      setNewsEmail('');
-      setTimeout(() => setNewsSubmitted(false), 4500);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
@@ -548,102 +467,6 @@ export default function Blog() {
               <Users size={14} className="text-teal-400" />
               <span>50,000+ Registered Users</span>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ==========================================
-          SECTION 2 - FEATURED POST (HERO ARTICLE)
-          ========================================== */}
-      <section className="bg-white py-14 px-6 relative z-10 border-b border-[#E8E8F0]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-
-            {/* LEFT - Featured Image */}
-            <div className="lg:col-span-5 relative group overflow-hidden max-w-xl mx-auto lg:max-w-none w-full">
-              <NextImage
-                src={featuredPost.image}
-                alt={featuredPost.title}
-                width={800}
-                height={380}
-                priority
-                referrerPolicy="no-referrer"
-                className="w-full h-[380px] object-cover rounded-3xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02]"
-              />
-
-              {/* Overlays */}
-              <span className="bg-[#FF5722] text-white text-xs font-bold px-4 py-2 rounded-full absolute top-4 left-4 flex items-center gap-1.5 shadow-md">
-                <Star size={12} className="fill-white" />
-                <span>FEATURED</span>
-              </span>
-
-              <span className="bg-[#5B4FBE] text-white text-xs font-semibold px-3 py-1 rounded-full absolute bottom-4 left-4 shadow-sm uppercase tracking-wide">
-                {featuredPost.category}
-              </span>
-            </div>
-
-            {/* RIGHT - Content */}
-            <div className="lg:col-span-7 text-left space-y-4">
-              <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1.5 rounded-full inline-block tracking-wider uppercase">
-                SHOPPING TIPS
-              </span>
-
-              <h2
-                onClick={() => setSelectedPost(featuredPost)}
-                className="text-3xl font-extrabold text-[#1A1A2E] leading-tight hover:text-[#5B4FBE] transition-colors cursor-pointer"
-              >
-                {featuredPost.title}
-              </h2>
-
-              <p className="text-[#4A4A6A] text-base leading-relaxed">
-                {featuredPost.excerpt}
-              </p>
-
-              {/* Meta row */}
-              <div className="flex items-center gap-4 flex-wrap text-xs md:text-sm text-gray-400 font-medium pt-1">
-                <div className="flex items-center gap-2">
-                  <div
-                    className="w-8.5 h-8.5 rounded-full flex items-center justify-center text-white text-xs font-bold select-none shrink-0"
-                    style={{ backgroundColor: featuredPost.authorColor }}
-                  >
-                    {featuredPost.authorInitials}
-                  </div>
-                  <span className="font-semibold text-[#1A1A2E]">{featuredPost.authorName}</span>
-                </div>
-                <span className="text-gray-300">&bull;</span>
-                <div className="flex items-center gap-1">
-                  <Calendar size={14} className="text-gray-400" />
-                  <span>{featuredPost.date}</span>
-                </div>
-                <span className="text-gray-300">&bull;</span>
-                <div className="flex items-center gap-1">
-                  <Clock size={14} className="text-gray-400" />
-                  <span>{featuredPost.readTime}</span>
-                </div>
-              </div>
-
-              {/* Tags row */}
-              <div className="flex gap-2 flex-wrap pt-2">
-                {featuredPost.tags.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="bg-[#F8F8FF] border border-[#E8E8F0] text-xs font-medium text-[#4A4A6A] px-3.5 py-1 rounded-full"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Read More button */}
-              <button
-                onClick={() => setSelectedPost(featuredPost)}
-                className="bg-[#5B4FBE] hover:bg-[#4a3fa8] text-white px-8 py-3.5 rounded-full font-bold flex items-center justify-center gap-2 w-fit transition-all shadow-md hover:shadow-lg active:scale-95 duration-200 cursor-pointer text-sm mt-6"
-              >
-                <span>Read Full Article</span>
-                <ArrowRight size={18} />
-              </button>
-            </div>
-
           </div>
         </div>
       </section>
@@ -800,98 +623,6 @@ export default function Blog() {
               )}
             </div>
           )}
-
-        </div>
-      </section>
-
-      {/* ==========================================
-          SECTION 4 - NEWSLETTER STRIP
-          ========================================== */}
-      <section className="bg-gradient-to-r from-[#5B4FBE] to-[#7C3AED] py-14 px-6 relative overflow-hidden text-center text-white">
-
-        {/* Glow dots decor */}
-        <div className="absolute top-0 left-0 w-80 h-80 bg-white/5 rounded-full filter blur-2xl pointer-events-none" />
-        <div className="absolute bottom-[-100px] right-[-100px] w-96 h-96 bg-white/5 rounded-full filter blur-3xl pointer-events-none" />
-
-        <div className="max-w-3xl mx-auto relative z-10 space-y-4">
-          <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-white shrink-0 mx-auto border border-white/20">
-            <Mail size={24} className="animate-pulse" />
-          </div>
-
-          <h3 className="text-3xl font-extrabold text-white tracking-tight">
-            Never Miss a Couponscrew Deal Alert
-          </h3>
-
-          <p className="text-white/70 text-base max-w-xl mx-auto leading-relaxed">
-            We verify 10,000+ coupons across 500+ brands. Get the best ones delivered to your inbox before they expire. Join 50,000+ shoppers who already get the alerts.
-          </p>
-
-          {/* Email Subscription Row */}
-          <form onSubmit={handleSubscribeNewsletter} className="mt-8 flex flex-col sm:flex-row max-w-md mx-auto items-stretch gap-1 sm:gap-0 relative">
-            <input
-              type="email"
-              required
-              value={newsEmail}
-              onChange={(e) => setNewsEmail(e.target.value)}
-              placeholder="Enter your email address"
-              className="flex-1 bg-white rounded-t-full sm:rounded-y-full sm:rounded-l-full sm:rounded-r-none px-6 py-4 text-sm text-[#1A1A2E] focus:outline-none placeholder:text-gray-400 border border-transparent shadow-md"
-            />
-            <button
-              type="submit"
-              className="bg-[#FF5722] text-white px-8 py-4 rounded-b-full sm:rounded-y-full sm:rounded-r-full sm:rounded-l-none font-bold hover:bg-orange-500 transition-colors cursor-pointer text-sm tracking-wide shrink-0 whitespace-nowrap active:scale-[0.98] shadow-md border-t sm:border-t-0 sm:border-l border-white/10"
-            >
-              Subscribe
-            </button>
-          </form>
-
-          {newsSubmitted && (
-            <div className="text-teal-300 font-bold text-sm flex items-center justify-center gap-1.5 animate-pulse pt-2">
-              <CheckCircle size={16} />
-              <span>Done. Deal alerts are on their way.</span>
-            </div>
-          )}
-
-          <p className="text-white/40 text-xs pt-1">
-            No spam. Unsubscribe anytime.
-          </p>
-        </div>
-      </section>
-
-      {/* ==========================================
-          SECTION 5 - POPULAR TOPICS STRIP
-          ========================================== */}
-      <section className="bg-white py-12 px-6 border-t border-[#E8E8F0]">
-        <div className="max-w-7xl mx-auto text-center">
-
-          <h3 className="text-xl font-bold text-[#1A1A2E] mb-8 tracking-tight">
-            Browse by Topic
-          </h3>
-
-          <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
-            {POPULAR_TOPICS.map((topic) => (
-              <div
-                key={topic.id}
-                onClick={() => handleTopicClick(topic.name)}
-                className="bg-[#F8F8FF] border border-[#E8E8F0] rounded-2xl px-6 py-4 flex items-center gap-3.5 cursor-pointer hover:border-[#5B4FBE] hover:bg-[#F0EEFF] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group select-none shadow-2xs shrink-0"
-              >
-                <div
-                  className={`w-9 h-9 rounded-full flex items-center justify-center font-bold shrink-0 ${topic.bgClass} group-hover:bg-white group-hover:scale-105 transition-all duration-300`}
-                  style={{ color: topic.iconColor }}
-                >
-                  {renderTopicIcon(topic.iconType, 16)}
-                </div>
-
-                <div className="text-left leading-none">
-                  <span className="text-sm font-semibold text-[#1A1A2E] group-hover:text-[#5B4FBE] transition-colors block">
-                    {topic.name}
-                  </span>
-                  <span className="text-[10px] text-gray-400 font-medium block mt-1 uppercase tracking-wider">
-                    {topic.count} {topic.count === 1 ? 'article' : 'articles'}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
 
         </div>
       </section>

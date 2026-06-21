@@ -4,8 +4,9 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { Search, Bell, ChevronDown, Menu, X, Store as StoreIcon } from 'lucide-react';
+import { Search, Bell, ChevronDown, Menu, X, Store as StoreIcon, ArrowRight } from 'lucide-react';
 import { STORES_DATA } from '../data/stores';
+import { NAV_CATEGORIES } from '../data/categories';
 
 interface NavbarProps {
   searchQuery?: string;
@@ -18,11 +19,17 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchInput, setSearchInput] = useState('');
+  const [categoriesOpen, setCategoriesOpen] = useState(false);
+  const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
   const desktopSearchRef = useRef<HTMLDivElement>(null);
   const mobileSearchRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const categoriesRef = useRef<HTMLDivElement>(null);
 
-  const closeMobileMenu = () => setMobileMenuOpen(false);
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setMobileCategoriesOpen(false);
+  };
 
   const results = useMemo(() => {
     const query = searchInput.trim().toLowerCase();
@@ -143,7 +150,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-[#E8E8F0] shadow-xs">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex items-center justify-between gap-3 lg:gap-6">
 
         {/* Logo */}
         <Link
@@ -161,42 +168,98 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             width={320}
             height={72}
             sizes="160px"
-            className="h-16 w-auto object-contain"
+            className="h-10 lg:h-16 w-auto object-contain"
             priority
           />
         </Link>
 
         {/* Nav Links — desktop only */}
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-7 overflow-x-auto no-scrollbar scroll-smooth flex-1">
-          <Link
-            href="/categories"
-            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
-          >
-            Top Categories <ChevronDown className="w-3.5 h-3.5 opacity-70" />
-          </Link>
+        <nav className="hidden lg:flex items-center justify-center gap-5 xl:gap-7 flex-1">
           <Link
             href="/stores"
             className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
           >
-            Top Brands <ChevronDown className="w-3.5 h-3.5 opacity-70" />
+            Stores
           </Link>
-          <div className="h-4 w-[1px] bg-gray-200 shrink-0"></div>
+          <div
+            className="relative"
+            ref={categoriesRef}
+            onMouseEnter={() => setCategoriesOpen(true)}
+            onMouseLeave={() => setCategoriesOpen(false)}
+          >
+            <button
+              className={`text-sm font-semibold flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer ${
+                categoriesOpen ? 'text-[#5B4FBE]' : 'text-[#1A1A2E] hover:text-[#5B4FBE]'
+              }`}
+            >
+              Top Categories
+              <ChevronDown className={`w-3.5 h-3.5 opacity-70 transition-transform ${categoriesOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {categoriesOpen && (
+              <div className="absolute top-full left-0 mt-3 w-[760px] bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                <div className="flex items-center justify-between px-7 py-5 border-b border-[#E8E8F0]">
+                  <div>
+                    <p className="text-sm font-bold text-[#1A1A2E]">Top Categories</p>
+                    <p className="text-xs text-gray-400 mt-0.5">Browse deals by category</p>
+                  </div>
+                  <Link
+                    href="/categories"
+                    onClick={() => setCategoriesOpen(false)}
+                    className="text-xs font-bold text-[#5B4FBE] hover:underline flex items-center gap-1 whitespace-nowrap"
+                  >
+                    <span>View All Categories</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-3 gap-x-3 gap-y-1 px-4 py-4 max-h-[460px] overflow-y-auto">
+                  {NAV_CATEGORIES.map((cat) => {
+                    const CatIcon = cat.icon;
+                    return (
+                      <Link
+                        key={cat.name}
+                        href="/categories"
+                        onClick={() => setCategoriesOpen(false)}
+                        className="flex items-center gap-3.5 px-3 py-3.5 rounded-xl hover:bg-[#F0EEFF] transition-colors"
+                      >
+                        <div className="w-11 h-11 rounded-xl bg-[#F0EEFF] flex items-center justify-center shrink-0">
+                          <CatIcon className="w-5 h-5 text-[#5B4FBE]" />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="text-sm font-bold text-[#1A1A2E] leading-snug">{cat.name}</p>
+                          <p className="text-xs text-gray-400 mt-0.5 whitespace-nowrap">
+                            {cat.offerCount.toLocaleString()} Offers &bull; {cat.brandCount} Brands
+                          </p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+          <Link
+            href="/stores"
+            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
+          >
+            Top Brands
+          </Link>
           <Link
             href="/deals"
-            className="text-sm font-medium text-[#4A4A6A] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
+            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
           >
             Deals
           </Link>
           <Link
             href="/offers"
-            className="text-sm font-medium text-[#4A4A6A] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
+            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
           >
             Offers
           </Link>
-          <span className="text-sm font-medium text-[#4A4A6A]/40 select-none shrink-0">|</span>
           <Link
             href="/blog"
-            className="text-sm font-medium text-[#4A4A6A] hover:text-[#5B4FBE] transition-colors whitespace-nowrap"
+            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap"
           >
             Blog
           </Link>
@@ -228,7 +291,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
         </div>
 
         {/* Right Side — mobile only: Search + Bell + Hamburger */}
-        <div className="flex lg:hidden items-center gap-2 shrink-0">
+        <div className="flex lg:hidden items-center gap-0.5 sm:gap-1.5 shrink-0">
           <div className="relative" ref={mobileSearchRef}>
             <button
               aria-label="Search"
@@ -258,50 +321,90 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-[#E8E8F0] shadow-lg">
-          <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
-            <Link
-              href="/categories"
-              onClick={closeMobileMenu}
-              className="flex items-center justify-between px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
-            >
-              <span>Top Categories</span>
-              <ChevronDown className="w-4 h-4 opacity-50" />
-            </Link>
+          <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1 max-h-[75vh] overflow-y-auto">
             <Link
               href="/stores"
               onClick={closeMobileMenu}
-              className="flex items-center justify-between px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
+              className="px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
             >
-              <span>Top Brands</span>
-              <ChevronDown className="w-4 h-4 opacity-50" />
+              Stores
             </Link>
-            <div className="h-[1px] bg-[#E8E8F0] my-1"></div>
+
+            <button
+              onClick={() => setMobileCategoriesOpen((v) => !v)}
+              className="flex items-center justify-between px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors cursor-pointer"
+            >
+              <span>Top Categories</span>
+              <ChevronDown className={`w-4 h-4 opacity-50 transition-transform ${mobileCategoriesOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {mobileCategoriesOpen && (
+              <div className="flex flex-col gap-1 pl-2 pb-2">
+                {NAV_CATEGORIES.map((cat) => {
+                  const CatIcon = cat.icon;
+                  return (
+                    <Link
+                      key={cat.name}
+                      href="/categories"
+                      onClick={closeMobileMenu}
+                      className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-[#F0EEFF] transition-colors"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-[#F0EEFF] flex items-center justify-center shrink-0">
+                        <CatIcon className="w-4 h-4 text-[#5B4FBE]" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-sm font-bold text-[#1A1A2E] leading-snug">{cat.name}</p>
+                        <p className="text-xs text-gray-400 mt-0.5">
+                          {cat.offerCount.toLocaleString()} Offers &bull; {cat.brandCount} Brands
+                        </p>
+                      </div>
+                    </Link>
+                  );
+                })}
+                <Link
+                  href="/categories"
+                  onClick={closeMobileMenu}
+                  className="flex items-center justify-center gap-1.5 px-3 py-3 mt-1 rounded-xl text-xs font-bold text-[#5B4FBE] bg-[#F0EEFF] hover:bg-[#E4E0FF] transition-colors"
+                >
+                  <span>View All Categories</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            )}
+
+            <Link
+              href="/stores"
+              onClick={closeMobileMenu}
+              className="px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
+            >
+              Top Brands
+            </Link>
             <Link
               href="/deals"
               onClick={closeMobileMenu}
-              className="px-3 py-3 rounded-xl text-sm font-medium text-[#4A4A6A] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
+              className="px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
             >
               Deals
             </Link>
             <Link
               href="/offers"
               onClick={closeMobileMenu}
-              className="px-3 py-3 rounded-xl text-sm font-medium text-[#4A4A6A] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
+              className="px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
             >
               Offers
             </Link>
             <Link
               href="/blog"
               onClick={closeMobileMenu}
-              className="px-3 py-3 rounded-xl text-sm font-medium text-[#4A4A6A] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
+              className="px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
             >
               Blog
             </Link>
-            <div className="h-[1px] bg-[#E8E8F0] my-1"></div>
+
             <Link
               href="/deals-of-the-day"
               onClick={closeMobileMenu}
-              className="w-full bg-[#FF5722] text-white text-sm font-bold px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-600 active:scale-95 transition-all cursor-pointer mt-1"
+              className="w-full bg-[#FF5722] text-white text-sm font-bold px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-600 active:scale-95 transition-all cursor-pointer mt-2"
             >
               <span>🔥 Today&apos;s Best Deals</span>
             </Link>

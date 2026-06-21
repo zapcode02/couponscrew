@@ -299,9 +299,10 @@ export default function Contact() {
                           />
                         </div>
                         <div className="space-y-2">
-                          <label className="text-sm font-semibold text-[#1A1A2E]">Query Category *</label>
+                          <label htmlFor="contact-category" className="text-sm font-semibold text-[#1A1A2E]">Query Category *</label>
                           <div className="relative">
                             <select
+                              id="contact-category"
                               required
                               value={formData.category}
                               onChange={(e) => setFormData({ ...formData, category: e.target.value })}
