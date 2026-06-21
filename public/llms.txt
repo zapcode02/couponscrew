@@ -1,0 +1,28 @@
+# Couponscrew
+
+> India's most trusted coupon website — 10,000+ manually verified coupons across 500+ brands, with a 92.4% real-world success rate at checkout.
+
+Couponscrew helps Indian shoppers find verified, working coupon codes, deals, and offers without wasting time on expired listings. Every code is manually tested before it goes live, and expired codes are pulled quickly. The platform is free to use and is supported by affiliate commissions, never by selling user data. Over 50,000 shoppers use Couponscrew to save on Amazon, Flipkart, Myntra, Swiggy, Zomato, Hostinger, and 500+ other brands across fashion, electronics, food & grocery, travel, web hosting, and more.
+
+## Key Pages
+
+- [Home](https://www.couponscrew.com/): Overview of Couponscrew, top coupons and deals, and how the verification process works.
+- [All Stores](https://www.couponscrew.com/stores): Browse all 500+ partner brands and stores with active, verified coupons.
+- [Products](https://www.couponscrew.com/products): Discounted products across categories with verified deal pricing.
+- [Deals of the Day](https://www.couponscrew.com/deals-of-the-day): Daily-refreshed selection of the best verified coupon codes.
+- [Deals of the Month](https://www.couponscrew.com/deals-of-the-month): Curated top brand and product deals for the current month.
+- [Deals](https://www.couponscrew.com/deals): General deals listing across brands and products.
+- [Offers](https://www.couponscrew.com/offers): Brand offers and promotions, filterable by category.
+- [Categories](https://www.couponscrew.com/categories): Browse coupons by category (fashion, electronics, food, travel, beauty, web hosting, and more).
+- [Blog](https://www.couponscrew.com/blog): Shopping guides, coupon-stacking strategies, and platform comparisons.
+
+## About
+
+- [About Us](https://www.couponscrew.com/about): Company background, mission, and the manual coupon-verification process.
+- [Contact](https://www.couponscrew.com/contact): How to reach the Couponscrew team.
+- [FAQ](https://www.couponscrew.com/faq): Answers to common questions about using coupons and the platform.
+
+## Legal
+
+- [Privacy Policy](https://www.couponscrew.com/privacy): How user data is collected, used, and protected.
+- [Terms & Conditions](https://www.couponscrew.com/terms): Terms of use for the Couponscrew platform.

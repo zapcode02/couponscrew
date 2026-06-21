@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import {
   ChevronRight,
   BookOpen,
@@ -495,6 +496,7 @@ export default function Blog() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
       {/* ==========================================
           SECTION 1 - HERO BANNER
           ========================================== */}
@@ -559,9 +561,12 @@ export default function Blog() {
 
             {/* LEFT - Featured Image */}
             <div className="lg:col-span-5 relative group overflow-hidden max-w-xl mx-auto lg:max-w-none w-full">
-              <img
+              <NextImage
                 src={featuredPost.image}
                 alt={featuredPost.title}
+                width={800}
+                height={380}
+                priority
                 referrerPolicy="no-referrer"
                 className="w-full h-[380px] object-cover rounded-3xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02]"
               />
@@ -693,17 +698,20 @@ export default function Blog() {
               </button>
             </div>
           ) : (
-            <div className="max-w-4xl mx-auto space-y-5">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
               {displayedPosts.map((post) => (
                 <div
                   key={post.id}
-                  className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group flex flex-col md:flex-row shadow-xs"
+                  className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group flex flex-col sm:flex-row shadow-xs"
                 >
                   {/* LEFT - Image block */}
                   <div className="relative overflow-hidden md:w-56 shrink-0 h-48 md:h-auto min-h-[192px]">
-                    <img
+                    <NextImage
                       src={post.image}
                       alt={post.title}
+                      width={400}
+                      height={192}
+                      sizes="(max-width: 768px) 100vw, 224px"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -897,9 +905,11 @@ export default function Blog() {
 
             {/* Header image cover */}
             <div className="relative h-56 shrink-0">
-              <img
+              <NextImage
                 src={selectedPost.image}
                 alt={selectedPost.title}
+                width={600}
+                height={224}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
@@ -980,6 +990,7 @@ export default function Blog() {
           </div>
         </div>
       )}
+      </main>
 
       <Footer />
     </div>

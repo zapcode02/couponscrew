@@ -273,9 +273,9 @@ export default function Home() {
                 <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl text-[#1A1A2E] leading-none tracking-tight">
                   Find Verified Deals.
                 </h1>
-                <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl text-[#FF5722] leading-none tracking-tight">
+                <h2 className="font-extrabold text-4xl sm:text-5xl md:text-6xl text-[#FF5722] leading-none tracking-tight">
                   Save Smarter.
-                </h1>
+                </h2>
               </div>
 
               <p className="text-[#4A4A6A] text-base sm:text-lg max-w-xl leading-relaxed">
@@ -340,6 +340,7 @@ export default function Home() {
                   alt="Find verified deals and save smarter"
                   width={1060}
                   height={1120}
+                  sizes="(max-width: 1024px) 90vw, 530px"
                   className="w-full h-auto object-contain drop-shadow-2xl"
                   priority
                 />
@@ -385,9 +386,13 @@ export default function Home() {
           <div className="lg:col-span-5 relative">
             {/* Main Image Wrapper */}
             <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-8 border-[#F8F8FF] shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
-              <img 
-                src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=1000" 
+              <NextImage
+                src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=1000"
                 alt="Smart Shopping with Verified Coupons"
+                width={1000}
+                height={500}
+                sizes="(max-width: 1024px) 90vw, 40vw"
+                loading="lazy"
                 className="w-full h-[500px] object-cover"
               />
               {/* Overlay Glass Card */}

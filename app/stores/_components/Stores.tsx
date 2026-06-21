@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import {
   ChevronRight,
   ChevronLeft,
@@ -35,25 +36,13 @@ import {
 } from 'lucide-react';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
+import { Store, STORES_DATA } from '../../../src/data/stores';
+
+export type { Store };
 
 // ==========================================
 // TYPESCRIPT INTERFACES
 // ==========================================
-export interface Store {
-  id: string;
-  name: string;
-  logo: string; // letters/text for avatar
-  logoColor: string; // brand hex color
-  logoBg: string; // lighter bg hex
-  category: string;
-  offerCount: number;
-  maxDiscount: number; // numeric value for sort logic
-  discountLabel: string;
-  isPopular: boolean;
-  isFeatured: boolean;
-  description: string;
-}
-
 export interface Category {
   id: string;
   name: string;
@@ -61,718 +50,19 @@ export interface Category {
   count: string | number;
 }
 
-// ==========================================
-// COMPREHENSIVE DATA (50 STORES)
-// ==========================================
-const STORES_DATA: Store[] = [
-  {
-    id: 'store-1',
-    name: 'Amazon',
-    logo: 'amazon',
-    logoColor: '#FF9900',
-    logoBg: '#FFF8E7',
-    category: 'Electronics',
-    offerCount: 120,
-    maxDiscount: 70,
-    discountLabel: 'Up to 70% OFF',
-    isPopular: true,
-    isFeatured: true,
-    description: "The largest online marketplace for everything"
-  },
-  {
-    id: 'store-2',
-    name: 'Flipkart',
-    logo: 'F',
-    logoColor: '#2874F0',
-    logoBg: '#EEF4FF',
-    category: 'Fashion & Lifestyle',
-    offerCount: 80,
-    maxDiscount: 80,
-    discountLabel: 'Up to 80% OFF',
-    isPopular: true,
-    isFeatured: true,
-    description: "Homegrown e-commerce giant with 80% off deals"
-  },
-  {
-    id: 'store-3',
-    name: 'Myntra',
-    logo: 'M',
-    logoColor: '#FF3F6C',
-    logoBg: '#FFF0F4',
-    category: 'Fashion & Lifestyle',
-    offerCount: 95,
-    maxDiscount: 80,
-    discountLabel: 'Up to 80% OFF',
-    isPopular: true,
-    isFeatured: false,
-    description: "Top fashion destination for brands and styles"
-  },
-  {
-    id: 'store-4',
-    name: 'Ajio',
-    logo: 'AJ',
-    logoColor: '#000000',
-    logoBg: '#F5F5F5',
-    category: 'Fashion & Lifestyle',
-    offerCount: 60,
-    maxDiscount: 80,
-    discountLabel: 'Up to 80% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Premium fashion at best prices'
-  },
-  {
-    id: 'store-5',
-    name: 'Nykaa',
-    logo: 'N',
-    logoColor: '#FC2779',
-    logoBg: '#FFF0F6',
-    category: 'Health & Beauty',
-    offerCount: 75,
-    maxDiscount: 60,
-    discountLabel: 'Up to 60% OFF',
-    isPopular: true,
-    isFeatured: false,
-    description: 'Beauty and wellness destination'
-  },
-  {
-    id: 'store-6',
-    name: 'Swiggy',
-    logo: 'S',
-    logoColor: '#FC8019',
-    logoBg: '#FFF5EC',
-    category: 'Food & Grocery',
-    offerCount: 40,
-    maxDiscount: 60,
-    discountLabel: 'Up to 60% OFF',
-    isPopular: true,
-    isFeatured: false,
-    description: 'Food delivery at your doorstep'
-  },
-  {
-    id: 'store-7',
-    name: 'Zomato',
-    logo: 'Z',
-    logoColor: '#E23744',
-    logoBg: '#FEF0F1',
-    category: 'Food & Grocery',
-    offerCount: 35,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: true,
-    isFeatured: false,
-    description: 'Discover restaurants near you'
-  },
-  {
-    id: 'store-8',
-    name: 'MakeMyTrip',
-    logo: 'MMT',
-    logoColor: '#E8262A',
-    logoBg: '#FEF0F0',
-    category: 'Travel',
-    offerCount: 55,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: true,
-    isFeatured: false,
-    description: 'Flights, hotels and holiday packages'
-  },
-  {
-    id: 'store-9',
-    name: 'Goibibo',
-    logo: 'go',
-    logoColor: '#E8262A',
-    logoBg: '#FEF0F0',
-    category: 'Travel',
-    offerCount: 30,
-    maxDiscount: 45,
-    discountLabel: 'Up to 45% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Smart travel booking platform'
-  },
-  {
-    id: 'store-10',
-    name: 'Hostinger',
-    logo: 'H',
-    logoColor: '#FF6B35',
-    logoBg: '#FFF3EE',
-    category: 'Web Hosting',
-    offerCount: 25,
-    maxDiscount: 75,
-    discountLabel: 'Up to 75% OFF',
-    isPopular: true,
-    isFeatured: false,
-    description: 'Affordable web hosting solutions'
-  },
-  {
-    id: 'store-11',
-    name: 'BigBasket',
-    logo: 'BB',
-    logoColor: '#84C225',
-    logoBg: '#F4FBEA',
-    category: 'Food & Grocery',
-    offerCount: 30,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Online grocery superstore'
-  },
-  {
-    id: 'store-12',
-    name: 'Blinkit',
-    logo: 'B',
-    logoColor: '#F0C000',
-    logoBg: '#FFFDE7',
-    category: 'Food & Grocery',
-    offerCount: 20,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Instant grocery delivery in minutes'
-  },
-  {
-    id: 'store-13',
-    name: 'Zepto',
-    logo: 'zepto',
-    logoColor: '#A020F0',
-    logoBg: '#F5E6FF',
-    category: 'Food & Grocery',
-    offerCount: 20,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: '10-minute grocery delivery'
-  },
-  {
-    id: 'store-14',
-    name: 'Mamaearth',
-    logo: 'mama',
-    logoColor: '#6AB04C',
-    logoBg: '#F0FAF0',
-    category: 'Health & Beauty',
-    offerCount: 25,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Natural and toxin-free products'
-  },
-  {
-    id: 'store-15',
-    name: 'boAt',
-    logo: 'boAt',
-    logoColor: '#1A1A2E',
-    logoBg: '#F5F5F5',
-    category: 'Electronics',
-    offerCount: 25,
-    maxDiscount: 60,
-    discountLabel: 'Up to 60% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Premium audio and wearables'
-  },
-  {
-    id: 'store-16',
-    name: 'Croma',
-    logo: 'croma',
-    logoColor: '#1D8348',
-    logoBg: '#EAFAF1',
-    category: 'Electronics',
-    offerCount: 40,
-    maxDiscount: 60,
-    discountLabel: 'Up to 60% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'One-stop electronics destination'
-  },
-  {
-    id: 'store-17',
-    name: 'OnePlus',
-    logo: '1+',
-    logoColor: '#EB0028',
-    logoBg: '#FEE8EB',
-    category: 'Electronics',
-    offerCount: 20,
-    maxDiscount: 45,
-    discountLabel: 'Up to 45% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Premium smartphones and accessories'
-  },
-  {
-    id: 'store-18',
-    name: 'Samsung',
-    logo: 'S',
-    logoColor: '#1428A0',
-    logoBg: '#EEF0FF',
-    category: 'Electronics',
-    offerCount: 30,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: "Top electronics brand across every category"
-  },
-  {
-    id: 'store-19',
-    name: 'Adidas',
-    logo: 'adi',
-    logoColor: '#000000',
-    logoBg: '#F5F5F5',
-    category: 'Fashion & Lifestyle',
-    offerCount: 25,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Sports and lifestyle fashion'
-  },
-  {
-    id: 'store-20',
-    name: 'The Souled Store',
-    logo: 'TSS',
-    logoColor: '#E63946',
-    logoBg: '#FEE8E9',
-    category: 'Fashion & Lifestyle',
-    offerCount: 30,
-    maxDiscount: 60,
-    discountLabel: 'Up to 60% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Pop culture merchandise and fashion'
-  },
-  {
-    id: 'store-21',
-    name: 'Cleartrip',
-    logo: 'CT',
-    logoColor: '#E8262A',
-    logoBg: '#FEF0F0',
-    category: 'Travel',
-    offerCount: 20,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Simple and smart travel booking'
-  },
-  {
-    id: 'store-22',
-    name: 'IRCTC',
-    logo: 'IR',
-    logoColor: '#00529B',
-    logoBg: '#E8F0FB',
-    category: 'Travel',
-    offerCount: 10,
-    maxDiscount: 25,
-    discountLabel: 'Up to 25% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Official Indian Railways booking'
-  },
-  {
-    id: 'store-23',
-    name: 'OYO',
-    logo: 'OYO',
-    logoColor: '#EE2E24',
-    logoBg: '#FEECEB',
-    category: 'Travel',
-    offerCount: 25,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Budget hotels and home stays'
-  },
-  {
-    id: 'store-24',
-    name: 'Uber',
-    logo: 'Ub',
-    logoColor: '#000000',
-    logoBg: '#F5F5F5',
-    category: 'Travel',
-    offerCount: 15,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Ride booking made simple'
-  },
-  {
-    id: 'store-25',
-    name: 'Netflix',
-    logo: 'N',
-    logoColor: '#E50914',
-    logoBg: '#FEEEEF',
-    category: 'Entertainment',
-    offerCount: 15,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Stream movies and TV shows'
-  },
-  {
-    id: 'store-26',
-    name: 'Hotstar',
-    logo: 'HS',
-    logoColor: '#1F80E0',
-    logoBg: '#E8F3FE',
-    category: 'Entertainment',
-    offerCount: 12,
-    maxDiscount: 35,
-    discountLabel: 'Up to 35% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Sports, movies and web series'
-  },
-  {
-    id: 'store-27',
-    name: 'Sony LIV',
-    logo: 'SL',
-    logoColor: '#0061FF',
-    logoBg: '#E8F0FF',
-    category: 'Entertainment',
-    offerCount: 10,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Premium OTT streaming platform'
-  },
-  {
-    id: 'store-28',
-    name: 'Coursera',
-    logo: 'C',
-    logoColor: '#0056D2',
-    logoBg: '#EEF4FF',
-    category: 'Education',
-    offerCount: 18,
-    maxDiscount: 65,
-    discountLabel: 'Up to 65% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Learn from top universities online'
-  },
-  {
-    id: 'store-29',
-    name: 'Udemy',
-    logo: 'U',
-    logoColor: '#A435F0',
-    logoBg: '#F5E8FF',
-    category: 'Education',
-    offerCount: 22,
-    maxDiscount: 95,
-    discountLabel: 'Up to 95% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Online courses on any topic'
-  },
-  {
-    id: 'store-30',
-    name: 'Skillshare',
-    logo: 'Sk',
-    logoColor: '#00C4CC',
-    logoBg: '#E6FAFA',
-    category: 'Education',
-    offerCount: 8,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Creative skills and learning'
-  },
-  {
-    id: 'store-31',
-    name: 'PhonePe',
-    logo: 'PP',
-    logoColor: '#5F259F',
-    logoBg: '#F2EAFF',
-    category: 'Finance',
-    offerCount: 15,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'UPI payments and financial services'
-  },
-  {
-    id: 'store-32',
-    name: 'Paytm',
-    logo: 'Pt',
-    logoColor: '#00BAF2',
-    logoBg: '#E6F9FF',
-    category: 'Finance',
-    offerCount: 20,
-    maxDiscount: 35,
-    discountLabel: 'Up to 35% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Digital payments and banking'
-  },
-  {
-    id: 'store-33',
-    name: 'PolicyBazaar',
-    logo: 'PB',
-    logoColor: '#EF6C00',
-    logoBg: '#FFF3E0',
-    category: 'Finance',
-    offerCount: 10,
-    maxDiscount: 25,
-    discountLabel: 'Up to 25% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Compare and buy insurance'
-  },
-  {
-    id: 'store-34',
-    name: 'Lenskart',
-    logo: 'LK',
-    logoColor: '#1BA8A0',
-    logoBg: '#E6F9F8',
-    category: 'Health & Beauty',
-    offerCount: 18,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Eyewear at best prices online'
-  },
-  {
-    id: 'store-35',
-    name: '1mg',
-    logo: '1mg',
-    logoColor: '#E53935',
-    logoBg: '#FEEEEE',
-    category: 'Health & Beauty',
-    offerCount: 15,
-    maxDiscount: 45,
-    discountLabel: 'Up to 45% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Medicines and healthcare products'
-  },
-  {
-    id: 'store-36',
-    name: 'Netmeds',
-    logo: 'NM',
-    logoColor: '#1A9A5C',
-    logoBg: '#EDFBF4',
-    category: 'Health & Beauty',
-    offerCount: 20,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Online pharmacy and health store'
-  },
-  {
-    id: 'store-37',
-    name: 'GoDaddy',
-    logo: 'GD',
-    logoColor: '#1BDBDB',
-    logoBg: '#E6FAFA',
-    category: 'Web Hosting',
-    offerCount: 12,
-    maxDiscount: 55,
-    discountLabel: 'Up to 55% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Domain and web hosting solutions'
-  },
-  {
-    id: 'store-38',
-    name: 'Bluehost',
-    logo: 'BH',
-    logoColor: '#1E6FD9',
-    logoBg: '#E8F0FD',
-    category: 'Web Hosting',
-    offerCount: 10,
-    maxDiscount: 65,
-    discountLabel: 'Up to 65% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Reliable web hosting platform'
-  },
-  {
-    id: 'store-39',
-    name: 'Nike',
-    logo: 'Nike',
-    logoColor: '#000000',
-    logoBg: '#F5F5F5',
-    category: 'Fashion & Lifestyle',
-    offerCount: 20,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Sports shoes and activewear'
-  },
-  {
-    id: 'store-40',
-    name: 'Puma',
-    logo: 'Puma',
-    logoColor: '#CC0000',
-    logoBg: '#FEEEEE',
-    category: 'Fashion & Lifestyle',
-    offerCount: 18,
-    maxDiscount: 45,
-    discountLabel: 'Up to 45% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Sport lifestyle and fashion'
-  },
-  {
-    id: 'store-41',
-    name: 'H&M',
-    logo: 'H&M',
-    logoColor: '#E50010',
-    logoBg: '#FEEEEF',
-    category: 'Fashion & Lifestyle',
-    offerCount: 22,
-    maxDiscount: 50,
-    discountLabel: 'Up to 50% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Affordable fashion for all'
-  },
-  {
-    id: 'store-42',
-    name: 'Zara',
-    logo: 'ZARA',
-    logoColor: '#000000',
-    logoBg: '#F5F5F5',
-    category: 'Fashion & Lifestyle',
-    offerCount: 12,
-    maxDiscount: 35,
-    discountLabel: 'Up to 35% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Premium fast fashion brand'
-  },
-  {
-    id: 'store-43',
-    name: 'Dunzo',
-    logo: 'D',
-    logoColor: '#00C2A8',
-    logoBg: '#E6FAF8',
-    category: 'Food & Grocery',
-    offerCount: 15,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Hyperlocal delivery platform'
-  },
-  {
-    id: 'store-44',
-    name: 'Rapido',
-    logo: 'R',
-    logoColor: '#FFD60A',
-    logoBg: '#FFFDE8',
-    category: 'Travel',
-    offerCount: 8,
-    maxDiscount: 25,
-    discountLabel: 'Up to 25% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Bike taxi and cab booking'
-  },
-  {
-    id: 'store-45',
-    name: 'Ola',
-    logo: 'Ola',
-    logoColor: '#3D8F41',
-    logoBg: '#EDF7EE',
-    category: 'Travel',
-    offerCount: 12,
-    maxDiscount: 35,
-    discountLabel: 'Up to 35% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Cab and auto booking app'
-  },
-  {
-    id: 'store-46',
-    name: 'Airtel',
-    logo: 'At',
-    logoColor: '#E40000',
-    logoBg: '#FEEEEE',
-    category: 'Others',
-    offerCount: 10,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Telecom and broadband services'
-  },
-  {
-    id: 'store-47',
-    name: 'Vi (Vodafone Idea)',
-    logo: 'Vi',
-    logoColor: '#E60000',
-    logoBg: '#FEEEEE',
-    category: 'Others',
-    offerCount: 8,
-    maxDiscount: 25,
-    discountLabel: 'Up to 25% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Mobile and internet services'
-  },
-  {
-    id: 'store-48',
-    name: 'Decathlon',
-    logo: 'DC',
-    logoColor: '#0082C3',
-    logoBg: '#E8F4FC',
-    category: 'Others',
-    offerCount: 20,
-    maxDiscount: 40,
-    discountLabel: 'Up to 40% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Sports equipment and gear'
-  },
-  {
-    id: 'store-49',
-    name: 'IKEA',
-    logo: 'IKEA',
-    logoColor: '#003399',
-    logoBg: '#E8EEFF',
-    category: 'Others',
-    offerCount: 15,
-    maxDiscount: 30,
-    discountLabel: 'Up to 30% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Home furniture and accessories'
-  },
-  {
-    id: 'store-50',
-    name: 'BookMyShow',
-    logo: 'BMS',
-    logoColor: '#E8272D',
-    logoBg: '#FEE8E9',
-    category: 'Entertainment',
-    offerCount: 18,
-    maxDiscount: 35,
-    discountLabel: 'Up to 35% OFF',
-    isPopular: false,
-    isFeatured: false,
-    description: 'Movie and event ticket booking'
-  }
-];
-
 export default function Stores() {
+  const searchParams = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState<string>('All Stores');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<string>('Sort: Popular');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [currentPage, setCurrentPage] = useState<number>(1);
+
+  // Pre-fill search from ?q= URL param (e.g. from Navbar store search)
+  useEffect(() => {
+    const q = searchParams.get('q');
+    if (q) setSearchQuery(q);
+  }, [searchParams]);
 
   // Secondary sidebar newsletter state
   const [newsEmail, setNewsEmail] = useState<string>('');
@@ -1030,10 +320,10 @@ export default function Stores() {
             
             {/* Sidebar Card 1: Categories list filter */}
             <div id="sidebar-categories" className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center justify-between">
+              <h2 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center justify-between">
                 <span>Categories</span>
                 <span className="text-[10px] font-bold bg-[#F8F8FF] text-[#4A4A6A] px-2 py-0.5 rounded-full border border-[#E8E8F0]">Filter</span>
-              </h3>
+              </h2>
               
               <div className="space-y-1.5 max-h-[380px] lg:max-h-none overflow-y-auto pr-1">
                 {CATEGORIES.map((cat) => {
@@ -1069,10 +359,10 @@ export default function Stores() {
             <div id="sidebar-newsletter" className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-2xl p-5 text-white shadow-sm relative overflow-hidden">
               <div className="absolute top-[-30px] right-[-30px] w-20 h-20 bg-white/5 rounded-full" />
               
-              <h4 className="font-extrabold text-sm tracking-tight flex items-center gap-1.5">
+              <h3 className="font-extrabold text-sm tracking-tight flex items-center gap-1.5">
                 <Sparkles size={14} className="text-[#FFD700] shrink-0" />
                 <span>Never Miss a Deal!</span>
-              </h4>
+              </h3>
               <p className="text-white/75 text-xs mt-1.5 leading-relaxed">
                 Get the latest coupons &amp; offers straight to your inbox. Trusted by 50,000+ shoppers.
               </p>
@@ -1103,9 +393,9 @@ export default function Stores() {
 
             {/* Sidebar Card 3: Trust Badges */}
             <div id="sidebar-trust" className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-xs">
-              <h4 className="font-extrabold text-[#1A1A2E] text-sm mb-4 tracking-tight">
+              <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-4 tracking-tight">
                 Why Shop With Us?
-              </h4>
+              </h3>
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -1215,7 +505,7 @@ export default function Stores() {
                 <div className="w-16 h-16 bg-[#FEF0F0] text-[#E8262A] rounded-full flex items-center justify-center mx-auto">
                   <Search size={28} />
                 </div>
-                <h4 className="font-bold text-[#1A1A2E] text-lg">No stores match your filters</h4>
+                <h3 className="font-bold text-[#1A1A2E] text-lg">No stores match your filters</h3>
                 <p className="text-gray-400 text-sm max-w-sm mx-auto leading-relaxed">
                   We couldn't find any store matching "{searchQuery}" under "{selectedCategory}". Try adjusting your keywords or viewing "All Stores".
                 </p>
@@ -1258,9 +548,9 @@ export default function Stores() {
                       </div>
 
                       {/* Store Name & Offer numbers */}
-                      <h4 className="font-extrabold text-sm text-[#1A1A2E] leading-tight truncate px-0.5 group-hover:text-[#5B4FBE] transition-colors">
+                      <h3 className="font-extrabold text-sm text-[#1A1A2E] leading-tight truncate px-0.5 group-hover:text-[#5B4FBE] transition-colors">
                         {store.name}
-                      </h4>
+                      </h3>
                       <p className="text-[11px] font-semibold text-[#4A4A6A] mt-1 uppercase tracking-wider">
                         {store.offerCount}+ Offers
                       </p>
@@ -1313,9 +603,9 @@ export default function Stores() {
                     {/* Center details frame */}
                     <div className="flex-1 text-left min-w-0">
                       <div className="flex items-center flex-wrap gap-2">
-                        <h4 className="font-extrabold text-[#1A1A2E] text-base group-hover:text-[#5B4FBE] transition-colors leading-none truncate">
+                        <h3 className="font-extrabold text-[#1A1A2E] text-base group-hover:text-[#5B4FBE] transition-colors leading-none truncate">
                           {store.name}
-                        </h4>
+                        </h3>
                         
                         {/* Popular badge */}
                         {store.isPopular && (
@@ -1828,9 +1118,9 @@ export default function Stores() {
                     <span className="bg-[#FF5722] text-white text-[9px] font-black tracking-widest px-2 py-0.5 rounded-sm uppercase">
                       Exclusive Promo
                     </span>
-                    <h5 className="font-extrabold text-sm text-[#1A1A2E] mt-1.5 leading-snug">
+                    <h4 className="font-extrabold text-sm text-[#1A1A2E] mt-1.5 leading-snug">
                       Save {promoModalStore.discountLabel} across store!
-                    </h5>
+                    </h4>
                     <p className="text-[11px] text-gray-400 mt-1">No minimum order required. Tested and verified.</p>
                   </div>
                 </div>
@@ -1860,9 +1150,9 @@ export default function Stores() {
                     <span className="bg-[#22C55E]/15 text-[#22C55E] text-[9px] font-black tracking-widest px-2 py-0.5 rounded-sm uppercase">
                       Verified Coupon
                     </span>
-                    <h5 className="font-extrabold text-sm text-[#1A1A2E] mt-1.5 leading-snug">
+                    <h4 className="font-extrabold text-sm text-[#1A1A2E] mt-1.5 leading-snug">
                       Flat 15% cashback on UPI payments
-                    </h5>
+                    </h4>
                     <p className="text-[11px] text-gray-400 mt-1">Valid when paying via Google Pay or PhonePe wallets.</p>
                   </div>
                 </div>

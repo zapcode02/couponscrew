@@ -400,7 +400,7 @@ export default function FAQ() {
                     <Search className="w-7 h-7 text-[#FFD700]" />
                   </div>
                   <div>
-                    <h3 className="text-white text-lg font-bold">Quick Diagnostics</h3>
+                    <h2 className="text-white text-lg font-bold">Quick Diagnostics</h2>
                     <p className="text-white/60 text-xs">Instantly jump to standard queries</p>
                   </div>
                 </div>
@@ -476,7 +476,7 @@ export default function FAQ() {
                     <StatIcon className="w-5.5 h-5.5" style={{ color: stat.color }} />
                   </div>
                   <div>
-                    <h4 className="text-[#1A1A2E] text-lg font-extrabold block">{stat.label}</h4>
+                    <h2 className="text-[#1A1A2E] text-lg font-extrabold block">{stat.label}</h2>
                     <p className="text-[#4A4A6A] text-xs font-semibold block mt-0.5">{stat.sub}</p>
                   </div>
                 </div>
@@ -563,7 +563,7 @@ export default function FAQ() {
                 {filteredFAQs.length === 0 ? (
                   <div className="bg-white rounded-3xl p-12 border border-[#E8E8F0] text-center space-y-4">
                     <HelpCircle className="w-16 h-16 text-gray-300 mx-auto" />
-                    <h3 className="text-lg font-bold text-[#1A1A2E]">No answers found</h3>
+                    <h2 className="text-lg font-bold text-[#1A1A2E]">No answers found</h2>
                     <p className="text-sm text-[#4A4A6A] max-w-md mx-auto">
                       We couldn't find any FAQs matching your criteria. Try adjusting your category filter, clearing your search search queries, or contact our support team.
                     </p>
@@ -704,7 +704,7 @@ export default function FAQ() {
                 
                 {/* Card 1 â€" Search FAQs (Visual Only as input binds search) */}
                 <div className="bg-white rounded-2xl border border-[#E8E8F0] p-6 shadow-sm space-y-4">
-                  <h4 className="text-sm font-extrabold text-[#1A1A2E] tracking-wider uppercase">Search FAQ Collection</h4>
+                  <h3 className="text-sm font-extrabold text-[#1A1A2E] tracking-wider uppercase">Search FAQ Collection</h3>
                   <div className="relative">
                     <input
                       id="search-input-field"
@@ -745,7 +745,7 @@ export default function FAQ() {
 
                 {/* Card 2 â€" Browse by Category (Fully synced with filter state) */}
                 <div className="bg-white rounded-2xl border border-[#E8E8F0] p-6 shadow-sm space-y-4">
-                  <h4 className="text-sm font-extrabold text-[#1A1A2E] tracking-wider uppercase">Browse by Category</h4>
+                  <h3 className="text-sm font-extrabold text-[#1A1A2E] tracking-wider uppercase">Browse by Category</h3>
                   <div className="space-y-1.5">
                     {categories.map((cat) => {
                       const CatIcon = cat.icon;
@@ -783,7 +783,7 @@ export default function FAQ() {
                   <div className="absolute top-0 right-0 w-20 h-20 bg-white/5 rounded-bl-full pointer-events-none"></div>
                   
                   <div className="space-y-1.5">
-                    <h4 className="font-extrabold text-sm tracking-wide text-white">Still have questions?</h4>
+                    <h3 className="font-extrabold text-sm tracking-wide text-white">Still have questions?</h3>
                     <p className="text-white/70 text-xs leading-relaxed">
                       Can&apos;t find your specific solution? Our support department answers standard queries within 2 hours.
                     </p>
@@ -817,7 +817,7 @@ export default function FAQ() {
 
                 {/* Card 4 â€" Quick Stats */}
                 <div className="bg-white rounded-2xl border border-[#E8E8F0] p-6 shadow-sm space-y-4">
-                  <h4 className="text-sm font-extrabold text-[#1A1A2E] tracking-wider uppercase">SaveMate by Numbers</h4>
+                  <h3 className="text-sm font-extrabold text-[#1A1A2E] tracking-wider uppercase">SaveMate by Numbers</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-[#F8F8FF] p-3 rounded-xl text-center">
                       <strong className="text-base sm:text-lg font-black text-[#5B4FBE] block">10,000+</strong>
@@ -891,7 +891,7 @@ export default function FAQ() {
                       <BadgeIcon className="w-5 h-5 text-gray-500" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-bold text-[#1A1A2E]">{badge.title}</h4>
+                      <h3 className="text-sm font-bold text-[#1A1A2E]">{badge.title}</h3>
                       <p className="text-xs text-[#4A4A6A] leading-relaxed mt-1">{badge.desc}</p>
                     </div>
                   </div>

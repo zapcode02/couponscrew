@@ -580,6 +580,7 @@ export default function DealsOfTheDay() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
       {/* SECTION 1 - HERO BANNER */}
       <section className="relative w-full bg-white border-b border-[#E8E8F0] py-10 px-6 min-h-[280px] overflow-hidden flex items-center">
         <div className="absolute top-1/2 left-[-20px] -translate-y-1/2 w-72 h-72 rounded-full bg-[#F0EEFF]/55 pointer-events-none select-none" />
@@ -744,6 +745,7 @@ export default function DealsOfTheDay() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
+              aria-label="Sort deals"
               className="border border-[#E8E8F0] rounded-xl px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-[#5B4FBE] cursor-pointer text-[#1A1A2E] font-medium transition hover:bg-gray-50/80"
             >
               <option value="Recommended">Recommended</option>
@@ -955,7 +957,7 @@ export default function DealsOfTheDay() {
                         <Icon size={18} className="stroke-[2.5]" style={{ color: item.color }} />
                       </div>
                       <div>
-                        <h5 className="font-extrabold text-xs text-[#1A1A2E] leading-tight">{item.title}</h5>
+                        <h4 className="font-extrabold text-xs text-[#1A1A2E] leading-tight">{item.title}</h4>
                         <p className="text-[10px] text-[#4A4A6A] mt-0.5 font-semibold">{item.sub}</p>
                       </div>
                     </div>
@@ -1337,6 +1339,7 @@ export default function DealsOfTheDay() {
 
       </div>
     </section>
+      </main>
 
       <Footer />
     </div>

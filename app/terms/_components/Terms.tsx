@@ -319,7 +319,7 @@ export default function Terms() {
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-7 shadow-2xl space-y-6">
                 <div>
                   <Gavel className="w-10 h-10 text-[#FFD700] mx-auto filter drop-shadow-md" />
-                  <h3 className="text-white font-bold text-lg text-center mt-3">Quick Summary</h3>
+                  <h2 className="text-white font-bold text-lg text-center mt-3">Quick Summary</h2>
                 </div>
 
                 <div className="space-y-3 mt-5">
@@ -457,7 +457,7 @@ export default function Terms() {
             <div className="lg:col-span-3 sticky top-24 space-y-5">
               {/* CARD 1 - Progress Tracker */}
               <div className="bg-white rounded-2xl border border-[#E8E8F0] p-6 shadow-sm">
-                <h4 className="text-sm font-bold text-[#1A1A2E]">Your Reading Progress</h4>
+                <h3 className="text-sm font-bold text-[#1A1A2E]">Your Reading Progress</h3>
                 <p className="text-xs text-gray-400 mt-1">Click sections to read</p>
 
                 <div className="mt-4">
@@ -488,7 +488,7 @@ export default function Terms() {
 
               {/* CARD 2 - Key Highlights */}
               <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-2xl p-6 shadow-sm">
-                <h4 className="text-white font-bold text-sm">Key Highlights</h4>
+                <h3 className="text-white font-bold text-sm">Key Highlights</h3>
                 <p className="text-white/60 text-xs mt-1">Most important points</p>
 
                 <div className="mt-5 space-y-3">
@@ -510,7 +510,7 @@ export default function Terms() {
               {/* CARD 3 - Need Help? */}
               <div className="bg-white rounded-2xl border border-[#E8E8F0] p-6 shadow-sm">
                 <Scale className="text-[#5B4FBE] w-8 h-8 mx-auto" />
-                <h4 className="text-base font-bold text-[#1A1A2E] text-center mt-3">Legal Questions?</h4>
+                <h3 className="text-base font-bold text-[#1A1A2E] text-center mt-3">Legal Questions?</h3>
                 <p className="text-xs text-[#4A4A6A] text-center mt-2 leading-relaxed">
                   Our team is happy to clarify any part of these terms. No bots, no ticket queues.
                 </p>
@@ -540,7 +540,7 @@ export default function Terms() {
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="text-[#F59E0B] w-4.5 h-4.5 mt-0.5 shrink-0 animate-pulse" />
                   <div>
-                    <h5 className="text-xs font-bold text-[#1A1A2E]">Last Updated</h5>
+                    <h4 className="text-xs font-bold text-[#1A1A2E]">Last Updated</h4>
                     <p className="text-xs text-[#4A4A6A] mt-1 leading-relaxed">
                       January 15, 2025 - Next review scheduled for January 2026.
                     </p>

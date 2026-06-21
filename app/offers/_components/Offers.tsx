@@ -494,6 +494,7 @@ export default function Offers() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
       {/* ============================================================================
           SECTION 1  -  HERO BANNER (White / Light Background)
           ============================================================================ */}
@@ -750,6 +751,7 @@ export default function Offers() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
+                  aria-label="Sort offers"
                   className="border border-[#E8E8F0] rounded-xl px-4 py-2 text-sm bg-white focus:outline-none focus:border-[#5B4FBE] cursor-pointer transition-all hover:bg-gray-50 text-[#1A1A2E] font-medium"
                 >
                   <option value="Latest">Latest</option>
@@ -796,9 +798,9 @@ export default function Offers() {
                         </div>
                         
                         <div className="sm:mt-2 text-left sm:text-center flex-1 sm:flex-initial">
-                          <h4 className="font-extrabold text-xs text-[#1A1A2E] leading-tight max-w-[80px] break-words mx-auto">
+                          <h3 className="font-extrabold text-xs text-[#1A1A2E] leading-tight max-w-[80px] break-words mx-auto">
                             {offer.brandName}
-                          </h4>
+                          </h3>
                           
                           {/* Category pill indicator */}
                           <div className="mt-1 text-center">
@@ -1075,9 +1077,9 @@ export default function Offers() {
               <div className="w-14 h-14 rounded-3xl bg-[#F0EEFF] text-[#5B4FBE] flex items-center justify-center mb-3 shadow-xs">
                 <ShieldCheck size={26} className="stroke-[2]" />
               </div>
-              <h4 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
+              <h2 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
                 100% Verified Offers
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1 pr-1 font-semibold leading-relaxed">
                 Manually checked &amp; updated
               </p>
@@ -1088,9 +1090,9 @@ export default function Offers() {
               <div className="w-14 h-14 rounded-3xl bg-[#FFF3F0] text-[#FF5722] flex items-center justify-center mb-3 shadow-xs">
                 <Tag size={26} className="stroke-[2]" />
               </div>
-              <h4 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
+              <h2 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
                 Best Discounts
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1 pr-1 font-semibold leading-relaxed">
                 Get the biggest savings
               </p>
@@ -1101,9 +1103,9 @@ export default function Offers() {
               <div className="w-14 h-14 rounded-3xl bg-[#FFFBEB] text-[#F59E0B] flex items-center justify-center mb-3 shadow-xs">
                 <Star size={26} className="stroke-[2] fill-amber-400" />
               </div>
-              <h4 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
+              <h2 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
                 Exclusive Offers
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1 pr-1 font-semibold leading-relaxed">
                 Only for our users
               </p>
@@ -1114,9 +1116,9 @@ export default function Offers() {
               <div className="w-14 h-14 rounded-3xl bg-[#F0FDF4] text-[#22C55E] flex items-center justify-center mb-3 shadow-xs">
                 <Lock size={26} className="stroke-[2]" />
               </div>
-              <h4 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
+              <h2 className="font-extrabold text-sm text-[#1A1A2E] tracking-tight">
                 Safe &amp; Secure
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1 pr-1 font-semibold leading-relaxed">
                 Your data is protected
               </p>
@@ -1441,6 +1443,7 @@ export default function Offers() {
 
       </div>
     </section>
+      </main>
 
       <Footer />
     </div>

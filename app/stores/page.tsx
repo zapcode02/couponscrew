@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import Stores from './_components/Stores'
 
 export const metadata: Metadata = {
@@ -144,7 +145,9 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <Stores />
+      <Suspense fallback={null}>
+        <Stores />
+      </Suspense>
     </>
   )
 }

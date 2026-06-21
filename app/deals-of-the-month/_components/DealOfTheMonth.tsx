@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import {
   ChevronLeft,
   ChevronRight,
@@ -686,6 +687,7 @@ export default function DealOfTheMonth() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
       {/* ==========================================
           SECTION 1  -  HERO SLIDER
           ========================================== */}
@@ -940,6 +942,7 @@ export default function DealOfTheMonth() {
               <select
                 value={brandCategory}
                 onChange={(e) => setBrandCategory(e.target.value)}
+                aria-label="Filter brand deals by category"
                 className="border border-[#E8E8F0] rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:border-[#5B4FBE] focus:outline-none bg-white cursor-pointer font-semibold text-[#1A1A2E]"
               >
                 {CATEGORY_OPTIONS.map((opt) => (
@@ -952,6 +955,7 @@ export default function DealOfTheMonth() {
               <select
                 value={brandSort}
                 onChange={(e) => setBrandSort(e.target.value)}
+                aria-label="Sort brand deals"
                 className="border border-[#E8E8F0] rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:border-[#5B4FBE] focus:outline-none bg-white cursor-pointer font-semibold text-[#1A1A2E]"
               >
                 <option value="default">Sort By</option>
@@ -1117,6 +1121,7 @@ export default function DealOfTheMonth() {
               <select
                 value={productCategory}
                 onChange={(e) => setProductCategory(e.target.value)}
+                aria-label="Filter product deals by category"
                 className="border border-[#E8E8F0] rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:border-[#5B4FBE] focus:outline-none bg-white cursor-pointer font-semibold text-[#1A1A2E]"
               >
                 {CATEGORY_OPTIONS.map((opt) => (
@@ -1129,6 +1134,7 @@ export default function DealOfTheMonth() {
               <select
                 value={productSort}
                 onChange={(e) => setProductSort(e.target.value)}
+                aria-label="Sort product deals"
                 className="border border-[#E8E8F0] rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:border-[#5B4FBE] focus:outline-none bg-white cursor-pointer font-semibold text-[#1A1A2E]"
               >
                 <option value="default">Sort By</option>
@@ -1164,9 +1170,12 @@ export default function DealOfTheMonth() {
                   className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div className="relative overflow-hidden shrink-0 h-52">
-                    <img
+                    <NextImage
                       src={prod.productImage}
                       alt={prod.productName}
+                      width={400}
+                      height={208}
+                      sizes="(max-width: 768px) 45vw, 280px"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
@@ -1412,9 +1421,12 @@ export default function DealOfTheMonth() {
           {/* RIGHT COLUMN */}
           <div className="relative hidden lg:flex items-center justify-center">
             <div className="relative w-full max-w-lg">
-              <img
+              <NextImage
                 src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80"
                 alt="Apple iPad Pro Spotlight"
+                width={600}
+                height={430}
+                priority
                 referrerPolicy="no-referrer"
                 className="rounded-3xl shadow-2xl w-full h-[430px] object-cover border border-white/10"
               />
@@ -1816,6 +1828,7 @@ export default function DealOfTheMonth() {
 
       </div>
     </section>
+      </main>
 
       <Footer />
     </div>

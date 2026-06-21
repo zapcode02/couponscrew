@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import NextImage from 'next/image';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
 import { 
@@ -284,9 +285,13 @@ export default function About() {
             {/* Left Image block */}
             <div className="lg:col-span-5 relative">
               <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
-                  alt="Our Mission Team" 
+                <NextImage
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                  alt="Our Mission Team"
+                  width={800}
+                  height={480}
+                  sizes="(max-width: 1024px) 90vw, 40vw"
+                  loading="lazy"
                   className="w-full h-[480px] object-cover rounded-3xl shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-300"
                 />
                 

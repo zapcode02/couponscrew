@@ -488,6 +488,7 @@ export default function Categories() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
       {/* ============================================================================
           SECTION 1  -  HERO BANNER
           ============================================================================ */}
@@ -2007,6 +2008,7 @@ export default function Categories() {
 
       </div>
     </section>
+      </main>
 
       <Footer />
     </div>

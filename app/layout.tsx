@@ -1,7 +1,29 @@
 import type { Metadata } from 'next'
 import type React from 'react'
 import Script from 'next/script'
+import { Inter, Outfit, Fira_Code } from 'next/font/google'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-outfit',
+  display: 'swap',
+})
+
+const firaCode = Fira_Code({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-fira-code',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -36,13 +58,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${outfit.variable} ${firaCode.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DL0FC9NS5Q" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">{`
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DL0FC9NS5Q" strategy="lazyOnload" />
+        <Script id="google-analytics" strategy="lazyOnload">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

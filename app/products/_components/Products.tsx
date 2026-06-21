@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import {
   ChevronRight,
   ChevronLeft,
@@ -1199,10 +1200,10 @@ export default function Products() {
             
             {/* Categories sidebar box block */}
             <div id="sidebar-categories-block" className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
-              <h3 className="font-bold text-[#1A1A2E] text-base mb-3 leading-tight select-none flex items-center justify-between">
+              <h2 className="font-bold text-[#1A1A2E] text-base mb-3 leading-tight select-none flex items-center justify-between">
                 <span>Categories</span>
                 <span className="text-[10px] font-black uppercase text-[#5B4FBE] bg-[#F0EEFF] px-2 py-0.5 rounded-full">Catalog</span>
-              </h3>
+              </h2>
               
               <div className="space-y-1">
                 {displayedCategories.map((cat, idx) => {
@@ -1245,10 +1246,10 @@ export default function Products() {
               
               {/* Filter By Header Title */}
               <div className="pb-3 border-b border-[#E8E8F0] flex items-center justify-between">
-                <h3 className="font-bold text-[#1A1A2E] text-base leading-none select-none flex items-center gap-2">
+                <h2 className="font-bold text-[#1A1A2E] text-base leading-none select-none flex items-center gap-2">
                   <Filter size={16} className="text-[#5B4FBE]" />
                   <span>Filter By</span>
-                </h3>
+                </h2>
               </div>
 
               {/* Price Range sub-section */}
@@ -1429,6 +1430,7 @@ export default function Products() {
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value)}
+                    aria-label="Sort products"
                     className="w-full sm:w-[180px] appearance-none border border-[#E8E8F0] hover:border-gray-300 focus:border-[#5B4FBE] rounded-xl pl-4 pr-10 py-3 text-sm text-[#1A1A2E] font-bold bg-white cursor-pointer focus:outline-none transition-all"
                   >
                     <option value="Popularity">Sort: Popularity</option>
@@ -1516,7 +1518,7 @@ export default function Products() {
                 <div className="w-16 h-16 bg-[#FFF2ED] text-[#FF5722] rounded-full flex items-center justify-center mx-auto">
                   <Search size={28} />
                 </div>
-                <h4 className="font-extrabold text-[#1A1A2E] text-lg">No matching products found</h4>
+                <h3 className="font-extrabold text-[#1A1A2E] text-lg">No matching products found</h3>
                 <p className="text-gray-400 text-sm max-w-sm mx-auto leading-relaxed">
                   We currently do not have products meeting your specified criteria. Try clearing some filters or searching for alternative keywords.
                 </p>
@@ -1563,9 +1565,12 @@ export default function Products() {
                           />
                         </button>
 
-                        <img
+                        <NextImage
                           src={p.image}
                           alt={p.name}
+                          width={300}
+                          height={300}
+                          sizes="(max-width: 768px) 45vw, 200px"
                           className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 rounded-lg"
                           referrerPolicy="no-referrer"
                         />
@@ -1580,9 +1585,9 @@ export default function Products() {
                           </span>
 
                           {/* Product name */}
-                          <h4 className="text-sm font-bold text-[#1A1A2E] leading-snug line-clamp-2 hover:text-[#5B4FBE] transition-colors" title={p.name}>
+                          <h3 className="text-sm font-bold text-[#1A1A2E] leading-snug line-clamp-2 hover:text-[#5B4FBE] transition-colors" title={p.name}>
                             {p.name}
-                          </h4>
+                          </h3>
 
                           {/* Rating and Reviews Row */}
                           <div className="flex items-center gap-1 select-none">
@@ -1657,9 +1662,12 @@ export default function Products() {
                           </div>
                         )}
 
-                        <img
+                        <NextImage
                           src={p.image}
                           alt={p.name}
+                          width={192}
+                          height={192}
+                          sizes="(max-width: 768px) 100vw, 192px"
                           className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                           referrerPolicy="no-referrer"
                         />
@@ -1831,9 +1839,9 @@ export default function Products() {
               <div className="w-16 h-16 rounded-3xl bg-[#F0EEFF] text-[#5B4FBE] flex items-center justify-center mx-auto shadow-xs border border-indigo-100 group-hover:scale-105 transition-transform duration-300">
                 <ShieldCheck size={32} className="stroke-[1.5]" />
               </div>
-              <h4 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
+              <h2 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
                 100% Original Products
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1.5 leading-relaxed">
                 Every product links to the official brand or retailer. No third-party sellers, no counterfeits.
               </p>
@@ -1844,9 +1852,9 @@ export default function Products() {
               <div className="w-16 h-16 rounded-3xl bg-[#FFF2ED] text-[#FF5722] flex items-center justify-center mx-auto shadow-xs border border-orange-100 group-hover:scale-105 transition-transform duration-300">
                 <Tag size={32} className="stroke-[1.5]" />
               </div>
-              <h4 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
+              <h2 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
                 Best Prices Guaranteed
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1.5 leading-relaxed">
                 We check prices across retailers and only list a product when it&apos;s genuinely discounted.
               </p>
@@ -1857,9 +1865,9 @@ export default function Products() {
               <div className="w-16 h-16 rounded-3xl bg-[#F0FDF4] text-[#22C55E] flex items-center justify-center mx-auto shadow-xs border border-emerald-100 group-hover:scale-105 transition-transform duration-300">
                 <RefreshCw size={32} className="stroke-[1.5] animate-pulse" />
               </div>
-              <h4 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
+              <h2 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
                 Easy Returns
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1.5 leading-relaxed">
                 Returns go through the retailer&apos;s own policy — the same process you&apos;d use buying direct.
               </p>
@@ -1870,9 +1878,9 @@ export default function Products() {
               <div className="w-16 h-16 rounded-3xl bg-[#FEFBE8] text-[#F59E0B] flex items-center justify-center mx-auto shadow-xs border border-yellow-150 group-hover:scale-105 transition-transform duration-300">
                 <Lock size={32} className="stroke-[1.5]" />
               </div>
-              <h4 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
+              <h2 className="text-base font-bold text-[#1A1A2E] mt-4 leading-tight">
                 Secure Payments
-              </h4>
+              </h2>
               <p className="text-xs text-[#4A4A6A] mt-1.5 leading-relaxed">
                 Clicking through takes you to the retailer&apos;s site. Your payment is handled entirely by them.
               </p>
@@ -2078,9 +2086,11 @@ export default function Products() {
             {/* Product Card summary */}
             <div className="flex items-center gap-3.5 bg-[#F8F8FF] p-3 rounded-2xl border border-[#E8E8F0] text-left">
               <div className="w-16 h-16 rounded-xl bg-white p-1 border border-gray-100 flex items-center justify-center shrink-0">
-                <img
+                <NextImage
                   src={activatedProduct.image}
                   alt={activatedProduct.name}
+                  width={64}
+                  height={64}
                   className="w-full h-full object-contain rounded-lg"
                   referrerPolicy="no-referrer"
                 />
