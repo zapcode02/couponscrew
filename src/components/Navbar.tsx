@@ -25,11 +25,32 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
   const mobileSearchRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const categoriesRef = useRef<HTMLDivElement>(null);
+  const categoriesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
     setMobileCategoriesOpen(false);
   };
+
+  const openCategories = () => {
+    if (categoriesCloseTimer.current) {
+      clearTimeout(categoriesCloseTimer.current);
+      categoriesCloseTimer.current = null;
+    }
+    setCategoriesOpen(true);
+  };
+
+  const scheduleCloseCategories = () => {
+    categoriesCloseTimer.current = setTimeout(() => {
+      setCategoriesOpen(false);
+    }, 200);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (categoriesCloseTimer.current) clearTimeout(categoriesCloseTimer.current);
+    };
+  }, []);
 
   const results = useMemo(() => {
     const query = searchInput.trim().toLowerCase();
@@ -184,8 +205,8 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <div
             className="relative"
             ref={categoriesRef}
-            onMouseEnter={() => setCategoriesOpen(true)}
-            onMouseLeave={() => setCategoriesOpen(false)}
+            onMouseEnter={openCategories}
+            onMouseLeave={scheduleCloseCategories}
           >
             <button
               className={`text-sm font-semibold flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer ${
