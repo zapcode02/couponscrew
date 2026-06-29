@@ -385,15 +385,14 @@ export default function Home() {
           {/* LEFT SIDE: DYNAMIC IMAGE COMPOSITION */}
           <div className="lg:col-span-5 relative">
             {/* Main Image Wrapper */}
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-8 border-[#F8F8FF] shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="relative z-10 h-[500px] rounded-[2.5rem] overflow-hidden border-8 border-[#F8F8FF] shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
               <NextImage
                 src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=1000"
                 alt="Smart Shopping with Verified Coupons"
-                width={1000}
-                height={500}
+                fill
                 sizes="(max-width: 1024px) 90vw, 40vw"
                 loading="lazy"
-                className="w-full h-[500px] object-cover"
+                className="object-cover"
               />
               {/* Overlay Glass Card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white shadow-xl">

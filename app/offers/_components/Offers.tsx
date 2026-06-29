@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import {
   Tag,
   Store,
@@ -498,7 +499,7 @@ export default function Offers() {
       {/* ============================================================================
           SECTION 1  -  HERO BANNER (White / Light Background)
           ============================================================================ */}
-      <section className="relative w-full bg-white border-b border-[#E8E8F0] overflow-hidden min-h-[280px] py-10 px-6">
+      <section className="relative w-full bg-[#F0EEFF] border-b border-[#E8E8F0] overflow-hidden min-h-[280px] py-10 px-6">
         
         {/* Subtle decorative purple and orange background shapes in corners */}
         <div className="absolute top-1/2 left-[3%] -translate-y-1/2 w-[320px] h-[320px] rounded-full bg-[#F0EEFF]/55 pointer-events-none select-none" />
@@ -513,7 +514,7 @@ export default function Offers() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10 text-left">
           
           {/* LEFT SIDE  -  Content Area (58% visual weight) */}
-          <div className="md:col-span-7 flex flex-col items-start">
+          <div className="md:col-span-6 flex flex-col items-start">
             {/* Breadcrumb */}
             <div className="inline-flex items-center gap-1.5 text-sm text-[#4A4A6A] select-none">
               <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
@@ -554,16 +555,7 @@ export default function Offers() {
                 </div>
               </div>
 
-              <div className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xs hover:shadow-md transition-all duration-300">
-                <div className="bg-[#F0FDF4] p-2.5 rounded-xl text-[#22C55E] shrink-0">
-                  <ShieldCheck size={18} />
-                </div>
-                <div>
-                  <div className="font-black text-[#1A1A2E] text-sm leading-none">100%</div>
-                  <div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-1">Verified Offers</div>
-                </div>
-              </div>
-
+              
               <div className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xs hover:shadow-md transition-all duration-300">
                 <div className="bg-[#FEFBE8] p-2.5 rounded-xl text-[#F59E0B] shrink-0">
                   <Percent size={18} />
@@ -577,71 +569,18 @@ export default function Offers() {
             </div>
           </div>
 
-          {/* RIGHT SIDE  -  Pure CSS vector layout composite (42% visual weight / hidden mobile) */}
-          <div className="hidden md:col-span-5 md:flex items-center justify-center relative overflow-visible select-none">
-            <div className="relative w-80 h-8 h-80 flex items-center justify-center">
-
-              {/* Background Glow Ring */}
-              <div className="absolute w-64 h-64 rounded-full bg-[#F0EEFF] animate-pulse duration-5000 pointer-events-none" />
-
-              {/* 1. Large deep purple gift box shape using CSS divs */}
-              <div className="w-48 h-44 bg-[#5B4FBE] rounded-3xl relative shadow-2xl border border-indigo-400/20 transform -rotate-3 hover:rotate-0 transition-transform duration-300 flex items-center justify-center z-10 overflow-hidden">
-                
-                {/* Horizontal ribbon */}
-                <div className="absolute top-1/2 left-0 right-0 h-6 bg-[#7C3AED] -translate-y-1/2" />
-                
-                {/* Vertical ribbon */}
-                <div className="absolute left-1/2 top-0 bottom-0 w-6 bg-[#7C3AED] -translate-x-1/2" />
-                
-                {/* "OFFERS" text: absolute centered text-white */}
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-black text-lg tracking-widest z-10 select-none">
-                  OFFERS
-                </span>
-
-                {/* Bow on top: two small rounded tilted shapes */}
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex gap-1 z-20 pointer-events-none">
-                  <div className="w-10 h-8 rounded-full border-4 border-[#7C3AED] rotate-[-45deg] bg-[#5B4FBE]/90 shadow-md" />
-                  <div className="w-10 h-8 rounded-full border-4 border-[#7C3AED] rotate-[45deg] bg-[#5B4FBE]/90 shadow-md" />
-                </div>
-
-                {/* Lid card element capping top */}
-                <div className="absolute -top-[12px] left-0 right-0 h-10 bg-[#4338CA] rounded-2xl z-15 shadow-sm border-b border-indigo-500/20" />
-              </div>
-
-              {/* 2. Floating Orange % Tag Badge relative to the Box container */}
-              <div className="bg-[#FF5722] rounded-full w-16 h-16 flex items-center justify-center text-white font-black text-2xl shadow-2xl absolute right-10 top-6 z-30 border-2 border-white animate-bounce pointer-events-none">
-                %
-              </div>
-
-              {/* 3. Shopping Cart Vector Canvas shape positioning on right bottom */}
-              <div className="bg-white/90 border-4 border-[#FF5722] rounded-2xl w-24 h-20 absolute -right-4 bottom-14 flex items-center justify-center shadow-lg z-25 transform rotate-6 border-dashed">
-                <span className="text-3xl">🛒</span>
-              </div>
-
-              {/* 4. Orange Shopping Bags floating around container */}
-              <div className="absolute left-4 bottom-16 bg-[#FF5722] rounded-2xl w-14 h-16 shadow-lg z-20 transform -rotate-12 flex flex-col justify-between p-1.5 border border-orange-400/30">
-                <div className="w-6 h-3 border-2 border-white/40 border-b-0 rounded-t-full mx-auto" />
-                <span className="text-xs text-white font-bold text-center leading-none">HOT</span>
-              </div>
-
-              {/* 5. Decorative Small Elements (Coins, Leaves, Diamonds) */}
-              {/* Gold coin 1 */}
-              <div className="absolute top-12 left-14 bg-gradient-to-r from-yellow-300 to-amber-400 border border-amber-300 w-8 h-8 rounded-full flex items-center justify-center font-bold text-amber-900 text-xs shadow-md z-30 animate-pulse">
-                %
-              </div>
-              {/* Gold coin 2 */}
-              <div className="absolute bottom-10 right-28 bg-[#FFD700] border border-amber-300 w-6 h-6 rounded-full flex items-center justify-center font-bold text-amber-900 text-xs shadow-sm z-30">
-                %
-              </div>
-
-              {/* Green CSS leaves elements using native borders and radii */}
-              <div className="absolute -left-3 top-1/3 bg-[#22C55E]/20 w-8 h-12 rounded-t-full rounded-bl-full pointer-events-none transform -rotate-45" />
-              <div className="absolute right-0 top-1/2 bg-[#22C55E]/15 w-6 h-10 rounded-t-full rounded-br-full pointer-events-none transform rotate-12" />
-
-              {/* Sparkle ◆ diamonds */}
-              <span className="absolute top-6 left-1/3 text-[#FFD700] text-lg font-black animate-ping">✦</span>
-              <span className="absolute bottom-24 right-14 text-[#FFD700] text-sm font-black">✦</span>
-
+          {/* RIGHT SIDE  -  Hero Image (hidden mobile) */}
+          <div className="hidden md:col-span-6 md:flex items-center justify-center relative overflow-visible select-none">
+            <div className="relative w-160 h-80">
+              <NextImage
+                src="https://res.cloudinary.com/dgy1atvb8/image/upload/v1782636289/all-offers_hme2ug.webp"
+                alt="Browse all offers on CouponScrew"
+                fill
+                sizes="(max-width: 768px) 0px, 320px"
+                referrerPolicy="no-referrer"
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
 

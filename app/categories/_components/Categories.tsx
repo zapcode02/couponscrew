@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import {
   ChevronRight,
   ChevronLeft,
@@ -502,7 +503,7 @@ export default function Categories() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
           
           {/* Left Column (55%) */}
-          <div className="md:col-span-7 flex flex-col items-start">
+          <div className="md:col-span-6 flex flex-col items-start">
             
             {/* Breadcrumb */}
             <div className="inline-flex items-center gap-1.5 text-sm text-[#4A4A6A] select-none">
@@ -584,109 +585,22 @@ export default function Categories() {
                 </div>
               </div>
 
-              <div className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xs hover:shadow-md transition-all duration-300">
-                <div className="bg-[#FEFBE8] p-2 rounded-xl text-[#F59E0B] shrink-0">
-                  <ShieldCheck size={18} />
-                </div>
-                <div>
-                  <div className="font-extrabold text-[#1A1A2E] text-sm leading-tight">100%</div>
-                  <div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Verified &amp; Updated</div>
-                </div>
-              </div>
-
             </div>
 
           </div>
 
           {/* Right Column (45%) */}
-          <div className="hidden md:col-span-5 md:flex items-center justify-center relative">
-            <div className="relative w-80 h-80 flex items-center justify-center">
-              
-              {/* Giant light purple circle bg */}
-              <div className="absolute w-72 h-72 rounded-full bg-[#F0EEFF] animate-pulse duration-5000" />
-
-              {/* Tablet/Phone Mockup shape centered */}
-              <div className="relative w-44 h-76 bg-[#1A1A2E] rounded-[32px] p-2.5 shadow-2xl border-4 border-[#E8E8F0] flex flex-col z-10 transition-transform hover:scale-105 duration-300 select-none">
-                {/* Speaker line */}
-                <div className="w-12 h-1 bg-gray-700 rounded-full mx-auto mb-2" />
-                
-                {/* Inner Mockup Screen App Layout Mock */}
-                <div className="flex-1 bg-white rounded-[22px] overflow-hidden p-3 flex flex-col gap-2.5 text-left">
-                  <div className="flex justify-between items-center pb-2 border-b border-gray-100">
-                    <span className="font-black text-[11px] text-[#5B4FBE]">Couponscrew</span>
-                    <span className="bg-[#FF5722] text-white text-[7px] px-1 py-0.5 rounded-sm uppercase tracking-wide font-extrabold">DEAL</span>
-                  </div>
-                  
-                  {/* Category Mock Section */}
-                  <div className="bg-[#F8F8FF] rounded-xl p-2 flex items-center gap-1.5 border border-gray-100">
-                    <span className="text-sm">🛍️</span>
-                    <div>
-                      <div className="font-bold text-[8px] text-[#1A1A2E] leading-tight">Fashion Shop</div>
-                      <div className="text-[6px] text-gray-400">Up to 80% Off</div>
-                    </div>
-                  </div>
-
-                  <div className="bg-[#F8F8FF] rounded-xl p-2 flex items-center gap-1.5 border border-gray-100">
-                    <span className="text-sm">📱</span>
-                    <div>
-                      <div className="font-bold text-[8px] text-[#1A1A2E] leading-tight">Electronics Deal</div>
-                      <div className="text-[6px] text-gray-400">70% Verified Off</div>
-                    </div>
-                  </div>
-
-                  <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-2 flex items-center justify-between">
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-sm">✈️</span>
-                      <div>
-                        <div className="font-bold text-[8px] text-indigo-900 leading-tight">Travel Off</div>
-                        <div className="text-[6px] text-indigo-500">Premium active</div>
-                      </div>
-                    </div>
-                    <span className="text-[8px] font-extrabold text-[#5B4FBE] shrink-0">→</span>
-                  </div>
-
-                  {/* Little mock coupon tag */}
-                  <div className="border border-dashed border-orange-200 bg-orange-50 rounded-lg p-2 text-center">
-                    <span className="text-[7px] text-[#FF5722] font-semibold leading-none uppercase">Code: CS50</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Emojis in high-contrast miniature cards around */}
-              {/* Card 1: Top-Left 🛍️ */}
-              <div className="absolute top-4 left-[-10px] bg-white rounded-xl p-2.5 shadow-lg flex items-center justify-center border border-[#E8E8F0] z-20 hover:-translate-y-1 transition-transform cursor-pointer">
-                <span className="text-2xl" role="img" aria-label="shopping bag">🛍️</span>
-              </div>
-
-              {/* Card 2: Top-Right ✈️ */}
-              <div className="absolute top-10 right-0 bg-white rounded-xl p-2.5 shadow-lg flex items-center justify-center border border-[#E8E8F0] z-20 hover:-translate-y-1 transition-transform cursor-pointer">
-                <span className="text-2xl" role="img" aria-label="airplane">✈️</span>
-              </div>
-
-              {/* Card 3: Mid-Left 📱 */}
-              <div className="absolute bottom-28 left-[-20px] bg-white rounded-xl p-2.5 shadow-lg flex items-center justify-center border border-[#E8E8F0] z-20 hover:-translate-y-1 transition-transform cursor-pointer">
-                <span className="text-2xl" role="img" aria-label="mobile phone">📱</span>
-              </div>
-
-              {/* Card 4: Mid-Right 🏠 */}
-              <div className="absolute bottom-24 right-[-10px] bg-white rounded-xl p-2.5 shadow-lg flex items-center justify-center border border-[#E8E8F0] z-20 hover:-translate-y-1 transition-transform cursor-pointer">
-                <span className="text-2xl" role="img" aria-label="house">🏠</span>
-              </div>
-
-              {/* Card 5: Bottom-Left 💄 */}
-              <div className="absolute bottom-6 left-12 bg-white rounded-xl p-2.5 shadow-lg flex items-center justify-center border border-[#E8E8F0] z-20 hover:-translate-y-1 transition-transform cursor-pointer">
-                <span className="text-2xl" role="img" aria-label="lipstick">💄</span>
-              </div>
-
-              {/* Isolated floating styling shapes */}
-              <div className="absolute top-[-30px] left-[40%] bg-[#FF5722] text-white text-[10px] font-black px-2.5 py-1 rounded-full shadow-md z-20 rotate-[-12deg] select-none">
-                85% Off
-              </div>
-
-              <div className="absolute bottom-0 right-[35%] bg-[#22C55E] text-white text-[10px] font-black px-2.5 py-1 rounded-full shadow-md z-20 rotate-[12deg] select-none">
-                100% Verified
-              </div>
-
+          <div className="hidden md:col-span-6 md:flex items-center justify-center relative">
+            <div className="relative w-180 h-80">
+              <NextImage
+                src="https://res.cloudinary.com/dgy1atvb8/image/upload/v1782636941/all-categories_gyvk7u.webp"
+                alt="Browse all categories on CouponScrew"
+                fill
+                sizes="(max-width: 768px) 0px, 320px"
+                referrerPolicy="no-referrer"
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
 

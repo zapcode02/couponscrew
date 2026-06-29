@@ -1,8 +1,9 @@
-'use client';
+﻿'use client';
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
+import NextImage from 'next/image';
+import { useSearchParams, useRouter } from 'next/navigation';
 import {
   ChevronRight,
   ChevronLeft,
@@ -52,11 +53,20 @@ export interface Category {
 
 export default function Stores() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<string>('All Stores');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<string>('Sort: Popular');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [currentPage, setCurrentPage] = useState<number>(1);
+
+  const handleStoreClick = (store: Store) => {
+    if (store.name.toLowerCase() === 'amazon') {
+      router.push('/stores/amazon');
+    } else {
+      setPromoModalStore(store);
+    }
+  };
 
   // Pre-fill search from ?q= URL param (e.g. from Navbar store search)
   useEffect(() => {
@@ -205,15 +215,12 @@ export default function Stores() {
       {/* ==========================================
           SECTION 1  -  HERO BANNER
           ========================================== */}
-      <section className="relative w-full bg-[#F0EEFF] overflow-hidden py-10 md:py-16 px-6">
-        {/* Subtle decorative vector circles */}
-        <div className="absolute top-8 left-1/4 w-12 h-12 bg-[#5B4FBE]/5 rounded-full filter blur-xl pointer-events-none" />
-        <div className="absolute bottom-6 right-1/3 w-36 h-36 bg-[#FF5722]/5 rounded-full filter blur-2xl pointer-events-none" />
-        
+      <section className="relative w-full bg-[#f0eeff] overflow-hidden py-2 md:py-2 px-2 border-b border-[#E8E8F0]">
+
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
           
           {/* Left Column  -  Breadcrumbs & Headlines */}
-          <div className="lg:col-span-7 text-left space-y-4">
+          <div className="lg:col-span-6 text-left space-y-4">
             
             {/* Breadcrumbs */}
             <div className="flex items-center gap-2 text-xs md:text-sm text-[#4A4A6A] select-none">
@@ -255,53 +262,19 @@ export default function Stores() {
 
           </div>
 
-          {/* Right Column  -  Pure CSS Illustration Area (Hidden on Mobile, Visible on md+) */}
-          <div className="hidden lg:col-span-5 lg:flex justify-center items-center relative">
-            
-            {/* Scatters of ◆ Diamonds absolute positions */}
-            <span className="absolute top-4 left-6 text-[#5B4FBE]/30 text-lg select-none">◆</span>
-            <span className="absolute bottom-8 left-1/3 text-[#FF5722]/40 text-xl animate-pulse select-none">◆</span>
-            <span className="absolute top-12 right-12 text-[#FF5722]/30 text-md select-none">◆</span>
-            <span className="absolute bottom-16 right-4 text-[#5B4FBE]/40 text-lg select-none">◆</span>
-
-            {/* Circle Composition */}
-            <div id="illustration-outer" className="w-72 h-72 rounded-full bg-[#5B4FBE]/10 flex items-center justify-center relative animate-pulse" style={{ animationDuration: '6s' }}>
-              
-              {/* Inner Circle */}
-              <div id="illustration-inner" className="w-52 h-52 rounded-full bg-[#5B4FBE]/20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-                
-                {/* Center Core */}
-                <div id="illustration-core" className="bg-[#5B4FBE] w-24 h-24 rounded-full flex items-center justify-center shadow-xl z-10 hover:scale-105 transition-transform duration-300">
-                  <ShoppingBag className="text-white w-12 h-12" />
-                </div>
-              </div>
-
-              {/* Float Card 1: Top Right */}
-              <div className="absolute top-4 -right-2 bg-white rounded-2xl p-3 shadow-md md:flex items-center gap-2 select-none border border-gray-100/50 hover:translate-y-[-2px] transition-transform duration-300 z-20">
-                <span className="text-2xl" role="img" aria-label="store icon">🏪</span>
-                <div className="text-left">
-                  <div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider leading-none">Total Brands</div>
-                  <div className="text-xs font-black text-[#1A1A2E] mt-0.5">500+ Stores</div>
-                </div>
-              </div>
-
-              {/* Float Card 2: Bottom Left */}
-              <div className="absolute bottom-4 -left-6 bg-white rounded-2xl p-3 shadow-md md:flex items-center gap-2 select-none border border-gray-100/50 hover:translate-y-[-2px] transition-transform duration-300 z-20">
-                <span className="text-2xl" role="img" aria-label="tick mark">✅</span>
-                <div className="text-left">
-                  <div className="text-[10px] text-[#22C55E] font-bold uppercase tracking-wider leading-none">Status</div>
-                  <div className="text-xs font-black text-[#1A1A2E] mt-0.5">99% Verified</div>
-                </div>
-              </div>
-
-              {/* Float Card 3: Top Left */}
-              <div className="absolute top-8 -left-12 bg-[#FF5722] rounded-2xl p-3 shadow-lg select-none border border-[#FF5722] hover:translate-y-[-2px] transition-transform duration-300 z-20 text-center text-white min-w-[95px]">
-                <div className="text-lg font-black leading-none">%</div>
-                <div className="text-[9px] font-black tracking-widest mt-1 uppercase">GET DEAL</div>
-              </div>
-
+          {/* Right Column  -  Hero Image (Hidden on Mobile, Visible on lg+) */}
+          <div className="hidden lg:col-span-6 lg:flex justify-center items-center relative">
+            <div className="relative w-full max-2w-md aspect-[4/3]">
+              <NextImage
+                src="https://res.cloudinary.com/dgy1atvb8/image/upload/v1782632462/all-stores_zidl5x.webp"
+                alt="Browse all stores on CouponScrew"
+                fill
+                sizes="(max-width: 1024px) 0px, 448px"
+                referrerPolicy="no-referrer"
+                className="object-contain"
+                priority
+              />
             </div>
-
           </div>
 
         </div>
@@ -452,46 +425,13 @@ export default function Stores() {
               </div>
 
               {/* Sort + View toggle — hidden on mobile, visible on md+ */}
-              <div className="hidden md:flex items-center gap-2 mt-3">
-                <div className="relative shrink-0">
-                  <select
-                    value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value)}
-                    className="appearance-none border border-[#E8E8F0] hover:border-gray-300 focus:border-[#5B4FBE] rounded-xl pl-4 pr-10 py-2.5 text-sm text-[#1A1A2E] font-bold bg-white cursor-pointer focus:outline-none transition-colors w-[180px]"
-                  >
-                    <option value="Sort: Popular">Sort: Popular</option>
-                    <option value="Most Offers">Most Offers</option>
-                    <option value="A to Z">A to Z</option>
-                    <option value="Z to A">Z to A</option>
-                    <option value="Highest Discount">Highest Discount</option>
-                  </select>
-                  <ChevronRight size={14} className="rotate-90 text-gray-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-                </div>
-                <div className="flex items-center gap-1.5 ml-auto">
-                  <button
-                    onClick={() => setViewMode('grid')}
-                    title="Grid View"
-                    className={`p-2.5 rounded-xl cursor-pointer transition-all ${viewMode === 'grid' ? 'bg-[#5B4FBE] text-white' : 'bg-[#F8F8FF] text-[#4A4A6A] hover:bg-[#F0EEFF] hover:text-[#5B4FBE]'}`}
-                  >
-                    <LayoutGrid size={18} />
-                  </button>
-                  <button
-                    onClick={() => setViewMode('list')}
-                    title="List View"
-                    className={`p-2.5 rounded-xl cursor-pointer transition-all ${viewMode === 'list' ? 'bg-[#5B4FBE] text-white' : 'bg-[#F8F8FF] text-[#4A4A6A] hover:bg-[#F0EEFF] hover:text-[#5B4FBE]'}`}
-                  >
-                    <List size={18} />
-                  </button>
-                </div>
-              </div>
+            
 
             </div>
 
             {/* Results count label details */}
             <div className="flex justify-between items-center mb-5 px-1 select-none">
-              <span className="text-sm font-semibold text-[#4A4A6A]">
-                Showing <span className="text-[#5B4FBE] font-black">{filteredAndSorted.length}</span> stores
-              </span>
+             
               {selectedCategory !== 'All Stores' && (
                 <span className="text-xs bg-[#F0EEFF] text-[#5B4FBE] px-3 py-1 rounded-full font-bold">
                   Category: {selectedCategory}
@@ -528,7 +468,7 @@ export default function Stores() {
                 {paginatedStores.map((store) => (
                   <div
                     key={store.id}
-                    onClick={() => setPromoModalStore(store)}
+                    onClick={() => handleStoreClick(store)}
                     className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg hover:border-[#5B4FBE] transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[234px]"
                   >
                     <div>
@@ -582,7 +522,7 @@ export default function Stores() {
                 {paginatedStores.map((store) => (
                   <div
                     key={store.id}
-                    onClick={() => setPromoModalStore(store)}
+                    onClick={() => handleStoreClick(store)}
                     className="bg-white rounded-2xl border border-[#E8E8F0] p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 hover:shadow-md hover:border-[#5B4FBE] transition-all duration-300 group cursor-pointer"
                   >
                     {/* Left: Sq Logo box */}

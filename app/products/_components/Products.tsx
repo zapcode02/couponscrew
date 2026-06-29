@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import NextImage from 'next/image';
 import {
   ChevronRight,
@@ -25,15 +26,12 @@ import {
   ArrowRight,
   TrendingUp, 
   HelpCircle, 
-  CheckCircle, 
-  Clock, 
-  Smartphone, 
-  Laptop, 
-  Shirt, 
+  CheckCircle,
+  Clock,
+  Shirt,
   Sparkles, 
-  Home, 
-  Activity, 
-  ShoppingBag,
+  Home,
+  Activity,
   Sliders,
   Percent
 } from 'lucide-react';
@@ -77,728 +75,95 @@ export interface FilterState {
 // HARDCODED PRODUCTS COLLECTION (40 ITEMS ENTIRELY WRITTEN)
 // ============================================================================
 const INITIAL_PRODUCTS: Product[] = [
-  // Products 1-20
   {
-    id: 'prod-1',
-    name: 'Apple iPhone 14 (128GB) Purple',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Mobiles & Tablets',
-    image: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&q=80',
-    originalPrice: 77900,
-    dealPrice: 59999,
-    discountPercent: 23,
-    rating: 4.6,
-    reviewCount: '12.4K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: true,
-    dealType: 'code',
-    code: 'AMZ23'
-  },
-  {
-    id: 'prod-2',
-    name: 'HP Pavilion 15, 12th Gen Intel Core i5',
-    brand: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Laptops & Accessories',
-    image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&q=80',
-    originalPrice: 66990,
-    dealPrice: 54990,
-    discountPercent: 18,
-    rating: 4.5,
-    reviewCount: '8.7K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: true,
-    dealType: 'code',
-    code: 'FLIP18'
-  },
-  {
-    id: 'prod-3',
-    name: 'boAt Wave Call 2 Plus Smartwatch',
-    brand: 'boAt',
-    brandColor: '#1A1A2E',
-    category: 'Electronics',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80',
-    originalPrice: 2499,
-    dealPrice: 1699,
-    discountPercent: 32,
-    rating: 4.4,
-    reviewCount: '6.3K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'BOAT32'
-  },
-  {
-    id: 'prod-4',
-    name: "Nike Men's Running Shoes",
-    brand: 'Myntra',
-    brandColor: '#FF3F6C',
-    category: 'Fashion & Clothing',
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80',
-    originalPrice: 8999,
-    dealPrice: 2999,
-    discountPercent: 40,
-    rating: 4.3,
-    reviewCount: '3.2K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'MYNTRA40'
-  },
-  {
-    id: 'prod-5',
-    name: 'Sony WH-CH510 Wireless Headphones',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Electronics',
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80',
-    originalPrice: 3990,
-    dealPrice: 2599,
-    discountPercent: 35,
-    rating: 4.4,
-    reviewCount: '9.1K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AMZ35'
-  },
-  {
-    id: 'prod-6',
-    name: 'Armaf Club De Nuit Intense Man Eau de Toilette',
-    brand: 'Nykaa',
-    brandColor: '#FC2779',
-    category: 'Beauty & Personal Care',
-    image: 'https://images.unsplash.com/photo-1541643600914-78b084683702?w=400&q=80',
-    originalPrice: 2999,
-    dealPrice: 2399,
-    discountPercent: 20,
-    rating: 4.6,
-    reviewCount: '10.2K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'NYKAA20'
-  },
-  {
-    id: 'prod-7',
-    name: 'Philips Air Fryer HD9252/90 (4.1L)',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Home & Kitchen',
-    image: 'https://images.unsplash.com/photo-1648146956813-9b0abf044bda?w=400&q=80',
-    originalPrice: 8999,
-    dealPrice: 6199,
-    discountPercent: 31,
-    rating: 4.6,
-    reviewCount: '10.2K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AMZ31'
-  },
-  {
-    id: 'prod-8',
-    name: 'Ariel Matic Liquid Detergent (2L)',
-    brand: 'Flipkart', // Sourced from BigBasket-like via Flipkart
-    brandColor: '#2874F0',
-    category: 'Grocery & Essentials',
-    image: 'https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=400&q=80',
-    originalPrice: 925,
-    dealPrice: 699,
-    discountPercent: 29,
-    rating: 4.5,
-    reviewCount: '5.6K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'BB29'
-  },
-  {
-    id: 'prod-9',
-    name: 'Safari Pentagon 55cms Cabin Luggage',
-    brand: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Other Products',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80',
-    originalPrice: 3999,
-    dealPrice: 2199,
-    discountPercent: 40,
-    rating: 4.4,
-    reviewCount: '2.1K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'SAF40'
-  },
-  {
-    id: 'prod-10',
-    name: 'Rich Dad Poor Dad (Robert Kiyosaki)',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Books & Stationery',
-    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&q=80',
-    originalPrice: 250,
-    dealPrice: 225,
-    discountPercent: 10,
-    rating: 4.7,
-    reviewCount: '11.4K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'AMZ10'
-  },
-  {
-    id: 'prod-11',
-    name: 'Preethi Zodiac Mixer Grinder (750W)',
-    brand: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Home & Kitchen',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80',
-    originalPrice: 5999,
-    dealPrice: 4299,
-    discountPercent: 26,
-    rating: 4.3,
-    reviewCount: '4.9K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'FLIP26'
-  },
-  {
-    id: 'prod-12',
-    name: 'Ray-Ban Aviator Sunglasses',
-    brand: 'Amazon', // Sourced on Amazon Lenskart design
-    brandColor: '#FF9900',
+    id: 'prod-41',
+    name: "Acnos Premium Girl's Heart Shape Bangle Analog Watch, Pack of 2",
+    brand: 'Acnos',
+    brandColor: '#5B4FBE',
     category: 'Watches & Accessories',
-    image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&q=80',
-    originalPrice: 12999,
-    dealPrice: 6499,
-    discountPercent: 50,
-    rating: 4.5,
-    reviewCount: '3.7K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'LENS50'
-  },
-  {
-    id: 'prod-13',
-    name: 'Samsung Galaxy Tab S6 Lite',
-    brand: 'Samsung',
-    brandColor: '#1428A0',
-    category: 'Mobiles & Tablets',
-    image: 'https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?w=400&q=80',
-    originalPrice: 27999,
-    dealPrice: 18999,
-    discountPercent: 32,
-    rating: 4.5,
-    reviewCount: '7.2K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'SAM32'
-  },
-  {
-    id: 'prod-14',
-    name: 'Lakme Absolute Lipstick Set (Pack of 6)',
-    brand: 'Nykaa',
-    brandColor: '#FC2779',
-    category: 'Beauty & Personal Care',
-    image: 'https://images.unsplash.com/photo-1586495777744-4e6232bf2176?w=400&q=80',
-    originalPrice: 1800,
-    dealPrice: 999,
-    discountPercent: 44,
-    rating: 4.4,
-    reviewCount: '5.1K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'NYKAA44'
-  },
-  {
-    id: 'prod-15',
-    name: "Adidas Running T-Shirt (Men's)",
-    brand: 'Ajio',
-    brandColor: '#000000',
-    category: 'Sports & Fitness',
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80',
-    originalPrice: 2499,
-    dealPrice: 1249,
-    discountPercent: 50,
-    rating: 4.2,
-    reviewCount: '2.8K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AJIO50'
-  },
-  {
-    id: 'prod-16',
-    name: 'Instant Pot Duo 7-in-1 Electric Cooker',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Home & Kitchen',
-    image: 'https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&q=80',
-    originalPrice: 9995,
-    dealPrice: 5995,
-    discountPercent: 40,
-    rating: 4.6,
-    reviewCount: '8.9K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AMZ40'
-  },
-  {
-    id: 'prod-17',
-    name: 'Mamaearth Vitamin C Face Wash (200ml)',
-    brand: 'Nykaa',
-    brandColor: '#FC2779',
-    category: 'Beauty & Personal Care',
-    image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&q=80',
-    originalPrice: 699,
-    dealPrice: 419,
-    discountPercent: 40,
-    rating: 4.3,
-    reviewCount: '6.4K',
-    hasFreeDelivery: false,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'NYKAA40C'
-  },
-  {
-    id: 'prod-18',
-    name: "Levi's 511 Slim Fit Men's Jeans",
-    brand: 'Myntra',
-    brandColor: '#FF3F6C',
-    category: 'Fashion & Clothing',
-    image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80',
-    originalPrice: 3999,
-    dealPrice: 1999,
-    discountPercent: 50,
-    rating: 4.5,
-    reviewCount: '9.3K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'MYNTRA50'
-  },
-  {
-    id: 'prod-19',
-    name: 'Wildcraft Backpack 45L (Black)',
-    brand: 'Ajio',
-    brandColor: '#000000',
-    category: 'Sports & Fitness',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80',
-    originalPrice: 3495,
-    dealPrice: 1747,
-    discountPercent: 50,
-    rating: 4.4,
-    reviewCount: '3.1K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AJIO50B'
-  },
-  {
-    id: 'prod-20',
-    name: 'boAt Airdopes 141 Wireless Earbuds',
-    brand: 'boAt',
-    brandColor: '#1A1A2E',
-    category: 'Electronics',
-    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80',
-    originalPrice: 4490,
-    dealPrice: 1299,
-    discountPercent: 71,
-    rating: 4.2,
-    reviewCount: '15.6K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: true,
-    dealType: 'code',
-    code: 'BOAT71'
-  },
-
-  // Products 21-40 (New coverage requested)
-  {
-    id: 'prod-21',
-    name: 'Hamleys Play-Doh Castle Builder Creative Toy',
-    brand: 'Hamleys',
-    brandColor: '#E2001A',
-    category: 'Toys & Games',
-    image: 'https://images.unsplash.com/photo-1515488042361-404e9250afef?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80',
     originalPrice: 1999,
-    dealPrice: 1399,
-    discountPercent: 30,
-    rating: 4.5,
-    reviewCount: '1.2K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'HAM30'
-  },
-  {
-    id: 'prod-22',
-    name: 'Fastrack Reflex Beat+ High-Performance Fitness Band',
-    brand: 'Fastrack',
-    brandColor: '#101010',
-    category: 'Watches & Accessories',
-    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80',
-    originalPrice: 3495,
-    dealPrice: 1747,
-    discountPercent: 50,
-    rating: 4.2,
-    reviewCount: '4.1K',
+    dealPrice: 299,
+    discountPercent: 85,
+    rating: 4.0,
+    reviewCount: '2.3K',
     hasFreeDelivery: true,
     isWishlisted: false,
     isFeatured: false,
     dealType: 'code',
-    code: 'FAST50'
+    code: 'SAVE50'
   },
   {
-    id: 'prod-23',
-    name: 'MuscleBlaze Biozyme Premium Whey Protein (1kg)',
-    brand: 'HealthKart',
-    brandColor: '#00A859',
-    category: 'Health & Supplements',
-    image: 'https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=400&q=80',
-    originalPrice: 3899,
-    dealPrice: 3119,
-    discountPercent: 20,
-    rating: 4.6,
-    reviewCount: '8.4K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'MB20'
-  },
-  {
-    id: 'prod-24',
-    name: 'Heads Up For Tails Orthopaedic Memory Foam Dog Bed',
-    brand: 'Heads Up For Tails',
-    brandColor: '#FFC72C',
-    category: 'Pet Supplies',
-    image: 'https://images.unsplash.com/photo-1541599540903-216a46cc1ad6?w=400&q=80',
-    originalPrice: 4500,
-    dealPrice: 3150,
-    discountPercent: 30,
-    rating: 4.7,
-    reviewCount: '950',
+    id: 'prod-42',
+    name: 'Minimalist Anti-Pigmentation Kit, Face Wash, Serum & Sunscreen Combo',
+    brand: 'Minimalist',
+    brandColor: '#5B4FBE',
+    category: 'Beauty & Personal Care',
+    image: 'https://images.unsplash.com/photo-1556228720-da4e95ac3699?w=400&q=80',
+    originalPrice: 1299,
+    dealPrice: 1147,
+    discountPercent: 12,
+    rating: 4.1,
+    reviewCount: '306',
     hasFreeDelivery: true,
     isWishlisted: false,
     isFeatured: false,
     dealType: 'code',
-    code: 'HUFT30'
+    code: 'SAVE50'
   },
   {
-    id: 'prod-25',
-    name: 'Firstcry Babyhug Convertible Premium Wooden Cot',
-    brand: 'Firstcry',
-    brandColor: '#FF7043',
-    category: 'Baby & Kids',
-    image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&q=80',
-    originalPrice: 14999,
-    dealPrice: 10499,
-    discountPercent: 30,
-    rating: 4.4,
-    reviewCount: '1.8K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: true,
-    dealType: 'deal',
-    code: 'CRY30'
-  },
-  {
-    id: 'prod-26',
-    name: "Titan Neo Classic Analog Men's Black Dial Watch",
-    brand: 'Titan',
-    brandColor: '#B08A42',
-    category: 'Watches & Accessories',
-    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&q=80',
-    originalPrice: 6995,
-    dealPrice: 5246,
-    discountPercent: 25,
-    rating: 4.6,
-    reviewCount: '3.2K',
+    id: 'prod-43',
+    name: "DEELMO Men's Cotton Blend Mandarin Collar Casual Short Kurta",
+    brand: 'DEELMO',
+    brandColor: '#5B4FBE',
+    category: 'Fashion & Clothing',
+    image: 'https://images.unsplash.com/photo-1622445275576-721325763afe?w=400&q=80',
+    originalPrice: 2199,
+    dealPrice: 479,
+    discountPercent: 78,
+    rating: 3.6,
+    reviewCount: '2.3K',
     hasFreeDelivery: true,
     isWishlisted: false,
     isFeatured: false,
     dealType: 'code',
-    code: 'TITAN25'
+    code: 'SAVE50'
   },
   {
-    id: 'prod-27',
-    name: 'Hamleys Remote Controlled High-Speed Buggy Racing Car',
-    brand: 'Hamleys',
-    brandColor: '#E2001A',
-    category: 'Toys & Games',
-    image: 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=400&q=80',
-    originalPrice: 2999,
-    dealPrice: 1799,
-    discountPercent: 40,
-    rating: 4.3,
-    reviewCount: '2.1K',
+    id: 'prod-44',
+    name: 'Desidiya Moon Crystal Ball Night Light with Wooden Base',
+    brand: 'Desidiya',
+    brandColor: '#5B4FBE',
+    category: 'Home & Kitchen',
+    image: 'https://images.unsplash.com/photo-1532634896-26909d0d4b6a?w=400&q=80',
+    originalPrice: 1999,
+    dealPrice: 197,
+    discountPercent: 90,
+    rating: 4.0,
+    reviewCount: '5.5K',
     hasFreeDelivery: true,
     isWishlisted: false,
     isFeatured: false,
     dealType: 'code',
-    code: 'HAM40'
+    code: 'SAVE45'
   },
   {
-    id: 'prod-28',
-    name: 'Car Dashboard Aromatherapy Air Purifying Gel (Lemon)',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Automotive',
-    image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=400&q=80',
+    id: 'prod-45',
+    name: 'PulGos 15-in-1 Foldable Pushup Board for Home Workout',
+    brand: 'PulGos',
+    brandColor: '#5B4FBE',
+    category: 'Sports & Fitness',
+    image: 'https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=400&q=80',
     originalPrice: 499,
     dealPrice: 299,
     discountPercent: 40,
-    rating: 4.1,
-    reviewCount: '6.8K',
-    hasFreeDelivery: false,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AMZCAR40'
-  },
-  {
-    id: 'prod-29',
-    name: 'Optimum Nutrition (ON) Gold Standard Essential Amino BCAA',
-    brand: 'HealthKart',
-    brandColor: '#00A859',
-    category: 'Health & Supplements',
-    image: 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=400&q=80',
-    originalPrice: 2999,
-    dealPrice: 2399,
-    discountPercent: 20,
-    rating: 4.5,
-    reviewCount: '4.7K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'ONBCAA20'
-  },
-  {
-    id: 'prod-30',
-    name: 'Heads Up For Tails Organic Catnip Playing Spray',
-    brand: 'Heads Up For Tails',
-    brandColor: '#FFC72C',
-    category: 'Pet Supplies',
-    image: 'https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?w=400&q=80',
-    originalPrice: 599,
-    dealPrice: 449,
-    discountPercent: 25,
-    rating: 4.4,
-    reviewCount: '620',
-    hasFreeDelivery: false,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'HUFT25'
-  },
-  {
-    id: 'prod-31',
-    name: 'Firstcry Babyhug Soft Premium Pants Diapers (Pack of 80)',
-    brand: 'Firstcry',
-    brandColor: '#FF7043',
-    category: 'Baby & Kids',
-    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=400&q=80',
-    originalPrice: 1299,
-    dealPrice: 899,
-    discountPercent: 30,
-    rating: 4.5,
-    reviewCount: '7.1K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'CRY30D'
-  },
-  {
-    id: 'prod-32',
-    name: 'Fastrack Monochrome analog Minimalist Casual Watch',
-    brand: 'Fastrack',
-    brandColor: '#101010',
-    category: 'Watches & Accessories',
-    image: 'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=400&q=80',
-    originalPrice: 1995,
-    dealPrice: 1396,
-    discountPercent: 30,
-    rating: 4.3,
-    reviewCount: '5.4K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'FAST30'
-  },
-  {
-    id: 'prod-33',
-    name: 'Windshield Washer Fluid Multi-Purpose Concentrate (5L)',
-    brand: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Automotive',
-    image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&q=80',
-    originalPrice: 799,
-    dealPrice: 479,
-    discountPercent: 40,
-    rating: 4.2,
-    reviewCount: '1.9K',
+    rating: 3.8,
+    reviewCount: '1K',
     hasFreeDelivery: false,
     isWishlisted: false,
     isFeatured: false,
     dealType: 'code',
-    code: 'FLIPAUTO40'
-  },
-  {
-    id: 'prod-34',
-    name: 'Wipro Premium High-Gloss Car Liquid Carnauba Wax (250ml)',
-    brand: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Automotive',
-    image: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=400&q=80',
-    originalPrice: 399,
-    dealPrice: 279,
-    discountPercent: 30,
-    rating: 4.3,
-    reviewCount: '3.2K',
-    hasFreeDelivery: false,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'AMZWAX30'
-  },
-  {
-    id: 'prod-35',
-    name: 'Multivitamin Health Gummies for Growing Kids (60 Count)',
-    brand: 'HealthKart',
-    brandColor: '#00A859',
-    category: 'Health & Supplements',
-    image: 'https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400&q=80',
-    originalPrice: 899,
-    dealPrice: 599,
-    discountPercent: 33,
-    rating: 4.6,
-    reviewCount: '2.4K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'HKKIDS33'
-  },
-  {
-    id: 'prod-36',
-    name: 'Premium Roasted Chicken Jerky Healthy Dog Treats (200g)',
-    brand: 'Heads Up For Tails',
-    brandColor: '#FFC72C',
-    category: 'Pet Supplies',
-    image: 'https://images.unsplash.com/photo-1608454367599-c1139e3305a4?w=400&q=80',
-    originalPrice: 499,
-    dealPrice: 399,
-    discountPercent: 20,
-    rating: 4.8,
-    reviewCount: '1.5K',
-    hasFreeDelivery: false,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'HUFTDOG20'
-  },
-  {
-    id: 'prod-37',
-    name: 'Hamleys Monopoly Supreme Deluxe Edition Board Game',
-    brand: 'Hamleys',
-    brandColor: '#E2001A',
-    category: 'Toys & Games',
-    image: 'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=400&q=80',
-    originalPrice: 1999,
-    dealPrice: 1599,
-    discountPercent: 20,
-    rating: 4.7,
-    reviewCount: '3.9K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'MONO20'
-  },
-  {
-    id: 'prod-38',
-    name: 'Firstcry Babyhug Feather-Comfort Lightweight Baby Stroller',
-    brand: 'Firstcry',
-    brandColor: '#FF7043',
-    category: 'Baby & Kids',
-    image: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?w=400&q=80',
-    originalPrice: 7999,
-    dealPrice: 4799,
-    discountPercent: 40,
-    rating: 4.5,
-    reviewCount: '1.1K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'deal',
-    code: 'CRYSTROLLER'
-  },
-  {
-    id: 'prod-39',
-    name: 'Titan Karishma Classic Gold Plated Analog Watch with Day & Date',
-    brand: 'Titan',
-    brandColor: '#B08A42',
-    category: 'Watches & Accessories',
-    image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=400&q=80',
-    originalPrice: 3295,
-    dealPrice: 2636,
-    discountPercent: 20,
-    rating: 4.4,
-    reviewCount: '4.8K',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'TITAN20'
-  },
-  {
-    id: 'prod-40',
-    name: 'Multi-Level Premium Cat Tree Condo Scratching Post Play House',
-    brand: 'Heads Up For Tails',
-    brandColor: '#FFC72C',
-    category: 'Pet Supplies',
-    image: 'https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=400&q=80',
-    originalPrice: 5999,
-    dealPrice: 3599,
-    discountPercent: 40,
-    rating: 4.6,
-    reviewCount: '870',
-    hasFreeDelivery: true,
-    isWishlisted: false,
-    isFeatured: true,
-    dealType: 'deal',
-    code: 'HUFTTREE'
+    code: 'SAVE40'
   }
 ];
 
@@ -811,23 +176,12 @@ interface CategoryItem {
 }
 
 const SIDEBAR_CATEGORIES: CategoryItem[] = [
-  { name: 'All Products', count: '10,000+' },
-  { name: 'Mobiles & Tablets', count: '1,245' },
-  { name: 'Laptops & Accessories', count: '1,876' },
-  { name: 'Fashion & Clothing', count: '2,345' },
-  { name: 'Electronics', count: '1,987' },
-  { name: 'Home & Kitchen', count: '1,234' },
-  { name: 'Beauty & Personal Care', count: '987' },
-  { name: 'Sports & Fitness', count: '657' },
-  { name: 'Toys & Games', count: '543' },
-  { name: 'Automotive', count: '321' },
-  { name: 'Books & Stationery', count: '432' },
-  { name: 'Grocery & Essentials', count: '1,023' },
-  { name: 'Health & Supplements', count: '678' },
-  { name: 'Pet Supplies', count: '234' },
-  { name: 'Baby & Kids', count: '345' },
-  { name: 'Watches & Accessories', count: '278' },
-  { name: 'Other Products', count: '658' }
+  { name: 'All Products', count: '5' },
+  { name: 'Watches & Accessories', count: '1' },
+  { name: 'Beauty & Personal Care', count: '1' },
+  { name: 'Fashion & Clothing', count: '1' },
+  { name: 'Home & Kitchen', count: '1' },
+  { name: 'Sports & Fitness', count: '1' }
 ];
 
 interface BrandItem {
@@ -836,20 +190,11 @@ interface BrandItem {
 }
 
 const SIDEBAR_BRANDS: BrandItem[] = [
-  { name: 'Amazon', count: '2,342' },
-  { name: 'Flipkart', count: '1,876' },
-  { name: 'Myntra', count: '1,234' },
-  { name: 'Nykaa', count: '987' },
-  { name: 'Ajio', count: '765' },
-  { name: 'boAt', count: '543' },
-  { name: 'Samsung', count: '432' },
-  { name: 'Nike', count: '321' },
-  { name: 'Titan', count: '198' },
-  { name: 'Fastrack', count: '145' },
-  { name: 'Firstcry', count: '189' },
-  { name: 'Hamleys', count: '122' },
-  { name: 'HealthKart', count: '96' },
-  { name: 'Heads Up For Tails', count: '82' }
+  { name: 'Acnos', count: '1' },
+  { name: 'Minimalist', count: '1' },
+  { name: 'DEELMO', count: '1' },
+  { name: 'Desidiya', count: '1' },
+  { name: 'PulGos', count: '1' }
 ];
 
 const DISCOUNT_TIERS = [
@@ -861,6 +206,7 @@ const DISCOUNT_TIERS = [
 ];
 
 export default function Products() {
+  const router = useRouter();
   // Global product list state to persist wishlisted items in memory
   const [products, setProducts] = useState<Product[]>(INITIAL_PRODUCTS);
 
@@ -879,10 +225,6 @@ export default function Products() {
   const [categoriesExpanded, setCategoriesExpanded] = useState<boolean>(false);
   const [brandsExpanded, setBrandsExpanded] = useState<boolean>(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState<boolean>(false);
-
-  // For Interactive Activation/Reveal Promo Modal
-  const [activatedProduct, setActivatedProduct] = useState<Product | null>(null);
-  const [isCodeCopied, setIsCodeCopied] = useState<boolean>(false);
 
   // Dynamic filter lists calculation
   const displayedCategories = useMemo(() => {
@@ -911,16 +253,26 @@ export default function Products() {
   const handleGetDeal = (product: Product, e: React.MouseEvent) => {
     e.stopPropagation();
     e.preventDefault();
-    setActivatedProduct(product);
-    setIsCodeCopied(false);
-  };
-
-  const handleCopyCode = (code: string) => {
-    navigator.clipboard.writeText(code);
-    setIsCodeCopied(true);
-    setTimeout(() => {
-      setIsCodeCopied(false);
-    }, 3000);
+    if (product.id === 'prod-41' || product.name.toLowerCase().includes('heart shape bangle')) {
+      router.push('/products/acnos-bangle-watch-pack-of-2');
+      return;
+    }
+    if (product.id === 'prod-42' || product.name.toLowerCase().includes('anti-pigmentation')) {
+      router.push('/products/minimalist-anti-pigmentation-kit');
+      return;
+    }
+    if (product.id === 'prod-43' || product.name.toLowerCase().includes('mandarin collar')) {
+      router.push('/products/deelmo-mens-mandarin-collar-kurta');
+      return;
+    }
+    if (product.id === 'prod-44' || product.name.toLowerCase().includes('moon crystal ball')) {
+      router.push('/products/desidiya-moon-crystal-night-light');
+      return;
+    }
+    if (product.id === 'prod-45' || product.name.toLowerCase().includes('pushup board')) {
+      router.push('/products/pulgos-15-in-1-pushup-board');
+      return;
+    }
   };
 
   // Check if any filter is active so we conditional render the Clear Filters button
@@ -1065,7 +417,7 @@ export default function Products() {
       {/* ============================================================================
           SECTION 1  -  HERO BANNER
           ============================================================================ */}
-      <section className="relative w-full bg-[#F0EEFF] overflow-hidden min-h-[260px] py-10 px-6">
+      <section className="relative w-full bg-[#F0EEFF] overflow-hidden py-5 px-6">
         {/* Subtle scattered purple and orange CSS diamonds */}
         <span className="absolute top-10 left-[15%] text-[#5B4FBE]/30 text-xl pointer-events-none select-none">◆</span>
         <span className="absolute bottom-12 left-[35%] text-[#FF5722]/30 text-base pointer-events-none select-none">◆</span>
@@ -1074,8 +426,8 @@ export default function Products() {
 
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
           
-          {/* Left Column (55%) */}
-          <div className="md:col-span-7 flex flex-col items-start space-y-4">
+          {/* Left Column (50%) */}
+          <div className="md:col-span-6 flex flex-col items-start space-y-4">
             
             {/* Breadcrumbs */}
             <div className="inline-flex items-center gap-1.5 text-sm text-[#4A4A6A]">
@@ -1089,7 +441,7 @@ export default function Products() {
             </h1>
 
             <p className="text-[#4A4A6A] text-sm md:text-base leading-relaxed max-w-md">
-              10,000+ products. 500+ brands. Every one already on deal — verified before it lists.
+              5 hand-picked products. 5 trusted brands. Every one already on deal — verified before it lists.
             </p>
 
             {/* 4 Stat Mini Cards Row */}
@@ -1099,7 +451,7 @@ export default function Products() {
                   <Package className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
-                  <div className="font-extrabold text-[#1A1A2E] text-base leading-tight truncate">10,000+</div>
+                  <div className="font-extrabold text-[#1A1A2E] text-base leading-tight truncate">5</div>
                   <div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-0.5">Products</div>
                 </div>
               </div>
@@ -1109,20 +461,12 @@ export default function Products() {
                   <Store className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
-                  <div className="font-extrabold text-[#1A1A2E] text-base leading-tight truncate">500+</div>
+                  <div className="font-extrabold text-[#1A1A2E] text-base leading-tight truncate">5</div>
                   <div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-0.5">Brands</div>
                 </div>
               </div>
 
-              <div id="stat-prices-claim" className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3.5 shadow-xs">
-                <div className="bg-[#F0FDF4] p-2.5 rounded-xl text-[#22C55E] shrink-0">
-                  <Tag className="w-5 h-5" />
-                </div>
-                <div className="min-w-0">
-                  <div className="font-extrabold text-[#1A1A2E] text-sm leading-tight truncate">Best Prices</div>
-                  <div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-0.5">Every Day</div>
-                </div>
-              </div>
+            
 
               <div id="stat-verified-claim" className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3.5 shadow-xs">
                 <div className="bg-[#FEFBE8] p-2.5 rounded-xl text-[#F59E0B] shrink-0">
@@ -1137,50 +481,18 @@ export default function Products() {
 
           </div>
 
-          {/* Right Column (45%) */}
-          <div className="hidden md:col-span-5 md:flex items-center justify-center relative">
-            {/* Large Decorative CSS Illustration */}
-            <div className="w-6 relative mx-auto flex items-center justify-center">
-              
-              {/* Outer circle layout */}
-              <div className="absolute w-64 h-64 rounded-full bg-[#5B4FBE]/10 animate-pulse duration-10000" />
-              
-              {/* Central Premium Container Box */}
-              <div className="bg-white rounded-3xl p-6 shadow-xl w-48 h-48 flex flex-col items-center justify-center relative z-10 border border-[#E8E8F0] select-none hover:scale-[1.03] transition-transform duration-300">
-                <span className="text-6xl" role="img" aria-label="shopping cart">🛒</span>
-                <span className="text-[#FF5722] font-black text-4xl mt-3 tracking-tighter">% OFF</span>
-              </div>
-
-              {/* Floating Cards (Absolute) */}
-              
-              {/* Top-Right Floating Panel */}
-              <div className="absolute top-[-44px] right-[-54px] bg-[#FF5722] rounded-2xl p-3 shadow-lg flex items-center gap-2 border border-orange-600/10 z-20 hover:scale-105 transition-transform">
-                <span className="text-2xl" role="img" aria-label="bags">🛍️</span>
-                <div className="text-left leading-tight text-white select-none">
-                  <div className="text-[10px] text-orange-100 font-bold uppercase tracking-wider">Top Stores</div>
-                  <div className="text-xs font-black">500+ Brands</div>
-                </div>
-              </div>
-
-              {/* Bottom-Left Floating Panel */}
-              <div className="absolute bottom-[-34px] left-[-64px] bg-[#5B4FBE] rounded-2xl p-3 shadow-lg flex items-center gap-2 border border-indigo-700/10 z-20 hover:scale-105 transition-transform">
-                <span className="text-xl" role="img" aria-label="check square">✅</span>
-                <div className="text-left leading-tight text-white select-none">
-                  <div className="text-[10px] text-indigo-100 font-bold uppercase tracking-wider">Verified</div>
-                  <div className="text-xs font-black">100% Safe</div>
-                </div>
-              </div>
-
-              {/* Top-Left Small Badge */}
-              <div className="absolute top-[-20px] left-[-48px] bg-[#FFD700] p-2.5 rounded-xl shadow-md border border-[#FFD700]/10 shrink-0 z-20 hover:rotate-12 transition-transform">
-                <span className="text-xl" role="img" aria-label="gift">🎁</span>
-              </div>
-
-              {/* Bottom-Right Small Badge */}
-              <div className="absolute bottom-[-20px] right-[-44px] bg-[#22C55E] p-2.5 rounded-xl shadow-md border border-emerald-600/10 shrink-0 z-20 text-white font-black text-lg leading-none hover:-rotate-12 transition-transform">
-                %
-              </div>
-
+          {/* Right Column (50%) */}
+          <div className="hidden md:col-span-6 md:flex items-center justify-center relative">
+            <div className="relative w-full max-2w-md aspect-[4/3]">
+              <NextImage
+                src="https://res.cloudinary.com/dgy1atvb8/image/upload/v1782634507/all-product_dtkmbs.jpg"
+                alt="Browse all products on CouponScrew"
+                fill
+                sizes="(max-width: 1024px) 0px, 448px"
+                referrerPolicy="no-referrer"
+                className="object-contain rounded-3xl"
+                priority
+              />
             </div>
           </div>
 
@@ -2051,141 +1363,6 @@ export default function Products() {
         </div>
       )}
 
-      {/* ============================================================================
-          INTERACTIVE PROMO CODE REVEAL ACTIVATION CONFIRM MODAL OVERLAY
-          ============================================================================ */}
-      {activatedProduct && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-6 select-none" aria-modal="true" role="dialog">
-          
-          {/* Blur backdrop overlay background */}
-          <div
-            onClick={() => setActivatedProduct(null)}
-            className="absolute inset-0 bg-black/60 transition-opacity backdrop-blur-md cursor-pointer animate-fade-in"
-          />
-
-          {/* Modal Container Core Card */}
-          <div className="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative z-10 border border-[#E8E8F0] overflow-hidden text-center transform scale-100 transition-all">
-            
-            {/* Elegant visual brand top circle layout header */}
-            <div className="w-16 h-16 rounded-full bg-[#F0EEFF] text-[#5B4FBE] flex items-center justify-center mx-auto relative z-10 mb-4 shadow-sm">
-              <Sparkles className="w-7 h-7 text-[#5B4FBE]" />
-            </div>
-
-            {/* Modal Title */}
-            <h3 className="text-2xl font-black text-[#1A1A2E] leading-tight px-2">
-              Deal Activated Successfully!
-            </h3>
-            
-            <p className="text-[#4A4A6A] text-sm mt-2 leading-relaxed">
-              We have locked in the discount from <span className="font-extrabold text-[#5B4FBE]">{activatedProduct.brand}</span> for you!
-            </p>
-
-            {/* Divider */}
-            <div className="my-5 border-t border-dashed border-gray-200" />
-
-            {/* Product Card summary */}
-            <div className="flex items-center gap-3.5 bg-[#F8F8FF] p-3 rounded-2xl border border-[#E8E8F0] text-left">
-              <div className="w-16 h-16 rounded-xl bg-white p-1 border border-gray-100 flex items-center justify-center shrink-0">
-                <NextImage
-                  src={activatedProduct.image}
-                  alt={activatedProduct.name}
-                  width={64}
-                  height={64}
-                  className="w-full h-full object-contain rounded-lg"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="min-w-0 flex-1">
-                <span className="bg-[#FFF2ED] text-[#FF5722] text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded mr-1.5 inline-block">
-                  {activatedProduct.discountPercent}% OFF
-                </span>
-                <h4 className="font-extrabold text-[#1A1A2E] text-xs leading-snug line-clamp-2 mt-1">
-                  {activatedProduct.name}
-                </h4>
-                <div className="text-sm font-black text-[#1A1A2E] mt-1 leading-none">
-                  ₹{activatedProduct.dealPrice.toLocaleString('en-IN')}{' '}
-                  <span className="line-through text-[11px] text-gray-400 font-bold ml-1.5 leading-none">
-                    ₹{activatedProduct.originalPrice.toLocaleString('en-IN')}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Code Box Area */}
-            <div className="mt-6 space-y-3 text-left">
-              <label className="text-xs text-gray-400 font-extrabold uppercase tracking-widest pl-1">
-                {activatedProduct.dealType === 'code' ? 'COUPON PROMO CODE' : 'DIRECT EXCLUSIVE DEAL LINK'}
-              </label>
-
-              {activatedProduct.dealType === 'code' ? (
-                /* Interactive copy layout */
-                <div className="flex items-stretch border border-[#E8E8F0] rounded-2xl overflow-hidden shadow-xs bg-[#FBFBFF]">
-                  <div className="flex-1 font-mono text-center font-black tracking-widest text-[#1A1A2E] text-lg flex items-center justify-center p-3.5 bg-white border-r border-[#E8E8F0]">
-                    {activatedProduct.code}
-                  </div>
-                  
-                  <button
-                    onClick={() => handleCopyCode(activatedProduct.code)}
-                    className={`px-5 font-black text-xs uppercase tracking-wider transition-colors shrink-0 focus:outline-none cursor-pointer ${
-                      isCodeCopied
-                        ? 'bg-[#22C55E] text-white'
-                        : 'bg-[#5B4FBE] hover:bg-indigo-700 text-white'
-                    }`}
-                  >
-                    {isCodeCopied ? 'Copied! ✓' : 'Copy Code'}
-                  </button>
-                </div>
-              ) : (
-                /* Deal direct activated link style */
-                <div className="border border-[#EAFDF3] bg-[#F0FDF4] text-[#22C55E] rounded-2xl p-4 text-center">
-                  <div className="font-black text-sm uppercase tracking-wide">✓ No Code Required</div>
-                  <div className="text-xs text-[#22C55E]/90 mt-1 font-semibold">
-                    The highest discount has been auto-applied directly on checkout. Enjoy!
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Helper info tag verified */}
-            <div className="mt-4 flex items-center justify-center gap-1.5 text-xs text-gray-500 font-medium">
-              <ShieldCheck className="text-[#22C55E] w-4.5 h-4.5 shrink-0" />
-              <span>Manually verified and guaranteed active.</span>
-            </div>
-
-            {/* Closing action buttons */}
-            <div className="mt-6 pt-1 grid grid-cols-2 gap-3">
-              <button
-                onClick={() => setActivatedProduct(null)}
-                className="w-full border border-gray-200 text-gray-400 hover:text-gray-600 hover:bg-gray-50 py-3 rounded-xl text-xs font-black uppercase tracking-wider transition-all focus:outline-none cursor-pointer"
-              >
-                Go Back
-              </button>
-
-              <button
-                onClick={() => {
-                  setActivatedProduct(null);
-                  window.open('https://' + activatedProduct.brand.toLowerCase() + '.com', '_blank');
-                }}
-                className="w-full bg-[#FF5722] hover:bg-orange-600 text-white py-3 rounded-xl text-xs font-black uppercase tracking-wider transition-all active:scale-[0.98] shadow-md focus:outline-none cursor-pointer"
-              >
-                Go To Brand Store
-              </button>
-            </div>
-
-            {/* Quick close cross circle absolute */}
-            <button
-              onClick={() => setActivatedProduct(null)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-1.5 rounded-full transition-colors focus:outline-none cursor-pointer"
-              aria-label="Close Promo modal Activation"
-            >
-              <X size={16} />
-            </button>
-
-          </div>
-
-        </div>
-      )}
-
       <section className="bg-[#F8F8FF] py-16 px-6 border-t border-[#E8E8F0]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-10">
 
@@ -2199,17 +1376,17 @@ export default function Products() {
               <span className="text-xs font-black text-[#5B4FBE] uppercase tracking-widest">Catalog Overview</span>
             </div>
             <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-              Browse 10,000+ Products — All With Active Deals
+              5 Hand-Picked Products — All With Active Deals
             </h2>
             <div className="mt-4 space-y-3 text-sm text-[#4A4A6A] leading-relaxed">
               <p>
                 Most shopping platforms show you products. Couponscrew is a discount code website that shows you products that are actually on deal — right now, today, with the savings already calculated before you even click.
               </p>
               <p>
-                Every product listed on this page comes with a verified discount. You can see exactly how much you are saving — in real amounts, not just percentages — before you decide to buy. Whether it is a pair of boAt earbuds at 71% off, a smartwatch with a verified price drop, or a premium baby cot with a confirmed markdown — what you see here is what you actually pay less for.
+                Every product listed on this page comes with a verified discount. You can see exactly how much you are saving — in real amounts, not just percentages — before you decide to buy. Whether it is a fashion accessory at 85% off, a skincare combo with a verified price drop, or a home workout kit with a confirmed markdown — what you see here is what you actually pay less for.
               </p>
               <p>
-                With 10,000+ products across categories like Mobiles & Tablets, Laptops & Accessories, Fashion & Clothing, Electronics, Home & Kitchen, Beauty & Personal Care, and Sports & Fitness — Couponscrew&apos;s Products page is built for shoppers who want to browse deals the same way they browse any top shopping platform, but with one critical difference: every product here is already discounted.
+                Across categories like Watches &amp; Accessories, Beauty &amp; Personal Care, Fashion &amp; Clothing, Home &amp; Kitchen, and Sports &amp; Fitness — Couponscrew&apos;s Products page is built for shoppers who want to browse deals the same way they browse any top shopping platform, but with one critical difference: every product here is already discounted, and every listing is hand-verified rather than auto-imported in bulk.
               </p>
               <p>
                 Use the category filter on the left to narrow down by what you are shopping for. Use the price range slider to stay within budget. Sort by highest savings, newest arrivals, or biggest discount percentage. Then click on any product that interests you and get the deal instantly.
@@ -2228,7 +1405,7 @@ export default function Products() {
             </h2>
             <div className="mt-4 space-y-3 text-sm text-[#4A4A6A] leading-relaxed">
               <p>
-                Listing 10,000+ products with accurate savings figures is not something that happens automatically. Not every discount website bothers with this level of upkeep. Here is how Couponscrew keeps the Products page reliable and genuinely useful.
+                Listing products with accurate savings figures is not something that happens automatically. Not every discount website bothers with this level of upkeep, which is why Couponscrew keeps this catalog small and hand-verified rather than padded out with thousands of unchecked listings. Here is how Couponscrew keeps the Products page reliable and genuinely useful.
               </p>
               <ul className="space-y-3 pl-1 mt-2">
                 <li className="flex gap-2 items-start">
@@ -2241,7 +1418,7 @@ export default function Products() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="w-1.5 h-1.5 bg-[#22C55E] rounded-full mt-2 shrink-0"></span>
-                  <p><strong>Ratings and reviews included.</strong> Every product card shows the real user rating and review count from the retailer. A boAt Airdopes listing showing 4.2 stars from 15,600 reviews gives you real purchase confidence — not just a deal pitch.</p>
+                  <p><strong>Ratings and reviews included.</strong> Every product card shows the real user rating and review count from the retailer. A listing showing thousands of genuine reviews gives you real purchase confidence — not just a deal pitch.</p>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="w-1.5 h-1.5 bg-[#22C55E] rounded-full mt-2 shrink-0"></span>
@@ -2265,44 +1442,34 @@ export default function Products() {
               Product Categories You Can Shop With Deals Today
             </h2>
             <p className="mt-3 text-sm text-[#4A4A6A] leading-relaxed">
-              Couponscrew&apos;s Products page covers every major category shoppers browse regularly. Here is what is available right now:
+              Couponscrew&apos;s Products page is small by design — every category below has at least one hand-verified deal live right now:
             </p>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 {
-                  icon: <Smartphone className="w-4 h-4 text-[#FF9900]" />,
-                  title: "Mobiles & Tablets — 1,245+ products",
-                  body: "Smartphones from Samsung, OnePlus, Realme, Xiaomi, Apple, and Vivo. Tablets from Lenovo, Samsung, and Apple. This is one of the highest-savings categories on the platform — deals here regularly hit 20% to 40% off, with rupee savings running into thousands on flagship models."
-                },
-                {
-                  icon: <Laptop className="w-4 h-4 text-[#2874F0]" />,
-                  title: "Laptops & Accessories — 1,876+ products",
-                  body: "Laptops from Dell, HP, Lenovo, Asus, and Apple. Accessories including keyboards, mice, laptop bags, cooling pads, and USB hubs. A well-timed deal on a laptop here can save you a meaningful amount depending on the model — especially on mid-range and premium configs."
-                },
-                {
-                  icon: <Shirt className="w-4 h-4 text-[#FF3F6C]" />,
-                  title: "Fashion & Clothing — 2,345+ products",
-                  body: "The largest category on Couponscrew by product count. Clothing, footwear, watches, sunglasses, bags, and accessories from brands like Nike, Adidas, Puma, Levi's, H&M, and dozens of global and homegrown labels. Fashion deals here move fast — styles with deep discounts sell out quickly."
-                },
-                {
-                  icon: <ShoppingBag className="w-4 h-4 text-[#FC8019]" />,
-                  title: "Electronics — 1,987+ products",
-                  body: "Earbuds, smartwatches, headphones, speakers, cameras, smart TVs, and home theatre systems. Brands like boAt, Sony, JBL, Samsung, LG, and Bose are regularly featured with significant markdowns. Electronics is where the absolute savings figures are highest on average."
-                },
-                {
-                  icon: <Home className="w-4 h-4 text-[#8B5CF6]" />,
-                  title: "Home & Kitchen — 1,234+ products",
-                  body: "Cookware, appliances, bedding, furniture, storage solutions, and home decor from brands like Prestige, Philips, Bajaj, Milton, and IKEA. Home and kitchen deals are especially strong during festive seasons and new collection launches."
+                  icon: <Sparkles className="w-4 h-4 text-[#5B4FBE]" />,
+                  title: "Watches & Accessories",
+                  body: "Watches, bangles, and everyday accessories with verified discounts. Brands like Acnos are featured here with deep, real markdowns rather than inflated MRP comparisons."
                 },
                 {
                   icon: <Sparkles className="w-4 h-4 text-[#FC2779]" />,
-                  title: "Beauty & Personal Care — 987+ products",
-                  body: "Skincare, haircare, makeup, grooming, and wellness products from Nykaa, Mamaearth, Plum, Lakme, L'Oreal, and The Man Company. Beauty deals on Couponscrew frequently include combo offers and free gifts with purchase — making the real value higher than the headline discount suggests."
+                  title: "Beauty & Personal Care",
+                  body: "Skincare, haircare, makeup, grooming, and wellness products from brands like Minimalist. Beauty deals on Couponscrew frequently include combo offers and free gifts with purchase — making the real value higher than the headline discount suggests."
+                },
+                {
+                  icon: <Shirt className="w-4 h-4 text-[#FF3F6C]" />,
+                  title: "Fashion & Clothing",
+                  body: "Clothing and accessories from brands like DEELMO, each one checked for fit, quality, and an honest discount before it gets listed here."
+                },
+                {
+                  icon: <Home className="w-4 h-4 text-[#8B5CF6]" />,
+                  title: "Home & Kitchen",
+                  body: "Home decor and lifestyle products from brands like Desidiya. Home deals are especially strong during festive seasons and new collection launches."
                 },
                 {
                   icon: <Activity className="w-4 h-4 text-[#EF4444]" />,
-                  title: "Sports & Fitness — 657+ products",
-                  body: "Gym equipment, sportswear, fitness trackers, yoga gear, and protein supplements from Decathlon, Nivia, Cosco, HealthKart, and MuscleBlaze. Sports deals are particularly active around New Year fitness resolution season and pre-summer months."
+                  title: "Sports & Fitness",
+                  body: "Fitness gear from brands like PulGos. Sports deals are particularly active around New Year fitness resolution season and pre-summer months."
                 }
               ].map((cat, idx) => (
                 <div key={idx} className="rounded-2xl border border-[#E8E8F0] p-5 hover:border-[#5B4FBE] transition-colors bg-white">
@@ -2375,7 +1542,7 @@ export default function Products() {
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
-                  <p><strong>Use the price range filter to find hidden deals.</strong> Most shoppers browse the default view and miss great deals in price brackets they do not usually explore. If you are looking for earbuds, slide the price range to the mid-range bracket and you will find boAt, Realme, and Noise models with 40–70% off that outperform their price point significantly.</p>
+                  <p><strong>Use the price range filter to find hidden deals.</strong> Most shoppers browse the default view and miss great deals in price brackets they do not usually explore. Slide the price range to the lower bracket and you will often find the deepest discounts of the lot — some of the listings here run 70–90% off their listed price.</p>
                 </li>
                 <li className="flex gap-2 items-start">
                   <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
@@ -2400,10 +1567,10 @@ export default function Products() {
             </h2>
             <div className="space-y-6">
               {[
-                { q: "How many products are listed on Couponscrew?", a: "10,000+ right now, across all major categories. New products are added as brands launch deals. The count next to each category reflects active listings only." },
+                { q: "How many products are listed on Couponscrew?", a: "5 right now — a small, hand-verified catalog rather than a bulk import. New products are added one at a time as deals are checked and confirmed, and the count next to each category reflects active listings only." },
                 { q: "Are the savings figures on product cards accurate?", a: "Yes. The saving shown is the difference between the deal price and the actual retail price — not a comparison to an inflated fake MRP. We check this." },
                 { q: "Do all products have free delivery?", a: "No — but it's flagged clearly on every card that qualifies. If it's not flagged, check shipping cost on the retailer's checkout before you commit." },
-                { q: "Can I filter products by brand?", a: "Yes. The sidebar has a brand filter and a search box. Type any brand name — boAt, Samsung, Nike — and the grid narrows to that brand's current deals." },
+                { q: "Can I filter products by brand?", a: "Yes. The sidebar has a brand filter and a search box. Type any brand name — Acnos, Minimalist, DEELMO — and the grid narrows to that brand's current deals." },
                 { q: "How often are product listings updated?", a: "Daily. If a deal price changes, the listing updates. If it expires, it gets pulled. Dead listings don't stick around." },
                 { q: "Is it safe to buy through Couponscrew product links?", a: "Yes. Clicking a product takes you to the official retailer — Amazon, Flipkart, Myntra, whoever stocks it. Your purchase and payment happen entirely on their platform. Couponscrew earns a small affiliate commission at no extra cost to you." },
                 { q: "What if the deal price is different when I reach the retailer?", a: "Prices can move between when we list and when you click. The retailer's site shows the live price before checkout. If it's changed, check back here for an updated listing or browse alternatives in the same category." }
@@ -2423,7 +1590,7 @@ export default function Products() {
               <span className="text-xs font-black text-white/60 uppercase tracking-widest">Guarantee</span>
             </div>
             <h2 className="text-2xl font-black text-white leading-tight">
-              10,000+ Products. Real Savings. Zero Guesswork.
+              5 Verified Products. Real Savings. Zero Guesswork.
             </h2>
             <div className="mt-4 space-y-3 text-sm text-white/75 leading-relaxed">
               <p>
@@ -2433,7 +1600,7 @@ export default function Products() {
                 Couponscrew&apos;s Products page removes that uncertainty. Every product here is already on deal. Every saving is already calculated. Every deal is already verified. That is what separates the best coupon sites for online shopping from the ones that just list and leave you to figure out the rest. You browse, you pick, you save — in that order, every time.
               </p>
               <p>
-                10,000+ products. Hundreds of brands. One page that tells you exactly how much you are saving before you click Buy.
+                5 hand-picked products. 5 trusted brands. One page that tells you exactly how much you are saving before you click Buy.
               </p>
               <p className="text-white font-semibold text-base pt-2">
                 Go check what&apos;s on deal right now. Something you already want is already discounted — we just found it for you.
@@ -2455,7 +1622,7 @@ export default function Products() {
             <p className="text-xs text-[#4A4A6A] mb-4">The numbers behind every product on this page.</p>
             <div className="space-y-2">
               {[
-                { layer: "Live Catalog", val: "10,000+ Products" },
+                { layer: "Live Catalog", val: "5 Hand-Picked Products" },
                 { layer: "Data Sourcing", val: "Direct Affiliate Feeds" },
                 { layer: "Pricing Audits", val: "Daily Updates" },
                 { layer: "MRP Valuation", val: "Zero Inflation Policy" }
@@ -2484,7 +1651,7 @@ export default function Products() {
                   Sidebar Filters
                 </div>
                 <p className="text-[11px] text-[#4A4A6A] leading-normal">
-                  Category, price range, discount level, brand — use them together to narrow 10,000+ products down to the exact deal you want.
+                  Category, price range, discount level, brand — use them together to find the exact deal you want among our 5 verified products.
                 </p>
               </div>
               <div className="p-3 bg-[#FFF9F2] border border-[#FF9900]/20 rounded-xl">

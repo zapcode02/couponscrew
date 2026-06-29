@@ -208,14 +208,16 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             onMouseEnter={openCategories}
             onMouseLeave={scheduleCloseCategories}
           >
-            <button
+            <Link
+              href="/categories"
+              onClick={() => setCategoriesOpen(false)}
               className={`text-sm font-semibold flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer ${
                 categoriesOpen ? 'text-[#5B4FBE]' : 'text-[#1A1A2E] hover:text-[#5B4FBE]'
               }`}
             >
               Top Categories
               <ChevronDown className={`w-3.5 h-3.5 opacity-70 transition-transform ${categoriesOpen ? 'rotate-180' : ''}`} />
-            </button>
+            </Link>
 
             {categoriesOpen && (
               <div className="absolute top-full left-0 mt-3 w-[760px] bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
@@ -261,10 +263,10 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             )}
           </div>
           <Link
-            href="/stores"
+            href="/products"
             className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
           >
-            Top Brands
+            Products
           </Link>
           <Link
             href="/deals"
@@ -394,11 +396,11 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             )}
 
             <Link
-              href="/stores"
+              href="/products"
               onClick={closeMobileMenu}
               className="px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors"
             >
-              Top Brands
+              Products
             </Link>
             <Link
               href="/deals"
