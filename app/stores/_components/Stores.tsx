@@ -31,9 +31,7 @@ import {
   Wallet,
   MoreHorizontal,
   X,
-  CheckCircle,
-  ArrowRight,
-  Zap
+  ArrowRight
 } from 'lucide-react';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
@@ -63,8 +61,8 @@ export default function Stores() {
   const handleStoreClick = (store: Store) => {
     if (store.name.toLowerCase() === 'amazon') {
       router.push('/stores/amazon');
-    } else {
-      setPromoModalStore(store);
+    } else if (store.name.toLowerCase() === 'pepperfry') {
+      router.push('/stores/pepperfry');
     }
   };
 
@@ -77,10 +75,6 @@ export default function Stores() {
   // Secondary sidebar newsletter state
   const [newsEmail, setNewsEmail] = useState<string>('');
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
-
-  // Active Interactive Promo Codes popup
-  const [promoModalStore, setPromoModalStore] = useState<Store | null>(null);
-  const [copiedCodeIndex, setCopiedCodeIndex] = useState<number | null>(null);
 
   // Sidebar list categories structured configuration
   const CATEGORIES: Category[] = useMemo(() => [
@@ -165,12 +159,6 @@ export default function Stores() {
     }
   };
 
-  const handleCopyCouponCode = (code: string, idx: number) => {
-    navigator.clipboard.writeText(code);
-    setCopiedCodeIndex(idx);
-    setTimeout(() => setCopiedCodeIndex(null), 2500);
-  };
-
   // Helper page indicator generator
   const paginationRange = useMemo(() => {
     const range: (number | string)[] = [];
@@ -234,7 +222,7 @@ export default function Stores() {
             </h1>
 
             <p className="text-[#4A4A6A] text-sm md:text-base leading-relaxed max-w-xl">
-              Browse all 500+ stores and brands. Find verified coupon codes, deals &amp; offers — updated daily.
+              Browse our hand-picked stores. Find verified coupon codes, deals &amp; offers — updated daily.
             </p>
 
             {/* 2 stat mini cards */}
@@ -244,8 +232,8 @@ export default function Stores() {
                   <Tag className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-extrabold text-[#1A1A2E] text-lg leading-none">500+</div>
-                  <div className="text-xs text-[#4A4A6A] mt-1 font-medium">Trusted Stores</div>
+                  <div className="font-extrabold text-[#1A1A2E] text-lg leading-none">2</div>
+                  <div className="text-xs text-[#4A4A6A] mt-1 font-medium">Hand-Picked Stores</div>
                 </div>
               </div>
 
@@ -337,7 +325,7 @@ export default function Stores() {
                 <span>Never Miss a Deal!</span>
               </h3>
               <p className="text-white/75 text-xs mt-1.5 leading-relaxed">
-                Get the latest coupons &amp; offers straight to your inbox. Trusted by 50,000+ shoppers.
+                Get the latest coupons &amp; offers straight to your inbox. Every store here is hand-verified.
               </p>
 
               {newsSubscribed ? (
@@ -667,7 +655,7 @@ export default function Stores() {
               <ShieldCheck className="text-[#5B4FBE] w-6 h-6" />
             </div>
             <div>
-              <div className="text-xl md:text-2xl font-black text-[#1A1A2E] leading-none">10,000+</div>
+              <div className="text-xl md:text-2xl font-black text-[#1A1A2E] leading-none">100%</div>
               <div className="text-sm font-bold text-[#1A1A2E] mt-1">Coupons Verified</div>
               <div className="text-xs text-gray-400 mt-0.5">Manually Tested</div>
             </div>
@@ -725,11 +713,11 @@ export default function Stores() {
                 <span className="text-xs font-black text-[#5B4FBE] uppercase tracking-widest">About This Page</span>
               </div>
               <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-                500+ Stores. One Place to Find Every Deal Worth Finding.
+                2 Hand-Picked Stores. Every Deal Worth Finding.
               </h2>
               <div className="mt-4 space-y-3 text-sm text-[#4A4A6A] leading-relaxed">
                 <p>
-                  You&apos;ve been there. You find a coupon code on some random site - SAVE50. Error. Try FLAT50. Error. MYNTRA50. Error. Six codes, six failures. You either paid full price or gave up.
+                  You&apos;ve been there. You find a coupon code on some random site - SAVE50. Error. Try FLAT50. Error. Six codes, six failures. You either paid full price or gave up.
                 </p>
                 <p>
                   That happens because most coupon websites never clean their listings. They rank for the search, you land, you try dead codes, you leave frustrated. The site doesn&apos;t care - it already got the click.
@@ -738,7 +726,7 @@ export default function Stores() {
                   Couponscrew was built to fix exactly that. Every code on this platform is manually verified before it goes live. Our success rate is 92.4%. That means when you grab a code from here, it almost certainly works. The ones that stop working get removed fast - not left to waste your time at checkout.
                 </p>
                 <p>
-                  Right now, the platform tracks 10,000+ verified coupons across 500+ brands - from fashion and electronics to food delivery, travel, web hosting, and everything in between.
+                  Right now, the platform covers Amazon and Pepperfry - two trusted brands, fully verified - and we&apos;re adding more only when we can vouch for the codes ourselves.
                 </p>
               </div>
             </div>
@@ -759,7 +747,7 @@ export default function Stores() {
                 <div className="space-y-3 mt-2">
                   {[
                     { step: "1", title: "Grab the verified code", desc: "Find the brand above, open the deal, copy the code. That's layer one. At 92.4% success rate, it almost certainly works." },
-                    { step: "2", title: "Check for a bank card offer at checkout", desc: "HDFC, ICICI, and SBI card offers run constantly on Amazon, Flipkart, Swiggy, and Myntra. Typically 10% instant off. This is layer two - and most shoppers completely miss it." },
+                    { step: "2", title: "Check for a bank card offer at checkout", desc: "HDFC, ICICI, and SBI card offers run constantly on Amazon and Pepperfry. Typically 10% instant off. This is layer two - and most shoppers completely miss it." },
                     { step: "3", title: "Run a cashback app in the background", desc: "Browser extension cashback apps give you 1-5% back on top of everything else. It runs passively. You don't even have to think about it. Layer three." }
                   ].map((item) => (
                     <div key={item.step} className="flex gap-4 p-4 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
@@ -794,13 +782,6 @@ export default function Stores() {
               <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   {
-                    color: "#FF3F6C",
-                    bg: "#FFF0F4",
-                    label: "Fashion",
-                    title: "Fashion &amp; Lifestyle",
-                    body: "Myntra&apos;s End of Reason Sale regularly runs 50-80% off across 500+ brands. Big Billion Day fashion deals are real - but the best ones go in the first four hours. Set an alarm or miss it."
-                  },
-                  {
                     color: "#FF9900",
                     bg: "#FFF8E7",
                     label: "Electronics",
@@ -808,18 +789,25 @@ export default function Stores() {
                     body: "Amazon Great Indian Festival hits up to 70% off. One caution: always check the 90-day price history before assuming a sale price is actually low. MRP inflation is real - the &quot;original price&quot; isn&apos;t always what it sounds like."
                   },
                   {
-                    color: "#FC8019",
-                    bg: "#FFF5EC",
-                    label: "Food",
-                    title: "Food Delivery",
-                    body: "Swiggy and Zomato first-order codes run 50-60% off. Key rule: use your first-order discount on your biggest order, not a small one. It&apos;s a one-time thing - make it count."
+                    color: "#D2691E",
+                    bg: "#FDF1E7",
+                    label: "Home & Kitchen",
+                    title: "Home &amp; Décor",
+                    body: "Pepperfry runs furniture and décor sales up to 80% off, especially around festive seasons. Bulkier items take longer to ship, so factor delivery windows in before you commit to a sale price."
                   },
                   {
-                    color: "#FF6B35",
-                    bg: "#FFF3EE",
-                    label: "Hosting",
-                    title: "Web Hosting",
-                    body: "Hostinger runs 72-85% off legitimately - deep discounts to acquire long-term customers. The discount fluctuates. Waiting a few days before buying can get you a meaningfully deeper deal."
+                    color: "#5B4FBE",
+                    bg: "#F0EEFF",
+                    label: "Strategy",
+                    title: "Timing Your Purchase",
+                    body: "Both Amazon and Pepperfry run their deepest discounts during festive sale windows. Watch a product for a few days before buying - prices often dip further as a sale event approaches its final hours."
+                  },
+                  {
+                    color: "#22C55E",
+                    bg: "#F0FDF4",
+                    label: "Verification",
+                    title: "Why Only Two Stores",
+                    body: "We&apos;d rather verify two stores properly than list fifty we can&apos;t vouch for. Every code here is manually tested before it goes live - quality over quantity."
                   }
                 ].map((cat, idx) => (
                   <div key={idx} className="rounded-2xl border border-[#E8E8F0] p-5 hover:border-[#5B4FBE] transition-colors">
@@ -871,17 +859,17 @@ export default function Stores() {
                 <span className="text-xs font-black text-white/60 uppercase tracking-widest">The Platform</span>
               </div>
               <h2 className="text-2xl font-black text-white leading-tight">
-                50,000+ Shoppers. 500+ Brands. One Mission.
+                2 Hand-Verified Brands. One Mission.
               </h2>
               <div className="mt-4 space-y-3 text-sm text-white/75 leading-relaxed">
                 <p>
-                  50,000+ registered users. 500+ brand partners. 10,000+ verified coupons live on the platform right now. Every code manually tested. Expired codes removed fast.
+                  Amazon and Pepperfry, fully verified. Every code manually tested before it goes live. Expired codes removed fast - no dead listings left behind to waste your time.
                 </p>
                 <p>
-                  50% of shoppers choose online shopping specifically because of cashback and deals, according to Mintel data. Our users are in that 50% - and they&apos;re not here for generic listicles. They&apos;re here for codes that actually work — the kind only the best online coupon sites bother to verify.
+                  Most shoppers choose online shopping specifically because of cashback and deals. Our visitors aren&apos;t here for generic listicles. They&apos;re here for codes that actually work — the kind only the best online coupon sites bother to verify.
                 </p>
                 <p>
-                  Quick commerce - Blinkit, Zepto, Instamart - is the fastest growing shopping category globally. The segment hit $7-8 billion in FY25 and is growing at 110-130% CAGR (Redseer). Couponscrew covers all of it. Fashion, electronics, food delivery, travel, hosting, education, health - every category, one platform.
+                  We&apos;d rather cover two stores properly than fifty we can&apos;t stand behind. As we add more brands, each one goes through the same manual verification before it earns a spot here.
                 </p>
                 <p className="text-white font-semibold">
                   Pick a store above. Copy the code. Check out for less.
@@ -889,10 +877,10 @@ export default function Stores() {
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
                 {[
-                  { val: "10,000+", lbl: "Verified Coupons" },
-                  { val: "500+", lbl: "Brand Partners" },
+                  { val: "2", lbl: "Hand-Picked Stores" },
+                  { val: "100%", lbl: "Verified Codes" },
                   { val: "92.4%", lbl: "Success Rate" },
-                  { val: "50,000+", lbl: "Registered Users" }
+                  { val: "Daily", lbl: "Updates" }
                 ].map((s, i) => (
                   <div key={i} className="bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-center min-w-[110px]">
                     <div className="text-lg font-black text-white leading-none">{s.val}</div>
@@ -958,23 +946,7 @@ export default function Stores() {
               </div>
             </div>
 
-            {/* SIDEBAR CARD 3 - Quick Commerce */}
-            <div className="bg-gradient-to-br from-[#FF5722] to-[#FF8A50] rounded-2xl p-5 text-white">
-              <div className="flex items-center gap-2 mb-2">
-                <Zap className="w-4 h-4 text-white" />
-                <span className="text-xs font-black uppercase tracking-wider">Fastest Growing</span>
-              </div>
-              <h3 className="text-sm font-extrabold text-white leading-snug">Quick Commerce is Exploding</h3>
-              <p className="text-white/80 text-xs mt-2 leading-relaxed">
-                Blinkit, Zepto, and Instamart hit $7-8B in FY25. Growing at 110-130% CAGR. Coupon content for quick commerce is massively undersupplied vs demand right now.
-              </p>
-              <div className="mt-3 pt-3 border-t border-white/20 flex items-center gap-2">
-                <CheckCircle className="w-3.5 h-3.5 text-white/80 shrink-0" />
-                <span className="text-[11px] text-white/80 font-medium">All three platforms covered on Couponscrew</span>
-              </div>
-            </div>
-
-            {/* SIDEBAR CARD 4 - Bank Card Cheatsheet */}
+            {/* SIDEBAR CARD 3 - Bank Card Cheatsheet */}
             <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
               <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-1 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#5B4FBE]" />
@@ -983,8 +955,8 @@ export default function Stores() {
               <p className="text-xs text-[#4A4A6A] mb-4">Layer these on top of any coupon code.</p>
               <div className="space-y-2.5">
                 {[
-                  { bank: "HDFC", platforms: "Amazon, Flipkart, Myntra", off: "10% instant" },
-                  { bank: "ICICI", platforms: "Flipkart, Swiggy", off: "10% instant" },
+                  { bank: "HDFC", platforms: "Amazon, Pepperfry", off: "10% instant" },
+                  { bank: "ICICI", platforms: "Amazon", off: "10% instant" },
                   { bank: "SBI", platforms: "Amazon GIF", off: "10% instant" }
                 ].map((row, i) => (
                   <div key={i} className="rounded-xl bg-[#F8F8FF] border border-[#E8E8F0] p-3">
@@ -1005,138 +977,6 @@ export default function Stores() {
 
         </div>
       </section>
-
-      {/* ==========================================
-          INTERACTIVE COUPONS MODAL OVERLAY
-          ========================================== */}
-      {promoModalStore && (
-        <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs select-none">
-          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl max-w-lg w-full flex flex-col relative border border-[#E8E8F0] animate-in fade-in zoom-in-95 duration-200">
-            
-            {/* Header store identity bg */}
-            <div className="p-6 text-left flex items-center gap-4 border-b border-gray-100 shrink-0">
-              <div
-                className="w-14 h-14 rounded-2xl flex items-center justify-center font-extrabold text-base shrink-0"
-                style={{ backgroundColor: promoModalStore.logoBg }}
-              >
-                <span style={{ color: promoModalStore.logoColor }} className="uppercase">
-                  {promoModalStore.logo}
-                </span>
-              </div>
-              <div className="min-w-0">
-                <span className="bg-[#F0EEFF] text-[#5B4FBE] text-[10px] font-black px-2 py-0.5 rounded-full select-none uppercase tracking-wider">
-                  {promoModalStore.category}
-                </span>
-                <h3 className="text-[#1A1A2E] text-xl font-bold truncate mt-1">
-                  {promoModalStore.name} Offers
-                </h3>
-              </div>
-
-              {/* Close Button at top-right */}
-              <button
-                onClick={() => {
-                  setPromoModalStore(null);
-                  setCopiedCodeIndex(null);
-                }}
-                className="ml-auto bg-gray-100 hover:bg-gray-200 text-gray-500 rounded-full p-2.5 transition active:scale-90 cursor-pointer"
-                aria-label="Close"
-              >
-                <X size={16} />
-              </button>
-            </div>
-
-            {/* Coupons list details body */}
-            <div className="p-6 overflow-y-auto space-y-4 max-h-[50vh] text-left select-text">
-              <p className="text-[#4A4A6A] text-xs font-semibold leading-relaxed">
-                Choose one of these verified active promo codes to save big today on <strong className="text-[#1A1A2E]">{promoModalStore.name}</strong>:
-              </p>
-
-              {/* Coupon Row 1 */}
-              <div className="border border-dashed border-[#5B4FBE]/40 rounded-2xl p-4 bg-[#F8F8FF] flex flex-col gap-3">
-                <div className="flex justify-between items-start gap-2">
-                  <div>
-                    <span className="bg-[#FF5722] text-white text-[9px] font-black tracking-widest px-2 py-0.5 rounded-sm uppercase">
-                      Exclusive Promo
-                    </span>
-                    <h4 className="font-extrabold text-sm text-[#1A1A2E] mt-1.5 leading-snug">
-                      Save {promoModalStore.discountLabel} across store!
-                    </h4>
-                    <p className="text-[11px] text-gray-400 mt-1">No minimum order required. Tested and verified.</p>
-                  </div>
-                </div>
-
-                {/* Code copy action box */}
-                <div className="bg-white border border-[#E8E8F0] p-2 rounded-xl flex items-center justify-between mt-1">
-                  <span className="font-mono text-sm uppercase tracking-wider font-bold text-[#5B4FBE] select-all pl-2">
-                    CS{promoModalStore.logo.substring(0, 3).toUpperCase()}{promoModalStore.maxDiscount}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCouponCode(`CS${promoModalStore.logo.substring(0, 3).toUpperCase()}${promoModalStore.maxDiscount}`, 0)}
-                    className={`text-xs font-extrabold px-4 py-2 rounded-lg transition active:scale-95 cursor-pointer ${
-                      copiedCodeIndex === 0
-                        ? 'bg-[#22C55E] text-white'
-                        : 'bg-[#5B4FBE] hover:bg-opacity-90 text-white'
-                    }`}
-                  >
-                    {copiedCodeIndex === 0 ? 'Copied' : 'Copy Code'}
-                  </button>
-                </div>
-              </div>
-
-              {/* Coupon Row 2 */}
-              <div className="border border-[#E8E8F0] rounded-2xl p-4 flex flex-col gap-3">
-                <div className="flex justify-between items-start gap-2">
-                  <div>
-                    <span className="bg-[#22C55E]/15 text-[#22C55E] text-[9px] font-black tracking-widest px-2 py-0.5 rounded-sm uppercase">
-                      Verified Coupon
-                    </span>
-                    <h4 className="font-extrabold text-sm text-[#1A1A2E] mt-1.5 leading-snug">
-                      Flat 15% cashback on UPI payments
-                    </h4>
-                    <p className="text-[11px] text-gray-400 mt-1">Valid when paying via Google Pay or PhonePe wallets.</p>
-                  </div>
-                </div>
-
-                <div className="bg-[#F8F8FF] border border-gray-100 p-2 rounded-xl flex items-center justify-between mt-1">
-                  <span className="font-mono text-sm uppercase tracking-wider font-bold text-gray-600 select-all pl-2">
-                    CSUPI15
-                  </span>
-                  <button
-                    onClick={() => handleCopyCouponCode('CSUPI15', 1)}
-                    className={`text-xs font-extrabold px-4 py-2 rounded-lg transition active:scale-95 cursor-pointer ${
-                      copiedCodeIndex === 1
-                        ? 'bg-[#22C55E] text-white'
-                        : 'bg-gray-100 text-[#4A4A6A] hover:bg-gray-200'
-                    }`}
-                  >
-                    {copiedCodeIndex === 1 ? 'Copied' : 'Copy Code'}
-                  </button>
-                </div>
-              </div>
-
-              {/* Offer description */}
-              <div className="pt-2 bg-[#F8F8FF] p-3 rounded-xl border border-[#E8E8F0]/65 text-center text-[11px] text-[#4A4A6A]">
-                🏪 <strong>About {promoModalStore.name}:</strong> {promoModalStore.description}. Copy the code above and paste it at checkout.
-              </div>
-            </div>
-
-            {/* Footer actions */}
-            <div className="p-4 bg-gray-50 border-t border-gray-100 flex items-center justify-between shrink-0">
-              <span className="text-[11px] text-gray-400 font-medium">Auto-copied to clipboard</span>
-              <button
-                onClick={() => {
-                  setPromoModalStore(null);
-                  setCopiedCodeIndex(null);
-                }}
-                className="bg-[#5B4FBE] text-white text-xs font-bold px-5 py-2 rounded-xl active:scale-95 cursor-pointer hover:bg-opacity-95 shadow-2xs transition"
-              >
-                Close Offers
-              </button>
-            </div>
-
-          </div>
-        </div>
-      )}
 
       <Footer />
     </div>
