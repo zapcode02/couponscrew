@@ -81,7 +81,7 @@ const INITIAL_PRODUCTS: Product[] = [
     brand: 'Acnos',
     brandColor: '#5B4FBE',
     category: 'Watches & Accessories',
-    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162305/41oui_xq1PL_zndlwz.jpg',
     originalPrice: 1999,
     dealPrice: 299,
     discountPercent: 85,
@@ -99,7 +99,7 @@ const INITIAL_PRODUCTS: Product[] = [
     brand: 'Minimalist',
     brandColor: '#5B4FBE',
     category: 'Beauty & Personal Care',
-    image: 'https://images.unsplash.com/photo-1556228720-da4e95ac3699?w=400&q=80',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162150/51VX_QeZjRL._SY450__mhxhvl.jpg',
     originalPrice: 1299,
     dealPrice: 1147,
     discountPercent: 12,
@@ -117,7 +117,7 @@ const INITIAL_PRODUCTS: Product[] = [
     brand: 'DEELMO',
     brandColor: '#5B4FBE',
     category: 'Fashion & Clothing',
-    image: 'https://images.unsplash.com/photo-1622445275576-721325763afe?w=400&q=80',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162400/71Qhqwnx4JL._SY741__ljgmwm.jpg',
     originalPrice: 2199,
     dealPrice: 479,
     discountPercent: 78,
@@ -135,7 +135,7 @@ const INITIAL_PRODUCTS: Product[] = [
     brand: 'Desidiya',
     brandColor: '#5B4FBE',
     category: 'Home & Kitchen',
-    image: 'https://images.unsplash.com/photo-1532634896-26909d0d4b6a?w=400&q=80',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162551/61XWYda0HoL._SL1500__klyexw.jpg',
     originalPrice: 1999,
     dealPrice: 197,
     discountPercent: 90,
@@ -153,7 +153,7 @@ const INITIAL_PRODUCTS: Product[] = [
     brand: 'PulGos',
     brandColor: '#5B4FBE',
     category: 'Sports & Fitness',
-    image: 'https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=400&q=80',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162810/81RW0nGbEZL._SL1500__u4abvp.jpg',
     originalPrice: 499,
     dealPrice: 299,
     discountPercent: 40,
@@ -856,7 +856,7 @@ export default function Products() {
                       className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer relative flex flex-col justify-between"
                     >
                       {/* Image Frame Section */}
-                      <div className="relative bg-[#F8F8FF] aspect-square p-3 select-none">
+                      <div className="relative bg-[#F8F8FF] aspect-square overflow-hidden select-none">
                         
                         {/* Discount Badge */}
                         {p.discountPercent >= 10 && (
@@ -883,7 +883,7 @@ export default function Products() {
                           width={300}
                           height={300}
                           sizes="(max-width: 768px) 45vw, 200px"
-                          className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 rounded-lg"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           referrerPolicy="no-referrer"
                         />
                       </div>

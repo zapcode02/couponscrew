@@ -6,23 +6,20 @@ import {
   ChevronRight,
   ChevronDown,
   Star,
-  ShieldCheck,
   Truck,
-  Zap,
   Heart,
-  Copy,
   Check,
-  AlertCircle,
   ExternalLink,
   Award,
   Dumbbell,
   Layers,
   Activity,
-  Flame,
-  ArrowRight
+  Flame
 } from 'lucide-react';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
+
+const AFFILIATE_URL = 'https://amzn.to/4uUuG7b';
 
 function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
@@ -31,26 +28,15 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
 export default function PulgosPushupBoardPage() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isWishlisted, setIsWishlisted] = useState(false);
-  const [copiedCode, setCopiedCode] = useState<string | null>(null);
-  const [showModal, setShowModal] = useState(false);
   const [isReadMore, setIsReadMore] = useState<boolean>(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const productImages = [
-    'https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=600&q=80',
-    'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80',
-    'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80',
-    'https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?w=600&q=80'
+    'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162810/81RW0nGbEZL._SL1500__u4abvp.jpg',
+    'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162813/718W_a8O6iL._SX679__bssoj3.jpg',
+    'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162811/712d3EKF8BL._SX679__n7js04.jpg',
+    'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162808/716pybIi4eL._SX679__hqvg8k.jpg',
   ];
-
-  const handleCopyCode = () => {
-    navigator.clipboard.writeText('SAVE40');
-    setCopiedCode('SAVE40');
-    setShowModal(true);
-    setTimeout(() => {
-      setCopiedCode(null);
-    }, 3000);
-  };
 
   const specifications = [
     { key: 'Brand', value: 'PulGos' },
@@ -73,41 +59,6 @@ export default function PulgosPushupBoardPage() {
     'Ideal for Home Gyms or Travel Workouts',
     'Durable, High-Quality Construction for Long-Lasting Use',
     '#1 Best Seller in Push-Up Stands on Amazon'
-  ];
-
-  const relatedProducts = [
-    {
-      name: 'PulGos Resistance Bands Set',
-      price: 349,
-      originalPrice: 699,
-      discount: 50,
-      image: 'https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=300&q=80',
-      rating: 4.1
-    },
-    {
-      name: 'PulGos Adjustable Dumbbell Set',
-      price: 1299,
-      originalPrice: 2199,
-      discount: 41,
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&q=80',
-      rating: 4.3
-    },
-    {
-      name: 'PulGos Ab Roller Wheel',
-      price: 399,
-      originalPrice: 699,
-      discount: 43,
-      image: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=300&q=80',
-      rating: 4.0
-    },
-    {
-      name: 'PulGos Yoga Mat with Carry Strap',
-      price: 449,
-      originalPrice: 799,
-      discount: 44,
-      image: 'https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?w=300&q=80',
-      rating: 4.2
-    }
   ];
 
   return (
@@ -249,13 +200,15 @@ export default function PulgosPushupBoardPage() {
 
             {/* GET DEAL CTA block */}
             <div className="pt-2">
-              <button
-                onClick={handleCopyCode}
-                className="w-full bg-[#FF5722] hover:bg-orange-600 text-white py-4 rounded-2xl font-black text-sm tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-[0.98] cursor-pointer"
+              <a
+                href={AFFILIATE_URL}
+                target="_blank"
+                rel="noopener noreferrer nofollow sponsored"
+                className="w-full bg-[#FF5722] hover:bg-orange-600 text-white py-4 rounded-2xl font-black text-sm tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-[0.98]"
               >
-                <Zap size={16} className="fill-white" />
-                <span>ACTIVATE & COPY CODE (SAVE40)</span>
-              </button>
+                <ExternalLink size={16} />
+                <span>GET THIS DEAL ON AMAZON</span>
+              </a>
             </div>
           </div>
         </div>
@@ -304,35 +257,6 @@ export default function PulgosPushupBoardPage() {
                 Ranked #1 Best Seller in Push-Up Stands on Amazon, built with durable, high-quality materials for long-lasting performance.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* More products section */}
-        <div className="space-y-6 mb-10">
-          <div className="flex justify-between items-end border-b border-gray-200 pb-3">
-            <h3 className="text-xl font-black text-[#1A1A2E]">More Fitness Gear You'll Love</h3>
-            <Link href="/products?category=fitness" className="text-xs font-black text-[#5B4FBE] uppercase tracking-widest hover:underline flex items-center gap-1.5">
-              <span>View All Fitness Gear</span>
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {relatedProducts.map((p, idx) => (
-              <div key={idx} className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg transition-all duration-300 group">
-                <div className="bg-[#F8F8FF] aspect-square rounded-xl p-3 flex items-center justify-center relative overflow-hidden mb-3">
-                  <div className="absolute top-2 left-2 bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded">
-                    {p.discount}% OFF
-                  </div>
-                  <img src={p.image} alt={p.name} className="max-h-[85%] max-w-[85%] object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300" />
-                </div>
-                <h4 className="font-extrabold text-[#1A1A2E] text-xs leading-snug line-clamp-1 truncate group-hover:text-[#5B4FBE] transition-colors">{p.name}</h4>
-                <div className="flex items-center justify-center gap-1.5 mt-2">
-                  <span className="font-black text-sm text-[#1A1A2E]">₹{p.price}</span>
-                  <span className="line-through text-[10px] text-gray-400 font-medium">₹{p.originalPrice}</span>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
@@ -502,7 +426,7 @@ export default function PulgosPushupBoardPage() {
                           <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
                           <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                         </div>
-                        <a href="https://amzn.to/4uUuG7b" target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get PulGos deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                        <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get PulGos deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
                       </div>
                     ))}
                   </div>
@@ -514,58 +438,6 @@ export default function PulgosPushupBoardPage() {
         </section>
 
       </div>
-
-      {/* Copy Code Modal Popup */}
-      {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/60 backdrop-blur-xs select-none">
-          <div className="bg-white rounded-3xl border border-[#E8E8F0] shadow-2xl p-6 md:p-8 max-w-md w-full text-center relative space-y-5 animate-in fade-in zoom-in-95 duration-200">
-            <div className="w-16 h-16 bg-[#EAFDF3] border border-emerald-100 rounded-full flex items-center justify-center mx-auto text-emerald-500">
-              <Check size={28} className="stroke-[3]" />
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
-              <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#5B4FBE]">SAVE40</span> at checkout for instant discounts.
-              </p>
-            </div>
-
-            <div className="bg-[#F8F8FF] border border-[#E8E8F0] rounded-2xl py-3 px-4 flex items-center justify-between gap-4">
-              <span className="font-mono font-bold text-sm tracking-wider text-gray-500 select-all">
-                SAVE40
-              </span>
-              <span className="text-[10px] font-black text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-100 uppercase">
-                Copied
-              </span>
-            </div>
-
-            <div className="text-xs font-semibold text-gray-500 flex items-center gap-1.5 justify-center bg-gray-50 py-2.5 px-4 rounded-xl border border-gray-100">
-              <AlertCircle size={14} className="text-gray-400" />
-              <span>Make sure to paste code before finalizing payment.</span>
-            </div>
-
-            <div className="pt-2 flex flex-col gap-2">
-              <a
-                href="https://amzn.to/4uUuG7b"
-                target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
-                onClick={() => setShowModal(false)}
-                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
-              >
-                <span>Continue to PulGos</span>
-                <ExternalLink size={14} />
-              </a>
-
-              <button
-                onClick={() => setShowModal(false)}
-                className="w-full text-xs font-bold text-gray-400 hover:text-[#1A1A2E] py-2 transition-colors cursor-pointer"
-              >
-                Close Window
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       <Footer />
     </div>

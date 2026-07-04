@@ -1,7 +1,8 @@
 export interface Store {
   id: string;
   name: string;
-  logo: string; // letters/text for avatar
+  logo: string; // letters/text for avatar fallback
+  logoImage?: string; // optional real logo image URL
   logoColor: string; // brand hex color
   logoBg: string; // lighter bg hex
   category: string;
@@ -15,23 +16,10 @@ export interface Store {
 
 export const STORES_DATA: Store[] = [
   {
-    id: 'store-1',
-    name: 'Amazon',
-    logo: 'amazon',
-    logoColor: '#FF9900',
-    logoBg: '#FFF8E7',
-    category: 'Electronics',
-    offerCount: 120,
-    maxDiscount: 70,
-    discountLabel: 'Up to 70% OFF',
-    isPopular: true,
-    isFeatured: true,
-    description: "The largest online marketplace for everything"
-  },
-  {
     id: 'store-2',
     name: 'Pepperfry',
     logo: 'pepperfry',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg',
     logoColor: '#D2691E',
     logoBg: '#FDF1E7',
     category: 'Home & Kitchen',

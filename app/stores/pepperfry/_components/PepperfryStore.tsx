@@ -701,57 +701,6 @@ export default function PepperfryStore() {
         </div>
       </section>
 
-      {/* ==========================================
-          YOU MAY ALSO LIKE THESE STORES
-          ========================================== */}
-      <section className="bg-[#F8F8FF] border-t border-[#E8E8F0] py-16 px-6">
-        <div className="max-w-7xl mx-auto space-y-8 text-center">
-          <div className="space-y-2 select-none">
-            <h2 className="text-2xl font-black text-[#1A1A2E]">You May Also Like These Stores</h2>
-            <p className="text-xs text-gray-400 max-w-sm mx-auto">Explore other top stores for coupon codes & verified shopping deals.</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              { name: 'Flipkart', discount: 'Up to 80% OFF', logo: 'F', logoBg: '#0F82FD', logoColor: '#FFFFFF' },
-              { name: 'Myntra', discount: 'Up to 80% OFF', logo: 'M', logoBg: '#FF4D80', logoColor: '#FFFFFF' },
-              { name: 'AJIO', discount: 'Up to 70% OFF', logo: 'AJ', logoBg: '#1A1A2E', logoColor: '#FFFFFF' },
-              { name: 'Nykaa', discount: 'Up to 60% OFF', logo: 'N', logoBg: '#FC2884', logoColor: '#FFFFFF' },
-              { name: 'Croma', discount: 'Up to 55% OFF', logo: 'CR', logoBg: '#00BEC4', logoColor: '#FFFFFF' },
-              { name: 'Tata CLIQ', discount: 'Up to 60% OFF', logo: 'TC', logoBg: '#D51225', logoColor: '#FFFFFF' }
-            ].map((store, idx) => (
-              <Link
-                key={idx}
-                href="/stores"
-                className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg hover:border-[#5B4FBE] transition-all duration-300 group flex flex-col justify-between h-[180px]"
-              >
-                <div>
-                  <div
-                    className="mx-auto w-12 h-12 rounded-xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-[1.05] shadow-2xs text-base font-black tracking-tighter"
-                    style={{ backgroundColor: store.logoBg, color: store.logoColor }}
-                  >
-                    {store.logo}
-                  </div>
-                  <h3 className="font-extrabold text-xs text-[#1A1A2E] leading-tight truncate group-hover:text-[#5B4FBE] transition-colors">
-                    {store.name}
-                  </h3>
-                </div>
-
-                <div className="mt-3.5 space-y-2">
-                  <div className="text-[10px] font-black text-[#FF5722] bg-[#FFF2ED] rounded-lg py-1 px-2 inline-block max-w-full truncate">
-                    {store.discount}
-                  </div>
-                  <div className="text-[9px] font-black text-[#5B4FBE] tracking-wider uppercase flex items-center justify-center gap-0.5 select-none pt-1">
-                    <span>View Offers</span>
-                    <ChevronRight size={10} className="group-hover:translate-x-0.5 transition-transform" />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">

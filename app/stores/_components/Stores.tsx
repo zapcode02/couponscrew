@@ -59,9 +59,7 @@ export default function Stores() {
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const handleStoreClick = (store: Store) => {
-    if (store.name.toLowerCase() === 'amazon') {
-      router.push('/stores/amazon');
-    } else if (store.name.toLowerCase() === 'pepperfry') {
+    if (store.name.toLowerCase() === 'pepperfry') {
       router.push('/stores/pepperfry');
     }
   };
@@ -457,7 +455,7 @@ export default function Stores() {
                   <div
                     key={store.id}
                     onClick={() => handleStoreClick(store)}
-                    className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg hover:border-[#5B4FBE] transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[234px]"
+                    className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg hover:border-[#5B4FBE] transition-all duration-300 group cursor-pointer flex flex-col justify-between"
                   >
                     <div>
                       {/* Logo Frame */}
@@ -465,36 +463,41 @@ export default function Stores() {
                         className="mx-auto w-16 h-16 rounded-2xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-[1.04] overflow-hidden shadow-2xs"
                         style={{ backgroundColor: store.logoBg }}
                       >
-                        <span
-                          className={`font-black tracking-tighter ${
-                            store.logo.length > 3 ? 'text-sm' : 'text-lg md:text-xl'
-                          }`}
-                          style={{ color: store.logoColor }}
-                        >
-                          {store.logo}
-                        </span>
+                        {store.logoImage ? (
+                          <NextImage
+                            src={store.logoImage}
+                            alt={store.name}
+                            width={64}
+                            height={64}
+                            className="w-full h-full object-contain"
+                            referrerPolicy="no-referrer"
+                          />
+                        ) : (
+                          <span
+                            className={`font-black tracking-tighter ${
+                              store.logo.length > 3 ? 'text-sm' : 'text-lg md:text-xl'
+                            }`}
+                            style={{ color: store.logoColor }}
+                          >
+                            {store.logo}
+                          </span>
+                        )}
                       </div>
 
-                      {/* Store Name & Offer numbers */}
+                      {/* Store Name */}
                       <h3 className="font-extrabold text-sm text-[#1A1A2E] leading-tight truncate px-0.5 group-hover:text-[#5B4FBE] transition-colors">
                         {store.name}
                       </h3>
-                      <p className="text-[11px] font-semibold text-[#4A4A6A] mt-1 uppercase tracking-wider">
-                        {store.offerCount}+ Offers
-                      </p>
                     </div>
 
                     {/* Discount Label & Bottom CTA Row */}
-                    <div>
+                    <div className="space-y-2 mt-3">
                       <div className="text-xs font-black text-[#FF5722] bg-[#FFF2ED] rounded-lg py-1 px-2 inline-block max-w-full truncate">
                         {store.discountLabel}
                       </div>
-                      
-                      <div className="flex items-center justify-between mt-3.5 pt-3 border-t border-[#E8E8F0] text-left">
-                        <span className="text-[10px] text-[#FF5722] font-black tracking-widest uppercase">
-                          GET DEAL
-                        </span>
-                        <ChevronRight size={14} className="text-[#5B4FBE] group-hover:translate-x-1 transition-transform" />
+                      <div className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-extrabold py-2.5 rounded-xl flex items-center justify-center gap-1.5 transition-all mt-1">
+                        <span>Get Deal</span>
+                        <ChevronRight size={12} className="stroke-[3]" />
                       </div>
                     </div>
 
