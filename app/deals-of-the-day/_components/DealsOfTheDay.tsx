@@ -7,7 +7,6 @@ import {
   Store,
   ShieldCheck,
   Percent,
-  LayoutGrid,
   TrendingUp,
   Clock,
   Star,
@@ -15,7 +14,6 @@ import {
   Lock,
   Heart,
   Zap,
-  Copy,
   ChevronRight,
   ChevronDown,
   ShoppingBag,
@@ -32,7 +30,6 @@ import {
   Globe,
   Tv,
   ArrowRight,
-  Mail,
   Users
 } from 'lucide-react';
 import Navbar from '../../../src/components/Navbar';
@@ -79,348 +76,192 @@ export interface DealOfDay {
 }
 
 // ============================================================================
-// HARDCODED DEALS DATA (18 DEALS)
+// HARDCODED DEALS DATA — PEPPERFRY
 // ============================================================================
 const DEALS_DATA: Deal[] = [
   {
     id: 'deal-1',
-    brandName: 'Myntra',
-    brandLogo: 'M',
-    brandColor: '#FF3F6C',
-    brandBg: '#FFF0F4',
-    category: 'Fashion',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
     dealType: 'trending',
     badgeText: 'TRENDING',
-    title: 'Myntra End of Season Sale',
-    description: 'Get up to 80% OFF on 3,00,000+ styles.',
-    couponCode: 'MYNTRA80',
-    discountText: 'Up to 80% OFF',
+    title: 'Get 50% off on Bonton Computer Table in Wenge Finish with Keyboard Slider',
+    description: 'Shop the Bonton Computer Table in Wenge finish with a sliding keyboard tray at up to 50% OFF.',
+    couponCode: '',
+    discountText: 'Up to 50% OFF',
     isVerified: true,
-    usedCount: '1.8k used today',
-    validTill: '31 May 2025',
+    usedCount: '1.2k used today',
+    validTill: '30 Jun 2026',
     isExpiringSoon: false
   },
   {
     id: 'deal-2',
-    brandName: 'Amazon',
-    brandLogo: 'a',
-    brandColor: '#FF9900',
-    brandBg: '#FFF8E7',
-    category: 'Electronics',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
     dealType: 'trending',
     badgeText: 'TRENDING',
-    title: 'Amazon Great Summer Sale',
-    description: 'Up to 70% OFF on mobiles, electronics & more.',
-    couponCode: 'SUMMER70',
-    discountText: 'Up to 70% OFF',
+    title: 'Get Ethnic Motif Multicolor (12 x 16) PVC Placemats, Set of 6 @ Rs.1',
+    description: 'Add a set of 6 ethnic motif multicolor PVC placemats to your dining table for just ₹1.',
+    couponCode: '',
+    discountText: '@ ₹1',
     isVerified: true,
-    usedCount: '2.6k used today',
-    validTill: '25 May 2025',
-    isExpiringSoon: true
+    usedCount: '876 used today',
+    validTill: '30 Jun 2026',
+    isExpiringSoon: false
   },
   {
     id: 'deal-3',
-    brandName: 'Flipkart',
-    brandLogo: 'F',
-    brandColor: '#2874F0',
-    brandBg: '#EEF4FF',
-    category: 'Electronics',
-    dealType: 'exclusive',
-    badgeText: 'EXCLUSIVE',
-    title: 'Flipkart Big Savings Days',
-    description: 'Up to 80% OFF + Extra 10% OFF on ICICI Cards.',
-    couponCode: 'FKBIG10',
-    discountText: 'Up to 80% OFF',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
+    dealType: 'trending',
+    badgeText: 'TRENDING',
+    title: 'Get 35% off on Yuko TV Console for TVs up to 55" in Columbia',
+    description: 'Shop the Yuko TV Console in Columbia finish, suitable for TVs up to 55 inches, at up to 35% OFF.',
+    couponCode: '',
+    discountText: 'Up to 35% OFF',
     isVerified: true,
-    usedCount: '3.2k used today',
-    validTill: '24 May 2025',
-    isExpiringSoon: true
+    usedCount: '654 used today',
+    validTill: '30 Jun 2026',
+    isExpiringSoon: false
   },
   {
     id: 'deal-4',
-    brandName: 'MakeMyTrip',
-    brandLogo: 'MMT',
-    brandColor: '#E8262A',
-    brandBg: '#FEF0F0',
-    category: 'Travel',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Electronics',
     dealType: 'trending',
     badgeText: 'TRENDING',
-    title: 'MakeMyTrip Travel Bonanza',
-    description: 'Flat 25% OFF on flights and hotels.',
-    couponCode: 'MMT25',
-    discountText: 'Flat 25% OFF',
+    title: 'Get 75% off on Portable Electronic Digital Weight Machine',
+    description: 'Shop the portable electronic digital weight machine at up to 75% OFF.',
+    couponCode: '',
+    discountText: 'Up to 75% OFF',
     isVerified: true,
-    usedCount: '876 used today',
-    validTill: '31 May 2025',
+    usedCount: '987 used today',
+    validTill: '30 Jun 2026',
     isExpiringSoon: false
   },
   {
     id: 'deal-5',
-    brandName: 'Swiggy',
-    brandLogo: 'S',
-    brandColor: '#FC8019',
-    brandBg: '#FFF5EC',
-    category: 'Food & Grocery',
-    dealType: 'exclusive',
-    badgeText: 'EXCLUSIVE',
-    title: 'Swiggy Mega Food Fest',
-    description: 'Up to 60% OFF + Free Delivery on qualifying orders.',
-    couponCode: 'SWIGGY60',
-    discountText: 'Up to 60% OFF',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
+    dealType: 'trending',
+    badgeText: 'TRENDING',
+    title: 'Enjoy up to 75% OFF + 20% Cashback on Furniture & Decor',
+    description: 'Shop across furniture & home décor and enjoy up to 75% OFF plus an extra 20% cashback.',
+    couponCode: '',
+    discountText: 'Up to 75% OFF',
     isVerified: true,
     usedCount: '2.1k used today',
-    validTill: '20 May 2025',
-    isExpiringSoon: true
+    validTill: '30 Jun 2026',
+    isExpiringSoon: false
   },
   {
     id: 'deal-6',
-    brandName: 'Hostinger',
-    brandLogo: 'H',
-    brandColor: '#FF6B35',
-    brandBg: '#FFF3EE',
-    category: 'Electronics',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
     dealType: 'trending',
     badgeText: 'TRENDING',
-    title: 'Hostinger Anniversary Sale',
-    description: 'Up to 85% OFF on Web Hosting + Free Domain.',
-    couponCode: 'HOST85',
-    discountText: 'Up to 85% OFF',
+    title: 'Get 75% off on Brayan 250ml White Set of 2 Ceramic Coffee Mugs',
+    description: 'Shop the Brayan 250ml white ceramic coffee mug set of 2 at up to 75% OFF.',
+    couponCode: '',
+    discountText: 'Up to 75% OFF',
     isVerified: true,
-    usedCount: '654 used today',
-    validTill: '30 May 2025',
+    usedCount: '543 used today',
+    validTill: '30 Jun 2026',
     isExpiringSoon: false
   },
   {
     id: 'deal-7',
-    brandName: 'Nykaa',
-    brandLogo: 'N',
-    brandColor: '#FC2779',
-    brandBg: '#FFF0F6',
-    category: 'Beauty',
-    dealType: 'exclusive',
-    badgeText: 'EXCLUSIVE',
-    title: 'Nykaa Beauty Bonanza Sale',
-    description: 'Up to 60% OFF on skincare, makeup & wellness brands.',
-    couponCode: 'NYKAA60',
-    discountText: 'Up to 60% OFF',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
+    dealType: 'trending',
+    badgeText: 'TRENDING',
+    title: 'Get 36% off on Suki Bedside Table in Wenge Finish',
+    description: 'Shop the Suki Bedside Table in Wenge finish at up to 36% OFF.',
+    couponCode: '',
+    discountText: 'Up to 36% OFF',
     isVerified: true,
-    usedCount: '987 used today',
-    validTill: '28 May 2025',
+    usedCount: '432 used today',
+    validTill: '30 Jun 2026',
     isExpiringSoon: false
   },
   {
     id: 'deal-8',
-    brandName: 'Zomato',
-    brandLogo: 'Z',
-    brandColor: '#E23744',
-    brandBg: '#FEF0F1',
-    category: 'Food & Grocery',
-    dealType: 'ending-soon',
-    badgeText: 'ENDING SOON',
-    title: 'Zomato Flash Sale - 60% OFF',
-    description: 'Flat 60% OFF on first 3 orders. Max discount per order applies.',
-    couponCode: 'ZOMATO60',
-    discountText: 'Flat 60% OFF',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
+    dealType: 'trending',
+    badgeText: 'TRENDING',
+    title: 'Get Smart ABS Plastic Vegetable Peeler with Stainless Steel Blade @ Rs.1',
+    description: 'Add a smart ABS plastic vegetable peeler with a stainless steel blade to your cart for just ₹1.',
+    couponCode: '',
+    discountText: '@ ₹1',
     isVerified: true,
-    usedCount: '4.3k used today',
-    validTill: '21 May 2025',
-    isExpiringSoon: true
+    usedCount: '765 used today',
+    validTill: '30 Jun 2026',
+    isExpiringSoon: false
   },
   {
     id: 'deal-9',
-    brandName: 'Ajio',
-    brandLogo: 'AJ',
-    brandColor: '#000000',
-    brandBg: '#F5F5F5',
-    category: 'Fashion',
-    dealType: 'exclusive',
-    badgeText: 'EXCLUSIVE',
-    title: 'Ajio Big Bold Sale',
-    description: 'Up to 70% OFF on 5,000+ premium fashion brands.',
-    couponCode: 'AJIO70',
-    discountText: 'Up to 70% OFF',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
+    dealType: 'trending',
+    badgeText: 'TRENDING',
+    title: 'Get Grey Abstract Rubber 24x16 Inches AntiSkid Bath Mat @ Rs.1',
+    description: 'Add a grey abstract rubber 24x16 inch anti-skid bath mat to your cart for just ₹1.',
+    couponCode: '',
+    discountText: '@ ₹1',
     isVerified: true,
-    usedCount: '765 used today',
-    validTill: '29 May 2025',
+    usedCount: '321 used today',
+    validTill: '30 Jun 2026',
     isExpiringSoon: false
   },
   {
     id: 'deal-10',
-    brandName: 'BigBasket',
-    brandLogo: 'BB',
-    brandColor: '#84C225',
-    brandBg: '#F4FBEA',
-    category: 'Food & Grocery',
-    dealType: 'regular',
-    badgeText: 'VERIFIED',
-    title: 'BigBasket Superstore Sale',
-    description: 'Flat discount on grocery orders above the minimum. Fresh produce.',
-    couponCode: 'BB300',
-    discountText: 'Flat OFF',
-    isVerified: true,
-    usedCount: '543 used today',
-    validTill: '27 May 2025',
-    isExpiringSoon: true
-  },
-  {
-    id: 'deal-11',
-    brandName: 'boAt',
-    brandLogo: 'boAt',
-    brandColor: '#1A1A2E',
-    brandBg: '#F5F5F5',
-    category: 'Electronics',
-    dealType: 'ending-soon',
-    badgeText: 'ENDING SOON',
-    title: 'boAt Flash Sale - Audio at Rock Bottom',
-    description: 'Up to 60% OFF on earphones, headphones & speakers.',
-    couponCode: 'BOAT60',
-    discountText: 'Up to 60% OFF',
-    isVerified: true,
-    usedCount: '1.2k used today',
-    validTill: '22 May 2025',
-    isExpiringSoon: true
-  },
-  {
-    id: 'deal-12',
-    brandName: 'OYO',
-    brandLogo: 'OYO',
-    brandColor: '#EE2E24',
-    brandBg: '#FEECEB',
-    category: 'Travel',
-    dealType: 'exclusive',
-    badgeText: 'EXCLUSIVE',
-    title: 'OYO Rooms Mega Sale',
-    description: 'Flat 45% OFF on hotel bookings.',
-    couponCode: 'OYO45',
-    discountText: 'Flat 45% OFF',
-    isVerified: true,
-    usedCount: '432 used today',
-    validTill: '26 May 2025',
-    isExpiringSoon: true
-  },
-  {
-    id: 'deal-13',
-    brandName: 'Myntra',
-    brandLogo: 'M',
-    brandColor: '#FF3F6C',
-    brandBg: '#FFF0F4',
-    category: 'Fashion',
+    brandName: 'Pepperfry',
+    brandLogo: 'PP',
+    brandColor: '#5B4FBE',
+    brandBg: '#F0EEFF',
+    category: 'Home & Kitchen',
     dealType: 'trending',
     badgeText: 'TRENDING',
-    title: 'Myntra Fashion Friday Sale',
-    description: 'Extra 10% OFF on already discounted items. Use code.',
-    couponCode: 'MFRIDAY10',
-    discountText: 'Extra 10% OFF',
-    isVerified: true,
-    usedCount: '2.1k used today',
-    validTill: '31 May 2025',
-    isExpiringSoon: false
-  },
-  {
-    id: 'deal-14',
-    brandName: 'Croma',
-    brandLogo: 'croma',
-    brandColor: '#1D8348',
-    brandBg: '#EAFAF1',
-    category: 'Electronics',
-    dealType: 'regular',
-    badgeText: 'VERIFIED',
-    title: 'Croma Weekend Mega Sale',
-    description: 'Up to 55% OFF on ACs, TVs, laptops & appliances.',
-    couponCode: 'CROMA55',
-    discountText: 'Up to 55% OFF',
+    title: 'Get 46% off on Mana Coffee Table in Wenge Finish',
+    description: 'Shop the Mana Coffee Table in Wenge finish at up to 46% OFF.',
+    couponCode: '',
+    discountText: 'Up to 46% OFF',
     isVerified: true,
     usedCount: '678 used today',
-    validTill: '30 May 2025',
-    isExpiringSoon: false
-  },
-  {
-    id: 'deal-15',
-    brandName: 'Coursera',
-    brandLogo: 'C',
-    brandColor: '#0056D2',
-    brandBg: '#EEF4FF',
-    category: 'Electronics',
-    dealType: 'exclusive',
-    badgeText: 'EXCLUSIVE',
-    title: 'Coursera Learning Festival',
-    description: 'Up to 65% OFF on professional certificates & degrees.',
-    couponCode: 'COURSE65',
-    discountText: 'Up to 65% OFF',
-    isVerified: true,
-    usedCount: '321 used today',
-    validTill: '31 May 2025',
-    isExpiringSoon: false
-  },
-  {
-    id: 'deal-16',
-    brandName: 'Samsung',
-    brandLogo: 'S',
-    brandColor: '#1428A0',
-    brandBg: '#EEF0FF',
-    category: 'Electronics',
-    dealType: 'ending-soon',
-    badgeText: 'ENDING SOON',
-    title: 'Samsung Galaxy Days Sale',
-    description: 'Up to 40% OFF on Galaxy phones, tablets & wearables.',
-    couponCode: 'SAMSUNG40',
-    discountText: 'Up to 40% OFF',
-    isVerified: true,
-    usedCount: '456 used today',
-    validTill: '23 May 2025',
-    isExpiringSoon: true
-  },
-  {
-    id: 'deal-17',
-    brandName: 'Goibibo',
-    brandLogo: 'go',
-    brandColor: '#E8262A',
-    brandBg: '#FEF0F0',
-    category: 'Travel',
-    dealType: 'trending',
-    badgeText: 'TRENDING',
-    title: 'Goibibo Go-On Sale',
-    description: 'Flat 30% OFF on flights + Extra 15% on hotels.',
-    couponCode: 'GOON30',
-    discountText: 'Flat 30% OFF',
-    isVerified: true,
-    usedCount: '567 used today',
-    validTill: '28 May 2025',
-    isExpiringSoon: false
-  },
-  {
-    id: 'deal-18',
-    brandName: 'Mamaearth',
-    brandLogo: 'mama',
-    brandColor: '#6AB04C',
-    brandBg: '#F0FAF0',
-    category: 'Beauty',
-    dealType: 'regular',
-    badgeText: 'VERIFIED',
-    title: 'Mamaearth Natural Glow Sale',
-    description: 'Extra 35% OFF on entire skincare & haircare range.',
-    couponCode: 'MAMA35',
-    discountText: 'Extra 35% OFF',
-    isVerified: true,
-    usedCount: '234 used today',
-    validTill: '31 May 2025',
+    validTill: '30 Jun 2026',
     isExpiringSoon: false
   }
 ];
 
 // ============================================================================
-// CATEGORIES DATA
-// ============================================================================
-const CATEGORY_TABS: CategoryTab[] = [
-  { id: 'all', name: 'All Deals', icon: '', dealCount: '2,500+ Deals' },
-  { id: 'fashion', name: 'Fashion', icon: '', dealCount: '560+ Deals' },
-  { id: 'electronics', name: 'Electronics', icon: '', dealCount: '480+ Deals' },
-  { id: 'travel', name: 'Travel', icon: '', dealCount: '350+ Deals' },
-  { id: 'food', name: 'Food & Grocery', icon: '', dealCount: '420+ Deals' },
-  { id: 'home', name: 'Home & Kitchen', icon: '', dealCount: '290+ Deals' },
-  { id: 'beauty', name: 'Beauty', icon: '', dealCount: '210+ Deals' }
-];
-
 // ============================================================================
 // SIDEBAR STATIC CONFIGURATIONS
 // ============================================================================
@@ -472,11 +313,9 @@ const parseUsedCount = (countStr: string): number => {
 export default function DealsOfTheDay() {
   const [activeCategory, setActiveCategory] = useState<string>('All Deals');
   const [activeDealType, setActiveDealType] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<string>('Recommended');
+  const sortBy = 'Recommended';
   const [visibleCount, setVisibleCount] = useState<number>(6);
   const [wishlistedDeals, setWishlistedDeals] = useState<Record<string, boolean>>({});
-  const [copiedCodeCode, setCopiedCodeCode] = useState<string | null>(null);
-  const [newsletterEmail, setNewsletterEmail] = useState<string>('');
 
   const isFirstMount = useRef<boolean>(true);
   const listHeaderRef = useRef<HTMLDivElement>(null);
@@ -554,26 +393,8 @@ export default function DealsOfTheDay() {
     setWishlistedDeals((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const handleCopyCodeAction = (code: string, brand: string, title: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    e.preventDefault();
-    navigator.clipboard.writeText(code).then(() => {
-      setCopiedCodeCode(code);
-      setTimeout(() => setCopiedCodeCode(null), 1800);
-      alert(`Code copied. Head to ${brand} and paste it at checkout.`);
-    });
-  };
-
   const handleViewDeal = (brand: string, title: string) => {
     alert(`Deal claimed. Heading to ${brand} now.`);
-  };
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (newsletterEmail) {
-      alert(`Subscribed! Deal alerts are on their way to: ${newsletterEmail}`);
-      setNewsletterEmail('');
-    }
   };
 
   return (
@@ -646,117 +467,16 @@ export default function DealsOfTheDay() {
           </div>
 
           <div className="hidden md:col-span-5 md:flex items-center justify-center relative select-none">
-            <div className="relative w-80 h-80 flex items-center justify-center overflow-visible">
-              <div className="absolute w-64 h-64 rounded-full bg-[#F0EEFF]/60 animate-pulse pointer-events-none" />
-              <div className="bg-[#5B4FBE] w-44 h-52 rounded-3xl mx-auto relative shadow-2xl border border-indigo-400/20 transform -rotate-2 hover:rotate-0 transition-transform duration-300 flex items-center justify-center z-10">
-                <div className="absolute top-1/2 left-0 right-0 h-4 bg-[#4a3fa8]/30 -translate-y-1/2" />
-                <div className="absolute left-1/2 top-0 bottom-0 w-4 bg-[#4a3fa8]/30 -translate-x-1/2" />
-                <div className="absolute -top-7 left-1/2 -translate-x-1/2 flex gap-4 z-0">
-                  <div className="w-12 h-14 rounded-full border-4 border-[#4a3fa8] bg-transparent" />
-                  <div className="w-12 h-14 rounded-full border-4 border-[#4a3fa8] bg-transparent absolute -left-2" />
-                </div>
-                <span className="absolute text-white font-black text-2xl tracking-widest z-15">DEALS</span>
-              </div>
-              <div className="bg-[#7C3AED] w-28 h-28 rounded-2xl absolute -left-8 bottom-4 shadow-xl z-20 border border-violet-400/20 transform rotate-12 flex items-center justify-center overflow-hidden">
-                <div className="absolute top-0 bottom-0 w-3.5 bg-violet-400/40 left-1/2 -translate-x-1/2" />
-                <div className="absolute left-0 right-0 h-3.5 bg-violet-400/40 top-1/2 -translate-y-1/2" />
-                <div className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center text-white text-xs font-black z-10 select-none">
-                  &#9733;
-                </div>
-              </div>
-              <div className="border-4 border-[#FF5722] w-32 h-24 rounded-xl absolute -right-6 bottom-0 z-15 bg-white/80 backdrop-blur-xs shadow-lg transform -rotate-6 flex flex-col justify-end p-2 border-dashed">
-                <div className="flex justify-around items-center absolute -bottom-2.5 left-0 right-0 px-4">
-                  <div className="w-5 h-5 rounded-full bg-[#FF5722] border-2 border-white shadow-sm shrink-0" />
-                  <div className="w-5 h-5 rounded-full bg-[#FF5722] border-2 border-white shadow-sm shrink-0" />
-                </div>
-                <div className="text-center text-xs font-black text-[#FF5722] select-none leading-none mb-1">CART</div>
-              </div>
-              <div className="bg-white border-4 border-[#5B4FBE] w-20 h-20 rounded-full absolute -right-4 top-8 shadow-xl flex items-center justify-center z-25 hover:scale-105 duration-300">
-                <Clock className="text-[#5B4FBE]" size={36} />
-              </div>
-              <div className="bg-[#FF5722] rounded-full w-14 h-14 absolute top-0 right-16 flex items-center justify-center text-white font-black text-xl shadow-xl border-2 border-white animate-bounce pointer-events-none z-30">
-                %
-              </div>
-            </div>
+            <img
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783244518/deals-of-the-day_sj9x4u.png"
+              alt="Deals of the Day"
+              className="w-full max-w-xl h-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
         </div>
       </section>
 
-      {/* SECTION 2 - CATEGORY TABS ROW */}
-      <section className="bg-white border-y border-[#E8E8F0] py-4 w-full">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center gap-3 overflow-x-auto no-scrollbar scroll-smooth">
-            {CATEGORY_TABS.map((tab) => {
-              const isActive = activeCategory === tab.name;
-              return (
-                <div
-                  key={tab.id}
-                  onClick={() => setActiveCategory(tab.name)}
-                  className={`flex flex-col items-center gap-1.5 px-5 py-3 rounded-2xl cursor-pointer transition-all duration-200 min-w-[100px] flex-shrink-0 text-center ${
-                    isActive ? 'bg-[#5B4FBE]/10 border-b-2 border-[#5B4FBE]' : 'hover:bg-[#F8F8FF]'
-                  }`}
-                >
-                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-xl transition-colors duration-200 ${isActive ? 'bg-[#5B4FBE]' : 'bg-[#F8F8FF] border border-[#E8E8F0]'}`}>
-                    <span className={`text-lg font-black ${isActive ? 'text-white' : 'text-[#5B4FBE]'}`}>
-                      {tab.id === 'all' ? '#' : tab.id === 'fashion' ? 'F' : tab.id === 'electronics' ? 'E' : tab.id === 'travel' ? 'T' : tab.id === 'food' ? 'G' : tab.id === 'home' ? 'H' : 'B'}
-                    </span>
-                  </div>
-                  <span className={`text-xs select-none ${isActive ? 'font-bold text-[#5B4FBE]' : 'font-semibold text-[#1A1A2E]'}`}>{tab.name}</span>
-                  <span className={`text-[10px] select-none ${isActive ? 'text-[#5B4FBE] font-bold' : 'text-[#4A4A6A]'}`}>{tab.dealCount}</span>
-                </div>
-              );
-            })}
-            <Link href="/categories" className="flex flex-col items-center gap-1.5 px-5 py-3 rounded-2xl cursor-pointer hover:bg-[#F8F8FF] transition-all duration-200 min-w-[100px] flex-shrink-0 text-center select-none">
-              <div className="w-12 h-12 rounded-2xl bg-[#F0EEFF] border border-[#E8E8F0] flex items-center justify-center text-[#5B4FBE]">
-                <LayoutGrid size={20} className="stroke-[2.5]" />
-              </div>
-              <span className="text-xs font-semibold text-[#1A1A2E]">View All Categories</span>
-              <span className="text-[10px] text-[#5B4FBE] font-bold">Explore All</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 3 - DEAL TYPE FILTER + SORT */}
-      <section className="bg-white border-b border-[#E8E8F0] py-4 w-full">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="flex items-center gap-2 flex-wrap text-left">
-            {[
-              { type: 'all', label: 'All Deals', icon: null },
-              { type: 'trending', label: 'Trending Deals', icon: <TrendingUp size={15} /> },
-              { type: 'ending-soon', label: 'Ending Soon', icon: <Clock size={15} /> },
-              { type: 'exclusive', label: 'Exclusive Deals', icon: <Star size={15} /> }
-            ].map((btn) => (
-              <button
-                key={btn.type}
-                onClick={() => setActiveDealType(btn.type)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition cursor-pointer ${
-                  activeDealType === btn.type ? 'bg-[#5B4FBE] text-white shadow-xs' : 'bg-white border border-[#E8E8F0] text-[#4A4A6A] hover:border-[#5B4FBE] hover:text-[#5B4FBE]'
-                }`}
-              >
-                {btn.icon}
-                <span>{btn.label}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-2.5 shrink-0 select-none w-full md:w-auto justify-end">
-            <span className="text-sm font-semibold text-[#4A4A6A] whitespace-nowrap">Sort By:</span>
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              aria-label="Sort deals"
-              className="border border-[#E8E8F0] rounded-xl px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-[#5B4FBE] cursor-pointer text-[#1A1A2E] font-medium transition hover:bg-gray-50/80"
-            >
-              <option value="Recommended">Recommended</option>
-              <option value="Newest First">Newest First</option>
-              <option value="Expiring Soon">Expiring Soon</option>
-              <option value="Highest Discount">Highest Discount</option>
-              <option value="Most Popular">Most Popular</option>
-            </select>
-          </div>
-        </div>
-      </section>
 
       {/* SECTION 4 - MAIN 2-COLUMN LAYOUT */}
       <section className="bg-[#F8F8FF] py-10 flex-1 w-full">
@@ -792,8 +512,13 @@ export default function DealsOfTheDay() {
                       className="bg-white rounded-2xl border border-[#E8E8F0] p-5 hover:shadow-lg hover:border-[#5B4FBE]/30 transition-all duration-300 group cursor-pointer flex flex-col sm:flex-row items-center sm:items-start gap-5 relative"
                     >
                       <div className="flex-shrink-0 text-center w-24 flex flex-col items-center">
-                        <div className="w-16 h-16 rounded-2xl flex items-center justify-center border border-white shadow-xs group-hover:scale-105 transition-all duration-300 pointer-events-none select-none" style={{ backgroundColor: deal.brandBg }}>
-                          <span className="font-black text-lg uppercase tracking-wide" style={{ color: deal.brandColor }}>{deal.brandLogo}</span>
+                        <div className="w-16 h-16 rounded-2xl flex items-center justify-center border border-[#E8E8F0] bg-white shadow-xs group-hover:scale-105 transition-all duration-300 overflow-hidden pointer-events-none select-none">
+                          <img
+                            src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg"
+                            alt={deal.brandName}
+                            className="w-full h-full object-contain"
+                            referrerPolicy="no-referrer"
+                          />
                         </div>
                         <span className="text-xs font-extrabold text-[#1A1A2E] mt-2 block w-full text-center line-clamp-1">{deal.brandName}</span>
                         <span className="inline-block bg-[#F0EEFF] text-[#5B4FBE] text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider mt-1 scale-90 select-none">{deal.category}</span>
@@ -805,17 +530,6 @@ export default function DealsOfTheDay() {
                         </div>
                         <h3 className="font-extrabold text-[#1A1A2E] text-base md:text-lg leading-tight group-hover:text-[#5B4FBE] transition-colors line-clamp-1">{deal.title}</h3>
                         <p className="text-[#4A4A6A] text-sm mt-1.5 leading-relaxed font-semibold line-clamp-1">{deal.description}</p>
-                        <div className="mt-3">
-                          <div
-                            onClick={(e) => handleCopyCodeAction(deal.couponCode, deal.brandName, deal.title, e)}
-                            className="inline-flex items-center gap-2 border border-dashed border-[#5B4FBE] bg-[#F0EEFF] hover:bg-[#5B4FBE]/15 rounded-lg px-3 py-1.5 group/code transition-colors cursor-pointer select-none"
-                          >
-                            <span className="text-xs text-[#4A4A6A] font-semibold">Code:</span>
-                            <span className="text-xs font-black text-[#5B4FBE] font-mono tracking-wider">{deal.couponCode}</span>
-                            <Copy size={13} className={`ml-1 transition-colors ${copiedCodeCode === deal.couponCode ? 'text-[#22C55E]' : 'text-[#5B4FBE] group-hover/code:text-[#FF5722]'}`} />
-                            {copiedCodeCode === deal.couponCode && <span className="text-[10px] font-bold text-[#22C55E]">Copied!</span>}
-                          </div>
-                        </div>
                         <div className="mt-4 flex items-center gap-4 text-xs select-none">
                           {deal.isVerified && (
                             <div className="inline-flex items-center gap-1 text-[#22C55E]">
@@ -968,28 +682,6 @@ export default function DealsOfTheDay() {
             </div>
 
           </aside>
-        </div>
-      </section>
-
-      {/* SECTION 5 - NEWSLETTER BANNER */}
-      <section className="bg-gradient-to-br from-[#5B4FBE] to-[#3730A3] py-16 relative overflow-hidden select-none w-full">
-        <div className="absolute top-[-50px] left-[-50px] w-48 h-48 rounded-full bg-white/5 pointer-events-none" />
-        <div className="absolute bottom-[-50px] right-[-50px] w-64 h-64 rounded-full bg-white/5 pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
-          <div className="col-span-1 md:col-span-6 md:col-start-4 text-center max-w-lg mx-auto">
-            <div className="bg-white/10 w-16 h-16 rounded-3xl mx-auto flex items-center justify-center mb-4 text-white">
-              <Mail size={32} />
-            </div>
-            <h3 className="font-extrabold text-3xl text-white tracking-tight leading-none">Never Miss a Deal</h3>
-            <p className="text-white/70 text-sm mt-3 leading-relaxed font-semibold">
-              We verify 10,000+ coupons across 500+ brands. Join 50,000+ shoppers getting deal alerts.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="mt-8 flex w-full max-w-md mx-auto items-center">
-              <input type="email" required value={newsletterEmail} onChange={(e) => setNewsletterEmail(e.target.value)} placeholder="Enter your email address" className="flex-1 bg-white rounded-l-full px-6 py-4 text-sm text-[#1A1A2E] placeholder:text-gray-400 outline-none font-bold" />
-              <button type="submit" className="bg-[#FF5722] hover:bg-orange-600 active:scale-95 text-white px-7 py-4 rounded-r-full font-extrabold text-sm transition-all shrink-0 cursor-pointer shadow-md">Subscribe</button>
-            </form>
-            <span className="block text-[11px] text-white/40 mt-3.5 font-bold tracking-wide">No spam. Unsubscribe anytime.</span>
-          </div>
         </div>
       </section>
 

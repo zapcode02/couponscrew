@@ -145,7 +145,7 @@ export default function Privacy() {
         "Right to deletion: you can ask us to delete your account and all associated data. We will complete this within 30 days of your request.",
         "Opt out of marketing: unsubscribe from any non-essential email using the link at the bottom of every newsletter. Takes one click.",
         "Data portability: you can request your coupon history and account data in a machine-readable format.",
-        "To exercise any of these rights, email privacy@couponscrew.com. We are real people and we will respond."
+        "To exercise any of these rights, email Couponscrew@gmail.com. We are real people and we will respond."
       ]
     },
     {
@@ -175,7 +175,7 @@ export default function Privacy() {
       points: [
         "Couponscrew is designed for users aged 18 and above. We do not knowingly collect data from anyone under 13.",
         "If we discover an account belonging to someone under 13, we will delete it and all associated data immediately.",
-        "If you are a parent or guardian and believe your child has registered on Couponscrew, email privacy@couponscrew.com and we will act within 24 hours.",
+        "If you are a parent or guardian and believe your child has registered on Couponscrew, email Couponscrew@gmail.com and we will act within 24 hours.",
         "Our platform complies with relevant international standards on children's online privacy protection.",
         "We do not partner with or promote brands selling tobacco, alcohol, gambling, or adult content."
       ]
@@ -208,8 +208,8 @@ export default function Privacy() {
         "We review and update this Privacy Policy at least once a year, or sooner if laws change or the platform changes significantly.",
         "For significant changes, we will notify you via email or a notice on the platform before the change takes effect.",
         "We recommend checking this page periodically. The date at the top always reflects the last update.",
-        "For privacy questions, data requests, or anything in this policy you want clarified - email privacy@couponscrew.com.",
-        "For general support, email support@couponscrew.com. We reply within 2 hours, Monday to Saturday.",
+        "For privacy questions, data requests, or anything in this policy you want clarified - email Couponscrew@gmail.com.",
+        "For general support, email Couponscrew@gmail.com. We reply within 2 hours, Monday to Saturday.",
         "Continuing to use Couponscrew after a policy update means you have accepted the revised terms."
       ]
     }
@@ -279,7 +279,7 @@ export default function Privacy() {
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <a
-                  href="mailto:privacy@couponscrew.com"
+                  href="mailto:Couponscrew@gmail.com"
                   className="border-2 border-white/30 text-white px-7 py-3.5 rounded-full font-semibold hover:bg-white/10 transition flex items-center gap-2 cursor-pointer"
                 >
                   <Mail className="w-4.5 h-4.5" />
@@ -524,7 +524,7 @@ export default function Privacy() {
                 <div className="mt-5 space-y-2">
                   <div className="flex items-center gap-3 p-3 bg-[#F0EEFF] rounded-xl select-none">
                     <Mail className="w-4 h-4 text-[#5B4FBE]" />
-                    <span className="text-xs font-semibold text-[#5B4FBE]">privacy@couponscrew.com</span>
+                    <span className="text-xs font-semibold text-[#5B4FBE]">Couponscrew@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-[#FFF3F0] rounded-xl select-none">
                     <Phone className="w-4 h-4 text-[#FF5722]" />
@@ -533,7 +533,7 @@ export default function Privacy() {
                 </div>
 
                 <a
-                  href="mailto:privacy@couponscrew.com"
+                  href="mailto:Couponscrew@gmail.com"
                   className="mt-4 w-full bg-[#5B4FBE] hover:bg-[#4a3fa8] text-white py-3 rounded-xl text-sm font-semibold transition flex items-center justify-center gap-2 cursor-pointer shadow-md block text-center"
                 >
                   <Mail className="w-4 h-4" />
@@ -621,7 +621,7 @@ export default function Privacy() {
                   </div>
                   <h3 className="text-lg font-bold text-[#1A1A2E] mb-3">Your Data, Your Control</h3>
                   <p className="text-[#1A1A2E]/70 text-xs sm:text-sm leading-relaxed mb-6">
-                    You can access, correct, download, or permanently delete your data at any time. Email privacy@couponscrew.com and we will handle it within 30 days.
+                    You can access, correct, download, or permanently delete your data at any time. Email Couponscrew@gmail.com and we will handle it within 30 days.
                   </p>
                 </div>
                 <div>
@@ -711,7 +711,7 @@ export default function Privacy() {
                 <span>View Our Coupons</span>
               </button>
               <a
-                href="mailto:privacy@couponscrew.com"
+                href="mailto:Couponscrew@gmail.com"
                 className="border-2 border-white/30 text-white px-10 py-4 rounded-full font-bold text-base hover:bg-white/10 transition flex items-center gap-2 cursor-pointer inline-flex items-center justify-center"
               >
                 <Mail className="w-5 h-5" />

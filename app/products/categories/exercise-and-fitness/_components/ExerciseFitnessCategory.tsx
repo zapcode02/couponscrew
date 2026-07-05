@@ -98,15 +98,7 @@ export default function ExerciseFitnessCategory() {
 
           <div className="md:col-span-5 flex items-center justify-center relative w-full">
             <div className="relative w-full h-[280px] rounded-3xl overflow-hidden shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80" alt="Exercise & Fitness" className="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-700" referrerPolicy="no-referrer" />
-              <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-black/10 to-transparent rounded-3xl pointer-events-none" />
-              <div className="absolute bottom-4 right-4 bg-white rounded-2xl p-5 shadow-2xl min-w-[180px] border border-[#E8E8F0]/40 z-10 text-left">
-                <div className="text-xs text-[#4A4A6A] font-extrabold uppercase tracking-widest">Big Savings on</div>
-                <div className="text-xl font-black text-[#1A1A2E] tracking-tight mt-0.5">FITNESS</div>
-                <div className="text-xs text-[#4A4A6A] mt-1.5 font-semibold">Up to</div>
-                <div className="text-3xl font-black text-[#FF5722] leading-none mt-0.5 tracking-tight">60% OFF</div>
-                <a href="https://amzn.to/4uUuG7b" target="_blank" rel="noopener noreferrer nofollow sponsored" className="bg-[#FF5722] hover:bg-orange-600 text-white px-5 py-2.5 rounded-full text-xs font-bold mt-4 block w-full text-center transition-all duration-200 shadow-md">Shop Now</a>
-              </div>
+              <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp" alt="Exercise & Fitness" className="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-700" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>

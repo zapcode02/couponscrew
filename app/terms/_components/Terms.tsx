@@ -92,7 +92,7 @@ export default function Terms() {
       points: [
         "When you create an account with Couponscrew, provide accurate and current information. Fake details help no one.",
         "You are responsible for keeping your account credentials confidential and for everything that happens under your account.",
-        "If you spot any unauthorised use of your account, email us immediately at support@couponscrew.com.",
+        "If you spot any unauthorised use of your account, email us immediately at Couponscrew@gmail.com.",
         "Couponscrew cannot be held liable for loss or damage resulting from your failure to keep your account secure.",
         "We reserve the right to suspend or terminate accounts at our discretion - we will always have a valid reason for doing so.",
         "One person, one account. Duplicate accounts will be suspended without warning.",
@@ -244,8 +244,8 @@ export default function Terms() {
         "Couponscrew may update these Terms at any time. For significant changes, we will notify users via email or a platform notice.",
         "Continued use of the platform after any update means you accept the revised Terms.",
         "We recommend checking this page periodically - it will always show the date of the last update.",
-        "For questions about these Terms, email our team at legal@couponscrew.com.",
-        "For general support, email support@couponscrew.com - we reply within 2 hours, Monday to Saturday.",
+        "For questions about these Terms, email our team at Couponscrew@gmail.com.",
+        "For general support, email Couponscrew@gmail.com - we reply within 2 hours, Monday to Saturday.",
         "We are a remote-first team. The fastest way to reach us is always email, not a phone queue.",
       ]
     },
@@ -518,7 +518,7 @@ export default function Terms() {
                 <div className="mt-5 space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-[#F0EEFF] rounded-xl select-none">
                     <Mail className="w-4 h-4 text-[#5B4FBE]" />
-                    <span className="text-xs font-semibold text-[#5B4FBE]">legal@couponscrew.com</span>
+                    <span className="text-xs font-semibold text-[#5B4FBE]">Couponscrew@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-[#FFF3F0] rounded-xl select-none">
                     <Phone className="w-4 h-4 text-[#FF5722]" />
@@ -527,7 +527,7 @@ export default function Terms() {
                 </div>
 
                 <a
-                  href="mailto:legal@couponscrew.com"
+                  href="mailto:Couponscrew@gmail.com"
                   className="mt-4 w-full bg-[#5B4FBE] hover:bg-[#4a3fa8] text-white py-3 rounded-xl text-sm font-semibold transition flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
                   <Mail className="w-4 h-4" />

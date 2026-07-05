@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="border-t border-gray-800 pt-4 mt-2 space-y-2">
               <div className="flex items-center gap-2 text-xs text-gray-400">
                 <Mail className="w-3.5 h-3.5 text-gray-400 shrink-0" />
-                <span>support@couponscrew.com</span>
+                <span>Couponscrew@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-400">
                 <Phone className="w-3.5 h-3.5 text-gray-400 shrink-0" />
@@ -87,11 +87,11 @@ export default function Footer() {
               Top Categories
             </h3>
             <ul className="space-y-1 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Fashion</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Electronics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Food & Grocery</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Travel</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Web Hosting</a></li>
+              <li><Link href="/products/categories/fashion" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Fashion</Link></li>
+              <li><Link href="/products/categories/beauty" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Beauty</Link></li>
+              <li><Link href="/products/categories/exercise-and-fitness" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Exercise &amp; Fitness</Link></li>
+              <li><Link href="/products/categories/home-and-kitchen" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Home &amp; Kitchen</Link></li>
+              <li><Link href="/products/categories/clothing-and-accessories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Clothing &amp; Accessories</Link></li>
             </ul>
           </div>
         </div>

@@ -11,8 +11,8 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const ADMIN_EMAIL = 'support@couponscrew.com';
-const FROM_EMAIL = process.env.SMTP_FROM || 'Couponscrew <support@couponscrew.com>';
+const ADMIN_EMAIL = 'Couponscrew@gmail.com';
+const FROM_EMAIL = process.env.SMTP_FROM || 'Couponscrew <Couponscrew@gmail.com>';
 
 function adminEmailHtml(data: {
   name: string;
@@ -119,7 +119,7 @@ function userConfirmationHtml(data: { name: string; category: string }): string 
         <tr><td style="background:#F0EEFF;border-radius:0 0 16px 16px;padding:24px 40px;border:1px solid #E8E8F0;border-top:none;text-align:center;">
           <p style="margin:0;font-size:13px;font-weight:600;color:#5B4FBE;">Couponscrew Support Team</p>
           <p style="margin:6px 0 0;font-size:12px;color:#8B8BAA;">
-            <a href="mailto:support@couponscrew.com" style="color:#5B4FBE;text-decoration:none;">support@couponscrew.com</a>
+            <a href="mailto:Couponscrew@gmail.com" style="color:#5B4FBE;text-decoration:none;">Couponscrew@gmail.com</a>
             &nbsp;·&nbsp;
             <a href="https://couponscrew.com" style="color:#5B4FBE;text-decoration:none;">couponscrew.com</a>
           </p>

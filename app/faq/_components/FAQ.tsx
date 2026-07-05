@@ -129,13 +129,13 @@ export default function FAQ() {
       id: 'account-4',
       category: 'account',
       question: 'How do I delete my Couponscrew account?',
-      answer: 'Go to Account Settings and select "Delete Account", or email us at privacy@couponscrew.com with your registered email. We permanently delete your account and all data within 30 days as per our Privacy Policy. No guilt trips, no dark patterns — if you want out, you\'re out.'
+      answer: 'Go to Account Settings and select "Delete Account", or email us at Couponscrew@gmail.com with your registered email. We permanently delete your account and all data within 30 days as per our Privacy Policy. No guilt trips, no dark patterns — if you want out, you\'re out.'
     },
     {
       id: 'account-5',
       category: 'account',
       question: 'Can I change my registered email address?',
-      answer: 'Yes. Log in, go to Account Settings, and update your email. You\'ll get a verification link on the new address to confirm the change. If anything goes wrong, email support@couponscrew.com and we\'ll sort it.'
+      answer: 'Yes. Log in, go to Account Settings, and update your email. You\'ll get a verification link on the new address to confirm the change. If anything goes wrong, email Couponscrew@gmail.com and we\'ll sort it.'
     },
 
     // CATEGORY 3 — Deals & Offers (5 questions)
@@ -193,7 +193,7 @@ export default function FAQ() {
       id: 'payments-4',
       category: 'payments',
       question: 'What if I got charged unexpectedly after using a Couponscrew coupon?',
-      answer: 'Couponscrew has no role in the billing process — all transactions happen directly with the brand. If something looks wrong on your bill, contact the brand\'s customer support first. You can also email us at support@couponscrew.com and we\'ll help however we can, including flagging the brand if there\'s a pattern.'
+      answer: 'Couponscrew has no role in the billing process — all transactions happen directly with the brand. If something looks wrong on your bill, contact the brand\'s customer support first. You can also email us at Couponscrew@gmail.com and we\'ll help however we can, including flagging the brand if there\'s a pattern.'
     },
 
     // CATEGORY 5 — Privacy & Security (5 questions)
@@ -259,7 +259,7 @@ export default function FAQ() {
       id: 'tech-1',
       category: 'tech',
       question: 'The Couponscrew website is not loading properly. What do I do?',
-      answer: 'Try these in order: clear your browser cache and cookies, try a different browser, turn off browser extensions (ad blockers in particular love blocking the best coupon code sites), check your connection, then try on a different device. Still broken? Email support@couponscrew.com with your browser and OS — we\'ll look into it.'
+      answer: 'Try these in order: clear your browser cache and cookies, try a different browser, turn off browser extensions (ad blockers in particular love blocking the best coupon code sites), check your connection, then try on a different device. Still broken? Email Couponscrew@gmail.com with your browser and OS — we\'ll look into it.'
     },
     {
       id: 'tech-2',
@@ -271,7 +271,7 @@ export default function FAQ() {
       id: 'tech-3',
       category: 'tech',
       question: 'Couponscrew looks broken on my mobile. What\'s wrong?',
-      answer: 'We\'re fully optimised for mobile. If something looks off, try refreshing the page or clearing your mobile browser cache. Switching to Chrome or Safari usually helps if you\'re on a less common browser. If it\'s still broken, send us a screenshot at support@couponscrew.com — that helps us diagnose it fast.'
+      answer: 'We\'re fully optimised for mobile. If something looks off, try refreshing the page or clearing your mobile browser cache. Switching to Chrome or Safari usually helps if you\'re on a less common browser. If it\'s still broken, send us a screenshot at Couponscrew@gmail.com — that helps us diagnose it fast.'
     },
     {
       id: 'tech-4',
@@ -796,7 +796,7 @@ export default function FAQ() {
                       Contact Us
                     </Link>
                     <a
-                      href="mailto:support@savemate.in"
+                      href="mailto:Couponscrew@gmail.com"
                       className="block w-full text-center border border-white/20 hover:bg-white/10 text-white py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer"
                     >
                       Email Support
@@ -806,7 +806,7 @@ export default function FAQ() {
                   <div className="border-t border-white/10 pt-4 space-y-2 text-[10px] text-white/50">
                     <div className="flex items-center gap-2">
                       <Mail className="w-3.5 h-3.5 text-[#FFD700]" />
-                      <span>support@savemate.in</span>
+                      <span>Couponscrew@gmail.com</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Phone className="w-3.5 h-3.5 text-[#22C55E]" />

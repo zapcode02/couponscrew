@@ -41,7 +41,7 @@ const PRODUCT_CATEGORIES = [
     productCount: 1,
     color: '#FF5722',
     bg: '#1a56db',
-    image: null,
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp',
   },
   {
     slug: 'home-and-kitchen',
@@ -51,7 +51,7 @@ const PRODUCT_CATEGORIES = [
     productCount: 1,
     color: '#5B4FBE',
     bg: '#1a56db',
-    image: null,
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/home-kitchen_wtn75z.webp',
   },
   {
     slug: 'clothing-and-accessories',
@@ -61,7 +61,7 @@ const PRODUCT_CATEGORIES = [
     productCount: 2,
     color: '#D2691E',
     bg: '#1a56db',
-    image: null,
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/clothing-accessories_jassli.webp',
   },
   {
     slug: 'fashion',
@@ -71,7 +71,7 @@ const PRODUCT_CATEGORIES = [
     productCount: 2,
     color: '#FF3F6C',
     bg: '#1a56db',
-    image: null,
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/fashion_wlzeaq.webp',
   },
   {
     slug: 'beauty',
@@ -81,7 +81,7 @@ const PRODUCT_CATEGORIES = [
     productCount: 1,
     color: '#22C55E',
     bg: '#1a56db',
-    image: null,
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/beauty_akkpbg.webp',
   },
 ];
 
@@ -99,7 +99,7 @@ export default function ProductCategories() {
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative w-full bg-[#f0eeff] overflow-hidden border-b border-[#E8E8F0] py-8 md:py-6 px-6">
+      <section className="relative w-full bg-[#eee7fb] overflow-hidden border-b border-[#E8E8F0] py-8 md:py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
 
           {/* Left */}
@@ -170,12 +170,12 @@ export default function ProductCategories() {
 
           {/* Right — hero image */}
           <div className="hidden lg:col-span-6 lg:flex justify-center items-center">
-            <div className="relative w-full max-w-md aspect-[4/3]">
+            <div className="relative w-full aspect-[4/3]">
               <NextImage
-                src="https://res.cloudinary.com/dgy1atvb8/image/upload/v1782636941/all-categories_gyvk7u.webp"
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783234658/product-categories_ohtbze.webp"
                 alt="Browse all product categories on CouponScrew"
                 fill
-                sizes="(max-width: 1024px) 0px, 448px"
+                sizes="(max-width: 1024px) 0px, 640px"
                 className="object-contain"
                 referrerPolicy="no-referrer"
                 priority
@@ -212,14 +212,14 @@ export default function ProductCategories() {
                     className="group bg-white rounded-3xl border border-[#E8E8F0] overflow-hidden hover:shadow-xl hover:border-[#5B4FBE] transition-all duration-300 flex flex-col"
                   >
                     {/* Blue image / placeholder banner */}
-                    <div className="relative h-44 bg-[#1a56db] flex items-center justify-center overflow-hidden">
+                    <div className="relative h-64 bg-[#1a56db] flex items-center justify-center overflow-hidden">
                       {cat.image ? (
                         <NextImage
                           src={cat.image}
                           alt={cat.name}
                           fill
-                          sizes="(max-width: 640px) 90vw, 400px"
-                          className="object-cover"
+                          sizes="(max-width: 640px) 90vw, 500px"
+                          className="object-cover object-center"
                           referrerPolicy="no-referrer"
                         />
                       ) : (

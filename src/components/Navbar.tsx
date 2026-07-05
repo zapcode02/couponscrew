@@ -4,9 +4,8 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { Search, Bell, ChevronDown, Menu, X, Store as StoreIcon, ArrowRight } from 'lucide-react';
+import { Search, Bell, Menu, X, Store as StoreIcon } from 'lucide-react';
 import { STORES_DATA } from '../data/stores';
-import { NAV_CATEGORIES } from '../data/categories';
 
 interface NavbarProps {
   searchQuery?: string;
@@ -20,7 +19,6 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchInput, setSearchInput] = useState('');
   const [categoriesOpen, setCategoriesOpen] = useState(false);
-  const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
   const desktopSearchRef = useRef<HTMLDivElement>(null);
   const mobileSearchRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -29,7 +27,6 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
-    setMobileCategoriesOpen(false);
   };
 
   const openCategories = () => {
@@ -202,6 +199,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           >
             Stores
           </Link>
+          {/* TOP CATEGORIES — temporarily hidden, restore when ready
           <div
             className="relative"
             ref={categoriesRef}
@@ -262,6 +260,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
               </div>
             )}
           </div>
+          */}
           <Link
             href="/products"
             className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
@@ -353,6 +352,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
               Stores
             </Link>
 
+            {/* TOP CATEGORIES MOBILE — temporarily hidden, restore when ready
             <button
               onClick={() => setMobileCategoriesOpen((v) => !v)}
               className="flex items-center justify-between px-3 py-3 rounded-xl text-sm font-semibold text-[#1A1A2E] hover:bg-[#F0EEFF] hover:text-[#5B4FBE] transition-colors cursor-pointer"
@@ -394,6 +394,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
                 </Link>
               </div>
             )}
+            */}
 
             <Link
               href="/products"

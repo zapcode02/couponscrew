@@ -109,7 +109,7 @@ const schema = {
         contactType: 'customer support',
         availableLanguage: 'English',
         areaServed: 'IN',
-        email: 'support@couponscrew.com',
+        email: 'Couponscrew@gmail.com',
       },
       sameAs: [
         'https://www.instagram.com/couponscrew',

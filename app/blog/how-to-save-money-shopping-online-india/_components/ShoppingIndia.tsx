@@ -77,7 +77,7 @@ export default function ShoppingIndia() {
 
               <div className="relative w-full h-64 sm:h-96 rounded-3xl overflow-hidden mt-6 shadow-lg">
                 <NextImage
-                  src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782146686/how-to-save-money-shopping-online-india_sf1h2y.webp"
+                  src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp"
                   alt="How to Save Money Shopping Online in India — CouponsCrew"
                   fill
                   priority

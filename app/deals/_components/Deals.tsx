@@ -79,16 +79,8 @@ export interface ProductDeal {
 
 export interface HeroSlide {
   id: string;
-  brandName: string;
-  headline: string;
-  subHeadline: string;
-  discountText: string;
-  bgGradient: string;
-  accentColor: string;
-  dealCode: string;
-  buttonText: string;
-  badgeText: string;
-  savingsText: string;
+  src: string;
+  alt: string;
 }
 
 export interface CountdownTimer {
@@ -101,519 +93,159 @@ export interface CountdownTimer {
 // HARDCODED COMPREHENSIVE DATA
 // ==========================================
 const HERO_SLIDES: HeroSlide[] = [
-  {
-    id: 'slide-1',
-    brandName: 'Amazon',
-    bgGradient: 'from-[#FF9900] via-[#FF6B00] to-[#1A1A2E]',
-    headline: "Amazon's Biggest",
-    subHeadline: 'Electronics Sale',
-    discountText: 'Up To 70% OFF',
-    badgeText: '🔥 TODAY ONLY',
-    savingsText: 'Up to 70% off — verified and live',
-    dealCode: 'AMZ70',
-    buttonText: 'Grab This Deal',
-    accentColor: '#FF9900',
-  },
-  {
-    id: 'slide-2',
-    brandName: 'Flipkart',
-    bgGradient: 'from-[#2874F0] via-[#1a5cbf] to-[#1A1A2E]',
-    headline: 'Flipkart Super',
-    subHeadline: 'Fashion Fiesta',
-    discountText: 'Flat 80% OFF',
-    badgeText: '⚡ LIMITED TIME',
-    savingsText: 'Up to 80% off — tested before it lists',
-    dealCode: 'FLIP80',
-    buttonText: 'Shop Now',
-    accentColor: '#2874F0',
-  },
-  {
-    id: 'slide-3',
-    brandName: 'Myntra',
-    bgGradient: 'from-[#FF3F6C] via-[#d4245a] to-[#1A1A2E]',
-    headline: 'Myntra End of',
-    subHeadline: 'Reason Sale',
-    discountText: 'Up To 60% OFF',
-    badgeText: '🎯 EXCLUSIVE',
-    savingsText: 'Up to 60% off fashion — including End of Reason',
-    dealCode: 'MYNTRA60',
-    buttonText: 'Explore Deals',
-    accentColor: '#FF3F6C',
-  },
-  {
-    id: 'slide-4',
-    brandName: 'Swiggy',
-    bgGradient: 'from-[#FC8019] via-[#e06010] to-[#1A1A2E]',
-    headline: 'Swiggy Instamart',
-    subHeadline: 'Grocery Bonanza',
-    discountText: 'Flat 50% + Free Delivery',
-    badgeText: '🛒 FRESH DEALS',
-    savingsText: 'Flat 50% off + free delivery',
-    dealCode: 'SWIGGY50',
-    buttonText: 'Order Now',
-    accentColor: '#FC8019',
-  },
+  { id: 'slide-1', src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783245275/deals-4_dq4bh8.webp', alt: 'Deals Slide 1' },
+  { id: 'slide-2', src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783245292/deals-3_rwc1gy.webp', alt: 'Deals Slide 2' },
+  { id: 'slide-3', src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783245293/deals-2_cm1qre.webp', alt: 'Deals Slide 3' },
+  { id: 'slide-4', src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783245262/deals-1_nyf0uw.png', alt: 'Deals Slide 4' },
 ];
 
 const BRAND_DEALS_DATA: BrandDeal[] = [
   {
     id: 'brand-1',
-    brandName: 'Amazon',
-    category: 'Electronics',
-    brandColor: '#FF9900',
-    brandBgColor: '#FFF8E7',
-    logoLetter: 'a',
-    tagline: "Biggest Electronics Sale Right Now",
-    discountPercent: 70,
-    dealType: 'code',
-    code: 'AMZ70',
-    originalPrice: 9999,
-    dealPrice: 2999,
-    totalSavings: 7000,
-    claimedPercent: 89,
+    brandName: 'Pepperfry',
+    category: 'Home & Kitchen',
+    brandColor: '#5B4FBE',
+    brandBgColor: '#F0EEFF',
+    logoLetter: 'PP',
+    tagline: 'Get 50% off on Bonton Computer Table in Wenge Finish',
+    discountPercent: 50,
+    dealType: 'deal',
+    originalPrice: 12000,
+    dealPrice: 6000,
+    totalSavings: 6000,
+    claimedPercent: 84,
     verifiedMinsAgo: 5,
     isHot: true,
     isFeatured: true,
   },
   {
     id: 'brand-2',
-    brandName: 'Flipkart',
-    category: 'Fashion',
-    brandColor: '#2874F0',
-    brandBgColor: '#EEF4FF',
-    logoLetter: 'F',
-    tagline: 'Super Fashion Fiesta  -  Biggest Sale',
-    discountPercent: 80,
-    dealType: 'code',
-    code: 'FLIP80',
-    originalPrice: 4999,
-    dealPrice: 999,
-    totalSavings: 4000,
-    claimedPercent: 76,
-    verifiedMinsAgo: 12,
+    brandName: 'Pepperfry',
+    category: 'Home & Kitchen',
+    brandColor: '#5B4FBE',
+    brandBgColor: '#F0EEFF',
+    logoLetter: 'PP',
+    tagline: 'Get Ethnic Motif Multicolor PVC Placemats Set of 6 @ ₹1',
+    discountPercent: 99,
+    dealType: 'deal',
+    originalPrice: 499,
+    dealPrice: 1,
+    totalSavings: 498,
+    claimedPercent: 91,
+    verifiedMinsAgo: 8,
     isHot: true,
     isFeatured: true,
   },
   {
     id: 'brand-3',
-    brandName: 'Myntra',
-    category: 'Fashion',
-    brandColor: '#FF3F6C',
-    brandBgColor: '#FFF0F4',
-    logoLetter: 'M',
-    tagline: 'End of Reason Sale  -  Top Brands',
-    discountPercent: 60,
-    dealType: 'code',
-    code: 'MYNTRA60',
-    originalPrice: 3999,
-    dealPrice: 1599,
-    totalSavings: 2400,
-    claimedPercent: 65,
-    verifiedMinsAgo: 8,
+    brandName: 'Pepperfry',
+    category: 'Home & Kitchen',
+    brandColor: '#5B4FBE',
+    brandBgColor: '#F0EEFF',
+    logoLetter: 'PP',
+    tagline: 'Get 35% off on Yuko TV Console for TVs up to 55"',
+    discountPercent: 35,
+    dealType: 'deal',
+    originalPrice: 18000,
+    dealPrice: 11700,
+    totalSavings: 6300,
+    claimedPercent: 72,
+    verifiedMinsAgo: 12,
     isHot: false,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-4',
-    brandName: 'Swiggy',
-    category: 'Food & Grocery',
-    brandColor: '#FC8019',
-    brandBgColor: '#FFF5EC',
-    logoLetter: 'S',
-    tagline: 'Order Now & Save Big on Every Meal',
-    discountPercent: 50,
-    dealType: 'code',
-    code: 'SWIGGY50',
-    originalPrice: 800,
-    dealPrice: 400,
-    totalSavings: 400,
-    claimedPercent: 91,
-    verifiedMinsAgo: 2,
-    isHot: true,
     isFeatured: true,
   },
   {
-    id: 'brand-5',
-    brandName: 'Zomato',
-    category: 'Food & Grocery',
-    brandColor: '#E23744',
-    brandBgColor: '#FEF0F1',
-    logoLetter: 'Z',
-    tagline: 'Delicious Deals  -  First 5 Orders',
-    discountPercent: 60,
-    dealType: 'code',
-    code: 'ZOMATO60',
-    originalPrice: 600,
-    dealPrice: 240,
-    totalSavings: 360,
-    claimedPercent: 82,
-    verifiedMinsAgo: 15,
-    isHot: true,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-6',
-    brandName: 'Nykaa',
-    category: 'Beauty',
-    brandColor: '#FC2779',
-    brandBgColor: '#FFF0F6',
-    logoLetter: 'N',
-    tagline: 'Beauty Bonanza  -  Premium Brands',
-    discountPercent: 40,
-    dealType: 'code',
-    code: 'NYKAA40',
-    originalPrice: 2500,
-    dealPrice: 1499,
-    totalSavings: 1001,
-    claimedPercent: 54,
-    verifiedMinsAgo: 20,
-    isHot: false,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-7',
-    brandName: 'Ajio',
-    category: 'Fashion',
-    brandColor: '#000000',
-    brandBgColor: '#F5F5F5',
-    logoLetter: 'AJ',
-    tagline: 'Trendy Fashion at Unbeatable Prices',
-    discountPercent: 45,
-    dealType: 'code',
-    code: 'AJIO300',
-    originalPrice: 2999,
-    dealPrice: 1649,
-    totalSavings: 1350,
-    claimedPercent: 43,
-    verifiedMinsAgo: 30,
-    isHot: false,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-8',
-    brandName: 'Hostinger',
-    category: 'Web Hosting',
-    brandColor: '#FF6B35',
-    brandBgColor: '#FFF3EE',
-    logoLetter: 'H',
-    tagline: 'Launch Your Website - 75% Off Today',
+    id: 'brand-4',
+    brandName: 'Pepperfry',
+    category: 'Electronics',
+    brandColor: '#5B4FBE',
+    brandBgColor: '#F0EEFF',
+    logoLetter: 'PP',
+    tagline: 'Get 75% off on Portable Electronic Digital Weight Machine',
     discountPercent: 75,
-    dealType: 'code',
-    code: 'HOST75',
-    originalPrice: 599,
-    dealPrice: 149,
-    totalSavings: 450,
-    claimedPercent: 67,
-    verifiedMinsAgo: 45,
+    dealType: 'deal',
+    originalPrice: 2000,
+    dealPrice: 500,
+    totalSavings: 1500,
+    claimedPercent: 68,
+    verifiedMinsAgo: 20,
     isHot: true,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-9',
-    brandName: 'MakeMyTrip',
-    category: 'Travel',
-    brandColor: '#E8262A',
-    brandBgColor: '#FEF0F0',
-    logoLetter: 'MMT',
-    tagline: 'Holiday Deals  -  Flights & Hotels',
-    discountPercent: 35,
-    dealType: 'code',
-    code: 'MMT35',
-    originalPrice: 15000,
-    dealPrice: 9750,
-    totalSavings: 5250,
-    claimedPercent: 38,
-    verifiedMinsAgo: 60,
-    isHot: false,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-10',
-    brandName: 'BigBasket',
-    category: 'Food & Grocery',
-    brandColor: '#84C225',
-    brandBgColor: '#F4FBEA',
-    logoLetter: 'BB',
-    tagline: 'Fresh Groceries Delivered in 2 Hours',
-    discountPercent: 25,
-    dealType: 'code',
-    code: 'BB200',
-    originalPrice: 1200,
-    dealPrice: 1000,
-    totalSavings: 200,
-    claimedPercent: 71,
-    verifiedMinsAgo: 10,
-    isHot: false,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-11',
-    brandName: 'Coursera',
-    category: 'Education',
-    brandColor: '#0056D2',
-    brandBgColor: '#EEF4FF',
-    logoLetter: 'C',
-    tagline: 'Learn from Top Universities Worldwide',
-    discountPercent: 50,
-    dealType: 'code',
-    code: 'COURSE50',
-    originalPrice: 4999,
-    dealPrice: 2499,
-    totalSavings: 2500,
-    claimedPercent: 29,
-    verifiedMinsAgo: 120,
-    isHot: false,
-    isFeatured: false,
-  },
-  {
-    id: 'brand-12',
-    brandName: 'Netmeds',
-    category: 'Beauty',
-    brandColor: '#1A9A5C',
-    brandBgColor: '#EDFBF4',
-    logoLetter: 'NM',
-    tagline: 'Medicines & Health Products Delivered',
-    discountPercent: 25,
-    dealType: 'code',
-    code: 'NETS25',
-    originalPrice: 800,
-    dealPrice: 599,
-    totalSavings: 201,
-    claimedPercent: 47,
-    verifiedMinsAgo: 35,
-    isHot: false,
-    isFeatured: false,
+    isFeatured: true,
   },
 ];
 
 const PRODUCT_DEALS_DATA: ProductDeal[] = [
   {
     id: 'prod-1',
-    brandName: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Electronics',
-    productName: 'iPhone 15 (128GB) - Black',
-    productImage: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&q=80',
-    discountPercent: 15,
-    originalPrice: 79900,
-    dealPrice: 67900,
-    totalSavings: 12000,
-    claimedPercent: 78,
+    brandName: 'Acnos',
+    brandColor: '#5B4FBE',
+    category: 'Watches & Accessories',
+    productName: "Acnos Premium Girl's Heart Shape Bangle Analog Watch, Pack of 2",
+    productImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162305/41oui_xq1PL_zndlwz.jpg',
+    discountPercent: 85,
+    originalPrice: 1999,
+    dealPrice: 299,
+    totalSavings: 1700,
+    claimedPercent: 84,
     verifiedMinsAgo: 5,
     isHot: true,
     isFeatured: true,
-    dealType: 'code',
-    code: 'AMZ15',
-    expiresInHours: 6,
-  },
-  {
-    id: 'prod-2',
-    brandName: 'Myntra',
-    brandColor: '#FF3F6C',
-    category: 'Fashion',
-    productName: 'Nike Air Max Premium Sneakers',
-    productImage: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80',
-    discountPercent: 40,
-    originalPrice: 12995,
-    dealPrice: 7795,
-    totalSavings: 5200,
-    claimedPercent: 65,
-    verifiedMinsAgo: 12,
-    isHot: true,
-    isFeatured: true,
-    dealType: 'code',
-    code: 'MYNTRA40',
+    dealType: 'deal',
     expiresInHours: 12,
   },
   {
-    id: 'prod-3',
-    brandName: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Electronics',
-    productName: 'boAt Rockerz 450 Wireless Headphones',
-    productImage: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80',
-    discountPercent: 67,
-    originalPrice: 3990,
-    dealPrice: 1299,
-    totalSavings: 2691,
+    id: 'prod-2',
+    brandName: 'Minimalist',
+    brandColor: '#5B4FBE',
+    category: 'Beauty & Personal Care',
+    productName: 'Minimalist Anti-Pigmentation Kit, Face Wash, Serum & Sunscreen Combo',
+    productImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162150/51VX_QeZjRL._SY450__mhxhvl.jpg',
+    discountPercent: 12,
+    originalPrice: 1299,
+    dealPrice: 1147,
+    totalSavings: 152,
     claimedPercent: 91,
-    verifiedMinsAgo: 3,
-    isHot: true,
-    isFeatured: true,
-    dealType: 'code',
-    code: 'FLIP67',
-    expiresInHours: 3,
-  },
-  {
-    id: 'prod-4',
-    brandName: 'Nykaa',
-    brandColor: '#FC2779',
-    category: 'Beauty',
-    productName: 'Lakme Absolute Matte Lipstick Premium Set',
-    productImage: 'https://images.unsplash.com/photo-1586495777744-4e6232bf2176?w=400&q=80',
-    discountPercent: 44,
-    originalPrice: 1800,
-    dealPrice: 999,
-    totalSavings: 801,
-    claimedPercent: 52,
-    verifiedMinsAgo: 18,
-    isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'NYKAA44',
-    expiresInHours: 18,
-  },
-  {
-    id: 'prod-5',
-    brandName: 'Ajio',
-    brandColor: '#000000',
-    category: 'Fashion',
-    productName: 'Wildcraft Adventurer Backpack 45L',
-    productImage: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80',
-    discountPercent: 50,
-    originalPrice: 3495,
-    dealPrice: 1747,
-    totalSavings: 1748,
-    claimedPercent: 44,
-    verifiedMinsAgo: 24,
-    isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'AJIO50',
-    expiresInHours: 24,
-  },
-  {
-    id: 'prod-6',
-    brandName: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Electronics',
-    productName: 'Prestige Induction Cooktop with Touch Control',
-    productImage: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80',
-    discountPercent: 50,
-    originalPrice: 4500,
-    dealPrice: 2249,
-    totalSavings: 2251,
-    claimedPercent: 37,
-    verifiedMinsAgo: 20,
-    isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'AMZ50',
-    expiresInHours: 20,
-  },
-  {
-    id: 'prod-7',
-    brandName: 'Myntra',
-    brandColor: '#FF3F6C',
-    category: 'Fashion',
-    productName: "Levi's 511 Slim Fit Stretchable Denim Jeans",
-    productImage: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80',
-    discountPercent: 50,
-    originalPrice: 3999,
-    dealPrice: 1999,
-    totalSavings: 2000,
-    claimedPercent: 69,
     verifiedMinsAgo: 8,
     isHot: true,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'MYNTRA50',
+    isFeatured: true,
+    dealType: 'deal',
     expiresInHours: 8,
   },
   {
-    id: 'prod-8',
-    brandName: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Electronics',
-    productName: 'Dyson V8 Absolute Cord-Free Vacuum Cleaner',
-    productImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
-    discountPercent: 29,
-    originalPrice: 34900,
-    dealPrice: 24900,
-    totalSavings: 10000,
-    claimedPercent: 33,
-    verifiedMinsAgo: 16,
+    id: 'prod-3',
+    brandName: 'DEELMO',
+    brandColor: '#5B4FBE',
+    category: 'Fashion & Clothing',
+    productName: "DEELMO Men's Cotton Blend Mandarin Collar Casual Short Kurta",
+    productImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162400/71Qhqwnx4JL._SY741__ljgmwm.jpg',
+    discountPercent: 78,
+    originalPrice: 2199,
+    dealPrice: 479,
+    totalSavings: 1720,
+    claimedPercent: 72,
+    verifiedMinsAgo: 12,
     isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'FLIP29',
-    expiresInHours: 16,
-  },
-  {
-    id: 'prod-9',
-    brandName: 'Nykaa',
-    brandColor: '#FC2779',
-    category: 'Beauty',
-    productName: 'Mamaearth Vitamin C Radiance Face Wash',
-    productImage: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&q=80',
-    discountPercent: 40,
-    originalPrice: 699,
-    dealPrice: 419,
-    totalSavings: 280,
-    claimedPercent: 58,
-    verifiedMinsAgo: 22,
-    isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'NYKAA40C',
-    expiresInHours: 22,
-  },
-  {
-    id: 'prod-10',
-    brandName: 'Amazon',
-    brandColor: '#FF9900',
-    category: 'Electronics',
-    productName: 'Samsung 55 Inch Crystal 4K HDR Smart TV',
-    productImage: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&q=80',
-    discountPercent: 31,
-    originalPrice: 79990,
-    dealPrice: 54990,
-    totalSavings: 25000,
-    claimedPercent: 82,
-    verifiedMinsAgo: 5,
-    isHot: true,
     isFeatured: true,
-    dealType: 'code',
-    code: 'AMZ31',
-    expiresInHours: 5,
-  },
-  {
-    id: 'prod-11',
-    brandName: 'Ajio',
-    brandColor: '#000000',
-    category: 'Fashion',
-    productName: 'Allen Solly Cotton Formal Premium Shirt',
-    productImage: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&q=80',
-    discountPercent: 50,
-    originalPrice: 1999,
-    dealPrice: 999,
-    totalSavings: 1000,
-    claimedPercent: 41,
-    verifiedMinsAgo: 24,
-    isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'AJIO50S',
+    dealType: 'deal',
     expiresInHours: 24,
   },
   {
-    id: 'prod-12',
-    brandName: 'Flipkart',
-    brandColor: '#2874F0',
-    category: 'Electronics',
-    productName: 'Philips Multi-Purpose Air Fryer 4.1L',
-    productImage: 'https://images.unsplash.com/photo-1648146956813-9b0abf044bda?w=400&q=80',
-    discountPercent: 40,
-    originalPrice: 12995,
-    dealPrice: 7795,
-    totalSavings: 5200,
-    claimedPercent: 61,
-    verifiedMinsAgo: 14,
-    isHot: false,
-    isFeatured: false,
-    dealType: 'code',
-    code: 'FLIP40',
-    expiresInHours: 14,
+    id: 'prod-4',
+    brandName: 'Desidiya',
+    brandColor: '#5B4FBE',
+    category: 'Home & Kitchen',
+    productName: 'Desidiya Moon Crystal Ball Night Light with Wooden Base',
+    productImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162551/61XWYda0HoL._SL1500__klyexw.jpg',
+    discountPercent: 90,
+    originalPrice: 1999,
+    dealPrice: 197,
+    totalSavings: 1802,
+    claimedPercent: 68,
+    verifiedMinsAgo: 20,
+    isHot: true,
+    isFeatured: true,
+    dealType: 'deal',
+    expiresInHours: 16,
   },
 ];
 
@@ -623,13 +255,6 @@ export default function Deals() {
   // ==========================================
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Countdown States
-  const [slideTimers, setSlideTimers] = useState<number[]>([
-    23 * 3600 + 59 * 60 + 59, // Amazon: ~23 hours
-    12 * 3600,                // Flipkart: 12 hours
-    6 * 3600,                 // Myntra: 6 hours
-    18 * 3600                 // Swiggy: 18 hours
-  ]);
 
   const [productTimers, setProductTimers] = useState<Record<string, number>>(() => {
     const initialTimers: Record<string, number> = {};
@@ -649,7 +274,6 @@ export default function Deals() {
   const [productCategory, setProductCategory] = useState<string>('all');
   const [productSort, setProductSort] = useState<string>('default');
 
-  // Interactive High Fidelity Success Alerts / feedback states
   const [copiedStates, setCopiedStates] = useState<Record<string, boolean>>({});
   const [claimedDeals, setClaimedDeals] = useState<Record<string, boolean>>({});
 
@@ -658,12 +282,7 @@ export default function Deals() {
   // ==========================================
   useEffect(() => {
     const timerInterval = setInterval(() => {
-      // 1. Decrement slide timers (Loop back to 24h when hits 0)
-      setSlideTimers((prev) =>
-        prev.map((seconds) => (seconds <= 0 ? 24 * 3600 - 1 : seconds - 1))
-      );
-
-      // 2. Decrement product timers (Loop when hits 0)
+      // 1. Decrement product timers (Loop when hits 0)
       setProductTimers((prev) => {
         const next = { ...prev };
         Object.keys(next).forEach((key) => {
@@ -750,28 +369,19 @@ export default function Deals() {
     const hours = Math.floor(totalSeconds / 3600);
     const minutes = Math.floor((totalSeconds % 3600) / 60);
     const seconds = totalSeconds % 60;
-
-    return [
-      hours.toString().padStart(2, '0'),
-      minutes.toString().padStart(2, '0'),
-      seconds.toString().padStart(2, '0')
-    ].join(':');
+    return [hours, minutes, seconds].map((v) => v.toString().padStart(2, '0')).join(':');
   };
 
   const handleCopyCode = (id: string, code?: string) => {
     if (!code) return;
     navigator.clipboard.writeText(code);
     setCopiedStates((prev) => ({ ...prev, [id]: true }));
-    setTimeout(() => {
-      setCopiedStates((prev) => ({ ...prev, [id]: false }));
-    }, 3000);
+    setTimeout(() => setCopiedStates((prev) => ({ ...prev, [id]: false })), 3000);
   };
 
   const handleClaimDeal = (id: string) => {
     setClaimedDeals((prev) => ({ ...prev, [id]: true }));
-    setTimeout(() => {
-      setClaimedDeals((prev) => ({ ...prev, [id]: false }));
-    }, 4000);
+    setTimeout(() => setClaimedDeals((prev) => ({ ...prev, [id]: false })), 4000);
   };
 
   // Convert Spotlight seconds into distinct pieces
@@ -799,166 +409,49 @@ export default function Deals() {
       {/* ========================================================
           SECTION 1  -  HERO SLIDER
           ======================================================== */}
-      <section className="relative w-full min-h-[580px] bg-[#1A1A2E] overflow-hidden flex items-center">
-        {/* Decorative Background Dots */}
-        <div className="absolute top-10 left-10 grid grid-cols-5 gap-3 pointer-events-none opacity-25 z-0">
-          {Array.from({ length: 25 }).map((_, idx) => (
-            <div key={idx} className="w-1.5 h-1.5 bg-white rounded-full"></div>
-          ))}
-        </div>
-        <div className="absolute right-12 bottom-12 grid grid-cols-6 gap-2.5 pointer-events-none opacity-15 z-0">
-          {Array.from({ length: 18 }).map((_, idx) => (
-            <div key={idx} className="w-1.5 h-1.5 bg-white rounded-full"></div>
-          ))}
-        </div>
-
-        {/* Dynamic Slides render wrapper */}
-        {HERO_SLIDES.map((slide, slideIdx) => {
-          const isActive = slideIdx === currentSlide;
-          return (
+      <section className="relative w-full overflow-hidden">
+        <div className="relative w-full aspect-[16/6] md:aspect-[16/5]">
+          {HERO_SLIDES.map((slide, slideIdx) => (
             <div
               key={slide.id}
-              className={`absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out flex items-center ${
-                isActive ? 'opacity-100 z-10 translate-x-0' : 'opacity-0 z-0 translate-x-12 pointer-events-none'
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                slideIdx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
               }`}
             >
-              {/* Background gradient layout layer */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${slide.bgGradient} opacity-95 z-0`} />
-
-              <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
-                
-                {/* LEFT SIDE (55%) */}
-                <div className="lg:col-span-7 text-left space-y-4">
-                  
-                  {/* Badge pill */}
-                  <div className="inline-flex items-center gap-1.5 bg-white/15 border border-white/23 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider select-none">
-                    <span>{slide.badgeText}</span>
-                  </div>
-
-                  {/* Brand and Description */}
-                  <h2 className="text-white font-black text-5xl md:text-7xl tracking-tight leading-none">
-                    {slide.brandName}
-                  </h2>
-                  <div className="space-y-1">
-                    <p className="text-white font-bold text-2xl md:text-4xl">
-                      {slide.headline}
-                    </p>
-                    <p className="text-white/80 font-medium text-lg md:text-xl">
-                      {slide.subHeadline}
-                    </p>
-                  </div>
-
-                  {/* Large Discount text and tagline */}
-                  <p className="text-[#FFD700] font-black text-5xl md:text-6.5xl leading-none tracking-tight drop-shadow-md">
-                    {slide.discountText}
-                  </p>
-                  <p className="text-white/70 text-base md:text-lg font-semibold">
-                    🎁 {slide.savingsText}
-                  </p>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-3">
-                    {/* USE CODE block if code is set */}
-                    {slide.dealCode && (
-                      <div className="flex flex-col">
-                        <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">USE CODE:</span>
-                        <div className="flex items-center gap-2 mt-1">
-                          <span className="inline-block bg-white/10 border border-dashed border-white/30 text-white font-mono font-black text-lg py-2.5 px-5 rounded-xl block select-all">
-                            {slide.dealCode}
-                          </span>
-                          <button
-                            onClick={() => handleCopyCode(slide.id, slide.dealCode)}
-                            className="bg-white/10 hover:bg-white/20 text-white rounded-xl p-2.5 transition active:scale-95 cursor-pointer text-xs font-bold"
-                          >
-                            {copiedStates[slide.id] ? '✓ Copied' : 'Copy'}
-                          </button>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* CTA Button */}
-                    <button
-                      onClick={() => handleClaimDeal(slide.id)}
-                      className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-full text-base transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 self-end shadow-lg shadow-orange-500/25 pointer-events-auto cursor-pointer"
-                      style={{ backgroundColor: slide.accentColor }}
-                    >
-                      {claimedDeals[slide.id] ? (
-                        <>
-                          <Check className="w-5 h-5" />
-                          <span>Offer Swiped!</span>
-                        </>
-                      ) : (
-                        <>
-                          <span>{slide.buttonText}</span>
-                          <ArrowRight className="w-5 h-5" />
-                        </>
-                      )}
-                    </button>
-                  </div>
-                </div>
-
-                {/* RIGHT SIDE (45%  -  Hidden on mobile) */}
-                <div className="lg:col-span-5 relative hidden lg:flex items-center justify-center">
-                  
-                  {/* Decorative big background circle in brand color */}
-                  <div
-                    className="absolute w-80 h-80 rounded-full opacity-20 filter blur-3xl"
-                    style={{ backgroundColor: slide.accentColor }}
-                  />
-
-                  {/* Floating glass deal card */}
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl space-y-6 text-center w-full max-w-sm relative z-10 hover:-translate-y-2 transition-transform duration-500">
-                    <span className="text-white/80 font-semibold text-xs tracking-wider uppercase block">
-                      🎁 Deal of the Moment
-                    </span>
-
-                    <h4 className="text-white font-black text-7xl leading-none">
-                      {slide.discountText.includes('%') ? slide.discountText.split(' ')[1] || 'OFF' : 'OFF'}
-                    </h4>
-
-                    <p className="text-white/70 text-lg font-medium leading-tight">
-                      Flat discount on <span className="text-[#FFD700] font-black">{slide.brandName}</span> catalogue
-                    </p>
-
-                    <div className="border-t border-white/15 pt-5 space-y-2">
-                      <span className="text-white/50 text-xs font-bold uppercase tracking-widest block">
-                        ⏱️ EXPIRES IN
-                      </span>
-                      <span className="font-mono text-3xl font-black text-[#FFD700] tracking-wider block">
-                        {formatTime(slideTimers[slideIdx])}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
-          );
-        })}
+          ))}
+        </div>
 
         {/* LEFT / RIGHT NAV ARROWS */}
         <button
           onClick={() => setCurrentSlide((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length)}
-          className="absolute left-6 top-1/2 -translate-y-1/2 bg-white text-[#5B4FBE] p-3 rounded-full shadow-xl hover:scale-115 hover:bg-gray-50 active:scale-90 transition-all z-20 cursor-pointer text-center flex items-center justify-center"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#5B4FBE] p-3 rounded-full shadow-xl hover:scale-110 active:scale-90 transition-all z-20 cursor-pointer flex items-center justify-center"
           aria-label="Previous Slide"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button
           onClick={() => setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length)}
-          className="absolute right-6 top-1/2 -translate-y-1/2 bg-white text-[#5B4FBE] p-3 rounded-full shadow-xl hover:scale-115 hover:bg-gray-50 active:scale-90 transition-all z-20 cursor-pointer text-center flex items-center justify-center"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#5B4FBE] p-3 rounded-full shadow-xl hover:scale-110 active:scale-90 transition-all z-20 cursor-pointer flex items-center justify-center"
           aria-label="Next Slide"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
 
         {/* DOTS INDICATORS */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 z-20">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-20">
           {HERO_SLIDES.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
               className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                currentSlide === idx ? 'w-8 bg-[#FF5722]' : 'w-2.5 bg-white/40 hover:bg-white/60'
+                currentSlide === idx ? 'w-8 bg-[#FF5722]' : 'w-2.5 bg-white/60 hover:bg-white'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
@@ -1118,11 +611,13 @@ export default function Deals() {
                   <div className="p-5 flex-grow text-left">
                     <div className="flex items-center justify-between gap-2.5">
                       {/* Logo circle */}
-                      <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center font-black text-white text-lg shrink-0 shadow-inner select-none uppercase"
-                        style={{ backgroundColor: deal.brandColor }}
-                      >
-                        {deal.logoLetter}
+                      <div className="w-10 h-10 rounded-full bg-white border border-[#E8E8F0] overflow-hidden shrink-0 shadow-xs flex items-center justify-center">
+                        <img
+                          src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg"
+                          alt={deal.brandName}
+                          className="w-full h-full object-contain"
+                          referrerPolicy="no-referrer"
+                        />
                       </div>
 
                       {/* Hot Flame Badge if isHot */}
@@ -1439,169 +934,8 @@ export default function Deals() {
       {/* ========================================================
           SECTION 5  -  DEAL OF THE HOUR SPOTLIGHT
           ======================================================== */}
-      <section className="bg-gradient-to-br from-[#1A1A2E] via-[#2D2570] to-[#5B4FBE] py-20 px-6 relative overflow-hidden text-white">
-        {/* Spot ambient circles design */}
-        <div className="absolute top-[-100px] left-[-150px] w-96 h-96 bg-purple-500 rounded-full opacity-10 filter blur-3xl" />
-        <div className="absolute bottom-[-100px] right-[-150px] w-96 h-96 bg-[#FF5722] rounded-full opacity-10 filter blur-3xl" />
-        <div className="absolute top-10 left-12 grid grid-cols-5 gap-3 pointer-events-none opacity-15">
-          {Array.from({ length: 25 }).map((_, idx) => (
-            <div key={idx} className="w-1.5 h-1.5 bg-white rounded-full"></div>
-          ))}
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 w-full text-left">
-          
-          {/* LEFT COLUMN */}
-          <div className="space-y-6">
-            <span className="bg-[#FF5722] text-white text-xs font-black px-4.5 py-1.5 rounded-full inline-flex items-center gap-1.5 uppercase tracking-wider shadow-md animate-pulse">
-              <Sparkles className="w-4 h-4" />
-              <span>⚡ DEAL OF THE HOUR</span>
-            </span>
-
-            <div className="space-y-1">
-              <h2 className="text-4xl sm:text-5xl font-black tracking-tight leading-none text-white">
-                Samsung Galaxy S24
-              </h2>
-              <p className="text-white/70 text-lg sm:text-xl font-bold">
-                Ultra Flagship Smartphone
-              </p>
-            </div>
-
-            {/* Smart Feature listing */}
-            <ul className="space-y-3 font-medium text-white/80 text-sm sm:text-base">
-              {[
-                '6.8 inch Dynamic AMOLED Display',
-                '200MP Camera + AI Features',
-                '5000mAh Battery with 45W Fast Charging',
-                '8GB RAM + 256GB Storage'
-              ].map((feat, idx) => (
-                <li key={idx} className="flex items-center gap-2.5">
-                  <CheckCircle className="w-5 h-5 text-[#22C55E] shrink-0" />
-                  <span>{feat}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* Pricing layout block */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-3">
-              <div className="flex flex-col">
-                <span className="text-white/40 text-xs font-bold line-through">
-                  Full retail price
-                </span>
-                <span className="font-mono text-5xl sm:text-6xl font-black text-[#FFD700] tracking-tight leading-none">
-                  Best deal price
-                </span>
-              </div>
-              <span className="bg-[#22C55E] text-white font-extrabold px-5 py-2.5 rounded-full text-base sm:text-lg inline-block shadow-sm self-start sm:self-center mt-2 sm:mt-0">
-                Verified by 50,000+ shoppers
-              </span>
-            </div>
-
-            {/* Expire countdown blocks */}
-            <div className="border-t border-white/10 pt-6 space-y-3">
-              <span className="text-white/60 text-xs font-bold uppercase tracking-widest block">
-                ⏰ OFFER EXPIRES IN
-              </span>
-              <div className="flex items-center gap-3 text-center">
-                
-                {/* Hours block */}
-                <div className="bg-white/10 border border-white/20 rounded-2xl p-4 min-w-[80px]">
-                  <span className="font-mono text-3xl sm:text-4xl font-black block">
-                    {spotlightHoursString}
-                  </span>
-                  <span className="text-[9px] text-white/50 tracking-wider font-bold block uppercase mt-1">
-                    HOURS
-                  </span>
-                </div>
-
-                <span className="text-white/45 font-black text-2xl">:</span>
-
-                {/* Mins block */}
-                <div className="bg-white/10 border border-white/20 rounded-2xl p-4 min-w-[80px]">
-                  <span className="font-mono text-3xl sm:text-4xl font-black block">
-                    {spotlightMinsString}
-                  </span>
-                  <span className="text-[9px] text-white/50 tracking-wider font-bold block uppercase mt-1">
-                    MINS
-                  </span>
-                </div>
-
-                <span className="text-white/45 font-black text-2xl">:</span>
-
-                {/* Secs block */}
-                <div className="bg-white/10 border border-white/20 rounded-2xl p-4 min-w-[80px]">
-                  <span className="font-mono text-3xl sm:text-4xl font-black block">
-                    {spotlightSecsString}
-                  </span>
-                  <span className="text-[9px] text-white/50 tracking-wider font-bold block uppercase mt-1">
-                    SECS
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-            {/* CTA Spot Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button
-                onClick={() => handleClaimDeal('galaxy-s24')}
-                className="bg-[#FF5722] hover:bg-orange-600 text-white px-8 py-4.5 rounded-full font-black text-base shadow-lg shadow-orange-500/30 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 active:scale-95"
-              >
-                <Zap className="w-5 h-5" />
-                <span>{claimedDeals['galaxy-s24'] ? 'Order Slot Locked!' : 'Grab This Deal Now'}</span>
-              </button>
-              <Link href="/"
-                className="border-2 border-white/30 text-white px-8 py-4.5 rounded-full font-bold hover:bg-white/10 transition flex items-center justify-center text-sm"
-              >
-                View All Deals
-              </Link>
-            </div>
-          </div>
-
-          {/* RIGHT COLUMN (Hidden on mobile) */}
-          <div className="relative hidden lg:flex items-center justify-center">
-            {/* Image card wrapper */}
-            <div className="relative w-full max-w-lg">
-              <NextImage
-                src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=80"
-                alt="Samsung Galaxy S22 Spotlight"
-                width={600}
-                height={430}
-                priority
-                referrerPolicy="no-referrer"
-                className="rounded-3xl shadow-2.5xl w-full h-[430px] object-cover border border-white/10"
-              />
-
-              {/* FLOATING RATING CARD */}
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-2xl flex items-center gap-3.5 border border-[#E8E8F0]">
-                <div className="w-10 h-10 bg-amber-50 rounded-xl flex items-center justify-center text-[#FFD700]">
-                  <Award className="w-6 h-6" />
-                </div>
-                <div className="text-left">
-                  <div className="flex items-center gap-1">
-                    <span className="text-[#FFD700] font-bold">★</span>
-                    <strong className="text-[#1A1A2E] text-sm font-black">4.8/5</strong>
-                  </div>
-                  <p className="text-gray-400 text-[10px] font-bold uppercase mt-0.5">Based on 12,450 reviews</p>
-                </div>
-              </div>
-
-              {/* FLOATING STOCK STATUS */}
-              <div className="absolute -top-4 -right-4 bg-[#EF4444] text-white rounded-2xl p-4 shadow-2xl text-left border border-red-500/20 max-w-xs animate-bounce" style={{ animationDuration: '3s' }}>
-                <strong className="text-sm font-black block flex items-center gap-1.5 uppercase">
-                  <Flame className="w-4 h-4 text-[#FFD700] shrink-0" />
-                  Only 47 Left!
-                </strong>
-                <p className="text-[10px] text-white/90 leading-tight mt-1 font-semibold">
-                  Selling fast  -  891 bought today
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
+    
+    
       {/* ========================================================
           SECTION 6  -  BOTTOM CTA BANNER
           ======================================================== */}

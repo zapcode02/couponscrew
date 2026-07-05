@@ -22,7 +22,7 @@ const post = {
   slug: 'how-to-save-money-shopping-online-india',
   title: 'How to Save Money Shopping Online in India — Introducing CouponsCrew',
   category: 'Shopping Guides',
-  image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1782146686/how-to-save-money-shopping-online-india_sf1h2y.webp',
+  image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp',
   date: 'Jun 22, 2026',
   readTime: '9 min read',
   excerpt: 'Online shopping in India has never been bigger — and never been more confusing when it comes to actually getting a good price. Here is how to stack every discount layer, and why CouponsCrew exists.',

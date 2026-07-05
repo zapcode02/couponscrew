@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     images: [
       {
-        url: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1782146686/how-to-save-money-shopping-online-india_sf1h2y.webp',
+        url: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp',
         width: 1200,
         height: 630,
         alt: 'How to Save Money Shopping Online in India — CouponsCrew',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       'Practical, no-fluff ways to save money shopping online in India — coupon stacking, bank offers, cashback layers — plus how CouponsCrew verifies every code before it goes live.',
     site: '@couponscrew',
     creator: '@couponscrew',
-    images: ['https://res.cloudinary.com/dqjlffxja/image/upload/v1782146686/how-to-save-money-shopping-online-india_sf1h2y.webp'],
+    images: ['https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp'],
   },
 
   robots: {
@@ -67,7 +67,7 @@ const schema = {
       headline: 'How to Save Money Shopping Online in India — Introducing CouponsCrew',
       description:
         'Practical, no-fluff ways to save money shopping online in India — coupon stacking, bank offers, cashback layers — plus how CouponsCrew verifies every code before it goes live.',
-      image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1782146686/how-to-save-money-shopping-online-india_sf1h2y.webp',
+      image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp',
       datePublished: '2026-06-22',
       dateModified: '2026-06-22',
       url: 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india',
