@@ -185,19 +185,6 @@ export default function ClothingAccessoriesCategory() {
               </div>
               <Link href="/products" className="text-xs font-bold text-[#5B4FBE] hover:underline inline-flex items-center gap-1 mt-5 ml-2"><span>View All Products</span><ArrowRight size={13} /></Link>
             </div>
-            <div className="bg-gradient-to-br from-[#FF6B9D] to-[#FF3F6C] rounded-2xl p-6 relative overflow-hidden shadow-xl text-white">
-              <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/10 pointer-events-none" />
-              <div className="absolute bottom-2 right-3 text-4xl opacity-60 rotate-12 pointer-events-none select-none">👗</div>
-              <div className="relative z-10">
-                <h3 className="font-bold text-lg">Love Fashion?</h3>
-                <p className="text-white/80 text-xs mt-2 leading-relaxed font-semibold">Get the best clothing deals straight to your inbox.</p>
-                <form onSubmit={handleNewsletterSubmit} className="mt-4">
-                  <input type="email" required value={newsletterEmail} onChange={e => setNewsletterEmail(e.target.value)} placeholder="Enter your email" className="bg-white/20 border border-white/30 rounded-xl px-4 py-2.5 text-white text-sm w-full placeholder-white/60 focus:outline-none focus:bg-white/30" />
-                  <button type="submit" className="mt-3 w-full bg-white text-[#FF3F6C] py-2.5 rounded-xl text-sm font-black hover:bg-gray-50 transition cursor-pointer shadow-md">Subscribe</button>
-                </form>
-                {newsAlert && <div className="mt-3 text-[11px] bg-white/15 border border-white/20 rounded-xl p-2.5 font-bold">✓ You're subscribed to clothing deals!</div>}
-              </div>
-            </div>
           </aside>
         </div>
       </section>

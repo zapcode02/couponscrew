@@ -7,17 +7,12 @@ import {
   Mail,
   Phone,
   MapPin,
-  Clock,
   Send,
   MessageSquare,
   Headphones as HeadphonesIcon,
   CheckCircle,
   ArrowRight,
   Globe,
-  Instagram,
-  Twitter,
-  Facebook,
-  Youtube,
   ChevronDown,
   ChevronUp,
   Zap,
@@ -88,14 +83,6 @@ export default function Contact() {
       value: "Greater Noida, Uttar Pradesh",
       sub: "India 201009"
     },
-    {
-      icon: Clock,
-      color: "#F59E0B",
-      bg: "#FFFBEB",
-      title: "Working Hours",
-      value: "7 Days a Week",
-      sub: "9:00 AM - 9:00 PM IST"
-    }
   ];
 
   const faqData: FAQItem[] = [
@@ -223,7 +210,7 @@ export default function Contact() {
 
         {/* SECTION 2 - CONTACT INFO CARDS ROW */}
         <section className="bg-white py-12 relative z-10 -mt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto px-6">
             {contactInfoList.map((item, idx) => {
               const Icon = item.icon;
               return (
@@ -405,34 +392,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* CARD 2 - Connect on Social */}
-              <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-2xl p-6">
-                <h3 className="text-white font-bold text-base">Follow Us</h3>
-                <p className="text-white/70 text-xs mt-1">We post verified deals before they expire. Follow to catch them first.</p>
-                <div className="grid grid-cols-2 gap-3 mt-5">
-                  {[
-                    { icon: Instagram, label: "Instagram", bg: "bg-pink-500/95", href: "https://www.instagram.com/couponscrew" },
-                    { icon: Facebook, label: "Facebook", bg: "bg-blue-600/95", href: "#" },
-                    { icon: Twitter, label: "Twitter/X", bg: "bg-sky-500/95", href: "https://x.com/couponscrew?s=11" },
-                    { icon: Youtube, label: "YouTube", bg: "bg-red-600/95", href: "https://youtube.com/@couponscrew" }
-                  ].map((soc, idx) => {
-                    const SocIcon = soc.icon;
-                    return (
-                      <a
-                        href={soc.href}
-                        key={idx}
-                        target={soc.href !== "#" ? "_blank" : undefined}
-                        rel={soc.href !== "#" ? "noopener noreferrer" : undefined}
-                        className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-white text-xs font-semibold cursor-pointer hover:opacity-90 transition ${soc.bg}`}
-                      >
-                        <SocIcon className="w-4 h-4 shrink-0" />
-                        <span>{soc.label}</span>
-                      </a>
-                    );
-                  })}
-                </div>
-              </div>
-
               {/* CARD 3 - Office Location Map Placeholder */}
               <div className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden shadow-sm">
                 <div className="bg-gradient-to-br from-[#F0EEFF] to-[#E8E4FF] h-36 flex flex-col items-center justify-center relative select-none">
@@ -500,28 +459,6 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* SECTION 5 - BOTTOM CTA STRIP */}
-        <section className="bg-gradient-to-r from-[#FF5722] to-[#FF8A50] py-14 relative overflow-hidden">
-          <div className="absolute -right-10 -top-10 w-48 h-48 rounded-full bg-white opacity-10 pointer-events-none"></div>
-          <div className="absolute -left-10 -bottom-10 w-32 h-32 rounded-full bg-white opacity-10 pointer-events-none"></div>
-
-          <div className="max-w-7xl mx-auto px-6 flex items-center justify-between flex-wrap gap-6 relative z-10">
-            <div>
-              <h3 className="text-2xl font-bold text-white">Still have questions?</h3>
-              <p className="text-white/80 text-sm mt-1">We reply within 2 hours. Faster on most days.</p>
-            </div>
-            <div className="flex gap-4">
-              <button className="bg-white text-[#FF5722] hover:bg-gray-50 px-8 py-3.5 rounded-full font-bold text-sm transition flex items-center gap-2 cursor-pointer shadow-md">
-                <MessageSquare className="w-4 h-4" />
-                <span>Start Live Chat</span>
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-3.5 rounded-full font-bold text-sm transition flex items-center gap-2 cursor-pointer">
-                <Phone className="w-4 h-4" />
-                <span>Call Us Now</span>
-              </button>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

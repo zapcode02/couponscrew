@@ -296,25 +296,13 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-5 relative">
-                <div className="relative z-10 h-[500px] rounded-[2.5rem] overflow-hidden border-8 border-[#F8F8FF] shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
-                  <NextImage src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=1000" alt="Smart Shopping with Verified Coupons" fill sizes="(max-width: 1024px) 90vw, 40vw" loading="lazy" className="object-cover" />
-                  <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white shadow-xl">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-[#22C55E] rounded-full flex items-center justify-center shrink-0"><ShieldCheck className="text-white w-6 h-6" /></div>
-                      <div>
-                        <p className="text-[#1A1A2E] font-black text-sm uppercase tracking-tight">Verified Infrastructure</p>
-                        <p className="text-[#4A4A6A] text-xs font-medium">Every code is tested manually before listing.</p>
-                      </div>
-                    </div>
-                  </div>
+                <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-8 border-[#F8F8FF] shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 bg-white">
+                  <NextImage src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783266413/about-couponsccrew_z0mapx.png" alt="Smart Shopping with Verified Coupons" width={600} height={600} sizes="(max-width: 1024px) 90vw, 40vw" loading="lazy" className="w-full h-auto object-contain" />
+                 
                 </div>
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#F0EEFF] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" />
                 <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-[#F4FBF7] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse delay-700" />
-                <div className="absolute -right-4 top-20 z-20 bg-[#1A1A2E] text-white p-4 rounded-2xl shadow-xl border border-white/10 hidden md:block">
-                  <div className="flex items-center gap-2 mb-1"><Activity className="w-4 h-4 text-[#22C55E]" /><span className="text-[10px] font-black uppercase tracking-widest text-white/60">Live Pulse</span></div>
-                  <p className="text-xl font-black">10,000+</p>
-                  <p className="text-[10px] font-bold text-white/50 uppercase">Active Vouchers</p>
-                </div>
+               
               </div>
               <div className="lg:col-span-7 space-y-8">
                 <div className="space-y-4">
@@ -344,9 +332,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="pt-4">
-                    <button className="flex items-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-lg hover:shadow-[#5B4FBE]/25 group">
+                    <Link href="/stores" className="inline-flex items-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-lg hover:shadow-[#5B4FBE]/25 group">
                       Start Saving Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -374,13 +362,13 @@ export default function Home() {
                   <div>
                     <div className="flex items-center justify-between gap-2 mb-4">
                       <div className={`p-2.5 rounded-xl border ${event.bgColor} flex items-center justify-center shrink-0 shadow-xs`}>{event.icon}</div>
-                      <span className="text-[10px] font-black uppercase tracking-widest bg-gray-100 text-[#4A4A6A] px-2.5 py-1 rounded-md">{event.tag}</span>
+                      <span className="text-xs font-black uppercase tracking-widest bg-gray-100 text-[#4A4A6A] px-2.5 py-1 rounded-md">{event.tag}</span>
                     </div>
-                    <h3 className="text-base font-black text-[#1A1A2E] leading-snug group-hover:text-[#5B4FBE] transition-colors mb-2">{event.title}</h3>
-                    <div className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-0.5 rounded-md mb-4"><Clock className="w-3 h-3" /> {event.timeline}</div>
-                    <p className="text-xs text-[#4A4A6A] leading-relaxed font-medium">{event.description}</p>
+                    <h3 className="text-lg font-black text-[#1A1A2E] leading-snug group-hover:text-[#5B4FBE] transition-colors mb-2">{event.title}</h3>
+                    <div className="inline-flex items-center gap-1.5 text-sm font-extrabold text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-0.5 rounded-md mb-4"><Clock className="w-3.5 h-3.5" /> {event.timeline}</div>
+                    <p className="text-sm text-[#4A4A6A] leading-relaxed font-medium">{event.description}</p>
                   </div>
-                  <div className="mt-6 pt-4 border-t border-dashed border-[#E8E8F0] flex items-center justify-between text-xs font-black uppercase tracking-wider text-[#1A1A2E]">
+                  <div className="mt-6 pt-4 border-t border-dashed border-[#E8E8F0] flex items-center justify-between text-sm font-black uppercase tracking-wider text-[#1A1A2E]">
                     <span>Track Active Status</span>
                     <div className="w-7 h-7 bg-[#F8F8FF] group-hover:bg-[#5B4FBE] group-hover:text-white rounded-full flex items-center justify-center transition-all"><ArrowRight className="w-4 h-4" /></div>
                   </div>
@@ -389,7 +377,7 @@ export default function Home() {
             </div>
             <div className="bg-white border border-[#E8E8F0] rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-2"><p className="text-xs font-bold text-[#4A4A6A]">We check these dates and start building code pools in advance. Bookmark this so you&apos;re not scrambling when they open.</p></div>
-              <button className="text-xs font-black text-[#5B4FBE] hover:underline uppercase tracking-wider shrink-0 flex items-center gap-1">View Upcoming Sales <ArrowRight className="w-3.5 h-3.5" /></button>
+              <Link href="/stores" className="text-xs font-black text-[#5B4FBE] hover:underline uppercase tracking-wider shrink-0 flex items-center gap-1">View Upcoming Sales <ArrowRight className="w-3.5 h-3.5" /></Link>
             </div>
           </div>
         </section>
@@ -429,9 +417,9 @@ export default function Home() {
                 <div className="w-12 h-12 bg-[#22C55E] rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-[#22C55E]/20"><MessageCircle className="w-6 h-6 text-white" /></div>
                 <div><h3 className="text-lg font-black tracking-tight">Still have questions?</h3><p className="text-xs text-white/60 font-medium">We reply within 2 hours. Real person, no ticket queue.</p></div>
               </div>
-              <button className="bg-white text-[#1A1A2E] hover:bg-[#F0EEFF] px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all flex items-center gap-2 group">
+              <Link href="/contact" className="bg-white text-[#1A1A2E] hover:bg-[#F0EEFF] px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all flex items-center gap-2 group">
                 Contact Support <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -452,10 +440,10 @@ export default function Home() {
           </div>
           <p className="text-white/70 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">50,000 people already check Couponscrew before they pay. Bookmark this page. Open it before you shop.</p>
           <div className="flex justify-center gap-4 flex-wrap pt-6">
-            <a href="/" className="bg-[#FF5722] hover:bg-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-orange-500/35 flex items-center gap-2">
+            <Link href="/products" className="bg-[#FF5722] hover:bg-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-orange-500/35 flex items-center gap-2">
               Start saving Smarter <ArrowRight className="w-5 h-5" />
-            </a>
-            <a href="/" className="border-2 border-white/30 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all">View All Brands</a>
+            </Link>
+            <Link href="/stores" className="border-2 border-white/30 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all">View All Brands</Link>
           </div>
         </div>
       </section>

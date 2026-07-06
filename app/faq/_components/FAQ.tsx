@@ -489,55 +489,6 @@ export default function FAQ() {
         <section id="faq-explorer" className="bg-[#F8F8FF] py-20">
           <div className="max-w-7xl mx-auto px-6 space-y-10">
             
-            {/* CATEGORY FILTER TABS - HORIZONTAL SCROLL ON MOBILE */}
-            <div className="bg-white p-2 rounded-2xl border border-[#E8E8F0] shadow-xs">
-              <div className="flex items-center gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-200 pb-1 sm:pb-0 scroll-smooth">
-                {/* "All FAQs" tab */}
-                <button
-                  onClick={() => {
-                    setActiveCategory('all');
-                    setExpandedId(null);
-                  }}
-                  className={`flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold shrink-0 transition-all duration-200 cursor-pointer ${
-                    activeCategory === 'all'
-                      ? 'bg-[#5B4FBE] text-white shadow-md shadow-indigo-100'
-                      : 'text-[#4A4A6A] hover:bg-gray-100 hover:text-[#1A1A2E]'
-                  }`}
-                >
-                  <List className="w-3.5 h-3.5" />
-                  <span>All FAQs</span>
-                  <span className={`text-[10px] px-2 py-0.5 rounded-full ${activeCategory === 'all' ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-400'}`}>
-                    {faqData.length}
-                  </span>
-                </button>
-
-                {/* Map standard categories list */}
-                {categories.map((cat) => {
-                  const CatIcon = cat.icon;
-                  const isActive = activeCategory === cat.id;
-                  return (
-                    <button
-                      key={cat.id}
-                      onClick={() => {
-                        setActiveCategory(cat.id);
-                        setExpandedId(null);
-                      }}
-                      className={`flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold shrink-0 transition-all duration-200 cursor-pointer ${
-                        isActive
-                          ? 'bg-[#5B4FBE] text-white shadow-md shadow-indigo-100'
-                          : 'text-[#4A4A6A] hover:bg-gray-100 hover:text-[#1A1A2E]'
-                      }`}
-                    >
-                      <CatIcon className="w-3.5 h-3.5" />
-                      <span>{cat.name}</span>
-                      <span className={`text-[10px] px-2 py-0.5 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-500'}`}>
-                        {categoryCounts[cat.id]}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
 
             {/* TWO COLUMN GRID â€" ACCORDION (LEFT 65%) vs STICKY SIDEBAR (RIGHT 35%) */}
             <div className="grid grid-cols-1 lg:grid-cols-10 gap-10 items-start">
@@ -865,7 +816,7 @@ export default function FAQ() {
               >
                 Ask a Question
               </Link>
-              <Link href="/"
+              <Link href="/stores"
                 className="border border-white/40 hover:bg-white/15 text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all text-center"
               >
                 Browse Coupons
@@ -874,32 +825,6 @@ export default function FAQ() {
           </div>
         </section>
 
-        {/* SECTION 5 â€" BOTTOM TRUST STRIP */}
-        <section className="bg-white py-14 border-t border-[#E8E8F0] relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { title: "Verified Answers", desc: "Crafted directly by discount operators.", icon: ShieldCheck },
-                { title: "Updated Weekly", desc: "Polished answers with current system details.", icon: RefreshCw },
-                { title: "Expert Team", desc: "A dedicated group of coupon specialists.", icon: Users },
-                { title: "Always Free", desc: "Zero paid wall constraints on save utilities.", icon: Heart }
-              ].map((badge, idx) => {
-                const BadgeIcon = badge.icon;
-                return (
-                  <div key={idx} className="flex items-start gap-4 p-2">
-                    <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center shrink-0">
-                      <BadgeIcon className="w-5 h-5 text-gray-500" />
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-bold text-[#1A1A2E]">{badge.title}</h3>
-                      <p className="text-xs text-[#4A4A6A] leading-relaxed mt-1">{badge.desc}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
 
       </main>
 

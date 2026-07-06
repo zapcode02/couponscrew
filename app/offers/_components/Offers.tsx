@@ -234,14 +234,6 @@ const OFFERS_DATA: Offer[] = [
   }
 ];
 
-// ============================================================================
-// CATEGORY TABS DATA
-// ============================================================================
-const CATEGORY_TABS: CategoryTab[] = [
-  { id: 'all', name: 'All Offers', icon: '🏷️', offerCount: 10 },
-  { id: 'home', name: 'Home & Kitchen', icon: '🏠', offerCount: 9 },
-  { id: 'electronics', name: 'Electronics', icon: '📱', offerCount: 1 }
-];
 
 // ============================================================================
 // SIDEBAR CATEGORIES DEFINITIONS
@@ -455,78 +447,6 @@ export default function Offers() {
         </div>
       </section>
 
-      {/* ============================================================================
-          SECTION 2  -  CATEGORY TABS ROW
-          ============================================================================ */}
-      <section className="bg-white border-y border-[#E8E8F0] py-4">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center gap-3 overflow-x-auto no-scrollbar scroll-smooth">
-            
-            {/* Standard Category Tabs Rendering */}
-            {CATEGORY_TABS.map((tab) => {
-              const isCurrent = activeCategory === tab.name;
-
-              return (
-                <div
-                  key={tab.id}
-                  onClick={() => handleTabClick(tab.name)}
-                  className={`flex flex-col items-center gap-1.5 px-5 py-3 rounded-2xl cursor-pointer transition-all duration-200 min-w-[100px] flex-shrink-0 text-center ${
-                    isCurrent
-                      ? 'bg-[#5B4FBE]/10 border-b-2 border-[#5B4FBE]'
-                      : 'hover:bg-[#F8F8FF]'
-                  }`}
-                >
-                  {/* Emoji circle status */}
-                  <div
-                    className={`w-12 h-12 rounded-2xl flex items-center justify-center text-xl transition-colors duration-200 ${
-                      isCurrent ? 'bg-[#5B4FBE]' : 'bg-[#F8F8FF] border border-[#E8E8F0]'
-                    }`}
-                  >
-                    <span>{tab.icon}</span>
-                  </div>
-
-                  {/* Category Name */}
-                  <span
-                    className={`text-xs select-none ${
-                      isCurrent ? 'font-bold text-[#5B4FBE]' : 'font-semibold text-[#1A1A2E]'
-                    }`}
-                  >
-                    {tab.name}
-                  </span>
-
-                  {/* Offer count */}
-                  <span
-                    className={`text-[10px] select-none ${
-                      isCurrent ? 'text-[#5B4FBE] font-bold' : 'text-[#4A4A6A]'
-                    }`}
-                  >
-                    {tab.offerCount.toLocaleString('en-IN')}+ offers
-                  </span>
-                </div>
-              );
-            })}
-
-            {/* Special "View All Categories" tab */}
-            <Link href="/categories"
-              className="flex flex-col items-center gap-1.5 px-5 py-3 rounded-2xl cursor-pointer hover:bg-[#F8F8FF] transition-all duration-200 min-w-[100px] flex-shrink-0 text-center select-none"
-            >
-              {/* Lucide LayoutGrid Icon representation */}
-              <div className="w-12 h-12 rounded-2xl bg-[#F0EEFF] border border-[#E8E8F0] flex items-center justify-center text-[#5B4FBE]">
-                <LayoutGrid size={20} className="stroke-[2.5]" />
-              </div>
-
-              <span className="text-xs font-semibold text-[#1A1A2E]">
-                View All Categories
-              </span>
-
-              <span className="text-[10px] text-[#5B4FBE] font-bold">
-                ⊞ Explore All
-              </span>
-            </Link>
-
-          </div>
-        </div>
-      </section>
 
       {/* ============================================================================
           SECTION 3  -  MAIN CONTENT  -  2 COLUMN LAYOUT WITH OFFERS LIST

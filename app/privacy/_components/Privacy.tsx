@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
 import {
@@ -278,13 +279,13 @@ export default function Privacy() {
                   <span>Read Full Policy</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
-                <a
-                  href="mailto:Couponscrew@gmail.com"
-                  className="border-2 border-white/30 text-white px-7 py-3.5 rounded-full font-semibold hover:bg-white/10 transition flex items-center gap-2 cursor-pointer"
+                <Link
+                  href="/contact"
+                  className="border-2 border-white/30 text-white px-7 py-3.5 rounded-full font-semibold hover:bg-white/10 transition flex items-center gap-2"
                 >
                   <Mail className="w-4.5 h-4.5" />
                   <span>Contact Privacy Team</span>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -348,43 +349,7 @@ export default function Privacy() {
           </div>
         </section>
 
-        {/* SECTION 3 - TABLE OF CONTENTS */}
-        <section className="bg-white py-12 border-y border-[#E8E8F0]">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex items-center justify-between mb-8 border-b border-[#E8E8F0] pb-4">
-              <h2 className="text-xl font-bold text-[#1A1A2E]">Table of Contents</h2>
-              <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-semibold px-4 py-1.5 rounded-full inline-flex items-center gap-1.5 select-none">
-                <FileText className="w-3 h-3" />
-                <span>10 Sections</span>
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-              {tableOfContents.map((toc) => {
-                const TocIcon = toc.icon;
-                return (
-                  <div
-                    key={toc.id}
-                    onClick={() => {
-                      setOpenSection(toc.id);
-                      const el = document.getElementById("main-policy-accordion");
-                      if (el) el.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                    className="flex items-center gap-3 p-4 rounded-xl border border-[#E8E8F0] bg-[#F8F8FF] hover:border-[#5B4FBE] hover:bg-[#F0EEFF] cursor-pointer transition-all duration-200 group"
-                  >
-                    <div className="w-7 h-7 rounded-lg bg-[#5B4FBE] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
-                      {toc.id}
-                    </div>
-                    <TocIcon className="w-3.5 h-3.5 text-[#5B4FBE] shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-xs font-semibold text-[#1A1A2E] leading-tight select-none">
-                      {toc.title}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+      
 
         {/* SECTION 4 - MAIN ACCORDION + STICKY SIDEBAR */}
         <section id="main-policy-accordion" className="bg-[#F8F8FF] py-20 border-b border-[#E8E8F0]">
@@ -701,22 +666,20 @@ export default function Privacy() {
             </div>
 
             <div className="flex justify-center gap-4 flex-wrap mt-10">
-              <button
-                onClick={() => {
-                  window.location.href = "/";
-                }}
-                className="bg-[#FF5722] text-white px-10 py-4 rounded-full font-bold text-base hover:bg-orange-500 transition shadow-lg shadow-orange-500/30 flex items-center gap-2 cursor-pointer"
+              <Link
+                href="/stores"
+                className="bg-[#FF5722] text-white px-10 py-4 rounded-full font-bold text-base hover:bg-orange-500 transition shadow-lg shadow-orange-500/30 flex items-center gap-2"
               >
                 <Star className="w-5 h-5 fill-white" />
                 <span>View Our Coupons</span>
-              </button>
-              <a
-                href="mailto:Couponscrew@gmail.com"
-                className="border-2 border-white/30 text-white px-10 py-4 rounded-full font-bold text-base hover:bg-white/10 transition flex items-center gap-2 cursor-pointer inline-flex items-center justify-center"
+              </Link>
+              <Link
+                href="/contact"
+                className="border-2 border-white/30 text-white px-10 py-4 rounded-full font-bold text-base hover:bg-white/10 transition flex items-center gap-2 inline-flex items-center justify-center"
               >
                 <Mail className="w-5 h-5" />
                 <span>Contact Privacy Team</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

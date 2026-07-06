@@ -198,11 +198,11 @@ const SIDEBAR_BRANDS: BrandItem[] = [
 ];
 
 const DISCOUNT_TIERS = [
-  { label: '10% and above', value: 10, count: '4,523' },
-  { label: '20% and above', value: 20, count: '3,452' },
-  { label: '30% and above', value: 30, count: '2,345' },
-  { label: '40% and above', value: 40, count: '1,234' },
-  { label: '50% and above', value: 50, count: '876' }
+  { label: '10% and above', value: 10, count: '5' },
+  { label: '20% and above', value: 20, count: '4' },
+  { label: '30% and above', value: 30, count: '4' },
+  { label: '40% and above', value: 40, count: '3' },
+  { label: '50% and above', value: 50, count: '3' }
 ];
 
 export default function Products() {
@@ -508,7 +508,7 @@ export default function Products() {
           {/* ============================================================================
               LEFT SIDEBAR  -  ADVANCED PRODUCTS FILTERS FILTERBAR (Sticky on LG)
               ============================================================================ */}
-          <aside className="hidden lg:block w-64 flex-shrink-0 sticky top-24 self-start space-y-5">
+          <aside className="hidden lg:block w-64 flex-shrink-0 sticky top-24 self-start space-y-5 z-10">
             
             {/* Categories sidebar box block */}
             <div id="sidebar-categories-block" className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">

@@ -714,7 +714,7 @@ export default function Deals() {
 
           {/* View All Promo Link */}
           <div className="text-center mt-10">
-            <Link href="/"
+            <Link href="/stores"
               className="inline-flex items-center gap-2 text-orange-500 font-extrabold text-sm hover:underline cursor-pointer hover:gap-3 transition-all"
             >
               <span>View All Brand Deals</span>
@@ -920,7 +920,7 @@ export default function Deals() {
 
           {/* View All Products Link */}
           <div className="text-center mt-10">
-            <Link href="/"
+            <Link href="/products"
               className="inline-flex items-center gap-2 text-orange-500 font-extrabold text-sm hover:underline cursor-pointer hover:gap-3 transition-all"
             >
               <span>View All Products</span>
@@ -973,14 +973,7 @@ export default function Deals() {
 
           {/* Right actions CTA row */}
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center w-full max-w-md mx-auto sm:max-w-none">
-            <button
-              onClick={() => handleClaimDeal('deal-alerts')}
-              className="bg-white hover:bg-gray-50 text-[#FF5722] font-extrabold px-8 py-4.5 rounded-full hover:shadow-lg transition flex items-center justify-center gap-2 cursor-pointer w-full text-base"
-            >
-              <Bell className="w-5 h-5 shrink-0" />
-              <span>{claimedDeals['deal-alerts'] ? 'Alerts Activated!' : 'Get Deal Alerts'}</span>
-            </button>
-            <Link href="/"
+            <Link href="/stores"
               className="border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-4.5 rounded-full transition inline-flex items-center gap-2 justify-center w-full text-sm"
             >
               <span>Browse All Coupons</span>
