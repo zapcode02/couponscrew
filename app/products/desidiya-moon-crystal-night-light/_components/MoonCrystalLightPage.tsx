@@ -274,39 +274,39 @@ export default function MoonCrystalLightPage() {
               {/* Left: Text Content */}
               <div className="prose max-w-none">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Desidiya Coupon Codes, Promo Codes & Home Decor Deals
+                  Desidiya Moon Crystal Ball Night Light — Complete Review & Gift Guide
                 </h2>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Light Up Your Space with Desidiya Coupon Codes</h3>
+                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Is the Desidiya Moon Crystal Ball Night Light?</h3>
                   <p>
-                    A thoughtfully placed night light can transform the mood of any room, whether it's a cozy bedroom corner or a gifting occasion. With the latest <strong>Desidiya coupon codes</strong>, CouponScrew helps shoppers find savings on charming home decor pieces like this Moon Crystal Ball Night Light.
+                    The Desidiya Moon Crystal Ball Night Light is a 2.4-inch (6 cm) K9 optical glass sphere set on a natural wooden base, emitting a warm white LED glow that fills a room with soft, ambient light. The glass ball contains a 3D laser-engraved moon design — carved sub-surface by laser without breaking the outer surface — so the lunar detail appears to float inside the sphere when lit. The LED is embedded in the wooden base and shines upward through the glass, diffracting and scattering through the engraved internal pattern.
                   </p>
                   <p>
-                    From elegant crystal ball lamps to wooden-based decor lights, Desidiya creates pieces that combine aesthetics with functionality. Before placing your next order, browse CouponScrew for the latest promo codes, discounts, and special offers.
+                    The result is the kind of atmospheric glow that makes a bedroom feel genuinely different at night — not the flat brightness of an overhead light, but a warm focal point that draws the eye and creates calm. Desidiya is a Gurugram-based Indian home decor brand founded in 2019, selling primarily on Amazon India, Flipkart, and quick-commerce platforms. Their crystal ball range covers over a dozen themes — moon, galaxy, universe, astronaut, Lord Ganesha, dancing fairy — all using the same USB-powered wooden base system.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Choose This Moon Crystal Night Light?</h3>
-                    <p><strong>Elegant Crystal Design:</strong> The 2.4 inch glass ball adds a premium decorative touch to any room.</p>
-                    <p><strong>Soft Warm Glow:</strong> The LED light creates a relaxing ambience, ideal for bedtime or quiet evenings.</p>
-                    <p><strong>Sturdy Wooden Base:</strong> Adds a natural, premium look that complements most home decor styles.</p>
-                    <p><strong>Compact & Versatile:</strong> Fits easily on a bedside table, study desk, or living room shelf.</p>
-                    <p><strong>Perfect Gift Idea:</strong> A meaningful and affordable gift for housewarmings, birthdays, or festive occasions.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">How It Works — Light, Power & Touch Control</h3>
+                    <p><strong>USB Powered, 2W:</strong> Plugs into any USB port — phone charger, power bank, laptop, or USB adapter. No batteries, no separate adapter required. Running cost is negligible — under ₹2/month at 8 hours daily.</p>
+                    <p><strong>Warm White LED (2700K):</strong> The warm amber-gold tone is deliberately chosen to match the "moonlight" aesthetic. 2700K warm white has lower blue-light content than cool white, making it gentler on eyes and less disruptive to sleep when used as a bedside nightlight.</p>
+                    <p><strong>K9 Optical Glass Ball:</strong> The sphere is made from K9 glass — a high-clarity optical glass known for excellent light transmission and refractive quality. It is denser and more durable than regular glass, though still breakable if dropped on hard floors.</p>
+                    <p><strong>Touch Dimmer:</strong> A capacitive touch sensor on the wooden base responds to finger contact. Short tap: on/off. Hold: cycles through brightness levels using PWM (Pulse Width Modulation) dimming. Works in complete darkness; no mechanical parts to wear out.</p>
+                    <p><strong>Natural Wooden Base:</strong> The base is made from mango wood or rubber wood — natural materials that provide stability (heavier than plastic), hide the USB cable routing internally, and create the warm aesthetic contrast between glass and wood that defines this product's appeal.</p>
                   </div>
 
                   {/* How to Use Steps */}
                   <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Desidiya Coupon Code</h3>
-                    <p className="text-gray-700 font-bold -mt-4">Saving on your next decor purchase is quick and easy.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-8">Setting Up & Getting the Best Glow</h3>
+                    <p className="text-gray-700 font-bold -mt-4">Getting this lamp working and looking its best takes under two minutes.</p>
                     <div className="space-y-6">
                       {[
-                        "Step 1: Visit CouponScrew — Browse the latest Desidiya coupon codes and promotional offers.",
-                        "Step 2: Choose a Deal — Select the offer that best matches your purchase.",
-                        "Step 3: Copy the Coupon Code — Copy the available promo code before visiting the store.",
-                        "Step 4: Shop Your Favorite Decor — Add the Moon Crystal Night Light to your cart.",
-                        "Step 5: Apply the Coupon — Paste the coupon code during checkout if applicable.",
-                        "Step 6: Complete Your Order — Finish your purchase and light up your space."
+                        "Remove the crystal ball and wooden base from the packaging. The ball sits in a small slot/socket on top of the base.",
+                        "Connect the included USB cable to the base and plug it into any 5V USB port — a phone charger adapter, laptop, power bank, or USB hub all work.",
+                        "Touch the base once to turn the light on. The crystal ball will glow with a warm white light.",
+                        "To adjust brightness: touch and hold the base. The lamp will cycle through brightness levels — release your finger at the desired level.",
+                        "For best visual effect: dim the room lights or use in a darkened space. The 2.4-inch ball creates a striking ambient glow that is most visible when it is the dominant light source in the room.",
+                        "Place on a bedside table, study desk, shelf, or dressing table. Keep away from direct sunlight and out of reach of young children."
                       ].map((step, i) => (
                         <div key={i} className="flex gap-6 items-start">
                           <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -319,42 +319,40 @@ export default function MoonCrystalLightPage() {
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Smart Ways to Save More on Home Decor</h3>
-                    <p className="text-gray-700 font-bold">Want to maximize your savings? Here are a few practical tips.</p>
-                    <p><strong>Check CouponScrew Before Every Purchase:</strong> New Desidiya promo codes and seasonal offers may become available throughout the year.</p>
-                    <p><strong>Shop During Festive Sales:</strong> Major shopping events often feature additional discounts on home decor.</p>
-                    <p><strong>Plan Gifts Ahead:</strong> Buying decor pieces before festivals or special occasions helps you avoid last-minute price hikes.</p>
-                    <p><strong>Bundle Your Order:</strong> Purchasing multiple decor items together may help you qualify for promotions or free shipping.</p>
-                    <p><strong>Join Brand Updates:</strong> Subscribing to newsletters can help you stay informed about future launches and exclusive offers.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Good Ambient Lighting Matters</h3>
-                    <p>Investing in the right ambient lighting can make your living space feel warmer and more inviting.</p>
-                    <p className="text-gray-700 font-bold">A good night light helps you:</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Where It Looks Best — Placement Guide</h3>
+                    <p>The Moon Crystal Ball Night Light works best as a single accent piece in a dimmer setting — not a replacement for overhead lighting, but a complement that transforms the character of a room. On a bedside table, it creates a soothing wind-down glow at the lowest brightness setting. On a study desk, it adds personality without distracting from work. On a living room shelf or console, it serves as a decorative object during the day and a glowing accent at night.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-                      <li>Create a calming atmosphere for better sleep</li>
-                      <li>Add a decorative touch to any room</li>
-                      <li>Provide gentle illumination at night</li>
-                      <li>Enhance the aesthetic of your home decor</li>
-                      <li>Make a meaningful gift for loved ones</li>
+                      <li>Bedroom bedside table — most popular use; lowest brightness is ideal for sleeping with the light on</li>
+                      <li>Study desk or workspace — calming ambient backdrop; increasingly popular for video call backgrounds</li>
+                      <li>Kids' room shelf — comforting nightlight for older children (5+); keep out of toddler reach</li>
+                      <li>Dressing table or vanity — warm glow complements self-care routines</li>
+                      <li>Living room bookshelf — decorative accent that doubles as a conversation piece</li>
+                      <li>Gifting note: the lamp photographs beautifully in a dark room — useful if you plan to take an "unboxing" or room-tour photo</li>
                     </ul>
-                    <p>Whether you're decorating your own space or picking a gift, choosing quality ambient lighting can enhance the overall experience.</p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Use CouponScrew for Desidiya Deals?</h3>
-                    <p className="text-gray-700 font-bold">CouponScrew helps shoppers discover valuable savings across home decor, fashion, technology, and lifestyle brands.</p>
-                    <p><strong>Updated Discounts:</strong> We regularly update available Desidiya promotions and coupon codes.</p>
-                    <p><strong>Easy-to-Find Deals:</strong> Browse offers in one convenient location before making your purchase.</p>
-                    <p><strong>Completely Free:</strong> CouponScrew is free to use whenever you're searching for ways to save.</p>
-                    <p><strong>Trusted Brands:</strong> In addition to home decor, CouponScrew features savings from hundreds of popular brands across multiple shopping categories.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Gifting Guide — Who Is This Perfect For?</h3>
+                    <p>This lamp is one of the best-performing gift items in Indian home decor under ₹500 — it looks like it costs significantly more than it does. The glass + wood combination, the 3D moon engraving, and the warm glow create an unboxing experience that feels premium. At ₹197, it is accessible as a return gift, an impulse birthday present, or a thoughtful add-on.</p>
+                    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+                      <li>Valentine's Day and anniversaries — moon symbolism (romance, night sky, eternity) makes this a natural gift</li>
+                      <li>Diwali — ambient lighting aligns with the festival of lights; warm glow adds to festive decor</li>
+                      <li>Birthdays for teens and young adults (13–30) — aligns strongly with Gen Z "aesthetic bedroom" preferences</li>
+                      <li>Housewarming gifts — new home, new decor; compact and universally likeable</li>
+                      <li>Raksha Bandhan farewell or "going-to-college" gift for siblings moving to a hostel or PG</li>
+                      <li>Teacher's Day, Boss Day — appropriate desk decor that is neither too personal nor too generic</li>
+                    </ul>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Brighten Your Home Today</h3>
-                    <p>Whether you're decorating your bedroom, gifting a friend, or simply adding a cozy glow to your living space, a charming night light can make all the difference.</p>
-                    <p>Browse the latest Desidiya coupon codes, promo offers, and home decor deals on CouponScrew today and save on the decor you love.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Honest Assessment — What Buyers Say</h3>
+                    <p>Buyers consistently highlight the visual impact at the price point — words like "magical," "beautiful," and "looks expensive" appear repeatedly across reviews. The touch dimmer, USB convenience, and warm glow quality are praised. With 5,500+ ratings and an Amazon's Choice badge, buyer confidence is well-supported by real purchase volume (1,000+ per month).</p>
+                    <p>The most common complaint is size — the 2.4-inch (6 cm) ball is accurately stated in the listing but smaller than many buyers imagine. If you are expecting a large statement lamp, this is a compact accent piece, not a room-filling globe. Brightness is intentionally low (2W ambient), not functional task lighting. Some buyers mention the USB adapter is not included — only the USB cable — which requires a separate charger.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Buy via CouponsCrew</h3>
+                    <p>CouponsCrew tracks live Amazon India pricing for this product, which has historically seen significant discounts during the Great Indian Festival, Prime Day, and Diwali sales — sometimes dropping below ₹150. The deal link above takes you directly to the verified Amazon listing. Check at checkout for additional coupon ticks. Free to use, no sign-up required.</p>
                   </div>
 
                   {!isReadMore && (
@@ -373,12 +371,12 @@ export default function MoonCrystalLightPage() {
                 <div className="mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
-                    { q: "What is the Desidiya Moon Crystal Night Light?", a: "It is a 2.4 inch glass crystal ball night light set on a wooden base, emitting a soft warm LED glow ideal for bedrooms or decor." },
-                    { q: "How is the light powered?", a: "The night light can be powered via USB or battery, depending on the variant included in the package." },
-                    { q: "Is this a good gifting option?", a: "Yes, its elegant design and compact size make it a popular gift for housewarmings, birthdays, and festive occasions." },
-                    { q: "Where can I find Desidiya coupon codes?", a: "You can browse the latest Desidiya coupon codes, promo offers, and home decor deals on CouponScrew." },
-                    { q: "Is the light bright enough for reading?", a: "The light is designed for ambient, relaxing illumination rather than bright task lighting like reading." },
-                    { q: "Is CouponScrew free to use?", a: "Absolutely. CouponScrew is completely free and helps shoppers discover verified coupon codes, promo offers, and discounts from trusted brands." }
+                    { q: "What is the Desidiya Moon Crystal Night Light?", a: "A 2.4-inch K9 optical glass ball with a 3D laser-engraved moon design, set on a natural wooden base. A USB-powered LED in the base shines upward through the glass, creating a warm white ambient glow with the moon detail visible inside the sphere. It is used as a bedroom nightlight, desk decor, and gift item." },
+                    { q: "How is the light powered?", a: "USB powered at 5V, 2W. The included USB cable connects to any standard USB port — a phone charger adapter, laptop port, power bank, or USB hub. No batteries required. No wall adapter is included in the box; use any 5V USB adapter you already own." },
+                    { q: "Is this a good gifting option?", a: "Yes — consistently. The combination of K9 glass, 3D engraving, wooden base, and warm glow creates a perceived value significantly higher than the actual price. It is well-suited for Valentine's Day, Diwali, birthdays (especially teens and young adults), housewarmings, Raksha Bandhan, and farewell gifts. With 5,500+ ratings and Amazon's Choice designation, it is a well-validated gift purchase." },
+                    { q: "Where can I find Desidiya coupon codes?", a: "CouponsCrew monitors Amazon India pricing for Desidiya products including this crystal ball lamp. The deal button above links to the current live offer. Check the checkout page on Amazon for additional coupon ticks — promotional discounts during festive sales (Great Indian Festival, Prime Day) can reduce the price further." },
+                    { q: "Is the light bright enough for reading?", a: "No — and it is not designed for that. The 2W LED is optimised for soft ambient illumination, not task lighting. It is best used as a mood or accent light in a dimmer room. For reading, a dedicated desk lamp is needed alongside it. At the lowest brightness setting, it functions as a sleep-friendly nightlight; at maximum, it creates a warm focal glow in the room." },
+                    { q: "Is CouponsCrew free to use?", a: "Yes, completely free. CouponsCrew helps Indian shoppers find verified price drops, deals, and coupon codes across home decor, skincare, fashion, electronics, and more. No registration required to access any deal." }
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                       <button
@@ -403,7 +401,7 @@ export default function MoonCrystalLightPage() {
                 <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#5B4FBE]/5">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Desidiya Searches</h3>
                   <div className="flex flex-wrap gap-2.5">
-                    {["Moon Crystal Light", "Desidiya Promo Code", "LED Night Lamp", "Wooden Base Decor", "Crystal Ball Lamp", "Home Decor Gifts", "Bedroom Night Light", "CouponScrew Decor"].map(tag => (
+                    {["Moon Crystal Ball Lamp", "LED Night Light Gift", "Warm White Ambient Lamp", "Bedroom Decor India", "Desidiya Night Light", "Aesthetic Room Decor", "Diwali Gift Ideas", "CouponsCrew Home Decor"].map(tag => (
                       <a
                         key={tag}
                         href={`/search?q=${encodeURIComponent(tag)}`}
@@ -419,11 +417,11 @@ export default function MoonCrystalLightPage() {
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Desidiya Deals</h3>
                   <div className="space-y-6">
                     {[
-                      { heading: "Decor Combo Bundle", sub: "Save up to 25% when bundling night lights with decor accessories" },
-                      { heading: "First Order Promo Code", sub: "Special percentage metrics adjusted on introductory store registrations" },
-                      { heading: "Complimentary Delivery", sub: "Standard logistics handling applied cleanly over minimum budget parameters" },
-                      { heading: "Festive Decor Sale", sub: "Limited-time price reductions on selected lamps and decor pieces" },
-                      { heading: "CouponScrew Active Coupon", sub: "Instant validation code application calculated cleanly during check out" }
+                      { heading: "Moon Crystal Ball Night Light", sub: "3D laser-engraved moon, USB powered, touch dimmer — Amazon's Choice" },
+                      { heading: "Desidiya Galaxy Crystal Ball", sub: "Same wooden base system, galaxy engraving for cosmic bedroom vibes" },
+                      { heading: "Crystal Ball Diwali Gift Pack", sub: "Moon + Universe combo — bundle both for a premium gifting set" },
+                      { heading: "LED Ambient Desk Lamp", sub: "Warm white accent lighting for study desks and work-from-home setups" },
+                      { heading: "Home Decor Deals Under ₹500", sub: "Browse the best ambient lighting and gifting deals on CouponsCrew" }
                     ].map((deal, i) => (
                       <div key={i} className="flex items-center gap-4 group cursor-pointer">
                         <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">D</div>

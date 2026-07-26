@@ -274,39 +274,39 @@ export default function DeelmoKurtaPage() {
               {/* Left: Text Content */}
               <div className="prose max-w-none">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  DEELMO Coupon Codes, Promo Codes & Men's Kurta Deals
+                  DEELMO Men's Mandarin Collar Kurta — Complete Style Guide & Deal Review
                 </h2>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Upgrade Your Ethnic Wardrobe with DEELMO Coupon Codes</h3>
+                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Makes This DEELMO Mandarin Collar Kurta Worth Buying?</h3>
                   <p>
-                    A well-fitted kurta is a wardrobe essential for festive gatherings, casual outings, and everyday comfort. With the latest <strong>DEELMO coupon codes</strong>, CouponScrew helps shoppers discover savings on stylish men's ethnic wear like this Mandarin Collar Short Kurta.
+                    The DEELMO Men's Cotton Blend Mandarin Collar Short Kurta is built for the modern Indian man who wants ethnic style without fuss. It combines a self-design geometric woven pattern with a clean Mandarin (Nehru) collar — one of Indian fashion's most enduring signatures, tracing back to Jawaharlal Nehru's iconic achkans and popularised globally by The Beatles after their 1960s India visit. The collar's short, stand-up design frames the neck cleanly without gaping, creating a sophisticated silhouette that works equally well for casual days and festive occasions.
                   </p>
                   <p>
-                    From breathable cotton blend fabrics to clean self-design patterns, DEELMO creates kurtas that balance traditional style with everyday comfort. Before placing your next order, browse CouponScrew for the latest promo codes, discounts, and special offers.
+                    Made from a breathable cotton blend, the kurta is suited to India's varied climate — warm enough to stay comfortable and structured through cooler evenings, breathable enough to wear through long festive afternoons. The self-design pattern is woven into the fabric itself using a jacquard technique, not printed on top — which means the design never fades through washing. Available in 8 colours and sizes S to 4XL, this kurta covers a wider size range than most budget ethnic wear brands at this price point.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Choose This Mandarin Collar Kurta?</h3>
-                    <p><strong>Sharp Mandarin Collar:</strong> Gives the kurta a clean, modern ethnic silhouette suitable for various occasions.</p>
-                    <p><strong>Breathable Cotton Blend:</strong> Comfortable fabric that works well for both daily wear and festive settings.</p>
-                    <p><strong>Self Design Pattern:</strong> A subtle textured pattern that adds visual interest without being too loud.</p>
-                    <p><strong>Versatile Pairing:</strong> Looks great with jeans, pyjamas, or traditional churidars.</p>
-                    <p><strong>Easy Care Fabric:</strong> Machine washable for everyday convenience.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">How to Style This Kurta — Bottoms, Occasions & Footwear</h3>
+                    <p><strong>With Jeans:</strong> The most popular Indo-Western pairing. Slim or straight dark denim works with virtually any colour variant. Pair with loafers, kolhapuri chappals, or minimal sneakers for a complete casual-festive look.</p>
+                    <p><strong>With Pyjama:</strong> Classic kurta-pyjama pairing — straight-cut pyjamas in matching or tonal colours create a relaxed, polished finish for home festivities, Eid, and informal pujas.</p>
+                    <p><strong>With Chinos or Trousers:</strong> Tapered chinos in beige, olive, or navy elevate the kurta to smart-casual for office ethnic days or semi-formal gatherings.</p>
+                    <p><strong>Occasions:</strong> Diwali, Eid, Navratri, Rakhi, college events, pre-wedding mehndi, casual office ethnic Fridays, and everyday outings. The self-design pattern gives this kurta enough visual interest to dress up but enough restraint to dress down.</p>
+                    <p><strong>Short Kurta Advantage:</strong> Hip-length short kurtas require no matching bottoms — wear it with what you already own. Less fabric also means better breathability and travel-friendliness compared to full-length kurtas.</p>
                   </div>
 
                   {/* How to Use Steps */}
                   <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a DEELMO Coupon Code</h3>
-                    <p className="text-gray-700 font-bold -mt-4">Saving on your next ethnic wear purchase is quick and easy.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Get the Best Deal on This Kurta</h3>
+                    <p className="text-gray-700 font-bold -mt-4">Finding the lowest price on the DEELMO Kurta takes less than a minute.</p>
                     <div className="space-y-6">
                       {[
-                        "Step 1: Visit CouponScrew — Browse the latest DEELMO coupon codes and promotional offers.",
-                        "Step 2: Choose a Deal — Select the offer that best matches your purchase.",
-                        "Step 3: Copy the Coupon Code — Copy the available promo code before visiting the store.",
-                        "Step 4: Shop Your Favorite Kurta — Add the Mandarin Collar Kurta to your cart.",
-                        "Step 5: Apply the Coupon — Paste the coupon code during checkout if applicable.",
-                        "Step 6: Complete Your Order — Finish your purchase and get ready for your next occasion."
+                        "Click the \"GET THIS DEAL ON AMAZON\" button above to open the live Amazon India listing.",
+                        "Check the current deal price — Amazon frequently applies additional bank card discounts and coupon ticks at checkout.",
+                        "Select your size. If unsure between two sizes, size up — cotton blend kurtas fit slightly snug compared to size labels.",
+                        "Add to Cart and sign in to your Amazon India account.",
+                        "At checkout, check for any active coupon box on the cart page — additional discounts are sometimes stackable.",
+                        "Complete your order. Standard or Prime delivery applies based on your account and pincode."
                       ].map((step, i) => (
                         <div key={i} className="flex gap-6 items-start">
                           <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -319,42 +319,38 @@ export default function DeelmoKurtaPage() {
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Smart Ways to Save More on Ethnic Wear</h3>
-                    <p className="text-gray-700 font-bold">Want to maximize your savings? Here are a few practical tips.</p>
-                    <p><strong>Check CouponScrew Before Every Purchase:</strong> New DEELMO promo codes and seasonal offers may become available throughout the year.</p>
-                    <p><strong>Shop During Festive Sales:</strong> Major shopping events often feature additional discounts on ethnic wear.</p>
-                    <p><strong>Plan Ahead for Festivals:</strong> Buying kurtas before peak festive seasons can help you avoid last-minute price hikes.</p>
-                    <p><strong>Bundle Your Order:</strong> Purchasing multiple kurtas or accessories together may help you qualify for promotions or free shipping.</p>
-                    <p><strong>Join Brand Updates:</strong> Subscribing to newsletters can help you stay informed about future launches and exclusive offers.</p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why a Quality Kurta Matters</h3>
-                    <p>Investing in a well-made kurta can make every festive occasion and casual outing more comfortable.</p>
-                    <p className="text-gray-700 font-bold">A good kurta helps you:</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Fabric & Care — What You Need to Know</h3>
+                    <p>The cotton blend fabric typically combines cotton with polyester or viscose to balance breathability, wrinkle resistance, and durability. The polyester or viscose component means the kurta resists creasing better than pure cotton — useful for a garment you might throw on for a last-minute invitation.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-                      <li>Look sharp and put-together for any event</li>
-                      <li>Stay comfortable in breathable cotton blend fabric</li>
-                      <li>Pair easily with multiple bottoms</li>
-                      <li>Maintain a versatile ethnic wardrobe</li>
-                      <li>Feel confident at festive and casual gatherings alike</li>
+                      <li>Machine wash on gentle cycle in cold water (30°C max)</li>
+                      <li>Turn inside out before washing to protect the outer woven surface</li>
+                      <li>Wash dark colours (navy, mehendi green, maroon) separately for first wash to check for colour bleed</li>
+                      <li>Air dry in shade — direct sunlight can fade colours and weaken fibres</li>
+                      <li>Iron at medium heat while slightly damp; steam iron preferred for woven self-design patterns</li>
+                      <li>Avoid tumble drying on high heat to prevent shrinkage</li>
                     </ul>
-                    <p>Whether you're dressing up for a festival or keeping it casual, choosing a well-fitted kurta can enhance your overall look.</p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Use CouponScrew for DEELMO Deals?</h3>
-                    <p className="text-gray-700 font-bold">CouponScrew helps shoppers discover valuable savings across ethnic wear, fashion, technology, and lifestyle brands.</p>
-                    <p><strong>Updated Discounts:</strong> We regularly update available DEELMO promotions and coupon codes.</p>
-                    <p><strong>Easy-to-Find Deals:</strong> Browse offers in one convenient location before making your purchase.</p>
-                    <p><strong>Completely Free:</strong> CouponScrew is free to use whenever you're searching for ways to save.</p>
-                    <p><strong>Trusted Brands:</strong> In addition to ethnic wear, CouponScrew features savings from hundreds of popular brands across multiple shopping categories.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Who Should Buy This Kurta</h3>
+                    <p>This kurta is ideal for men aged 18–45 who want a versatile ethnic piece that handles multiple occasions without requiring a separate wardrobe. The hip-length cut and self-design pattern make it appropriate for festive gatherings without looking out of place at a casual outing. If you rotate between multiple events — a college event one weekend, a family Diwali celebration the next — a short kurta in a good colour handles both without rethinking.</p>
+                    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
+                      <li>Men looking for ethnic wear that pairs with existing jeans and trousers</li>
+                      <li>Plus-size men (3XL, 4XL) who find budget ethnic wear options limited — this range goes up to 4XL, rare at this price point</li>
+                      <li>Buyers wanting self-design texture rather than printed patterns that look cheap over time</li>
+                      <li>First-time ethnic wear buyers wanting a low-risk, versatile entry piece</li>
+                      <li>Office employees on ethnic dress days who want to avoid spending on expensive branded kurtas</li>
+                    </ul>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Get Festival-Ready Today</h3>
-                    <p>Whether you're prepping for a festival, a casual hangout, or everyday comfort wear, having the right kurta can make all the difference.</p>
-                    <p>Browse the latest DEELMO coupon codes, promo offers, and men's kurta deals on CouponScrew today and save on the ethnic wear you need.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">About the DEELMO Brand</h3>
+                    <p>DEELMO is an Indian ethnic wear brand selling on Amazon India and Flipkart with a catalogue of 50+ men's kurta styles. Their positioning is consistent: set a high MRP (₹1,399–₹2,999 across the range) and sell at a deep discount (70–83% off), making budget-friendly ethnic wear accessible without sacrificing design variety. The Mandarin Collar Short Kurta is one of their bestselling styles — over 1,600 buyer reviews on Amazon India reflect consistent demand across the colour range.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Buy via CouponsCrew</h3>
+                    <p>CouponsCrew tracks live pricing on Amazon India so you reach this product at the best available offer — including seasonal promotions, bank card discounts, and checkout coupon ticks that appear only at the cart stage. Every deal link goes directly to the verified Amazon listing, with no inflated before-prices or intermediary redirects. Free to use, no registration required.</p>
                   </div>
 
                   {!isReadMore && (
@@ -373,12 +369,12 @@ export default function DeelmoKurtaPage() {
                 <div className="mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
-                    { q: "What fabric is the DEELMO kurta made of?", a: "The kurta is made from a breathable cotton blend fabric designed for everyday comfort." },
-                    { q: "Is this kurta suitable for festive occasions?", a: "Yes, the self-design pattern and mandarin collar make it suitable for both casual and festive wear." },
-                    { q: "What is a mandarin collar?", a: "A mandarin collar is a short, stand-up collar that gives ethnic wear a clean, modern silhouette." },
-                    { q: "Where can I find DEELMO coupon codes?", a: "You can browse the latest DEELMO coupon codes, promo offers, and men's kurta deals on CouponScrew." },
-                    { q: "Can this kurta be machine washed?", a: "Yes, the fabric is machine washable for easy everyday care." },
-                    { q: "Is CouponScrew free to use?", a: "Absolutely. CouponScrew is completely free and helps shoppers discover verified coupon codes, promo offers, and discounts from trusted brands." }
+                    { q: "What fabric is the DEELMO kurta made of?", a: "The kurta uses a cotton blend fabric — typically cotton combined with polyester or viscose. The polyester/viscose component adds wrinkle resistance and durability compared to pure cotton, while retaining breathability suited to India's climate. The exact blend ratio is not disclosed by the brand, but the fabric feels soft and comfortable for daily and festive wear." },
+                    { q: "Is this kurta suitable for festive occasions?", a: "Yes. The self-design geometric woven pattern — created by a jacquard loom technique, not printed — gives the kurta a subtle textured richness that reads as festive without being overdressed. Pair with pyjama for traditional events or with slim jeans for a more contemporary festive look. Works for Diwali, Eid, Rakhi, mehndi events, college parties, and family gatherings." },
+                    { q: "What is a mandarin collar?", a: "A mandarin collar (also known as a Nehru collar or band collar) is a short, stand-up collar that rises 2–5 cm from the neckline without folding over. Its origins trace to Imperial China and Indian political history — made globally famous by India's first Prime Minister Jawaharlal Nehru. In men's ethnic wear, it creates a clean, modern silhouette that flatters all neck and body types." },
+                    { q: "Where can I find DEELMO coupon codes?", a: "CouponsCrew tracks active pricing, promotional discounts, and bank card offers on the DEELMO Mandarin Collar Kurta across Amazon India. The deal button above links to the current live offer. Also check the checkout page on Amazon — additional coupon ticks are sometimes available at cart that are not visible on the product page." },
+                    { q: "Can this kurta be machine washed?", a: "Yes. Machine wash on a gentle cycle in cold water (30°C). Turn inside out before washing to protect the woven self-design surface. Air dry in shade. Iron at medium heat while slightly damp. Avoid high-heat tumble drying, which can cause shrinkage in cotton-blend fabrics." },
+                    { q: "Should I size up or order my usual size?", a: "Most buyers of budget cotton blend kurtas recommend sizing up by one size for a comfortable fit. If you prefer a fitted look, your standard size may work. Note that size charts can vary between colour variants of the same style — check the specific size chart on the Amazon listing before ordering." }
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                       <button
@@ -403,7 +399,7 @@ export default function DeelmoKurtaPage() {
                 <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#5B4FBE]/5">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular DEELMO Searches</h3>
                   <div className="flex flex-wrap gap-2.5">
-                    {["Mandarin Collar Kurta", "DEELMO Promo Code", "Men's Short Kurta", "Cotton Blend Kurta", "Festive Ethnic Wear", "Casual Kurta for Men", "Self Design Kurta", "CouponScrew Fashion"].map(tag => (
+                    {["Mandarin Collar Kurta", "Men's Short Kurta", "Cotton Blend Ethnic Wear", "Festive Kurta for Men", "Nehru Collar Kurta", "Kurta with Jeans", "Plus Size Kurta India", "CouponsCrew Fashion"].map(tag => (
                       <a
                         key={tag}
                         href={`/search?q=${encodeURIComponent(tag)}`}
@@ -419,11 +415,11 @@ export default function DeelmoKurtaPage() {
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top DEELMO Deals</h3>
                   <div className="space-y-6">
                     {[
-                      { heading: "Ethnic Wear Bundle", sub: "Save up to 25% when bundling kurtas with matching bottoms" },
-                      { heading: "First Order Promo Code", sub: "Special percentage metrics adjusted on introductory store registrations" },
-                      { heading: "Complimentary Delivery", sub: "Standard logistics handling applied cleanly over minimum budget parameters" },
-                      { heading: "Festive Season Sale", sub: "Limited-time price reductions on selected kurtas and ethnic sets" },
-                      { heading: "CouponScrew Active Coupon", sub: "Instant validation code application calculated cleanly during check out" }
+                      { heading: "Mandarin Collar Short Kurta", sub: "Self-design woven pattern, 8 colours, S to 4XL — 78% off MRP" },
+                      { heading: "DEELMO Solid Straight Kurta", sub: "Clean solid colours for everyday and office ethnic wear" },
+                      { heading: "Short Kurta + Pyjama Set", sub: "Complete ethnic combo — festive-ready in one order" },
+                      { heading: "Plus Size Kurta (3XL–4XL)", sub: "Extended sizing rare at this price — great for broader builds" },
+                      { heading: "Festive Season Ethnic Deals", sub: "Browse all men's kurta offers on Amazon India via CouponsCrew" }
                     ].map((deal, i) => (
                       <div key={i} className="flex items-center gap-4 group cursor-pointer">
                         <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">D</div>

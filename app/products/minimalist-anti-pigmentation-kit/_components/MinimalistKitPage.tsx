@@ -273,39 +273,36 @@ export default function MinimalistKitPage() {
               {/* Left: Text Content */}
               <div className="prose max-w-none">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Minimalist Coupon Codes, Promo Codes & Skincare Deals
+                  Minimalist Anti-Pigmentation Kit — Complete Skincare Review & Deal Guide
                 </h2>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Save More with Minimalist Coupon Codes</h3>
+                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Is the Minimalist Anti-Pigmentation Kit?</h3>
                   <p>
-                    Even, healthy-looking skin starts with the right combination of actives. Whether you're dealing with stubborn dark spots, post-acne marks, or sun-induced tanning, a consistent skincare routine can make a visible difference. With the latest <strong>Minimalist coupon codes</strong>, CouponScrew helps shoppers find savings on dermatologically backed skincare essentials like this Anti-Pigmentation Kit.
+                    Fighting hyperpigmentation requires more than one product — it demands a system. The Minimalist Anti-Pigmentation Kit brings together three clinically formulated products — a brightening face wash, a targeted serum, and a broad-spectrum sunscreen — designed to work in sequence, morning and night, to fade dark spots, even out skin tone, and prevent new pigmentation from forming.
                   </p>
                   <p>
-                    From gentle cleansers to targeted serums and broad-spectrum sunscreens, Minimalist formulates products with clinically proven concentrations of active ingredients. Before you check out, browse CouponScrew for the latest promo codes, discounts, and bundle offers.
+                    Each product in this kit is built around proven actives at dermatologist-approved concentrations. The face wash uses 7% Alpha Lipoic Acid and Glycolic Acid to exfoliate dead cells and accelerate cell turnover. The serum delivers 2% Alpha Arbutin — nine times more potent than Beta Arbutin — to inhibit melanin production at the source. And the SPF 50 PA++++ sunscreen blocks up to 98% of UVB rays while providing maximum UVA protection to stop UV from re-triggering pigmentation every morning. Together, they address pigmentation from three angles: exfoliation, inhibition, and protection.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Choose This Anti-Pigmentation Kit?</h3>
-                    <p><strong>Targeted Actives:</strong> Alpha Arbutin and Niacinamide are well-studied ingredients known to help even out skin tone over consistent use.</p>
-                    <p><strong>Daily Sun Protection:</strong> The included SPF 50 sunscreen helps prevent further pigmentation caused by UV exposure.</p>
-                    <p><strong>Gentle Formulation:</strong> Fragrance-free and dermatologically tested, suitable for daily use across most skin types.</p>
-                    <p><strong>Complete Routine in One Kit:</strong> A face wash, serum, and sunscreen bundled together simplifies your skincare routine.</p>
-                    <p><strong>Lightweight Texture:</strong> Fast-absorbing formulas that don't leave a greasy residue.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">How Each Product Works — Ingredients Explained</h3>
+                    <p><strong>Alpha Lipoic + Glycolic 07% Cleanser:</strong> Glycolic Acid chemically dissolves the bonds between dead skin cells without physical scrubbing, revealing brighter skin underneath. Alpha Lipoic Acid (ALA) is a universal antioxidant — both water and fat-soluble — that neutralises UV-generated free radicals and recycles vitamins C and E in your skin. Vitamin B5 and Allantoin keep the formula gentle and moisturising despite the active acid content. At pH 3.5–4.5, the Glycolic Acid is fully active in the rinse-off format, meaning you get exfoliation benefits without the sustained contact risk of a leave-on AHA product.</p>
+                    <p><strong>Alpha Arbutin 02% Serum:</strong> Alpha Arbutin is a glycosylated form of hydroquinone, sourced from bearberry plants. It works by competitively inhibiting tyrosinase — the enzyme that triggers melanin synthesis — without destroying melanocytes. This means it corrects tone without bleaching. At 2% concentration with added Butylresorcinol (shown to be 20 times more potent than Kojic Acid in inhibiting tyrosinase) and Ferulic Acid for antioxidant support, this serum is one of the most active pigmentation treatments available without a prescription. Sodium Hyaluronate ensures the formula stays hydrating throughout.</p>
+                    <p><strong>Multi-Vitamin SPF 50 PA++++ Sunscreen:</strong> With four UV filters including Avobenzone, Octocrylene, Uvinul T 150 (sourced from BASF, Germany), and Titanium Dioxide, this sunscreen delivers independently verified SPF 56.6 in clinical testing (ISO 24444:2019 standard). PA++++ is the highest possible UVA protection grade. Niacinamide (Vitamin B3) in the formula provides the added benefit of actively fading existing dark spots while the sunscreen prevents new ones. Fragrance-free, non-comedogenic, dewy finish — no white cast.</p>
                   </div>
 
                   {/* How to Use Steps */}
                   <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Minimalist Coupon Code</h3>
-                    <p className="text-gray-700 font-bold -mt-4">Saving on your next skincare order is quick and easy.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-8">Your Daily Routine — How to Use This Kit</h3>
+                    <p className="text-gray-700 font-bold -mt-4">This three-step routine is designed to be simple enough for daily use, morning and night.</p>
                     <div className="space-y-6">
                       {[
-                        "Step 1: Visit CouponScrew — Browse the latest Minimalist coupon codes and promotional offers.",
-                        "Step 2: Choose a Deal — Select the offer that best matches your purchase.",
-                        "Step 3: Copy the Coupon Code — Copy the available promo code before visiting the store.",
-                        "Step 4: Shop Your Skincare Kit — Add the Anti-Pigmentation Kit to your cart.",
-                        "Step 5: Apply the Coupon — Paste the coupon code during checkout if applicable.",
-                        "Step 6: Complete Your Order — Finish your purchase and start your skincare routine."
+                        "Morning & Night — Cleanser: Wet your face, apply a small amount of the Alpha Lipoic + Glycolic Cleanser, massage into a gentle lather for 30–60 seconds, and rinse thoroughly. Pat dry.",
+                        "Morning & Night — Serum: Apply 2–3 drops of the Alpha Arbutin serum onto towel-dried skin. Use gentle upward circular motions. Allow 60–90 seconds for full absorption before the next step.",
+                        "Morning Only — Sunscreen: Apply the SPF 50 PA++++ sunscreen generously as the final step. Apply 15 minutes before going outdoors. Reapply every 2 hours during prolonged sun exposure.",
+                        "Night Only (Optional Add-On): If your skin tends toward dryness, apply a lightweight moisturiser between the serum and sleep. The kit does not include a moisturiser — it can be added from any brand.",
+                        "Consistency is Everything: Results from Alpha Arbutin typically appear in 4 weeks for tanning and 8 weeks for deeper pigmentation. Skipping the sunscreen step undermines all other steps — UV re-triggers melanin daily."
                       ].map((step, i) => (
                         <div key={i} className="flex gap-6 items-start">
                           <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -318,42 +315,27 @@ export default function MinimalistKitPage() {
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Smart Ways to Save More on Skincare</h3>
-                    <p className="text-gray-700 font-bold">Want to maximize your savings? Here are a few practical tips.</p>
-                    <p><strong>Check CouponScrew Before Every Purchase:</strong> New Minimalist promo codes and seasonal offers may become available throughout the year.</p>
-                    <p><strong>Shop During Skincare Sales:</strong> Major shopping events often feature additional discounts on combo kits.</p>
-                    <p><strong>Buy in Bundles:</strong> Combo kits like this one often offer better value than buying products individually.</p>
-                    <p><strong>Patch Test First:</strong> Always patch test new actives before applying to your full face.</p>
-                    <p><strong>Join Brand Updates:</strong> Subscribing to newsletters can help you stay informed about future launches and exclusive offers.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Pros & Cons — An Honest Assessment</h3>
+                    <p><strong>What works well:</strong> The kit delivers clinically backed actives at concentrations that actually work. The Glycolic Acid cleanser noticeably improves texture within a few weeks. The serum's Alpha Arbutin + Butylresorcinol combination is among the most potent OTC pigmentation-fighting formulas available in India. The sunscreen is legitimately one of the better daily-wear formulas — non-shiny, no white cast, niacinamide-infused. The price point, for this quality of actives, is difficult to match.</p>
+                    <p><strong>What to know before buying:</strong> Some users experience temporary dryness or warmth in the first 2–3 weeks as skin adapts to Glycolic Acid and ALA — this is normal and typically resolves. A separate moisturiser is recommended. The sunscreen must be reapplied every 2 hours if you are spending time outdoors, not just applied once in the morning. This kit is non-returnable on Amazon India — patch test before committing. Results require consistent daily use; this is not a quick fix.</p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why a Consistent Skincare Routine Matters</h3>
-                    <p>Investing in a dependable skincare routine can make a real difference over time.</p>
-                    <p className="text-gray-700 font-bold">A good routine helps you:</p>
-                    <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-                      <li>Fade dark spots and pigmentation gradually</li>
-                      <li>Protect skin from harmful UV rays</li>
-                      <li>Maintain an even, healthy-looking complexion</li>
-                      <li>Reduce the appearance of post-acne marks</li>
-                      <li>Build long-term skin confidence</li>
-                    </ul>
-                    <p>Whether you're new to actives or refining an existing routine, choosing quality, dermatologically tested products can enhance results.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Who Should Buy This Kit</h3>
+                    <p>The Minimalist Anti-Pigmentation Kit is ideal for anyone dealing with post-acne dark marks, sun tanning, uneven tone, or early-stage melasma. It works across all skin types — dry, oily, combination, sensitive, and acne-prone — and is fragrance-free, making it tolerable for reactive skin. The kit is particularly well suited to people in India, where year-round UV intensity makes broad-spectrum SPF non-negotiable and melanin-related concerns extremely common.</p>
+                    <p>If you are new to skincare actives, this kit is a strong starting point — the cleanser introduces AHAs in a low-risk rinse-off format, the serum is beginner-friendly, and the sunscreen doubles as your morning moisturiser in humid climates. If you are an experienced skincare user, this kit delivers prescription-adjacent results at a fraction of the cost, and layers well with other Minimalist actives such as Vitamin C or Niacinamide serums.</p>
+                    <p className="text-gray-700 font-bold"><strong>Important:</strong> Pregnant or breastfeeding women should consult a dermatologist before using this kit, as the sunscreen contains Octocrylene, which is not recommended during pregnancy.</p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Use CouponScrew for Minimalist Deals?</h3>
-                    <p className="text-gray-700 font-bold">CouponScrew helps shoppers discover valuable savings across skincare, fashion, technology, and lifestyle brands.</p>
-                    <p><strong>Updated Discounts:</strong> We regularly update available Minimalist promotions and coupon codes.</p>
-                    <p><strong>Easy-to-Find Deals:</strong> Browse offers in one convenient location before making your purchase.</p>
-                    <p><strong>Completely Free:</strong> CouponScrew is free to use whenever you're searching for ways to save.</p>
-                    <p><strong>Trusted Brands:</strong> In addition to skincare, CouponScrew features savings from hundreds of popular brands across multiple shopping categories.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">About the Minimalist Brand</h3>
+                    <p>Minimalist was founded in October 2020 by brothers Mohit Yadav and Rahul Yadav in Jaipur, India. Their founding principle — #HideNothing — is built on radical ingredient transparency: every product displays exact active concentrations, sourcing details, and clinical data. This was a direct challenge to legacy beauty brands that obscure formulas behind proprietary blend labels and marketing spend.</p>
+                    <p>Within 8 months of launch, Minimalist reached ₹100 crore in revenue. By 2024, revenue reached ₹347 crore. In March 2025, Hindustan Unilever Limited (HUL) acquired a 90.5% stake for ₹2,955 crore — the largest DTC skincare exit in Indian startup history. Active ingredients are sourced from global certified suppliers: Chemours (USA) for Glycolic Acid, Alfa Aesar (USA) for Alpha Arbutin, and BASF (Germany) for UV filters. Manufacturing is handled in-house via Uprising Science Pvt Ltd, Jaipur.</p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Start Your Skincare Journey Today</h3>
-                    <p>Whether you're targeting pigmentation, building a daily SPF habit, or simplifying your skincare shelf, having a reliable kit can make all the difference.</p>
-                    <p>Browse the latest Minimalist coupon codes, promo offers, and skincare deals on CouponScrew today and save on the products you need.</p>
+                    <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Buy via CouponsCrew</h3>
+                    <p>CouponsCrew tracks live pricing across Amazon India and other Indian e-commerce platforms to surface the best available deal at any given moment. For a product like this kit — which regularly sees promotional pricing, bank card discounts, and coupon tick offers — arriving via CouponsCrew increases your chances of buying at the lowest active price. Every deal link on CouponsCrew goes directly to the retailer's verified product page. No counterfeit listings, no inflated "original" prices. Completely free to use — no registration required.</p>
                   </div>
 
                   {!isReadMore && (
@@ -372,12 +354,12 @@ export default function MinimalistKitPage() {
                 <div className="mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
-                    { q: "What is the Minimalist Anti-Pigmentation Kit?", a: "It is a combo kit featuring a face wash, serum, and sunscreen formulated with Alpha Arbutin and Niacinamide to help reduce the appearance of dark spots and pigmentation." },
-                    { q: "Is this kit suitable for all skin types?", a: "Yes, the kit is fragrance-free and dermatologically tested, making it suitable for most skin types including sensitive skin." },
-                    { q: "How long does it take to see results?", a: "Visible improvement in skin tone typically takes several weeks of consistent daily use, as with most active skincare ingredients." },
-                    { q: "Where can I find Minimalist coupon codes?", a: "You can browse the latest Minimalist coupon codes, promo offers, and skincare deals on CouponScrew." },
-                    { q: "Does the kit include sun protection?", a: "Yes, the kit includes an SPF 50 PA++++ sunscreen to help protect skin from further UV-induced pigmentation." },
-                    { q: "Is CouponScrew free to use?", a: "Absolutely. CouponScrew is completely free and helps shoppers discover verified coupon codes, promo offers, and discounts from trusted brands." }
+                    { q: "What is the Minimalist Anti-Pigmentation Kit?", a: "A three-product daily skincare combo containing a 7% Alpha Lipoic + Glycolic Acid face wash (100ml), a 2% Alpha Arbutin serum (30ml), and an SPF 50 PA++++ multi-vitamin sunscreen (50g). Together, the kit exfoliates dead skin, inhibits melanin production, and provides broad-spectrum UV protection — targeting dark spots, acne marks, sun tan, and uneven tone in one complete routine." },
+                    { q: "Is this kit suitable for all skin types?", a: "Yes. All three products are fragrance-free, non-comedogenic, and essential oil-free. The formulations are designed to be tolerable for dry, oily, combination, sensitive, and acne-prone skin. If you have a compromised skin barrier or active inflammatory skin conditions, do a patch test first and consult a dermatologist if unsure. The kit is not recommended for pregnant or breastfeeding women due to Octocrylene in the sunscreen." },
+                    { q: "How long does it take to see results?", a: "According to Minimalist's consumer studies, 93% of users noticed reduced sun tanning in 4 weeks and 90% noticed reduced hyperpigmentation in 8 weeks. Individual results depend on the depth and type of pigmentation — sun tanning typically responds fastest; melasma and deep PIH take longer. Consistent twice-daily use of the cleanser and serum, paired with daily SPF reapplication outdoors, is essential." },
+                    { q: "Where can I find Minimalist coupon codes?", a: "CouponsCrew tracks active Minimalist discount codes, bank card offers, and promotional pricing across Amazon India. The deal button above links directly to the current live offer. Always check the Amazon listing at checkout — additional coupon ticks at the cart stage may apply that are not visible on the product page." },
+                    { q: "Does the kit include sun protection?", a: "Yes. The Multi-Vitamin SPF 50 PA++++ sunscreen is included and is a critical part of the routine. SPF 50 blocks approximately 98% of UVB rays. PA++++ is the highest UVA protection grade. Independent lab testing confirmed a measured SPF of 56.6 (ISO 24444:2019). Sunscreen must be the last step in your morning routine and should be reapplied every 2 hours during extended outdoor exposure — a single morning application is not sufficient for all-day protection." },
+                    { q: "Is CouponsCrew free to use?", a: "Yes, completely free. CouponsCrew helps Indian shoppers find verified deals, discount codes, and price drops across skincare, fashion, electronics, and lifestyle categories. No sign-up required to access or use any deal." }
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                       <button
@@ -402,7 +384,7 @@ export default function MinimalistKitPage() {
                 <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#5B4FBE]/5">
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Minimalist Searches</h3>
                   <div className="flex flex-wrap gap-2.5">
-                    {["Anti-Pigmentation Kit", "Minimalist Promo Code", "Niacinamide Serum", "Alpha Arbutin Serum", "SPF 50 Sunscreen", "Skincare Combo", "Dark Spot Removal", "CouponScrew Beauty"].map(tag => (
+                    {["Anti-Pigmentation Kit", "Alpha Arbutin 2% Serum", "Glycolic Acid Cleanser", "SPF 50 PA++++ Sunscreen", "Minimalist Skincare", "Dark Spot Removal", "Hyperpigmentation Treatment", "CouponsCrew Beauty Deals"].map(tag => (
                       <a
                         key={tag}
                         href={`/search?q=${encodeURIComponent(tag)}`}
@@ -418,11 +400,11 @@ export default function MinimalistKitPage() {
                   <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Minimalist Deals</h3>
                   <div className="space-y-6">
                     {[
-                      { heading: "Skincare Combo Bundle", sub: "Save up to 30% when bundling essential face care kits and serums" },
-                      { heading: "First Order Promo Code", sub: "Special percentage metrics adjusted on introductory store registrations" },
-                      { heading: "Complimentary Delivery", sub: "Standard logistics handling applied cleanly over minimum budget parameters" },
-                      { heading: "Seasonal Skincare Sale", sub: "Limited-time price reductions on selected serums and combo kits" },
-                      { heading: "CouponScrew Active Coupon", sub: "Instant validation code application calculated cleanly during check out" }
+                      { heading: "Anti-Pigmentation Kit Combo", sub: "Complete 3-step routine — cleanser, serum & SPF 50 at best deal price" },
+                      { heading: "Alpha Arbutin 2% Serum", sub: "Standalone dark-spot serum — 9x more effective than Beta Arbutin" },
+                      { heading: "Glycolic Acid Cleanser", sub: "Daily AHA face wash for brighter, even skin tone" },
+                      { heading: "SPF 50 PA++++ Sunscreen", sub: "Maximum UVA+UVB protection with Niacinamide — non-greasy finish" },
+                      { heading: "Minimalist Skincare Bundle", sub: "Stack multiple Minimalist actives for enhanced pigmentation results" }
                     ].map((deal, i) => (
                       <div key={i} className="flex items-center gap-4 group cursor-pointer">
                         <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">M</div>
