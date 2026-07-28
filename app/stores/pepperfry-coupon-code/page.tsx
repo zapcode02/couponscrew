@@ -1,26 +1,26 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
-import AcnosBangleWatchPage from './_components/AcnosBangleWatchPage'
+import PepperfryStore from './_components/PepperfryStore'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  // Primary keyword once | 69 chars
-  title: 'Acnos Bangle Watch — Heart Shape, Pack of 2 | CouponsCrew',
+  // Primary keyword first | ~58 chars
+  title: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
 
-  // Primary keyword once + secondary keywords once | 156 chars
+  // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Shop the Acnos bangle watch online – a heart shape watch for girls bangle watch fans. Comes as a bangle watch pack of 2. Best price & deals on CouponsCrew.',
+    'Verified Pepperfry coupon code & Pepperfry promo codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
+    canonical: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
   },
 
   openGraph: {
-    title: 'Acnos Bangle Watch — Heart Shape, Pack of 2 | CouponsCrew',
+    title: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
     description:
-      'Shop the Acnos bangle watch online – a heart shape watch for girls bangle watch fans. Comes as a bangle watch pack of 2. Best price & deals on CouponsCrew.',
-    url: 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
+      'Verified Pepperfry coupon code & Pepperfry promo codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
+    url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
@@ -29,16 +29,16 @@ export const metadata: Metadata = {
         url: 'https://www.couponscrew.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Acnos Bangle Watch Pack of 2 Coupons — CouponsCrew',
+        alt: 'Pepperfry Coupon Code — CouponsCrew',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Acnos Bangle Watch — Heart Shape, Pack of 2 | CouponsCrew',
+    title: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
     description:
-      'Shop the Acnos bangle watch online – a heart shape watch for girls bangle watch fans. Comes as a bangle watch pack of 2. Best price & deals on CouponsCrew.',
+      'Verified Pepperfry coupon code & Pepperfry promo codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -67,10 +67,10 @@ const schema = {
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2/#webpage',
-      url: 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
-      name: 'Acnos Bangle Watch — Heart Shape, Pack of 2 | CouponsCrew',
-      description: 'Shop the Acnos bangle watch online – a heart shape watch for girls bangle watch fans. Comes as a bangle watch pack of 2. Best price & deals on CouponsCrew.',
+      '@id': 'https://www.couponscrew.com/stores/pepperfry-coupon-code/#webpage',
+      url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
+      name: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
+      description: 'Verified Pepperfry coupon code & Pepperfry promo codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
@@ -89,14 +89,14 @@ const schema = {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Products',
-            item: 'https://www.couponscrew.com/products',
+            name: 'Stores',
+            item: 'https://www.couponscrew.com/stores',
           },
           {
             '@type': 'ListItem',
             position: 3,
-            name: "Acnos Premium Girl's Heart Shape Bangle Watch, Pack of 2",
-            item: 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
+            name: 'Pepperfry Coupon Code',
+            item: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
           },
         ],
       },
@@ -112,7 +112,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Suspense fallback={null}>
-        <AcnosBangleWatchPage />
+        <PepperfryStore />
       </Suspense>
     </>
   )

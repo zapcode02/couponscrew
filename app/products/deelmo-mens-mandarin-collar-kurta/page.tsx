@@ -5,23 +5,23 @@ import DeelmoKurtaPage from './_components/DeelmoKurtaPage'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  // Primary keyword once | 67 chars
-  title: "DEELMO Men's Mandarin Collar Kurta Coupon Code & Offers | CouponScrew",
+  // Primary keyword once | 57 chars
+  title: "Deelmo Mandarin Collar Kurta — Cotton Blend, Short Cut | CouponsCrew",
 
-  // Primary keyword once + secondary keywords once | 157 chars
+  // Primary keyword once + secondary keywords once | 162 chars
   description:
-    "Find manually verified DEELMO Men's Mandarin Collar Kurta coupon codes, promo codes & discount deals on CouponScrew. Save up to 55% off on casual short kurtas today.",
+    "Shop the Deelmo mandarin collar kurta online – a cotton blend kurta for mens mandarin collar kurta fans. Comes as a short kurta for men. Best deals on CouponsCrew.",
 
   alternates: {
     canonical: 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta',
   },
 
   openGraph: {
-    title: "DEELMO Men's Mandarin Collar Kurta Coupon Code & Offers | CouponScrew",
+    title: "Deelmo Mandarin Collar Kurta — Cotton Blend, Short Cut | CouponsCrew",
     description:
-      "Find manually verified DEELMO Men's Mandarin Collar Kurta coupon codes, promo codes & discount deals on CouponScrew. Save up to 55% off on casual short kurtas today.",
+      "Shop the Deelmo mandarin collar kurta online – a cotton blend kurta for mens mandarin collar kurta fans. Comes as a short kurta for men. Best deals on CouponsCrew.",
     url: 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta',
-    siteName: 'CouponScrew',
+    siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: "DEELMO Men's Mandarin Collar Kurta Coupon Code & Offers | CouponScrew",
+    title: "Deelmo Mandarin Collar Kurta — Cotton Blend, Short Cut | CouponsCrew",
     description:
-      "Find manually verified DEELMO Men's Mandarin Collar Kurta coupon codes, promo codes & discount deals on CouponScrew. Save up to 55% off on casual short kurtas today.",
+      "Shop the Deelmo mandarin collar kurta online – a cotton blend kurta for mens mandarin collar kurta fans. Comes as a short kurta for men. Best deals on CouponsCrew.",
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -69,12 +69,12 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta/#webpage',
       url: 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta',
-      name: "DEELMO Men's Mandarin Collar Kurta Coupon Code & Offers | CouponScrew",
-      description: "Find manually verified DEELMO Men's Mandarin Collar Kurta coupon codes, promo codes & discount deals on CouponScrew.",
+      name: "Deelmo Mandarin Collar Kurta — Cotton Blend, Short Cut | CouponsCrew",
+      description: "Shop the Deelmo mandarin collar kurta online – a cotton blend kurta for mens mandarin collar kurta fans. Comes as a short kurta for men. Best deals on CouponsCrew.",
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
-        name: 'CouponScrew',
+        name: 'CouponsCrew',
         url: 'https://www.couponscrew.com',
       },
       breadcrumb: {

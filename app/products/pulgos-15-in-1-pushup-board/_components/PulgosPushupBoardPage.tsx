@@ -174,7 +174,7 @@ export default function PulgosPushupBoardPage() {
             </div>
 
             <p className="text-xs text-[#4A4A6A] leading-relaxed">
-              The PulGos 15-in-1 Pushup Board offers 15 adjustable workout positions to help you train your chest, triceps, shoulders, and back from the comfort of your home. Its foldable, lightweight design makes it easy to store and carry, while the ergonomic, non-slip surface ensures a secure grip during intense workout sessions. The #1 best seller in Push-Up Stands on Amazon.
+              This PulGos board offers 15 adjustable workout positions to help you train your chest, triceps, shoulders, and back from the comfort of your home. Its foldable, lightweight design makes it easy to store and carry, while the ergonomic, non-slip surface ensures a secure grip during intense workout sessions. The #1 best seller in Push-Up Stands on Amazon.
             </p>
 
             {/* Row of Icon Feature Badges */}
@@ -269,39 +269,39 @@ export default function PulgosPushupBoardPage() {
               {/* Left: Text Content */}
               <div className="prose max-w-none">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  PulGos 15-in-1 Pushup Board — Complete Fitness Review & Home Workout Guide
+                  PulGos Pushup Board — Complete Fitness Review & Home Workout Guide
                 </h2>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Is the PulGos 15-in-1 Foldable Pushup Board?</h3>
+                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Is the PulGos 15-in-1 Pushup Board?</h3>
                   <p>
-                    The PulGos 15-in-1 Foldable Pushup Board is a colour-coded push-up training system with 15 adjustable handle positions that target four major upper body muscle groups — chest, triceps, shoulders, and back. It is the #1 Best Seller in Push-Up Stands on Amazon India, with 6,000+ units sold per month and over 1,000 buyer ratings. At ₹299, it is the most accessible full-spectrum push-up training tool available in the Indian market.
+                    ₹299 for the #1 Best Seller in Push-Up Stands on Amazon India. 6,000+ people buy this every month. That kind of number doesn't happen by accident. The PulGos pushup board is a colour-coded push-up training system with 15 adjustable handle positions targeting four muscle groups — chest, triceps, shoulders, and back. It's the most accessible full-spectrum push-up tool available in the Indian market, and it has the review count to back that up.
                   </p>
                   <p>
-                    The board works differently from doing push-ups on the floor. Your wrists remain in a neutral position (straight line from knuckle to forearm) instead of being forced into 90-degree dorsiflexion on the floor — eliminating carpal compression and allowing full muscle activation. Research from the Journal of Strength and Conditioning Research documents up to 20% greater chest and triceps activation on boards versus floor, specifically because the neutral grip removes the protective inhibition reflex that limits force output when wrists are bent. The deeper range of motion — chest descending below handle level — further stretches the pectoral fibres before contraction, producing greater muscle recruitment per rep.
+                    The board works differently from the floor. Your wrists stay in a neutral position — straight line from knuckle to forearm — instead of being bent at 90 degrees into the ground. That eliminates wrist compression and lets your muscles do the actual work. Push-up boards produce up to 20% greater chest and triceps activation than floor push-ups — because the neutral wrist position removes the inhibition reflex that limits force output when wrists are bent. The deeper range of motion — chest descending below handle level — stretches the pec fibres further before contraction. More stretch, more activation, more result per rep.
                   </p>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">The 15 Positions — What Each Colour Zone Targets</h3>
-                    <p><strong>Red Zone — Chest:</strong> Wide and outward-angled handle positions that emphasise the pectoralis major's lateral and sternal fibres. The wide grip increases the arc of motion across the chest, maximising stretch-to-contraction range. Best for building chest width and overall pec mass.</p>
-                    <p><strong>Blue Zone — Shoulders:</strong> Shoulder-width forward-angled positions that shift load toward the anterior (front) deltoid head. The forward angle increases shoulder involvement while reducing direct chest activation. Best for anterior deltoid development and creating shoulder definition.</p>
-                    <p><strong>Yellow Zone — Back & Traps:</strong> Wide inward-angled positions that engage the upper back musculature — trapezius and posterior deltoids. Often the most underused zone in beginner routines, these positions address the postural imbalances caused by desk work and forward-rounded shoulders.</p>
-                    <p><strong>Green Zone — Triceps:</strong> Narrow, diamond, and close-grip positions where hands are placed directly under or close to the chest centreline. EMG research confirms diamond push-ups produce peak activation of both the triceps brachii and the inner chest (sternal pectoralis fibres) compared to all other push-up variations.</p>
-                    <p><strong>How positions work:</strong> Two movable handles insert into 15 different slot combinations across the board. Each insertion automatically sets your hand width and angle — no need to think about biomechanics. Follow the colour, insert, and train.</p>
+                    <p><strong>Red Zone — Chest:</strong> Wide, outward-angled handle positions that hit the pectoralis major's lateral and sternal fibres. The wide grip increases the arc of motion across the chest — more stretch, more contraction range. This is your primary chest builder. Start here.</p>
+                    <p><strong>Blue Zone — Shoulders:</strong> Shoulder-width, forward-angled positions that shift load toward the anterior (front) deltoid. The forward angle pulls the chest out and the shoulders in. Best for anterior deltoid definition and anyone who's been told their shoulders look flat.</p>
+                    <p><strong>Yellow Zone — Back & Traps:</strong> Wide inward-angled positions that pull the upper back into the movement — trapezius and posterior deltoids. This is the most underused zone in beginner routines, and also the one that directly fixes the forward-rounded posture that 8 hours at a desk produces.</p>
+                    <p><strong>Green Zone — Triceps:</strong> Narrow, diamond, and close-grip positions with hands close to the chest centreline. EMG research confirms diamond push-ups produce peak activation of both the triceps brachii and the inner chest. (Diamond push-ups on this board are significantly harder than they look. Don't start there.)</p>
+                    <p><strong>How positions work:</strong> Two movable handles insert into 15 different slot combinations. Each insertion automatically sets your hand width and angle — you don't need to know what "pronated grip scapular depression" means. Follow the colour, insert, and train.</p>
                   </div>
 
                   {/* How to Use Steps */}
                   <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-8">Getting Started — Your First Workout Routine</h3>
-                    <p className="text-gray-700 font-bold -mt-4">Follow this beginner-friendly routine 3 days a week (e.g. Monday, Wednesday, Friday).</p>
+                    <p className="text-gray-700 font-bold -mt-4">Start here. Three days a week. 25 minutes. This is the beginner routine that makes the colour-coded system actually useful.</p>
                     <div className="space-y-6">
                       {[
-                        "Red Zone (Chest) — Wide handle position: 2 sets of 8–10 reps. Rest 30 seconds. This is your primary chest builder.",
+                        "Red Zone (Chest) — Wide handle position: 2 sets of 8–10 reps. Rest 30 seconds. This is your primary chest builder — begin every session here.",
                         "Blue Zone (Shoulders) — Shoulder-width forward position: 2 sets of 6–8 reps. Rest 30 seconds.",
-                        "Green Zone (Triceps) — Narrow/close position: 2 sets of 6–8 reps. Rest 45 seconds.",
-                        "Yellow Zone (Back) — Wide inward-angle position: 2 sets of 6–8 reps. Rest 45 seconds.",
-                        "Rest 60–90 seconds between colour groups. Total session: approximately 25–30 minutes.",
-                        "Progression: when you can complete all sets at the top of the rep range with 2 reps still in reserve, add one set per exercise before increasing reps."
+                        "Green Zone (Triceps) — Narrow/close position: 2 sets of 6–8 reps. Rest 45 seconds. Don't start with diamond grip — work up to it.",
+                        "Yellow Zone (Back) — Wide inward-angle position: 2 sets of 6–8 reps. Rest 45 seconds. Most beginners skip this zone. Don't — it's the one that fixes posture.",
+                        "Rest 60–90 seconds between colour groups. Total session: approximately 25 minutes.",
+                        "When you can hit the top of the rep range with 2 reps still in the tank — add one set. Don't jump straight to more reps. That's how shoulders get unhappy."
                       ].map((step, i) => (
                         <div key={i} className="flex gap-6 items-start">
                           <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -315,37 +315,37 @@ export default function PulgosPushupBoardPage() {
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Honest Assessment — Pros & Cons</h3>
-                    <p>At ₹299, the PulGos board replaces the need for a bench press, cable crossover, and triceps machine for the beginner-to-intermediate training range. The colour-coded system is genuinely useful — beginners do not need to understand push-up biomechanics to use it correctly. The wrist protection benefit is real and significant, particularly for anyone who has experienced discomfort doing floor push-ups. Folds flat for storage under a bed or in a bag; 150 kg load rating is adequate for most users performing controlled movements.</p>
+                    <p>At ₹299, this board replaces the need for a gym membership for upper body beginners. The colour-coded system actually works — you don't need to know what "pronated grip scapular depression" means. Follow the colour. Do the rep. The wrist protection is real and significant: if you've ever quit floor push-ups because your wrists hurt, this is the fix. Folds flat, 150 kg rated, no assembly.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-                      <li>Can slide on polished marble (common in Indian homes) — use a yoga mat or rubber mat underneath</li>
-                      <li>Handles may loosen slightly over months of heavy daily use; press back in when needed</li>
-                      <li>Not suitable for explosive plyometric push-ups (clapping push-ups) — designed for controlled movement</li>
-                      <li>Once you can do 20+ reps in every position, external load (weighted vest, resistance bands) is needed to continue progressive overload</li>
-                      <li>Instruction sheet colour-to-muscle mapping occasionally differs from the board's printed colours — follow the board, not the leaflet</li>
+                      <li>Slides on polished marble floors — common in Indian homes; use a yoga mat or rubber mat underneath (this is the most practically important caveat for most buyers)</li>
+                      <li>Handles may loosen slightly over months of heavy daily use — press back in firmly when needed</li>
+                      <li>Not designed for plyometric (clapping) push-ups — built for controlled movement only</li>
+                      <li>Once you hit 20+ reps in every position, you'll need external load — weighted vest or resistance bands — to keep progressing</li>
+                      <li>The instruction leaflet's colour-to-muscle mapping sometimes differs from what's printed on the board — trust the board, ignore the leaflet</li>
                     </ul>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Who Should Buy This Board</h3>
-                    <p>The PulGos board is the ideal first piece of home gym equipment for beginners, women, desk workers, and travel users. Beginners benefit from the colour-coded system that teaches correct hand placement from the first rep. Women specifically benefit from the wrist protection — women statistically report higher rates of wrist discomfort during floor push-ups, and the neutral-grip handles eliminate this entirely. Desk workers with forward-rounded shoulders can use the yellow (back) and blue (shoulder) positions to directly address the postural weaknesses caused by sedentary work.</p>
+                    <p>If you're looking for a pushup board for home workout without a gym membership — this is the answer. Under ₹300, ships in a day, no assembly. The colour-coded system does the programming for you: pick a zone, insert the handles, start. Desk workers specifically benefit from the yellow (back) and blue (shoulder) zones, which directly target the postural weaknesses that 8 hours of chair time creates.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
                       <li>Beginners who want structure without a gym membership</li>
-                      <li>Women starting upper body strength training at home</li>
+                      <li>Women starting upper body training at home — wrist protection eliminates the #1 reason beginners quit</li>
                       <li>Apartment dwellers with limited space — folds to 20×25 cm, stores under a bed</li>
-                      <li>Frequent travellers — fits in a carry-on bag, works in any hotel room</li>
-                      <li>Wrist pain sufferers who cannot do floor push-ups comfortably</li>
-                      <li>Intermediate users who want to add push-up variation to an existing routine</li>
+                      <li>Frequent travellers — fits in a carry-on, works in any hotel room. (No excuses when you're travelling anymore — sorry.)</li>
+                      <li>Anyone with wrist pain who cannot do floor push-ups comfortably</li>
+                      <li>Intermediate users who want to add structured variation to an existing routine</li>
                     </ul>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">About PulGos — Brand & Product Background</h3>
-                    <p>PulGos is an Indian fitness brand sold through RetailEZ Pvt Ltd on Amazon India, manufactured by Swastik Overseas (Delhi). Their product line is focused on accessible home workout equipment. The 15-in-1 Pushup Board is their flagship product — ranking #1 in the Push-Up Stands category on Amazon India with over 6,000 monthly purchases and the bestseller badge maintained consistently. At ₹299, PulGos is competitively priced against similar-spec boards (TWINZFIT, FitHead, ComfortFriends) while holding the highest review count in the category.</p>
+                    <p>PulGos is an Indian fitness brand, sold via RetailEZ Pvt Ltd, manufactured by Swastik Overseas in Delhi. They make one hero product. They're very good at it. This board has held #1 in the Push-Up Stands category on Amazon India with 6,000+ monthly purchases and a maintained bestseller badge. At ₹299, it's competitively priced against similar-spec boards from TWINZFIT, FitHead, and ComfortFriends — and it holds the highest review count in the category. 6,000+ monthly purchases and a maintained #1 badge is the best third-party signal a fitness product can have. Reviews can be gamed; sustained purchase volume is harder to fake.</p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Buy via CouponsCrew</h3>
-                    <p>CouponsCrew tracks Amazon India pricing on fitness equipment including the PulGos Pushup Board, surfacing the best available offer including bank card cashback, coupon ticks, and seasonal promotions. The deal link above goes directly to the verified Amazon listing. Check the checkout page — additional coupon ticks or cashback offers may apply. Free to use, no sign-up required.</p>
+                    <p>We track Amazon pricing on this product and flag when bank card offers or UPI cashback stack on top of the base price. The deal link above goes directly to the verified Amazon listing. Check the offers tab on the product page — UPI cashback sometimes applies and most people don't catch it before checkout. Free to use, no registration.</p>
                   </div>
 
                   {!isReadMore && (
@@ -364,12 +364,12 @@ export default function PulgosPushupBoardPage() {
                 <div className="mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
-                    { q: "What is the PulGos 15-in-1 Pushup Board?", a: "A foldable, colour-coded push-up training board with 15 adjustable handle positions targeting chest (red), shoulders (blue), back/traps (yellow), and triceps (green). Two movable handles insert into 15 slot combinations, automatically setting hand width and angle for each muscle group. Supports up to 150 kg, folds flat for storage, and requires no assembly." },
-                    { q: "Is the pushup board suitable for beginners?", a: "Yes — it is particularly well designed for beginners. The colour-coded system removes all guesswork about hand placement. You identify the muscle you want to train, find that colour on the board, insert the handles, and begin. The neutral-grip handles also protect wrists from the 90-degree dorsiflexion stress that makes floor push-ups uncomfortable for many beginners starting out." },
-                    { q: "How much weight can the board support?", a: "The board is rated to support users weighing up to 150 kg. Construction is ABS plastic with a reinforced fold hinge and rubber non-slip base pads. For controlled push-up movements within this weight range, the board is adequately sturdy. For explosive plyometric variations (clapping push-ups, depth push-ups), controlled movement is recommended to avoid instability." },
-                    { q: "Where can I find PulGos coupon codes?", a: "CouponsCrew tracks active Amazon India pricing, cashback offers, and bank card discounts on the PulGos Pushup Board. The deal button above links to the current live offer. Amazon also offers UPI cashback on this product — check the offers section on the listing page for any active codes." },
-                    { q: "Is assembly required?", a: "No. The board arrives ready to use. The two handles click into their slots in seconds — no tools, no screws, no setup time. Remove from the box, click in the handles at your target colour zone, and begin your first set." },
-                    { q: "Is CouponsCrew free to use?", a: "Yes, completely free. CouponsCrew helps Indian shoppers find verified deals, price drops, and coupon codes across fitness equipment, skincare, fashion, electronics, and lifestyle products. No registration required." }
+                    { q: "What is the PulGos Pushup Board?", a: "A push-up board with 15 colour-coded handle positions across 4 zones — red (chest), blue (shoulders), yellow (back/traps), green (triceps). Two handles, 15 slots, zero assembly. Supports up to 150 kg. At ₹299, it's the most accessible full-spectrum push-up tool in the Indian market." },
+                    { q: "Is the pushup board suitable for beginners?", a: "It's actually built for beginners and ideal as a pushup board for home workout. Pick a colour zone, insert the handles, start. You don't need to understand push-up biomechanics — the board does that work for you. The neutral grip also protects wrists, the #1 reason beginners abandon floor push-ups." },
+                    { q: "How much weight can the board support?", a: "Rated to 150 kg for controlled push-up movements. ABS plastic, reinforced fold hinge, rubber non-slip pads. Don't use it for plyometric (clapping) push-ups — it's designed for controlled movement, not impact loading." },
+                    { q: "Where can I find PulGos coupon codes?", a: "CouponsCrew tracks this product's price on Amazon. The deal button links to the current live offer. Also check the offers section on the Amazon listing page — UPI cashback sometimes applies and is easy to miss before checkout." },
+                    { q: "Is assembly required?", a: "None. Handles click into slots. That's it. Out of the box to your first rep in under 30 seconds." },
+                    { q: "Is CouponsCrew free to use?", a: "Completely free. No registration. No premium tier. CouponsCrew tracks deals, price drops, and cashback offers across fitness equipment, skincare, fashion, and electronics. Just click the deal button." }
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                       <button

@@ -179,7 +179,7 @@ export default function DeelmoKurtaPage() {
             </div>
 
             <p className="text-xs text-[#4A4A6A] leading-relaxed">
-              The DEELMO Men's Cotton Blend Mandarin Collar Short Kurta combines a sharp self-design geometric pattern with a comfortable regular fit, making it a great pick for casual outings or festive occasions. Crafted from a breathable cotton blend fabric with full sleeves and a clean mandarin collar, it pairs effortlessly with jeans, pyjamas, or churidars. Available in 8 colours and sizes S to 4XL.
+              The Deelmo mandarin collar kurta combines a sharp self-design geometric pattern with a comfortable regular fit, making it a great pick for casual outings or festive occasions. Crafted from a breathable cotton blend fabric with full sleeves, it pairs effortlessly with jeans, pyjamas, or churidars. Available in 8 colours and sizes S to 4XL.
             </p>
 
             {/* Row of Icon Feature Badges */}
@@ -274,39 +274,43 @@ export default function DeelmoKurtaPage() {
               {/* Left: Text Content */}
               <div className="prose max-w-none">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  DEELMO Men's Mandarin Collar Kurta — Complete Style Guide & Deal Review
+                  Deelmo Mandarin Collar Kurta — Complete Style Guide & Deal Review
                 </h2>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Makes This DEELMO Mandarin Collar Kurta Worth Buying?</h3>
+                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Makes This Deelmo Mandarin Collar Kurta Worth Buying?</h3>
                   <p>
-                    The DEELMO Men's Cotton Blend Mandarin Collar Short Kurta is built for the modern Indian man who wants ethnic style without fuss. It combines a self-design geometric woven pattern with a clean Mandarin (Nehru) collar — one of Indian fashion's most enduring signatures, tracing back to Jawaharlal Nehru's iconic achkans and popularised globally by The Beatles after their 1960s India visit. The collar's short, stand-up design frames the neck cleanly without gaping, creating a sophisticated silhouette that works equally well for casual days and festive occasions.
+                    There are two kinds of ethnic wear brands in India: the ones that charge ₹2,500 for a kurta and make you feel like you're doing them a favour, and the ones that give you the same look for ₹479. DEELMO is firmly in the second camp. This mandarin collar kurta uses a jacquard-woven self-design — meaning the pattern is built into the fabric, not printed over it — so it won't fade, crack, or look cheap after three washes.
                   </p>
                   <p>
-                    Made from a breathable cotton blend, the kurta is suited to India's varied climate — warm enough to stay comfortable and structured through cooler evenings, breathable enough to wear through long festive afternoons. The self-design pattern is woven into the fabric itself using a jacquard technique, not printed on top — which means the design never fades through washing. Available in 8 colours and sizes S to 4XL, this kurta covers a wider size range than most budget ethnic wear brands at this price point.
+                    The Mandarin collar (also called the Nehru collar) has a clean history. It traces back to Jawaharlal Nehru's iconic achkans and went global after The Beatles wore it during their 1967 India trip. The stand-up design frames the neck without gaping — which is more than can be said for half the ethnic wear sold online. It creates a polished silhouette whether you're at a puja or a party.
+                  </p>
+                  <p>
+                    Cotton blend fabric means breathability without the crumple-every-time-you-sit problem of pure cotton. 8 colours. Sizes S to 4XL. One price. There's not much left to overthink.
                   </p>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">How to Style This Kurta — Bottoms, Occasions & Footwear</h3>
-                    <p><strong>With Jeans:</strong> The most popular Indo-Western pairing. Slim or straight dark denim works with virtually any colour variant. Pair with loafers, kolhapuri chappals, or minimal sneakers for a complete casual-festive look.</p>
-                    <p><strong>With Pyjama:</strong> Classic kurta-pyjama pairing — straight-cut pyjamas in matching or tonal colours create a relaxed, polished finish for home festivities, Eid, and informal pujas.</p>
-                    <p><strong>With Chinos or Trousers:</strong> Tapered chinos in beige, olive, or navy elevate the kurta to smart-casual for office ethnic days or semi-formal gatherings.</p>
-                    <p><strong>Occasions:</strong> Diwali, Eid, Navratri, Rakhi, college events, pre-wedding mehndi, casual office ethnic Fridays, and everyday outings. The self-design pattern gives this kurta enough visual interest to dress up but enough restraint to dress down.</p>
-                    <p><strong>Short Kurta Advantage:</strong> Hip-length short kurtas require no matching bottoms — wear it with what you already own. Less fabric also means better breathability and travel-friendliness compared to full-length kurtas.</p>
+                    <p>This kurta is versatile enough to handle most situations without you having to think too hard about it. (If you're reading this on a Thursday night before a Friday ethnic day at work — slim dark jeans and this kurta. You're sorted.)</p>
+                    <p><strong>With Jeans:</strong> The most popular pairing. Slim or straight dark denim works with any colour variant. Add loafers, kolhapuri chappals, or minimal sneakers and you're done.</p>
+                    <p><strong>With Pyjama:</strong> Classic pairing — straight-cut pyjamas in matching or tonal colours. Good for Eid, home festivities, and informal pujas.</p>
+                    <p><strong>With Chinos or Trousers:</strong> Tapered chinos in beige, olive, or navy push this into smart-casual territory — office ethnic days, semi-formal gatherings, no problem.</p>
+                    <p><strong>Occasions:</strong> Diwali, Eid, Navratri, Rakhi, college events, pre-wedding mehndi, and everyday outings. The jacquard pattern is interesting enough to dress up and restrained enough to dress down.</p>
+                    <p><strong>Short Kurta advantage:</strong> Hip-length means no matching bottoms needed — wear it with what you already own. Less fabric also means better breathability on long event days.</p>
                   </div>
 
                   {/* How to Use Steps */}
                   <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Get the Best Deal on This Kurta</h3>
-                    <p className="text-gray-700 font-bold -mt-4">Finding the lowest price on the DEELMO Kurta takes less than a minute.</p>
+                    <p className="text-gray-700 font-bold -mt-4">The price is already applied on Amazon. Here's how to make sure you don't miss the extra saving at checkout.</p>
                     <div className="space-y-6">
                       {[
-                        "Click the \"GET THIS DEAL ON AMAZON\" button above to open the live Amazon India listing.",
-                        "Check the current deal price — Amazon frequently applies additional bank card discounts and coupon ticks at checkout.",
-                        "Select your size. If unsure between two sizes, size up — cotton blend kurtas fit slightly snug compared to size labels.",
-                        "Add to Cart and sign in to your Amazon India account.",
-                        "At checkout, check for any active coupon box on the cart page — additional discounts are sometimes stackable.",
-                        "Complete your order. Standard or Prime delivery applies based on your account and pincode."
+                        "Click \"GET THIS DEAL ON AMAZON\" above. You'll land on the live listing with the discount already applied.",
+                        "Check for a coupon tick above the price on the Amazon product page — it's a small checkbox that applies an extra 5–10% off. Tick it if it's there.",
+                        "Select your size — and if you're between two, go one up. Cotton blend kurtas run slightly snug. Trust us on this one.",
+                        "Click Add to Cart and sign in to your Amazon India account.",
+                        "At the payment step, check if your bank card (HDFC, SBI, ICICI, Axis) has an active offer — bank discounts sometimes stack on top of the product price.",
+                        "Complete your order. Prime members get free delivery; standard delivery applies otherwise."
                       ].map((step, i) => (
                         <div key={i} className="flex gap-6 items-start">
                           <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -320,37 +324,37 @@ export default function DeelmoKurtaPage() {
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Fabric & Care — What You Need to Know</h3>
-                    <p>The cotton blend fabric typically combines cotton with polyester or viscose to balance breathability, wrinkle resistance, and durability. The polyester or viscose component means the kurta resists creasing better than pure cotton — useful for a garment you might throw on for a last-minute invitation.</p>
+                    <p>Cotton-blend fabric gives you breathability without the crumple-every-time-you-sit issue of pure cotton. The polyester or viscose component handles wrinkle resistance — useful for a kurta you might throw on at short notice.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
                       <li>Machine wash on gentle cycle in cold water (30°C max)</li>
                       <li>Turn inside out before washing to protect the outer woven surface</li>
-                      <li>Wash dark colours (navy, mehendi green, maroon) separately for first wash to check for colour bleed</li>
-                      <li>Air dry in shade — direct sunlight can fade colours and weaken fibres</li>
+                      <li>Wash dark colours (navy, mehendi green, maroon) separately for the first wash — they can bleed (Navy and maroon especially. Separate. Always.)</li>
+                      <li>Air dry in shade — direct sunlight fades colours and weakens fibres</li>
                       <li>Iron at medium heat while slightly damp; steam iron preferred for woven self-design patterns</li>
-                      <li>Avoid tumble drying on high heat to prevent shrinkage</li>
+                      <li>Avoid tumble drying on high heat — shrinkage is real</li>
                     </ul>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Who Should Buy This Kurta</h3>
-                    <p>This kurta is ideal for men aged 18–45 who want a versatile ethnic piece that handles multiple occasions without requiring a separate wardrobe. The hip-length cut and self-design pattern make it appropriate for festive gatherings without looking out of place at a casual outing. If you rotate between multiple events — a college event one weekend, a family Diwali celebration the next — a short kurta in a good colour handles both without rethinking.</p>
+                    <p>If you're looking for a mens mandarin collar kurta that handles a college event one weekend and a family Diwali the next — this is that kurta. The hip-length cut pairs with what you already own. The jacquard pattern reads festive without looking overdressed.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-                      <li>Men looking for ethnic wear that pairs with existing jeans and trousers</li>
-                      <li>Plus-size men (3XL, 4XL) who find budget ethnic wear options limited — this range goes up to 4XL, rare at this price point</li>
-                      <li>Buyers wanting self-design texture rather than printed patterns that look cheap over time</li>
-                      <li>First-time ethnic wear buyers wanting a low-risk, versatile entry piece</li>
-                      <li>Office employees on ethnic dress days who want to avoid spending on expensive branded kurtas</li>
+                      <li>Men who want ethnic wear that pairs with existing jeans and trousers</li>
+                      <li>Plus-size buyers (3XL, 4XL) — most budget brands stop at XL or 2XL; this range goes to 4XL, which is genuinely rare at ₹479</li>
+                      <li>Buyers who want a woven self-design texture instead of printed patterns that look cheap after a few washes</li>
+                      <li>First-time ethnic wear buyers who want a versatile, low-risk starting piece</li>
+                      <li>Office workers on ethnic dress days who'd rather spend ₹479 than ₹2,500 on a branded kurta</li>
                     </ul>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">About the DEELMO Brand</h3>
-                    <p>DEELMO is an Indian ethnic wear brand selling on Amazon India and Flipkart with a catalogue of 50+ men's kurta styles. Their positioning is consistent: set a high MRP (₹1,399–₹2,999 across the range) and sell at a deep discount (70–83% off), making budget-friendly ethnic wear accessible without sacrificing design variety. The Mandarin Collar Short Kurta is one of their bestselling styles — over 1,600 buyer reviews on Amazon India reflect consistent demand across the colour range.</p>
+                    <p>DEELMO's strategy is simple: list at ₹2,999, sell at ₹479. The MRP is theatrical — we'll be straight about that. But ₹479 for a jacquard-woven mandarin collar kurta with over 1,600 Amazon reviews and 50+ styles in the catalogue is genuinely good value. They've earned that review count. The extended sizing up to 4XL is a real differentiator — most budget ethnic brands don't go past 2XL.</p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Buy via CouponsCrew</h3>
-                    <p>CouponsCrew tracks live pricing on Amazon India so you reach this product at the best available offer — including seasonal promotions, bank card discounts, and checkout coupon ticks that appear only at the cart stage. Every deal link goes directly to the verified Amazon listing, with no inflated before-prices or intermediary redirects. Free to use, no registration required.</p>
+                    <p>We track live Amazon India pricing on this product — including bank card offers, seasonal promotions, and the coupon ticks that only appear at checkout. Every deal link goes directly to the verified listing. No inflated before-prices, no redirect chains. Whether it's your first ethnic buy or your fifth — the deal link above always points to the current verified price.</p>
                   </div>
 
                   {!isReadMore && (
@@ -369,12 +373,12 @@ export default function DeelmoKurtaPage() {
                 <div className="mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
-                    { q: "What fabric is the DEELMO kurta made of?", a: "The kurta uses a cotton blend fabric — typically cotton combined with polyester or viscose. The polyester/viscose component adds wrinkle resistance and durability compared to pure cotton, while retaining breathability suited to India's climate. The exact blend ratio is not disclosed by the brand, but the fabric feels soft and comfortable for daily and festive wear." },
-                    { q: "Is this kurta suitable for festive occasions?", a: "Yes. The self-design geometric woven pattern — created by a jacquard loom technique, not printed — gives the kurta a subtle textured richness that reads as festive without being overdressed. Pair with pyjama for traditional events or with slim jeans for a more contemporary festive look. Works for Diwali, Eid, Rakhi, mehndi events, college parties, and family gatherings." },
-                    { q: "What is a mandarin collar?", a: "A mandarin collar (also known as a Nehru collar or band collar) is a short, stand-up collar that rises 2–5 cm from the neckline without folding over. Its origins trace to Imperial China and Indian political history — made globally famous by India's first Prime Minister Jawaharlal Nehru. In men's ethnic wear, it creates a clean, modern silhouette that flatters all neck and body types." },
-                    { q: "Where can I find DEELMO coupon codes?", a: "CouponsCrew tracks active pricing, promotional discounts, and bank card offers on the DEELMO Mandarin Collar Kurta across Amazon India. The deal button above links to the current live offer. Also check the checkout page on Amazon — additional coupon ticks are sometimes available at cart that are not visible on the product page." },
-                    { q: "Can this kurta be machine washed?", a: "Yes. Machine wash on a gentle cycle in cold water (30°C). Turn inside out before washing to protect the woven self-design surface. Air dry in shade. Iron at medium heat while slightly damp. Avoid high-heat tumble drying, which can cause shrinkage in cotton-blend fabrics." },
-                    { q: "Should I size up or order my usual size?", a: "Most buyers of budget cotton blend kurtas recommend sizing up by one size for a comfortable fit. If you prefer a fitted look, your standard size may work. Note that size charts can vary between colour variants of the same style — check the specific size chart on the Amazon listing before ordering." }
+                    { q: "What fabric is the DEELMO kurta made of?", a: "Cotton blend — typically cotton with polyester or viscose. The polyester/viscose component adds wrinkle resistance so the kurta doesn't crumple the moment you sit down. DEELMO doesn't publish the exact blend ratio, which is frustrating, but the fabric feels soft and handles India's climate well for both daily wear and festive events." },
+                    { q: "Is this kurta suitable for festive occasions?", a: "Yes. The jacquard-woven self-design pattern — built into the fabric, not printed on top — reads as festive without being overdressed. That's the hardest balance to get right in ethnic wear, and this pulls it off. Pair with pyjama for traditional events or slim jeans for a contemporary festive look. Works for Diwali, Eid, Rakhi, mehndi, college parties, and family gatherings." },
+                    { q: "What is a mandarin collar?", a: "A short, stand-up collar that rises 2–5 cm from the neckline without folding over. Also called the Nehru or band collar. In a mens mandarin collar kurta, it frames the neck cleanly, looks intentional whether you're at a party or a puja, and doesn't gap like a regular collar." },
+                    { q: "Where can I find DEELMO coupon codes?", a: "CouponsCrew tracks this product daily. The deal button above links to the current live offer on Amazon. Also check the Amazon cart page after adding to cart — there's sometimes a coupon tick above the price that's easy to miss and gives you an extra 5–10% off." },
+                    { q: "Can this kurta be machine washed?", a: "Yes. This short kurta for men handles regular washing well — just avoid high-heat tumble drying, which causes cotton blend fabrics to shrink. Gentle cycle, cold water (30°C max). Turn inside out before washing. Air dry in shade. Iron at medium heat while slightly damp; steam iron is better for the woven self-design." },
+                    { q: "Should I size up or order my usual size?", a: "Size up by one. Cotton blend kurtas are cut slightly slim. If you're a perfect medium in most brands, order large here. Most sizing complaints from buyers are from people who ordered their usual size. Don't be that person." }
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                       <button

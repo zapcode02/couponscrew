@@ -179,7 +179,7 @@ export default function MoonCrystalLightPage() {
             </div>
 
             <p className="text-xs text-[#4A4A6A] leading-relaxed">
-              The Desidiya Moon Crystal Ball Night Light features a 2.4 inch glass crystal ball set on an elegant wooden base, emitting a soft warm LED glow perfect for bedrooms, living rooms, or gifting. Its compact, minimal design makes it an ideal ambient light for relaxing evenings or a thoughtful decor gift for any occasion. An Amazon's Choice pick with adjustable brightness via touch switch.
+              The Desidiya moon crystal night light features a 2.4 inch glass crystal ball set on an elegant wooden base, emitting a soft warm LED glow perfect for bedrooms, living rooms, or gifting. Its compact design makes it an ideal ambient light for relaxing evenings or a thoughtful decor gift for any occasion. An Amazon's Choice pick with adjustable brightness via touch switch.
             </p>
 
             {/* Row of Icon Feature Badges */}
@@ -274,39 +274,40 @@ export default function MoonCrystalLightPage() {
               {/* Left: Text Content */}
               <div className="prose max-w-none">
                 <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                  Desidiya Moon Crystal Ball Night Light — Complete Review & Gift Guide
+                  Desidiya Moon Crystal Night Light — Complete Review & Gift Guide
                 </h2>
 
                 <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
                   <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What Is the Desidiya Moon Crystal Ball Night Light?</h3>
                   <p>
-                    The Desidiya Moon Crystal Ball Night Light is a 2.4-inch (6 cm) K9 optical glass sphere set on a natural wooden base, emitting a warm white LED glow that fills a room with soft, ambient light. The glass ball contains a 3D laser-engraved moon design — carved sub-surface by laser without breaking the outer surface — so the lunar detail appears to float inside the sphere when lit. The LED is embedded in the wooden base and shines upward through the glass, diffracting and scattering through the engraved internal pattern.
+                    At ₹197, this lamp looks like it costs ₹900. That's the whole pitch. It's a 2.4-inch K9 optical glass sphere — the same high-clarity glass used in camera lenses — sitting on a natural wooden base, with a 3D laser-engraved moon carved inside the glass without breaking the surface. When the LED turns on from the base below, the moon detail appears to float inside the sphere. The glow is warm white. The effect is genuinely striking.
                   </p>
                   <p>
-                    The result is the kind of atmospheric glow that makes a bedroom feel genuinely different at night — not the flat brightness of an overhead light, but a warm focal point that draws the eye and creates calm. Desidiya is a Gurugram-based Indian home decor brand founded in 2019, selling primarily on Amazon India, Flipkart, and quick-commerce platforms. Their crystal ball range covers over a dozen themes — moon, galaxy, universe, astronaut, Lord Ganesha, dancing fairy — all using the same USB-powered wooden base system.
+                    Desidiya is a Gurugram-based Indian home decor brand, founded in 2019. They sell across Amazon India, Flipkart, and quick-commerce platforms. The crystal ball range covers over a dozen themes — moon, galaxy, universe, astronaut, Lord Ganesha, dancing fairy — all using the same USB-powered wooden base system. This moon version is their bestseller. 5,500+ ratings. Amazon's Choice. (Heads up: 2.4 inches is smaller than most people picture. It's a compact accent piece, not a room-filling globe. Set your expectations accordingly and you won't be disappointed.)
                   </p>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">How It Works — Light, Power & Touch Control</h3>
-                    <p><strong>USB Powered, 2W:</strong> Plugs into any USB port — phone charger, power bank, laptop, or USB adapter. No batteries, no separate adapter required. Running cost is negligible — under ₹2/month at 8 hours daily.</p>
-                    <p><strong>Warm White LED (2700K):</strong> The warm amber-gold tone is deliberately chosen to match the "moonlight" aesthetic. 2700K warm white has lower blue-light content than cool white, making it gentler on eyes and less disruptive to sleep when used as a bedside nightlight.</p>
-                    <p><strong>K9 Optical Glass Ball:</strong> The sphere is made from K9 glass — a high-clarity optical glass known for excellent light transmission and refractive quality. It is denser and more durable than regular glass, though still breakable if dropped on hard floors.</p>
-                    <p><strong>Touch Dimmer:</strong> A capacitive touch sensor on the wooden base responds to finger contact. Short tap: on/off. Hold: cycles through brightness levels using PWM (Pulse Width Modulation) dimming. Works in complete darkness; no mechanical parts to wear out.</p>
-                    <p><strong>Natural Wooden Base:</strong> The base is made from mango wood or rubber wood — natural materials that provide stability (heavier than plastic), hide the USB cable routing internally, and create the warm aesthetic contrast between glass and wood that defines this product's appeal.</p>
+                    <p>Five things worth knowing before you plug it in:</p>
+                    <p><strong>USB Powered, 2W:</strong> Plugs into any USB port — phone charger, power bank, laptop, USB hub. (Any 5V USB adapter works — the same one charging your phone right now.) No batteries. Running cost under ₹2/month at 8 hours daily.</p>
+                    <p><strong>Warm White LED (2700K):</strong> Warm amber-gold tone — lower blue-light content than cool white, so it's gentler on eyes and less disruptive to sleep at night. That's not an accident; it's the design point.</p>
+                    <p><strong>K9 Crystal Ball Lamp:</strong> High-clarity optical glass, excellent light transmission and refractive quality. Denser and more durable than regular glass — but it will break if dropped on a hard floor. Handle it like glassware, not a toy.</p>
+                    <p><strong>Touch Dimmer:</strong> Capacitive sensor on the wooden base. Short tap: on/off. Hold: cycles through brightness levels. No mechanical parts to wear out.</p>
+                    <p><strong>Natural Wooden Base:</strong> Mango wood or rubber wood — heavier than plastic, so it stays put. The USB cable routes internally through the base. The wood-and-glass contrast is the whole aesthetic.</p>
                   </div>
 
                   {/* How to Use Steps */}
                   <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-8">Setting Up & Getting the Best Glow</h3>
-                    <p className="text-gray-700 font-bold -mt-4">Getting this lamp working and looking its best takes under two minutes.</p>
+                    <p className="text-gray-700 font-bold -mt-4">Setup takes about 90 seconds. Most of that is finding a USB adapter.</p>
                     <div className="space-y-6">
                       {[
-                        "Remove the crystal ball and wooden base from the packaging. The ball sits in a small slot/socket on top of the base.",
-                        "Connect the included USB cable to the base and plug it into any 5V USB port — a phone charger adapter, laptop, power bank, or USB hub all work.",
-                        "Touch the base once to turn the light on. The crystal ball will glow with a warm white light.",
-                        "To adjust brightness: touch and hold the base. The lamp will cycle through brightness levels — release your finger at the desired level.",
-                        "For best visual effect: dim the room lights or use in a darkened space. The 2.4-inch ball creates a striking ambient glow that is most visible when it is the dominant light source in the room.",
-                        "Place on a bedside table, study desk, shelf, or dressing table. Keep away from direct sunlight and out of reach of young children."
+                        "Remove the crystal ball and wooden base from the packaging. The ball sits in a small socket on top of the base.",
+                        "Connect the included USB cable to the base and plug it into any 5V USB port — your phone charger adapter, laptop, power bank, or USB hub all work.",
+                        "Touch the base once. The crystal ball glows warm white. That's it.",
+                        "To adjust brightness: touch and hold the base. It cycles through levels — release your finger at the brightness you want.",
+                        "Turn off the overhead light. The glow is most striking when it's the only light source in the room — which is exactly the aesthetic people are buying this for.",
+                        "Find your spot: bedside table, study desk, shelf, dressing table. Keep away from direct sunlight and out of reach of very young children."
                       ].map((step, i) => (
                         <div key={i} className="flex gap-6 items-start">
                           <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
@@ -320,39 +321,39 @@ export default function MoonCrystalLightPage() {
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Where It Looks Best — Placement Guide</h3>
-                    <p>The Moon Crystal Ball Night Light works best as a single accent piece in a dimmer setting — not a replacement for overhead lighting, but a complement that transforms the character of a room. On a bedside table, it creates a soothing wind-down glow at the lowest brightness setting. On a study desk, it adds personality without distracting from work. On a living room shelf or console, it serves as a decorative object during the day and a glowing accent at night.</p>
+                    <p>This lamp is a single accent piece and the ideal led night light for bedroom shelves — it's not replacing your overhead light, it's the thing that makes a plain shelf look styled. One lamp, right placement, completely different vibe.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
                       <li>Bedroom bedside table — most popular use; lowest brightness is ideal for sleeping with the light on</li>
-                      <li>Study desk or workspace — calming ambient backdrop; increasingly popular for video call backgrounds</li>
-                      <li>Kids' room shelf — comforting nightlight for older children (5+); keep out of toddler reach</li>
-                      <li>Dressing table or vanity — warm glow complements self-care routines</li>
-                      <li>Living room bookshelf — decorative accent that doubles as a conversation piece</li>
-                      <li>Gifting note: the lamp photographs beautifully in a dark room — useful if you plan to take an "unboxing" or room-tour photo</li>
+                      <li>Study desk or workspace — calming ambient backdrop; works well as a video call background too</li>
+                      <li>Kids' room shelf — comforting nightlight for children 5+; keep out of toddler reach</li>
+                      <li>Dressing table or vanity — warm glow suits self-care routines</li>
+                      <li>Living room bookshelf — decorative by day, glowing accent by night</li>
+                      <li>Gifting tip: a moon night light gift photographs beautifully in a dark room — if you post room tours, this is your prop</li>
                     </ul>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Gifting Guide — Who Is This Perfect For?</h3>
-                    <p>This lamp is one of the best-performing gift items in Indian home decor under ₹500 — it looks like it costs significantly more than it does. The glass + wood combination, the 3D moon engraving, and the warm glow create an unboxing experience that feels premium. At ₹197, it is accessible as a return gift, an impulse birthday present, or a thoughtful add-on.</p>
+                    <p>A good gift does two things: it looks expensive and it's something the person wouldn't buy for themselves. This lamp is ₹197 and checks both boxes. At this price, you can gift two and still spend less than most candle sets.</p>
                     <ul className="list-disc pl-6 space-y-1 text-gray-500 font-bold">
-                      <li>Valentine's Day and anniversaries — moon symbolism (romance, night sky, eternity) makes this a natural gift</li>
-                      <li>Diwali — ambient lighting aligns with the festival of lights; warm glow adds to festive decor</li>
-                      <li>Birthdays for teens and young adults (13–30) — aligns strongly with Gen Z "aesthetic bedroom" preferences</li>
-                      <li>Housewarming gifts — new home, new decor; compact and universally likeable</li>
-                      <li>Raksha Bandhan farewell or "going-to-college" gift for siblings moving to a hostel or PG</li>
-                      <li>Teacher's Day, Boss Day — appropriate desk decor that is neither too personal nor too generic</li>
+                      <li>Valentine's Day and anniversaries — moon symbolism (romance, night sky, eternity) does the emotional work for you</li>
+                      <li>Diwali — warm ambient glow fits the festival of lights aesthetic perfectly</li>
+                      <li>Birthdays for teens and young adults (13–30) — directly aligned with the "aesthetic bedroom" trend they're all building</li>
+                      <li>Housewarming — compact, universally likeable, looks considered without being expensive</li>
+                      <li>Raksha Bandhan or "going-to-college" gift for siblings moving to a hostel or PG</li>
+                      <li>Teacher's Day, Boss Day — desk decor that's thoughtful without being too personal</li>
                     </ul>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Honest Assessment — What Buyers Say</h3>
-                    <p>Buyers consistently highlight the visual impact at the price point — words like "magical," "beautiful," and "looks expensive" appear repeatedly across reviews. The touch dimmer, USB convenience, and warm glow quality are praised. With 5,500+ ratings and an Amazon's Choice badge, buyer confidence is well-supported by real purchase volume (1,000+ per month).</p>
-                    <p>The most common complaint is size — the 2.4-inch (6 cm) ball is accurately stated in the listing but smaller than many buyers imagine. If you are expecting a large statement lamp, this is a compact accent piece, not a room-filling globe. Brightness is intentionally low (2W ambient), not functional task lighting. Some buyers mention the USB adapter is not included — only the USB cable — which requires a separate charger.</p>
+                    <p>5,500+ ratings. Amazon's Choice. 1,000+ monthly buyers. The numbers are there. Buyers consistently use words like "magical," "looks expensive," and "better than expected" — the touch dimmer, USB convenience, and warm glow quality are the three things praised most.</p>
+                    <p>The #1 complaint is size. The 2.4-inch (6 cm) ball is stated clearly in the listing — but people picture something bigger. It's 6 cm. Roughly the size of a golf ball. It's a compact accent piece, not a room-filling globe. Set that expectation before you gift it. Also: the USB adapter is not included — only the cable. Use any phone charger you already own.</p>
                   </div>
 
                   <div className="space-y-4">
                     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Buy via CouponsCrew</h3>
-                    <p>CouponsCrew tracks live Amazon India pricing for this product, which has historically seen significant discounts during the Great Indian Festival, Prime Day, and Diwali sales — sometimes dropping below ₹150. The deal link above takes you directly to the verified Amazon listing. Check at checkout for additional coupon ticks. Free to use, no sign-up required.</p>
+                    <p>We track this product through the Great Indian Festival, Prime Day, and Diwali sales — when it has dropped below ₹150. Whether you're buying this crystal ball lamp for yourself or as a gift — the deal button links to the current live price. Check the cart page for any coupon tick before completing checkout. Free, no sign-up required.</p>
                   </div>
 
                   {!isReadMore && (
@@ -371,12 +372,12 @@ export default function MoonCrystalLightPage() {
                 <div className="mt-20 space-y-4">
                   <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
                   {[
-                    { q: "What is the Desidiya Moon Crystal Night Light?", a: "A 2.4-inch K9 optical glass ball with a 3D laser-engraved moon design, set on a natural wooden base. A USB-powered LED in the base shines upward through the glass, creating a warm white ambient glow with the moon detail visible inside the sphere. It is used as a bedroom nightlight, desk decor, and gift item." },
-                    { q: "How is the light powered?", a: "USB powered at 5V, 2W. The included USB cable connects to any standard USB port — a phone charger adapter, laptop port, power bank, or USB hub. No batteries required. No wall adapter is included in the box; use any 5V USB adapter you already own." },
-                    { q: "Is this a good gifting option?", a: "Yes — consistently. The combination of K9 glass, 3D engraving, wooden base, and warm glow creates a perceived value significantly higher than the actual price. It is well-suited for Valentine's Day, Diwali, birthdays (especially teens and young adults), housewarmings, Raksha Bandhan, and farewell gifts. With 5,500+ ratings and Amazon's Choice designation, it is a well-validated gift purchase." },
-                    { q: "Where can I find Desidiya coupon codes?", a: "CouponsCrew monitors Amazon India pricing for Desidiya products including this crystal ball lamp. The deal button above links to the current live offer. Check the checkout page on Amazon for additional coupon ticks — promotional discounts during festive sales (Great Indian Festival, Prime Day) can reduce the price further." },
-                    { q: "Is the light bright enough for reading?", a: "No — and it is not designed for that. The 2W LED is optimised for soft ambient illumination, not task lighting. It is best used as a mood or accent light in a dimmer room. For reading, a dedicated desk lamp is needed alongside it. At the lowest brightness setting, it functions as a sleep-friendly nightlight; at maximum, it creates a warm focal glow in the room." },
-                    { q: "Is CouponsCrew free to use?", a: "Yes, completely free. CouponsCrew helps Indian shoppers find verified price drops, deals, and coupon codes across home decor, skincare, fashion, electronics, and more. No registration required to access any deal." }
+                    { q: "What is the Desidiya Moon Crystal Night Light?", a: "A 2.4-inch K9 glass ball with a 3D laser-engraved moon inside, sitting on a natural wooden base, glowing warm white via USB. It's a mood lamp. An accent piece. One of the better gifts under ₹500 in India right now — 5,500+ ratings and Amazon's Choice back that up." },
+                    { q: "How is the light powered?", a: "USB, 5V, 2W. Plug into any phone charger, laptop port, or power bank. No adapter in the box — use what you already own. Running cost is under ₹2/month at 8 hours daily." },
+                    { q: "Is this a good gifting option?", a: "Yes. Whether they need a led night light for bedroom ambience or just a thoughtful decor piece — this delivers. The K9 glass, 3D engraving, wooden base, and warm glow create a perceived value well above ₹197. Works for Valentine's Day, Diwali, birthdays, housewarmings. At this price, you can afford to gift two." },
+                    { q: "Where can I find Desidiya coupon codes?", a: "CouponsCrew monitors this product through festive sales — Great Indian Festival and Prime Day have dropped the price below ₹150 historically. The deal button links to the current best offer. Also check the Amazon cart page after adding to cart — sometimes there's an extra tick discount above the price that's easy to miss." },
+                    { q: "Is the light bright enough for reading?", a: "No. 2W is ambient light — it sets a mood, it doesn't illuminate a textbook. Use a desk lamp for reading. Use this for everything else: sleeping with a nightlight on, winding down, video call backgrounds, shelf decor." },
+                    { q: "Is CouponsCrew free to use?", a: "Completely free. No registration. No premium tier. Just deals." }
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
                       <button

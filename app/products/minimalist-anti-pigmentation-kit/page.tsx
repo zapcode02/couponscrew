@@ -5,23 +5,23 @@ import MinimalistKitPage from './_components/MinimalistKitPage'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  // Primary keyword once | 68 chars
-  title: 'Minimalist Anti-Pigmentation Kit Coupon Code & Offers | CouponScrew',
+  // Primary keyword once | 70 chars
+  title: 'Minimalist Anti-Pigmentation Kit — Alpha Arbutin, SPF 50 | CouponsCrew',
 
-  // Primary keyword once + secondary keywords once | 159 chars
+  // Primary keyword once + secondary keywords once | 162 chars
   description:
-    'Find manually verified Minimalist Anti-Pigmentation Kit coupon codes, promo codes & discount deals on CouponScrew. Save up to 50% off on this skincare combo today.',
+    'Shop the Minimalist anti-pigmentation kit online – an alpha arbutin serum kit for anti pigmentation kit for face. A pigmentation kit with sunscreen. CouponsCrew.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit',
   },
 
   openGraph: {
-    title: 'Minimalist Anti-Pigmentation Kit Coupon Code & Offers | CouponScrew',
+    title: 'Minimalist Anti-Pigmentation Kit — Alpha Arbutin, SPF 50 | CouponsCrew',
     description:
-      'Find manually verified Minimalist Anti-Pigmentation Kit coupon codes, promo codes & discount deals on CouponScrew. Save up to 50% off on this skincare combo today.',
+      'Shop the Minimalist anti-pigmentation kit online – an alpha arbutin serum kit for anti pigmentation kit for face. A pigmentation kit with sunscreen. CouponsCrew.',
     url: 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit',
-    siteName: 'CouponScrew',
+    siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Minimalist Anti-Pigmentation Kit Coupon Code & Offers | CouponScrew',
+    title: 'Minimalist Anti-Pigmentation Kit — Alpha Arbutin, SPF 50 | CouponsCrew',
     description:
-      'Find manually verified Minimalist Anti-Pigmentation Kit coupon codes, promo codes & discount deals on CouponScrew. Save up to 50% off on this skincare combo today.',
+      'Shop the Minimalist anti-pigmentation kit online – an alpha arbutin serum kit for anti pigmentation kit for face. A pigmentation kit with sunscreen. CouponsCrew.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -69,12 +69,12 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit/#webpage',
       url: 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit',
-      name: 'Minimalist Anti-Pigmentation Kit Coupon Code & Offers | CouponScrew',
-      description: 'Find manually verified Minimalist Anti-Pigmentation Kit coupon codes, promo codes & discount deals on CouponScrew.',
+      name: 'Minimalist Anti-Pigmentation Kit — Alpha Arbutin, SPF 50 | CouponsCrew',
+      description: 'Shop the Minimalist anti-pigmentation kit online – an alpha arbutin serum kit for anti pigmentation kit for face. A pigmentation kit with sunscreen. CouponsCrew.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
-        name: 'CouponScrew',
+        name: 'CouponsCrew',
         url: 'https://www.couponscrew.com',
       },
       breadcrumb: {

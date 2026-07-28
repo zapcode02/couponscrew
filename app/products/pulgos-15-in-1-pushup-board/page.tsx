@@ -5,23 +5,23 @@ import PulgosPushupBoardPage from './_components/PulgosPushupBoardPage'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  // Primary keyword once | 65 chars
-  title: 'PulGos 15-in-1 Pushup Board Coupon Code & Offers | CouponScrew',
+  // Primary keyword once | 66 chars
+  title: 'PulGos Pushup Board — 15-in-1 Foldable Home Workout | CouponsCrew',
 
-  // Primary keyword once + secondary keywords once | 156 chars
+  // Primary keyword once + secondary keywords once | 162 chars
   description:
-    'Find manually verified PulGos 15-in-1 Pushup Board coupon codes, promo codes & discount deals on CouponScrew. Save up to 40% off on this foldable gym equipment today.',
+    'Shop the PulGos pushup board online – a 15 in 1 pushup board built for pushup board for home workout. Comes as a foldable pushup board. Best deals on CouponsCrew.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board',
   },
 
   openGraph: {
-    title: 'PulGos 15-in-1 Pushup Board Coupon Code & Offers | CouponScrew',
+    title: 'PulGos Pushup Board — 15-in-1 Foldable Home Workout | CouponsCrew',
     description:
-      'Find manually verified PulGos 15-in-1 Pushup Board coupon codes, promo codes & discount deals on CouponScrew. Save up to 40% off on this foldable gym equipment today.',
+      'Shop the PulGos pushup board online – a 15 in 1 pushup board built for pushup board for home workout. Comes as a foldable pushup board. Best deals on CouponsCrew.',
     url: 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board',
-    siteName: 'CouponScrew',
+    siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'PulGos 15-in-1 Pushup Board Coupon Code & Offers | CouponScrew',
+    title: 'PulGos Pushup Board — 15-in-1 Foldable Home Workout | CouponsCrew',
     description:
-      'Find manually verified PulGos 15-in-1 Pushup Board coupon codes, promo codes & discount deals on CouponScrew. Save up to 40% off on this foldable gym equipment today.',
+      'Shop the PulGos pushup board online – a 15 in 1 pushup board built for pushup board for home workout. Comes as a foldable pushup board. Best deals on CouponsCrew.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -69,12 +69,12 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board/#webpage',
       url: 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board',
-      name: 'PulGos 15-in-1 Pushup Board Coupon Code & Offers | CouponScrew',
-      description: 'Find manually verified PulGos 15-in-1 Pushup Board coupon codes, promo codes & discount deals on CouponScrew.',
+      name: 'PulGos Pushup Board — 15-in-1 Foldable Home Workout | CouponsCrew',
+      description: 'Shop the PulGos pushup board online – a 15 in 1 pushup board built for pushup board for home workout. Comes as a foldable pushup board. Best deals on CouponsCrew.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
-        name: 'CouponScrew',
+        name: 'CouponsCrew',
         url: 'https://www.couponscrew.com',
       },
       breadcrumb: {

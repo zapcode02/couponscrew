@@ -280,17 +280,17 @@ export default function AcnosBangleWatchPage() {
             <Tag className="w-3.5 h-3.5" /> Product Overview
           </div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight">
-            Acnos Premium Girl's Heart Shape Bangle Analog Watch, Pack of 2
+            Acnos Bangle Watch — Two Watches at ₹299. Yes, Both.
           </h2>
           <div className="space-y-4 text-slate-600 leading-relaxed text-base">
             <p>
-              The Acnos Premium Girl's Heart Shape Bangle Analog Watch, Pack of 2 is a stylish accessory designed for women and girls who want to express personality through their wristwear. Rather than choosing between two separate watches at full price, this combo gives you two coordinated pieces — one in Rosegold and one in D-White — so you can switch up your look without doubling your spend.
+              Two bangle watches. One Rosegold, one D-White. Both heart-shaped dials. Both with a 1-year warranty. ₹299 for the pair. That works out to ₹149.50 per watch, in case your brain needed a moment with those numbers.
             </p>
             <p>
-              At the heart of the design is a heart-shaped dial that sets these watches apart from the standard round or square alternatives flooding the market. The stainless steel bangle-cuff band sits flush against the wrist and doubles as a bracelet, which means you get a two-in-one — timepiece and jewellery — in a single purchase. Quartz movement ensures reliable timekeeping without the maintenance overhead of mechanical movements.
+              The Acnos Premium Girl's Heart Shape Bangle Watch is built around a stainless steel cuff that sits on the wrist like a bracelet — which means you're not choosing between a watch and an accessory, you're wearing both at the same time. The heart-shaped dial is what makes this stand out from the sea of identical round-face fashion watches at this price point. It's a small detail that reads as intentional, which is exactly what you want when gifting something.
             </p>
             <p>
-              Acnos is an Indian fashion accessories brand that focuses on affordable, trend-led pieces for the domestic market. This particular SKU has accumulated over 2,300 ratings on Amazon India, with a healthy number of buyers returning each month — a signal that the product delivers on its promise for the price point. With a 1-year manufacturer warranty and a 30-metre water resistance rating, it covers everyday scenarios including hand-washing and light rain.
+              Acnos is an Indian fashion accessories brand. This specific pack has crossed 2,300 ratings on Amazon India and 400+ buyers picked it up last month alone. At ₹299 for two watches with quartz movement and 30-metre water resistance, it's covering hand-washing and light rain — which, honestly, is all most fashion watches ever face. The MRP is listed at ₹1,999 — that's an 85% discount. We're not going to pretend the MRP is a price anyone was ever paying, but ₹299 for this pack is genuinely good value.
             </p>
           </div>
         </div>
@@ -302,21 +302,21 @@ export default function AcnosBangleWatchPage() {
               Key Features & Specifications
             </h3>
             <p className="text-slate-500 text-sm">
-              Here is a quick-reference summary of what makes this watch pack worth considering:
+              Everything that matters about this watch, no fluff:
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
             {[
-              { label: "Brand", val: "Acnos — Indian fashion accessories label" },
+              { label: "Brand", val: "Acnos — Indian fashion accessories brand" },
               { label: "Pack contents", val: "2 analog bangle watches (Rosegold + D-White)" },
-              { label: "Dial shape", val: "Heart — distinctive, fashion-forward design" },
-              { label: "Band material", val: "Stainless Steel bangle cuff" },
-              { label: "Watch movement", val: "Quartz — low maintenance, accurate" },
-              { label: "Water resistance", val: "30 metres (suitable for light splashes)" },
-              { label: "Case diameter", val: "4 mm slim profile" },
-              { label: "Weight", val: "250 g combined (approx. 125 g each)" },
-              { label: "Warranty", val: "1 year manufacturer warranty" },
+              { label: "Dial shape", val: "Heart shape watch face — stands out from every round-face competitor" },
+              { label: "Band material", val: "Stainless Steel bangle cuff — wears like jewellery" },
+              { label: "Watch movement", val: "Quartz — accurate, battery-powered, zero maintenance" },
+              { label: "Water resistance", val: "30 metres — handles rain and hand-washing, not swimming" },
+              { label: "Case diameter", val: "4 mm slim profile — sits flat on the wrist" },
+              { label: "Weight", val: "250 g combined (roughly 125 g each)" },
+              { label: "Warranty", val: "1 year manufacturer warranty — rare at this price" },
               { label: "Country of origin", val: "India" },
               { label: "Return policy", val: "10-day returnable via Amazon India" },
             ].map((spec, i) => (
@@ -340,10 +340,10 @@ export default function AcnosBangleWatchPage() {
           </h3>
           <div className="space-y-4 text-slate-600 leading-relaxed text-base">
             <p>
-              CouponsCrew exists to do the deal-hunting work so you do not have to. Instead of opening multiple tabs and comparing prices manually, our platform aggregates live offers across India's leading e-commerce platforms and surfaces the best deal available at a given moment. For a product like the Acnos Bangle Watch Pack of 2, which sees regular price fluctuations on Amazon India, this means you are more likely to catch the deal at its lowest point.
+              Most coupon sites list expired codes from 2019 and hope you don't notice. We verify before we publish. Every deal on CouponsCrew links directly to the live Amazon India listing — no inflated before-prices, no redirects through three middlemen, no checkout surprises. What you see is what you get.
             </p>
             <p>
-              Every deal on CouponsCrew is linked directly to the retailer's product page, so there is no risk of counterfeit listings or inflated "before" prices. The discount percentage you see is calculated against the listed MRP at the time of verification. We also surface coupon codes where available, so you can stack savings without any guesswork. The platform is entirely free to use — no registration, no paywalled deals.
+              We also check for coupon ticks — Amazon sometimes applies an additional discount at the cart stage that isn't visible on the product page. It's easy to miss if you're not looking. We flag these when they exist. The whole platform is free. No registration. No "premium tier." Just deals that actually work.
             </p>
           </div>
         </div>
@@ -355,18 +355,18 @@ export default function AcnosBangleWatchPage() {
           </h3>
           <div className="space-y-4 text-slate-600 leading-relaxed text-base">
             <p>
-              The Acnos Bangle Watch Pack of 2 is currently available at a substantial discount through Amazon India. CouponsCrew tracks live pricing to ensure the deal shown above reflects the most current offer at the time of your visit. The savings are significant relative to the listed MRP, making this an ideal time to pick up a gift or add to your own collection.
+              Right now, this Acnos bangle watch is at ₹299 — 85% off the listed MRP of ₹1,999 on Amazon India. CouponsCrew tracks this price daily. If it drops further, the deal button above will take you to the updated offer automatically.
             </p>
 
             <div className="bg-amber-50/80 border border-amber-200/80 p-4 rounded-xl flex items-start gap-3 my-4 text-amber-900 text-sm">
               <Info className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
               <p>
-                Prices and availability on Amazon India change frequently. Always check the live product listing by clicking the deal button above to confirm the current price before completing your purchase.
+                Amazon prices move without warning. Click the deal button to confirm the live price before adding to cart — what you see on CouponsCrew is verified, but always worth a final check at checkout.
               </p>
             </div>
 
             <p>
-              Amazon India occasionally applies additional coupon ticks at checkout — these are not always visible until the cart stage, so it is worth clicking through even if the headline price looks familiar. Free delivery is typically included on this product for Prime members and on orders above the standard minimum, though eligibility may vary by pincode.
+              Also check the cart page before completing your order. Amazon sometimes applies an additional coupon tick at checkout — an extra 5–10% that doesn't show on the product page. It's the kind of thing you'd only find if someone told you to look. (We're telling you to look.) Free delivery applies for Prime members and for most pincodes on orders above the standard threshold.
             </p>
           </div>
         </div>
@@ -375,20 +375,20 @@ export default function AcnosBangleWatchPage() {
         <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
           <div>
             <h3 className="text-xl font-extrabold text-slate-900 mb-1">
-              How to Avail This Deal — Redemption Steps
+              How to Get This Deal — Takes About 90 Seconds
             </h3>
             <p className="text-slate-500 text-sm">
-              Follow these steps to secure the current offer on the Acnos Bangle Watch Pack of 2:
+              No coupon code needed. The discount is already applied on Amazon. Here's how to lock it in:
             </p>
           </div>
 
           <div className="grid gap-3">
             {[
-              "Click the \"GET THIS DEAL ON AMAZON\" button above to open the live product listing.",
-              "Check the current price and any active coupon ticks shown on the Amazon listing page.",
-              "Select your preferred colour variant (Rosegold or D-White band) if both are available.",
-              "Click \"Add to Cart\" or \"Buy Now\" and sign in to your Amazon India account.",
-              "Complete checkout — the discounted price will be applied automatically at cart."
+              "Click \"GET THIS DEAL ON AMAZON\" above. You'll land directly on the live Amazon India listing.",
+              "Check the product page for any active coupon tick — there's sometimes a checkbox above the price for an extra 5–10% off. Tick it if it's there.",
+              "Select your variant if prompted, then click \"Add to Cart\" or \"Buy Now.\"",
+              "Sign in to your Amazon India account. If you have an HDFC, SBI, ICICI, or Axis Bank card, check the offers tab at payment — bank card discounts sometimes stack on fashion orders.",
+              "Complete checkout. ₹299 (or less if a coupon tick applied) will be the final price."
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100">
                 <div className="w-8 h-8 rounded-lg bg-[#5B4FBE] text-white font-bold text-sm flex items-center justify-center shrink-0 shadow-sm">
@@ -404,10 +404,10 @@ export default function AcnosBangleWatchPage() {
         <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
           <div>
             <h3 className="text-xl font-extrabold text-slate-900 mb-1">
-              Pros & Cons
+              Pros & Cons — Honest Version
             </h3>
             <p className="text-slate-500 text-sm">
-              A balanced look at what this watch pack does well and where it has limitations:
+              What this pack genuinely does well, and what it doesn't pretend to be:
             </p>
           </div>
 
@@ -419,12 +419,12 @@ export default function AcnosBangleWatchPage() {
               </h4>
               <ul className="space-y-2.5">
                 {[
-                  "Pack of 2 — great value for the price",
-                  "Elegant heart-shaped dial — stands out",
-                  "Quartz movement — accurate timekeeping",
-                  "1-year manufacturer warranty included",
-                  "Ships gift-ready — no extra packaging needed",
-                  "Lightweight and comfortable for long wear"
+                  "Two watches for ₹299 — works out to under ₹150 each",
+                  "Heart-shaped dial is actually different from the crowd",
+                  "Bangle cuff means no separate bracelet needed",
+                  "Quartz movement — keeps accurate time, no winding",
+                  "1-year manufacturer warranty — rare at this price point",
+                  "Ships in a gift box. Zero extra effort on presentation."
                 ].map((pro, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5 stroke-[2.5]" />
@@ -441,10 +441,10 @@ export default function AcnosBangleWatchPage() {
               </h4>
               <ul className="space-y-2.5">
                 {[
-                  "Water resistance limited to 30 metres (light splash only)",
-                  "Not suitable for swimming or heavy water exposure",
-                  "Bangle cuff style may not suit all wrist sizes",
-                  "Fashion watch — not a sports or smart watch"
+                  "30m water resistance means light splashes, not swimming — it's a fashion watch, not a diver",
+                  "Bangle cuff fits most wrists but isn't adjustable the same way a strap is",
+                  "No smartwatch features — this is purely analog, purely fashion",
+                  "The MRP of ₹1,999 is not a price anyone was ever paying. The real deal is ₹299."
                 ].map((con, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <X className="w-4 h-4 text-rose-600 shrink-0 mt-0.5 stroke-[2.5]" />
@@ -459,14 +459,14 @@ export default function AcnosBangleWatchPage() {
         {/* Who Should Buy This — Use Cases */}
         <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
           <h3 className="text-xl font-extrabold text-slate-900">
-            Who Should Buy This — Use Cases
+            Who Should Buy This
           </h3>
           <div className="space-y-4 text-slate-600 leading-relaxed text-base">
             <p>
-              This watch pack is particularly well suited to college students and working women who want an affordable way to accessorise different outfits without investing in expensive jewellery. The two-colour pack means one watch can stay on the desk at work while the other is ready for an evening out. For anyone who rotates accessories daily, the combo format removes the need to make a separate purchase.
+              If you're shopping for a girls bangle watch and want variety without spending ₹1,000+ — this pack solves that. Keep the Rosegold for casual days, the D-White for college or office. Both work with kurtas, western wear, and everything in between. The bangle cuff means no extra bracelet needed.
             </p>
             <p>
-              It is also a strong choice as a gift — for birthdays, anniversaries, Raksha Bandhan, Diwali, or Valentine's Day. The heart-shaped dial adds a thoughtful visual touch that generic round-dial watches lack, and the branded box means minimal effort on presentation. Budget-conscious shoppers looking for a gift that looks premium without crossing into premium pricing will find this pack punches above its weight.
+              It's also one of the better gift options under ₹500, honestly. The heart dial makes it feel like someone thought about the gift rather than just grabbing the first watch they saw. The branded box means you don't need to spend extra on wrapping. Good for birthdays, Valentine's Day, Raksha Bandhan, Diwali, or the "I forgot it's her birthday tomorrow" situation. (We don't judge. The 2-day delivery option exists for a reason.)
             </p>
           </div>
         </div>
@@ -475,19 +475,19 @@ export default function AcnosBangleWatchPage() {
         <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
           <div>
             <h3 className="text-xl font-extrabold text-slate-900 mb-1">
-              Similar & Alternative Products
+              Considering Alternatives? Here's the Honest Comparison
             </h3>
             <p className="text-slate-500 text-sm">
-              If you are exploring options before deciding, here are some alternative categories worth considering:
+              Other watch types at a similar price — what you gain, what you give up:
             </p>
           </div>
 
           <div className="space-y-3">
             {[
-              { title: "Chain-link bracelet watches", desc: "A more traditional jewellery-watch hybrid; typically pricier but more durable over years of wear." },
-              { title: "Mesh strap analog watches", desc: "Offer a minimalist aesthetic; the stainless mesh strap is adjustable and suits a wider wrist range." },
-              { title: "Leather strap fashion watches", desc: "More classic look; ideal for formal settings; single-watch purchase at similar price points." },
-              { title: "Smartwatch entry-level models", desc: "Step up in functionality (notifications, steps tracking) but lose the jewellery appeal and are harder to gift." }
+              { title: "Chain-link bracelet watches", desc: "More durable long-term, usually pricier. You get one watch. The Acnos pack gives you two." },
+              { title: "Mesh strap analog watches", desc: "Minimalist look, adjustable fit. Solid option if you prefer a thinner profile over the bangle cuff style." },
+              { title: "Leather strap fashion watches", desc: "More formal, classic aesthetic. Usually single-watch purchase at ₹300–₹600. Different look entirely." },
+              { title: "Entry-level smartwatches", desc: "Step counter, notifications, always-on display — but starts at ₹1,500+, doesn't look like jewellery, and is harder to gift." }
             ].map((alt, i) => (
               <div key={i} className="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
                 <ArrowRight className="w-4 h-4 text-[#5B4FBE] shrink-0 mt-1" />
@@ -500,23 +500,23 @@ export default function AcnosBangleWatchPage() {
           </div>
 
           <p className="text-slate-600 text-base leading-relaxed pt-2">
-            For shoppers who prioritise style and value over advanced features, the Acnos pack remains difficult to beat in its category on Amazon India.
+            If you want fashion, variety, and gifting appeal under ₹500 — this heart shape watch pack is the call. Two watches, one purchase, done.
           </p>
         </div>
 
         {/* FAQs Accordion */}
         <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
           <h3 className="text-xl font-extrabold text-slate-900">
-            Acnos Bangle Watch Pack of 2 — FAQs
+            FAQs — Acnos Bangle Watch
           </h3>
 
           <div className="space-y-3">
             {[
-              { q: "Is the Acnos Bangle Watch Pack of 2 suitable for daily wear?", a: "Yes, the watches are crafted for regular daily wear with stainless steel construction and 30m splash resistance for everyday scenarios like hand-washing." },
-              { q: "Does this pack come gift-ready?", a: "Yes, the watches ship in a branded Acnos box, making them ready to present without additional gift packaging needed." },
-              { q: "What is the warranty on these watches?", a: "This watch pack comes with a 1-year manufacturer warranty covering manufacturing defects from the date of purchase." },
-              { q: "Can I return or exchange if the product does not match the description?", a: "Yes, it is eligible for Amazon India's standard 10-day returnable policy if there are defects or mismatches." },
-              { q: "How does CouponsCrew keep the deal updated?", a: "CouponsCrew continuously tracks live pricing directly from Amazon India to surface verified discount codes and lowest active offer points." }
+              { q: "Is this watch good for daily wear?", a: "Yes — a girls bangle watch with quartz movement holds up to daily use, handles hand-washing and light rain at 30m resistance. Fashion wear, not sports — skip the pool." },
+              { q: "Does it actually come in a gift box?", a: "Yes. Ships in a branded Acnos box — no extra gift wrapping needed. We verified this from buyer reviews. It's one of the reasons this pack works so well as a last-minute gift." },
+              { q: "What does the 1-year warranty cover?", a: "Manufacturing defects from the date of purchase, covered by Acnos directly. Contact Acnos customer support with your Amazon order details to initiate a claim. Damage from misuse or water beyond the 30m rating is not covered." },
+              { q: "Can I return it if something's wrong?", a: "Yes — 10-day returnable via Amazon India. If there's a defect or the product doesn't match the listing, raise the return through your Amazon order page. Prime members get free pickup." },
+              { q: "Is ₹299 the real price or a fake MRP trick?", a: "The MRP of ₹1,999 is not a price this watch was selling for at scale — we'll be straight about that. But ₹299 for two watches with a 1-year warranty and quartz movement is genuinely good value. Judge it against what you're getting, not the inflated MRP." }
             ].map((faq, i) => (
               <div key={i} className="rounded-xl border border-slate-200/80 overflow-hidden">
                 <button
@@ -573,7 +573,7 @@ export default function AcnosBangleWatchPage() {
             Affiliate Disclosure
           </p>
           <p>
-            CouponsCrew participates in the Amazon Associates Programme. We may earn a small commission when you make a purchase through our affiliate links, at no additional cost to you. This helps us keep CouponsCrew free and regularly updated with fresh deals. All product information, images, and pricing are sourced from Amazon India and are subject to change without notice.
+            CouponsCrew participates in the Amazon Associates Programme. If you buy through our links, we earn a small commission — at no extra cost to you. That commission is what keeps this platform free and the deal tracking running. Product info, images, and pricing come from Amazon India and change without notice. Always confirm the final price at checkout.
           </p>
         </div>
 
@@ -589,7 +589,7 @@ export default function AcnosBangleWatchPage() {
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-black text-lg">Acnos Bangle Watch (Pack of 2)</h4>
+            <h4 className="text-slate-900 font-black text-lg">Acnos Bangle Watch (Rosegold & D-White)</h4>
             <p className="text-slate-500 text-xs mt-1">Rosegold + D-White Color Combination</p>
           </div>
 
@@ -669,3 +669,4 @@ export default function AcnosBangleWatchPage() {
     </div>
   );
 }
+ 

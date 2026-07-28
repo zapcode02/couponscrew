@@ -5,23 +5,23 @@ import MoonCrystalLightPage from './_components/MoonCrystalLightPage'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  // Primary keyword once | 66 chars
-  title: 'Desidiya Moon Crystal Night Light Coupon Code & Offers | CouponScrew',
+  // Primary keyword once | 62 chars
+  title: 'Desidiya Moon Crystal Night Light — Bedroom Gift | CouponsCrew',
 
-  // Primary keyword once + secondary keywords once | 158 chars
+  // Primary keyword once + secondary keywords once | 161 chars
   description:
-    'Find manually verified Desidiya Moon Crystal Night Light coupon codes, promo codes & discount deals on CouponScrew. Save up to 45% off on this LED lamp gift today.',
+    'Shop the Desidiya moon crystal night light – a crystal ball lamp for led night light for bedroom use. A great moon night light gift. Best deals on CouponsCrew.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/products/desidiya-moon-crystal-night-light',
   },
 
   openGraph: {
-    title: 'Desidiya Moon Crystal Night Light Coupon Code & Offers | CouponScrew',
+    title: 'Desidiya Moon Crystal Night Light — Bedroom Gift | CouponsCrew',
     description:
-      'Find manually verified Desidiya Moon Crystal Night Light coupon codes, promo codes & discount deals on CouponScrew. Save up to 45% off on this LED lamp gift today.',
+      'Shop the Desidiya moon crystal night light – a crystal ball lamp for led night light for bedroom use. A great moon night light gift. Best deals on CouponsCrew.',
     url: 'https://www.couponscrew.com/products/desidiya-moon-crystal-night-light',
-    siteName: 'CouponScrew',
+    siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Desidiya Moon Crystal Night Light Coupon Code & Offers | CouponScrew',
+    title: 'Desidiya Moon Crystal Night Light — Bedroom Gift | CouponsCrew',
     description:
-      'Find manually verified Desidiya Moon Crystal Night Light coupon codes, promo codes & discount deals on CouponScrew. Save up to 45% off on this LED lamp gift today.',
+      'Shop the Desidiya moon crystal night light – a crystal ball lamp for led night light for bedroom use. A great moon night light gift. Best deals on CouponsCrew.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -69,12 +69,12 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/products/desidiya-moon-crystal-night-light/#webpage',
       url: 'https://www.couponscrew.com/products/desidiya-moon-crystal-night-light',
-      name: 'Desidiya Moon Crystal Night Light Coupon Code & Offers | CouponScrew',
-      description: 'Find manually verified Desidiya Moon Crystal Night Light coupon codes, promo codes & discount deals on CouponScrew.',
+      name: 'Desidiya Moon Crystal Night Light — Bedroom Gift | CouponsCrew',
+      description: 'Shop the Desidiya moon crystal night light – a crystal ball lamp for led night light for bedroom use. A great moon night light gift. Best deals on CouponsCrew.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
-        name: 'CouponScrew',
+        name: 'CouponsCrew',
         url: 'https://www.couponscrew.com',
       },
       breadcrumb: {
