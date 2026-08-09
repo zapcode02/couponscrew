@@ -9,7 +9,7 @@ import {
   ChevronUp,
   Star,
   Tag,
-  ShieldCheck,
+  ShieldCheck,  
   Clock,
   Heart,
   ExternalLink,
@@ -440,7 +440,7 @@ export default function PepperfryStore() {
             </div>
 
             {/* Coupons Card List */}
-            <div className="space-y-6 max-w-5xl mx-auto p-4">
+<div className="space-y-6 max-w-5xl mx-auto p-4">
   {coupons.map((coupon) => {
     const isExpanded = expandedCouponId === coupon.id;
     const isCopied = copiedCode === coupon.code;
@@ -453,10 +453,9 @@ export default function PepperfryStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            style={{ background: coupon.color || 'linear-gradient(180deg, #5B4FBE 0%, #4938c4 100%)' }}
-            className="w-24 sm:w-32 lg:w-40 flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -476,10 +475,11 @@ export default function PepperfryStore() {
           {/* RIGHT WRAPPER: Center Content + Right Action */}
           <div className="flex-1 flex flex-col lg:flex-row items-stretch">
 
-            {/* CENTER CONTENT SECTION (Details are now placed strictly inside this) */}
+            {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                <span className="bg-[#FFEBEB] text-[#FF4D4D] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -498,25 +498,25 @@ export default function PepperfryStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#0B1A30] hover:opacity-80 w-fit"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
               </button>
 
-              {/* IMAGE ONE LOOK: Details list inside the center container */}
+              {/* Details List */}
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0066FF] mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066FF]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select furniture & home décor categories.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0066FF] mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066FF]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum cart value might apply as specified on descriptions.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#0066FF] mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066FF]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers selected brands and product collections.</span>
                   </li>
                 </ul>
@@ -528,7 +528,7 @@ export default function PepperfryStore() {
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#0066FF] rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -545,13 +545,13 @@ export default function PepperfryStore() {
                 </div>
               )}
 
-              {/* Action Button */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#0066FF] hover:bg-[#0052CC] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -565,14 +565,9 @@ export default function PepperfryStore() {
     );
   })}
 </div>
+          
 
-            {/* View More Buttons */}
-            <div className="text-center pt-2">
-              <button className="bg-white border border-[#E8E8F0] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] font-black text-xs px-6 py-3.5 rounded-xl transition-all shadow-xs inline-flex items-center gap-1.5 cursor-pointer">
-                <span>View More Coupons (85+)</span>
-                <ChevronDown size={14} />
-              </button>
-            </div>
+           
 
 
           </main>
@@ -584,10 +579,15 @@ export default function PepperfryStore() {
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
                 <Info size={16} className="text-[#5B4FBE]" />
-                <span>Pepperfry - Store Information</span>
+                <span>The Story Behind Pepperfry</span>
               </h3>
+              <p className="text-[#1A1A2E] text-sm mb-3">
+                Pepperfry was founded in 2012 in Mumbai by Ambareesh Murty — formerly the head of eBay India — and Ashish Shah. What started as an online furniture marketplace quickly grew into something far bigger. Within a few years, Pepperfry had become the go-to destination for Indian households looking to furnish their homes without visiting dozens of physical stores. The idea was simple but powerful: bring India's fragmented furniture market online, add great delivery logistics, and give buyers the confidence to purchase big-ticket items from their phone or laptop.
+              </p>
+
               <p className="text-[#1A1A2E] text-sm">
-                Founded in 2012 in Mumbai. Acquired by Pidilite (the Fevicol people) in 2022. 1,00,000+ products, 10,000+ sellers, 20+ lakh customers. Pepperfry is India's largest online furniture marketplace — and one of the few where 45-day furniture returns and no-cost EMI are standard, not special.
+                
+                The growth story took a significant turn in 2022 when Pidilite Industries — the company behind Fevicol, India's most trusted adhesive brand — acquired a majority stake in Pepperfry. This was not a random acquisition. Pidilite has a long track record of building category-dominant brands that last decades. Their entry into Pepperfry signals a long-term commitment to the online furniture space in India, bringing deeper financial backing and brand credibility to the platform.
               </p>
 
 
@@ -669,31 +669,53 @@ export default function PepperfryStore() {
             {/* Sidebar Card 4: Why Shop at Pepperfry */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Shop at Pepperfry?
+                Why Use CouponScrew for Pepperfry Deals?
               </h3>
 
               <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <span>1,00,000+ products — the deepest furniture catalogue in India</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <span>45-day return on furniture. One of the best policies in the category.</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <span>No-cost EMI from ₹5,000. HDFC, SBI, ICICI, Axis, Bajaj Finserv.</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <span>Studio Pepperfry — 50+ offline centres to see before you buy</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <span>Bank card + coupon code stacking: two savings layers, one order</span>
-                </li>
-              </ul>
+  <li className="flex items-start gap-2.5">
+    <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+    <div>
+      <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
+      <span>Every Pepperfry coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately. You will never spend time trying a dead promo code here.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2.5">
+    <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+    <div>
+      <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
+      <span>We display live success percentages for every deal based on actual user attempts. This tells you at a glance which Pepperfry discount codes are working best today, so you can pick the most reliable option without guessing.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2.5">
+    <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+    <div>
+      <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
+      <span>We specifically track Indian bank promotions from HDFC, SBI, ICICI, Axis, and Bajaj Finserv so you always know which card to use at checkout to unlock the maximum cashback on top of your Pepperfry promo code.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2.5">
+    <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+    <div>
+      <span className="font-bold text-[#2C2C40] block mb-0.5">Flash Deal Alerts</span>
+      <span>Pepperfry's ₹1 flash deals and limited-time Lightning Deals are flagged on CouponScrew as soon as they go live, giving you the best chance to grab them before stock runs out.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2.5">
+    <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+    <div>
+      <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
+      <span>CouponScrew publishes Pepperfry sale codes ahead of major events like the Big Home Sale and the Apno Wali Diwali Sale. You do not need to wait for the sale to start to know what discounts are available.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2.5">
+    <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
+    <div>
+      <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
+      <span>Finding and using a Pepperfry coupon code on CouponScrew is completely free and requires no account, no sign-up, and no personal information. Copy the code, go to Pepperfry, and save.</span>
+    </div>
+  </li>
+</ul>
             </div>
 
           </aside>
@@ -708,171 +730,332 @@ export default function PepperfryStore() {
             {/* Left: Text Content */}
             <div className="prose max-w-none">
               <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Pepperfry Coupons, Coupon Codes & Furniture Deals — July 2026
+                Pepperfry Coupon Code India (August 2026): Up to 75% Off + Extra Cashback — Verified Today
               </h2>
+
+              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+    <caption className="sr-only">Furniture, Home Décor, and Kitchen Coupon Offers</caption>
+    <thead>
+      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#E8E8F0]">
+      {[
+        {
+          offerType: 'UP TO 50% OFF',
+          category: 'Furniture',
+          discount: 'Up to 50% OFF',
+          highlights: 'Shop the Bonton Computer Table in Wenge finish with sliding keyboard tray.',
+          userType: 'All Users'
+        },
+        {
+          offerType: '@ ₹1',
+          category: 'Home Décor',
+          discount: '@ ₹1',
+          highlights: 'Add a set of 6 ethnic motif multicolor PVC placemats for just ₹1.',
+          userType: 'All Users'
+        },
+        {
+          offerType: 'UP TO 35% OFF',
+          category: 'Furniture',
+          discount: 'Up to 35% OFF',
+          highlights: 'Yuko TV Console for TVs up to 55" in Columbia finish.',
+          userType: 'All Users'
+        },
+        {
+          offerType: 'UP TO 75% OFF',
+          category: 'Electronics',
+          discount: 'Up to 75% OFF',
+          highlights: 'Portable Electronic Digital Weight Scale at massive discount.',
+          userType: 'All Users'
+        },
+        {
+          offerType: 'UP TO 75% OFF',
+          category: 'Furniture & Decor',
+          discount: 'Up to 75% OFF',
+          highlights: 'Shop across furniture & home décor plus get an extra 20% cashback.',
+          userType: 'All Users'
+        },
+        {
+          offerType: 'UP TO 75% OFF',
+          category: 'Kitchenware',
+          discount: 'Up to 75% OFF',
+          highlights: 'Brayan 250ml White Ceramic Coffee Mugs (Set of 2).',
+          userType: 'All Users'
+        },
+        {
+          offerType: 'UP TO 36% OFF',
+          category: 'Furniture',
+          discount: 'Up to 36% OFF',
+          highlights: 'Suki Bedside Table in sleek Wenge finish.',
+          userType: 'All Users'
+        },
+        {
+          offerType: '@ ₹1',
+          category: 'Kitchenware',
+          discount: '@ ₹1',
+          highlights: 'Smart ABS Plastic Vegetable Peeler with stainless steel blade for ₹1.',
+          userType: 'All Users'
+        },
+        {
+          offerType: '@ ₹1',
+          category: 'Bath',
+          discount: '@ ₹1',
+          highlights: 'Grey Abstract Rubber 24x16 Inch Anti-Skid Bath Mat for ₹1.',
+          userType: 'All Users'
+        },
+        {
+          offerType: 'UP TO 46% OFF',
+          category: 'Furniture',
+          discount: 'Up to 46% OFF',
+          highlights: 'Mana Coffee Table in premium Wenge finish.',
+          userType: 'All Users'
+        }
+      ].map((row, i) => (
+        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+            {row.offerType}
+          </td>
+          <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
+            {row.category}
+          </td>
+          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+            {row.discount}
+          </td>
+          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
+            {row.highlights}
+          </td>
+          <td className="px-5 py-4 whitespace-nowrap">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+              {row.userType}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+
 
               <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
 
+                <p>
+                  Looking for a verified Pepperfry coupon code before placing your furniture order? You have come to the right place. CouponScrew tracks and verifies every active Pepperfry discount code, promo code, and deal daily — so you always get a working offer, never an expired one. From sofas and beds to home décor and kitchen accessories, we cover every category. Copy your code above and start saving on your next Pepperfry order right now.
+                </p>
                 {/* Section 1: About Pepperfry */}
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">About Pepperfry — India's Largest Furniture & Home Décor Marketplace</h3>
-                <p>
-                  Pepperfry was founded in 2012 in Mumbai by Ambareesh Murty — then the head of eBay India — and Ashish Shah. In 2022, Pidilite Industries (yes, the Fevicol company) acquired a majority stake. The Fevicol company buying a furniture marketplace is not a random acquisition — Pidilite builds category-dominant brands for decades. That's a signal. Today: 1,00,000+ products, 10,000+ registered sellers, 20+ lakh customers served.
-                </p>
-                <p>
-                  Eight major categories: furniture (sofas, beds, wardrobes, dining sets, office furniture), home décor (wall art, vases, clocks, photo frames), lighting, kitchen & dining accessories, bath accessories, garden & outdoor, and furnishings (curtains, cushions, bed linen). Eight categories. 10,000+ registered sellers. Deliveries to 10,000+ pin codes via Pepperfry's own logistics network — not a third-party courier.
-                </p>
+                
+                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
+                  From a Mumbai Startup to India's Largest Furniture Marketplace
+                  </h3>
+                
 
-                {/* Section 2: Offers Summary Table */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">What's Live on Pepperfry Right Now</h3>
-                  <p>Here's a snapshot of the active offers on this page. Updated every morning.</p>
-                  <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0]">
-                    <table className="w-full text-xs border-collapse">
-                      <thead>
-                        <tr>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Offer Type</th>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Category</th>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Discount</th>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Valid Till</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {[
-                          { type: 'Deal', category: 'Furniture (Sofas, Beds, Wardrobes)', discount: 'Up to 75% OFF', valid: '30 Jun 2026' },
-                          { type: 'Deal', category: 'Home Décor', discount: 'Up to 60% OFF', valid: '30 Jun 2026' },
-                          { type: 'Deal', category: 'Kitchenware', discount: 'Up to 75% OFF', valid: '30 Jun 2026' },
-                          { type: 'Flash Deal', category: 'Electronics (Weight Machines)', discount: 'Up to 75% OFF', valid: '30 Jun 2026' },
-                          { type: 'Cashback', category: 'Furniture & Décor', discount: '20% Cashback', valid: '30 Jun 2026' },
-                          { type: 'Flat ₹1 Flash', category: 'Dining Accessories (Placemats)', discount: 'Flat ₹1', valid: 'Limited Stock' },
-                          { type: 'Flat ₹1 Flash', category: 'Kitchen (Vegetable Peeler)', discount: 'Flat ₹1', valid: 'Limited Stock' },
-                          { type: 'Flat ₹1 Flash', category: 'Bath (Anti-Skid Mat)', discount: 'Flat ₹1', valid: 'Limited Stock' },
-                        ].map((row, i) => (
-                          <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAFA]'}>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A]">{row.type}</td>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A]">{row.category}</td>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-black text-[#FF5722]">{row.discount}</td>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A]">{row.valid}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                   <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
+                 Pepperfry in Numbers — Scale That Speaks for Itselfy
+                  </h3>
 
-                {/* Section 3: Why Shop at Pepperfry via CouponsCrew */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Shop at Pepperfry via CouponsCrew</h3>
-                  <p><strong>1,00,000+ Products, 10,000+ Sellers:</strong> India's deepest online furniture catalogue — from ₹1 kitchen accessories to ₹2,00,000+ luxury sofas. One platform, every room.</p>
-                  <p><strong>Studio Pepperfry — 50+ Offline Experience Centres:</strong> 50+ offline experience centres in 30+ cities. Walk in, sit on the sofa, check the finish in person, then order online. Free interior design consultation included. Most furniture regrets come from buying without seeing — Studio Pepperfry exists to fix that.</p>
-                  <p><strong>45-Day Return on Furniture:</strong> 45 days on furniture. 10 days on décor. Doorstep pickup in serviceable cities. For context — most online furniture sellers give you 7 days. Pepperfry gives you six weeks.</p>
-                  <p><strong>No-Cost EMI Available:</strong> Available on orders above ₹5,000. HDFC, SBI, ICICI, Axis, Bajaj Finserv. 3 to 24 months. Zero interest on select offers — but check the checkout page, because 'no cost' sometimes has a processing fee quietly baked in.</p>
-                  <p><strong>Pepperfry Privilege Membership:</strong> Free to join. Early sale access (sometimes 24 hours before the public), member-exclusive codes, priority support. Sign up before the next Big Home Sale.</p>
-                  <p><strong>CouponsCrew Advantage:</strong> We verify every code on this page before it goes live. Expired codes are removed automatically — you won't waste 4 minutes trying a dead Pepperfry promo code here. (The expired-code rage is real. We've felt it.)</p>
-                </div>
+                  <p>
+                    Today, Pepperfry is India's largest online furniture and home décor marketplace by catalogue size. The numbers tell the story clearly: over 1,00,000 products listed across eight major categories, more than 10,000 registered sellers on the platform, 20+ lakh customers served across India, and deliveries reaching 10,000+ pin codes through Pepperfry's own dedicated logistics network. Unlike most e-commerce platforms that rely entirely on third-party couriers for furniture, Pepperfry manages its own last-mile delivery for large items — which is a key reason why damage rates and delivery failures are lower compared to alternatives.
+                  </p>
 
-                {/* Section 4: How to Use Coupon Codes */}
+                  <p>
+                    Add to this 50+ Studio Pepperfry experience centres across 30+ cities, a dedicated business vertical for commercial interior projects, and a Privilege membership programme for loyal shoppers — and it becomes clear why Pepperfry continues to dominate the online furniture category in India. Using a Pepperfry coupon code from CouponScrew on top of this already competitive pricing is simply the smartest way to shop here.
+                  </p>
+
+               <div className="space-y-4 text-slate-700">
+  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
+    Everything You Can Shop at Pepperfry
+  </h3>
+  <p>
+    Pepperfry covers every room in your home across eight major categories. Here is a detailed look at what each section offers and what kind of Pepperfry discount codes apply to each.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Sofas & Seating — Up to 60% Off: </strong>
+    The sofa section is Pepperfry's single largest revenue category and also the most popular among buyers. You will find 3-seater fabric sofas, L-shaped sectionals, sofa-cum-beds for studio apartments, recliners, loveseats, and ottomans — all from brands like Wakefit, Godrej Interio, Nilkamal, and dozens of independent furniture manufacturers. Prices range from ₹8,000 for a compact 2-seater to ₹80,000+ for premium leather sectionals.
+    <br />
+    Pepperfry coupon codes for sofas are among the most frequently searched, and for good reason — a 20% discount on a ₹30,000 sofa saves you ₹6,000 in one transaction. The best time to apply a Pepperfry promo code on sofas is during the Big Home Sale in October–November, when discounts reach up to 75% on the entire sofa collection.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Beds & Bedroom Furniture — Up to 70% Off: </strong>
+    Beds with hydraulic storage drawers are the consistent bestseller in this category — Indian apartments benefit enormously from the under-bed storage, and Pepperfry's engineered wood options deliver this at a fraction of what carpenter-made alternatives cost. Queen and king-size frames in walnut, white, and wenge finishes dominate the catalogue, with prices starting at ₹10,000 and going up to ₹60,000 for premium upholstered headboard options.
+    <br />
+    A Pepperfry discount code applied on bedroom furniture during sale events can bring a ₹25,000 bed down to under ₹18,000. Alongside beds, this section also covers bedside tables, dressers, mirrors, and full bedroom sets — making it possible to furnish an entire bedroom in one order and potentially qualify for bundle discounts at checkout.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Wardrobes & Storage — Up to 70% Off: </strong>
+    Pepperfry's wardrobe section is one of the most comprehensive online, covering sliding-door wardrobes, 2-door and 3-door options, modular wardrobes, and open-shelf designs. Brands like Spacewood, Godrej Interio, Mintwud, and Woodsworth are regularly stocked with competitive pricing. Engineered wood in white and walnut finishes makes up the majority of the catalogue, with prices starting at ₹7,999.
+    <br />
+    Storage solutions beyond wardrobes — including shoe racks, bookshelves, display cabinets, and TV units — are also part of this section. A Pepperfry coupon code in the storage category is particularly useful for new homeowners who need to furnish multiple rooms in a single purchase, where the cumulative savings on a large order can be substantial.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Dining Tables & Sets — Up to 65% Off: </strong>
+    Pepperfry offers 4-seater and 6-seater dining sets in both solid sheesham wood and engineered wood, catering to buyers at different budget levels. Sheesham wood sets have a natural grain and warm tone that suits traditional Indian home interiors, while engineered wood options in darker finishes suit contemporary apartments. Prices range from ₹6,000 for a basic 4-seater set to ₹40,000 for solid wood 6-seater options.
+    <br />
+    Pepperfry promo codes for dining furniture are commonly available sitewide, meaning any active coupon code will apply to this category. If you are furnishing a new home, combining a dining set purchase with sofas in a single order may also qualify you for free delivery and additional checkout discounts that are only visible when your cart crosses certain value thresholds.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Home Décor & Wall Art — Up to 77% Off: </strong>
+    Home décor is Pepperfry's fastest-growing category and also its strongest gifting segment. The selection covers wall clocks, canvas prints, photo frames, decorative vases, showpieces, planters, and wall shelves — most items priced under ₹2,000, making this a low-risk category to explore even without a Pepperfry discount code. The sheer variety here is a genuine differentiator; you will find everything from minimalist Scandinavian-style prints to traditionally detailed Indian craft pieces.
+    <br />
+    The ₹1 flash deals that Pepperfry runs periodically appear most often in this category — placemats, bath mats, and small décor accessories at ₹1 to clear inventory. These deals go live unannounced and sell out within hours. CouponScrew flags them in real time so you can act before stock runs out.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Kitchen & Dining Accessories — Up to 55% Off: </strong>
+    Beyond major appliances, Pepperfry's kitchen and dining section covers everything from cookware sets and cutlery to serving bowls, storage containers, and table linens. This category sees strong year-round demand, with sales spiking before weddings and housewarmings when shoppers are building out a complete kitchen from scratch.
+    <br />
+    Pepperfry coupon codes apply to this category sitewide, meaning you can mix kitchen accessories with furniture in the same order and apply a single promo code to the entire cart. Super Value Days — which run on specific dates each month — offer additional stacking discounts on kitchen and household essentials.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Lighting & Lamps — Up to 80% Off: </strong>
+    Pepperfry's lighting section covers ceiling lights, chandeliers, floor lamps, bedside table lamps, wall sconces, pendant lights, and outdoor lighting. Brands like Philips, Tu Casa, CasaCraft, and Fos Lighting sit alongside private-label options at very competitive price points. The average order value in this category is under ₹3,000, making it one of the most accessible sections on the platform.
+    <br />
+    Pepperfry discount codes for lighting are particularly effective here because even small percentage discounts translate into meaningful savings on multi-item lighting orders. If you are setting up lighting for an entire flat — living room, bedroom, kitchen, and bathroom — the cumulative discount from a single coupon code applied to a ₹15,000+ lighting cart can save you ₹2,000–₹3,000 in one go.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Office & Study Furniture — Up to 80% Off: </strong>
+    Work-from-home demand permanently elevated Pepperfry's office furniture category post-2020, and the selection has grown accordingly. Ergonomic chairs, height-adjustable desks, L-shaped study tables, monitor stands, and laptop stands are all available. Brands like Woodsworth, Mintwud, and Nilkamal dominate the price-conscious end, while premium ergonomic chairs from specialised brands occupy the upper range.
+    <br />
+    A Pepperfry promo code on office furniture is especially valuable because this is a category where buyers often purchase multiple items together — chair, desk, bookshelf, and cable management — in a single setup order. The combined cart value quickly crosses ₹15,000, which is typically the threshold for bank card instant discounts to activate on top of your coupon code.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Mattresses & Sleep Essentials — Up to 60% Off: </strong>
+    Pepperfry stocks mattresses from major Indian sleep brands including Wakefit, Springtek, Sleepycat, Kurl-On, Durfi, and Centuary, with options across memory foam, orthopaedic, coir, and spring constructions. Prices start at ₹1,239 for basic coir options and go up to ₹40,000+ for premium dual-comfort memory foam mattresses.
+    <br />
+    The Big Snooz Sale — Pepperfry's dedicated sleep-focused sale event — is the best time to use a Pepperfry coupon code on mattresses, with discounts reaching up to 70%. Combining a mattress purchase with bedding, pillows, and protectors in the same order often qualifies for additional bundle savings visible at checkout.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Garden & Outdoor Furniture — Up to 75% Off: </strong>
+    Pepperfry's garden and outdoor section covers balcony chairs, garden swings, outdoor dining sets, planters, and weather-resistant furniture for terraces and open spaces. As urban apartments increasingly feature balconies and terraces as usable living spaces, this category has seen consistent growth. Prices start at ₹1,500 for basic balcony chairs and go up to ₹35,000 for complete outdoor dining sets.
+    <br />
+    Pepperfry promo codes apply sitewide, so any active coupon code works here. The Independence Day Sale in August and the Big Home Sale in October–November are the two windows where outdoor furniture sees the deepest discounts of the year.
+  </p>
+</div>
+
+<div className="space-y-4 text-slate-700">
+  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
+    Why Millions of Indian Shoppers Choose Pepperfry
+  </h3>
+
+  <p>
+    <strong className="text-[#2C2C40]">India's Deepest Furniture Catalogue — 1,00,000+ Products: </strong>
+    No other online furniture platform in India comes close to Pepperfry's catalogue depth. With over 1,00,000 products across eight categories and 10,000+ registered sellers, Pepperfry offers a range that runs from ₹1 kitchen accessories to ₹2,00,000+ luxury sofas — all on a single platform. Whether you are furnishing a studio apartment on a tight budget or designing a premium home with high-end pieces, Pepperfry has options at every price point without requiring you to visit multiple websites.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Studio Pepperfry — See Before You Buy at 50+ Offline Centres: </strong>
+    Most online furniture regrets come from buying without seeing the product in person — the sofa colour looked different on screen, the cushion was softer than expected, the wood finish had a different tone in real life. Studio Pepperfry exists specifically to solve this problem. With 50+ experience centres across 30+ cities, you can walk in, sit on the sofa, check the material quality and wood finish in person, and then place your order online — often at the same discounted price you found on CouponScrew. Free interior design consultation is also included at Studio Pepperfry locations at no extra cost.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">45-Day Return Policy — One of the Best in Online Furniture: </strong>
+    Pepperfry offers a 45-day return window on furniture — a standard that is genuinely difficult to match in the Indian online furniture market, where most competitors offer 7 to 10 days. This extended return policy significantly reduces the risk of buying large furniture online. Home décor and accessories have a 10-day return window. In serviceable cities, Pepperfry handles doorstep pickup on returns rather than requiring buyers to arrange their own logistics.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">No-Cost EMI on Orders Above ₹5,000: </strong>
+    Large furniture purchases do not have to strain your monthly budget. Pepperfry offers no-cost EMI on orders above ₹5,000 through HDFC Bank, SBI, ICICI Bank, Axis Bank, and Bajaj Finserv, with tenures ranging from 3 to 24 months. A ₹30,000 sofa on a 24-month no-cost EMI plan works out to ₹1,250 per month — a manageable amount for most households. It is worth checking the full EMI breakdown at checkout, as some offers include a processing fee that is worth factoring into the total cost.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Pepperfry Privilege Membership — Free Early Sale Access: </strong>
+    Pepperfry's Privilege membership is free to join and offers early sale access — sometimes 24 hours before the general public — along with member-exclusive coupon codes and priority customer support. For anyone who shops at Pepperfry more than once a year, signing up before the next Big Home Sale is a straightforward way to access the best deals before popular items sell out.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Pepperfry for Business — End-to-End Commercial Interiors: </strong>
+    Launched in 2026, Pepperfry for Business is a dedicated vertical for organisations that need to furnish offices, hospitality properties, retail stores, or institutional spaces. The service covers the full project lifecycle — space planning, design, procurement, manufacturing from Pepperfry's own 1.25 lakh sq ft facility, and on-site installation. It draws on a network of over 1,100 manufacturers and delivers across 500+ cities nationally. For startups, co-working spaces, or any business needing a single point of accountability for a large interior project, this is a service worth exploring directly with Pepperfry.
+  </p>
+</div>
+
+                
+
                 <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Pepperfry Coupon Code</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Takes under 60 seconds. Here's the exact sequence.</p>
-                  <div className="space-y-6">
-                    {[
-                      "Click 'Get Deal' or 'Copy Code' above. For no-code deals, 'Get Deal' takes you straight to the discounted Pepperfry page — no code needed.",
-                      "Browse and add your item to the cart. Check the offer description for any category exclusions — most deals cover the full catalogue.",
-                      "Go to checkout. Find the 'Apply Coupon' field just above the Order Summary — this is where you paste your Pepperfry promo code.",
-                      "Paste your code and click 'Apply.' The discount updates in your order summary immediately.",
-                      "Pick your delivery slot. Pepperfry does time-slot delivery for furniture — pick the date and window that actually works for you.",
-                      "At the payment step, open the 'Offers' tab. HDFC, SBI, ICICI, and Axis bank card discounts stack on top of your coupon. Apply both. That's two savings layers on one order.",
-                      "Complete payment. Confirmation with tracking details comes via SMS and email."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Pepperfry Coupon Code — Step by Step</h3>
+  <p className="text-gray-700 font-bold -mt-4">Using a Pepperfry discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
+  <div className="space-y-6">
+    {[
+      "Find Your Code on CouponScrew — Browse the verified Pepperfry offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant Pepperfry page.",
+      "Browse and Add to Cart — Go to Pepperfry and select your products. Check the offer description for any category exclusions before adding items to your cart.",
+      "Go to Checkout — Proceed to checkout. Find the \"Apply Coupon\" field just above the Order Summary section on the checkout page.",
+      "Paste Your Pepperfry Promo Code — Paste the code you copied from CouponScrew and click Apply. The discount updates in your order summary immediately.",
+      "Pick Your Delivery Slot — Pepperfry offers time-slot delivery for furniture. Choose the date and time window that works for you before proceeding to payment.",
+      "Stack Your Bank Card Offer — At the payment step, open the Offers tab. HDFC, SBI, ICICI, and Axis bank card discounts are displayed here and stack on top of your coupon code. Apply both. This is the step most shoppers miss — and it is where you unlock the second layer of savings.",
+      "Complete Payment — Confirm your order. You will receive a delivery confirmation with tracking details via SMS and email."
+    ].map((step, i) => (
+      <div key={i} className="flex gap-6 items-start">
+        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
+          {i + 1}
+        </div>
+        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
+      </div>
+    ))}
+  </div>
+</div>
 
-                {/* Section 5: Types of Offers */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Types of Pepperfry Offers Available</h3>
-                  <p><strong>Percentage Discounts (Up to 75% OFF):</strong> The most common offer type on Pepperfry. A Pepperfry discount code is not always needed here — most category-wide markdowns are pre-applied. What you see is what you pay.</p>
-                  <p><strong>Flat ₹1 Flash Deals:</strong> Inventory-clearance deals on specific SKUs — bath mats, placemats, kitchen tools at ₹1. Limited stock. These sell out fast, often within hours. CouponsCrew flags them as soon as they go live.</p>
-                  <p><strong>Cashback (Up to 20%):</strong> Applied as Pepperfry credits on select orders. Credited within 24–48 hours of delivery. Use it on your next order — credits don't expire quickly, but do check the validity period.</p>
-                  <p><strong>Bank Card Instant Discounts:</strong> HDFC, SBI, ICICI, Axis — extra 10–15% instant discount on orders above ₹15,000. Applied automatically at the payment step. This is the layer most people miss.</p>
-                  <p><strong>No-Cost EMI:</strong> On orders above ₹5,000. Zero interest on select offers — but 'no cost' sometimes has a processing fee. Check the full EMI breakdown at checkout before committing.</p>
-                  <p><strong>Seasonal Sales:</strong> Big Home Sale (March–April and October–November), Diwali Home Sale, Republic Day Sale, End-of-Season sales. These are the moments when Pepperfry's discounts are real, not just 'was ₹49,999' theatrical pricing.</p>
-                  <p><strong>New User Offers:</strong> First-order discount for first-time Pepperfry accounts. Check the checkout page — the offer is sometimes only visible there, not on the listing.</p>
-                  <p><strong>Privilege Member Deals:</strong> Early sale access + exclusive codes. Free to join. If you're buying furniture, spending 2 minutes signing up pays off before the next Big Home Sale.</p>
-                </div>
+                <div className="space-y-4 text-slate-700">
+  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
+    Why Millions of Indian Shoppers Choose Pepperfry
+  </h3>
 
-                {/* Section 6: Popular Categories & Bestsellers */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Popular Categories & Bestsellers at Pepperfry</h3>
-                  <p>Pepperfry covers every room. Here's what actually sells — and what to expect to pay.</p>
-                  <p><strong>Sofas & Sectionals:</strong> Pepperfry's #1 revenue category. 3-seater fabric sofas in grey/beige, L-shaped sectionals, sofa-cum-beds for studio apartments — the consistent bestsellers. Price range: ₹8,000–₹80,000+.</p>
-                  <p><strong>Beds & Bed Frames:</strong> Queen and king-size engineered wood beds with hydraulic storage drawers are the top-selling type. The storage drawer is the feature most buyers say they didn't know they needed until they had it. Price range: ₹10,000–₹60,000.</p>
-                  <p><strong>Wardrobes:</strong> Sliding-door and 3-door wardrobes, walnut and white finishes, engineered wood. Price range: ₹8,000–₹40,000.</p>
-                  <p><strong>Dining Tables & Sets:</strong> 4-seater and 6-seater sets in solid sheesham and engineered wood. Price range: ₹6,000–₹40,000.</p>
-                  <p><strong>Home Décor & Wall Art:</strong> The fastest-growing category. Wall clocks, photo frames, decorative vases, canvas prints. Most items under ₹2,000 — also Pepperfry's strongest gifting segment.</p>
-                  <p><strong>Office Furniture:</strong> Ergonomic chairs and study desks. Work-from-home demand pushed this category hard post-2020. Price range: ₹3,000–₹25,000.</p>
-                  <p><strong>Lighting:</strong> Ceiling lights, floor lamps, bedside table lamps. Average order value under ₹3,000.</p>
-                  <p><strong>Kitchen & Dining Accessories:</strong> Cutlery sets, serving bowls, placemats, storage containers. Strong year-round demand, spikes before weddings and housewarmings.</p>
-                </div>
+  <p>
+    <strong className="text-[#2C2C40]">India's Deepest Furniture Catalogue — 1,00,000+ Products: </strong>
+    No other online furniture platform in India comes close to Pepperfry's catalogue depth. With over 1,00,000 products across eight categories and 10,000+ registered sellers, Pepperfry offers a range that runs from ₹1 kitchen accessories to ₹2,00,000+ luxury sofas — all on a single platform. Whether you are furnishing a studio apartment on a tight budget or designing a premium home with high-end pieces, Pepperfry has options at every price point without requiring you to visit multiple websites.
+  </p>
 
-                {/* Section 7: Tips to Maximize Savings */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Tips to Maximize Your Savings at Pepperfry</h3>
-                  <p><strong>Stack bank offers on coupon codes:</strong> Apply coupon first at the 'Apply Coupon' field. Then pay via HDFC, SBI, ICICI, or Axis. The bank's instant discount applies to the already-reduced price. That's two layers. Most Pepperfry shoppers use one. (The bank card offer discovery is genuinely one of those 'how did I not know this' moments — it saved one shopper ₹820 on a ₹8,200 order in under 30 seconds. Their spouse's SBI card. One checkout.)</p>
-                  <p><strong>Target the Big Home Sale:</strong> March–April and October–November. Pepperfry's deepest event — up to 75% across all categories. CouponsCrew publishes codes ahead of the sale start date. Bookmark this page.</p>
-                  <p><strong>Use no-cost EMI for large furniture buys:</strong> Orders above ₹5,000 qualify. 3–24 months, zero interest on select bank offers. For a ₹30,000 sofa that's ₹1,250/month. Worth running the numbers.</p>
-                  <p><strong>Watch the Flat ₹1 Flash Deals:</strong> These go live unannounced and sell out the same day. CouponsCrew flags them in real time. If you see one — act.</p>
-                  <p><strong>Join Pepperfry Privilege (free):</strong> Free to join. Early access, exclusive codes, priority support. Sign up before the next sale, not during.</p>
-                  <p><strong>Buy room-complete sets:</strong> Sofa + coffee table + rug in one order often qualifies for free delivery and can trigger a bundle discount visible only at checkout. Don't split the order.</p>
-                </div>
+  <p>
+    <strong className="text-[#2C2C40]">Studio Pepperfry — See Before You Buy at 50+ Offline Centres: </strong>
+    Most online furniture regrets come from buying without seeing the product in person — the sofa colour looked different on screen, the cushion was softer than expected, the wood finish had a different tone in real life. Studio Pepperfry exists specifically to solve this problem. With 50+ experience centres across 30+ cities, you can walk in, sit on the sofa, check the material quality and wood finish in person, and then place your order online — often at the same discounted price you found on CouponScrew. Free interior design consultation is also included at Studio Pepperfry locations at no extra cost.
+  </p>
 
-                {/* Section 8: Seasonal Sale Calendar */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Pepperfry Seasonal & Festive Sale Calendar</h3>
-                  <p>Pepperfry's biggest sales follow a predictable calendar. Here's when to plan your purchase.</p>
-                  <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0]">
-                    <table className="w-full text-xs border-collapse">
-                      <thead>
-                        <tr>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Sale Name</th>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Typical Period</th>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Best Category</th>
-                          <th className="bg-[#F0EEFF] text-[#5B4FBE] font-black px-4 py-3 text-left">Avg. Discount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {[
-                          { name: 'Big Home Sale', period: 'March–April & Oct–Nov', category: 'Sofas, Beds, All Furniture', discount: 'Up to 75% OFF' },
-                          { name: 'Diwali Home Sale', period: 'October–November', category: 'Décor, Lighting, Furnishings', discount: 'Up to 70% OFF' },
-                          { name: 'Republic Day Sale', period: 'January', category: 'All Categories', discount: 'Up to 60% OFF' },
-                          { name: 'End-of-Season Sale', period: 'Jan–Feb & July–August', category: 'Furniture, Wardrobes', discount: 'Up to 65% OFF' },
-                          { name: 'Independence Day Sale', period: 'August', category: 'All Categories', discount: 'Up to 50% OFF' },
-                          { name: 'Holi Home Sale', period: 'March', category: 'Décor & Colourful Furnishings', discount: 'Up to 55% OFF' },
-                        ].map((row, i) => (
-                          <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAFA]'}>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-black text-[#1A1A2E]">{row.name}</td>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A]">{row.period}</td>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A]">{row.category}</td>
-                            <td className="px-4 py-3 border-b border-[#E8E8F0] font-black text-[#FF5722]">{row.discount}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                  <p>CouponsCrew updates this page with live codes before every major Pepperfry sale. Bookmark it — the window at the start of each sale is when the best deals are actually available.</p>
-                </div>
+  <p>
+    <strong className="text-[#2C2C40]">45-Day Return Policy — One of the Best in Online Furniture: </strong>
+    Pepperfry offers a 45-day return window on furniture — a standard that is genuinely difficult to match in the Indian online furniture market, where most competitors offer 7 to 10 days. This extended return policy significantly reduces the risk of buying large furniture online. Home décor and accessories have a 10-day return window. In serviceable cities, Pepperfry handles doorstep pickup on returns rather than requiring buyers to arrange their own logistics.
+  </p>
 
-                {/* Section 9: Why Use CouponsCrew */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Why Use CouponsCrew for Pepperfry Deals</h3>
-                  <p>We verify Pepperfry codes every morning. Expired codes come off automatically — you'll never land here and find a graveyard of dead promos from 2023. Every deal link goes straight to the verified Pepperfry listing. All Pepperfry sales today are flagged as they go live — bank card offers, cashback, and flash ₹1 deals included. No registration. Completely free. Go grab the code before it's gone.</p>
-                </div>
+  <p>
+    <strong className="text-[#2C2C40]">No-Cost EMI on Orders Above ₹5,000: </strong>
+    Large furniture purchases do not have to strain your monthly budget. Pepperfry offers no-cost EMI on orders above ₹5,000 through HDFC Bank, SBI, ICICI Bank, Axis Bank, and Bajaj Finserv, with tenures ranging from 3 to 24 months. A ₹30,000 sofa on a 24-month no-cost EMI plan works out to ₹1,250 per month — a manageable amount for most households. It is worth checking the full EMI breakdown at checkout, as some offers include a processing fee that is worth factoring into the total cost.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Pepperfry Privilege Membership — Free Early Sale Access: </strong>
+    Pepperfry's Privilege membership is free to join and offers early sale access — sometimes 24 hours before the general public — along with member-exclusive coupon codes and priority customer support. For anyone who shops at Pepperfry more than once a year, signing up before the next Big Home Sale is a straightforward way to access the best deals before popular items sell out.
+  </p>
+
+  <p>
+    <strong className="text-[#2C2C40]">Pepperfry for Business — End-to-End Commercial Interiors: </strong>
+    Launched in 2026, Pepperfry for Business is a dedicated vertical for organisations that need to furnish offices, hospitality properties, retail stores, or institutional spaces. The service covers the full project lifecycle — space planning, design, procurement, manufacturing from Pepperfry's own 1.25 lakh sq ft facility, and on-site installation. It draws on a network of over 1,100 manufacturers and delivers across 500+ cities nationally. For startups, co-working spaces, or any business needing a single point of accountability for a large interior project, this is a service worth exploring directly with Pepperfry.
+  </p>
+
+  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
+    Shop Smarter — Make Every Rupee Count at Pepperfry
+  </h3>
+
+  <p>
+    Every piece of furniture you buy is a long-term investment in your home — and there is no reason to pay full price for any of it. CouponScrew keeps every active Pepperfry coupon code, promo code, and discount code verified and ready for you, updated daily, completely free. Bookmark this page before your next Pepperfry order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price. Your home deserves great furniture — and great furniture does not have to cost a fortune.
+  </p>
+
+</div>
+
+
+
+                
 
                 {!isReadMore && (
                   <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
@@ -887,40 +1070,82 @@ export default function PepperfryStore() {
               </button>
 
               {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h3 className="text-2xl font-black text-black mb-8">Frequently Asked Questions</h3>
-                {[
-                  { q: "How do I use a Pepperfry coupon code?", a: "Copy the code by clicking 'Copy Code' above. Add your item to the Pepperfry cart. At checkout, find the 'Apply Coupon' field above the Order Summary, paste, click 'Apply.' Discount updates immediately. For no-code deals — click 'Get Deal' and the discount is already applied when you land on Pepperfry." },
-                  { q: "Can I stack my Pepperfry code with a bank card offer?", a: "Yes — apply the coupon code first in the 'Apply Coupon' field, then pay via HDFC, SBI, ICICI, or Axis. The bank discount applies to the already-reduced amount. Two layers. One order. This is the move." },
-                  { q: "Why isn't my Pepperfry code working?", a: "Usually one of four reasons: expired, minimum cart value not met, product category excluded, or new-user-only restriction. CouponsCrew verifies codes daily — if one fails, try a Pepperfry discount code from further down the list, or use a no-code deal instead." },
-                  { q: "Does Pepperfry offer no-cost EMI?", a: "Yes. On orders above ₹5,000 via HDFC, SBI, ICICI, Axis, and Bajaj Finserv. 3 to 24 months. 'No cost' means zero interest — but check for processing fees on the payment page, because some offers have a small fee baked in." },
-                  { q: "What is Pepperfry's return policy?", a: "45 days on furniture. 10 days on décor and accessories. Items must be in original condition. Pepperfry arranges doorstep pickup in serviceable cities — you don't have to figure out how to ship a wardrobe back. For context: most online furniture sellers give 7 days. 45 is genuinely market-leading." },
-                  { q: "What is Studio Pepperfry?", a: "Pepperfry's offline experience network — 50+ studios across 30+ Indian cities. Walk in, sit on the sofa, check the finish in person, order online. Free interior design consultation at every studio. The rule most buyers wish they'd followed: see the furniture before you buy it. Studio Pepperfry makes that possible without driving to a mall." },
-                  { q: "When does Pepperfry hold its biggest sales?", a: "The Big Home Sale — March–April and October–November — is Pepperfry's largest event, up to 75% off across all categories. The Diwali Home Sale in October–November is the second-biggest. CouponsCrew publishes active codes at the start of every sale. Bookmark this page." },
-                  { q: "Is CouponsCrew free to use?", a: "Completely free. No registration. Codes are verified every morning, expired ones removed automatically. No coupon graveyard, no fake exclusives. Just the deals that actually work." }
-                ].map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+             <div className="mt-20 space-y-4">
+  <h3 className="text-2xl font-black text-black mb-8">
+    Frequently Asked Questions About Pepperfry Coupon Codes
+  </h3>
+  {[
+    {
+      q: "What is the best Pepperfry coupon code available right now?",
+      a: "The best active Pepperfry coupon code is listed at the top of this page with its current success rate and verified date. For new users, HELLO1500 gives a flat ₹1,500 off your first order. Sitewide codes offering up to 75% off plus 20% cashback are also regularly available for all users."
+    },
+    {
+      q: "Can I stack a Pepperfry coupon code with a bank card offer?",
+      a: "Yes. Apply your CouponScrew promo code at the \"Apply Coupon\" field at checkout, then pay with an eligible HDFC, SBI, ICICI, or Axis card. The bank's instant discount — typically 10–15% — applies on top of your coupon, giving you two discount layers on the same order."
+    },
+    {
+      q: "Why is my Pepperfry promo code not working?",
+      a: "A Pepperfry discount code may fail if it has expired, if the products in your cart are not eligible for that specific promotion, or if you have not met the minimum order value stated in the offer terms. Check the terms listed with each code on CouponScrew before applying."
+    },
+    {
+      q: "Does Pepperfry offer no-cost EMI?",
+      a: "Yes. No-cost EMI is available on orders above ₹5,000 through HDFC Bank, SBI, ICICI Bank, Axis Bank, and Bajaj Finserv for tenures of 3 to 24 months. Check the full EMI breakdown at checkout, as some offers include a processing fee."
+    },
+    {
+      q: "What is Pepperfry's return policy?",
+      a: "Pepperfry offers a 45-day return window on furniture and a 10-day window on home décor items. Products must be in original condition. In serviceable cities, Pepperfry arranges doorstep pickup for returns. A cancellation fee of up to 2.5% of the paid amount applies at the time of refund processing."
+    },
+    {
+      q: "What is Studio Pepperfry?",
+      a: "Studio Pepperfry is Pepperfry's network of 50+ offline experience centres across 30+ cities in India. You can visit a Studio to see furniture in person, check material quality and finish, and get a free interior design consultation — then place your order online at the same discounted price."
+    },
+    {
+      q: "When does Pepperfry hold its biggest sales?",
+      a: "Pepperfry's two largest annual events are the Big Home Sale (March–April and October–November) and the Apno Wali Diwali Sale (October–November), both offering up to 75% off sitewide. The Republic Day Sale in January and Independence Day Sale in August are also major savings windows."
+    },
+    {
+      q: "Is there a new user offer on Pepperfry?",
+      a: "Yes. New users can get a flat ₹1,500 off their first order using the code HELLO1500 at checkout. Pepperfry also credits new accounts with ₹10,000 in wallet credits, redeemable at up to ₹1,000 per order. Check the sign-up page for the current new user offer as the exact amount may change."
+    },
+    {
+      q: "Does Pepperfry have a military or armed forces discount?",
+      a: "Yes. Pepperfry's Honouring Uniformed Forces programme offers a dedicated 12% discount for serving and retired defence and paramilitary personnel and their families. It is available both online and in Studio Pepperfry locations. Contact Pepperfry at 022-6157-6157 for current terms."
+    },
+    {
+      q: "How does Pepperfry cashback work?",
+      a: "Cashback on Pepperfry is credited to your Pepperfry Wallet as credits, which auto-apply at checkout and can offset up to 15% of the cart value per order. Credits expire five days from the date of issue and cannot be transferred or converted to cash."
+    },
+    {
+      q: "Are there any app-exclusive deals on Pepperfry?",
+      a: "Yes. Pepperfry lists deals on the mobile app that are not always available on the desktop site. Downloading the app and enabling notifications ensures you do not miss app-only Pepperfry promo codes and flash offers."
+    },
+    {
+      q: "What is the Pepperfry customer support number?",
+      a: "You can reach Pepperfry customer support at 022-6157-6157 or by emailing cs@pepperfry.com for queries related to orders, returns, and delivery."
+    }
+  ].map((faq, i) => (
+    <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
+      <button
+        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+        className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
+      >
+        <span className="text-black font-black text-base">{faq.q}</span>
+        <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
+          <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
+        </div>
+      </button>
+      <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
+        <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+      </div>
+    </div>
+  ))}
+</div>
 
             </div>
 
             {/* Sidebar */}
             <div className="space-y-10">
-              <div className="bg-[#e8f6f8] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
                 <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Pepperfry Searches</h3>
                 <div className="flex flex-wrap gap-2.5">
                   {["Pepperfry Coupons", "Furniture Sale India", "Sofa Set Offers", "Pepperfry Big Home Sale", "Home Décor Deals", "No-Cost EMI Furniture", "Pepperfry Bank Offers", "CouponsCrew Home"].map(tag => (
@@ -951,7 +1176,7 @@ export default function PepperfryStore() {
                         <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
                         <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                       </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Pepperfry deal: ${deal.heading}`} className="bg-[#e8f6f8] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Pepperfry deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
                     </div>
                   ))}
                 </div>

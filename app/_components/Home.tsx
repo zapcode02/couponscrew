@@ -198,6 +198,107 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-white py-10 border-b border-[#E8E8F0]">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="flex items-center justify-between mb-6">
+      <div>
+        <h2 className="text-2xl font-black text-[#1A1A2E]">Amazon Deals by Category</h2>
+        <p className="text-xs text-gray-500 font-medium mt-1">Explore top verified Amazon discounts across all departments</p>
+      </div>
+      
+      {/* Navigation Buttons */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => {
+            const container = document.getElementById('amazon-categories-slider');
+            if (container) container.scrollBy({ left: -380, behavior: 'smooth' });
+          }}
+          className="w-9 h-9 rounded-xl border border-[#E8E8F0] flex items-center justify-center text-gray-600 hover:bg-[#5B4FBE] hover:text-white hover:border-[#5B4FBE] transition-all shadow-sm"
+          aria-label="Previous categories"
+        >
+          <ChevronLeft size={18} />
+        </button>
+        <button
+          onClick={() => {
+            const container = document.getElementById('amazon-categories-slider');
+            if (container) container.scrollBy({ left: 380, behavior: 'smooth' });
+          }}
+          className="w-9 h-9 rounded-xl border border-[#E8E8F0] flex items-center justify-center text-gray-600 hover:bg-[#5B4FBE] hover:text-white hover:border-[#5B4FBE] transition-all shadow-sm"
+          aria-label="Next categories"
+        >
+          <ChevronRight size={18} />
+        </button>
+      </div>
+    </div>
+
+    {/* Horizontal Scroll Slider - 3 Cards View */}
+    <div 
+      id="amazon-categories-slider"
+      className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4 pt-1 -mx-2 px-2"
+      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+    >
+      {[
+        { name: "Digital Music", href: "https://www.amazon.com/s?k=Digital+Music&crid=2NIFBXLL5Z1A3&sprefix=%2Caps%2C255&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp" },
+        { name: "Electronics", href: "https://www.amazon.com/s?k=Electronics&crid=21IFEFQYKAM59&sprefix=digital+music%2Caps%2C308&ref=nb_sb_noss_1", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp" },
+        { name: "Girls' Fashion", href: "https://www.amazon.com/s?k=Girls%27+Fashion&crid=XX07RQNM2V6L&sprefix=%2Caps%2C299&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp" },
+        { name: "Health & Household", href: "https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp" },
+        { name: "Home & Kitchen", href: "https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp" },
+        { name: "Industrial & Scientific", href: "https://www.amazon.com/s?k=Industrial+%26+Scientific&crid=313VQV9YAJTJ5&sprefix=%2Caps%2C297&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp" },
+        { name: "Kindle Store", href: "https://www.amazon.com/s?k=Kindle+Store&crid=TOGVXR58FT4D&sprefix=%2Caps%2C285&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp" },
+        { name: "Luggage", href: "https://www.amazon.com/s?k=Luggage&crid=20S9KCDUJCXOW&sprefix=%2Caps%2C308&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp" },
+        { name: "Men's Fashion", href: "https://www.amazon.com/s?k=Men%27s+Fashion&crid=32HY571UHUFNA&sprefix=luggage%2Caps%2C332&ref=nb_sb_noss_1", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp" },
+        { name: "Movies & TV", href: "https://www.amazon.com/s?k=Movies+%26+TV&crid=10NKB4YZZDE9O&sprefix=%2Caps%2C293&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp" },
+        { name: "Music, CDs & Vinyl", href: "https://www.amazon.com/s?k=Music%2C+CDs+%26+Vinyl&crid=3PGC2A6OF48YT&sprefix=%2Caps%2C292&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp" },
+        { name: "Pet Supplies", href: "https://www.amazon.com/s?k=Pet+Supplies&crid=2FDO7PR0RR4EE&sprefix=%2Caps%2C307&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp" },
+        { name: "Prime Video", href: "https://www.primevideo.com/region/eu/", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/prime-video_rh68ok.webp" },
+        { name: "Software", href: "https://www.amazon.com/s?k=Software&crid=2UANDI5I6UN7A&sprefix=%2Caps%2C314&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp" },
+        { name: "Sports & Outdoors", href: "https://www.amazon.com/s?k=Sports+%26+Outdoors&crid=31W9FSA2B00K0&sprefix=%2Caps%2C310&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp" },
+        { name: "Tools & Home Improvement", href: "https://www.amazon.com/s?k=Tools+%26+Home+Improvement&crid=3G0COOI6O799D&sprefix=%2Caps%2C291&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp" },
+        { name: "Toys & Games", href: "https://www.amazon.com/s?k=Toys+%26+Games&crid=3N8EHDC3584CS&sprefix=%2Caps%2C292&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp" },
+        { name: "Video Games", href: "https://www.amazon.com/s?k=Video+Games&crid=PAOA9FXMRRMR&sprefix=%2Caps%2C304&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp" },
+        { name: "Women's Fashion", href: "https://www.amazon.com/s?k=Women%27s+Fashion&crid=OA50VIVKRLY7&sprefix=%2Caps%2C322&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp" }
+      ].map((card, i) => (
+        <a 
+          key={i} 
+          href={card.href} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#FF9900] transition-all group/card block flex flex-col"
+        >
+          <div className="w-full overflow-hidden bg-gray-50 relative">
+            <img 
+              src={card.img} 
+              alt={card.name} 
+              className="w-full h-auto object-cover group-hover/card:scale-105 transition-transform duration-500 block" 
+              referrerPolicy="no-referrer" 
+            />
+          </div>
+          <div className="p-4 flex flex-col flex-grow justify-between bg-white border-t border-[#f0f0f0]">
+            <div className="font-black text-base text-[#1A1A2E] line-clamp-1 group-hover/card:text-[#FF9900] transition-colors">
+              {card.name}
+            </div>
+            <div className="mt-3 w-full bg-[#FF9900] hover:bg-[#E68A00] text-black font-extrabold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all shadow-sm group-hover/card:shadow-md">
+              <span>View Deals</span>
+              <ArrowRight size={14} />
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-8 flex justify-center">
+      <Link
+        href="/stores/amazon-coupon-code"
+        className="inline-flex items-center gap-2 bg-[#131921] hover:bg-[#232F3E] text-white font-bold px-8 py-3 rounded-xl text-sm transition-all shadow-md hover:shadow-lg border border-[#FF9900]/30"
+      >
+        <span>Browse All Amazon Categories</span>
+        <ArrowRight size={16} className="text-[#FF9900]" />
+      </Link>
+    </div>
+  </div>
+</section>
+
         {/* ── PRODUCT CATEGORIES ────────────────────────────────────────── */}
         <section className="bg-white py-10 border-b border-[#E8E8F0]">
           <div className="max-w-7xl mx-auto px-6">

@@ -8,6 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${baseUrl}/`, lastModified: now, changeFrequency: 'daily', priority: 1.0 },
     { url: `${baseUrl}/stores`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/stores/amazon-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/stores/pepperfry-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/products`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/deals`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/deals-of-the-day`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },

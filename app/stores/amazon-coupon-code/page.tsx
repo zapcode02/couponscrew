@@ -1,27 +1,27 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
-import PepperfryStore from './_components/PepperfryStore'
+import AmazonStore from './_components/AmazonStore'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  // Primary keyword once | 62 chars
-  title: 'Pepperfry Coupon Code, Promo Codes & Offers June 2026 | CouponScrew',
+  // Primary keyword first | ~58 chars
+  title: 'Amazon Coupon Code - Up to 90% OFF Today | CouponsCrew',
 
-  // Primary keyword once + both secondary keywords once | 156 chars
+  // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Find manually verified Pepperfry coupon codes, promo codes & discount deals on CouponScrew. Save up to 80% on furniture, home décor & furnishings today.',
+    'Use Amazon coupon code & Amazon discount code on CouponsCrew to save up to 90% off on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals updated daily!',
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/stores/pepperfry',
+    canonical: 'https://www.couponscrew.com/stores/amazon-coupon-code',
   },
 
   openGraph: {
-    title: 'Pepperfry Coupon Code, Promo Codes & Offers June 2026 | CouponScrew',
+    title: 'Amazon Coupon Code - Up to 90% OFF Today | CouponsCrew',
     description:
-      'Find manually verified Pepperfry coupon codes, promo codes & discount deals on CouponScrew. Save up to 80% on furniture, home décor & furnishings today.',
-    url: 'https://www.couponscrew.com/stores/pepperfry',
-    siteName: 'CouponScrew',
+      'Use Amazon coupon code & Amazon discount code on CouponsCrew to save up to 90% off on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals updated daily!',
+    url: 'https://www.couponscrew.com/stores/amazon-coupon-code',
+    siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -29,16 +29,16 @@ export const metadata: Metadata = {
         url: 'https://www.couponscrew.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Pepperfry Coupons — CouponScrew',
+        alt: 'Amazon Coupon Code — CouponsCrew',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Pepperfry Coupon Code, Promo Codes & Offers June 2026 | CouponScrew',
+    title: 'Amazon Coupon Code - Up to 90% OFF Today | CouponsCrew',
     description:
-      'Find manually verified Pepperfry coupon codes, promo codes & discount deals on CouponScrew. Save up to 80% on furniture, home décor & furnishings today.',
+      'Use Amazon coupon code & Amazon discount code on CouponsCrew to save up to 90% off on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals updated daily!',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -67,14 +67,14 @@ const schema = {
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': 'https://www.couponscrew.com/stores/pepperfry/#webpage',
-      url: 'https://www.couponscrew.com/stores/pepperfry',
-      name: 'Pepperfry Coupon Code, Promo Codes & Offers June 2026 | CouponScrew',
-      description: 'Find manually verified Pepperfry coupon codes, promo codes & discount deals on CouponScrew.',
+      '@id': 'https://www.couponscrew.com/stores/amazon-coupon-code/#webpage',
+      url: 'https://www.couponscrew.com/stores/amazon-coupon-code',
+      name: 'Amazon Coupon Code - Up to 90% OFF Today | CouponsCrew',
+      description: 'Use Amazon coupon code & Amazon discount code on CouponsCrew to save up to 90% off on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals updated daily!',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
-        name: 'CouponScrew',
+        name: 'CouponsCrew',
         url: 'https://www.couponscrew.com',
       },
       breadcrumb: {
@@ -95,8 +95,8 @@ const schema = {
           {
             '@type': 'ListItem',
             position: 3,
-            name: 'Pepperfry',
-            item: 'https://www.couponscrew.com/stores/pepperfry',
+            name: 'Amazon Coupon Code',
+            item: 'https://www.couponscrew.com/stores/amazon-coupon-code',
           },
         ],
       },
@@ -112,7 +112,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Suspense fallback={null}>
-        <PepperfryStore />
+        <AmazonStore />
       </Suspense>
     </>
   )

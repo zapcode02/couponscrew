@@ -8,6 +8,8 @@ Couponscrew helps Indian shoppers find verified, working coupon codes, deals, an
 
 - [Home](https://www.couponscrew.com/): Overview of Couponscrew, top coupons and deals, and how the verification process works.
 - [All Stores](https://www.couponscrew.com/stores): Browse all 500+ partner brands and stores with active, verified coupons.
+- [Amazon Coupon Code](https://www.couponscrew.com/stores/amazon-coupon-code): Verified Amazon coupon codes and deals across electronics, fashion, home & more.
+- [Pepperfry Coupon Code](https://www.couponscrew.com/stores/pepperfry-coupon-code): Verified Pepperfry coupon codes and deals on furniture & home décor.
 - [Products](https://www.couponscrew.com/products): Discounted products across categories with verified deal pricing.
 - [Deals of the Day](https://www.couponscrew.com/deals-of-the-day): Daily-refreshed selection of the best verified coupon codes.
 - [Deals of the Month](https://www.couponscrew.com/deals-of-the-month): Curated top brand and product deals for the current month.

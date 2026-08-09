@@ -60,7 +60,9 @@ export default function Stores() {
 
   const handleStoreClick = (store: Store) => {
     if (store.name.toLowerCase() === 'pepperfry') {
-      router.push('/stores/pepperfry');
+      router.push('/stores/pepperfry-coupon-code');
+    } else if (store.name.toLowerCase() === 'amazon') {
+      router.push('/stores/amazon-coupon-code');
     }
   };
 
@@ -74,20 +76,32 @@ export default function Stores() {
   const [newsEmail, setNewsEmail] = useState<string>('');
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
 
-  // Sidebar list categories structured configuration
-  const CATEGORIES: Category[] = useMemo(() => [
-    { id: 'cat-all', name: 'All Stores', icon: LayoutGrid, count: '500+' },
-    { id: 'cat-fashion', name: 'Fashion & Lifestyle', icon: ShoppingBag, count: 65 },
-    { id: 'cat-electronics', name: 'Electronics', icon: Monitor, count: 48 },
-    { id: 'cat-food', name: 'Food & Grocery', icon: UtensilsCrossed, count: 42 },
-    { id: 'cat-travel', name: 'Travel', icon: Plane, count: 38 },
-    { id: 'cat-beauty', name: 'Health & Beauty', icon: Heart, count: 32 },
-    { id: 'cat-hosting', name: 'Web Hosting', icon: Globe, count: 18 },
-    { id: 'cat-edu', name: 'Education', icon: GraduationCap, count: 24 },
-    { id: 'cat-ent', name: 'Entertainment', icon: Tv, count: 28 },
-    { id: 'cat-finance', name: 'Finance', icon: Wallet, count: 15 },
-    { id: 'cat-others', name: 'Others', icon: MoreHorizontal, count: 30 }
-  ], []);
+  // Sidebar list categories structured configuration — counts derived from STORES_DATA
+  const CATEGORIES: Category[] = useMemo(() => {
+    const countFor = (categoryName: string) =>
+      STORES_DATA.filter((store) => store.category.toLowerCase() === categoryName.toLowerCase()).length;
+
+    const namedCategories = [
+      { id: 'cat-fashion', name: 'Fashion & Lifestyle', icon: ShoppingBag },
+      { id: 'cat-electronics', name: 'Electronics', icon: Monitor },
+      { id: 'cat-food', name: 'Food & Grocery', icon: UtensilsCrossed },
+      { id: 'cat-travel', name: 'Travel', icon: Plane },
+      { id: 'cat-beauty', name: 'Health & Beauty', icon: Heart },
+      { id: 'cat-hosting', name: 'Web Hosting', icon: Globe },
+      { id: 'cat-edu', name: 'Education', icon: GraduationCap },
+      { id: 'cat-ent', name: 'Entertainment', icon: Tv },
+      { id: 'cat-finance', name: 'Finance', icon: Wallet }
+    ];
+
+    const namedCounts = namedCategories.map((cat) => countFor(cat.name));
+    const othersCount = STORES_DATA.length - namedCounts.reduce((sum, c) => sum + c, 0);
+
+    return [
+      { id: 'cat-all', name: 'All Stores', icon: LayoutGrid, count: STORES_DATA.length },
+      ...namedCategories.map((cat, i) => ({ ...cat, count: namedCounts[i] })),
+      { id: 'cat-others', name: 'Others', icon: MoreHorizontal, count: othersCount }
+    ];
+  }, []);
 
   // Filter & Sort Logic combined
   const filteredAndSorted = useMemo(() => {

@@ -16,6 +16,21 @@ export interface Store {
 
 export const STORES_DATA: Store[] = [
   {
+    id: 'store-1',
+    name: 'Amazon',
+    logo: 'amazon',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg',
+    logoColor: '#146EB4',
+    logoBg: '#EAF2FB',
+    category: 'Electronics',
+    offerCount: 120,
+    maxDiscount: 90,
+    discountLabel: 'Up to 90% OFF',
+    isPopular: true,
+    isFeatured: true,
+    description: 'One of the world\'s largest online marketplaces for electronics, fashion & more'
+  },
+  {
     id: 'store-2',
     name: 'Pepperfry',
     logo: 'pepperfry',
