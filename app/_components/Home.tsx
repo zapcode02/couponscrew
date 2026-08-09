@@ -266,11 +266,15 @@ export default function Home() {
           className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#FF9900] transition-all group/card block flex flex-col"
         >
           <div className="w-full overflow-hidden bg-gray-50 relative">
-            <img 
-              src={card.img} 
-              alt={card.name} 
-              className="w-full h-auto object-cover group-hover/card:scale-105 transition-transform duration-500 block" 
-              referrerPolicy="no-referrer" 
+            <NextImage
+              src={card.img}
+              alt={card.name}
+              width={600}
+              height={332}
+              sizes="340px"
+              loading="lazy"
+              className="w-full h-auto object-cover group-hover/card:scale-105 transition-transform duration-500 block"
+              referrerPolicy="no-referrer"
             />
           </div>
           <div className="p-4 flex flex-col flex-grow justify-between bg-white border-t border-[#f0f0f0]">

@@ -705,9 +705,12 @@ export default function AmazonStore() {
                     rel="noopener noreferrer nofollow sponsored"
                     className="w-28 h-28 bg-white border border-[#E8E8F0] rounded-2xl flex items-center justify-center p-4 shadow-sm shrink-0"
                   >
-                    <img
+                    <NextImage
                       src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"
                       alt="Amazon Logo"
+                      width={112}
+                      height={112}
+                      sizes="112px"
                       className="w-full h-auto object-contain"
                     />
                   </a>
@@ -782,7 +785,7 @@ export default function AmazonStore() {
                         >
                           <NextImage
                             src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786254328/amazon-coupon-code_jrseqd.webp"
-                            alt="Pepperfry Offers"
+                            alt="Amazon Offers"
                             fill
                             sizes="(max-width: 1024px) 0px, 480px"
                             referrerPolicy="no-referrer"
@@ -1291,10 +1294,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Digital Music</h3>
     <a href="https://www.amazon.com/s?k=Digital+Music&crid=2NIFBXLL5Z1A3&sprefix=%2Caps%2C255&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp" 
-        alt="Digital Music" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp"
+        alt="Digital Music"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1309,10 +1316,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Electronics</h3>
     <a href="https://www.amazon.com/s?k=Electronics&crid=21IFEFQYKAM59&sprefix=digital+music%2Caps%2C308&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp" 
-        alt="Electronics" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp"
+        alt="Electronics"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1327,10 +1338,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Girls' Fashion</h3>
     <a href="https://www.amazon.com/s?k=Girls%27+Fashion&crid=XX07RQNM2V6L&sprefix=%2Caps%2C299&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp" 
-        alt="Girls' Fashion" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp"
+        alt="Girls' Fashion"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1345,10 +1360,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Health & Household</h3>
     <a href="https://www.amazon.com/s?k=Health+%26+Household&crid=2IV9IQPXFWABC&sprefix=%2Caps%2C281&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp" 
-        alt="Health & Household" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp"
+        alt="Health & Household"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1363,10 +1382,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Home & Kitchen</h3>
     <a href="https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp" 
-        alt="Home & Kitchen" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp"
+        alt="Home & Kitchen"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1381,10 +1404,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Industrial & Scientific</h3>
     <a href="https://www.amazon.com/s?k=Industrial+%26+Scientific&crid=313VQV9YAJTJ5&sprefix=%2Caps%2C297&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp" 
-        alt="Industrial & Scientific" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp"
+        alt="Industrial & Scientific"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1399,10 +1426,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Kindle Store</h3>
     <a href="https://www.amazon.com/s?k=Kindle+Store&crid=TOGVXR58FT4D&sprefix=%2Caps%2C285&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp" 
-        alt="Kindle Store" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp"
+        alt="Kindle Store"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1417,10 +1448,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Luggage</h3>
     <a href="https://www.amazon.com/s?k=Luggage&crid=20S9KCDUJCXOW&sprefix=%2Caps%2C308&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp" 
-        alt="Luggage" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp"
+        alt="Luggage"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1435,10 +1470,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Men's Fashion</h3>
     <a href="https://www.amazon.com/s?k=Men%27s+Fashion&crid=32HY571UHUFNA&sprefix=luggage%2Caps%2C332&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp" 
-        alt="Men's Fashion" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp"
+        alt="Men's Fashion"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1453,10 +1492,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Movies & TV</h3>
     <a href="https://www.amazon.com/s?k=Movies+%26+TV&crid=10NKB4YZZDE9O&sprefix=%2Caps%2C293&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp" 
-        alt="Movies & TV" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp"
+        alt="Movies & TV"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1471,10 +1514,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Music, CDs & Vinyl</h3>
     <a href="https://www.amazon.com/s?k=Music%2C+CDs+%26+Vinyl&crid=3PGC2A6OF48YT&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp" 
-        alt="Music, CDs & Vinyl" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp"
+        alt="Music, CDs & Vinyl"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1489,10 +1536,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Pet Supplies</h3>
     <a href="https://www.amazon.com/s?k=Pet+Supplies&crid=2FDO7PR0RR4EE&sprefix=%2Caps%2C307&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp" 
-        alt="Pet Supplies" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp"
+        alt="Pet Supplies"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1507,10 +1558,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Prime Video</h3>
     <a href="https://www.primevideo.com/region/eu/" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/prime-video_rh68ok.webp" 
-        alt="Prime Video" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/prime-video_rh68ok.webp"
+        alt="Prime Video"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1525,10 +1580,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Software</h3>
     <a href="https://www.amazon.com/s?k=Software&crid=2UANDI5I6UN7A&sprefix=%2Caps%2C314&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp" 
-        alt="Software" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp"
+        alt="Software"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1543,10 +1602,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Sports & Outdoors</h3>
     <a href="https://www.amazon.com/s?k=Sports+%26+Outdoors&crid=31W9FSA2B00K0&sprefix=%2Caps%2C310&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp" 
-        alt="Sports & Outdoors" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp"
+        alt="Sports & Outdoors"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1561,10 +1624,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Tools & Home Improvement</h3>
     <a href="https://www.amazon.com/s?k=Tools+%26+Home+Improvement&crid=3G0COOI6O799D&sprefix=%2Caps%2C291&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp" 
-        alt="Tools & Home Improvement" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp"
+        alt="Tools & Home Improvement"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1579,10 +1646,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Toys & Games</h3>
     <a href="https://www.amazon.com/s?k=Toys+%26+Games&crid=3N8EHDC3584CS&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp" 
-        alt="Toys & Games" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp"
+        alt="Toys & Games"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1597,10 +1668,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Video Games</h3>
     <a href="https://www.amazon.com/s?k=Video+Games&crid=PAOA9FXMRRMR&sprefix=%2Caps%2C304&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp" 
-        alt="Video Games" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp"
+        alt="Video Games"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">
@@ -1615,10 +1690,14 @@ export default function AmazonStore() {
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Women's Fashion</h3>
     <a href="https://www.amazon.com/s?k=Women%27s+Fashion&crid=OA50VIVKRLY7&sprefix=%2Caps%2C322&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
-      <img 
-        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp" 
-        alt="Women's Fashion" 
-        className="w-full h-full object-cover rounded-lg mb-4" 
+      <NextImage
+        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp"
+        alt="Women's Fashion"
+        width={600}
+        height={332}
+        sizes="(max-width: 768px) 90vw, 600px"
+        loading="lazy"
+        className="w-full h-auto object-cover rounded-lg mb-4"
       />
     </a>
     <p className="mb-3">

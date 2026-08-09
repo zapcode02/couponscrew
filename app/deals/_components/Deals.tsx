@@ -808,11 +808,10 @@ export default function Deals() {
                     <NextImage
                       src={prod.productImage}
                       alt={prod.productName}
-                      width={400}
-                      height={208}
+                      fill
                       sizes="(max-width: 768px) 45vw, 280px"
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
 
                     {/* TOP BADGES */}

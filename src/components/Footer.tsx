@@ -1,10 +1,92 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Ticket, Facebook, Instagram, Twitter, Youtube, Mail, Phone } from 'lucide-react';
+import Script from 'next/script';
+import { Ticket, Facebook, Instagram, Twitter, Youtube, Mail, Phone, Globe } from 'lucide-react';
+import { getConsent, canLoadTranslate, CONSENT_CHANGE_EVENT, ConsentStatus } from '../lib/cookieConsent';
+
+declare global {
+  interface Window {
+    googleTranslateElementInit?: () => void;
+    google?: {
+      translate: {
+        TranslateElement: new (
+          options: { pageLanguage: string; autoDisplay?: boolean },
+          elementId: string
+        ) => void;
+      };
+    };
+  }
+}
+
+const TRANSLATE_LANGUAGES = [
+  { code: 'en', label: 'English' },
+  { code: 'es', label: 'Spanish' },
+  { code: 'fr', label: 'French' },
+  { code: 'de', label: 'German' },
+  { code: 'it', label: 'Italian' },
+  { code: 'pt', label: 'Portuguese' },
+  { code: 'nl', label: 'Dutch' },
+  { code: 'pl', label: 'Polish' },
+  { code: 'ro', label: 'Romanian' },
+  { code: 'el', label: 'Greek' },
+  { code: 'sv', label: 'Swedish' },
+  { code: 'da', label: 'Danish' },
+  { code: 'fi', label: 'Finnish' },
+  { code: 'no', label: 'Norwegian' },
+  { code: 'cs', label: 'Czech' },
+  { code: 'hu', label: 'Hungarian' },
+  { code: 'uk', label: 'Ukrainian' },
+  { code: 'ru', label: 'Russian' },
+  { code: 'tr', label: 'Turkish' },
+  { code: 'ar', label: 'Arabic' },
+  { code: 'he', label: 'Hebrew' },
+  { code: 'fa', label: 'Persian' },
+  { code: 'ur', label: 'Urdu' },
+  { code: 'hi', label: 'Hindi' },
+  { code: 'bn', label: 'Bengali' },
+  { code: 'ta', label: 'Tamil' },
+  { code: 'te', label: 'Telugu' },
+  { code: 'mr', label: 'Marathi' },
+  { code: 'gu', label: 'Gujarati' },
+  { code: 'kn', label: 'Kannada' },
+  { code: 'ml', label: 'Malayalam' },
+  { code: 'pa', label: 'Punjabi' },
+  { code: 'zh-CN', label: 'Chinese (Simplified)' },
+  { code: 'zh-TW', label: 'Chinese (Traditional)' },
+  { code: 'ja', label: 'Japanese' },
+  { code: 'ko', label: 'Korean' },
+  { code: 'th', label: 'Thai' },
+  { code: 'vi', label: 'Vietnamese' },
+  { code: 'id', label: 'Indonesian' },
+  { code: 'ms', label: 'Malay' },
+  { code: 'tl', label: 'Filipino' },
+  { code: 'sw', label: 'Swahili' },
+];
+
+function handleLanguageChange(langCode: string) {
+  const combo = document.querySelector<HTMLSelectElement>('select.goog-te-combo');
+  if (!combo) return;
+  combo.value = langCode;
+  combo.dispatchEvent(new Event('change'));
+}
 
 export default function Footer() {
+  const [translateAllowed, setTranslateAllowed] = useState(false);
+
+  useEffect(() => {
+    setTranslateAllowed(canLoadTranslate(getConsent()));
+
+    const handleChange = (e: Event) => {
+      const status = (e as CustomEvent<ConsentStatus>).detail;
+      setTranslateAllowed(canLoadTranslate(status));
+    };
+
+    window.addEventListener(CONSENT_CHANGE_EVENT, handleChange);
+    return () => window.removeEventListener(CONSENT_CHANGE_EVENT, handleChange);
+  }, []);
+
   return (
     <footer className="bg-[#1A1A2E] text-white pt-16 pb-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6">
@@ -16,7 +98,7 @@ export default function Footer() {
               <div className="bg-[#5B4FBE] p-2 rounded-lg text-white">
                 <Ticket className="w-5 h-5 rotate-[-15deg]" />
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">
+              <span className="text-xl font-bold tracking-tight text-white" translate="no">
                 Couponscrew
               </span>
             </div>
@@ -97,12 +179,65 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM BAR */}
-        <div className="border-t border-gray-800 pt-8 mt-4 text-center gap-4 text-xs sm:text-sm text-gray-500">
+        <div className="border-t border-gray-800 pt-8 mt-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 text-xs sm:text-sm text-gray-500">
           <div>
             © 2026 Couponscrew. All Rights Reserved.
           </div>
+
+          {/* Language switcher — drives the hidden Google Translate widget */}
+          <div className="flex items-center gap-2">
+            <Globe className="w-3.5 h-3.5 text-gray-500 shrink-0" />
+            <select
+              defaultValue="en"
+              onChange={(e) => handleLanguageChange(e.target.value)}
+              aria-label="Select language"
+              className="bg-transparent border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-gray-400 hover:text-white hover:border-gray-600 focus:outline-none focus:border-[#5B4FBE] transition-colors cursor-pointer"
+            >
+              {TRANSLATE_LANGUAGES.map((lang) => (
+                <option key={lang.code} value={lang.code} className="bg-[#1A1A2E] text-white">
+                  {lang.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
+
+      {/* Hidden mount point + scripts for Google Translate Element — gated behind cookie consent */}
+      <div id="google_translate_element" className="hidden" />
+      {translateAllowed && (
+        <>
+          <Script
+            id="google-translate-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                    { pageLanguage: 'en', autoDisplay: true },
+                    'google_translate_element'
+                  );
+                }
+              `,
+            }}
+          />
+          <Script
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+            strategy="afterInteractive"
+          />
+        </>
+      )}
+      <style jsx global>{`
+        .goog-te-banner-frame {
+          display: none !important;
+        }
+        body {
+          top: 0 !important;
+        }
+        #google_translate_element .goog-te-gadget {
+          display: none !important;
+        }
+      `}</style>
     </footer>
   );
 }

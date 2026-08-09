@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import type React from 'react'
-import Script from 'next/script'
 import { Inter, Outfit, Fira_Code } from 'next/font/google'
+import AnalyticsLoader from '../src/components/AnalyticsLoader'
+import CookieConsentBanner from '../src/components/CookieConsentBanner'
 import './globals.css'
 
 const inter = Inter({
@@ -60,15 +61,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable} ${firaCode.variable}`}>
       <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DL0FC9NS5Q" strategy="lazyOnload" />
-        <Script id="google-analytics" strategy="lazyOnload">{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-DL0FC9NS5Q');
-        `}</Script>
+        <AnalyticsLoader />
       </head>
-      <body className="bg-[#F8F8FF] text-[#4A4A6A] selection:bg-[#5B4FBE] selection:text-white">{children}</body>
+      <body className="bg-[#F8F8FF] text-[#4A4A6A] selection:bg-[#5B4FBE] selection:text-white">
+        {children}
+        <CookieConsentBanner />
+      </body>
     </html>
   )
 }
