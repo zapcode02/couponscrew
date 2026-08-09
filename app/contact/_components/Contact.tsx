@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Script from 'next/script';
 import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
 import {
@@ -42,6 +43,15 @@ interface ContactInfo {
   sub: string;
   color: string;
   bg: string;
+}
+
+declare global {
+  interface Window {
+    grecaptcha?: {
+      getResponse: (widgetId?: number) => string;
+      reset: (widgetId?: number) => void;
+    };
+  }
 }
 
 export default function Contact() {
@@ -122,19 +132,28 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
     setSubmitError('');
+
+    const recaptchaToken = window.grecaptcha?.getResponse();
+    if (!recaptchaToken) {
+      setSubmitError("Please verify you're not a robot.");
+      return;
+    }
+
+    setIsLoading(true);
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Something went wrong.');
       setIsSubmitted(true);
+      window.grecaptcha?.reset();
     } catch (err: any) {
       setSubmitError(err.message || 'Failed to send. Please try again.');
+      window.grecaptcha?.reset();
     } finally {
       setIsLoading(false);
     }
@@ -157,6 +176,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans">
+      <Script src="https://www.google.com/recaptcha/api.js" strategy="lazyOnload" />
       <Navbar />
 
       <main className="flex-grow">
@@ -321,6 +341,8 @@ export default function Contact() {
                           className="w-full border border-[#E8E8F0] rounded-xl px-4 py-3.5 text-sm text-[#1A1A2E] focus:outline-none focus:border-[#5B4FBE] focus:ring-2 focus:ring-[#5B4FBE]/10 transition resize-none"
                         ></textarea>
                       </div>
+
+                      <div className="g-recaptcha" data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}></div>
 
                       <button
                         type="submit"
