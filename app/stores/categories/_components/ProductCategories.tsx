@@ -98,6 +98,8 @@ export default function ProductCategories() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
+
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="relative w-full bg-[#eee7fb] overflow-hidden border-b border-[#E8E8F0] py-8 md:py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
@@ -129,7 +131,7 @@ export default function ProductCategories() {
                 placeholder="Search for a category..."
                 className="w-full pl-11 pr-4 py-3 bg-white border border-[#E8E8F0] focus:border-[#5B4FBE] rounded-2xl text-sm focus:outline-none text-[#1A1A2E] font-medium placeholder:text-gray-400 transition-colors shadow-xs"
               />
-              <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#5B4FBE] hover:bg-[#4a3fad] text-white p-1.5 rounded-xl transition-colors">
+              <button aria-label="Search categories" className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#5B4FBE] hover:bg-[#4a3fad] text-white p-1.5 rounded-xl transition-colors">
                 <Search size={14} />
               </button>
             </div>
@@ -628,6 +630,8 @@ export default function ProductCategories() {
 
       </div>
     </section>
+
+      </main>
 
       <Footer />
     </div>

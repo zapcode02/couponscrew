@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import {
   Tag,
   Store,
@@ -467,9 +468,13 @@ export default function DealsOfTheDay() {
           </div>
 
           <div className="hidden md:col-span-5 md:flex items-center justify-center relative select-none">
-            <img
+            <NextImage
               src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783244518/deals-of-the-day_sj9x4u.png"
               alt="Deals of the Day"
+              width={1536}
+              height={1024}
+              sizes="(max-width: 768px) 0px, 576px"
+              loading="lazy"
               className="w-full max-w-xl h-auto object-contain"
               referrerPolicy="no-referrer"
             />
@@ -512,11 +517,13 @@ export default function DealsOfTheDay() {
                       className="bg-white rounded-2xl border border-[#E8E8F0] p-5 hover:shadow-lg hover:border-[#5B4FBE]/30 transition-all duration-300 group cursor-pointer flex flex-col sm:flex-row items-center sm:items-start gap-5 relative"
                     >
                       <div className="flex-shrink-0 text-center w-24 flex flex-col items-center">
-                        <div className="w-16 h-16 rounded-2xl flex items-center justify-center border border-[#E8E8F0] bg-white shadow-xs group-hover:scale-105 transition-all duration-300 overflow-hidden pointer-events-none select-none">
-                          <img
+                        <div className="w-16 h-16 rounded-2xl flex items-center justify-center border border-[#E8E8F0] bg-white shadow-xs group-hover:scale-105 transition-all duration-300 overflow-hidden pointer-events-none select-none relative">
+                          <NextImage
                             src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg"
                             alt={deal.brandName}
-                            className="w-full h-full object-contain"
+                            fill
+                            sizes="64px"
+                            className="object-contain"
                             referrerPolicy="no-referrer"
                           />
                         </div>

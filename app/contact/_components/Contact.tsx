@@ -176,7 +176,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans">
-      <Script src="https://www.google.com/recaptcha/api.js" strategy="lazyOnload" />
+      <Script src="https://www.google.com/recaptcha/api.js" strategy="afterInteractive" />
       <Navbar />
 
       <main className="flex-grow">

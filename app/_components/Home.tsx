@@ -117,27 +117,30 @@ export default function Home() {
                   rel="noopener noreferrer nofollow sponsored"
                   className={`absolute inset-0 block transition-opacity duration-700 ${i === heroSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                 >
-                  <img
+                  <NextImage
                     src={slide.src}
                     alt={slide.alt}
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 1024px) 0px, 70vw"
+                    priority={i === 0}
+                    className="object-cover"
                     referrerPolicy="no-referrer"
                   />
                 </a>
               ))}
 
               {/* Arrows */}
-              <button onClick={prevSlide} className="absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-2 rounded-full shadow-md transition">
+              <button onClick={prevSlide} aria-label="Previous slide" className="absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-2 rounded-full shadow-md transition">
                 <ChevronLeft size={20} />
               </button>
-              <button onClick={nextSlide} className="absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-2 rounded-full shadow-md transition">
+              <button onClick={nextSlide} aria-label="Next slide" className="absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-2 rounded-full shadow-md transition">
                 <ChevronRight size={20} />
               </button>
 
               {/* Dot indicators */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
                 {heroSlides.map((_, i) => (
-                  <button key={i} onClick={() => setHeroSlide(i)} className={`h-2 rounded-full transition-all ${i === heroSlide ? 'w-6 bg-[#FF5722]' : 'w-2 bg-white/60'}`} />
+                  <button key={i} onClick={() => setHeroSlide(i)} aria-label={`Go to slide ${i + 1}`} className={`h-2 rounded-full transition-all ${i === heroSlide ? 'w-6 bg-[#FF5722]' : 'w-2 bg-white/60'}`} />
                 ))}
               </div>
 
@@ -153,18 +156,26 @@ export default function Home() {
                   rel="noopener noreferrer nofollow sponsored"
                   className={`absolute inset-0 block transition-opacity duration-700 ${i === rightSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                 >
-                  <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <NextImage
+                    src={slide.src}
+                    alt={slide.alt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 30vw"
+                    priority={i === 0}
+                    className="object-cover"
+                    referrerPolicy="no-referrer"
+                  />
                 </a>
               ))}
-              <button onClick={prevRightSlide} className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-1.5 rounded-full shadow-md transition">
+              <button onClick={prevRightSlide} aria-label="Previous slide" className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-2 rounded-full shadow-md transition">
                 <ChevronLeft size={16} />
               </button>
-              <button onClick={nextRightSlide} className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-1.5 rounded-full shadow-md transition">
+              <button onClick={nextRightSlide} aria-label="Next slide" className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[#1A1A2E] p-2 rounded-full shadow-md transition">
                 <ChevronRight size={16} />
               </button>
               <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-1.5">
                 {rightSlides.map((_, i) => (
-                  <button key={i} onClick={() => setRightSlide(i)} className={`h-1.5 rounded-full transition-all ${i === rightSlide ? 'w-5 bg-[#FF5722]' : 'w-1.5 bg-white/60'}`} />
+                  <button key={i} onClick={() => setRightSlide(i)} aria-label={`Go to slide ${i + 1}`} className={`h-1.5 rounded-full transition-all ${i === rightSlide ? 'w-5 bg-[#FF5722]' : 'w-1.5 bg-white/60'}`} />
                 ))}
               </div>
             </div>
@@ -312,8 +323,16 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {productCategoryCards.map((card, i) => (
                 <Link key={i} href={card.href} className="bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#5B4FBE] transition-all group/card block">
-                  <div className="aspect-square overflow-hidden">
-                    <img src={card.img} alt={card.display} className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <div className="aspect-square overflow-hidden relative">
+                    <NextImage
+                      src={card.img}
+                      alt={card.display}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      loading="lazy"
+                      className="object-cover group-hover/card:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
                   </div>
                   <div className="p-3">
                     <div className="font-black text-sm text-[#1A1A2E]">{card.display}</div>
@@ -350,7 +369,15 @@ export default function Home() {
                 <div key={p.id} className="w-full lg:w-52 bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#5B4FBE] transition-all group/card flex flex-col">
                   <Link href={p.slug} className="relative block aspect-square overflow-hidden bg-[#F8F8FF]">
                     <div className="absolute top-2 left-2 z-10 bg-[#FF5722] text-white text-[10px] font-black px-2 py-0.5 rounded-md">{p.discount}% OFF</div>
-                    <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                    <NextImage
+                      src={p.img}
+                      alt={p.name}
+                      fill
+                      sizes="(max-width: 640px) 50vw, 208px"
+                      loading="lazy"
+                      className="object-cover group-hover/card:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
                   </Link>
                   <div className="p-3 flex flex-col flex-1 gap-2">
                     <Link href={p.slug}><p className="text-xs font-bold text-[#1A1A2E] leading-snug line-clamp-2 hover:text-[#5B4FBE] transition-colors">{p.name}</p></Link>
@@ -379,8 +406,16 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {blogPosts.map((post, i) => (
                 <Link key={i} href={post.slug} className="group bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#5B4FBE] transition-all flex flex-col">
-                  <div className="h-44 overflow-hidden">
-                    <img src={post.img} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <div className="h-44 overflow-hidden relative">
+                    <NextImage
+                      src={post.img}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                      loading="lazy"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
                   </div>
                   <div className="p-4 flex flex-col flex-1 gap-2">
                     <h3 className="font-bold text-sm text-[#1A1A2E] leading-snug group-hover:text-[#5B4FBE] transition-colors line-clamp-2">{post.title}</h3>

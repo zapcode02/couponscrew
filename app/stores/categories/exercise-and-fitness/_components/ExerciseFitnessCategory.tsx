@@ -48,6 +48,8 @@ export default function ExerciseFitnessCategory() {
     <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
+      <main>
+
       {/* SECTION 1 — HERO */}
       <section className="relative w-full bg-white border-b border-[#E8E8F0] min-h-[320px] py-10 overflow-hidden">
         <span className="absolute top-10 left-[8%] text-[#5B4FBE]/20 text-lg font-black select-none pointer-events-none">◆</span>
@@ -90,7 +92,15 @@ export default function ExerciseFitnessCategory() {
 
           <div className="md:col-span-5 flex items-center justify-center relative w-full">
             <div className="relative w-full h-[280px] rounded-3xl overflow-hidden shadow-2xl">
-              <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp" alt="Exercise & Fitness" className="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-700" referrerPolicy="no-referrer" />
+              <NextImage
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp"
+                alt="Exercise & Fitness"
+                fill
+                sizes="(max-width: 1024px) 90vw, 480px"
+                priority
+                className="object-cover rounded-3xl hover:scale-105 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
             </div>
           </div>
         </div>
@@ -733,6 +743,8 @@ export default function ExerciseFitnessCategory() {
 
       </div>
     </section>
+
+      </main>
 
       <Footer />
     </div>
