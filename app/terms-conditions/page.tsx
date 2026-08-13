@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 
   // ── Canonical + Hreflang ───────────────────
   alternates: {
-    canonical: 'https://www.couponscrew.com/terms',
+    canonical: 'https://www.couponscrew.com/terms-conditions',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/terms',
+      'en-IN': 'https://www.couponscrew.com/terms-conditions',
       // 💡 Uncomment when expanding to other markets:
       // 'en-US': 'https://www.couponscrew.com/us/terms',
       // 'en-GB': 'https://www.couponscrew.com/gb/terms',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions — Best Websites for Couponing | CouponsCrew',
     description:
       "Review CouponsCrew's terms of use — one of the best websites for couponing in India. Rules for using our best coupon sites for online shopping & best coupon code websites.",
-    url: 'https://www.couponscrew.com/terms',
+    url: 'https://www.couponscrew.com/terms-conditions',
     siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
@@ -135,9 +135,9 @@ const schema = {
     // ── WebPage ───────────────────────────────
     {
       '@type': 'WebPage',
-      '@id': 'https://www.couponscrew.com/terms#webpage',
+      '@id': 'https://www.couponscrew.com/terms-conditions#webpage',
       name: 'Terms & Conditions — Best Websites for Couponing | CouponsCrew',
-      url: 'https://www.couponscrew.com/terms',
+      url: 'https://www.couponscrew.com/terms-conditions',
       description:
         'Terms and conditions of CouponsCrew detailing the rules and guidelines for using our coupon and deals platform.',
       inLanguage: 'en-IN',
@@ -160,7 +160,7 @@ const schema = {
             '@type': 'ListItem',
             position: 2,
             name: 'Terms & Conditions',
-            item: 'https://www.couponscrew.com/terms',
+            item: 'https://www.couponscrew.com/terms-conditions',
           },
         ],
       },
@@ -169,7 +169,7 @@ const schema = {
     // ── FAQPage (AEO + AI search) ─────────────
     {
       '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/terms#faqpage',
+      '@id': 'https://www.couponscrew.com/terms-conditions#faqpage',
       mainEntity: [
         {
           '@type': 'Question',

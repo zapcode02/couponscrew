@@ -30,10 +30,10 @@ export const metadata: Metadata = {
 
   // ── Canonical + hreflang ───────────────────
   alternates: {
-    canonical: 'https://www.couponscrew.com/about',
+    canonical: 'https://www.couponscrew.com/about-us',
     // 💡 Add more locales below as you expand to new countries
     languages: {
-      'en-IN': 'https://www.couponscrew.com/about',
+      'en-IN': 'https://www.couponscrew.com/about-us',
       // 'en-US': 'https://www.couponsbit.us/about',
     },
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "About Us — India's Best Coupon Website | CouponsCrew",
     description:
       "CouponsCrew is India's best coupon website. Discover one of the top online coupon sites offering verified coupon codes & discount deals from 500+ brands — helping you save more every day.",
-    url: 'https://www.couponscrew.com/about',
+    url: 'https://www.couponscrew.com/about-us',
     siteName: 'CouponsCrew',
     type: 'website',
     // 💡 Primary locale — change per market if needed
@@ -107,9 +107,9 @@ const jsonLd = {
     // 1. AboutPage Schema
     {
       '@type': 'AboutPage',
-      '@id': 'https://www.couponscrew.com/about#aboutpage',
+      '@id': 'https://www.couponscrew.com/about-us#aboutpage',
       name: 'About CouponsCrew',
-      url: 'https://www.couponscrew.com/about',
+      url: 'https://www.couponscrew.com/about-us',
       description:
         'CouponsCrew is an Indian coupon website helping shoppers save money with verified coupon codes and discount deals from 500+ brands — updated daily.',
       inLanguage: 'en-IN',
@@ -135,7 +135,7 @@ const jsonLd = {
             '@type': 'ListItem',
             position: 2,
             name: 'About Us',
-            item: 'https://www.couponscrew.com/about',
+            item: 'https://www.couponscrew.com/about-us',
           },
         ],
       },
@@ -177,7 +177,7 @@ const jsonLd = {
     // 3. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/about#faqpage',
+      '@id': 'https://www.couponscrew.com/about-us#faqpage',
       mainEntity: [
         {
           '@type': 'Question',

@@ -31,7 +31,7 @@ export default function CookieConsentBanner() {
           </div>
           <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed">
             We use cookies to keep the site running smoothly and to understand how visitors use Couponscrew. Choose what you're comfortable with — see our{' '}
-            <Link href="/privacy" className="text-[#5B4FBE] font-semibold hover:underline">
+            <Link href="/privacy-policy" className="text-[#5B4FBE] font-semibold hover:underline">
               Privacy Policy
             </Link>{' '}
             for details.
