@@ -144,7 +144,7 @@ export default function Footer() {
               <li><Link href="/contact" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Contact Us</Link></li>
               <li><Link href="/privacy" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Privacy Policy</Link></li>
               <li><Link href="/terms" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Terms & Conditions</Link></li>
-              <li><Link href="/faq" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">FAQ</Link></li>
+              <li><Link href="/faqs" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">FAQ</Link></li>
             </ul>
           </div>
 
@@ -156,7 +156,7 @@ export default function Footer() {
             <ul className="space-y-1 text-sm">
               <li><Link href="/stores" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Stores</Link></li>
               <li><Link href="/products" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Products</Link></li>
-              <li><Link href="/products/categories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Product Categories</Link></li>
+              <li><Link href="/stores/categories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Product Categories</Link></li>
               <li><Link href="/deals-of-the-day" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Deals of the Day</Link></li>
               <li><Link href="/deals-of-the-month" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Deal of the Month</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Blog</Link></li>
@@ -169,11 +169,11 @@ export default function Footer() {
               Top Categories
             </h3>
             <ul className="space-y-1 text-sm">
-              <li><Link href="/products/categories/fashion" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Fashion</Link></li>
-              <li><Link href="/products/categories/beauty" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Beauty</Link></li>
-              <li><Link href="/products/categories/exercise-and-fitness" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Exercise &amp; Fitness</Link></li>
-              <li><Link href="/products/categories/home-and-kitchen" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Home &amp; Kitchen</Link></li>
-              <li><Link href="/products/categories/clothing-and-accessories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Clothing &amp; Accessories</Link></li>
+              <li><Link href="/stores/categories/fashion" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Fashion</Link></li>
+              <li><Link href="/stores/categories/beauty" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Beauty</Link></li>
+              <li><Link href="/stores/categories/exercise-and-fitness" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Exercise &amp; Fitness</Link></li>
+              <li><Link href="/stores/categories/home-and-kitchen" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Home &amp; Kitchen</Link></li>
+              <li><Link href="/stores/categories/clothing-and-accessories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Clothing &amp; Accessories</Link></li>
             </ul>
           </div>
         </div>

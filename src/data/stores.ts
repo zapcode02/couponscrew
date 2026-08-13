@@ -6,6 +6,7 @@ export interface Store {
   logoColor: string; // brand hex color
   logoBg: string; // lighter bg hex
   category: string;
+  categories: string[]; // all category pages this store should appear on (/stores/categories/*)
   offerCount: number;
   maxDiscount: number; // numeric value for sort logic
   discountLabel: string;
@@ -23,6 +24,7 @@ export const STORES_DATA: Store[] = [
     logoColor: '#146EB4',
     logoBg: '#EAF2FB',
     category: 'Electronics',
+    categories: ['Fashion', 'Beauty', 'Exercise & Fitness', 'Home & Kitchen', 'Clothing & Accessories'],
     offerCount: 120,
     maxDiscount: 90,
     discountLabel: 'Up to 90% OFF',
@@ -38,6 +40,7 @@ export const STORES_DATA: Store[] = [
     logoColor: '#D2691E',
     logoBg: '#FDF1E7',
     category: 'Home & Kitchen',
+    categories: ['Home & Kitchen'],
     offerCount: 90,
     maxDiscount: 80,
     discountLabel: 'Up to 80% OFF',

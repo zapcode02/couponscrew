@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from 'next'
-import Terms from './_components/Terms'
+import FAQ from './_components/FAQ'
 
 // ─────────────────────────────────────────────
 // SEO + AEO + GEO + AI Search Meta
@@ -9,41 +9,41 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // ── Core Meta ──────────────────────────────
-  title: 'Terms & Conditions — Best Websites for Couponing | CouponsCrew',
+  title: 'FAQs — Coupon Codes, Promo Codes & Deals Help | CouponsCrew',
 
   description:
-    "Review CouponsCrew's terms of use — one of the best websites for couponing in India. Rules for using our best coupon sites for online shopping & best coupon code websites.",
+    'Got questions about coupon codes or promo codes? Find answers to the most frequently asked questions about using deals, offers, and discounts on CouponsCrew.',
 
   keywords: [
-    'CouponsCrew terms and conditions',
-    'coupon website terms of use',
-    'best websites for couponing India',
-    'coupon site rules',
-    'best coupon sites for online shopping',
-    'best coupon code websites India',
-    'discount code site terms',
-    'promo code platform terms',
-    'online shopping coupon terms',
-    'CouponsCrew usage policy',
+    'coupon codes FAQ',
+    'promo codes help',
+    'how to use coupon codes',
+    'CouponsCrew FAQ',
+    'discount codes questions',
+    'how to apply promo code',
+    'deals and offers help',
+    'coupon code not working',
+    'how to find best deals',
+    'online shopping coupons India',
   ],
 
   // ── Canonical + Hreflang ───────────────────
   alternates: {
-    canonical: 'https://www.couponscrew.com/terms',
+    canonical: 'https://www.couponscrew.com/faqs',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/terms',
+      'en-IN': 'https://www.couponscrew.com/faqs',
       // 💡 Uncomment when expanding to other markets:
-      // 'en-US': 'https://www.couponscrew.com/us/terms',
-      // 'en-GB': 'https://www.couponscrew.com/gb/terms',
+      // 'en-US': 'https://www.couponscrew.com/us/faqs',
+      // 'en-GB': 'https://www.couponscrew.com/gb/faqs',
     },
   },
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Terms & Conditions — Best Websites for Couponing | CouponsCrew',
+    title: 'FAQs — Coupon Codes, Promo Codes & Deals Help | CouponsCrew',
     description:
-      "Review CouponsCrew's terms of use — one of the best websites for couponing in India. Rules for using our best coupon sites for online shopping & best coupon code websites.",
-    url: 'https://www.couponscrew.com/terms',
+      'Got questions about coupon codes or promo codes? Find answers to the most frequently asked questions about using deals, offers, and discounts on CouponsCrew.',
+    url: 'https://www.couponscrew.com/faqs',
     siteName: 'CouponsCrew',
     type: 'website',
     locale: 'en_IN',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: 'https://www.couponscrew.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'CouponsCrew Terms & Conditions',
+        alt: 'FAQs — CouponsCrew Coupon Codes & Deals Help',
       },
     ],
   },
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms & Conditions — Best Websites for Couponing | CouponsCrew',
+    title: 'FAQs — Coupon Codes, Promo Codes & Deals Help | CouponsCrew',
     description:
-      "Review CouponsCrew's terms of use — one of the best websites for couponing in India. Rules for using our best coupon sites for online shopping & best coupon code websites.",
+      'Got questions about coupon codes or promo codes? Find answers to the most frequently asked questions about using deals, offers, and discounts on CouponsCrew.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -97,6 +97,7 @@ export const metadata: Metadata = {
 
 // ─────────────────────────────────────────────
 // JSON-LD Schema — WebPage + Organization + FAQPage
+// FAQs match actual page content
 // ─────────────────────────────────────────────
 
 const schema = {
@@ -135,11 +136,11 @@ const schema = {
     // ── WebPage ───────────────────────────────
     {
       '@type': 'WebPage',
-      '@id': 'https://www.couponscrew.com/terms#webpage',
-      name: 'Terms & Conditions — Best Websites for Couponing | CouponsCrew',
-      url: 'https://www.couponscrew.com/terms',
+      '@id': 'https://www.couponscrew.com/faqs#webpage',
+      name: 'FAQs — Coupon Codes, Promo Codes & Deals Help | CouponsCrew',
+      url: 'https://www.couponscrew.com/faqs',
       description:
-        'Terms and conditions of CouponsCrew detailing the rules and guidelines for using our coupon and deals platform.',
+        'Got questions about coupon codes or promo codes? Find answers to the most frequently asked questions about using deals, offers, and discounts on CouponsCrew.',
       inLanguage: 'en-IN',
       isPartOf: {
         '@id': 'https://www.couponscrew.com/#website',
@@ -159,56 +160,64 @@ const schema = {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Terms & Conditions',
-            item: 'https://www.couponscrew.com/terms',
+            name: 'FAQs',
+            item: 'https://www.couponscrew.com/faqs',
           },
         ],
       },
     },
 
-    // ── FAQPage (AEO + AI search) ─────────────
+    // ── FAQPage — matches actual page content ──
     {
       '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/terms#faqpage',
+      '@id': 'https://www.couponscrew.com/faqs#faqpage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'What are the terms of use for CouponsCrew?',
+          name: 'How do I use a coupon code from CouponsCrew?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "CouponsCrew's terms of use outline the rules for accessing and using the platform, including guidelines on coupon usage, intellectual property, user conduct, and limitations of liability. By using the site, you agree to these terms.",
+            text: 'Find the coupon you want, click "Get Code" to copy it, head to the brand\'s website, add your items to cart, and paste the code at checkout in the promo code field. The discount applies instantly.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Are coupon codes on CouponsCrew guaranteed to work?',
+          name: 'Why is my coupon code showing as invalid?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew strives to list only verified and active coupon codes, but cannot guarantee that every code will work at the time of use. Codes may expire, have usage limits, or be subject to retailer-specific restrictions.',
+            text: 'The code may have a minimum order value, be restricted to specific categories, or be a new-user-only offer. Brands sometimes change terms without notice. If a code was verified recently and is still not working, report it and CouponsCrew will fix it within 2 hours.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can I reproduce or copy content from CouponsCrew?',
+          name: 'Can I stack a coupon code with a bank card offer?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'All content on CouponsCrew including deal listings, descriptions, and site design is the intellectual property of CouponsCrew. Reproduction or redistribution without written permission is not permitted.',
+            text: 'Yes. Most brands allow one coupon code per order, but you can stack it with a bank card offer from HDFC, ICICI, or SBI on top. Adding a cashback app gives you three layers of savings at once — a ₹5,000 order can realistically come down to ₹3,000.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Is CouponsCrew responsible for third-party retailer websites?',
+          name: 'Do coupon codes expire?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No. CouponsCrew provides links to third-party retailer websites for convenience. We are not responsible for the content, pricing, availability, or policies of those external sites.',
+            text: 'Yes, every code has an expiry date set by the brand. CouponsCrew displays the validity period on each coupon card and removes expired codes within minutes. The "Verified X mins ago" timestamp shows exactly how fresh each code is.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How can I contact CouponsCrew regarding the terms?',
+          name: 'What is the difference between a coupon code and a deal?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'For any questions about the terms and conditions, you can reach CouponsCrew through the contact page at couponscrew.com/contact. Our team will respond to queries as soon as possible.',
+            text: 'A coupon code is a text string you paste at checkout to unlock a discount. A deal is a pre-applied offer that activates automatically when you click through — no code needed. Deals are faster; coupons often give a bigger discount. CouponsCrew lists both.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I know if a coupon is verified and actually working?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Every coupon on CouponsCrew shows a "Verified X mins/hours ago" timestamp. Codes are tested before going live and removed as soon as they stop working. CouponsCrew maintains a 92.4% success rate — if you hit a rare miss, report it and it will be cleaned up fast.',
           },
         },
       ],
@@ -223,7 +232,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <Terms />
+      <FAQ />
     </>
   )
 }

@@ -6,20 +6,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
+  title: 'Pepperfry Coupon Code - Up to 75% OFF + 20% Cashback | Aug 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Verified Pepperfry coupon code & Pepperfry discount codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
+    'Get the latest Pepperfry coupon code and discount codes with up to 75% OFF furniture + 20% cashback. Discover verified deals and sales, updated daily. Aug 2026',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
   },
 
   openGraph: {
-    title: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
+    title: 'Pepperfry Coupon Code - Up to 75% OFF + 20% Cashback | Aug 2026',
     description:
-      'Verified Pepperfry coupon code & Pepperfry discount codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
+      'Get the latest Pepperfry coupon code and discount codes with up to 75% OFF furniture + 20% cashback. Discover verified deals and sales, updated daily. Aug 2026',
     url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
+    title: 'Pepperfry Coupon Code - Up to 75% OFF + 20% Cashback | Aug 2026',
     description:
-      'Verified Pepperfry coupon code & Pepperfry discount codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
+      'Get the latest Pepperfry coupon code and discount codes with up to 75% OFF furniture + 20% cashback. Discover verified deals and sales, updated daily. Aug 2026',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -69,8 +69,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/pepperfry-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
-      name: 'Pepperfry Coupon Code — 75% OFF + 20% Cashback | CouponsCrew',
-      description: 'Verified Pepperfry coupon code & Pepperfry discount codes – get up to 75% OFF furniture + 20% cashback. Best Pepperfry discount code & sales today. Updated daily on CouponsCrew.',
+      name: 'Pepperfry Coupon Code - Up to 75% OFF + 20% Cashback | Aug 2026',
+      description: 'Get the latest Pepperfry coupon code and discount codes with up to 75% OFF furniture + 20% cashback. Discover verified deals and sales, updated daily. Aug 2026',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

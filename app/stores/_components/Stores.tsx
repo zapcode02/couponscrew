@@ -456,7 +456,7 @@ export default function Stores() {
                   }}
                   className="bg-[#5B4FBE] hover:bg-opacity-95 text-white font-bold text-xs px-6 py-3 rounded-xl cursor-pointer shadow-md"
                 >
-                  Clear All Filters
+                  Clear All Filters 
                 </button>
               </div>
             ) : viewMode === 'grid' ? (

@@ -28,10 +28,10 @@ const rightSlides = [
 ];
 
 const productCategoryCards = [
-  { display: 'Exercise & Fitness',     img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp',   href: '/products/categories/exercise-and-fitness' },
-  { display: 'Home & Kitchen',         img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/home-kitchen_wtn75z.webp',        href: '/products/categories/home-and-kitchen' },
-  { display: 'Clothing & Accessories', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/clothing-accessories_jassli.webp', href: '/products/categories/clothing-and-accessories' },
-  { display: 'Beauty',                 img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/beauty_akkpbg.webp',              href: '/products/categories/beauty' },
+  { display: 'Exercise & Fitness',     img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp',   href: '/stores/categories/exercise-and-fitness' },
+  { display: 'Home & Kitchen',         img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/home-kitchen_wtn75z.webp',        href: '/stores/categories/home-and-kitchen' },
+  { display: 'Clothing & Accessories', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/clothing-accessories_jassli.webp', href: '/stores/categories/clothing-and-accessories' },
+  { display: 'Beauty',                 img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/beauty_akkpbg.webp',              href: '/stores/categories/beauty' },
 ];
 
 const featuredProducts = [
@@ -326,7 +326,7 @@ export default function Home() {
             </div>
             <div className="mt-8 flex justify-center">
               <Link
-                href="/products/categories"
+                href="/stores/categories"
                 className="inline-flex items-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white font-bold px-8 py-3 rounded-xl text-sm transition-all shadow-md hover:shadow-lg"
               >
                 Browse Product Categories <ArrowRight size={16} />

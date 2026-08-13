@@ -152,7 +152,7 @@ export default function ProductCategories() {
                 </div>
                 <div>
                   <div className="font-extrabold text-[#1A1A2E] text-sm leading-none">{totalProducts}+</div>
-                  <div className="text-[10px] text-[#4A4A6A] mt-0.5 font-medium uppercase tracking-wider">Products</div>
+                  <div className="text-[10px] text-[#4A4A6A] mt-0.5 font-medium uppercase tracking-wider">Stores</div>
                 </div>
               </div>
 
@@ -173,7 +173,7 @@ export default function ProductCategories() {
             <div className="relative w-full aspect-[4/3]">
               <NextImage
                 src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783234658/product-categories_ohtbze.webp"
-                alt="Browse all product categories on CouponScrew"
+                alt="Browse all store categories on CouponScrew"
                 fill
                 sizes="(max-width: 1024px) 0px, 640px"
                 className="object-contain"
@@ -208,7 +208,7 @@ export default function ProductCategories() {
                 return (
                   <Link
                     key={cat.slug}
-                    href={`/products/categories/${cat.slug}`}
+                    href={`/stores/categories/${cat.slug}`}
                     className="group bg-white rounded-3xl border border-[#E8E8F0] overflow-hidden hover:shadow-xl hover:border-[#5B4FBE] transition-all duration-300 flex flex-col"
                   >
                     {/* Blue image / placeholder banner */}
