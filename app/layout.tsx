@@ -59,9 +59,15 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: 'https://res.cloudinary.com/dgy1atvb8/image/upload/v1781539632/favicon_jxwnvu.png',
-    shortcut: 'https://res.cloudinary.com/dgy1atvb8/image/upload/v1781539632/favicon_jxwnvu.png',
-    apple: 'https://res.cloudinary.com/dgy1atvb8/image/upload/v1781539632/favicon_jxwnvu.png',
+    // Browser-tab favicon — sized down from the 145KB source PNG via a
+    // Cloudinary transform (32x32, ICO format) instead of shipping the
+    // full-resolution asset for a 16-32px UI element.
+    icon: 'https://res.cloudinary.com/dgy1atvb8/image/upload/w_32,h_32,c_fill,f_ico/v1781539632/favicon_jxwnvu.png',
+    shortcut: 'https://res.cloudinary.com/dgy1atvb8/image/upload/w_32,h_32,c_fill,f_ico/v1781539632/favicon_jxwnvu.png',
+    // Apple touch icons are used at larger display sizes (iOS home-screen
+    // bookmarks), so this keeps a bigger transform rather than reusing the
+    // 32x32 favicon, which would look blurry there.
+    apple: 'https://res.cloudinary.com/dgy1atvb8/image/upload/w_180,h_180,c_fill,f_auto,q_auto/v1781539632/favicon_jxwnvu.png',
   },
 }
 

@@ -100,6 +100,15 @@ export const metadata: Metadata = {
 // JSON-LD Schemas (WebPage + Product + FAQPage)
 // ─────────────────────────────────────────────
 
+// priceValidUntil — computed at build time (this is a statically generated
+// page) as today + 60 days, rather than a fixed hardcoded date that silently
+// expires. There is no per-product "sale end date" tracked in the data model
+// yet, so this is a rolling default refreshed on every deploy, not a claim
+// about a specific real promotion end date.
+const priceValidUntilDate = new Date()
+priceValidUntilDate.setDate(priceValidUntilDate.getDate() + 60)
+const priceValidUntil = priceValidUntilDate.toISOString().slice(0, 10)
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -149,6 +158,11 @@ const jsonLd = {
       '@type': 'Product',
       '@id': 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit#product',
       name: 'Minimalist Anti-Pigmentation Kit — Face Wash, Alpha Arbutin Serum & SPF 50 Sunscreen',
+      image: [
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162150/51VX_QeZjRL._SY450__mhxhvl.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162170/71ON3mGmKML._SY450__d78hrn.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162025/71ON3mGmKML._SY450__nfo76g.jpg',
+      ],
       description:
         'A complete skincare kit for anti-pigmentation featuring a face wash, alpha arbutin + glycolic acid serum, and SPF 50 sunscreen. Dermatologist-tested, suitable for all skin types.',
       brand: {
@@ -162,47 +176,9 @@ const jsonLd = {
         '@type': 'Offer',
         price: '1147',
         priceCurrency: 'INR',
-        // 💡 Update priceValidUntil dynamically if possible
-        priceValidUntil: '2025-12-31',
+        priceValidUntil,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
-        seller: {
-          '@type': 'Organization',
-          name: 'CouponsCrew',
-          url: 'https://www.couponscrew.com',
-        },
-        hasMerchantReturnPolicy: {
-          '@type': 'MerchantReturnPolicy',
-          applicableCountry: 'IN',
-          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-        },
-        shippingDetails: {
-          '@type': 'OfferShippingDetails',
-          shippingRate: {
-            '@type': 'MonetaryAmount',
-            value: '0',
-            currency: 'INR',
-          },
-          shippingDestination: {
-            '@type': 'DefinedRegion',
-            addressCountry: 'IN',
-          },
-          deliveryTime: {
-            '@type': 'ShippingDeliveryTime',
-            handlingTime: {
-              '@type': 'QuantitativeValue',
-              minValue: 1,
-              maxValue: 2,
-              unitCode: 'DAY',
-            },
-            transitTime: {
-              '@type': 'QuantitativeValue',
-              minValue: 3,
-              maxValue: 7,
-              unitCode: 'DAY',
-            },
-          },
-        },
       },
       aggregateRating: {
         '@type': 'AggregateRating',

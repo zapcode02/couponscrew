@@ -7,6 +7,14 @@
 //   connect: www.google-analytics.com (GA4 beacon calls made internally by gtag.js)
 // No Vercel Analytics/Speed Insights package is installed, so no vercel.live/
 // vitals.vercel-insights.com entries are included.
+// Violation reporting endpoint — added so real data starts collecting while
+// the policy is still Report-Only. Both directives point at the same
+// endpoint: report-uri is the older, more broadly supported mechanism;
+// report-to is the newer Reporting API and requires the matching Report-To
+// header below. Sending both covers browsers that only understand one.
+const CSP_REPORT_ENDPOINT = 'https://www.couponscrew.com/api/csp-report'
+const CSP_REPORT_GROUP = 'csp-endpoint'
+
 const cspReportOnly = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com translate.google.com www.google.com www.gstatic.com",
@@ -17,7 +25,15 @@ const cspReportOnly = [
   "connect-src 'self' www.google-analytics.com www.googletagmanager.com",
   "object-src 'none'",
   "base-uri 'self'",
+  `report-uri ${CSP_REPORT_ENDPOINT}`,
+  `report-to ${CSP_REPORT_GROUP}`,
 ].join('; ')
+
+const reportToHeader = JSON.stringify({
+  group: CSP_REPORT_GROUP,
+  max_age: 10886400,
+  endpoints: [{ url: CSP_REPORT_ENDPOINT }],
+})
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -56,6 +72,10 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy-Report-Only',
             value: cspReportOnly,
+          },
+          {
+            key: 'Report-To',
+            value: reportToHeader,
           },
         ],
       },

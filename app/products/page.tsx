@@ -104,6 +104,15 @@ export const metadata: Metadata = {
 // JSON-LD Schemas (CollectionPage + ItemList + FAQPage)
 // ─────────────────────────────────────────────
 
+// priceValidUntil — computed at build time (this is a statically generated
+// page) as today + 60 days, rather than a fixed hardcoded date that silently
+// expires. There is no per-product "sale end date" tracked in the data model
+// yet, so this is a rolling default refreshed on every deploy, not a claim
+// about a specific real promotion end date.
+const priceValidUntilDate = new Date()
+priceValidUntilDate.setDate(priceValidUntilDate.getDate() + 60)
+const priceValidUntil = priceValidUntilDate.toISOString().slice(0, 10)
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -171,20 +180,8 @@ const jsonLd = {
               '@type': 'Offer',
               price: '299',
               priceCurrency: 'INR',
-              priceValidUntil: '2025-12-31',
+              priceValidUntil,
               availability: 'https://schema.org/InStock',
-              hasMerchantReturnPolicy: {
-                '@type': 'MerchantReturnPolicy',
-                applicableCountry: 'IN',
-              },
-              shippingDetails: {
-                '@type': 'OfferShippingDetails',
-                shippingRate: {
-                  '@type': 'MonetaryAmount',
-                  value: '0',
-                  currency: 'INR',
-                },
-              },
             },
             aggregateRating: {
               '@type': 'AggregateRating',
@@ -209,20 +206,8 @@ const jsonLd = {
               '@type': 'Offer',
               price: '1147',
               priceCurrency: 'INR',
-              priceValidUntil: '2025-12-31',
+              priceValidUntil,
               availability: 'https://schema.org/InStock',
-              hasMerchantReturnPolicy: {
-                '@type': 'MerchantReturnPolicy',
-                applicableCountry: 'IN',
-              },
-              shippingDetails: {
-                '@type': 'OfferShippingDetails',
-                shippingRate: {
-                  '@type': 'MonetaryAmount',
-                  value: '0',
-                  currency: 'INR',
-                },
-              },
             },
             aggregateRating: {
               '@type': 'AggregateRating',
@@ -247,20 +232,8 @@ const jsonLd = {
               '@type': 'Offer',
               price: '479',
               priceCurrency: 'INR',
-              priceValidUntil: '2025-12-31',
+              priceValidUntil,
               availability: 'https://schema.org/InStock',
-              hasMerchantReturnPolicy: {
-                '@type': 'MerchantReturnPolicy',
-                applicableCountry: 'IN',
-              },
-              shippingDetails: {
-                '@type': 'OfferShippingDetails',
-                shippingRate: {
-                  '@type': 'MonetaryAmount',
-                  value: '0',
-                  currency: 'INR',
-                },
-              },
             },
             aggregateRating: {
               '@type': 'AggregateRating',
@@ -285,20 +258,8 @@ const jsonLd = {
               '@type': 'Offer',
               price: '197',
               priceCurrency: 'INR',
-              priceValidUntil: '2025-12-31',
+              priceValidUntil,
               availability: 'https://schema.org/InStock',
-              hasMerchantReturnPolicy: {
-                '@type': 'MerchantReturnPolicy',
-                applicableCountry: 'IN',
-              },
-              shippingDetails: {
-                '@type': 'OfferShippingDetails',
-                shippingRate: {
-                  '@type': 'MonetaryAmount',
-                  value: '0',
-                  currency: 'INR',
-                },
-              },
             },
             aggregateRating: {
               '@type': 'AggregateRating',
@@ -323,20 +284,8 @@ const jsonLd = {
               '@type': 'Offer',
               price: '299',
               priceCurrency: 'INR',
-              priceValidUntil: '2025-12-31',
+              priceValidUntil,
               availability: 'https://schema.org/InStock',
-              hasMerchantReturnPolicy: {
-                '@type': 'MerchantReturnPolicy',
-                applicableCountry: 'IN',
-              },
-              shippingDetails: {
-                '@type': 'OfferShippingDetails',
-                shippingRate: {
-                  '@type': 'MonetaryAmount',
-                  value: '0',
-                  currency: 'INR',
-                },
-              },
             },
             aggregateRating: {
               '@type': 'AggregateRating',

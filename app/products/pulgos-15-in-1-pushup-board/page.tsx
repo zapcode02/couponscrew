@@ -100,6 +100,15 @@ export const metadata: Metadata = {
 // JSON-LD Schemas (WebPage + Product + FAQPage)
 // ─────────────────────────────────────────────
 
+// priceValidUntil — computed at build time (this is a statically generated
+// page) as today + 60 days, rather than a fixed hardcoded date that silently
+// expires. There is no per-product "sale end date" tracked in the data model
+// yet, so this is a rolling default refreshed on every deploy, not a claim
+// about a specific real promotion end date.
+const priceValidUntilDate = new Date()
+priceValidUntilDate.setDate(priceValidUntilDate.getDate() + 60)
+const priceValidUntil = priceValidUntilDate.toISOString().slice(0, 10)
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -149,6 +158,12 @@ const jsonLd = {
       '@type': 'Product',
       '@id': 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board#product',
       name: 'PulGos 15-in-1 Foldable Pushup Board for Home Workout',
+      image: [
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162810/81RW0nGbEZL._SL1500__u4abvp.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162813/718W_a8O6iL._SX679__bssoj3.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162811/712d3EKF8BL._SX679__n7js04.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162808/716pybIi4eL._SX679__hqvg8k.jpg',
+      ],
       description:
         'A versatile 15-in-1 foldable pushup board for home workouts. Targets chest, shoulders, back, triceps and biceps with colour-coded hand positions. Compact, portable, and easy to store.',
       brand: {
@@ -162,47 +177,9 @@ const jsonLd = {
         '@type': 'Offer',
         price: '299',
         priceCurrency: 'INR',
-        // 💡 Update priceValidUntil dynamically if possible
-        priceValidUntil: '2025-12-31',
+        priceValidUntil,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
-        seller: {
-          '@type': 'Organization',
-          name: 'CouponsCrew',
-          url: 'https://www.couponscrew.com',
-        },
-        hasMerchantReturnPolicy: {
-          '@type': 'MerchantReturnPolicy',
-          applicableCountry: 'IN',
-          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-        },
-        shippingDetails: {
-          '@type': 'OfferShippingDetails',
-          shippingRate: {
-            '@type': 'MonetaryAmount',
-            value: '0',
-            currency: 'INR',
-          },
-          shippingDestination: {
-            '@type': 'DefinedRegion',
-            addressCountry: 'IN',
-          },
-          deliveryTime: {
-            '@type': 'ShippingDeliveryTime',
-            handlingTime: {
-              '@type': 'QuantitativeValue',
-              minValue: 1,
-              maxValue: 2,
-              unitCode: 'DAY',
-            },
-            transitTime: {
-              '@type': 'QuantitativeValue',
-              minValue: 3,
-              maxValue: 7,
-              unitCode: 'DAY',
-            },
-          },
-        },
       },
       aggregateRating: {
         '@type': 'AggregateRating',

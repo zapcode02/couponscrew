@@ -227,49 +227,107 @@ const jsonLd = {
       ],
     },
 
-    // 3. FAQPage Schema (AEO + AI Search)
+    // 3. FAQPage Schema (AEO + AI Search — mirrors the visible FAQ accordion
+    // in AmazonStore.tsx verbatim, per Google's requirement that FAQPage
+    // schema reflect visible page content)
     {
       '@type': 'FAQPage',
       '@id': 'https://www.couponscrew.com/stores/amazon-coupon-code#faqpage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How do I use an Amazon coupon code?',
+          name: 'How do I get a 50% discount on Amazon India?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Copy the Amazon coupon code from CouponsCrew, go to amazon.in, and add the items you want to buy to your cart. At checkout, look for the "Gift cards & promotional codes" field and paste the code there — the discount is applied before you confirm payment, so you can see the updated total before completing the order. Some codes are restricted to specific categories or require a minimum order value, so it is worth checking the terms listed alongside each code on CouponsCrew before applying it. If a code does not apply, the most common reasons are that it has expired, the cart does not meet the minimum spend, or the items in the cart are not eligible for that particular offer.',
+            text: 'Discounts of 50% and above are regularly available in the Amazon Warehouse, Amazon Outlet, and during Lightning Deals on the main Deals page. Using a verified Amazon coupon code from CouponScrew on top of an existing sale price is the most reliable way to reach or exceed 50% off.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What is the best Amazon coupon code today?',
+          name: 'Can I stack an Amazon coupon code with a bank offer?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew lists verified Amazon coupon codes updated daily, spanning categories like Electronics, Fashion, and Home & Kitchen, with some offers reaching up to 90% off. What counts as the "best" code depends on what you are buying — a flat-percentage sitewide code is usually strongest for smaller carts, while a category-specific code or a Lightning Deal tends to offer deeper savings on big-ticket items. The current top offers are listed at the top of this page along with their discount value, so you can compare them directly instead of guessing which one applies best to your order. New codes are added and expired ones removed as part of the same daily review process used across every store page on CouponsCrew, so what you see listed reflects what is actually live right now.',
+            text: 'Yes. You can apply a CouponScrew promo code at checkout in the "Gift cards & promotional codes" field and then pay with an eligible bank card to claim an additional 10% cashback. Both discounts apply to the same order.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Does Amazon have a Big Billion Day sale?',
+          name: 'What are the biggest Amazon sale events in India?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Amazon India does not run a sale called "Big Billion Day" — that name belongs to a competing platform. Amazon\'s own major seasonal sales are the Great Indian Festival, typically held in September–October, and Prime Day in July, both offering some of the deepest discounts of the year across Electronics, Fashion, Grocery, and more. The Great Republic Day Sale in January and the Great Freedom Sale in August are also significant shopping windows, and tend to see especially strong deals in Electronics and Home & Kitchen. CouponsCrew tracks and lists active Amazon coupon codes during all of these events as they go live, so it is worth checking back on this page as a sale window opens rather than only browsing beforehand.',
+            text: 'The Great Indian Festival (September–October) and Amazon Prime Day (July) are the two largest annual events with discounts up to 80% across all categories. The Great Republic Day Sale in January and the Great Freedom Sale in August are also major shopping windows.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can Amazon Prime members get extra discounts?',
+          name: 'What are the benefits of Amazon Prime membership?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Prime members get early access to Lightning Deals before they open to the general public, exclusive pricing on select products, and promo codes that are not available to non-Prime shoppers. During major sale events like Prime Day, member-only discounts can be substantially deeper than what regular visitors see. Prime also bundles in free one-day or same-day delivery on eligible orders, Prime Video, Prime Music, and Prime Reading, which is part of why many frequent Amazon shoppers treat the membership itself as a standing discount rather than just a delivery perk. Combining a Prime-exclusive deal with an active CouponsCrew coupon code, where the code\'s terms allow it, is generally the most effective way to stack savings on a single order.',
+            text: 'Prime offers free one-day and same-day delivery, early access to Lightning Deals, exclusive Amazon promo codes, Prime Video, Prime Music, and Prime Reading — all bundled into a single annual or monthly subscription.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Are Amazon coupon codes on CouponsCrew verified?',
+          name: 'How does Amazon Subscribe & Save work?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Amazon coupon codes on CouponsCrew go through a verification step before they are listed — the discount value and any eligibility conditions are checked so the code shown actually reflects what you will get at checkout. After that, the team reviews active Amazon codes daily rather than leaving them up indefinitely; any code that has expired, hit its redemption cap, or stopped working is removed from the page. This daily-review process is what keeps the codes on this page current instead of accumulating dead offers the way some coupon listings do. If a listed code does not work at checkout, it is worth double-checking the minimum order value and category restrictions noted alongside it before assuming it has expired.',
+            text: 'Subscribe & Save lets you schedule regular deliveries of household items at a 5% discount. This increases to 10% when you have 5 or more active subscriptions in a given month, with select brands offering up to 15% off for consistent subscribers.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is there a student discount on Amazon India?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Amazon India offers a discounted Prime membership for users aged 18–24 through its Youth Offer, which provides up to 50% off the standard Prime price. This gives students access to all Prime benefits at a significantly reduced rate.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I find hidden deals on Amazon India?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Visit the Amazon Outlet section for clearance stock and Amazon Renewed for certified refurbished electronics at 20–50% off. The "with coupon" label on product listing pages also indicates an additional on-page discount that many shoppers overlook.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a Lightning Deal on Amazon?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A Lightning Deal is a time-sensitive, limited-stock offer that provides a deep discount for only a few hours. They appear on the Amazon Deals page and sell out quickly, so checking in during sale events and early morning hours gives you the best chance of catching them.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why is my Amazon promo code not working?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A code may fail if it has expired, if the item in your cart is not eligible for the promotion, or if you have not met the minimum order value. Always check the terms listed alongside each code on CouponScrew before applying.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are there app-exclusive Amazon deals?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Amazon India regularly offers additional discounts and cashback rewards that are only available through the mobile app. Downloading the app and enabling notifications ensures you do not miss these app-only Amazon discount codes.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I get free shipping on Amazon without Prime?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Non-Prime orders qualify for free standard shipping when the order value exceeds the minimum threshold displayed at checkout. The exact threshold varies by category and is shown during the payment step.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How often does CouponScrew update its Amazon coupon codes?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Our team reviews and updates Amazon promo codes daily. Every listing on this page carries a verification timestamp so you can see exactly when it was last checked and confirmed active.',
           },
         },
       ],

@@ -101,6 +101,15 @@ export const metadata: Metadata = {
 // JSON-LD Schemas (WebPage + Product + FAQPage)
 // ─────────────────────────────────────────────
 
+// priceValidUntil — computed at build time (this is a statically generated
+// page) as today + 60 days, rather than a fixed hardcoded date that silently
+// expires. There is no per-product "sale end date" tracked in the data model
+// yet, so this is a rolling default refreshed on every deploy, not a claim
+// about a specific real promotion end date.
+const priceValidUntilDate = new Date()
+priceValidUntilDate.setDate(priceValidUntilDate.getDate() + 60)
+const priceValidUntil = priceValidUntilDate.toISOString().slice(0, 10)
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -150,6 +159,12 @@ const jsonLd = {
       '@type': 'Product',
       '@id': 'https://www.couponscrew.com/products/desidiya-moon-crystal-night-light#product',
       name: 'Desidiya Moon Crystal Ball Night Light with Wooden Base',
+      image: [
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162551/61XWYda0HoL._SL1500__klyexw.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162555/71og2p8A8zL._AC_UC154_154_CACC_154_154_QL85__allqrg.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162560/71PKTOkjaqL._AC_UC154_154_CACC_154_154_QL85__ezyxe4.jpg',
+        'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162565/61_L9a7xG8L._AC_UC154_154_CACC_154_154_QL85__x5efiq.jpg',
+      ],
       description:
         'A decorative moon crystal ball LED night light with a premium wooden base, ideal for bedroom decor and as a gift. Warm ambient glow, compact design, suitable for all ages.',
       brand: {
@@ -163,47 +178,9 @@ const jsonLd = {
         '@type': 'Offer',
         price: '197',
         priceCurrency: 'INR',
-        // 💡 Update priceValidUntil dynamically if possible
-        priceValidUntil: '2025-12-31',
+        priceValidUntil,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
-        seller: {
-          '@type': 'Organization',
-          name: 'CouponsCrew',
-          url: 'https://www.couponscrew.com',
-        },
-        hasMerchantReturnPolicy: {
-          '@type': 'MerchantReturnPolicy',
-          applicableCountry: 'IN',
-          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-        },
-        shippingDetails: {
-          '@type': 'OfferShippingDetails',
-          shippingRate: {
-            '@type': 'MonetaryAmount',
-            value: '0',
-            currency: 'INR',
-          },
-          shippingDestination: {
-            '@type': 'DefinedRegion',
-            addressCountry: 'IN',
-          },
-          deliveryTime: {
-            '@type': 'ShippingDeliveryTime',
-            handlingTime: {
-              '@type': 'QuantitativeValue',
-              minValue: 1,
-              maxValue: 2,
-              unitCode: 'DAY',
-            },
-            transitTime: {
-              '@type': 'QuantitativeValue',
-              minValue: 3,
-              maxValue: 7,
-              unitCode: 'DAY',
-            },
-          },
-        },
       },
       aggregateRating: {
         '@type': 'AggregateRating',

@@ -191,49 +191,59 @@ const jsonLd = {
       },
     },
 
-    // 4. FAQPage Schema (AEO + AI Search — updated brand name + latest angle)
+    // 4. FAQPage Schema (AEO + AI Search — mirrors the visible FAQ accordion
+    // in Home.tsx's faqData verbatim, per Google's requirement that FAQPage
+    // schema reflect visible page content)
     {
       '@type': 'FAQPage',
       '@id': 'https://www.couponscrew.com/#faqpage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'What is CouponsCrew?',
+          name: 'How do I find coupons for a specific store on Couponscrew?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew is an Indian coupon website where you can find verified coupon codes and discount codes across hundreds of brands, updated daily. Instead of leaving you to hunt through forums or expired code lists, CouponsCrew organizes active offers by store and category so you can find a working code for the brand you are already shopping with in a few seconds. Every code listed goes through a verification step before it appears on the site, and offers that stop working or expire are removed rather than left up indefinitely. The goal is a single place to check before checkout — one that stays current instead of accumulating dead codes over time the way many coupon directories do.',
+            text: "Type the store name in the search bar at the top — Amazon, Zomato, Myntra, Flipkart, or any of the 500+ brands we track. You'll land directly on that store's page with every active code listed.",
           },
         },
         {
           '@type': 'Question',
-          name: 'Are the coupon codes on CouponsCrew up to date?',
+          name: 'What is the difference between a coupon code and a deal on Couponscrew?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. CouponsCrew reviews active deals daily rather than publishing a code once and leaving it up indefinitely. Before a new code goes live, it is tested at checkout to confirm the discount value and any minimum-order requirements actually apply, and only then does it get listed. After that, the team continues checking listed offers — any code that has expired, hit its redemption cap, or started failing at checkout is pulled from the site rather than left to waste a shopper\'s time. This daily-review process is what keeps the "verified" label meaningful instead of just being a badge attached once and forgotten.',
+            text: 'A coupon code is a string like FLAT500 or SAVE20 that you type at checkout. A deal is a pre-applied discount — no code needed, just click through. Every card on Couponscrew tells you clearly which type it is before you use it.',
           },
         },
         {
           '@type': 'Question',
-          name: 'How do I use a coupon code from CouponsCrew?',
+          name: 'Which brands have the best coupons on Couponscrew right now?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Find the brand or store you are shopping with on CouponsCrew, then open its page to see the active codes and deals listed for it. Click a code to reveal or copy it, then head to the brand\'s website, add your items to the cart, and paste the code into the promo or discount field at checkout. The discount should apply immediately before you complete payment — if a minimum order value or specific category applies to that code, it is noted alongside the offer so there are no surprises at checkout. No account or signup is required on CouponsCrew itself to copy and use a code.',
+            text: 'Amazon, Flipkart, Myntra, Zomato, Swiggy, MakeMyTrip, Nykaa, Hostinger, and BigBasket consistently have the most active codes on Couponscrew.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Which brands have the latest discount codes on CouponsCrew?',
+          name: 'Can I use Couponscrew coupons on mobile apps?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew currently lists verified coupon codes and deals for Amazon and Pepperfry, spanning categories like electronics, fashion, beauty, and home & kitchen, with more brand pages being added over time. Each store has its own dedicated page listing every active code and deal for that brand, rather than mixing everything into one long undifferentiated list. New codes are checked in and expired ones are removed as part of the same daily review process used across the site, so the codes shown on a given brand\'s page reflect what is actually active rather than a static archive of offers that may no longer work.',
+            text: 'Most codes work on both desktop and mobile. Some brands — Zomato, Myntra, and Amazon especially — reserve their best discounts for app users only. Every deal card on Couponscrew marks app-only codes clearly.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Is CouponsCrew free to use?',
+          name: 'Which category has the most deals on Couponscrew right now?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, CouponsCrew is completely free to use, with no account, signup, or subscription required to browse or copy a coupon code. The site is supported by affiliate commissions — when you click through to a brand\'s website and complete a purchase using a code found on CouponsCrew, the brand may pay a small referral commission. This does not change the price you pay at checkout; the discount you see applied is the same whether or not that commission exists, and it is the same commission-based model used by most coupon and deals sites. CouponsCrew does not charge shoppers directly for access to codes, and does not sell user data to advertisers or third parties to generate revenue instead.',
+            text: 'Fashion and Electronics have the most deals at any given time, followed by Food & Grocery and Travel.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I stack a coupon code with a bank card offer?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Apply the coupon code at checkout first, then select your bank card as the payment method. HDFC, ICICI, SBI, Axis, and Kotak all run brand-specific cashback offers on top of listed discounts.',
           },
         },
       ],

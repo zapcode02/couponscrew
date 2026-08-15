@@ -98,9 +98,12 @@ export const metadata: Metadata = {
 }
 
 // ─────────────────────────────────────────────
-// JSON-LD Schemas (CollectionPage + FAQPage)
-// Note: No ItemList — deals of the day are dynamic and rotate daily.
-// Hardcoding them would cause stale/inaccurate schema data.
+// JSON-LD Schemas (CollectionPage + ItemList + FAQPage)
+// ItemList: every deal card on this page is currently Pepperfry (see
+// DEALS_DATA in DealsOfTheDay.tsx), and none have a distinct per-deal URL —
+// clicking through goes to the store page, same as the /stores/pepperfry-
+// coupon-code Offer cards. So the honest destination is that one real page,
+// listed once rather than repeated per deal card.
 // ─────────────────────────────────────────────
 
 const jsonLd = {
@@ -141,7 +144,25 @@ const jsonLd = {
       },
     },
 
-    // 2. FAQPage Schema (AEO + AI Search)
+    // 2. ItemList Schema
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/deals-of-the-day#itemlist',
+      name: "Today's Deals on CouponsCrew",
+      description: 'Verified deals of the day on CouponsCrew, refreshed daily.',
+      url: 'https://www.couponscrew.com/deals-of-the-day',
+      numberOfItems: 1,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Pepperfry Coupon Code',
+          url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
+        },
+      ],
+    },
+
+    // 3. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
       '@id': 'https://www.couponscrew.com/deals-of-the-day#faqpage',
