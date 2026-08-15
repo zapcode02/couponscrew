@@ -2,6 +2,8 @@
 import { Suspense } from 'react'
 import Stores from './_components/Stores'
 
+export const dynamic = 'force-dynamic'
+
 // ─────────────────────────────────────────────
 // SEO + AEO + GEO + AI Search Meta
 // ─────────────────────────────────────────────
@@ -152,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 10,
+      numberOfItems: 2,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -164,56 +166,8 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Flipkart Coupon Code',
-          url: 'https://www.couponscrew.com/stores/flipkart-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Myntra Coupon Code',
-          url: 'https://www.couponscrew.com/stores/myntra-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Swiggy Coupon Code',
-          url: 'https://www.couponscrew.com/stores/swiggy-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'Zomato Coupon Code',
-          url: 'https://www.couponscrew.com/stores/zomato-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          name: 'Nykaa Coupon Code',
-          url: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 7,
           name: 'Pepperfry Coupon Code',
           url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 8,
-          name: 'Ajio Coupon Code',
-          url: 'https://www.couponscrew.com/stores/ajio-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 9,
-          name: 'Meesho Coupon Code',
-          url: 'https://www.couponscrew.com/stores/meesho-coupon-code',
-        },
-        {
-          '@type': 'ListItem',
-          position: 10,
-          name: 'Decathlon Coupon Code',
-          url: 'https://www.couponscrew.com/stores/decathlon-coupon-code',
         },
       ],
     },

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
   // ── Canonical ──────────────────────────────
   alternates: {
-    canonical: 'https://couponscrew.com/home-and-kitchen',
+    canonical: 'https://www.couponscrew.com/stores/categories/home-and-kitchen',
   },
 
   // ── Open Graph ─────────────────────────────
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     title: 'Home & Kitchen Coupon Codes – Save on Appliances & Furniture',
     description:
       'Get verified home & kitchen coupon codes & home appliances discount codes for Amazon, Pepperfry, IKEA, Philips, Prestige, Flipkart & more. Kitchen promo codes updated daily.',
-    url: 'https://couponscrew.com/home-and-kitchen',
+    url: 'https://www.couponscrew.com/stores/categories/home-and-kitchen',
     siteName: 'CouponsCrew',
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     images: [
       {
-        url: 'https://couponscrew.com/og-images/home-kitchen-coupons.jpg',
+        url: 'https://www.couponscrew.com/og-images/home-kitchen-coupons.jpg',
         width: 1200,
         height: 630,
         alt: 'Home & Kitchen Coupon Codes – CouponsCrew',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       'Get verified home & kitchen coupon codes & home appliances discount codes for Amazon, Pepperfry, IKEA, Philips, Prestige, Flipkart & more. Kitchen promo codes updated daily.',
     site: '@CouponsCrew',
     creator: '@CouponsCrew',
-    images: ['https://couponscrew.com/og-images/home-kitchen-coupons.jpg'],
+    images: ['https://www.couponscrew.com/og-images/home-kitchen-coupons.jpg'],
   },
 
   // ── Robots ─────────────────────────────────
@@ -87,16 +87,16 @@ const jsonLd = {
     // 1. WebPage Schema
     {
       '@type': 'WebPage',
-      '@id': 'https://couponscrew.com/home-and-kitchen#webpage',
-      url: 'https://couponscrew.com/home-and-kitchen',
+      '@id': 'https://www.couponscrew.com/stores/categories/home-and-kitchen#webpage',
+      url: 'https://www.couponscrew.com/stores/categories/home-and-kitchen',
       name: 'Home & Kitchen Coupon Codes – Save on Appliances & Furniture',
       description:
         'Get verified home & kitchen coupon codes & home appliances discount codes for Amazon, Pepperfry, IKEA, Philips, Prestige, Flipkart & more. Kitchen promo codes updated daily.',
-      inLanguage: 'en-US',
+      inLanguage: 'en-IN',
       isPartOf: {
         '@type': 'WebSite',
-        '@id': 'https://couponscrew.com/#website',
-        url: 'https://couponscrew.com',
+        '@id': 'https://www.couponscrew.com/#website',
+        url: 'https://www.couponscrew.com',
         name: 'CouponsCrew',
       },
       breadcrumb: {
@@ -106,71 +106,22 @@ const jsonLd = {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://couponscrew.com',
+            item: 'https://www.couponscrew.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Home & Kitchen',
-            item: 'https://couponscrew.com/home-and-kitchen',
+            item: 'https://www.couponscrew.com/stores/categories/home-and-kitchen',
           },
         ],
       },
     },
 
-    // 2. ItemList Schema (Top Home & Kitchen Brands)
-    {
-      '@type': 'ItemList',
-      '@id': 'https://couponscrew.com/home-and-kitchen#itemlist',
-      name: 'Top Home & Kitchen Brands with Coupon Codes',
-      description:
-        'Verified coupon codes and discount offers for top home and kitchen brands including Amazon, Pepperfry, IKEA, Philips, Prestige and Flipkart.',
-      url: 'https://couponscrew.com/home-and-kitchen',
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Amazon Home & Kitchen Deals',
-          url: 'https://couponscrew.com/stores/amazon',
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Pepperfry Coupon Codes',
-          url: 'https://couponscrew.com/stores/pepperfry',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'IKEA Discount Codes',
-          url: 'https://couponscrew.com/stores/ikea',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Philips Promo Codes',
-          url: 'https://couponscrew.com/stores/philips',
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'Prestige Coupon Codes',
-          url: 'https://couponscrew.com/stores/prestige',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          name: 'Flipkart Home Offers',
-          url: 'https://couponscrew.com/stores/flipkart',
-        },
-      ],
-    },
-
-    // 3. FAQPage Schema (AEO + AI Search)
+    // 2. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
-      '@id': 'https://couponscrew.com/home-and-kitchen#faqpage',
+      '@id': 'https://www.couponscrew.com/stores/categories/home-and-kitchen#faqpage',
       mainEntity: [
         {
           '@type': 'Question',

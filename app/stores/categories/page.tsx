@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
   // ── Canonical ──────────────────────────────
   alternates: {
-    canonical: 'https://couponscrew.com/categories',
+    canonical: 'https://www.couponscrew.com/stores/categories',
   },
 
   // ── Open Graph ─────────────────────────────
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     title: 'Coupon Codes by Category – Fashion, Beauty, Fitness & More',
     description:
       'Browse all coupon code categories on CouponsCrew. Find verified discount codes for Fashion, Beauty, Fitness, Home & Kitchen, Clothing & Accessories and top brands — updated daily.',
-    url: 'https://couponscrew.com/categories',
+    url: 'https://www.couponscrew.com/stores/categories',
     siteName: 'CouponsCrew',
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     images: [
       {
-        url: 'https://couponscrew.com/og-images/categories.jpg',
+        url: 'https://www.couponscrew.com/og-images/categories.jpg',
         width: 1200,
         height: 630,
         alt: 'Coupon Codes by Category – CouponsCrew',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       'Browse all coupon code categories on CouponsCrew. Find verified discount codes for Fashion, Beauty, Fitness, Home & Kitchen, Clothing & Accessories and top brands — updated daily.',
     site: '@CouponsCrew',
     creator: '@CouponsCrew',
-    images: ['https://couponscrew.com/og-images/categories.jpg'],
+    images: ['https://www.couponscrew.com/og-images/categories.jpg'],
   },
 
   // ── Robots ─────────────────────────────────
@@ -86,16 +86,16 @@ const jsonLd = {
     // 1. WebPage Schema
     {
       '@type': 'WebPage',
-      '@id': 'https://couponscrew.com/categories#webpage',
-      url: 'https://couponscrew.com/categories',
+      '@id': 'https://www.couponscrew.com/stores/categories#webpage',
+      url: 'https://www.couponscrew.com/stores/categories',
       name: 'Coupon Codes by Category – Fashion, Beauty, Fitness & More',
       description:
         'Browse all coupon code categories on CouponsCrew. Find verified discount codes for Fashion, Beauty, Fitness, Home & Kitchen, Clothing & Accessories and top brands — updated daily.',
-      inLanguage: 'en-US',
+      inLanguage: 'en-IN',
       isPartOf: {
         '@type': 'WebSite',
-        '@id': 'https://couponscrew.com/#website',
-        url: 'https://couponscrew.com',
+        '@id': 'https://www.couponscrew.com/#website',
+        url: 'https://www.couponscrew.com',
         name: 'CouponsCrew',
       },
       breadcrumb: {
@@ -105,13 +105,13 @@ const jsonLd = {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://couponscrew.com',
+            item: 'https://www.couponscrew.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Categories',
-            item: 'https://couponscrew.com/categories',
+            item: 'https://www.couponscrew.com/stores/categories',
           },
         ],
       },
@@ -120,18 +120,18 @@ const jsonLd = {
     // 2. ItemList Schema (All 5 Category Pages)
     {
       '@type': 'ItemList',
-      '@id': 'https://couponscrew.com/categories#itemlist',
+      '@id': 'https://www.couponscrew.com/stores/categories#itemlist',
       name: 'All Coupon Code Categories on CouponsCrew',
       description:
         'A complete directory of coupon code categories on CouponsCrew including Fashion, Beauty, Exercise & Fitness, Home & Kitchen, and Clothing & Accessories.',
-      url: 'https://couponscrew.com/categories',
+      url: 'https://www.couponscrew.com/stores/categories',
       numberOfItems: 5,
       itemListElement: [
         {
           '@type': 'ListItem',
           position: 1,
           name: 'Fashion Coupon Codes',
-          url: 'https://couponscrew.com/fashion',
+          url: 'https://www.couponscrew.com/stores/categories/fashion',
           description:
             'Verified fashion coupon codes for Myntra, AJIO, Amazon, Meesho, Nykaa Fashion, H&M and Zara.',
         },
@@ -139,7 +139,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Beauty Coupon Codes',
-          url: 'https://couponscrew.com/beauty',
+          url: 'https://www.couponscrew.com/stores/categories/beauty',
           description:
             'Verified beauty and skincare coupon codes for Nykaa, Mamaearth, Dot & Key, The Body Shop, Minimalist and Plum.',
         },
@@ -147,7 +147,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 3,
           name: 'Exercise & Fitness Coupon Codes',
-          url: 'https://couponscrew.com/exercise-and-fitness',
+          url: 'https://www.couponscrew.com/stores/categories/exercise-and-fitness',
           description:
             'Verified fitness coupon codes for Decathlon, Healthkart, MuscleBlaze, Boldfit, Nike and Amazon.',
         },
@@ -155,7 +155,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 4,
           name: 'Home & Kitchen Coupon Codes',
-          url: 'https://couponscrew.com/home-and-kitchen',
+          url: 'https://www.couponscrew.com/stores/categories/home-and-kitchen',
           description:
             'Verified home and kitchen coupon codes for Amazon, Pepperfry, IKEA, Philips, Prestige and Flipkart.',
         },
@@ -163,7 +163,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 5,
           name: 'Clothing & Accessories Coupon Codes',
-          url: 'https://couponscrew.com/clothing-and-accessories',
+          url: 'https://www.couponscrew.com/stores/categories/clothing-and-accessories',
           description:
             "Verified clothing and accessories coupon codes for Myntra, AJIO, Levi's, Allen Solly, Van Heusen and FabIndia.",
         },
@@ -173,7 +173,7 @@ const jsonLd = {
     // 3. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
-      '@id': 'https://couponscrew.com/categories#faqpage',
+      '@id': 'https://www.couponscrew.com/stores/categories#faqpage',
       mainEntity: [
         {
           '@type': 'Question',

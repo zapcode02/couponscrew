@@ -6,7 +6,9 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "indexnow:submit": "npx tsx scripts/indexnow-submit.ts",
+    "indexnow:verify": "npx tsx scripts/indexnow-submit.ts --verify-only"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
@@ -32,6 +34,6 @@
     "chrome >= 95",
     "edge >= 95",
     "firefox >= 95",
-    "safari >= 15"
+    "safari >= 15.4"
   ]
 }

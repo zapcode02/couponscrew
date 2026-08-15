@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
   // ── Canonical ──────────────────────────────
   alternates: {
-    canonical: 'https://couponscrew.com/beauty',
+    canonical: 'https://www.couponscrew.com/stores/categories/beauty',
   },
 
   // ── Open Graph ─────────────────────────────
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     title: 'Beauty Coupon Codes – Save on Skincare & Makeup',
     description:
       'Get the latest beauty coupon codes & beauty discount codes for Nykaa, Mamaearth, Dot & Key, The Body Shop, Minimalist, Plum & Flipkart. Verified skincare promo codes daily.',
-    url: 'https://couponscrew.com/beauty',
+    url: 'https://www.couponscrew.com/stores/categories/beauty',
     siteName: 'CouponsCrew',
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     images: [
       {
-        url: 'https://couponscrew.com/og-images/beauty-coupons.jpg',
+        url: 'https://www.couponscrew.com/og-images/beauty-coupons.jpg',
         width: 1200,
         height: 630,
         alt: 'Beauty Coupon Codes – CouponsCrew',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       'Get the latest beauty coupon codes & beauty discount codes for Nykaa, Mamaearth, Dot & Key, The Body Shop, Minimalist, Plum & Flipkart. Verified skincare promo codes daily.',
     site: '@CouponsCrew',
     creator: '@CouponsCrew',
-    images: ['https://couponscrew.com/og-images/beauty-coupons.jpg'],
+    images: ['https://www.couponscrew.com/og-images/beauty-coupons.jpg'],
   },
 
   // ── Robots ─────────────────────────────────
@@ -86,16 +86,16 @@ const jsonLd = {
     // 1. WebPage Schema
     {
       '@type': 'WebPage',
-      '@id': 'https://couponscrew.com/beauty#webpage',
-      url: 'https://couponscrew.com/beauty',
+      '@id': 'https://www.couponscrew.com/stores/categories/beauty#webpage',
+      url: 'https://www.couponscrew.com/stores/categories/beauty',
       name: 'Beauty Coupon Codes – Save on Skincare & Makeup',
       description:
         'Get the latest beauty coupon codes & beauty discount codes for Nykaa, Mamaearth, Dot & Key, The Body Shop, Minimalist, Plum & Flipkart. Verified skincare promo codes daily.',
-      inLanguage: 'en-US',
+      inLanguage: 'en-IN',
       isPartOf: {
         '@type': 'WebSite',
-        '@id': 'https://couponscrew.com/#website',
-        url: 'https://couponscrew.com',
+        '@id': 'https://www.couponscrew.com/#website',
+        url: 'https://www.couponscrew.com',
         name: 'CouponsCrew',
       },
       breadcrumb: {
@@ -105,71 +105,22 @@ const jsonLd = {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://couponscrew.com',
+            item: 'https://www.couponscrew.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Beauty',
-            item: 'https://couponscrew.com/beauty',
+            item: 'https://www.couponscrew.com/stores/categories/beauty',
           },
         ],
       },
     },
 
-    // 2. ItemList Schema (Top Beauty Brands)
-    {
-      '@type': 'ItemList',
-      '@id': 'https://couponscrew.com/beauty#itemlist',
-      name: 'Top Beauty Brands with Coupon Codes',
-      description:
-        'Verified coupon codes and discount offers for top beauty and skincare brands including Nykaa, Mamaearth, Dot & Key, The Body Shop, Minimalist and Plum.',
-      url: 'https://couponscrew.com/beauty',
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Nykaa Coupon Codes',
-          url: 'https://couponscrew.com/stores/nykaa',
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Mamaearth Discount Codes',
-          url: 'https://couponscrew.com/stores/mamaearth',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Dot & Key Promo Codes',
-          url: 'https://couponscrew.com/stores/dot-and-key',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'The Body Shop Coupons',
-          url: 'https://couponscrew.com/stores/the-body-shop',
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'Minimalist Skincare Offers',
-          url: 'https://couponscrew.com/stores/minimalist',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          name: 'Plum Coupon Codes',
-          url: 'https://couponscrew.com/stores/plum',
-        },
-      ],
-    },
-
-    // 3. FAQPage Schema (AEO + AI Search)
+    // 2. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
-      '@id': 'https://couponscrew.com/beauty#faqpage',
+      '@id': 'https://www.couponscrew.com/stores/categories/beauty#faqpage',
       mainEntity: [
         {
           '@type': 'Question',

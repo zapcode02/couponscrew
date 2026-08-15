@@ -16,15 +16,15 @@ import Footer from '../../src/components/Footer';
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const heroSlides = [
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783239479/Minimalist_qa77z6.webp', alt: 'Minimalist Deals', href: 'https://amzn.to/4oRAEV3' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783239172/perffy_kh9jh3.webp', alt: 'Pepperfry Deals', href: 'https://track.vcommission.com/click?campaign_id=10194&pub_id=130349' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783239589/desidiya-moon_n01ghx.webp', alt: 'Desidiya Moon Deals', href: 'https://amzn.to/4bdFyGa' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239479/Minimalist_qa77z6.webp', alt: 'Minimalist Deals', href: 'https://amzn.to/4oRAEV3' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239172/perffy_kh9jh3.webp', alt: 'Pepperfry Deals', href: 'https://track.vcommission.com/click?campaign_id=10194&pub_id=130349' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239589/desidiya-moon_n01ghx.webp', alt: 'Desidiya Moon Deals', href: 'https://amzn.to/4bdFyGa' },
 ];
 
 const rightSlides = [
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783239996/delmo_wnabi8.webp', alt: 'DEELMO Deals', href: 'https://amzn.to/3R7tzTR' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783239996/acnos_ctezij.webp', alt: 'Acnos Deals', href: 'https://amzn.to/4gbffUx' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783240053/pulgo_q20hdz.webp', alt: 'PulGos Deals', href: 'https://amzn.to/4uUuG7b' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239996/delmo_wnabi8.webp', alt: 'DEELMO Deals', href: 'https://amzn.to/3R7tzTR' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239996/acnos_ctezij.webp', alt: 'Acnos Deals', href: 'https://amzn.to/4gbffUx' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783240053/pulgo_q20hdz.webp', alt: 'PulGos Deals', href: 'https://amzn.to/4uUuG7b' },
 ];
 
 const productCategoryCards = [

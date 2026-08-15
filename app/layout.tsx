@@ -12,6 +12,18 @@ const inter = Inter({
   display: 'swap',
 })
 
+// Dedicated single-weight loader for the body-text weight actually used
+// above the fold. next/font/google's automatic preload heuristic is
+// unreliable once many weights are declared on one loader (as above), so
+// this narrower loader exists solely to get a real <link rel="preload">
+// emitted for the font file the browser needs first.
+const interPreload = Inter({
+  subsets: ['latin'],
+  weight: '400',
+  preload: true,
+  variable: '--font-inter-preload',
+})
+
 const outfit = Outfit({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800', '900'],
@@ -53,15 +65,34 @@ export const metadata: Metadata = {
   },
 }
 
+// Speculation Rules API — prefetch-only hint for high-confidence next
+// navigations. Store pages are listed by URL rather than tied to a specific
+// link source, since Speculation Rules' document/list rule type prefetches
+// by destination URL regardless of which page links to it; a page prefetching
+// itself is a safe no-op the browser skips automatically.
+const speculationRules = {
+  prefetch: [
+    {
+      source: 'list',
+      urls: ['/stores/amazon-coupon-code', '/stores/pepperfry-coupon-code'],
+      eagerness: 'moderate',
+    },
+  ],
+}
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable} ${firaCode.variable}`}>
+    <html lang="en" className={`${inter.variable} ${outfit.variable} ${firaCode.variable} ${interPreload.variable}`}>
       <head>
         <AnalyticsLoader />
+        <script
+          type="speculationrules"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(speculationRules) }}
+        />
       </head>
       <body className="bg-[#F8F8FF] text-[#4A4A6A] selection:bg-[#5B4FBE] selection:text-white">
         {children}

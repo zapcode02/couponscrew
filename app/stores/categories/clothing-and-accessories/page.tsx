@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
   // ── Canonical ──────────────────────────────
   alternates: {
-    canonical: 'https://couponscrew.com/clothing-and-accessories',
+    canonical: 'https://www.couponscrew.com/stores/categories/clothing-and-accessories',
   },
 
   // ── Open Graph ─────────────────────────────
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     title: 'Clothing Coupon Codes – Save on Branded Wear & Accessories',
     description:
       'Find verified clothing coupon codes & clothing discount codes for Myntra, AJIO, Levi\'s, Allen Solly, Van Heusen, FabIndia & more. Accessories promo codes updated daily.',
-    url: 'https://couponscrew.com/clothing-and-accessories',
+    url: 'https://www.couponscrew.com/stores/categories/clothing-and-accessories',
     siteName: 'CouponsCrew',
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     images: [
       {
-        url: 'https://couponscrew.com/og-images/clothing-accessories-coupons.jpg',
+        url: 'https://www.couponscrew.com/og-images/clothing-accessories-coupons.jpg',
         width: 1200,
         height: 630,
         alt: 'Clothing & Accessories Coupon Codes – CouponsCrew',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       'Find verified clothing coupon codes & clothing discount codes for Myntra, AJIO, Levi\'s, Allen Solly, Van Heusen, FabIndia & more. Accessories promo codes updated daily.',
     site: '@CouponsCrew',
     creator: '@CouponsCrew',
-    images: ['https://couponscrew.com/og-images/clothing-accessories-coupons.jpg'],
+    images: ['https://www.couponscrew.com/og-images/clothing-accessories-coupons.jpg'],
   },
 
   // ── Robots ─────────────────────────────────
@@ -87,16 +87,16 @@ const jsonLd = {
     // 1. WebPage Schema
     {
       '@type': 'WebPage',
-      '@id': 'https://couponscrew.com/clothing-and-accessories#webpage',
-      url: 'https://couponscrew.com/clothing-and-accessories',
+      '@id': 'https://www.couponscrew.com/stores/categories/clothing-and-accessories#webpage',
+      url: 'https://www.couponscrew.com/stores/categories/clothing-and-accessories',
       name: 'Clothing Coupon Codes – Save on Branded Wear & Accessories',
       description:
         "Find verified clothing coupon codes & clothing discount codes for Myntra, AJIO, Levi's, Allen Solly, Van Heusen, FabIndia & more. Accessories promo codes updated daily.",
-      inLanguage: 'en-US',
+      inLanguage: 'en-IN',
       isPartOf: {
         '@type': 'WebSite',
-        '@id': 'https://couponscrew.com/#website',
-        url: 'https://couponscrew.com',
+        '@id': 'https://www.couponscrew.com/#website',
+        url: 'https://www.couponscrew.com',
         name: 'CouponsCrew',
       },
       breadcrumb: {
@@ -106,71 +106,22 @@ const jsonLd = {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://couponscrew.com',
+            item: 'https://www.couponscrew.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Clothing & Accessories',
-            item: 'https://couponscrew.com/clothing-and-accessories',
+            item: 'https://www.couponscrew.com/stores/categories/clothing-and-accessories',
           },
         ],
       },
     },
 
-    // 2. ItemList Schema (Top Clothing & Accessories Brands)
-    {
-      '@type': 'ItemList',
-      '@id': 'https://couponscrew.com/clothing-and-accessories#itemlist',
-      name: 'Top Clothing & Accessories Brands with Coupon Codes',
-      description:
-        "Verified coupon codes and discount offers for top clothing and accessories brands including Myntra, AJIO, Levi's, Allen Solly, Van Heusen and FabIndia.",
-      url: 'https://couponscrew.com/clothing-and-accessories',
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Myntra Clothing Coupons',
-          url: 'https://couponscrew.com/stores/myntra',
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'AJIO Discount Codes',
-          url: 'https://couponscrew.com/stores/ajio',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: "Levi's Promo Codes",
-          url: 'https://couponscrew.com/stores/levis',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Allen Solly Coupon Codes',
-          url: 'https://couponscrew.com/stores/allen-solly',
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'Van Heusen Discount Codes',
-          url: 'https://couponscrew.com/stores/van-heusen',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          name: 'FabIndia Coupon Codes',
-          url: 'https://couponscrew.com/stores/fabindia',
-        },
-      ],
-    },
-
-    // 3. FAQPage Schema (AEO + AI Search)
+    // 2. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
-      '@id': 'https://couponscrew.com/clothing-and-accessories#faqpage',
+      '@id': 'https://www.couponscrew.com/stores/categories/clothing-and-accessories#faqpage',
       mainEntity: [
         {
           '@type': 'Question',

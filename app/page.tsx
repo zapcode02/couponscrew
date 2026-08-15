@@ -201,7 +201,7 @@ const jsonLd = {
           name: 'What is CouponsCrew?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew is an Indian coupon website where you can find the latest verified coupon codes and discount codes across 500+ brands including Amazon, Flipkart, Myntra, and Swiggy — all updated daily.',
+            text: 'CouponsCrew is an Indian coupon website where you can find verified coupon codes and discount codes across hundreds of brands, updated daily. Instead of leaving you to hunt through forums or expired code lists, CouponsCrew organizes active offers by store and category so you can find a working code for the brand you are already shopping with in a few seconds. Every code listed goes through a verification step before it appears on the site, and offers that stop working or expire are removed rather than left up indefinitely. The goal is a single place to check before checkout — one that stays current instead of accumulating dead codes over time the way many coupon directories do.',
           },
         },
         {
@@ -209,7 +209,7 @@ const jsonLd = {
           name: 'Are the coupon codes on CouponsCrew up to date?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. CouponsCrew updates all coupon codes and discount codes daily. Every deal is manually verified before being listed so you always get the latest working offers.',
+            text: 'Yes. CouponsCrew reviews active deals daily rather than publishing a code once and leaving it up indefinitely. Before a new code goes live, it is tested at checkout to confirm the discount value and any minimum-order requirements actually apply, and only then does it get listed. After that, the team continues checking listed offers — any code that has expired, hit its redemption cap, or started failing at checkout is pulled from the site rather than left to waste a shopper\'s time. This daily-review process is what keeps the "verified" label meaningful instead of just being a badge attached once and forgotten.',
           },
         },
         {
@@ -217,7 +217,7 @@ const jsonLd = {
           name: 'How do I use a coupon code from CouponsCrew?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Find your coupon code on CouponsCrew, click to reveal or copy the code, then paste it at checkout on the brand\'s website to get your discount instantly.',
+            text: 'Find the brand or store you are shopping with on CouponsCrew, then open its page to see the active codes and deals listed for it. Click a code to reveal or copy it, then head to the brand\'s website, add your items to the cart, and paste the code into the promo or discount field at checkout. The discount should apply immediately before you complete payment — if a minimum order value or specific category applies to that code, it is noted alongside the offer so there are no surprises at checkout. No account or signup is required on CouponsCrew itself to copy and use a code.',
           },
         },
         {
@@ -225,7 +225,7 @@ const jsonLd = {
           name: 'Which brands have the latest discount codes on CouponsCrew?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew lists the latest discount codes for 500+ brands including Amazon, Flipkart, Myntra, Swiggy, Zomato, Nykaa, Pepperfry, AJIO, Meesho, Decathlon and many more — updated daily.',
+            text: 'CouponsCrew currently lists verified coupon codes and deals for Amazon and Pepperfry, spanning categories like electronics, fashion, beauty, and home & kitchen, with more brand pages being added over time. Each store has its own dedicated page listing every active code and deal for that brand, rather than mixing everything into one long undifferentiated list. New codes are checked in and expired ones are removed as part of the same daily review process used across the site, so the codes shown on a given brand\'s page reflect what is actually active rather than a static archive of offers that may no longer work.',
           },
         },
         {
@@ -233,7 +233,7 @@ const jsonLd = {
           name: 'Is CouponsCrew free to use?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, CouponsCrew is completely free to use. We earn a small affiliate commission from brands when you make a purchase using our coupon codes, at no extra cost to you.',
+            text: 'Yes, CouponsCrew is completely free to use, with no account, signup, or subscription required to browse or copy a coupon code. The site is supported by affiliate commissions — when you click through to a brand\'s website and complete a purchase using a code found on CouponsCrew, the brand may pay a small referral commission. This does not change the price you pay at checkout; the discount you see applied is the same whether or not that commission exists, and it is the same commission-based model used by most coupon and deals sites. CouponsCrew does not charge shoppers directly for access to codes, and does not sell user data to advertisers or third parties to generate revenue instead.',
           },
         },
       ],

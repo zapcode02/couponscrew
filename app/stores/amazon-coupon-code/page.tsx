@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import AmazonStore from './_components/AmazonStore'
+import { AMAZON_COUPONS } from './_components/amazonCoupons'
 
 // ─────────────────────────────────────────────
 // SEO + AEO + GEO + AI Search Meta
@@ -102,7 +103,29 @@ export const metadata: Metadata = {
 }
 
 // ─────────────────────────────────────────────
-// JSON-LD Schemas (WebPage + ItemList + FAQPage)
+// Offer Schema — one node per visible deal card,
+// generated from the same AMAZON_COUPONS data that
+// powers the rendered cards in AmazonStore.tsx
+// ─────────────────────────────────────────────
+
+const titleCase = (s: string) =>
+  s
+    .toLowerCase()
+    .split(' ')
+    .map((word) => (word === '&' ? word : word.charAt(0).toUpperCase() + word.slice(1)))
+    .join(' ')
+
+const amazonOffers = AMAZON_COUPONS.map((coupon) => ({
+  '@type': 'Offer',
+  name: `Amazon ${titleCase(coupon.type)} ${coupon.badge}`,
+  description: coupon.description,
+  url: `https://www.couponscrew.com/stores/amazon-coupon-code#${coupon.id}`,
+  priceCurrency: 'INR',
+  availability: 'https://schema.org/InStock',
+}))
+
+// ─────────────────────────────────────────────
+// JSON-LD Schemas (WebPage + ItemList + FAQPage + Offer)
 // ─────────────────────────────────────────────
 
 const jsonLd = {
@@ -214,7 +237,7 @@ const jsonLd = {
           name: 'How do I use an Amazon coupon code?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Copy the Amazon coupon code from CouponsCrew, go to amazon.in and add items to your cart. At checkout, paste the code in the promo or gift card field to get instant savings on your order.',
+            text: 'Copy the Amazon coupon code from CouponsCrew, go to amazon.in, and add the items you want to buy to your cart. At checkout, look for the "Gift cards & promotional codes" field and paste the code there — the discount is applied before you confirm payment, so you can see the updated total before completing the order. Some codes are restricted to specific categories or require a minimum order value, so it is worth checking the terms listed alongside each code on CouponsCrew before applying it. If a code does not apply, the most common reasons are that it has expired, the cart does not meet the minimum spend, or the items in the cart are not eligible for that particular offer.',
           },
         },
         {
@@ -222,7 +245,7 @@ const jsonLd = {
           name: 'What is the best Amazon coupon code today?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'CouponsCrew lists 120+ verified Amazon coupon codes updated daily. The best deals today include up to 90% off on Electronics and Fashion, and up to 80% off on medicines for Prime Members.',
+            text: 'CouponsCrew lists verified Amazon coupon codes updated daily, spanning categories like Electronics, Fashion, and Home & Kitchen, with some offers reaching up to 90% off. What counts as the "best" code depends on what you are buying — a flat-percentage sitewide code is usually strongest for smaller carts, while a category-specific code or a Lightning Deal tends to offer deeper savings on big-ticket items. The current top offers are listed at the top of this page along with their discount value, so you can compare them directly instead of guessing which one applies best to your order. New codes are added and expired ones removed as part of the same daily review process used across every store page on CouponsCrew, so what you see listed reflects what is actually live right now.',
           },
         },
         {
@@ -230,7 +253,7 @@ const jsonLd = {
           name: 'Does Amazon have a Big Billion Day sale?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, Amazon runs major seasonal sales in India including the Great Indian Festival and Prime Day. These sales offer some of the highest discounts of the year across Electronics, Fashion, Grocery, and more. CouponsCrew tracks and lists all active Amazon sale coupon codes during these events.',
+            text: 'Amazon India does not run a sale called "Big Billion Day" — that name belongs to a competing platform. Amazon\'s own major seasonal sales are the Great Indian Festival, typically held in September–October, and Prime Day in July, both offering some of the deepest discounts of the year across Electronics, Fashion, Grocery, and more. The Great Republic Day Sale in January and the Great Freedom Sale in August are also significant shopping windows, and tend to see especially strong deals in Electronics and Home & Kitchen. CouponsCrew tracks and lists active Amazon coupon codes during all of these events as they go live, so it is worth checking back on this page as a sale window opens rather than only browsing beforehand.',
           },
         },
         {
@@ -238,7 +261,7 @@ const jsonLd = {
           name: 'Can Amazon Prime members get extra discounts?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, Amazon Prime members get exclusive deals including up to 80% off on medicines via Amazon Pharmacy, early access to Lightning Deals, and additional discounts during Prime Day and seasonal sales.',
+            text: 'Yes. Prime members get early access to Lightning Deals before they open to the general public, exclusive pricing on select products, and promo codes that are not available to non-Prime shoppers. During major sale events like Prime Day, member-only discounts can be substantially deeper than what regular visitors see. Prime also bundles in free one-day or same-day delivery on eligible orders, Prime Video, Prime Music, and Prime Reading, which is part of why many frequent Amazon shoppers treat the membership itself as a standing discount rather than just a delivery perk. Combining a Prime-exclusive deal with an active CouponsCrew coupon code, where the code\'s terms allow it, is generally the most effective way to stack savings on a single order.',
           },
         },
         {
@@ -246,11 +269,14 @@ const jsonLd = {
           name: 'Are Amazon coupon codes on CouponsCrew verified?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. All Amazon coupon codes and discount deals listed on CouponsCrew are manually verified and updated daily to ensure they are active and working at checkout.',
+            text: 'Yes. Amazon coupon codes on CouponsCrew go through a verification step before they are listed — the discount value and any eligibility conditions are checked so the code shown actually reflects what you will get at checkout. After that, the team reviews active Amazon codes daily rather than leaving them up indefinitely; any code that has expired, hit its redemption cap, or stopped working is removed from the page. This daily-review process is what keeps the codes on this page current instead of accumulating dead offers the way some coupon listings do. If a listed code does not work at checkout, it is worth double-checking the minimum order value and category restrictions noted alongside it before assuming it has expired.',
           },
         },
       ],
     },
+
+    // 4. Offer Schema (one per visible deal card)
+    ...amazonOffers,
   ],
 }
 

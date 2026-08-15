@@ -1,8 +1,8 @@
 # Couponscrew
 
-> A globally trusted coupon website — 10,000+ manually verified coupons across 500+ brands, with a 92.4% real-world success rate at checkout.
+> India's most trusted coupon website — 10,000+ manually verified coupons across 500+ brands, with a 92.4% real-world success rate at checkout.
 
-Couponscrew helps shoppers worldwide find verified, working coupon codes, deals, and offers without wasting time on expired listings. Every code is manually tested before it goes live, and expired codes are pulled quickly. The platform is free to use and is supported by affiliate commissions, never by selling user data. Over 50,000 shoppers use Couponscrew to save on Amazon, Flipkart, Myntra, Swiggy, Zomato, Hostinger, and 500+ other brands across fashion, electronics, food & grocery, travel, web hosting, and more.
+Couponscrew helps Indian shoppers find verified, working coupon codes, deals, and offers without wasting time on expired listings. Every code is manually tested before it goes live, and expired codes are pulled quickly. The platform is free to use and is supported by affiliate commissions, never by selling user data. Over 50,000 shoppers use Couponscrew to save on Amazon, Flipkart, Myntra, Swiggy, Zomato, Pepperfry, and 500+ other brands across fashion, electronics, food & grocery, travel, home & kitchen, and more.
 
 ## Key Pages
 
@@ -16,7 +16,7 @@ Couponscrew helps shoppers worldwide find verified, working coupon codes, deals,
 - [Deals of the Month](https://www.couponscrew.com/deals-of-the-month): Curated top brand and product deals for the current month.
 - [Deals](https://www.couponscrew.com/deals): General deals listing across brands and products.
 - [Offers](https://www.couponscrew.com/offers): Brand offers and promotions, filterable by category.
-- [Categories](https://www.couponscrew.com/categories): Browse coupons by category — fashion, electronics, food, travel, beauty, web hosting, and more.
+- [Categories](https://www.couponscrew.com/categories): Browse coupons by category — fashion, electronics, food, travel, beauty, home & kitchen, and more.
 - [Blog](https://www.couponscrew.com/blog): Shopping guides, coupon-stacking strategies, and platform comparisons.
 
 ## About

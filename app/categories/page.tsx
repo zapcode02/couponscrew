@@ -99,7 +99,7 @@ const schema = {
       name: 'All Categories on CouponScrew',
       description: 'Complete list of coupon and deal categories available on CouponScrew.',
       url: 'https://www.couponscrew.com/categories',
-      numberOfItems: 8,
+      numberOfItems: 1,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -107,30 +107,6 @@ const schema = {
           position: 1,
           name: 'Fashion',
           url: 'https://www.couponscrew.com/categories/fashion',
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Food & Dining',
-          url: 'https://www.couponscrew.com/categories/food-dining',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Electronics',
-          url: 'https://www.couponscrew.com/categories/electronics',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Travel',
-          url: 'https://www.couponscrew.com/categories/travel',
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'Beauty & Health',
-          url: 'https://www.couponscrew.com/categories/beauty-health',
         },
       ],
     },

@@ -25,22 +25,9 @@ import {
 } from 'lucide-react';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
+import { Coupon, PEPPERFRY_COUPONS } from './pepperfryCoupons';
 
-// Coupon type
-interface Coupon {
-  id: string;
-  badge: string;
-  badgeType: 'UP TO' | 'FLAT' | 'FREE' | 'PERCENT';
-  badgeColor: string;
-  color: string;
-  type: string;
-  title: string;
-  description: string;
-  code: string;
-  verified: string;
-  userType: string;
-  validTill: string;
-}
+export type { Coupon };
 
 function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
@@ -60,148 +47,7 @@ export default function PepperfryStore() {
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<string>('Latest');
 
-  const coupons: Coupon[] = [
-    {
-      id: 'coupon-1',
-      badge: 'UP TO 50% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#5B4FBE]',
-      color: '#5B4FBE',
-      type: 'FURNITURE',
-      title: 'Get 50% off on Bonton Computer Table in Wenge Finish with Keyboard Slider',
-      description: 'Shop the Bonton Computer Table in Wenge finish with a sliding keyboard tray at up to 50% OFF.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-2',
-      badge: '@ ₹1',
-      badgeType: 'FLAT',
-      badgeColor: 'bg-[#FF5722]',
-      color: '#FF5722',
-      type: 'HOME DÉCOR',
-      title: 'Get Ethnic Motif Multicolor (12 x 16) PVC Placemats, Set of 6 @ Rs.1',
-      description: 'Add a set of 6 ethnic motif multicolor PVC placemats to your dining table for just ₹1.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-3',
-      badge: 'UP TO 35% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#4A3AFF]',
-      color: '#0D9488',
-      type: 'FURNITURE',
-      title: 'Get 35% off on Yuko TV Console for TVs up to 55" in Columbia',
-      description: 'Shop the Yuko TV Console in Columbia finish, suitable for TVs up to 55 inches, at up to 35% OFF.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-4',
-      badge: 'UP TO 75% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#FF5722]',
-      color: '#2563EB',
-      type: 'ELECTRONICS',
-      title: 'Get 75% off on Portable Electronic Digital Weight Machine',
-      description: 'Shop the portable electronic digital weight machine at up to 75% OFF.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-5',
-      badge: 'UP TO 75% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#1A1A2E]',
-      color: '#1A1A2E',
-      type: 'FURNITURE & DECOR',
-      title: 'Enjoy up to 75% OFF + 20% Cashback on Furniture & Decor',
-      description: 'Shop across furniture & home décor and enjoy up to 75% OFF plus an extra 20% cashback.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-6',
-      badge: 'UP TO 75% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#5B4FBE]',
-      color: '#5B4FBE',
-      type: 'KITCHENWARE',
-      title: 'Get 75% off on Brayan 250ml White Set of 2 Ceramic Coffee Mugs',
-      description: 'Shop the Brayan 250ml white ceramic coffee mug set of 2 at up to 75% OFF.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-7',
-      badge: 'UP TO 36% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#FF5722]',
-      color: '#FF5722',
-      type: 'FURNITURE',
-      title: 'Get 36% off on Suki Bedside Table in Wenge Finish',
-      description: 'Shop the Suki Bedside Table in Wenge finish at up to 36% OFF.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-8',
-      badge: '@ ₹1',
-      badgeType: 'FLAT',
-      badgeColor: 'bg-[#4A3AFF]',
-      color: '#0D9488',
-      type: 'KITCHENWARE',
-      title: 'Get Smart ABS Plastic Vegetable Peeler with Stainless Steel Blade @ Rs.1',
-      description: 'Add a smart ABS plastic vegetable peeler with a stainless steel blade to your cart for just ₹1.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-9',
-      badge: '@ ₹1',
-      badgeType: 'FLAT',
-      badgeColor: 'bg-[#FF5722]',
-      color: '#2563EB',
-      type: 'BATH',
-      title: 'Get Grey Abstract Rubber 24x16 Inches AntiSkid Bath Mat @ Rs.1',
-      description: 'Add a grey abstract rubber 24x16 inch anti-skid bath mat to your cart for just ₹1.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    },
-    {
-      id: 'coupon-10',
-      badge: 'UP TO 46% OFF',
-      badgeType: 'UP TO',
-      badgeColor: 'bg-[#1A1A2E]',
-      color: '#1A1A2E',
-      type: 'FURNITURE',
-      title: 'Get 46% off on Mana Coffee Table in Wenge Finish',
-      description: 'Shop the Mana Coffee Table in Wenge finish at up to 46% OFF.',
-      code: '',
-      verified: 'Verified Today',
-      userType: 'All Users',
-      validTill: '30 Jun 2026'
-    }
-  ];
+  const coupons: Coupon[] = PEPPERFRY_COUPONS;
 
   const handleCopyCode = (coupon: Coupon) => {
     navigator.clipboard.writeText(coupon.code);
@@ -1077,7 +923,7 @@ export default function PepperfryStore() {
   {[
     {
       q: "What is the best Pepperfry coupon code available right now?",
-      a: "The best active Pepperfry coupon code is listed at the top of this page with its current success rate and verified date. For new users, HELLO1500 gives a flat ₹1,500 off your first order. Sitewide codes offering up to 75% off plus 20% cashback are also regularly available for all users."
+      a: "The best active Pepperfry coupon code is listed at the top of this page along with its current success rate and verified date, so you can see at a glance which offer is working best right now rather than guessing. For new users, HELLO1500 gives a flat ₹1,500 off your first order. Sitewide codes offering up to 75% off plus 20% cashback are also regularly available for all users, and tend to apply across furniture, home décor, and kitchenware categories rather than being restricted to a single product type. Codes are checked daily, so the offer showing as \"best\" today reflects what is actually live rather than a static listing."
     },
     {
       q: "Can I stack a Pepperfry coupon code with a bank card offer?",
@@ -1089,15 +935,15 @@ export default function PepperfryStore() {
     },
     {
       q: "Does Pepperfry offer no-cost EMI?",
-      a: "Yes. No-cost EMI is available on orders above ₹5,000 through HDFC Bank, SBI, ICICI Bank, Axis Bank, and Bajaj Finserv for tenures of 3 to 24 months. Check the full EMI breakdown at checkout, as some offers include a processing fee."
+      a: "Yes. No-cost EMI is available on orders above ₹5,000 through HDFC Bank, SBI, ICICI Bank, Axis Bank, and Bajaj Finserv, with tenures ranging from 3 to 24 months depending on the card and order value. \"No-cost\" means Pepperfry absorbs the standard interest charge rather than passing it on, so the total you pay across installments matches the order price rather than including added interest. Some offers do include a processing fee charged by the bank, which is separate from the interest waiver, so it is worth checking the full EMI breakdown shown at checkout — including the exact tenure options available for your card — before choosing this payment method."
     },
     {
       q: "What is Pepperfry's return policy?",
-      a: "Pepperfry offers a 45-day return window on furniture and a 10-day window on home décor items. Products must be in original condition. In serviceable cities, Pepperfry arranges doorstep pickup for returns. A cancellation fee of up to 2.5% of the paid amount applies at the time of refund processing."
+      a: "Pepperfry offers a 45-day return window on furniture — a standard that is notably longer than most competitors in the Indian online furniture market, where 7 to 10 days is typical. This extended window is meant to reduce the risk of buying large furniture items sight-unseen. Home décor and accessories carry a shorter 10-day return window. Products must be returned in original condition to qualify. In serviceable cities, Pepperfry arranges doorstep pickup for returns rather than requiring buyers to arrange their own shipping or logistics. A cancellation fee of up to 2.5% of the paid amount applies at the time refund processing begins, so it is worth factoring that into the decision before requesting a return."
     },
     {
       q: "What is Studio Pepperfry?",
-      a: "Studio Pepperfry is Pepperfry's network of 50+ offline experience centres across 30+ cities in India. You can visit a Studio to see furniture in person, check material quality and finish, and get a free interior design consultation — then place your order online at the same discounted price."
+      a: "Studio Pepperfry is Pepperfry's network of 50+ offline experience centres spread across 30+ cities in India. It exists to solve the main hesitation shoppers have with buying furniture online — not being able to see, touch, or sit on the piece before committing. At a Studio, you can view furniture in person, check the material quality and finish directly, and get a free interior design consultation from staff on-site. After that, you still place the order online, at the same discounted price and with the same coupon codes available on this page — the in-person visit does not change the price or remove eligibility for active offers."
     },
     {
       q: "When does Pepperfry hold its biggest sales?",
@@ -1113,7 +959,7 @@ export default function PepperfryStore() {
     },
     {
       q: "How does Pepperfry cashback work?",
-      a: "Cashback on Pepperfry is credited to your Pepperfry Wallet as credits, which auto-apply at checkout and can offset up to 15% of the cart value per order. Credits expire five days from the date of issue and cannot be transferred or converted to cash."
+      a: "Cashback earned on Pepperfry is credited to your Pepperfry Wallet as credits rather than paid out directly, and those credits auto-apply at checkout on your next order. Wallet credits can offset up to 15% of the cart value per order, which makes them most useful when combined with a coupon code rather than relied on alone for the full discount. One important detail: credits expire five days from the date they are issued, so they need to be used quickly rather than saved up over time, and they cannot be transferred to another account or converted to cash. Checking your wallet balance before checkout ensures you don't lose credits that are about to expire."
     },
     {
       q: "Are there any app-exclusive deals on Pepperfry?",

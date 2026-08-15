@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
   // ── Canonical ──────────────────────────────
   alternates: {
-    canonical: 'https://couponscrew.com/exercise-and-fitness',
+    canonical: 'https://www.couponscrew.com/stores/categories/exercise-and-fitness',
   },
 
   // ── Open Graph ─────────────────────────────
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     title: 'Fitness Coupon Codes – Save on Gym Gear & Supplements',
     description:
       'Find verified fitness coupon codes & gym & fitness discount codes for Decathlon, Healthkart, MuscleBlaze, Boldfit, Nike, Amazon & more. Sports & fitness promo codes daily.',
-    url: 'https://couponscrew.com/exercise-and-fitness',
+    url: 'https://www.couponscrew.com/stores/categories/exercise-and-fitness',
     siteName: 'CouponsCrew',
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     images: [
       {
-        url: 'https://couponscrew.com/og-images/fitness-coupons.jpg',
+        url: 'https://www.couponscrew.com/og-images/fitness-coupons.jpg',
         width: 1200,
         height: 630,
         alt: 'Fitness Coupon Codes – CouponsCrew',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       'Find verified fitness coupon codes & gym & fitness discount codes for Decathlon, Healthkart, MuscleBlaze, Boldfit, Nike, Amazon & more. Sports & fitness promo codes daily.',
     site: '@CouponsCrew',
     creator: '@CouponsCrew',
-    images: ['https://couponscrew.com/og-images/fitness-coupons.jpg'],
+    images: ['https://www.couponscrew.com/og-images/fitness-coupons.jpg'],
   },
 
   // ── Robots ─────────────────────────────────
@@ -87,16 +87,16 @@ const jsonLd = {
     // 1. WebPage Schema
     {
       '@type': 'WebPage',
-      '@id': 'https://couponscrew.com/exercise-and-fitness#webpage',
-      url: 'https://couponscrew.com/exercise-and-fitness',
+      '@id': 'https://www.couponscrew.com/stores/categories/exercise-and-fitness#webpage',
+      url: 'https://www.couponscrew.com/stores/categories/exercise-and-fitness',
       name: 'Fitness Coupon Codes – Save on Gym Gear & Supplements',
       description:
         'Find verified fitness coupon codes & gym & fitness discount codes for Decathlon, Healthkart, MuscleBlaze, Boldfit, Nike, Amazon & more. Sports & fitness promo codes daily.',
-      inLanguage: 'en-US',
+      inLanguage: 'en-IN',
       isPartOf: {
         '@type': 'WebSite',
-        '@id': 'https://couponscrew.com/#website',
-        url: 'https://couponscrew.com',
+        '@id': 'https://www.couponscrew.com/#website',
+        url: 'https://www.couponscrew.com',
         name: 'CouponsCrew',
       },
       breadcrumb: {
@@ -106,71 +106,22 @@ const jsonLd = {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://couponscrew.com',
+            item: 'https://www.couponscrew.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Exercise & Fitness',
-            item: 'https://couponscrew.com/exercise-and-fitness',
+            item: 'https://www.couponscrew.com/stores/categories/exercise-and-fitness',
           },
         ],
       },
     },
 
-    // 2. ItemList Schema (Top Fitness Brands)
-    {
-      '@type': 'ItemList',
-      '@id': 'https://couponscrew.com/exercise-and-fitness#itemlist',
-      name: 'Top Fitness & Gym Brands with Coupon Codes',
-      description:
-        'Verified coupon codes and discount offers for top fitness and gym brands including Decathlon, Healthkart, MuscleBlaze, Boldfit, Nike and Amazon.',
-      url: 'https://couponscrew.com/exercise-and-fitness',
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Decathlon Coupon Codes',
-          url: 'https://couponscrew.com/stores/decathlon',
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Healthkart Discount Codes',
-          url: 'https://couponscrew.com/stores/healthkart',
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'MuscleBlaze Promo Codes',
-          url: 'https://couponscrew.com/stores/muscleblaze',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Boldfit Coupon Codes',
-          url: 'https://couponscrew.com/stores/boldfit',
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'Nike Fitness Offers',
-          url: 'https://couponscrew.com/stores/nike',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          name: 'Amazon Gym Gear Deals',
-          url: 'https://couponscrew.com/stores/amazon',
-        },
-      ],
-    },
-
-    // 3. FAQPage Schema (AEO + AI Search)
+    // 2. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
-      '@id': 'https://couponscrew.com/exercise-and-fitness#faqpage',
+      '@id': 'https://www.couponscrew.com/stores/categories/exercise-and-fitness#faqpage',
       mainEntity: [
         {
           '@type': 'Question',
