@@ -167,7 +167,7 @@ export default function PepperfryStore() {
                       <Tag size={14} /> 90+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Last Updated: Today
+                      <Clock size={14} /> Codes Reviewed Daily
                     </span>
                   </div>
                 </div>
@@ -329,7 +329,7 @@ export default function PepperfryStore() {
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
-                  {coupon.verified || "Verified Today"}
+                  {coupon.verified || "Verified"}
                 </span>
               </div>
 
@@ -576,7 +576,7 @@ export default function PepperfryStore() {
             {/* Left: Text Content */}
             <div className="prose max-w-none">
               <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Pepperfry Coupon Code India (August 2026): Up to 75% Off + Extra Cashback — Verified Today
+                Pepperfry Coupon Code India (August 2026): Up to 75% Off + Extra Cashback — Verified
               </h2>
 
               <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
@@ -792,44 +792,6 @@ export default function PepperfryStore() {
     Pepperfry promo codes apply sitewide, so any active coupon code works here. The Independence Day Sale in August and the Big Home Sale in October–November are the two windows where outdoor furniture sees the deepest discounts of the year.
   </p>
 </div>
-
-<div className="space-y-4 text-slate-700">
-  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-    Why Millions of Indian Shoppers Choose Pepperfry
-  </h3>
-
-  <p>
-    <strong className="text-[#2C2C40]">India's Deepest Furniture Catalogue — 1,00,000+ Products: </strong>
-    No other online furniture platform in India comes close to Pepperfry's catalogue depth. With over 1,00,000 products across eight categories and 10,000+ registered sellers, Pepperfry offers a range that runs from ₹1 kitchen accessories to ₹2,00,000+ luxury sofas — all on a single platform. Whether you are furnishing a studio apartment on a tight budget or designing a premium home with high-end pieces, Pepperfry has options at every price point without requiring you to visit multiple websites.
-  </p>
-
-  <p>
-    <strong className="text-[#2C2C40]">Studio Pepperfry — See Before You Buy at 50+ Offline Centres: </strong>
-    Most online furniture regrets come from buying without seeing the product in person — the sofa colour looked different on screen, the cushion was softer than expected, the wood finish had a different tone in real life. Studio Pepperfry exists specifically to solve this problem. With 50+ experience centres across 30+ cities, you can walk in, sit on the sofa, check the material quality and wood finish in person, and then place your order online — often at the same discounted price you found on CouponScrew. Free interior design consultation is also included at Studio Pepperfry locations at no extra cost.
-  </p>
-
-  <p>
-    <strong className="text-[#2C2C40]">45-Day Return Policy — One of the Best in Online Furniture: </strong>
-    Pepperfry offers a 45-day return window on furniture — a standard that is genuinely difficult to match in the Indian online furniture market, where most competitors offer 7 to 10 days. This extended return policy significantly reduces the risk of buying large furniture online. Home décor and accessories have a 10-day return window. In serviceable cities, Pepperfry handles doorstep pickup on returns rather than requiring buyers to arrange their own logistics.
-  </p>
-
-  <p>
-    <strong className="text-[#2C2C40]">No-Cost EMI on Orders Above ₹5,000: </strong>
-    Large furniture purchases do not have to strain your monthly budget. Pepperfry offers no-cost EMI on orders above ₹5,000 through HDFC Bank, SBI, ICICI Bank, Axis Bank, and Bajaj Finserv, with tenures ranging from 3 to 24 months. A ₹30,000 sofa on a 24-month no-cost EMI plan works out to ₹1,250 per month — a manageable amount for most households. It is worth checking the full EMI breakdown at checkout, as some offers include a processing fee that is worth factoring into the total cost.
-  </p>
-
-  <p>
-    <strong className="text-[#2C2C40]">Pepperfry Privilege Membership — Free Early Sale Access: </strong>
-    Pepperfry's Privilege membership is free to join and offers early sale access — sometimes 24 hours before the general public — along with member-exclusive coupon codes and priority customer support. For anyone who shops at Pepperfry more than once a year, signing up before the next Big Home Sale is a straightforward way to access the best deals before popular items sell out.
-  </p>
-
-  <p>
-    <strong className="text-[#2C2C40]">Pepperfry for Business — End-to-End Commercial Interiors: </strong>
-    Launched in 2026, Pepperfry for Business is a dedicated vertical for organisations that need to furnish offices, hospitality properties, retail stores, or institutional spaces. The service covers the full project lifecycle — space planning, design, procurement, manufacturing from Pepperfry's own 1.25 lakh sq ft facility, and on-site installation. It draws on a network of over 1,100 manufacturers and delivers across 500+ cities nationally. For startups, co-working spaces, or any business needing a single point of accountability for a large interior project, this is a service worth exploring directly with Pepperfry.
-  </p>
-</div>
-
-                
 
                 <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
   <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Pepperfry Coupon Code — Step by Step</h3>

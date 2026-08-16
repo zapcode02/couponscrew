@@ -25,7 +25,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up to 90% Off Electronics, Fashion, Beauty & More',
       description: 'Shop electronics, fashion, beauty and more from leading top brands with daily discounts — no coupon code required.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -39,7 +39,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Get Up To 65% OFF On Selected Products Across All Categories!',
       description: 'Save up to 65% on handpicked items across electronics, fashion, home essentials, beauty and more — deals vary by category.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -53,7 +53,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Amazon Bestsellers - Up To 60% OFF On Hand Picked Items!',
       description: 'Save big on Amazon Best Sellers — from tech and kitchen gadgets to fashion and beauty, curated favorites at unbeatable prices.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -67,7 +67,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Prime Members Special - Save Up To 80% On Meds',
       description: 'Exclusive savings for Prime members — save up to 80% on medicines, with prices starting at just $10.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -81,7 +81,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Flat 62% OFF On JBL Live 670NC - Wireless On-Ear Headphones',
       description: 'Enjoy wireless noise-cancelling headphones with up to 65 hours battery life — no coupon code required, available in 4 colors.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -95,7 +95,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up to 60% Off On Garden And Outdoor',
       description: 'Avail up to 60% off on garden tools, pest control, outdoor storage, grills and more — open to everyone.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -109,7 +109,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Beauty & Personal Care Offer - Enjoy Up To 56% OFF',
       description: 'Enjoy up to 56% off on top-rated skincare items — valid on select products, discount applied automatically at cart.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -123,7 +123,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Shop Amazon Home Essentials Starting At Exciting Prices',
       description: 'Explore stylish furniture, decor, bedding, bath and premium kitchen products to refresh your living space today.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -137,7 +137,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up to 58% on Smart Home Security Cameras',
       description: 'Get 40% off select Ring Video Doorbells and up to 49% off eligible Blink cameras — smart security devices starting at $29.99.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -151,7 +151,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Get Up To 55% OFF On Preferred Fashion Products',
       description: 'Save up to 55% off on limited fashion products — the latest clothing, accessories and footwear in multiple sizes for men and women.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -165,7 +165,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'On Wireless Headphones Save Up To 51% OFF',
       description: 'Save up to 51% on Bluetooth headsets, EarPods and earbuds from top brands — perfect for calls, music, workouts and commutes.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -179,7 +179,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save 15% on Luxury Designer Handbags Today',
       description: 'Shop Louis Vuitton, Dior, Gucci and Hermes pieces at 15% savings — upgrade your collection with luxury resale deals.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -193,7 +193,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Enjoy Up To 50% Off On Toys & Games',
       description: 'Save up to 50% on Arts & Crafts, Baby & Toddler Toys, Building Toys, Dolls and Dress Up sets — prices starting at just $1.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -207,7 +207,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up To 50% OFF On Smart Home Accessories',
       description: 'Save up to 50% on smart lighting, entry systems, security cameras and more to improve your home for less — available to everyone.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -221,7 +221,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Ring Indoor Cam 1080p HD Available With 40% Off',
       description: 'Get the Ring Indoor Cam 1080p HD with 40% off — perfect for monitoring your home or business with complete app control.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -235,7 +235,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up To 50% OFF On Tretinoin Treatment',
       description: 'Save up to 50% on Tretinoin Cream anti-aging skin care — reduces fine lines, lightens sun spots, no coupon needed.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -249,7 +249,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Home Essentials - Up to 46% Off On Your Purchases',
       description: 'Get up to 46% off on home decor, furniture, kitchen & dining and area rugs — prices start from $9, open to all users.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -263,7 +263,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: '43% OFF On Ring Battery Doorbell + Pan-Tilt Cam Combo',
       description: 'Secure your home with the Ring Battery Doorbell and Pan-Tilt Indoor Cam bundle for just $79.99, saving $60 (43%).',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -277,7 +277,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Home Appliances & Toys Savings - Get Up To 40% OFF',
       description: 'Save up to 40% on home appliances, toys and fashion picks — no coupon code needed, savings apply automatically.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -291,7 +291,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Sports And Outdoor - Up to 40% Off On Products',
       description: 'Enjoy up to 40% off on exercise & fitness, hunting & fishing, sports clothing and outdoor gear — all users eligible.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -305,7 +305,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Electronics - Enjoy Up To 36% On Hand Picked Products',
       description: 'Get up to 36% off on cell phones, computers & accessories, video games, televisions and headphones — select items only.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -319,7 +319,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Kitchen Appliances - Up To 35% OFF',
       description: 'Get up to 35% off on ice cream makers, airfryers, multicookers and more kitchen appliances — limited time only.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -333,7 +333,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up To 34% OFF On Amazon Kids Echo Devices',
       description: 'Exclusive sale on Amazon Echo devices for kids — up to 34% off Alexa-enabled gadgets, discount applies automatically.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -347,7 +347,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Up To 30% OFF On Selected Packable Rain Jackets',
       description: 'Get up to 30% off handpicked women\'s packable rain jackets — ultra-lightweight, waterproof, available in all sizes and colors.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -361,7 +361,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Computers, Tablets and IT Accessories - Up To 30% OFF',
       description: 'Save up to 30% on laptops, desktops, monitors, gaming systems, tablets and storage devices — deals start from $19.99.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -375,7 +375,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Save Big On The Plant Protein Powder Brand | Up To 30% OFF',
       description: 'Enjoy up to 30% off on Organic Protein Shakes, Grass-Fed Dairy options and other health-focused products — limited time offer.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -389,7 +389,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Get 20% OFF On Amazon Devices With Trade-in',
       description: 'Enjoy 20% off Amazon Devices with a trade-in — no coupon code required, receive your value as an Amazon.com Gift Card.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -403,7 +403,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Get 20% OFF On Collagen Night Wrapping Mask',
       description: 'Get 20% off on Collagen Night Wrapping Mask — priced at $18.90, drops to $15.20 after discount, no code needed.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -417,7 +417,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Hot New Releases - The Price Range Starts From $4.99',
       description: 'Shop newly released products from $4.99 across Kitchen & Dining, Pet Supplies, Sports & Outdoors, Clothing and Beauty.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -431,7 +431,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Backdrop Silver Metallic Tinsel Foil Fringe Curtains Starts From $5.99',
       description: 'Buy Silver Metallic Tinsel Foil Fringe Backdrop Curtains from $5.99 — perfect for birthdays, weddings and celebrations, 2-panel pack.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -445,7 +445,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Gift Cards Begin From $10',
       description: 'Amazon gift cards available from $10, redeemable within the United States — all sales final, non-refundable and non-transferable.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -459,7 +459,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Crocs Kids\' Classic Clog Starts From $19.98',
       description: 'Crocs Kids\' Classic Clogs start at $19.98 — comfortable Croslite material in a variety of fun colors and sizes.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -473,7 +473,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Unwell Hydration Drinks - Starting At $25',
       description: 'Budget-friendly wellness hydration drinks starting at $25 — available in Orange, Strawberry and Mango flavors.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -487,7 +487,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: '4+ Star Fitness Faves Under $30',
       description: 'Get fit for less with 4+ star rated fitness equipment under $30 — limited time offer on top favorites.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -501,7 +501,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'The Echo & Alexa Speakers Price Starts From $34.99',
       description: 'Get Alexa and Echo smart speakers and displays starting from $34.99 — prices vary depending on features chosen.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -515,7 +515,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'SDIII 3PCS Blue Butterfly Comforter Set Twin For $35.99',
       description: 'Get the SDIII 3PCS Blue Butterfly Comforter Set Twin with 2 pillowcases for $35.99 — lightweight microfiber design.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -529,7 +529,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Purchase Kitchen Essentials Under $50',
       description: 'Get Toasters, Popcorn Makers, Cookers, Kettles and more kitchen essentials under $50 — high quality, open to all users.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -543,7 +543,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Luxury Beauty Essentials - Prices Starting From $70',
       description: 'Upgrade your routine with premium skincare, haircare, makeup and fragrance collections starting at just $70.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -557,7 +557,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Blink Outdoor 4, Wire-free Smart Security Camera Price Begins From $169',
       description: 'Order the Blink Outdoor 4 wire-free smart security camera from $169 — two-way audio, HD live view and motion detection.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -571,7 +571,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'New MacBook Neo Starting at $599',
       description: 'Shop the new MacBook Neo on Amazon starting at $599 — powerful performance and sleek design for work and everyday productivity.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -585,7 +585,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'New Member Offer: 30-Day Free Trial On Prime Membership',
       description: 'Enjoy a 30-day free trial on Prime Membership — join with your email ID and get fast delivery, free shipping and more, for new users only.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'New User',
       validTill: '30 Jun 2026'
     },
@@ -599,7 +599,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'Pet Medications At Less Price',
       description: 'Affordable prescription medications for your pets from $20 — hassle-free home delivery on a broad range of pet food and health products.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     },
@@ -613,7 +613,7 @@ export const AMAZON_COUPONS: Coupon[] = [
       title: 'New on Amazon - Shop Iconic Chuck Taylor Converse Sneakers',
       description: 'Fresh arrival: Iconic Chuck Taylor Converse sneakers on Amazon — comfortable, stylish kicks for every style and occasion.',
       code: '',
-      verified: 'Verified Today',
+      verified: 'Verified',
       userType: 'Existing User',
       validTill: '30 Jun 2026'
     }

@@ -395,7 +395,7 @@ export default function Contact() {
                   {[
                     { icon: HeadphonesIcon, color: "#5B4FBE", bg: "#F0EEFF", title: "Live Chat Support", sub: "Talk to the team live" },
                     { icon: Mail, color: "#FF5722", bg: "#FFF3F0", title: "Email Support", sub: "Couponscrew@gmail.com" },
-                    { icon: Phone, color: "#22C55E", bg: "#F0FDF4", title: "Phone Support", sub: "+91 98765 43210" }
+                    { icon: Phone, color: "#22C55E", bg: "#F0FDF4", title: "Phone Support", sub: "+91 7838554882" }
                   ].map((elem, idx) => {
                     const SideIcon = elem.icon;
                     return (

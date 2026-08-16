@@ -43,9 +43,7 @@ const featuredProducts = [
 ];
 
 const blogPosts = [
-  { title: 'How to Save Money While Shopping Online in India', date: 'June 20, 2024', read: '5 Min Read', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/home-kitchen_wtn75z.webp', slug: '/blog/how-to-save-money-shopping-online-india' },
-  { title: 'Amazon Great Freedom Sale 2024: Best Deals You Should Not Miss!', date: 'June 18, 2024', read: '4 Min Read', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232570/exercise-fitness_whqz7u.webp', slug: '/blog' },
-  { title: 'Top 10 Cashback Apps to Save More Money', date: 'June 15, 2024', read: '6 Min Read', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/fashion_wlzeaq.webp', slug: '/blog' },
+  { title: 'How to Save Money While Shopping Online in India', date: 'June 22, 2026', read: '5 Min Read', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/home-kitchen_wtn75z.webp', slug: '/blog/how-to-save-money-shopping-online-india' },
 ];
 
 const saleEvents = [
@@ -451,6 +449,7 @@ export default function Home() {
                   <p className="text-lg text-[#4A4A6A] leading-relaxed font-medium">Couponscrew is a verified coupon and deals platform - built for shoppers who are tired of copy-pasting dead codes at checkout.</p>
                 </div>
                 <div className="space-y-6 text-[#4A4A6A] text-base leading-relaxed">
+                  <p>Here&apos;s what &quot;verified&quot; actually means on Couponscrew: before a code goes live, we test it at checkout — real cart, real code, real result. If it works, it goes up. If it doesn&apos;t, it doesn&apos;t. That&apos;s the whole method. No scraping ten sites and hoping for the best.</p>
                   <p>Most coupon sites list every code they can find — expired, unverified, or just dead — because volume looks impressive. We don&apos;t do that. We track, test, and list active codes from <strong>500+ brands</strong> across every major shopping category. If it&apos;s on Couponscrew, it has been checked.</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {["Ordering food on Zomato","Buying electronics on Amazon","Refreshing wardrobe on Myntra","Booking flights on MakeMyTrip"].map((item, i) => (
@@ -461,6 +460,8 @@ export default function Home() {
                     ))}
                   </div>
                   <p>Whether you&apos;re ordering food, buying electronics, or booking a trip - Couponscrew has a verified deal for it. Every promo code on this platform has been checked before it reaches you.</p>
+                  <p>We&apos;ll be honest about the tradeoff: verifying every code takes longer than just scraping a thousand of them off the internet. (We&apos;ve tried the shortcut. It&apos;s how you end up pasting six dead codes at checkout and giving up.) So our list is smaller than some directories out there — and every code on it actually works when you copy it.</p>
+                  <p>One habit worth building: don&apos;t stop at the coupon code. A sale price plus a Couponscrew code plus a bank card offer at checkout can stack up to 35-80% off the original price. Most shoppers use one layer and call it a day. You don&apos;t have to.</p>
                   <div className="bg-[#1A1A2E] rounded-3xl p-8 text-white relative overflow-hidden group">
                     <div className="absolute right-[-20px] top-[-20px] opacity-10 group-hover:rotate-12 transition-transform duration-700"><ShieldCheck size={180} /></div>
                     <h3 className="text-xl font-black mb-4 relative z-10">Zero Guesswork. Just Savings.</h3>
@@ -470,6 +471,7 @@ export default function Home() {
                       <div className="w-px h-10 bg-white/10" />
                       <div><p className="text-2xl font-black text-[#5B4FBE]">500+</p><p className="text-[10px] font-black uppercase tracking-widest text-white/40">Trusted Brands</p></div>
                     </div>
+                    <p className="text-xs text-white/50 relative z-10 mt-6 pt-6 border-t border-white/10 leading-relaxed">Codes on Couponscrew currently work for shoppers roughly 92.4% of the time — tracked from checkout attempts, not a one-time audit. It moves as codes expire and get pulled, so treat it as a running number, not a guarantee on any single code.</p>
                   </div>
                   <div className="pt-4">
                     <Link href="/stores" className="inline-flex items-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-lg hover:shadow-[#5B4FBE]/25 group">

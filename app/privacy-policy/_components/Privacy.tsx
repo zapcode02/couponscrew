@@ -493,7 +493,7 @@ export default function Privacy() {
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-[#FFF3F0] rounded-xl select-none">
                     <Phone className="w-4 h-4 text-[#FF5722]" />
-                    <span className="text-xs font-semibold text-[#FF5722]">+91 98765 43210</span>
+                    <span className="text-xs font-semibold text-[#FF5722]">+91 7838554882</span>
                   </div>
                 </div>
 

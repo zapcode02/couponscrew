@@ -39,14 +39,6 @@ interface TimelineItem {
   color: string;
 }
 
-interface TeamMember {
-  name: string;
-  role: string;
-  img: string;
-  linkedin: string;
-  quote: string;
-}
-
 interface FeatureItem {
   icon: React.ComponentType<any>;
   color: string;
@@ -96,37 +88,6 @@ export default function About() {
       desc: "92.4% of our codes work at checkout. That number is the whole job. Everything else follows from getting that right.",
       icon: "🏆", 
       color: "#FFD700" 
-    }
-  ];
-
-  const teamList: TeamMember[] = [
-    { 
-      name: "Rahul Sharma", 
-      role: "Founder & CEO", 
-      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-      linkedin: "#",
-      quote: "Every rupee saved is a rupee earned." 
-    },
-    { 
-      name: "Priya Mehta", 
-      role: "Head of Partnerships",
-      img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
-      linkedin: "#",
-      quote: "Building bridges between brands and savers." 
-    },
-    { 
-      name: "Arjun Patel", 
-      role: "Lead Developer",
-      img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-      linkedin: "#",
-      quote: "Code that saves people money is the best code." 
-    },
-    { 
-      name: "Sneha Reddy", 
-      role: "Head of Content",
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
-      linkedin: "#",
-      quote: "Great deals deserve great storytelling." 
     }
   ];
 
@@ -229,8 +190,8 @@ export default function About() {
                   <span>Explore Our Story</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
-                <a 
-                  href="#team-section"
+                <a
+                  href="/contact"
                   className="border-2 border-white/30 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
                 >
                   <span>Join Our Community</span>

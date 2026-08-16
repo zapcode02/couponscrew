@@ -130,7 +130,7 @@ export default function AmazonStore() {
                       <Tag size={14} /> 120+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Last Updated: Today
+                      <Clock size={14} /> Codes Reviewed Daily
                     </span>
                   </div>
                 </div>
@@ -290,7 +290,7 @@ export default function AmazonStore() {
                               {coupon.type || "Best Offer"}
                             </span>
                             <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
-                              {coupon.verified || "Verified Today"}
+                              {coupon.verified || "Verified"}
                             </span>
                           </div>
 
@@ -556,7 +556,7 @@ export default function AmazonStore() {
             {/* Left: Text Content */}
             <div className="prose max-w-none">
               <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Amazon Coupon Code India (August 2026): Up to 90% Off — Verified Promo Codes & Deals Today
+                Amazon Coupon Code India (August 2026): Up to 90% Off — Verified Promo Codes & Deals
               </h2>
 
               <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm">

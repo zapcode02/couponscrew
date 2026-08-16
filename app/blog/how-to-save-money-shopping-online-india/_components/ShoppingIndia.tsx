@@ -75,6 +75,10 @@ export default function ShoppingIndia() {
                 How to Save Money Shopping Online in India — Introducing CouponsCrew
               </h1>
 
+              <p className="text-xs text-gray-400 font-medium mt-3">
+                Reviewed by the Couponscrew Coupon Team · Codes last checked Jun 22, 2026
+              </p>
+
               <div className="relative w-full h-64 sm:h-96 rounded-3xl overflow-hidden mt-6 shadow-lg">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp"
