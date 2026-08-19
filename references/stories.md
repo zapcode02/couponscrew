@@ -88,3 +88,4 @@ A shopper at checkout for a ₹8,200 laptop on Flipkart. SBI card offer: 10% ins
 - **Use at most one story per blog post.** More than that feels like filler.
 - **Always include one specific concrete detail** — a price, a platform, a time — to make it feel real, not generic.
 - **Never invent a new story.** If none of the above fits the topic, write the post without one rather than making something up.
+- **This "never invent" rule covers metadata too, not just anecdotes inside a post.** Never fabricate a post title, publish date, read-time, author name, or "related post" card for content that doesn't exist. A fake blog card pointing nowhere is the same trust violation as a made-up story — it tells the reader (and an AI crawler) something is there when it isn't. If a related-post slot has nothing real to fill it, leave it empty or remove the slot. Don't decorate it with placeholder content.

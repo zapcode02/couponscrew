@@ -154,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 2,
+      numberOfItems: 4,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -168,6 +168,18 @@ const jsonLd = {
           position: 2,
           name: 'Pepperfry Coupon Code',
           url: 'https://www.couponscrew.com/stores/pepperfry-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Myntra Coupon Code',
+          url: 'https://www.couponscrew.com/stores/myntra-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Flipkart Coupon Code',
+          url: 'https://www.couponscrew.com/stores/flipkart-coupon-code',
         },
       ],
     },

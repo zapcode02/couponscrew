@@ -71,6 +71,8 @@ Notice: value first, details second, human aside at the end. That's the pattern.
 - **State expiry and restrictions in plain language** directly under any code — minimises frustration and builds trust.
 - **Urgency is real, not manufactured.** If a deal expires tonight, say so. Don't fake urgency on evergreen content.
 - **Blog structure:** punchy opener → what you'll learn → the real answer → step-by-step tips → pro tip / insider trick → sign-off with something actionable.
+- **Every page needs 500+ words of real prose — not card labels, stat callouts, or nav text.** This applies beyond blog posts: homepage sections, category pages, store pages. If a section only has a headline and three stat numbers, it isn't content yet — write the paragraphs that explain what those numbers mean and why they matter to the reader.
+- **Every published page names who stands behind it.** One line, near the top or bottom of the content: "Reviewed by the Couponscrew Coupon Team" plus a real last-checked date, or a named writer if one exists. Never publish a page — blog post, store guide, or landing page — with zero attribution. A voice that talks like a specific person needs a real signature attached to it, even a team one.
 
 ---
 

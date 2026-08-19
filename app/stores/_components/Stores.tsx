@@ -59,11 +59,7 @@ export default function Stores() {
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const handleStoreClick = (store: Store) => {
-    if (store.name.toLowerCase() === 'pepperfry') {
-      router.push('/stores/pepperfry-coupon-code');
-    } else if (store.name.toLowerCase() === 'amazon') {
-      router.push('/stores/amazon-coupon-code');
-    }
+    router.push(`/stores/${store.slug}`);
   };
 
   // Pre-fill search from ?q= URL param (e.g. from Navbar store search)

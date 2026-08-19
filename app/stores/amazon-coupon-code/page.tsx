@@ -231,107 +231,108 @@ const jsonLd = {
     // in AmazonStore.tsx verbatim, per Google's requirement that FAQPage
     // schema reflect visible page content)
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/amazon-coupon-code#faqpage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'How do I get a 50% discount on Amazon India?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Discounts of 50% and above are regularly available in the Amazon Warehouse, Amazon Outlet, and during Lightning Deals on the main Deals page. Using a verified Amazon coupon code from CouponScrew on top of an existing sale price is the most reliable way to reach or exceed 50% off.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can I stack an Amazon coupon code with a bank offer?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. You can apply a CouponScrew promo code at checkout in the "Gift cards & promotional codes" field and then pay with an eligible bank card to claim an additional 10% cashback. Both discounts apply to the same order.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'What are the biggest Amazon sale events in India?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'The Great Indian Festival (September–October) and Amazon Prime Day (July) are the two largest annual events with discounts up to 80% across all categories. The Great Republic Day Sale in January and the Great Freedom Sale in August are also major shopping windows.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'What are the benefits of Amazon Prime membership?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Prime offers free one-day and same-day delivery, early access to Lightning Deals, exclusive Amazon promo codes, Prime Video, Prime Music, and Prime Reading — all bundled into a single annual or monthly subscription.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How does Amazon Subscribe & Save work?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Subscribe & Save lets you schedule regular deliveries of household items at a 5% discount. This increases to 10% when you have 5 or more active subscriptions in a given month, with select brands offering up to 15% off for consistent subscribers.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Is there a student discount on Amazon India?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Amazon India offers a discounted Prime membership for users aged 18–24 through its Youth Offer, which provides up to 50% off the standard Prime price. This gives students access to all Prime benefits at a significantly reduced rate.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How do I find hidden deals on Amazon India?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Visit the Amazon Outlet section for clearance stock and Amazon Renewed for certified refurbished electronics at 20–50% off. The "with coupon" label on product listing pages also indicates an additional on-page discount that many shoppers overlook.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'What is a Lightning Deal on Amazon?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'A Lightning Deal is a time-sensitive, limited-stock offer that provides a deep discount for only a few hours. They appear on the Amazon Deals page and sell out quickly, so checking in during sale events and early morning hours gives you the best chance of catching them.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Why is my Amazon promo code not working?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'A code may fail if it has expired, if the item in your cart is not eligible for the promotion, or if you have not met the minimum order value. Always check the terms listed alongside each code on CouponScrew before applying.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Are there app-exclusive Amazon deals?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. Amazon India regularly offers additional discounts and cashback rewards that are only available through the mobile app. Downloading the app and enabling notifications ensures you do not miss these app-only Amazon discount codes.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How do I get free shipping on Amazon without Prime?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Non-Prime orders qualify for free standard shipping when the order value exceeds the minimum threshold displayed at checkout. The exact threshold varies by category and is shown during the payment step.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How often does CouponScrew update its Amazon coupon codes?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Our team reviews and updates Amazon promo codes daily. Every listing on this page carries a verification timestamp so you can see exactly when it was last checked and confirmed active.',
-          },
-        },
-      ],
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.couponscrew.com/stores/amazon-coupon-code#faqpage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I get a 50% discount on Amazon India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Discounts of 50% and above are regularly available in the Amazon Warehouse, Amazon Outlet, and during Lightning Deals on the main Deals page. Using a verified Amazon coupon code from CouponScrew on top of an existing sale price is the most reliable way to reach or exceed 50% off."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Can I stack an Amazon coupon code with a bank offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can apply a CouponScrew promo code at checkout in the \"Gift cards & promotional codes\" field and then pay with an eligible bank card to claim an additional 10% cashback. Both discounts apply to the same order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the biggest Amazon sale events in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Great Indian Festival (September–October) and Amazon Prime Day (July) are the two largest annual events with discounts up to 80% across all categories. The Great Republic Day Sale in January and the Great Freedom Sale in August are also major shopping windows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the benefits of Amazon Prime membership?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prime offers free one-day and same-day delivery, early access to Lightning Deals, exclusive Amazon promo codes, Prime Video, Prime Music, and Prime Reading — all bundled into a single annual or monthly subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Amazon Subscribe & Save work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subscribe & Save lets you schedule regular deliveries of household items at a 5% discount. This increases to 10% when you have 5 or more active subscriptions in a given month, with select brands offering up to 15% off for consistent subscribers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a student discount on Amazon India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Amazon India offers a discounted Prime membership for users aged 18–24 through its Youth Offer, which provides up to 50% off the standard Prime price. This gives students access to all Prime benefits at a significantly reduced rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find hidden deals on Amazon India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visit the Amazon Outlet section for clearance stock and Amazon Renewed for certified refurbished electronics at 20–50% off. The \"with coupon\" label on product listing pages also indicates an additional on-page discount that many shoppers overlook."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Lightning Deal on Amazon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Lightning Deal is a time-sensitive, limited-stock offer that provides a deep discount for only a few hours. They appear on the Amazon Deals page and sell out quickly, so checking in during sale events and early morning hours gives you the best chance of catching them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my Amazon promo code not working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A code may fail if it has expired, if the item in your cart is not eligible for the promotion, or if you have not met the minimum order value. Always check the terms listed alongside each code on CouponScrew before applying."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there app-exclusive Amazon deals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Amazon India regularly offers additional discounts and cashback rewards that are only available through the mobile app. Downloading the app and enabling notifications ensures you do not miss these app-only Amazon discount codes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get free shipping on Amazon without Prime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non-Prime orders qualify for free standard shipping when the order value exceeds the minimum threshold displayed at checkout. The exact threshold varies by category and is shown during the payment step."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often does CouponScrew update its Amazon coupon codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our team reviews and updates Amazon promo codes daily. Every listing on this page carries a verification timestamp so you can see exactly when it was last checked and confirmed active."
+      }
+    }
+  ]
+},
 
     // 4. Offer Schema (one per visible deal card)
     ...amazonOffers,

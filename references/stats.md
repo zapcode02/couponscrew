@@ -151,6 +151,15 @@
 - **Commission rates change** — always verify on the live program page before a post goes live.
 - **Platform stats are benchmarks** — frame as "typically" or "up to" when relevant.
 
+## Framing the Couponscrew platform stats (10,000+, 500+, 92.4%, 50,000+) so they don't overclaim
+
+These four numbers describe the platform, not a third-party benchmark — so they need extra care. Being specific ("92.4%") is correct per the rule above, but specific and *audited* are not the same thing. Don't let the precision of the number imply a methodology, dashboard, or third-party audit that doesn't exist.
+
+- **Never write these as a one-time measured fact.** Not "we measured a 92.4% success rate" or "our audit found 10,000+ verified coupons." Frame them as an ongoing, moving number instead: "codes on Couponscrew currently work about 92.4% of the time, tracked from checkout attempts — it moves as codes expire and get replaced."
+- **Never imply real-time precision you can't back.** Avoid "Verified Today," "Updated right now," or "as of this second" language attached to these stats or to individual coupon freshness badges — say what's actually true instead ("reviewed daily," "checked regularly") rather than a literal timestamp claim nothing tracks.
+- **If you don't have a real methodology to cite, don't gesture at one.** No "based on our verification system," no "according to our internal audit" — just state the number plainly and move on. A plain number is honest. A vague appeal to an unnamed process is not.
+- **Do not soften these into a vague range either** ("high success rate," "thousands of brands") — that violates the "always specific" rule above. The fix for overclaiming is honest framing, not vagueness.
+
 ---
 
 ## Sources
