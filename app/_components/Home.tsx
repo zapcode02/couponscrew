@@ -312,11 +312,201 @@ export default function Home() {
   </div>
 </section>
 
+
+<section className="bg-white py-10 border-b border-[#E8E8F0]">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="flex items-center justify-between mb-6">
+      <div>
+        <h2 className="text-2xl font-black text-[#1A1A2E]">Flipkart Deals by Category</h2>
+        <p className="text-xs text-gray-500 font-medium mt-1">Explore top verified Flipkart discounts across all departments</p>
+      </div>
+      
+      {/* Navigation Buttons */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => {
+            const container = document.getElementById('flipkart-categories-slider');
+            if (container) container.scrollBy({ left: -380, behavior: 'smooth' });
+          }}
+          className="w-9 h-9 rounded-xl border border-[#E8E8F0] flex items-center justify-center text-gray-600 hover:bg-[#2874F0] hover:text-white hover:border-[#2874F0] transition-all shadow-sm"
+          aria-label="Previous categories"
+        >
+          <ChevronLeft size={18} />
+        </button>
+        <button
+          onClick={() => {
+            const container = document.getElementById('flipkart-categories-slider');
+            if (container) container.scrollBy({ left: 380, behavior: 'smooth' });
+          }}
+          className="w-9 h-9 rounded-xl border border-[#E8E8F0] flex items-center justify-center text-gray-600 hover:bg-[#2874F0] hover:text-white hover:border-[#2874F0] transition-all shadow-sm"
+          aria-label="Next categories"
+        >
+          <ChevronRight size={18} />
+        </button>
+      </div>
+    </div>
+
+    {/* Horizontal Scroll Slider - 3 Cards View */}
+    <div 
+      id="flipkart-categories-slider"
+      className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4 pt-1 -mx-2 px-2"
+      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+    >
+      {[
+        { name: "Fashion", href: "https://www.flipkart.com/search?q=fashion", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/fashion_k7hetc.webp" },
+        { name: "Mobile Phones", href: "https://www.flipkart.com/search?q=mobiles", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/mobiles_uqv7yv.webp" },
+        { name: "Electronics", href: "https://www.flipkart.com/search?q=electronics", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/electronics_ld8oad.webp" },
+        { name: "Appliances & Home", href: "https://www.flipkart.com/search?q=appliances", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/appliances_enczxa.webp" },
+        { name: "Grocery", href: "https://www.flipkart.com/grocery-supermart-store", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/food_erg2q2.webp" },
+        { name: "Toys, Baby & Kids", href: "https://www.flipkart.com/search?q=toys+and+baby", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/food_erg2q2.webp" },
+        { name: "Auto Accessories", href: "https://www.flipkart.com/search?q=auto+accessories", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/Auto_ss11ug.webp" },
+        { name: "Sports & Fitness", href: "https://www.flipkart.com/search?q=sports+and+fitness", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/sports_iggh8p.webp" },
+        { name: "Furniture", href: "https://www.flipkart.com/search?q=furniture", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/furtinure_j002jv.webp" },
+        { name: "Books & Media", href: "https://www.flipkart.com/search?q=books", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013943/books_jyrg16.webp" },
+        { name: "Two-Wheelers", href: "https://www.flipkart.com/search?q=two+wheelers", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787014677/two-wheeler_egsg2m.webp" }
+      ].map((card, i) => (
+        <a 
+          key={i} 
+          href={card.href} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#2874F0] transition-all group/card block flex flex-col"
+        >
+          <div className="w-full overflow-hidden bg-gray-50 relative">
+            <NextImage
+              src={card.img}
+              alt={card.name}
+              width={600}
+              height={332}
+              sizes="340px"
+              loading="lazy"
+              className="w-full h-auto object-cover group-hover/card:scale-105 transition-transform duration-500 block"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="p-4 flex flex-col flex-grow justify-between bg-white border-t border-[#f0f0f0]">
+            <div className="font-black text-base text-[#1A1A2E] line-clamp-1 group-hover/card:text-[#2874F0] transition-colors">
+              {card.name}
+            </div>
+            <div className="mt-3 w-full bg-[#2874F0] hover:bg-[#1259C3] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all shadow-sm group-hover/card:shadow-md">
+              <span>View Deals</span>
+              <ArrowRight size={14} />
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-8 flex justify-center">
+      <Link
+        href="/stores/flipkart-coupon-code"
+        className="inline-flex items-center gap-2 bg-[#2874F0] hover:bg-[#1259C3] text-white font-bold px-8 py-3 rounded-xl text-sm transition-all shadow-md hover:shadow-lg border border-[#2874F0]/30"
+      >
+        <span>Browse All Flipkart Categories</span>
+        <ArrowRight size={16} className="text-[#FFE500]" />
+      </Link>
+    </div>
+  </div>
+</section>
+
+
+<section className="bg-white py-10 border-b border-[#E8E8F0]">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="flex items-center justify-between mb-6">
+      <div>
+        <h2 className="text-2xl font-black text-[#1A1A2E]">Myntra Deals by Category</h2>
+        <p className="text-xs text-gray-500 font-medium mt-1">Explore top verified Myntra discounts across all fashion & lifestyle categories</p>
+      </div>
+      
+      {/* Navigation Buttons */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => {
+            const container = document.getElementById('myntra-categories-slider');
+            if (container) container.scrollBy({ left: -380, behavior: 'smooth' });
+          }}
+          className="w-9 h-9 rounded-xl border border-[#E8E8F0] flex items-center justify-center text-gray-600 hover:bg-[#FF3F6C] hover:text-white hover:border-[#FF3F6C] transition-all shadow-sm"
+          aria-label="Previous categories"
+        >
+          <ChevronLeft size={18} />
+        </button>
+        <button
+          onClick={() => {
+            const container = document.getElementById('myntra-categories-slider');
+            if (container) container.scrollBy({ left: 380, behavior: 'smooth' });
+          }}
+          className="w-9 h-9 rounded-xl border border-[#E8E8F0] flex items-center justify-center text-gray-600 hover:bg-[#FF3F6C] hover:text-white hover:border-[#FF3F6C] transition-all shadow-sm"
+          aria-label="Next categories"
+        >
+          <ChevronRight size={18} />
+        </button>
+      </div>
+    </div>
+
+    {/* Horizontal Scroll Slider - 3 Cards View */}
+    <div 
+      id="myntra-categories-slider"
+      className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4 pt-1 -mx-2 px-2"
+      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+    >
+      {[
+        { name: "Men's Fashion", href: "https://www.myntra.com/men-clothing", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/mens-fashion_opgug3.webp" },
+        { name: "Women's Fashion", href: "https://www.myntra.com/fusion-wear", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016852/womens-fashion_ey5y9t.webp" },
+        { name: "Kids' Fashion", href: "https://www.myntra.com/kids", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787017225/kid-fashion_oq7snr.webp" },
+        { name: "Beauty & Personal Care", href: "https://www.myntra.com/personal-care", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016786/beauty-personal_pna7wy.webp" },
+        { name: "Gift Cards", href: "https://www.myntra.com/giftcard", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/myntra-gift-card_ppyusj.webp" }
+      ].map((card, i) => (
+        <a 
+          key={i} 
+          href={card.href} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#FF3F6C] transition-all group/card block flex flex-col"
+        >
+          <div className="w-full overflow-hidden bg-gray-50 relative">
+            <NextImage
+              src={card.img}
+              alt={card.name}
+              width={600}
+              height={332}
+              sizes="340px"
+              loading="lazy"
+              className="w-full h-auto object-cover group-hover/card:scale-105 transition-transform duration-500 block"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="p-4 flex flex-col flex-grow justify-between bg-white border-t border-[#f0f0f0]">
+            <div className="font-black text-base text-[#1A1A2E] line-clamp-1 group-hover/card:text-[#FF3F6C] transition-colors">
+              {card.name}
+            </div>
+            <div className="mt-3 w-full bg-[#FF3F6C] hover:bg-[#E02B55] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all shadow-sm group-hover/card:shadow-md">
+              <span>View Deals</span>
+              <ArrowRight size={14} />
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-8 flex justify-center">
+      <Link
+        href="/stores/myntra-coupon-code"
+        className="inline-flex items-center gap-2 bg-[#282C3F] hover:bg-[#1A1C28] text-white font-bold px-8 py-3 rounded-xl text-sm transition-all shadow-md hover:shadow-lg border border-[#FF3F6C]/30"
+      >
+        <span>Browse All Myntra Categories</span>
+        <ArrowRight size={16} className="text-[#FF3F6C]" />
+      </Link>
+    </div>
+  </div>
+</section>
+
         {/* ── PRODUCT CATEGORIES ────────────────────────────────────────── */}
         <section className="bg-white py-10 border-b border-[#E8E8F0]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-6">
-              <h2 className="text-xl font-black text-[#1A1A2E]">Product Categories</h2>
+              <h2 className="text-xl font-black text-[#1A1A2E]">Stores Categories</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {productCategoryCards.map((card, i) => (

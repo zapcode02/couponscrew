@@ -434,6 +434,106 @@ export default function MyntraStore() {
               Myntra Coupon Code & Discount Deals — Verified for August 2026
             </h2>
 
+            <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Offer Type</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Coupon Code</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Highlights</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Eligibility</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">Sitewide</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">MYNTRA300</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 90% Off + Extra ₹300</td>
+        <td className="p-3.5">Min. cart ₹1,999 | App only</td>
+        <td className="p-3.5">New Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">First Order</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">MYNTRASAVE</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 25% Off</td>
+        <td className="p-3.5">Min. cart ₹300 | Max discount ₹200</td>
+        <td className="p-3.5">New Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">All Users</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">STACKUP</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to ₹800 Off</td>
+        <td className="p-3.5">₹400 off on ₹2,499+ | ₹800 off on ₹5,000+</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">FWD Fashion</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FWDNEW200</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off + Extra ₹200</td>
+        <td className="p-3.5">Min. cart ₹399 | Selected FWD casualwear</td>
+        <td className="p-3.5">New Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Fashion Sale</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FWDU15</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Extra 15% Off</td>
+        <td className="p-3.5">Min. cart ₹300 | Max discount ₹150</td>
+        <td className="p-3.5">Existing Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Beauty</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">EXTRA500</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Extra ₹500 Off</td>
+        <td className="p-3.5">Min. cart ₹2,500 | Skincare, makeup & fragrances</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Non-Returnable</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">NORETURN1</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 10% Off</td>
+        <td className="p-3.5">Min. cart ₹199 | Non-returnable listings only</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Special Offer</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">EXTRA50</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Extra ₹50 Off</td>
+        <td className="p-3.5">Min. cart ₹400 | Extra 10% via Kotak/BOBcard</td>
+        <td className="p-3.5">Existing Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Sitewide</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FWDWE10</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 70% Off + Extra 10%</td>
+        <td className="p-3.5">Min. cart ₹300 | Valid across categories</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Footwear</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FOOTWEAR10</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off + Extra 10%</td>
+        <td className="p-3.5">Sports, casual, sandals & heels</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">First Order</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">MYNTRAEXCLUSIVE</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 30% Off</td>
+        <td className="p-3.5">Min. cart ₹300 | First purchase only</td>
+        <td className="p-3.5">New Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Buy 2 Items</td>
+        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">NOREASON10</code></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Extra 10% Off</td>
+        <td className="p-3.5">Min. 2 items in cart | No min cart value</td>
+        <td className="p-3.5">Existing Users</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
             {/* Read More / Collapsible Container */}
             <div
               className={cn(

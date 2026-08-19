@@ -446,6 +446,108 @@ export default function FlipkartStore() {
           Flipkart Coupon Code & Discount Deals — Verified for August 2026
         </h2>
 
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Offer Type</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Coupon Code</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Highlights</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Eligibility</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">Sitewide</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 85% Off</td>
+        <td className="p-3.5">Electronics, Fashion, Mobiles & Furniture</td>
+        <td className="p-3.5">Existing Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Sitewide</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 85% Off</td>
+        <td className="p-3.5">Freedom Sale live | Pre-applied discounts</td>
+        <td className="p-3.5">Existing Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Sitewide</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 90% Off</td>
+        <td className="p-3.5">Mega Sitewide Sale | Earn SuperCoins</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Deals of the Day</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 95% Off</td>
+        <td className="p-3.5">Refreshes daily every 24 hours</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Fashion</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% - 90% Off</td>
+        <td className="p-3.5">Men's, Women's & Kids' clothing & footwear</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Gifting</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Special Prices</td>
+        <td className="p-3.5">Raksha Bandhan gifts starting from ₹159</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Women's Fashion</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 84% Off</td>
+        <td className="p-3.5">Kurtas, Sarees, Dresses & Western wear</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Grocery</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 40% Off</td>
+        <td className="p-3.5">Food Fest | Snacks starting from ₹210</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Bank Offer</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹3,000 Benefits</td>
+        <td className="p-3.5">Flipkart Axis Card | Unlimited 5% cashback</td>
+        <td className="p-3.5">New Card Applicants</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Footwear</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off</td>
+        <td className="p-3.5">Nike, Puma, Adidas & Campus shoes</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Watches & Luggage</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 70% Off</td>
+        <td className="p-3.5">Titan, Fossil & Samsonite products</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Mobiles</td>
+        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Apple, Samsung, Realme | No-Cost EMI</td>
+        <td className="p-3.5">All Users</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
         <div className={cn('text-gray-500 font-bold leading-relaxed space-y-6 relative', !isReadMore && 'max-h-[500px] overflow-hidden')}>
 
           <p>
