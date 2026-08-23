@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'MuscleBlaze Coupon Code - Up to 45% OFF on Supplements | Aug 2026',
+  title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
 
   // Primary + all secondary keywords + max offer | ~150 chars
   description:
-    'Get the latest MuscleBlaze coupon code and discount codes with up to 45% OFF whey protein, pre-workout & supplements. Discover verified deals, updated regularly. Aug 2026',
+    'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/muscleblaze-coupon-code',
   },
 
   openGraph: {
-    title: 'MuscleBlaze Coupon Code - Up to 45% OFF on Supplements | Aug 2026',
+    title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
     description:
-      'Get the latest MuscleBlaze coupon code and discount codes with up to 45% OFF whey protein, pre-workout & supplements. Discover verified deals, updated regularly. Aug 2026',
+      'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/muscleblaze-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,19 +37,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'MuscleBlaze Coupon Code - Up to 45% OFF on Supplements | Aug 2026',
+    title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
     description:
-      'Get the latest MuscleBlaze coupon code and discount codes with up to 45% OFF whey protein, pre-workout & supplements. Discover verified deals, updated regularly. Aug 2026',
+      'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/muscleblaze-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/muscleblaze-coupon-code',
-      name: 'MuscleBlaze Coupon Code - Up to 45% OFF on Supplements | Aug 2026',
-      description: 'Get the latest MuscleBlaze coupon code and discount codes with up to 45% OFF whey protein, pre-workout & supplements. Discover verified deals, updated regularly. Aug 2026',
+      name: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
+      description: 'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

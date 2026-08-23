@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'IndiGo Coupon Code - Up to 20% OFF on Flight Bookings | Aug 2026',
+  title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Get the latest IndiGo coupon code and discount codes with up to 20% OFF on domestic & international flight bookings. Verified deals, updated daily. Aug 2026',
+    'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/indigo-coupon-code',
   },
 
   openGraph: {
-    title: 'IndiGo Coupon Code - Up to 20% OFF on Flight Bookings | Aug 2026',
+    title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
     description:
-      'Get the latest IndiGo coupon code and discount codes with up to 20% OFF on domestic & international flight bookings. Verified deals, updated daily. Aug 2026',
+      'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
     url: 'https://www.couponscrew.com/stores/indigo-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,19 +37,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'IndiGo Coupon Code - Up to 20% OFF on Flight Bookings | Aug 2026',
+    title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
     description:
-      'Get the latest IndiGo coupon code and discount codes with up to 20% OFF on domestic & international flight bookings. Verified deals, updated daily. Aug 2026',
+      'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/indigo-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/indigo-coupon-code',
-      name: 'IndiGo Coupon Code - Up to 20% OFF on Flight Bookings | Aug 2026',
-      description: 'Get the latest IndiGo coupon code and discount codes with up to 20% OFF on domestic & international flight bookings. Verified deals, updated daily. Aug 2026',
+      name: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
+      description: 'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

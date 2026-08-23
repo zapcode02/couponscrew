@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Nykaa Coupon Code - Up to 40% OFF on Beauty & Makeup | Aug 2026',
+  title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Get the latest Nykaa coupon code and discount codes with up to 40% OFF on makeup, skincare & haircare. Discover verified deals and offers, updated daily. Aug 2026',
+    'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
   },
 
   openGraph: {
-    title: 'Nykaa Coupon Code - Up to 40% OFF on Beauty & Makeup | Aug 2026',
+    title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
     description:
-      'Get the latest Nykaa coupon code and discount codes with up to 40% OFF on makeup, skincare & haircare. Discover verified deals and offers, updated daily. Aug 2026',
+      'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,19 +37,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Nykaa Coupon Code - Up to 40% OFF on Beauty & Makeup | Aug 2026',
+    title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
     description:
-      'Get the latest Nykaa coupon code and discount codes with up to 40% OFF on makeup, skincare & haircare. Discover verified deals and offers, updated daily. Aug 2026',
+      'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/nykaa-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
-      name: 'Nykaa Coupon Code - Up to 40% OFF on Beauty & Makeup | Aug 2026',
-      description: 'Get the latest Nykaa coupon code and discount codes with up to 40% OFF on makeup, skincare & haircare. Discover verified deals and offers, updated daily. Aug 2026',
+      name: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
+      description: 'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

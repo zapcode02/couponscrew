@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first
-  title: 'JioMart Coupon Code - Up to 30% OFF on Grocery & More | Aug 2026',
+  title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
 
   // Primary + secondary keywords + max offer
   description:
-    'Get the latest JioMart coupon code and discount codes with up to 30% OFF on grocery, electronics & fashion. Discover verified deals and offers, updated daily. Aug 2026',
+    'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/jiomart-coupon-code',
   },
 
   openGraph: {
-    title: 'JioMart Coupon Code - Up to 30% OFF on Grocery & More | Aug 2026',
+    title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
     description:
-      'Get the latest JioMart coupon code and discount codes with up to 30% OFF on grocery, electronics & fashion. Discover verified deals and offers, updated daily. Aug 2026',
+      'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
     url: 'https://www.couponscrew.com/stores/jiomart-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,19 +37,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'JioMart Coupon Code - Up to 30% OFF on Grocery & More | Aug 2026',
+    title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
     description:
-      'Get the latest JioMart coupon code and discount codes with up to 30% OFF on grocery, electronics & fashion. Discover verified deals and offers, updated daily. Aug 2026',
+      'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/jiomart-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/jiomart-coupon-code',
-      name: 'JioMart Coupon Code - Up to 30% OFF on Grocery & More | Aug 2026',
-      description: 'Get the latest JioMart coupon code and discount codes with up to 30% OFF on grocery, electronics & fashion. Discover verified deals and offers, updated daily. Aug 2026',
+      name: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
+      description: 'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

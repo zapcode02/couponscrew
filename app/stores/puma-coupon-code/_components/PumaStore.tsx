@@ -152,7 +152,7 @@ export default function PumaStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Shop shoes, apparel & sports accessories online and get the best Puma coupon codes & offers.
+                    Save more with verified Puma coupon codes, promo codes, and exclusive fashion offers. Enjoy up to 60% OFF, extra 10% OFF, up to ₹400 prepaid discounts, free shipping, and huge savings on Puma shoes, sneakers, sportswear, clothing, accessories, and activewear.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -364,24 +364,7 @@ export default function PumaStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#DA020E]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
+           
 
               {/* Action Button - Vibrant CTA Accent (#DA020E) */}
               <button

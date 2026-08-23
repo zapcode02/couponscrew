@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Hostinger Coupon Code - Up to 75% OFF on Web Hosting | Aug 2026',
+  title: 'Hostinger Coupon Codes: Up to 95% OFF + Free Domain | Aug 2026',
 
   // Primary + secondary keywords + offer | ~150 chars
   description:
-    'Get the latest Hostinger coupon code and discount codes with up to 75% OFF web hosting, domains & VPS. Discover verified deals, updated regularly. Aug 2026',
+    'Save with verified Hostinger coupon codes and promo codes. Get up to 95% OFF, free domain, 3 free months, extra 17% OFF, free email, WordPress, VPS & cloud hosting deals. Updated August 2026.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/hostinger-coupon-code',
   },
 
   openGraph: {
-    title: 'Hostinger Coupon Code - Up to 75% OFF on Web Hosting | Aug 2026',
+    title: 'Hostinger Coupon Codes: Up to 95% OFF + Free Domain | Aug 2026',
     description:
-      'Get the latest Hostinger coupon code and discount codes with up to 75% OFF web hosting, domains & VPS. Discover verified deals, updated regularly. Aug 2026',
+      'Save with verified Hostinger coupon codes and promo codes. Get up to 95% OFF, free domain, 3 free months, extra 17% OFF, free email, WordPress, VPS & cloud hosting deals. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/hostinger-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,19 +37,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Hostinger Coupon Code - Up to 75% OFF on Web Hosting | Aug 2026',
+    title: 'Hostinger Coupon Codes: Up to 95% OFF + Free Domain | Aug 2026',
     description:
-      'Get the latest Hostinger coupon code and discount codes with up to 75% OFF web hosting, domains & VPS. Discover verified deals, updated regularly. Aug 2026',
+      'Save with verified Hostinger coupon codes and promo codes. Get up to 95% OFF, free domain, 3 free months, extra 17% OFF, free email, WordPress, VPS & cloud hosting deals. Updated August 2026.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/hostinger-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/hostinger-coupon-code',
-      name: 'Hostinger Coupon Code - Up to 75% OFF on Web Hosting | Aug 2026',
-      description: 'Get the latest Hostinger coupon code and discount codes with up to 75% OFF web hosting, domains & VPS. Discover verified deals, updated regularly. Aug 2026',
+      name: 'Hostinger Coupon Codes: Up to 95% OFF + Free Domain | Aug 2026',
+      description: 'Save with verified Hostinger coupon codes and promo codes. Get up to 95% OFF, free domain, 3 free months, extra 17% OFF, free email, WordPress, VPS & cloud hosting deals. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

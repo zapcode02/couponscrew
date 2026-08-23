@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'redBus Coupon Code - Up to 25% OFF on Bus Tickets | Aug 2026',
+  title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Get the latest redBus coupon code and discount codes with up to 25% OFF on AC, sleeper & Volvo bus tickets. Discover verified deals, updated regularly. Aug 2026',
+    'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/red-bus-coupon-code',
   },
 
   openGraph: {
-    title: 'redBus Coupon Code - Up to 25% OFF on Bus Tickets | Aug 2026',
+    title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
     description:
-      'Get the latest redBus coupon code and discount codes with up to 25% OFF on AC, sleeper & Volvo bus tickets. Discover verified deals, updated regularly. Aug 2026',
+      'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/red-bus-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,19 +37,19 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'redBus Coupon Code - Up to 25% OFF on Bus Tickets | Aug 2026',
+    title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
     description:
-      'Get the latest redBus coupon code and discount codes with up to 25% OFF on AC, sleeper & Volvo bus tickets. Discover verified deals, updated regularly. Aug 2026',
+      'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/red-bus-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/red-bus-coupon-code',
-      name: 'redBus Coupon Code - Up to 25% OFF on Bus Tickets | Aug 2026',
-      description: 'Get the latest redBus coupon code and discount codes with up to 25% OFF on AC, sleeper & Volvo bus tickets. Discover verified deals, updated regularly. Aug 2026',
+      name: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
+      description: 'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

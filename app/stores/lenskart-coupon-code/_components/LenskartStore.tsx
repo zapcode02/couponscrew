@@ -152,7 +152,7 @@ export default function LenskartStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Shop eyeglasses, sunglasses & contact lenses online and get the best Lenskart coupon codes & offers.
+                   Save more with verified Lenskart coupon codes, promo codes, and exclusive eyewear offers. Enjoy up to 78% OFF contact lenses, up to 70% OFF eyeglasses, ₹1,000 OFF glasses, extra 60% OFF, Buy 1 Get 1 FREE deals, and free shipping on selected products.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -368,24 +368,7 @@ export default function LenskartStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#E5B93E]/50 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
+              
 
               {/* Action Button - Vibrant CTA Accent (#E5B93E) */}
               <button

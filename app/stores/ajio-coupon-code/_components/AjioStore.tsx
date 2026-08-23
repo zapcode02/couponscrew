@@ -152,7 +152,7 @@ export default function AjioStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Shop the latest fashion trends in clothing, footwear & accessories online and get the best Ajio coupon codes & offers.
+                    Save big with verified AJIO coupon codes, promo codes, discount codes and exclusive offers. Enjoy up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank discounts, and new user deals. Discover the latest working AJIO offers and shop top fashion brands for less.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -366,24 +366,7 @@ export default function AjioStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#D9534F]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
+            
 
               {/* Action Button - Vibrant CTA Accent (#D9534F) */}
               <button

@@ -152,7 +152,7 @@ export default function IndigoStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Book domestic & international flights online and get the best IndiGo coupon codes & offers.
+                   Save on travel with verified IndiGo coupon codes, promo codes, and exclusive flight offers. Enjoy up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, student offers, and Defence discounts on eligible bookings.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">

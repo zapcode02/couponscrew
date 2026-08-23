@@ -152,7 +152,7 @@ export default function JioMartStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Shop groceries, electronics, fashion & more online with the best JioMart coupon codes & offers.
+                  Save more with verified JioMart coupon codes, promo codes, and exclusive offers. Enjoy up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF fashion and home appliances, flat 40% OFF groceries, and extra card discounts on selected products.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -364,24 +364,7 @@ export default function JioMartStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#E8632C]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
+             
 
               {/* Action Button - Vibrant CTA Accent (#E8632C) */}
               <button
@@ -559,7 +542,7 @@ export default function JioMartStore() {
               Whether you are doing a weekly grocery run, stocking up on household essentials, shopping fashion end-of-season sales, or picking up electronics with a bank card offer stacked on top — there is almost always a saving available on JioMart. This page is updated daily. Bookmark it and check it before every purchase.
             </p>
 
-            
+
   <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
     Types of JioMart Deals Available on CouponsCrew
   </h3>

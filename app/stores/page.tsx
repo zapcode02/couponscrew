@@ -154,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 4,
+      numberOfItems: 14,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -180,6 +180,66 @@ const jsonLd = {
           position: 4,
           name: 'Flipkart Coupon Code',
           url: 'https://www.couponscrew.com/stores/flipkart-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          name: 'Dominos Coupon Code',
+          url: 'https://www.couponscrew.com/stores/dominos-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 6,
+          name: 'redBus Coupon Code',
+          url: 'https://www.couponscrew.com/stores/red-bus-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 7,
+          name: 'JioMart Coupon Code',
+          url: 'https://www.couponscrew.com/stores/jiomart-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 8,
+          name: 'Puma Coupon Code',
+          url: 'https://www.couponscrew.com/stores/puma-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 9,
+          name: 'Lenskart Coupon Code',
+          url: 'https://www.couponscrew.com/stores/lenskart-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 10,
+          name: 'Hostinger Coupon Code',
+          url: 'https://www.couponscrew.com/stores/hostinger-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 11,
+          name: 'Nykaa Coupon Code',
+          url: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 12,
+          name: 'Ajio Coupon Code',
+          url: 'https://www.couponscrew.com/stores/ajio-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 13,
+          name: 'MuscleBlaze Coupon Code',
+          url: 'https://www.couponscrew.com/stores/muscleblaze-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 14,
+          name: 'IndiGo Coupon Code',
+          url: 'https://www.couponscrew.com/stores/indigo-coupon-code',
         },
       ],
     },

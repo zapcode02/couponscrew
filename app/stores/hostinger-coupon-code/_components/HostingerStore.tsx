@@ -152,7 +152,7 @@ export default function HostingerStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Get reliable, affordable web hosting, domains & VPS plans with the best Hostinger coupon codes & offers.
+                  Save more with verified Hostinger coupon codes, promo codes, and exclusive hosting offers. Enjoy up to 95% OFF, free domain registration, 3 free months, extra 17% OFF, free email hosting, ₹1 .in domains, and discounts on WordPress, VPS, and cloud hosting plans.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -370,24 +370,7 @@ export default function HostingerStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#0F2137]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
+            
 
               {/* Action Button - Vibrant CTA Accent (#0F2137) */}
               <button

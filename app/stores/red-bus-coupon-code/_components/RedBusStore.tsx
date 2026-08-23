@@ -152,7 +152,7 @@ export default function RedBusStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Book bus tickets online across India and get the best redBus coupon codes & offers on AC, sleeper, and Volvo buses.
+                  Save more with verified redBus coupon codes, promo codes, and exclusive bus booking offers. Enjoy up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and great savings on bus travel across India with the latest verified deals.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -365,25 +365,6 @@ export default function RedBusStore() {
 
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
-
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#1A1A2E]/30 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
 
               {/* Action Button - Vibrant CTA Accent (#D84E55) */}
               <button

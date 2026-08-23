@@ -152,7 +152,7 @@ export default function MuscleBlazeStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Shop whey protein, pre-workout, vitamins & fitness supplements online and get the best MuscleBlaze coupon codes & offers.
+                  Save more with verified MuscleBlaze coupon codes, promo codes, and exclusive supplement offers. Enjoy up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker deals, and discounts on whey protein, creatine, mass gainers, pre-workout, and fitness essentials.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -370,24 +370,7 @@ export default function MuscleBlazeStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#1A1A1A]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
+             
 
               {/* Action Button - Vibrant CTA Accent (#1A1A1A) */}
               <button

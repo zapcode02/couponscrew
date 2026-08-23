@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Ajio Coupon Code - Up to 60% OFF on Fashion | Aug 2026',
+  title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
-    'Get the latest Ajio coupon code and discount codes with up to 60% OFF on clothing, footwear & accessories. Discover verified deals and offers. Aug 2026',
+    'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/ajio-coupon-code',
   },
 
   openGraph: {
-    title: 'Ajio Coupon Code - Up to 60% OFF on Fashion | Aug 2026',
+    title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
     description:
-      'Get the latest Ajio coupon code and discount codes with up to 60% OFF on clothing, footwear & accessories. Discover verified deals and offers. Aug 2026',
+      'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/ajio-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -37,17 +37,24 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Ajio Coupon Code - Up to 60% OFF on Fashion | Aug 2026',
+    title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
     description:
-      'Get the latest Ajio coupon code and discount codes with up to 60% OFF on clothing, footwear & accessories. Discover verified deals and offers. Aug 2026',
+      'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
   },
 
   robots: {
-    index: false,
+    index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
   },
 
   other: {
@@ -80,8 +87,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/ajio-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/ajio-coupon-code',
-      name: 'Ajio Coupon Code - Up to 60% OFF on Fashion | Aug 2026',
-      description: 'Get the latest Ajio coupon code and discount codes with up to 60% OFF on clothing, footwear & accessories. Discover verified deals and offers. Aug 2026',
+      name: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
+      description: 'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
