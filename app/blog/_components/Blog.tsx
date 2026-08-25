@@ -16,18 +16,30 @@ import Navbar from '../../../src/components/Navbar';
 import Footer from '../../../src/components/Footer';
 
 // ==========================================
-// SINGLE POST DATA
+// POSTS DATA
 // ==========================================
-const post = {
-  slug: 'how-to-save-money-shopping-online-india',
-  title: 'How to Save Money Shopping Online in India — Introducing CouponsCrew',
-  category: 'Shopping Guides',
-  image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp',
-  date: 'Jun 22, 2026',
-  readTime: '9 min read',
-  excerpt: 'Online shopping in India has never been bigger — and never been more confusing when it comes to actually getting a good price. Here is how to stack every discount layer, and why CouponsCrew exists.',
-  tags: ['Online Shopping', 'Coupon Tips', 'Money Saving'],
-};
+const posts = [
+  {
+    slug: 'how-to-save-money-shopping-online-india',
+    title: 'How to Save Money Shopping Online in India — Introducing CouponsCrew',
+    category: 'Shopping Guides',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783240314/how-to-save-money-shopping-online-india_hdltd5.webp',
+    date: 'Jun 22, 2026',
+    readTime: '9 min read',
+    excerpt: 'Online shopping in India has never been bigger — and never been more confusing when it comes to actually getting a good price. Here is how to stack every discount layer, and why CouponsCrew exists.',
+    tags: ['Online Shopping', 'Coupon Tips', 'Money Saving'],
+  },
+  {
+    slug: 'raksha-bandhan-gift-ideas',
+    title: '10 Best Raksha Bandhan Gift Ideas 2026 — Discount Codes to Save More',
+    category: 'Festive Guides',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1787588384/raksha-bandhan-gift-ideas_z16zzz.webp',
+    date: 'Aug 24, 2026',
+    readTime: '8 min read',
+    excerpt: 'Discover thoughtful and trending Raksha Bandhan gift ideas for brothers and sisters, and learn how to stack coupons, bank offers, and cashback to save extra on every gift.',
+    tags: ['Festive Deals', 'Gift Guides', 'Money Saving'],
+  },
+];
 
 export default function Blog() {
   return (
@@ -105,7 +117,8 @@ export default function Blog() {
           </div>
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group flex flex-col sm:flex-row shadow-xs">
+            {posts.map((post) => (
+            <div key={post.slug} className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group flex flex-col sm:flex-row shadow-xs">
               {/* LEFT - Image block */}
               <div className="relative overflow-hidden md:w-56 shrink-0 h-48 md:h-auto min-h-[192px]">
                 <NextImage
@@ -166,6 +179,7 @@ export default function Blog() {
                 </div>
               </div>
             </div>
+            ))}
           </div>
 
         </div>

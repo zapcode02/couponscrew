@@ -154,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 14,
+      numberOfItems: 19,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -240,6 +240,36 @@ const jsonLd = {
           position: 14,
           name: 'IndiGo Coupon Code',
           url: 'https://www.couponscrew.com/stores/indigo-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 15,
+          name: 'Zomato Coupon Code',
+          url: 'https://www.couponscrew.com/stores/zomato-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 16,
+          name: 'KFC Coupon Code',
+          url: 'https://www.couponscrew.com/stores/kfc-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 17,
+          name: 'Testbook Coupon Code',
+          url: 'https://www.couponscrew.com/stores/testbook-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 18,
+          name: 'OnePlus Coupon Code',
+          url: 'https://www.couponscrew.com/stores/oneplus-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 19,
+          name: 'Swiggy Coupon Code',
+          url: 'https://www.couponscrew.com/stores/swiggy-coupon-code',
         },
       ],
     },
