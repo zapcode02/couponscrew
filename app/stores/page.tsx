@@ -154,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 19,
+      numberOfItems: 24,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -270,6 +270,36 @@ const jsonLd = {
           position: 19,
           name: 'Swiggy Coupon Code',
           url: 'https://www.couponscrew.com/stores/swiggy-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 20,
+          name: 'Rapido Coupon Code',
+          url: 'https://www.couponscrew.com/stores/rapido-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 21,
+          name: 'BookMyShow Coupon Code',
+          url: 'https://www.couponscrew.com/stores/bookmyshow-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 22,
+          name: 'Ola Coupon Code',
+          url: 'https://www.couponscrew.com/stores/ola-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 23,
+          name: 'PW Coupon Code',
+          url: 'https://www.couponscrew.com/stores/pw-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 24,
+          name: 'Zepto Coupon Code',
+          url: 'https://www.couponscrew.com/stores/zepto-coupon-code',
         },
       ],
     },
