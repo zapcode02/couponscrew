@@ -474,6 +474,7 @@ export default function Deals() {
   const [wishlistedDeals, setWishlistedDeals] = useState<Record<string, boolean>>({});
   const [copiedCodeCode, setCopiedCodeCode] = useState<string | null>(null);
   const [newsletterEmail, setNewsletterEmail] = useState<string>('');
+  const [newsletterSubmitting, setNewsletterSubmitting] = useState<boolean>(false);
 
   // Refs for navigation/reset triggers
   const isFirstMount = useRef<boolean>(true);
@@ -593,11 +594,29 @@ export default function Deals() {
     alert(`ðŸŽ‰ Code Copied! Saving on ${brand}: "${title}" has been claimed. Complete details have been applied at checkout!`);
   };
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (newsletterEmail) {
+    if (!newsletterEmail.trim() || newsletterSubmitting) return;
+
+    setNewsletterSubmitting(true);
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail.trim() }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed');
+      }
+
       alert(`Awesome! You have successfully subscribed to the SaveMate deals list with: ${newsletterEmail}. The hottest discounts are headed your way!`);
       setNewsletterEmail('');
+    } catch {
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setNewsletterSubmitting(false);
     }
   };
 

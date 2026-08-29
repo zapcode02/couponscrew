@@ -453,6 +453,36 @@ export default function Categories() {
   // Slider State (Category of the week)
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Newsletter subscribe state
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterSubmitting, setNewsletterSubmitting] = useState(false);
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newsletterEmail.trim() || newsletterSubmitting) return;
+
+    setNewsletterSubmitting(true);
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail.trim() }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed');
+      }
+
+      alert("You're in. We'll send you the best deals as soon as they go live.");
+      setNewsletterEmail('');
+    } catch {
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setNewsletterSubmitting(false);
+    }
+  };
+
   // Auto-play the slider every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
@@ -1446,19 +1476,22 @@ export default function Categories() {
             </p>
 
             {/* Email + Subscribe layout row form */}
-            <div className="w-full max-w-md mt-6 flex overflow-hidden rounded-full border border-white/20 shadow-lg bg-white p-1 focus-within:ring-2 focus-within:ring-[#FF5722]/40 transition-all">
+            <form onSubmit={handleNewsletterSubmit} className="w-full max-w-md mt-6 flex overflow-hidden rounded-full border border-white/20 shadow-lg bg-white p-1 focus-within:ring-2 focus-within:ring-[#FF5722]/40 transition-all">
               <input
                 type="email"
+                required
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder="Enter your email address"
                 className="flex-1 bg-transparent border-0 text-[#1A1A2E] px-4.5 py-2.5 text-sm focus:outline-none focus:ring-0 placeholder:text-gray-400 placeholder:font-medium"
               />
               <button
-                onClick={() => alert("You're in. We'll send you the best deals as soon as they go live.")}
+                type="submit"
                 className="bg-[#FF5722] hover:bg-orange-500 active:scale-[0.98] transition-all text-white px-7 py-3 rounded-full font-bold text-sm leading-none shrink-0 cursor-pointer"
               >
                 Subscribe
               </button>
-            </div>
+            </form>
 
             <p className="text-white/45 text-xs mt-3.5 select-none font-medium">
               No spam. Unsubscribe anytime.

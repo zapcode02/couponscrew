@@ -45,6 +45,8 @@ export default function TestbookStore() {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
   const [newsEmail, setNewsEmail] = useState<string>('');
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
+  const [newsSubmitting, setNewsSubmitting] = useState<boolean>(false);
+  const [newsError, setNewsError] = useState<string>('');
   const [sortBy, setSortBy] = useState<string>('Latest');
 
   const coupons: Coupon[] = TESTBOOK_COUPONS;
@@ -63,12 +65,33 @@ export default function TestbookStore() {
     window.open(AFFILIATE_URL, '_blank', 'noopener,noreferrer');
   };
 
-  const handleNewsSubmit = (e: React.FormEvent) => {
+  const handleNewsSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (newsEmail.trim()) {
+    if (!newsEmail.trim() || newsSubmitting) return;
+
+    setNewsSubmitting(true);
+    setNewsError('');
+
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsEmail.trim() }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed');
+      }
+
       setNewsSubscribed(true);
       setNewsEmail('');
       setTimeout(() => setNewsSubscribed(false), 5000);
+    } catch {
+      setNewsError('Something went wrong. Please try again.');
+      setTimeout(() => setNewsError(''), 5000);
+    } finally {
+      setNewsSubmitting(false);
     }
   };
 

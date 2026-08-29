@@ -268,13 +268,32 @@ export default function Offers() {
   const [sortBy, setSortBy] = useState<string>('Latest');
   const [visibleCount, setVisibleCount] = useState<number>(6);
   const [newsletterEmail, setNewsletterEmail] = useState<string>('');
+  const [newsletterSubmitting, setNewsletterSubmitting] = useState<boolean>(false);
 
   // Newsletter Submit
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (newsletterEmail) {
+    if (!newsletterEmail.trim() || newsletterSubmitting) return;
+
+    setNewsletterSubmitting(true);
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail.trim() }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed');
+      }
+
       alert(`Awesome! You have successfully subscribed to the SaveMate newsletter with: ${newsletterEmail}. Get ready to discover exclusive savings directly in your inbox!`);
       setNewsletterEmail('');
+    } catch {
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setNewsletterSubmitting(false);
     }
   };
 

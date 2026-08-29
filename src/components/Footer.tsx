@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
-import { Ticket, Facebook, Instagram, Twitter, Youtube, Mail, Phone, Globe } from 'lucide-react';
+import { Ticket, Facebook, Instagram, Twitter, Youtube, Mail, Phone, Globe, Send } from 'lucide-react';
 import { getConsent, canLoadTranslate, CONSENT_CHANGE_EVENT, ConsentStatus } from '../lib/cookieConsent';
 
 declare global {
@@ -74,6 +74,40 @@ function handleLanguageChange(langCode: string) {
 
 export default function Footer() {
   const [translateAllowed, setTranslateAllowed] = useState(false);
+  const [newsEmail, setNewsEmail] = useState<string>('');
+  const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
+  const [newsSubmitting, setNewsSubmitting] = useState<boolean>(false);
+  const [newsError, setNewsError] = useState<string>('');
+
+  const handleNewsSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newsEmail.trim() || newsSubmitting) return;
+
+    setNewsSubmitting(true);
+    setNewsError('');
+
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsEmail.trim() }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed');
+      }
+
+      setNewsSubscribed(true);
+      setNewsEmail('');
+      setTimeout(() => setNewsSubscribed(false), 4500);
+    } catch {
+      setNewsError('Something went wrong. Please try again.');
+      setTimeout(() => setNewsError(''), 4500);
+    } finally {
+      setNewsSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     setTranslateAllowed(canLoadTranslate(getConsent()));
@@ -90,6 +124,53 @@ export default function Footer() {
   return (
     <footer className="bg-[#1A1A2E] text-white pt-16 pb-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Newsletter Subscribe Bar */}
+        <div className="bg-gradient-to-r from-[#5B4FBE] to-[#7C3AED] rounded-3xl px-6 py-6 sm:px-10 mb-12 flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+          <div className="flex items-center gap-4 flex-1 min-w-0">
+            <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+              <Send className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="text-white font-bold text-lg sm:text-xl">Subscribe for Newsletter</h3>
+              <p className="text-white/70 text-xs sm:text-sm mt-1">
+                Get the latest coupons, exclusive deals &amp; offers directly in your inbox.
+              </p>
+            </div>
+          </div>
+
+          {newsSubscribed ? (
+            <div className="w-full lg:w-auto bg-white/15 border border-white/30 rounded-xl px-6 py-3.5 text-center">
+              <span className="text-sm font-bold text-white">✓ Subscribed Successfully!</span>
+            </div>
+          ) : (
+            <div className="w-full lg:w-auto">
+              <form onSubmit={handleNewsSubmit} className="w-full lg:w-auto flex flex-col sm:flex-row gap-3">
+                <div className="relative">
+                  <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/50 pointer-events-none" />
+                  <input
+                    type="email"
+                    required
+                    value={newsEmail}
+                    onChange={(e) => setNewsEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    className="w-full sm:w-72 bg-white/10 border border-white/20 placeholder:text-white/50 focus:border-white/60 focus:bg-white/15 rounded-xl pl-11 pr-4 py-3.5 text-white text-sm focus:outline-hidden transition-colors"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={newsSubmitting}
+                  className="bg-white hover:bg-gray-100 disabled:opacity-60 disabled:cursor-not-allowed text-[#5B4FBE] font-bold text-sm px-7 py-3.5 rounded-xl transition-all active:scale-[0.98] cursor-pointer shrink-0"
+                >
+                  {newsSubmitting ? 'Subscribing…' : 'Subscribe'}
+                </button>
+              </form>
+              {newsError && (
+                <p className="text-xs text-red-200 mt-2">{newsError}</p>
+              )}
+            </div>
+          )}
+        </div>
+
         {/* Main 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12">
           {/* COL 1: Brand & Logo */}
@@ -156,7 +237,6 @@ export default function Footer() {
               <li><Link href="/products" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Products</Link></li>
               <li><Link href="/stores/categories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Stores Categories</Link></li>
               <li><Link href="/deals-of-the-day" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Deals of the Day</Link></li>
-              <li><Link href="/deals-of-the-month" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Deal of the Month</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Blog</Link></li>
             </ul>
           </div>

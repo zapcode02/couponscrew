@@ -35,7 +35,6 @@ Couponscrew helps Indian shoppers find verified, working coupon codes, deals, an
 - [Store Categories](https://www.couponscrew.com/stores/categories): Browse stores by category — Fashion, Beauty, Exercise & Fitness, Home & Kitchen, Clothing & Accessories.
 - [Products](https://www.couponscrew.com/products): Discounted products across categories with verified deal pricing.
 - [Deals of the Day](https://www.couponscrew.com/deals-of-the-day): Daily-refreshed selection of the best verified coupon codes.
-- [Deals of the Month](https://www.couponscrew.com/deals-of-the-month): Curated top brand and product deals for the current month.
 - [Deals](https://www.couponscrew.com/deals): General deals listing across brands and products.
 - [Offers](https://www.couponscrew.com/offers): Brand offers and promotions, filterable by category.
 - [Categories](https://www.couponscrew.com/categories): Browse coupons by category — fashion, electronics, food, travel, beauty, home & kitchen, and more.

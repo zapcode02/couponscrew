@@ -71,6 +71,8 @@ export default function Stores() {
   // Secondary sidebar newsletter state
   const [newsEmail, setNewsEmail] = useState<string>('');
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
+  const [newsSubmitting, setNewsSubmitting] = useState<boolean>(false);
+  const [newsError, setNewsError] = useState<string>('');
 
   // FAQ accordion state
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -164,12 +166,33 @@ export default function Stores() {
     return filteredAndSorted.slice(startIdx, startIdx + itemsPerPage);
   }, [filteredAndSorted, currentPage]);
 
-  const handleNewsSubmit = (e: React.FormEvent) => {
+  const handleNewsSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (newsEmail.trim()) {
+    if (!newsEmail.trim() || newsSubmitting) return;
+
+    setNewsSubmitting(true);
+    setNewsError('');
+
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsEmail.trim() }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Subscription failed');
+      }
+
       setNewsSubscribed(true);
       setNewsEmail('');
       setTimeout(() => setNewsSubscribed(false), 4500);
+    } catch {
+      setNewsError('Something went wrong. Please try again.');
+      setTimeout(() => setNewsError(''), 4500);
+    } finally {
+      setNewsSubmitting(false);
     }
   };
 
