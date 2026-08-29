@@ -142,7 +142,7 @@ export default function Stores() {
   }, [selectedCategory, searchQuery, sortBy]);
 
   // Pagination bounds safety
-  const itemsPerPage = 10;
+  const itemsPerPage = 24;
   const totalPages = useMemo(() => {
     return Math.ceil(filteredAndSorted.length / itemsPerPage) || 1;
   }, [filteredAndSorted.length]);
@@ -460,7 +460,7 @@ export default function Stores() {
               /* ==========================================
                   GRID VIEW (5 Horizontal Columns)
                   ========================================== */
-              <div id="stores-grid" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <div id="stores-grid" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {paginatedStores.map((store) => (
                   <div
                     key={store.id}

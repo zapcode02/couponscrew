@@ -154,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 24,
+      numberOfItems: 29,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -300,6 +300,36 @@ const jsonLd = {
           position: 24,
           name: 'Zepto Coupon Code',
           url: 'https://www.couponscrew.com/stores/zepto-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 25,
+          name: 'Blinkit Coupon Code',
+          url: 'https://www.couponscrew.com/stores/blinkit-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 26,
+          name: 'Magicpin Coupon Code',
+          url: 'https://www.couponscrew.com/stores/magicpin-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 27,
+          name: 'KreditBee Coupon Code',
+          url: 'https://www.couponscrew.com/stores/kreditbee-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 28,
+          name: "Levi's Coupon Code",
+          url: 'https://www.couponscrew.com/stores/levis-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 29,
+          name: 'ZEE5 Coupon Code',
+          url: 'https://www.couponscrew.com/stores/zee5-coupon-code',
         },
       ],
     },

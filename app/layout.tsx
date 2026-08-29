@@ -39,10 +39,7 @@ const firaCode = Fira_Code({
 })
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Couponscrew — Coupons, Deals & Offers | India\'s Most Trusted Coupon Site',
-    template: '%s | Couponscrew',
-  },
+  title: 'Couponscrew — Coupons, Deals & Offers | India\'s Most Trusted Coupon Site',
   description: "India's most trusted coupon website. Find verified coupons, deals & offers from 500+ brands. Save more on every purchase with Couponscrew.",
   metadataBase: new URL('https://www.couponscrew.com'),
   openGraph: {
