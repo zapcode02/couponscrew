@@ -609,35 +609,18 @@ export default function DealsOfTheDay() {
           <aside className="w-full lg:w-72 flex-shrink-0 space-y-5 lg:sticky lg:top-24 self-start text-left z-20">
 
             {/* SIDEBAR CARD 1 - Countdown */}
-            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-2xl overflow-hidden shadow-lg border border-indigo-400/10">
-              <div className="p-4 flex items-center justify-between border-b border-white/10 select-none">
-                <span className="text-white font-extrabold text-sm tracking-wide">Deals of the Day</span>
-                <div className="flex items-center">
-                  <span className="text-white/70 text-[10px] mr-1.5 font-bold uppercase tracking-wider">Ends in</span>
-                  <div className="bg-[#FF5722] text-white font-mono font-black text-xs px-2.5 py-1 rounded-md tracking-wider shadow-sm animate-pulse">{formattedCountdown}</div>
-                </div>
-              </div>
-              <div className="bg-white p-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-[#FFF8E7] flex items-center justify-center select-none shrink-0 border border-[#FF9900]/15">
-                    <span className="text-[#FF9900] font-black text-base uppercase">a</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h4 className="font-extrabold text-sm text-[#1A1A2E] leading-none">Amazon</h4>
-                    <span className="text-[#4A4A6A] text-[11px] font-semibold mt-1 block truncate">Up to 70% OFF on Electronics</span>
-                  </div>
-                </div>
-                <div className="mt-4 flex gap-2 w-full justify-between items-center select-none">
-                  <div className="bg-[#F8F8FF] border border-[#E8E8F0] w-16 h-14 rounded-xl flex items-center justify-center text-2xl shadow-xs hover:scale-105 duration-200">&#127911;</div>
-                  <div className="bg-[#F8F8FF] border border-[#E8E8F0] w-16 h-14 rounded-xl flex items-center justify-center text-2xl shadow-xs hover:scale-105 duration-200">&#128241;</div>
-                  <div className="bg-[#F8F8FF] border border-[#E8E8F0] w-16 h-14 rounded-xl flex items-center justify-center text-2xl shadow-xs hover:scale-105 duration-200">&#8987;</div>
-                </div>
-                <button onClick={() => handleViewDeal('Amazon', 'Amazon Great Summer Sale - Up to 70% OFF on Electronics')} className="mt-4 w-full bg-[#FF5722] hover:bg-orange-600 text-white py-3 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm active:scale-95 select-none">
-                  <Zap size={16} className="stroke-[2.5]" />
-                  <span>Grab This Deal</span>
-                </button>
-              </div>
-            </div>
+           <a
+              href="https://www.google.com/preferences/source?q=couponscrew.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+            >
+              <img
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                alt="Google Preferred Source"
+                className="h-[70px] w-auto object-contain"
+              />
+            </a>
 
             {/* SIDEBAR CARD 2 - Top Deal Categories */}
             <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-xs">

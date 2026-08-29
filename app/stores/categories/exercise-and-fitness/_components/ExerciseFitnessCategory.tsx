@@ -167,6 +167,20 @@ export default function ExerciseFitnessCategory() {
 
           {/* SIDEBAR */}
           <aside className="w-full lg:w-72 flex-shrink-0 space-y-5 lg:sticky lg:top-24 text-left">
+              <a
+              href="https://www.google.com/preferences/source?q=couponscrew.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+            >
+              <img
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                alt="Google Preferred Source"
+                className="h-[70px] w-auto object-contain"
+              />
+            </a>
+
+
             <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-[0_2px_12px_rgba(232,232,240,0.3)]">
               <h3 className="font-bold text-[#1A1A2E] text-sm mb-4 uppercase tracking-wide border-b border-[#F8F8FF] pb-2">Browse Other Categories</h3>
               <div className="space-y-1">

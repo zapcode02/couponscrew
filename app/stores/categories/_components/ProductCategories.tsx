@@ -562,6 +562,21 @@ export default function ProductCategories() {
         <div className="lg:col-span-3 space-y-5">
 
           {/* SIDEBAR CARD 1 - Matrix Metrics */}
+
+            <a
+              href="https://www.google.com/preferences/source?q=couponscrew.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+            >
+              <img
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                alt="Google Preferred Source"
+                className="h-[80px] w-auto object-contain"
+              />
+            </a>
+
+
           <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm sticky top-24">
             <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-1 flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-[#5B4FBE]" />

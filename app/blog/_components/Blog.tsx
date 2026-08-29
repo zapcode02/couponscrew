@@ -117,7 +117,7 @@ export default function Blog() {
           </div>
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            {posts.map((post) => (
+            {[...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((post) => (
             <div key={post.slug} className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group flex flex-col sm:flex-row shadow-xs">
               {/* LEFT - Image block */}
               <div className="relative overflow-hidden md:w-56 shrink-0 h-48 md:h-auto min-h-[192px]">

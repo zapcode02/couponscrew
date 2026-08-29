@@ -653,6 +653,19 @@ export default function Offers() {
               ============================================================================ */}
           <aside className="w-full lg:w-72 flex-shrink-0 space-y-5 lg:sticky lg:top-24 self-start text-left z-20">
 
+            <a
+              href="https://www.google.com/preferences/source?q=couponscrew.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+            >
+              <img
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                alt="Google Preferred Source"
+                className="h-[70px] w-auto object-contain"
+              />
+            </a>
+
             {/* SIDEBAR CARD 1  -  Top Offer Categories */}
             <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-xs">
               <h3 className="font-bold text-[#1A1A2E] text-sm mb-4 leading-none select-none">

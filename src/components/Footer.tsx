@@ -95,9 +95,7 @@ export default function Footer() {
           {/* COL 1: Brand & Logo */}
           <div className="lg:col-span-1 space-y-5">
             <div className="flex items-center gap-2.5">
-              <div className="bg-[#5B4FBE] p-2 rounded-lg text-white">
-                <Ticket className="w-5 h-5 rotate-[-15deg]" />
-              </div>
+             
               <span className="text-xl font-bold tracking-tight text-white" translate="no">
                 Couponscrew
               </span>

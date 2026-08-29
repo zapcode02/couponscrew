@@ -510,6 +510,20 @@ export default function Products() {
               ============================================================================ */}
           <aside className="hidden lg:block w-64 flex-shrink-0 sticky top-24 self-start space-y-5 z-10">
             
+              <a
+              href="https://www.google.com/preferences/source?q=couponscrew.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+            >
+              <img
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                alt="Google Preferred Source"
+                className="h-[70px] w-auto object-contain"
+              />
+            </a>
+
+
             {/* Categories sidebar box block */}
             <div id="sidebar-categories-block" className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
               <h2 className="font-bold text-[#1A1A2E] text-base mb-3 leading-tight select-none flex items-center justify-between">

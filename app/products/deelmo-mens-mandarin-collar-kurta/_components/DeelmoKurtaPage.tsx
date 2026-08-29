@@ -204,17 +204,34 @@ export default function DeelmoKurtaPage() {
             </div>
 
             {/* GET DEAL CTA block */}
-            <div className="pt-2">
-              <a
-                href={AFFILIATE_URL}
-                target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
-                className="w-full bg-[#FF5722] hover:bg-orange-600 text-white py-4 rounded-2xl font-black text-sm tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-[0.98]"
-              >
-                <ExternalLink size={16} />
-                <span>GET THIS DEAL ON AMAZON</span>
-              </a>
-            </div>
+           <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
+  {/* Get Deal Button */}
+  <a
+    href={AFFILIATE_URL}
+    target="_blank"
+    rel="noopener noreferrer nofollow sponsored"
+    className="w-full sm:flex-1 h-14 bg-[#FF5722] hover:bg-orange-600 text-white rounded-2xl font-black text-sm tracking-wider transition-all flex items-center justify-center gap-2 shadow-md active:scale-[0.98]"
+  >
+    <ExternalLink size={18} />
+    <span>GET THIS DEAL ON AMAZON</span>
+  </a>
+
+  {/* Google Preferred Badge */}
+  <a
+    href="https://www.google.com/preferences/source?q=couponscrew.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto h-14 flex justify-center items-center hover:opacity-90 transition-opacity active:scale-[0.98] shrink-0"
+  >
+    <img
+      src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+      alt="Google Preferred Source"
+      className="h-full w-auto object-contain"
+    />
+  </a>
+</div>
+
+
           </div>
         </div>
 

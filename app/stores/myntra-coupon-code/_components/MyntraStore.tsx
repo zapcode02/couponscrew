@@ -151,7 +151,30 @@ export default function MyntraStore() {
               </div>
 
               {/* Action Buttons */}
-             
+              <div className="mt-8 pt-6 border-t border-[#E8E8F0] flex flex-wrap items-center gap-4">
+  <a
+    href="https://www.myntra.com/"
+    target="_blank"
+    rel="noopener noreferrer nofollow sponsored"
+    className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+  >
+    <span>Visit Store</span>
+    <ExternalLink size={16} />
+  </a>
+
+  <a
+    href="https://www.google.com/preferences/source?q=couponscrew.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+  >
+    <img
+      src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+      alt="Google Preferred Source"
+      className="h-[56px] w-auto object-contain"
+    />
+  </a>
+</div>
             </div>
 
             {/* Promo Banner (Right 5 Columns) — desktop only, placeholder until a real banner image exists */}

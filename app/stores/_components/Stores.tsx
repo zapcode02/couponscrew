@@ -292,7 +292,18 @@ export default function Stores() {
               LEFT SIDEBAR  -  CATEGORY LIST + INFO
               ========================================== */}
           <aside className="w-full lg:w-64 flex-shrink-0 lg:sticky lg:top-24 self-start space-y-6 order-2 lg:order-1">
-            
+             <a
+              href="https://www.google.com/preferences/source?q=couponscrew.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+            >
+              <img
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                alt="Google Preferred Source"
+                className="h-[70px] w-auto object-contain"
+              />
+            </a>
             {/* Sidebar Card 1: Categories list filter */}
             <div id="sidebar-categories" className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-xs">
               <h2 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center justify-between">

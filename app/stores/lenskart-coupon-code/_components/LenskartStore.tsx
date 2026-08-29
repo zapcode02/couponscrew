@@ -181,16 +181,18 @@ export default function LenskartStore() {
                   <ExternalLink size={16} />
                 </a>
 
-                <button
-                  onClick={() => setIsFavorite(!isFavorite)}
-                  className={`font-bold text-sm px-6 py-3.5 rounded-xl transition-all border flex items-center gap-2 ${isFavorite
-                    ? 'bg-red-50 text-red-500 border-red-200'
-                    : 'bg-white border-[#D1D1E9] text-[#1A1A2E] hover:bg-gray-50'
-                    }`}
+                <a
+                  href="https://www.google.com/preferences/source?q=couponscrew.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
                 >
-                  <Heart size={16} className={isFavorite ? 'fill-current text-red-500' : 'text-gray-400'} />
-                  <span>{isFavorite ? 'Added to Favorites' : 'Add to Favorites'}</span>
-                </button>
+                  <img
+                    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+                    alt="Google Preferred Source"
+                    className="h-[56px] w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
 

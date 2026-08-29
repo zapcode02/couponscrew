@@ -663,11 +663,32 @@ export default function Home() {
                     </div>
                     <p className="text-xs text-white/50 relative z-10 mt-6 pt-6 border-t border-white/10 leading-relaxed">Codes on Couponscrew currently work for shoppers roughly 92.4% of the time — tracked from checkout attempts, not a one-time audit. It moves as codes expire and get pulled, so treat it as a running number, not a guarantee on any single code.</p>
                   </div>
-                  <div className="pt-4">
-                    <Link href="/stores" className="inline-flex items-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-lg hover:shadow-[#5B4FBE]/25 group">
-                      Start Saving Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </div>
+                  
+                  <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
+  {/* CTA Link */}
+  <Link 
+    href="/stores" 
+    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-lg hover:shadow-[#5B4FBE]/25 group"
+  >
+    <span>Start Saving Now</span>
+    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+  </Link>
+
+  {/* Google Preferred Badge */}
+  <a
+    href="https://www.google.com/preferences/source?q=couponscrew.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto flex justify-center items-center hover:opacity-90 transition-opacity active:scale-[0.98] shrink-0"
+  >
+    <img
+      src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
+      alt="Google Preferred Source"
+      className="h-[52px] sm:h-[60px] w-auto object-contain"
+    />
+  </a>
+</div>
+
                 </div>
               </div>
             </div>
