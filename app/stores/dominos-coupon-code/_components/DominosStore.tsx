@@ -573,6 +573,44 @@ export default function DominosStore() {
               Why Domino's Is One of the Most Deal-Friendly Pizza Platforms
             </h2>
 
+            <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+      <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+        <caption className="sr-only">Domino's Coupon Offers and Deals</caption>
+        <thead>
+          <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
+            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
+            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
+            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
+            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-[#E8E8F0]">
+          {DOMINOS_COUPONS.map((coupon) => (
+            <tr key={coupon.id} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+              <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+                {coupon.badge}
+              </td>
+              <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
+                {coupon.type}
+              </td>
+              <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+                {coupon.badge}
+              </td>
+              <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-snug font-medium" itemProp="description">
+                {coupon.title}
+              </td>
+              <td className="px-5 py-4 whitespace-nowrap">
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+                  {coupon.userType}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
             <p>
               Domino's runs more promotions than almost any other food delivery chain in India. Between app-exclusive codes, loyalty rewards, Everyday Value pricing, combo deals, and bank card cashback, there is usually more than one way to reduce what you pay — and stacking two or three of these savings mechanisms on the same order is possible more often than Domino's makes obvious upfront.
             </p>

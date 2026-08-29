@@ -5,7 +5,7 @@ import Link from 'next/link';
 import NextImage from 'next/image';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
-  ChevronRight,
+  ChevronRight,Plus, HelpCircle,
   ChevronLeft,
   Tag,
   ShieldCheck,
@@ -26,7 +26,7 @@ import {
   Plane,
   Heart,
   Globe,
-  GraduationCap,
+  GraduationCap,AlertCircle, CheckCircle2,
   Tv,
   Wallet,
   MoreHorizontal,
@@ -71,6 +71,12 @@ export default function Stores() {
   // Secondary sidebar newsletter state
   const [newsEmail, setNewsEmail] = useState<string>('');
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
+
+  // FAQ accordion state
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleAccordion = (index: number) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
 
   // Sidebar list categories structured configuration — counts derived from STORES_DATA
   const CATEGORIES: Category[] = useMemo(() => {
@@ -713,283 +719,381 @@ export default function Stores() {
       {/* ==========================================
           SECTION 4 - SEO CONTENT (70/30 LAYOUT)
           ========================================== */}
-      <section className="bg-[#F8F8FF] py-16 px-6 border-t border-[#E8E8F0]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-10">
+      <section className="bg-[#F8F8FF] py-16 px-6 border-t border-[#E8E8F0] font-sans">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-10">
 
-          {/* LEFT - MAIN EDITORIAL CONTENT (70%) */}
-          <div className="lg:col-span-7 space-y-10">
+    {/* LEFT - MAIN EDITORIAL CONTENT (70%) */}
+    <div className="lg:col-span-7 space-y-10">
 
-            {/* ARTICLE BLOCK 1 */}
-            <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-1 h-6 bg-[#5B4FBE] rounded-full block"></span>
-                <span className="text-xs font-black text-[#5B4FBE] uppercase tracking-widest">About This Page</span>
-              </div>
-              <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-                2 Hand-Picked Stores. Every Deal Worth Finding.
-              </h2>
-              <div className="mt-4 space-y-3 text-sm text-[#4A4A6A] leading-relaxed">
-                <p>
-                  You&apos;ve been there. You find a coupon code on some random site - SAVE50. Error. Try FLAT50. Error. Six codes, six failures. You either paid full price or gave up.
-                </p>
-                <p>
-                  That happens because most coupon websites never clean their listings. They rank for the search, you land, you try dead codes, you leave frustrated. The site doesn&apos;t care - it already got the click.
-                </p>
-                <p>
-                  Couponscrew was built to fix exactly that. Every code on this platform is manually verified before it goes live. Our success rate is 92.4%. That means when you grab a code from here, it almost certainly works. The ones that stop working get removed fast - not left to waste your time at checkout.
-                </p>
-                <p>
-                  Right now, the platform covers Amazon and Pepperfry - two trusted brands, fully verified - and we&apos;re adding more only when we can vouch for the codes ourselves.
-                </p>
-              </div>
-            </div>
+      {/* ARTICLE BLOCK 1: About */}
+      <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="w-1 h-6 bg-[#5B4FBE] rounded-full block"></span>
+          <span className="text-xs font-black text-[#5B4FBE] uppercase tracking-widest">About CouponsCrew</span>
+        </div>
+        <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
+          Hand-Picked Stores. Every Deal Worth Finding.
+        </h2>
+        <div className="mt-4 space-y-4 text-sm text-[#4A4A6A] leading-relaxed">
+          <p>
+            Most coupon websites never clean their listings. They rank for the search, you land, you try dead codes, you leave empty-handed. The site already got the click — your checkout outcome is not its problem.
+          </p>
+          <p>
+            CouponsCrew was built differently. Every code on this platform is manually verified before it goes live. The ones that stop working get removed quickly — not left on the page to waste your time at the payment screen.
+          </p>
+          <p>
+            Right now, the platform covers Amazon and Pepperfry — two trusted brands, fully verified — and we are adding more only when we can vouch for the codes ourselves.
+          </p>
+        </div>
+      </div>
 
-            {/* ARTICLE BLOCK 2 */}
-            <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-1 h-6 bg-[#FF5722] rounded-full block"></span>
-                <span className="text-xs font-black text-[#FF5722] uppercase tracking-widest">Savings Strategy</span>
-              </div>
-              <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-                How to Save More on Every Order - The Three-Layer Stack
-              </h2>
-              <div className="mt-4 space-y-3 text-sm text-[#4A4A6A] leading-relaxed">
-                <p>
-                  Most shoppers use one savings layer. Smart shoppers use three. Here&apos;s how they stack.
-                </p>
-                <div className="space-y-3 mt-2">
-                  {[
-                    { step: "1", title: "Grab the verified code", desc: "Find the brand above, open the deal, copy the code. That's layer one. At 92.4% success rate, it almost certainly works." },
-                    { step: "2", title: "Check for a bank card offer at checkout", desc: "HDFC, ICICI, and SBI card offers run constantly on Amazon and Pepperfry. Typically 10% instant off. This is layer two - and most shoppers completely miss it." },
-                    { step: "3", title: "Run a cashback app in the background", desc: "Browser extension cashback apps give you 1-5% back on top of everything else. It runs passively. You don't even have to think about it. Layer three." }
-                  ].map((item) => (
-                    <div key={item.step} className="flex gap-4 p-4 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                      <div className="w-8 h-8 rounded-xl bg-[#5B4FBE] text-white flex items-center justify-center text-sm font-black shrink-0">
-                        {item.step}
-                      </div>
-                      <div>
-                        <p className="text-sm font-bold text-[#1A1A2E]">{item.title}</p>
-                        <p className="text-xs text-[#4A4A6A] mt-1 leading-relaxed">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
+      {/* ARTICLE BLOCK 2: Three-Layer Stack */}
+      <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="w-1 h-6 bg-[#FF5722] rounded-full block"></span>
+          <span className="text-xs font-black text-[#FF5722] uppercase tracking-widest">Savings Strategy</span>
+        </div>
+        <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
+          How to Save More on Every Order — The Three-Layer Stack
+        </h2>
+        <p className="mt-3 text-sm text-[#4A4A6A] leading-relaxed">
+          Most shoppers use one savings layer. The ones who consistently pay less use three. Here is how they stack.
+        </p>
+        
+        <div className="space-y-4 mt-6">
+          {[
+            {
+              layer: "Layer 1",
+              title: "Get the verified code",
+              desc: "Find the brand above, open the deal, copy the code. Every code here is manually tested before it goes live — so when you apply it at checkout, it works."
+            },
+            {
+              layer: "Layer 2",
+              title: "Check for a bank card offer at checkout",
+              desc: "HDFC, ICICI, and SBI card offers run regularly on Amazon and Pepperfry. This is an instant discount applied at the payment stage — completely separate from the coupon code. Most shoppers miss it entirely because it does not appear until you select your payment method."
+            },
+            {
+              layer: "Layer 3",
+              title: "Run a cashback app in the background",
+              desc: "Browser extension cashback apps return a percentage of your spend on top of everything else. They run passively — no extra steps at checkout. Stack one with a verified coupon code on a sale day and you are using every savings layer available at once."
+            }
+          ].map((step, idx) => (
+            <div key={idx} className="flex gap-4 p-5 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
+              <div className="w-16 shrink-0 flex flex-col items-center">
+                <span className="text-[10px] font-black uppercase text-[#5B4FBE] tracking-wider mb-1">
+                  {step.layer}
+                </span>
+                <div className="w-8 h-8 rounded-xl bg-[#5B4FBE] text-white flex items-center justify-center text-sm font-black">
+                  {idx + 1}
                 </div>
-                <p className="text-sm text-[#4A4A6A] pt-2">
-                  Someone who bought headphones during a recent sale used all three layers - a bank card offer, a Couponscrew code, and a cashback app running in the background. They ended up paying significantly less than half the original listed price. (Yes, you can legally stack all three. We&apos;ve done it. Your cart will look very confused.)
-                </p>
+              </div>
+              <div>
+                <h3 className="text-sm font-bold text-[#1A1A2E]">{step.title}</h3>
+                <p className="text-xs text-[#4A4A6A] mt-1 leading-relaxed">{step.desc}</p>
               </div>
             </div>
+          ))}
+        </div>
 
-            {/* ARTICLE BLOCK 3 */}
-            <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-1 h-6 bg-[#22C55E] rounded-full block"></span>
-                <span className="text-xs font-black text-[#22C55E] uppercase tracking-widest">By Category</span>
+        <div className="mt-5 p-4 bg-[#F0FDF4] border border-[#22C55E]/20 rounded-2xl flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-[#22C55E] shrink-0 mt-0.5" />
+          <p className="text-xs text-[#2E7D32] leading-relaxed">
+            All three layers are combinable in most cases. Check the terms of each offer to confirm before you pay.
+          </p>
+        </div>
+      </div>
+
+      {/* ARTICLE BLOCK 3: Categories & Strategy */}
+      <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="w-1 h-6 bg-[#22C55E] rounded-full block"></span>
+          <span className="text-xs font-black text-[#22C55E] uppercase tracking-widest">Market Breakdown</span>
+        </div>
+        <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
+          Which Categories Have the Best Coupon Codes Right Now?
+        </h2>
+        <p className="mt-3 text-sm text-[#4A4A6A] leading-relaxed">
+          Not all categories are equal when it comes to coupon depth. Here is where the real deals are — and what to watch for.
+        </p>
+
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            {
+              label: "Electronics",
+              color: "#FF9900",
+              title: "Electronics",
+              body: "Amazon's Great Indian Festival brings deep sitewide discounts across electronics. One thing worth doing before you buy: check the product's price history before assuming a sale price is actually low. MRP inflation is common — the crossed-out 'original price' is not always what the product was actually selling for before the sale began."
+            },
+            {
+              label: "Home & Kitchen",
+              color: "#D2691E",
+              title: "Home & Kitchen",
+              body: "Pepperfry runs furniture and décor sales, particularly around festive seasons. Bulkier items carry longer delivery windows, so factor that in before you commit to a sale price that is time-sensitive."
+            },
+            {
+              label: "Strategy",
+              color: "#5B4FBE",
+              title: "Timing Your Purchase",
+              body: "Both Amazon and Pepperfry run their deepest discounts during festive sale windows. If you are not in a rush, watching a product for a few days before buying often pays off — prices can drop further as a sale event moves toward its final hours."
+            },
+            {
+              label: "Verification",
+              color: "#22C55E",
+              title: "Why Only Two Stores",
+              body: "We would rather verify two stores properly than list fifty we cannot stand behind. Every code here is manually tested before it goes live. As we add more brands, each one goes through the same verification process before it earns a place on the platform — quality over quantity, every time."
+            }
+          ].map((cat, idx) => (
+            <div key={idx} className="rounded-2xl border border-[#E8E8F0] p-5 hover:border-[#5B4FBE] transition-colors bg-white">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }}></span>
+                <span className="text-xs font-black uppercase tracking-wider" style={{ color: cat.color }}>
+                  {cat.label}
+                </span>
               </div>
-              <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-                Which Categories Have the Best Coupon Codes Right Now?
-              </h2>
-              <p className="mt-3 text-sm text-[#4A4A6A] leading-relaxed">
-                Not all categories are equal when it comes to coupon depth. Here&apos;s where the real deals are - and what to watch out for.
-              </p>
-              <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  {
-                    color: "#FF9900",
-                    bg: "#FFF8E7",
-                    label: "Electronics",
-                    title: "Electronics",
-                    body: "Amazon Great Indian Festival hits up to 70% off. One caution: always check the 90-day price history before assuming a sale price is actually low. MRP inflation is real - the &quot;original price&quot; isn&apos;t always what it sounds like."
-                  },
-                  {
-                    color: "#D2691E",
-                    bg: "#FDF1E7",
-                    label: "Home & Kitchen",
-                    title: "Home &amp; Décor",
-                    body: "Pepperfry runs furniture and décor sales up to 80% off, especially around festive seasons. Bulkier items take longer to ship, so factor delivery windows in before you commit to a sale price."
-                  },
-                  {
-                    color: "#5B4FBE",
-                    bg: "#F0EEFF",
-                    label: "Strategy",
-                    title: "Timing Your Purchase",
-                    body: "Both Amazon and Pepperfry run their deepest discounts during festive sale windows. Watch a product for a few days before buying - prices often dip further as a sale event approaches its final hours."
-                  },
-                  {
-                    color: "#22C55E",
-                    bg: "#F0FDF4",
-                    label: "Verification",
-                    title: "Why Only Two Stores",
-                    body: "We&apos;d rather verify two stores properly than list fifty we can&apos;t vouch for. Every code here is manually tested before it goes live - quality over quantity."
-                  }
-                ].map((cat, idx) => (
-                  <div key={idx} className="rounded-2xl border border-[#E8E8F0] p-5 hover:border-[#5B4FBE] transition-colors">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: cat.color }}></span>
-                      <span className="text-xs font-black uppercase tracking-wider" style={{ color: cat.color }}>{cat.label}</span>
-                    </div>
-                    <h3 className="text-sm font-extrabold text-[#1A1A2E]" dangerouslySetInnerHTML={{ __html: cat.title }}></h3>
-                    <p className="text-xs text-[#4A4A6A] mt-2 leading-relaxed" dangerouslySetInnerHTML={{ __html: cat.body }}></p>
-                  </div>
-                ))}
-              </div>
+              <h3 className="text-sm font-extrabold text-[#1A1A2E]">{cat.title}</h3>
+              <p className="text-xs text-[#4A4A6A] mt-2 leading-relaxed">{cat.body}</p>
             </div>
+          ))}
+        </div>
+      </div>
 
-            {/* ARTICLE BLOCK 4 */}
-            <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-1 h-6 bg-[#F59E0B] rounded-full block"></span>
-                <span className="text-xs font-black text-[#F59E0B] uppercase tracking-widest">The Honest Version</span>
+      {/* ARTICLE BLOCK 4: Industry Truths */}
+      <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="w-1 h-6 bg-[#F59E0B] rounded-full block"></span>
+          <span className="text-xs font-black text-[#F59E0B] uppercase tracking-widest">Industry Truths</span>
+        </div>
+        <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
+          Why Most Coupon Sites Waste Your Time
+        </h2>
+        <div className="mt-4 space-y-4 text-sm text-[#4A4A6A] leading-relaxed">
+          <p>
+            Most coupon websites list a large number of codes per brand. The majority are expired. Some have not worked in years. They rank for the search, you land, you try the codes, they fail, you leave. The site got the traffic. You got nothing.
+          </p>
+          <p>
+            This is not an oversight — it is the business model. Listing dead codes costs nothing. Verifying them takes real work. Most sites choose the easier path.
+          </p>
+          <p>
+            CouponsCrew made a different call. Every code is manually tested before it goes live. A small number of verified codes beats a long list of dead ones at checkout — every time. That is not a positioning statement, it is just what saves money.
+          </p>
+          <p>
+            One thing most coupon sites do not mention: browser extension cashback apps are the most underused savings layer available to online shoppers. Stack one with a verified coupon code on a sale day and you are using every available layer — coupon discount, bank card offer, and passive cashback running simultaneously. Even the best coupon sites rarely explain this. Most shoppers do not know the third layer exists.
+          </p>
+          
+          <div className="bg-[#F0EEFF] border border-[#5B4FBE]/20 rounded-2xl p-4 mt-4 flex items-start gap-3">
+            <Sparkles className="w-5 h-5 text-[#5B4FBE] shrink-0 mt-0.5" />
+            <p className="text-xs font-bold text-[#5B4FBE] leading-relaxed">
+              When we describe a code as exclusive, we mean it cannot be found elsewhere. We use that word only when it is accurate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ARTICLE BLOCK 5: Platform Banner */}
+      <div className="bg-gradient-to-br from-[#1A1A2E] to-[#2D2570] rounded-3xl p-8 text-white">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="w-1 h-6 bg-white/40 rounded-full block"></span>
+          <span className="text-xs font-black text-white/60 uppercase tracking-widest">Our Commitment</span>
+        </div>
+        <h2 className="text-2xl font-black text-white leading-tight">
+          Hand-Verified Brands. One Standard.
+        </h2>
+        <div className="mt-4 space-y-3 text-sm text-white/75 leading-relaxed">
+          <p>
+            Amazon and Pepperfry — fully verified. Every code manually tested before it goes live. Expired codes removed promptly, not left as dead listings.
+          </p>
+          <p>
+            Most shoppers choose online shopping specifically because of cashback and deals. The people who visit CouponsCrew are not looking for generic lists — they are looking for codes that work at checkout. That is the only kind we publish.
+          </p>
+          <p>
+            As we add more brands, each one goes through the same manual verification before it earns a spot here.
+          </p>
+          <p className="text-white font-black tracking-wide pt-2">
+            Find the store above. Copy the code. Pay less.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    {/* RIGHT - SIDEBAR CARDS (30%) */}
+    <div className="lg:col-span-3 space-y-5 lg:sticky lg:top-8 self-start">
+
+      {/* SIDEBAR CARD 1 - Stack Visualizer */}
+      <div className="space-y-6">
+  {/* 3-Layer Stack Strategy Card */}
+  <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
+    <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-1 flex items-center gap-2">
+      <TrendingUp className="w-4 h-4 text-[#5B4FBE]" />
+      The 3-Layer Stack Strategy
+    </h3>
+    <p className="text-xs text-[#4A4A6A] mb-4">Combine all three layers for maximum discount compounding.</p>
+    
+    <div className="space-y-2">
+      {[
+        { label: "1. Verified Coupon Code", desc: "Instant Cart Savings" },
+        { label: "2. Bank Card Instant Off", desc: "Applied at Checkout" },
+        { label: "3. Passive Cashback App", desc: "Runs in Background" }
+      ].map((layer, idx) => (
+        <div key={idx} className="flex items-center justify-between p-2.5 bg-[#F8F8FF] rounded-xl border border-[#E8E8F0]">
+          <div>
+            <p className="text-xs font-bold text-[#1A1A2E]">{layer.label}</p>
+            <p className="text-[10px] text-[#4A4A6A]">{layer.desc}</p>
+          </div>
+          <CheckCircle2 className="w-4 h-4 text-[#5B4FBE]" />
+        </div>
+      ))}
+      <div className="flex items-center justify-between pt-3 mt-2 border-t border-[#E8E8F0]">
+        <span className="text-xs font-bold text-[#1A1A2E]">Combinable?</span>
+        <span className="text-xs font-black text-[#22C55E] bg-[#F0FDF4] border border-[#22C55E]/20 px-2 py-0.5 rounded-full">
+          Yes, usually
+        </span>
+      </div>
+    </div>
+  </div>
+
+  {/* Sidebar FAQ Accordion */}
+  <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
+    <div className="mb-4 flex items-center gap-2">
+      <HelpCircle className="w-4 h-4 text-[#5B4FBE]" />
+      <h3 className="font-extrabold text-[#1A1A2E] text-sm">Frequently Asked Questions</h3>
+    </div>
+
+    <div className="space-y-2">
+      {[
+        {
+          q: "What makes CouponsCrew different from other coupon websites?",
+          a: "Most coupon websites list as many codes as possible regardless of whether they work. The result is pages with dozens of expired codes that fail at checkout — and no mechanism to remove them. CouponsCrew takes the opposite approach: every code goes through manual verification before it goes live, and codes that stop working are removed promptly rather than left up for traffic. The focus is on fewer codes that actually work rather than long lists that mostly do not."
+        },
+        {
+          q: "Why does CouponsCrew only cover a small number of stores right now?",
+          a: "The verification process is manual. Adding a store means testing its codes properly, not just listing them. Expanding to a large number of stores quickly would mean compromising on that process — which defeats the point. The stores currently covered are fully verified. New brands are added only when they can be held to the same standard. Two verified stores beat fifty unverified ones at checkout."
+        },
+        {
+          q: "How often are the coupon codes on CouponsCrew updated?",
+          a: "Codes are checked and updated daily. When a deal expires or a code stops working, it is removed rather than left on the page. The listings reflect what is actually redeemable at checkout, not an archive of every promotion a brand has ever run."
+        },
+        {
+          q: "What does \"verified\" mean on a CouponsCrew coupon code?",
+          a: "A verified code is one that has been manually tested and confirmed to work at checkout before it is published. It is not a label applied automatically or based on a brand's published promotion calendar. If a code cannot be confirmed to work, it does not go live on the platform."
+        },
+        {
+          q: "Can I use a coupon code together with a bank card offer or cashback app?",
+          a: "In most cases, yes — these operate at different layers of the checkout process. A coupon code reduces the cart price directly. A bank card offer — such as an instant discount from HDFC, ICICI, or SBI — applies at the payment stage. A cashback browser extension runs passively in the background and credits a percentage back after the transaction. All three can often be stacked on the same order, which is how the largest effective discounts are built. Check the specific terms of each offer to confirm they are combinable."
+        },
+        {
+          q: "Which product categories tend to have the strongest coupon codes?",
+          a: "Electronics and home furnishings consistently see deeper discounts than most other categories, particularly during festive sale windows. That said, the depth of a discount matters less than its legitimacy — a verified 20% off is worth more than a listed 50% that fails at checkout. CouponsCrew covers categories where codes can be meaningfully verified, not just where the headline discounts are largest."
+        },
+        {
+          q: "Are the best coupon sites honest about when deals expire?",
+          a: "The better ones are. A common practice on many coupon websites is to leave expired deals on the page because they still rank in search results and bring in traffic — even after the code has stopped working. CouponsCrew removes expired codes from the live listing rather than keeping them up. The dates shown on active deals reflect real validity windows, not legacy information left over from a promotion that ended months ago."
+        },
+        {
+          q: "What should I do if a coupon code from CouponsCrew does not work at checkout?",
+          a: "First, check the deal terms — some codes have minimum cart values, category restrictions, or payment method requirements that can prevent them from applying. If the code meets all the listed conditions and still does not work, it is worth trying an alternative deal from the same store page. Codes can occasionally stop working between verification and your checkout if a brand ends a promotion early. If that happens, the listing will be updated."
+        },
+        {
+          q: "Is there a difference between the best online coupon sites and standard coupon sites?",
+          a: "The main difference is verification. Standard coupon sites index promotions at volume without checking whether codes work. The best online coupon sites — the ones actually worth using — test codes before publishing and remove them when they expire. The practical difference shows up at checkout: one experience results in a discount, the other results in an error message and wasted time. The platform you choose to use before a purchase directly affects how often you save versus how often you leave empty-handed."
+        },
+        {
+          q: "Do I need to create an account to use CouponsCrew?",
+          a: "No account is needed to browse deals or copy codes from CouponsCrew. Find the store you want, open the deal, copy the code, and apply it at the retailer's checkout. The platform is built to get you to a working discount quickly — not to add friction before you can access a code."
+        }
+      ].map((faq, index) => {
+        const isOpen = openIndex === index;
+        return (
+          <div
+            key={index}
+            className={`border rounded-xl transition-all duration-300 ${
+              isOpen ? 'border-[#5B4FBE] bg-[#F8F8FF]' : 'border-[#E8E8F0] bg-white hover:border-[#5B4FBE]/40'
+            }`}
+          >
+            <button
+              onClick={() => toggleAccordion(index)}
+              aria-expanded={isOpen}
+              aria-controls={`sidebar-faq-${index}`}
+              className="w-full flex items-center justify-between p-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5B4FBE] rounded-xl"
+            >
+              <span className={`text-xs font-bold pr-2 transition-colors ${isOpen ? 'text-[#5B4FBE]' : 'text-[#1A1A2E]'}`}>
+                {faq.q}
+              </span>
+              <div
+                className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 ${
+                  isOpen ? 'bg-[#5B4FBE] text-white rotate-45' : 'bg-gray-100 text-[#4A4A6A] rotate-0'
+                }`}
+              >
+                <Plus className="w-3.5 h-3.5" />
               </div>
-              <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-                Why Most Coupon Sites Waste Your Time
-              </h2>
-              <div className="mt-4 space-y-3 text-sm text-[#4A4A6A] leading-relaxed">
-                <p>
-                  Most coupon websites list 47 codes per brand. All expired. Some from 2019. They rank for the search, you land, you try codes, they all fail, you leave. The site got the traffic. You got nothing.
-                </p>
-                <p>
-                  This isn&apos;t an accident - it&apos;s the business model. Listing dead codes costs nothing. Verifying them takes work. Most sites choose the easier path.
-                </p>
-                <p>
-                  We made a different call. Every code on Couponscrew is manually tested before it goes live. Two verified codes beat 47 dead ones every time. That&apos;s not a pitch - it&apos;s just the math of what actually saves you money at checkout.
-                </p>
-                <p>
-                  One more thing most coupon sites skip: browser extension cashback apps. They&apos;re the most underused savings layer out there. Stack one with a coupon code on a sale day and you&apos;re using every layer available - coupon discount, bank card offer, and passive cashback all at once. Even the best coupon sites rarely tell you this. Most shoppers don&apos;t even know the third layer exists.
-                </p>
-                <div className="bg-[#F0EEFF] border border-[#5B4FBE]/20 rounded-2xl p-4 mt-2">
-                  <p className="text-xs font-bold text-[#5B4FBE]">
-                    When we say &quot;exclusive coupon&quot; - we mean it. A code is exclusive when it genuinely cannot be found elsewhere. We&apos;ll say it only when it&apos;s true.
+            </button>
+
+            <div
+              id={`sidebar-faq-${index}`}
+              role="region"
+              className={`grid transition-all duration-300 ease-in-out ${
+                isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+              }`}
+            >
+              <div className="overflow-hidden">
+                <div className="px-3 pb-3">
+                  <div className="h-px w-full bg-[#E8E8F0] mb-2" />
+                  <p className="text-[11px] text-[#4A4A6A] leading-relaxed font-medium">
+                    {faq.a}
                   </p>
                 </div>
               </div>
             </div>
-
-            {/* ARTICLE BLOCK 5 */}
-            <div className="bg-gradient-to-br from-[#1A1A2E] to-[#2D2570] rounded-3xl p-8 text-white">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-1 h-6 bg-white/40 rounded-full block"></span>
-                <span className="text-xs font-black text-white/60 uppercase tracking-widest">The Platform</span>
-              </div>
-              <h2 className="text-2xl font-black text-white leading-tight">
-                2 Hand-Verified Brands. One Mission.
-              </h2>
-              <div className="mt-4 space-y-3 text-sm text-white/75 leading-relaxed">
-                <p>
-                  Amazon and Pepperfry, fully verified. Every code manually tested before it goes live. Expired codes removed fast - no dead listings left behind to waste your time.
-                </p>
-                <p>
-                  Most shoppers choose online shopping specifically because of cashback and deals. Our visitors aren&apos;t here for generic listicles. They&apos;re here for codes that actually work — the kind only the best online coupon sites bother to verify.
-                </p>
-                <p>
-                  We&apos;d rather cover two stores properly than fifty we can&apos;t stand behind. As we add more brands, each one goes through the same manual verification before it earns a spot here.
-                </p>
-                <p className="text-white font-semibold">
-                  Pick a store above. Copy the code. Check out for less.
-                </p>
-              </div>
-              <div className="mt-6 flex flex-wrap gap-3">
-                {[
-                  { val: "2", lbl: "Hand-Picked Stores" },
-                  { val: "100%", lbl: "Verified Codes" },
-                  { val: "92.4%", lbl: "Success Rate" },
-                  { val: "Daily", lbl: "Updates" }
-                ].map((s, i) => (
-                  <div key={i} className="bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-center min-w-[110px]">
-                    <div className="text-lg font-black text-white leading-none">{s.val}</div>
-                    <div className="text-[10px] text-white/60 mt-1 font-medium">{s.lbl}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
           </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
 
-          {/* RIGHT - SIDEBAR CARDS (30%) */}
-          <div className="lg:col-span-3 space-y-5 lg:sticky lg:top-24 self-start">
-
-            {/* SIDEBAR CARD 1 - Savings Stack */}
-            <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
-              <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-1 flex items-center gap-2">
-                <TrendingUp className="w-4 h-4 text-[#5B4FBE]" />
-                Pro Tip - Stack Your Savings
-              </h3>
-              <p className="text-xs text-[#4A4A6A] mb-4">Every layer you add compounds the total saving.</p>
-              <div className="space-y-2">
-                {[
-                  { layer: "Sale price discount", val: "20-70% off", color: "#5B4FBE" },
-                  { layer: "Coupon code on top", val: "5-15% extra", color: "#5B4FBE" },
-                  { layer: "Bank card offer", val: "5-10% instant", color: "#5B4FBE" },
-                  { layer: "Cashback app", val: "1-5% back", color: "#5B4FBE" }
-                ].map((row, i) => (
-                  <div key={i} className="flex items-center justify-between py-2 border-b border-[#E8E8F0] last:border-0">
-                    <span className="text-xs text-[#4A4A6A] font-medium">{row.layer}</span>
-                    <span className="text-xs font-black text-[#5B4FBE] bg-[#F0EEFF] px-2 py-0.5 rounded-full">{row.val}</span>
-                  </div>
-                ))}
-                <div className="flex items-center justify-between pt-2 mt-1 bg-[#1A1A2E] rounded-xl px-3 py-2.5">
-                  <span className="text-xs font-black text-white">Combined saving</span>
-                  <span className="text-xs font-black text-[#FFD700]">35-80% OFF</span>
-                </div>
-              </div>
+      {/* SIDEBAR CARD 2 - Verification Standard */}
+      <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
+        <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-3 flex items-center gap-2">
+          <ShieldCheck className="w-4 h-4 text-[#22C55E]" />
+          Supported Platforms
+        </h3>
+        <div className="space-y-3">
+          {[
+            { name: "Amazon", status: "100% Verified", active: true },
+            { name: "Pepperfry", status: "100% Verified", active: true },
+            { name: "More Brands", status: "Under Review", active: false }
+          ].map((platform, idx) => (
+            <div key={idx} className="flex items-center justify-between py-1.5 border-b border-[#E8E8F0] last:border-0">
+              <span className="text-xs font-medium text-[#1A1A2E]">{platform.name}</span>
+              <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
+                platform.active 
+                  ? "text-[#22C55E] bg-[#F0FDF4] border border-[#22C55E]/20" 
+                  : "text-[#4A4A6A] bg-[#F8F8FF]"
+              }`}>
+                {platform.status}
+              </span>
             </div>
-
-            {/* SIDEBAR CARD 2 - Top Categories */}
-            <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
-              <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-4 flex items-center gap-2">
-                <Tag className="w-4 h-4 text-[#5B4FBE]" />
-                Top Categories Right Now
-              </h3>
-              <div className="space-y-2.5">
-                {[
-                  { name: "Fashion & Lifestyle", count: "65 stores", dot: "#FF3F6C" },
-                  { name: "Electronics", count: "48 stores", dot: "#FF9900" },
-                  { name: "Food & Grocery", count: "42 stores", dot: "#FC8019" },
-                  { name: "Travel", count: "38 stores", dot: "#2874F0" },
-                  { name: "Health & Beauty", count: "32 stores", dot: "#FC2779" }
-                ].map((cat, i) => (
-                  <div key={i} className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: cat.dot }}></span>
-                      <span className="text-xs font-medium text-[#4A4A6A]">{cat.name}</span>
-                    </div>
-                    <span className="text-[10px] font-black text-[#5B4FBE] bg-[#F0EEFF] px-2 py-0.5 rounded-full">{cat.count}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* SIDEBAR CARD 3 - Bank Card Cheatsheet */}
-            <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
-              <h3 className="font-extrabold text-[#1A1A2E] text-sm mb-1 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#5B4FBE]" />
-                Bank Card Offer Cheatsheet
-              </h3>
-              <p className="text-xs text-[#4A4A6A] mb-4">Layer these on top of any coupon code.</p>
-              <div className="space-y-2.5">
-                {[
-                  { bank: "HDFC", platforms: "Amazon, Pepperfry", off: "10% instant" },
-                  { bank: "ICICI", platforms: "Amazon", off: "10% instant" },
-                  { bank: "SBI", platforms: "Amazon GIF", off: "10% instant" }
-                ].map((row, i) => (
-                  <div key={i} className="rounded-xl bg-[#F8F8FF] border border-[#E8E8F0] p-3">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-xs font-black text-[#1A1A2E]">{row.bank}</span>
-                      <span className="text-[10px] font-black text-[#22C55E] bg-[#F0FDF4] border border-[#22C55E]/20 px-2 py-0.5 rounded-full">{row.off}</span>
-                    </div>
-                    <p className="text-[10px] text-[#4A4A6A]">{row.platforms}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-[10px] text-gray-400 mt-3 leading-relaxed">
-                Check the offer page for current cap limits before checkout.
-              </p>
-            </div>
-
-          </div>
-
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* SIDEBAR CARD 3 - Shopping Warning */}
+      <div className="bg-[#FFF8E7] rounded-2xl border border-[#FF9900]/20 p-5">
+        <div className="flex items-center gap-2 mb-2">
+          <AlertCircle className="w-4 h-4 text-[#FF9900]" />
+          <h3 className="font-extrabold text-[#1A1A2E] text-sm">Smart Shopping Tip</h3>
+        </div>
+        <p className="text-xs text-[#4A4A6A] leading-relaxed">
+          Always verify 90-day price trends prior to sale events. MRP inflation can make crossed-out prices appear lower than they actually were.
+        </p>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>
 
       <Footer />
     </div>
