@@ -30,6 +30,16 @@ import {
   Tv,
   Wallet,
   MoreHorizontal,
+  Dumbbell, 
+  Home, 
+  Shirt, 
+  Activity, 
+  Trophy, 
+  Code, 
+  Gamepad2, 
+  Gem, 
+  Glasses, 
+  Armchair,
   X,
   ArrowRight
 } from 'lucide-react';
@@ -86,16 +96,31 @@ export default function Stores() {
       STORES_DATA.filter((store) => store.category.toLowerCase() === categoryName.toLowerCase()).length;
 
     const namedCategories = [
-      { id: 'cat-fashion', name: 'Fashion & Lifestyle', icon: ShoppingBag },
-      { id: 'cat-electronics', name: 'Electronics', icon: Monitor },
-      { id: 'cat-food', name: 'Food & Grocery', icon: UtensilsCrossed },
-      { id: 'cat-travel', name: 'Travel', icon: Plane },
-      { id: 'cat-beauty', name: 'Health & Beauty', icon: Heart },
-      { id: 'cat-hosting', name: 'Web Hosting', icon: Globe },
-      { id: 'cat-edu', name: 'Education', icon: GraduationCap },
-      { id: 'cat-ent', name: 'Entertainment', icon: Tv },
-      { id: 'cat-finance', name: 'Finance', icon: Wallet }
-    ];
+  // Group 1
+  { id: 'cat-fashion', name: 'Fashion', icon: ShoppingBag },
+  { id: 'cat-beauty', name: 'Beauty', icon: Heart },
+  { id: 'cat-fitness', name: 'Exercise & Fitness', icon: Dumbbell },
+  { id: 'cat-home', name: 'Home & Kitchen', icon: Home },
+  { id: 'cat-clothing', name: 'Clothing & Accessories', icon: Shirt },
+
+  // Group 2
+  { id: 'cat-electronics', name: 'Electronics', icon: Monitor },
+  { id: 'cat-food', name: 'Food & Grocery', icon: UtensilsCrossed },
+  { id: 'cat-travel', name: 'Travel', icon: Plane },
+  { id: 'cat-edu', name: 'Education', icon: GraduationCap },
+  { id: 'cat-ent', name: 'Entertainment', icon: Tv },
+
+  // Additional Categories
+  { id: 'cat-finance', name: 'Finance', icon: Wallet },
+  { id: 'cat-hosting', name: 'Web Hosting', icon: Globe },
+  { id: 'cat-health', name: 'Health', icon: Activity },
+  { id: 'cat-sports', name: 'Sports', icon: Trophy },
+  { id: 'cat-software', name: 'Software', icon: Code },
+  { id: 'cat-gaming', name: 'Gaming', icon: Gamepad2 },
+  { id: 'cat-jewellery', name: 'Jewellery', icon: Gem },
+  { id: 'cat-eyewear', name: 'Eyewear', icon: Glasses },
+  { id: 'cat-furniture', name: 'Furniture', icon: Armchair } // Note: Use 'Armchair' if 'Furniture' isn't exported by your version of lucide-react
+];
 
     const namedCounts = namedCategories.map((cat) => countFor(cat.name));
     const othersCount = STORES_DATA.length - namedCounts.reduce((sum, c) => sum + c, 0);
@@ -269,7 +294,7 @@ export default function Stores() {
                   <Tag className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-extrabold text-[#1A1A2E] text-lg leading-none">2</div>
+                  <div className="font-extrabold text-[#1A1A2E] text-lg leading-none">100+</div>
                   <div className="text-xs text-[#4A4A6A] mt-1 font-medium">Hand-Picked Stores</div>
                 </div>
               </div>

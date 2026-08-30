@@ -4,15 +4,52 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { Search, Bell, Menu, X, Store as StoreIcon, ChevronDown, Dumbbell, Home, Shirt, ShoppingBag, Sparkles } from 'lucide-react';
+import { 
+  Search, 
+  Bell, 
+  Menu, 
+  X, 
+  Store as StoreIcon, 
+  ChevronDown, 
+  ShoppingBag, 
+  Monitor, 
+  UtensilsCrossed, 
+  Plane, 
+  Heart, 
+  Globe, 
+  GraduationCap, 
+  Tv, 
+  Wallet, 
+  Dumbbell, 
+  Home, 
+  Shirt, 
+  Activity, 
+  Trophy, 
+  Code, 
+  Gamepad2, 
+  Gem, 
+  Glasses, 
+  Armchair 
+} from 'lucide-react';
 import { STORES_DATA } from '../data/stores';
 
 const NAV_CATEGORIES = [
   { name: 'Fashion', slug: 'fashion', icon: ShoppingBag },
-  { name: 'Beauty', slug: 'beauty', icon: Sparkles },
+  { name: 'Beauty', slug: 'beauty', icon: Heart },
   { name: 'Exercise & Fitness', slug: 'exercise-and-fitness', icon: Dumbbell },
   { name: 'Home & Kitchen', slug: 'home-and-kitchen', icon: Home },
   { name: 'Clothing & Accessories', slug: 'clothing-and-accessories', icon: Shirt },
+  { name: 'Electronics', slug: 'electronics', icon: Monitor },
+  { name: 'Food & Grocery', slug: 'food-and-grocery', icon: UtensilsCrossed },
+  { name: 'Travel', slug: 'travel', icon: Plane },
+  { name: 'Education', slug: 'education', icon: GraduationCap },
+  { name: 'Entertainment', slug: 'entertainment', icon: Tv },
+  { name: 'Finance', slug: 'finance', icon: Wallet },
+  { name: 'Web Hosting', slug: 'web-hosting', icon: Globe },
+  { name: 'Health', slug: 'health', icon: Activity },
+  { name: 'Sports', slug: 'sports', icon: Trophy },
+  { name: 'Software', slug: 'software', icon: Code },
+  { name: 'Gaming', slug: 'gaming', icon: Gamepad2 },
 ];
 
 interface NavbarProps {
@@ -86,7 +123,6 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
     }
   };
 
-  // Click-outside-to-close
   useEffect(() => {
     if (!searchOpen) return;
     const handleClickOutside = (e: MouseEvent) => {
@@ -204,7 +240,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
         <nav className="hidden lg:flex items-center justify-center gap-5 xl:gap-7 flex-1">
           <Link
             href="/stores"
-            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
+            className="text-[16px] font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
           >
             Stores
           </Link>
@@ -217,7 +253,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             <Link
               href="/stores/categories"
               onClick={() => setCategoriesOpen(false)}
-              className={`text-sm font-semibold flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer ${
+              className={`text-[16px] font-semibold flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer ${
                 categoriesOpen ? 'text-[#5B4FBE]' : 'text-[#1A1A2E] hover:text-[#5B4FBE]'
               }`}
             >
@@ -226,8 +262,8 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             </Link>
 
             {categoriesOpen && (
-              <div className="absolute top-full left-0 mt-3 w-72 bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                <div className="py-2">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1040px] bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                <div className="grid grid-cols-4 gap-3">
                   {NAV_CATEGORIES.map((cat) => {
                     const CatIcon = cat.icon;
                     return (
@@ -235,12 +271,12 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
                         key={cat.slug}
                         href={`/stores/categories/${cat.slug}`}
                         onClick={() => setCategoriesOpen(false)}
-                        className="flex items-center gap-3 px-4 py-3 hover:bg-[#F0EEFF] transition-colors"
+                        className="flex items-center gap-3 px-3.5 py-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
                       >
-                        <div className="w-9 h-9 rounded-xl bg-[#F0EEFF] flex items-center justify-center shrink-0">
-                          <CatIcon className="w-4.5 h-4.5 text-[#5B4FBE]" />
+                        <div className="w-9 h-9 rounded-xl bg-[#F0EEFF] flex items-center justify-center shrink-0 group-hover:bg-[#5B4FBE] transition-colors">
+                          <CatIcon className="w-4.5 h-4.5 text-[#5B4FBE] group-hover:text-white transition-colors" />
                         </div>
-                        <span className="text-sm font-bold text-[#1A1A2E]">{cat.name}</span>
+                        <span className="text-[15px] font-bold text-[#1A1A2E] group-hover:text-[#5B4FBE] transition-colors truncate leading-tight">{cat.name}</span>
                       </Link>
                     );
                   })}
@@ -250,25 +286,25 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           </div>
           <Link
             href="/products"
-            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
+            className="text-[16px] font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] flex items-center gap-1 transition-colors whitespace-nowrap cursor-pointer"
           >
             Products
           </Link>
           <Link
             href="/deals"
-            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
+            className="text-[16px] font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
           >
             Deals
           </Link>
           <Link
             href="/offers"
-            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
+            className="text-[16px] font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
           >
             Offers
           </Link>
           <Link
             href="/blog"
-            className="text-sm font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap"
+            className="text-[16px] font-semibold text-[#1A1A2E] hover:text-[#5B4FBE] transition-colors whitespace-nowrap cursor-pointer"
           >
             Blog
           </Link>
@@ -348,7 +384,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             </button>
 
             {mobileCategoriesOpen && (
-              <div className="flex flex-col gap-1 pl-2 pb-2">
+              <div className="grid grid-cols-1 gap-1 pl-2 pb-2">
                 {NAV_CATEGORIES.map((cat) => {
                   const CatIcon = cat.icon;
                   return (
