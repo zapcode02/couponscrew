@@ -536,7 +536,7 @@ export default function Home() {
                 href="/stores/categories"
                 className="inline-flex items-center gap-2 bg-[#5B4FBE] hover:bg-[#463AA3] text-white font-bold px-8 py-3 rounded-xl text-sm transition-all shadow-md hover:shadow-lg"
               >
-                Browse Product Categories <ArrowRight size={16} />
+                Browse Stores Categories <ArrowRight size={16} />
               </Link>
             </div>
           </div>
