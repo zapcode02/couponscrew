@@ -5,22 +5,35 @@ import Link from 'next/link';
 import NextImage from 'next/image';
 import {
   ChevronRight, ChevronUp,Lightbulb, CheckCircle2, Clock, ChevronDown, ShieldCheck, Tag, Percent,
-  ArrowRight, Sparkles, Package, RefreshCw, Lock, HelpCircle
+  Sparkles, RefreshCw, Lock, HelpCircle,
+  ShoppingBag, Heart, Dumbbell, Home, Shirt, Monitor, UtensilsCrossed, Plane,
+  GraduationCap, Tv, Wallet, Globe, Activity, Trophy, Code, Gamepad2,
+  Gem, Glasses, Armchair,
 } from 'lucide-react';
 import Navbar from '../../../../../src/components/Navbar';
 import Footer from '../../../../../src/components/Footer';
 import { STORES_DATA } from '../../../../../src/data/stores';
 
-const OTHER_CATEGORIES = [
-  { name: 'Beauty', slug: 'beauty' },
-  { name: 'Exercise & Fitness', slug: 'exercise-and-fitness' },
-  { name: 'Home & Kitchen', slug: 'home-and-kitchen' },
-  { name: 'Clothing & Accessories', slug: 'clothing-and-accessories' },
-  { name: 'Fashion', slug: 'fashion' },
-  { name: 'Electronics', slug: 'electronics' },
-  { name: 'Food & Grocery', slug: 'food-and-grocery' },
-  { name: 'Travel', slug: 'travel' },
-  { name: 'Entertainment', slug: 'entertainment' },
+const ALL_CATEGORIES = [
+  { name: 'Fashion', slug: 'fashion', icon: ShoppingBag },
+  { name: 'Beauty', slug: 'beauty', icon: Heart },
+  { name: 'Exercise & Fitness', slug: 'exercise-and-fitness', icon: Dumbbell },
+  { name: 'Home & Kitchen', slug: 'home-and-kitchen', icon: Home },
+  { name: 'Clothing & Accessories', slug: 'clothing-and-accessories', icon: Shirt },
+  { name: 'Electronics', slug: 'electronics', icon: Monitor },
+  { name: 'Food & Grocery', slug: 'food-and-grocery', icon: UtensilsCrossed },
+  { name: 'Travel', slug: 'travel', icon: Plane },
+  { name: 'Education', slug: 'education', icon: GraduationCap },
+  { name: 'Entertainment', slug: 'entertainment', icon: Tv },
+  { name: 'Finance', slug: 'finance', icon: Wallet },
+  { name: 'Web Hosting', slug: 'web-hosting', icon: Globe },
+  { name: 'Health', slug: 'health', icon: Activity },
+  { name: 'Sports', slug: 'sports', icon: Trophy },
+  { name: 'Software', slug: 'software', icon: Code },
+  { name: 'Gaming', slug: 'gaming', icon: Gamepad2 },
+  { name: 'Jewellery', slug: 'jewellery', icon: Gem },
+  { name: 'Eyewear', slug: 'eyewear', icon: Glasses },
+  { name: 'Furniture', slug: 'furniture', icon: Armchair },
 ];
 
 export default function EducationCategory() {
@@ -36,6 +49,14 @@ export default function EducationCategory() {
     () => STORES_DATA.filter(s => s.categories.includes('Education')),
     []
   );
+
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    ALL_CATEGORIES.forEach(cat => {
+      counts[cat.name] = STORES_DATA.filter(s => s.categories.includes(cat.name)).length;
+    });
+    return counts;
+  }, []);
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -173,15 +194,36 @@ export default function EducationCategory() {
 
 
             <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-[0_2px_12px_rgba(232,232,240,0.3)]">
-              <h3 className="font-bold text-[#1A1A2E] text-sm mb-4 uppercase tracking-wide border-b border-[#F8F8FF] pb-2">Browse Other Categories</h3>
-              <div className="space-y-1">
-                {OTHER_CATEGORIES.map(c => (
-                  <Link key={c.slug} href={`/stores/categories/${c.slug}`} className="flex items-center gap-3 px-2 py-2.5 rounded-xl hover:bg-[#F0EEFF] transition-colors group">
-                    <Package size={15} className="text-[#4A4A6A] group-hover:text-[#5B4FBE] shrink-0" />
-                    <span className="text-sm text-[#4A4A6A] group-hover:text-[#5B4FBE] group-hover:font-semibold">{c.name}</span>
-                    <ArrowRight size={13} className="ml-auto text-gray-300 group-hover:text-[#5B4FBE]" />
-                  </Link>
-                ))}
+              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center justify-between">
+                <span>Categories</span>
+                <span className="text-[10px] font-bold bg-[#F8F8FF] text-[#4A4A6A] px-2 py-0.5 rounded-full border border-[#E8E8F0]">Filter</span>
+              </h3>
+              <div className="space-y-1.5">
+                {ALL_CATEGORIES.map(c => {
+                  const isActive = c.name === 'Education';
+                  const IconComp = c.icon;
+                  return (
+                    <Link
+                      key={c.slug}
+                      href={`/stores/categories/${c.slug}`}
+                      className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 select-none group ${
+                        isActive
+                          ? 'bg-[#5B4FBE] text-white shadow-xs'
+                          : 'hover:bg-[#F0EEFF] text-[#4A4A6A] hover:text-[#5B4FBE]'
+                      }`}
+                    >
+                      <IconComp size={16} className={isActive ? 'text-white' : 'text-[#4A4A6A] group-hover:text-[#5B4FBE]'} />
+                      <span className={`text-sm text-left truncate ${isActive ? 'font-bold' : 'font-medium'}`}>
+                        {c.name}
+                      </span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full ml-auto font-bold ${
+                        isActive ? 'bg-white/20 text-white' : 'bg-[#F8F8FF] text-[#4A4A6A] group-hover:bg-white group-hover:text-[#5B4FBE]'
+                      }`}>
+                        {categoryCounts[c.name] ?? 0}
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </aside>
