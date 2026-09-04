@@ -129,11 +129,11 @@ export default function ZeptoStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#8A2BE2] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#8A2BE2] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#8A2BE2] font-semibold">Zepto Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">Zepto Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -169,7 +169,7 @@ export default function ZeptoStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Zepto</h1>
-                    <span className="bg-[#F5EDFF] text-[#8A2BE2] text-xs font-bold px-3 py-1 rounded-full border border-[#E9D9FF]">
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Instant Grocery Delivery
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export default function ZeptoStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#8A2BE2] bg-[#F5EDFF] px-2.5 py-1 rounded-full border border-[#E9D9FF]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> Active Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,7 +198,7 @@ export default function ZeptoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#1A1A1A] hover:bg-[#000000] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Zepto</span>
                   <ExternalLink size={16} />
@@ -224,7 +224,7 @@ export default function ZeptoStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#8A2BE2] to-[#1A1A1A] items-center justify-center text-center p-8"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
               <div className="relative z-10 text-white space-y-3">
                 <span className="inline-block bg-white/15 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">
@@ -244,7 +244,7 @@ export default function ZeptoStore() {
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F5EDFF] text-[#8A2BE2] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -254,7 +254,7 @@ export default function ZeptoStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F0F0F0] text-[#1A1A1A] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -274,7 +274,7 @@ export default function ZeptoStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F5EDFF] text-[#8A2BE2] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -316,9 +316,9 @@ export default function ZeptoStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#8A2BE2) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#8A2BE2] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -341,8 +341,8 @@ export default function ZeptoStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#1A1A1A) */}
-                <span className="bg-[#1A1A1A]/10 text-[#1A1A1A] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -361,7 +361,7 @@ export default function ZeptoStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#8A2BE2] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -371,15 +371,15 @@ export default function ZeptoStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#8A2BE2]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select grocery & daily essentials categories.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#8A2BE2]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum cart value might apply as specified on descriptions.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#8A2BE2]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers selected products and categories.</span>
                   </li>
                 </ul>
@@ -391,7 +391,7 @@ export default function ZeptoStore() {
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#1A1A1A]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -408,13 +408,13 @@ export default function ZeptoStore() {
                 </div>
               )}
 
-              {/* Action Button - Vibrant CTA Accent (#1A1A1A) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#1A1A1A] hover:bg-[#000000] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -438,7 +438,7 @@ export default function ZeptoStore() {
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#8A2BE2]" />
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>About Zepto — Redefining Grocery Delivery Speed in India</span>
               </h3>
 
@@ -466,7 +466,7 @@ export default function ZeptoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#8A2BE2] hover:text-[#8A2BE2] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit Zepto</span>
                   <ArrowRight size={12} />
@@ -475,12 +475,12 @@ export default function ZeptoStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#8A2BE2] to-[#1A1A1A] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">Zepto Grocery Sale</h3>
-                <span className="inline-block bg-[#1A1A1A] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -492,7 +492,7 @@ export default function ZeptoStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#8A2BE2] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Shop Now
               </a>
@@ -507,96 +507,96 @@ export default function ZeptoStore() {
               <div className="space-y-3.5 text-xs">
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Fruits & Vegetables</span>
-                  <span className="text-[#1A1A1A] font-bold">Up to 30% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 30% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Dairy & Breakfast</span>
-                  <span className="text-[#1A1A1A] font-bold">Up to 20% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 20% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Snacks & Beverages</span>
-                  <span className="text-[#1A1A1A] font-bold">Up to 35% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 35% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Personal Care</span>
-                  <span className="text-[#1A1A1A] font-bold">Up to 25% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 25% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Household Essentials</span>
-                  <span className="text-[#1A1A1A] font-bold">Up to 20% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 20% OFF</span>
                 </div>
               </div>
 
               <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/categories" className="text-xs font-black text-[#8A2BE2] hover:underline flex items-center justify-center gap-1">
+                <Link href="/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
                   <span>View All Categories</span>
                   <ArrowRight size={12} />
                 </Link>
               </div>
             </div>
 
-            <div className="bg-white border border-[#F0E0E0] rounded-3xl p-5 shadow-xs text-left">
-  <h3 className="font-extrabold text-[#1A1A1A] text-base mb-4 tracking-tight border-b border-[#F0E0E0] pb-3 select-none">
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
+  <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
     How to Use a Zepto Coupon Code — Step by Step
   </h3>
 
-  <p className="text-xs font-semibold text-[#5A5A6E] mb-5">
+  <p className="text-xs font-semibold text-[#4A4A6A] mb-5">
     Applying a Zepto discount code or Zepto promo code takes under a minute. Here&apos;s how:
   </p>
 
   <div className="space-y-5">
-    <ol className="space-y-2.5 text-xs font-semibold text-[#3A3A3A]">
+    <ol className="space-y-2.5 text-xs font-semibold text-[#4A4A6A]">
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">1</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">1</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Open the Zepto app — </span>
           <span>Download the Zepto app on iOS or Android and log in or create a new account.</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">2</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">2</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Set your delivery address — </span>
           <span>Allow location access or manually enter your delivery pin code.</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">3</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">3</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Browse and add items — </span>
           <span>Shop across categories from fresh produce to Zepto Cafe items and household essentials.</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">4</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">4</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Proceed to checkout — </span>
           <span>Review your cart and tap &quot;Proceed to Pay.&quot;</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">5</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">5</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Apply your Zepto coupon code — </span>
           <span>Look for the &quot;Apply Coupon&quot; or &quot;Have a promo code?&quot; field. Enter your Zepto offer code from CouponsCrew and tap Apply.</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">6</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">6</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Confirm the discount — </span>
           <span>The reduced price will update in your order total before payment.</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">7</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">7</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Choose your payment method — </span>
           <span>UPI, credit/debit card, net banking, cash on delivery, or wallet.</span>
         </div>
       </li>
       <li className="flex items-start gap-2.5">
-        <span className="flex items-center justify-center bg-[#FFF0F0] text-[#E4002B] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">8</span>
+        <span className="flex items-center justify-center bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-4 h-4 text-[10px] font-bold shrink-0 mt-0.5">8</span>
         <div>
           <span className="font-bold text-[#2C2C40]">Place your order — </span>
           <span>Confirm and track your Zepto delivery in real time — typically under 10 minutes.</span>
@@ -605,8 +605,8 @@ export default function ZeptoStore() {
     </ol>
 
     {/* Tip Box */}
-    <div className="bg-[#FFF8F8] border border-[#FCDCDC] rounded-2xl p-3.5 flex items-start gap-2.5">
-      <div className="text-xs text-[#3A3A3A]">
+    <div className="bg-[#F0EEFF] border border-[#5B4FBE]/20 rounded-2xl p-3.5 flex items-start gap-2.5">
+      <div className="text-xs text-[#2C2C40]">
         <span className="font-bold text-[#2C2C40]">Tip: </span>
         <span>The best Zepto promo codes are app-exclusive. If a code isn&apos;t working, ensure you&apos;re using the Zepto app rather than a browser. Some Zepto discount codes also apply only to specific product categories — check the terms on CouponsCrew before applying.</span>
       </div>
@@ -1195,7 +1195,7 @@ export default function ZeptoStore() {
 
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -1299,7 +1299,7 @@ export default function ZeptoStore() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Zepto deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Zepto deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -1327,7 +1327,7 @@ export default function ZeptoStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#8A2BE2]">{activeModalCoupon.code}</span> at Zepto checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at Zepto checkout for instant discounts.
               </p>
             </div>
 
@@ -1352,7 +1352,7 @@ export default function ZeptoStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#1A1A1A] hover:bg-[#000000] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Zepto</span>
                 <ExternalLink size={14} />

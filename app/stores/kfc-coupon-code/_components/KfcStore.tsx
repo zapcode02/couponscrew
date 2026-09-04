@@ -119,7 +119,7 @@ export default function KfcStore() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FFF8F8] flex flex-col font-sans antialiased text-[#3A3A3A]">
+    <div className="min-h-screen bg-[#F8F8FF] flex flex-col font-sans antialiased text-[#4A4A6A]">
       <Navbar />
 
       {/* ==========================================
@@ -128,18 +128,18 @@ export default function KfcStore() {
       <section className="w-full bg-[#FFFFFF] pt-6 pb-12 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2  text-xs md:text-sm text-[#3A3A3A] select-none mb-6">
-            <Link href="/" className="hover:text-[#E4002B] transition-colors font-medium">Home</Link>
+          <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#E4002B] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#E4002B] font-semibold">KFC Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">KFC Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Store Detail Card (Left 7 Columns) */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-6 md:p-8 border border-[#F0E0E0] shadow-sm flex flex-col justify-between">
+            <div className="lg:col-span-7 bg-white rounded-3xl p-6 md:p-8 border border-[#E8E8F0] shadow-sm flex flex-col justify-between">
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 {/* Logo Section */}
                 <div className="flex flex-col items-center gap-3">
@@ -147,7 +147,7 @@ export default function KfcStore() {
                     href={AFFILIATE_URL}
                     target="_blank"
                     rel="noopener noreferrer nofollow sponsored"
-                    className="w-28 h-28 bg-white border border-[#F0E0E0] rounded-2xl flex items-center justify-center p-4 shadow-sm shrink-0"
+                    className="w-28 h-28 bg-white border border-[#E8E8F0] rounded-2xl flex items-center justify-center p-4 shadow-sm shrink-0"
                   >
                     <img
                       src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787537869/kfc-logo_g0vdph.webp"
@@ -168,21 +168,21 @@ export default function KfcStore() {
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
-                    <h1 className="text-3xl font-black text-[#1A1A1A] tracking-tight">KFC</h1>
-                    <span className="bg-[#FDE7EA] text-[#E4002B] text-xs font-bold px-3 py-1 rounded-full border border-[#FAD0D6]">
+                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">KFC</h1>
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Fast Food & Fried Chicken
                     </span>
                   </div>
 
-                  <p className="text-sm md:text-base leading-relaxed text-[#3A3A3A]">
+                  <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
                   Discover the latest KFC coupon codes and offers to save on your favourite chicken meals. Get up to 54% OFF, ₹100 OFF on bucket deals, 50% OFF Friday specials, affordable lunch combos from ₹299, and delicious KFC rolls starting at just ₹99.
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#3A3A3A]">
+                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#E4002B] bg-[#FDE7EA] px-2.5 py-1 rounded-full border border-[#FAD0D6]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> 20+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -193,12 +193,12 @@ export default function KfcStore() {
               </div>
 
               {/* Action Buttons */}
-              <div className="mt-8 pt-6 border-t border-[#F0E0E0] flex flex-wrap gap-4">
+              <div className="mt-8 pt-6 border-t border-[#E8E8F0] flex flex-wrap gap-4">
                 <a
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#000000] hover:bg-[#1A1A1A] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit KFC</span>
                   <ExternalLink size={16} />
@@ -224,7 +224,7 @@ export default function KfcStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#E4002B] to-[#8C0018] items-center justify-center text-center p-8"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
               <div className="text-white space-y-3 relative z-10">
                 <span className="inline-block bg-white/15 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
@@ -241,44 +241,44 @@ export default function KfcStore() {
       {/* ==========================================
           STATS STRIP ACCENT BAR — desktop only
           ========================================== */}
-      <section className="hidden lg:block bg-white border-b border-[#F0E0E0] py-6 px-6">
+      <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
-          <div className="flex items-center gap-3.5 border-r border-[#F0E0E0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FDE7EA] text-[#E4002B] rounded-2xl flex items-center justify-center shrink-0">
+          <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">20+</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">20+</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Active Offers</div>
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5 md:border-r border-[#F0E0E0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-gray-100 text-[#000000] rounded-2xl flex items-center justify-center shrink-0">
+          <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">Up to 30%</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">Up to 30%</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Best Discount</div>
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5 border-r border-[#F0E0E0]/70 last:border-0 pr-4">
+          <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
             <div className="w-11 h-11 bg-[#EAFDF3] text-emerald-600 rounded-2xl flex items-center justify-center shrink-0">
               <span className="text-lg font-black">₹</span>
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">₹500+</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">₹500+</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">You Can Save</div>
             </div>
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FDE7EA] text-[#E4002B] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">100%</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">100%</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Verified Offers</div>
             </div>
           </div>
@@ -295,9 +295,9 @@ export default function KfcStore() {
           <main className="flex-1 space-y-10 order-1">
 
             {/* Header Control Row */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#F0E0E0] select-none">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#E8E8F0] select-none">
               <div>
-                <h2 className="text-2xl font-black text-[#1A1A1A] tracking-tight">KFC Coupons & Offers</h2>
+                <h2 className="text-2xl font-black text-[#1A1A2E] tracking-tight">KFC Coupons & Offers</h2>
                 <p className="text-xs text-gray-400 mt-1">Save more with these verified KFC coupon codes & offers.</p>
               </div>
 
@@ -318,9 +318,9 @@ export default function KfcStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#E4002B) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#E4002B] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -343,8 +343,8 @@ export default function KfcStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#000000) */}
-                <span className="bg-[#000000]/10 text-[#000000] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -363,7 +363,7 @@ export default function KfcStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#E4002B] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -373,15 +373,15 @@ export default function KfcStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E4002B]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select menu categories as listed in the offer.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E4002B]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum order value might apply as specified in the description.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E4002B]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers select combo meals and menu items.</span>
                   </li>
                 </ul>
@@ -393,7 +393,7 @@ export default function KfcStore() {
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#000000]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -410,13 +410,13 @@ export default function KfcStore() {
                 </div>
               )}
 
-              {/* Action Button - Vibrant CTA Accent (#000000) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#000000] hover:bg-[#1A1A1A] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -441,21 +441,21 @@ export default function KfcStore() {
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
             {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#F0E0E0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A1A] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#F0E0E0] pb-3 select-none">
-                <Info size={16} className="text-[#E4002B]" />
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
+              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>About KFC India — The Story Behind the Bucket</span>
               </h3>
               
-              <p className="text-[#1A1A1A] text-sm">
+              <p className="text-[#1A1A2E] text-sm">
               KFC (Kentucky Fried Chicken) was founded in the United States in 1952 by Colonel Harland Sanders. The brand entered India in 1995, opening its first outlet in Bangalore, and has since grown to over 1,000 restaurants across 100+ Indian cities. In India, KFC operates under Devyani International and Sapphire Foods, both of which are licensed franchise operators under Yum! Brands.
               </p>
 
-              <p className="text-[#1A1A1A] text-sm mt-4">
+              <p className="text-[#1A1A2E] text-sm mt-4">
               KFC India has adapted its menu significantly for the local market — introducing rice bowls, wraps, and spicier variants of its core offerings to suit Indian palates while keeping its global signatures like the Original Recipe Chicken, KFC popcorn chicken, and KFC chicken wings at the core of the menu.
               </p>
 
-              <p className="text-[#1A1A1A] text-sm mt-4">
+              <p className="text-[#1A1A2E] text-sm mt-4">
               The brand is known for its consistent food quality, value combos, and regular promotional campaigns. KFC Wednesday offers, app-only deals, and festive promotions are among the most searched KFC offers in India, making KFC coupon codes one of the highest-demand coupon categories in the country.
               </p>
 
@@ -464,7 +464,7 @@ export default function KfcStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#E0D0D0] hover:border-[#E4002B] hover:text-[#E4002B] text-[#1A1A1A] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit KFC</span>
                   <ArrowRight size={12} />
@@ -473,12 +473,12 @@ export default function KfcStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#E4002B] to-[#8C0018] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">KFC Seasonal Meal Offers</h3>
-                <span className="inline-block bg-[#000000] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -490,7 +490,7 @@ export default function KfcStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#E4002B] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Order Now
               </a>
@@ -499,12 +499,12 @@ export default function KfcStore() {
            
 
             {/* Sidebar Card 4: Why Shop at KFC */}
-            <div className="bg-white border border-[#F0E0E0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A1A] text-base mb-4 tracking-tight border-b border-[#F0E0E0] pb-3 select-none">
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
+              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
                 Why Use CouponScrew for KFC Deals?
               </h3>
 
-              <ul className="space-y-3 text-xs font-semibold text-[#3A3A3A]">
+              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
   <li className="flex items-start gap-2.5">
     <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
     <div>
@@ -1067,7 +1067,7 @@ export default function KfcStore() {
 
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -1171,7 +1171,7 @@ export default function KfcStore() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get KFC deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get KFC deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -1187,7 +1187,7 @@ export default function KfcStore() {
           ========================================== */}
       {showModal && activeModalCoupon && (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/60 backdrop-blur-xs select-none">
-          <div className="bg-white rounded-3xl border border-[#F0E0E0] shadow-2xl p-6 md:p-8 max-w-md w-full text-center relative space-y-5 animate-in fade-in zoom-in-95 duration-200">
+          <div className="bg-white rounded-3xl border border-[#E8E8F0] shadow-2xl p-6 md:p-8 max-w-md w-full text-center relative space-y-5 animate-in fade-in zoom-in-95 duration-200">
 
             {/* Success icon */}
             <div className="w-16 h-16 bg-[#EAFDF3] border border-emerald-100 rounded-full flex items-center justify-center mx-auto text-emerald-500">
@@ -1195,14 +1195,14 @@ export default function KfcStore() {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-xl font-black text-[#1A1A1A]">Coupon Code Copied!</h3>
+              <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#E4002B]">{activeModalCoupon.code}</span> at KFC checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at KFC checkout for instant discounts.
               </p>
             </div>
 
             {/* Code Box */}
-            <div className="bg-[#FFF8F8] border border-[#F0E0E0] rounded-2xl py-3 px-4 flex items-center justify-between gap-4">
+            <div className="bg-[#F8F8FF] border border-[#E8E8F0] rounded-2xl py-3 px-4 flex items-center justify-between gap-4">
               <span className="font-mono font-bold text-sm tracking-wider text-gray-500 select-all">
                 {activeModalCoupon.code}
               </span>
@@ -1222,7 +1222,7 @@ export default function KfcStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#000000] hover:bg-[#1A1A1A] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to KFC</span>
                 <ExternalLink size={14} />
@@ -1230,7 +1230,7 @@ export default function KfcStore() {
 
               <button
                 onClick={() => setShowModal(false)}
-                className="w-full text-xs font-bold text-gray-400 hover:text-[#1A1A1A] py-2 transition-colors cursor-pointer"
+                className="w-full text-xs font-bold text-gray-400 hover:text-[#1A1A2E] py-2 transition-colors cursor-pointer"
               >
                 Close Window
               </button>

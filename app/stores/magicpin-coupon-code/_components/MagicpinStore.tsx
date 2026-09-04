@@ -129,11 +129,11 @@ export default function MagicpinStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#FF3278] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#FF3278] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#FF3278] font-semibold">Magicpin Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">Magicpin Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -168,8 +168,8 @@ export default function MagicpinStore() {
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
-                    <h1 className="text-3xl font-black text-[#1A1A1A] tracking-tight">Magicpin</h1>
-                    <span className="bg-[#FFE9F1] text-[#FF3278] text-xs font-bold px-3 py-1 rounded-full border border-[#FFD1E4]">
+                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Magicpin</h1>
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Dining, Cashback & Local Deals
                     </span>
                   </div>
@@ -182,7 +182,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#FF3278] bg-[#FFE9F1] px-2.5 py-1 rounded-full border border-[#FFD1E4]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> 50+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,7 +198,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#1A1A1A] hover:bg-[#333333] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Magicpin</span>
                   <ExternalLink size={16} />
@@ -224,7 +224,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#FF3278] to-[#1A1A1A] items-center justify-center"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center"
             >
               <div className="text-center text-white px-8 space-y-3 relative z-10">
                 <span className="inline-block bg-white/15 text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
@@ -246,21 +246,21 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FFE9F1] text-[#FF3278] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">50+</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">50+</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Active Offers</div>
             </div>
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F2F2F2] text-[#1A1A1A] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">Up to 50%</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">Up to 50%</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Best Discount</div>
             </div>
           </div>
@@ -270,17 +270,17 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
               <span className="text-lg font-black">₹</span>
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">Cashback</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">Cashback</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">On Every Order</div>
             </div>
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FFE9F1] text-[#FF3278] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A1A] leading-none">100%</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">100%</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Verified Offers</div>
             </div>
           </div>
@@ -299,7 +299,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
             {/* Header Control Row */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#E8E8F0] select-none">
               <div>
-                <h2 className="text-2xl font-black text-[#1A1A1A] tracking-tight">Magicpin Coupons & Offers</h2>
+                <h2 className="text-2xl font-black text-[#1A1A2E] tracking-tight">Magicpin Coupons & Offers</h2>
                 <p className="text-xs text-gray-400 mt-1">Save more with these verified Magicpin coupon codes & offers.</p>
               </div>
 
@@ -320,9 +320,9 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#FF3278) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#FF3278] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -345,8 +345,8 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#1A1A1A) */}
-                <span className="bg-[#1A1A1A]/10 text-[#1A1A1A] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -365,7 +365,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#FF3278] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -375,15 +375,15 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF3278]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select dining, salon & grocery categories.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF3278]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum bill value might apply as specified in offer terms.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF3278]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers select partner merchants and locations.</span>
                   </li>
                 </ul>
@@ -395,7 +395,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#1A1A1A]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -412,13 +412,13 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                 </div>
               )}
 
-              {/* Action Button - Vibrant CTA Accent (#1A1A1A) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#1A1A1A] hover:bg-[#333333] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -444,23 +444,23 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
 
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A1A] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#FF3278]" />
+              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>The Story Behind Magicpin</span>
               </h3>
-              <p className="text-[#1A1A1A] text-sm mb-3">
+              <p className="text-[#1A1A2E] text-sm mb-3">
                 Magicpin was founded with a straightforward idea: help people discover the best local businesses around them and reward them for actually visiting. The platform began in the restaurant and food discovery space but has since expanded into fashion retail, beauty and wellness, grocery, and entertainment.
               </p>
 
-              <p className="text-[#1A1A1A] text-sm">
+              <p className="text-[#1A1A2E] text-sm">
               What separates Magicpin from a standard cashback app is the magicpin partner model. When a business signs up as a magicpin partner, it gets listed on the platform and can run targeted offers for nearby users. Customers who visit and upload their bill or pay through the app earn Magicpin points — which can then be redeemed against future purchases at the same or other partner outlets.
               </p>
 
-               <p className="text-[#1A1A1A] text-sm">
+               <p className="text-[#1A1A2E] text-sm">
               This model benefits both sides. Businesses get visibility and repeat customers without needing a large marketing budget. Users get genuine savings on purchases they were likely to make anyway. The magic pin company has scaled this across multiple Indian cities and continues to expand its network of partner merchants.
               </p>
 
-               <p className="text-[#1A1A1A] text-sm">
+               <p className="text-[#1A1A2E] text-sm">
               For anyone who shops, eats, or spends regularly at local businesses — not just large chains — Magicpin tends to surface deals that other platforms simply do not cover.
               </p>
 
@@ -469,7 +469,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#FF3278] hover:text-[#FF3278] text-[#1A1A1A] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit Magicpin</span>
                   <ArrowRight size={12} />
@@ -478,12 +478,12 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#FF3278] to-[#1A1A1A] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">Magicpin Seasonal Offers</h3>
-                <span className="inline-block bg-[#1A1A1A] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -495,56 +495,56 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#FF3278] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Shop Now
               </a>
             </div>
 
             {/* Sidebar Card 4: Why Shop at Magicpin */}
-            <div className="bg-white border border-[#F0E0E0] rounded-3xl p-5 shadow-xs text-left">
-  <h3 className="font-extrabold text-[#1A1A1A] text-base mb-4 tracking-tight border-b border-[#F0E0E0] pb-3 select-none">
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
+  <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
     Types of Deals on Magicpin
   </h3>
 
-  <ul className="space-y-4 text-xs font-semibold text-[#3A3A3A]">
+  <ul className="space-y-4 text-xs font-semibold text-[#4A4A6A]">
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Magicpin Coupon Code for New Users</span>
         <span>First-time users on the platform often receive an introductory discount or bonus points on their first transaction. These are the highest-value single-use discounts available on Magicpin and are worth using on a larger purchase to get the most out of them.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Magicpin Referral Code</span>
         <span>The magicpin referral code system rewards both the person sharing the code and the new user who signs up using it. Once a referred user completes their first qualifying transaction, both accounts receive points. This is one of the few ways to earn rewards without making a direct purchase yourself.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Restaurant and Food Deals</span>
         <span>Magicpin&apos;s partner network includes a wide range of local restaurants, cafes, and fast food outlets — not just large national chains. Deals here typically appear as cashback in points, a flat discount, or a combo offer on specific menu items. In cities with a dense magicpin partner network, the food discovery section alone covers hundreds of local options.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Salon, Spa, and Wellness Offers</span>
         <span>Beauty and wellness businesses — including salons, spas, yoga studios, and gyms — list exclusive Magicpin deals that are not available directly at the counter. These tend to be percentage-based cashback or flat discounts on service bills above a certain threshold.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Grocery and Supermarket Savings</span>
         <span>Local grocery stores and supermarkets that are part of the magicpin partner ecosystem list time-limited cashback offers. These are particularly useful if you shop regularly at the same store — the cashback accumulates over multiple visits and reduces your effective spend over time.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Fashion and Retail</span>
         <span>Clothing stores, footwear shops, and accessories retailers in the partner network offer deals specifically for Magicpin users. Unlike platform-wide fashion sales, these are neighbourhood-retail focused and often include stores that do not have a significant online presence.</span>
@@ -1080,9 +1080,9 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-xl font-black text-[#1A1A1A]">Coupon Code Copied!</h3>
+              <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#FF3278]">{activeModalCoupon.code}</span> at Magicpin checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at Magicpin checkout for instant discounts.
               </p>
             </div>
 
@@ -1107,7 +1107,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#1A1A1A] hover:bg-[#333333] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Magicpin</span>
                 <ExternalLink size={14} />
@@ -1115,7 +1115,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
 
               <button
                 onClick={() => setShowModal(false)}
-                className="w-full text-xs font-bold text-gray-400 hover:text-[#1A1A1A] py-2 transition-colors cursor-pointer"
+                className="w-full text-xs font-bold text-gray-400 hover:text-[#1A1A2E] py-2 transition-colors cursor-pointer"
               >
                 Close Window
               </button>

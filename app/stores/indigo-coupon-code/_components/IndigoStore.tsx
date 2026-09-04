@@ -129,11 +129,11 @@ export default function IndigoStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#00205B] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#00205B] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#00205B] font-semibold">IndiGo Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">IndiGo Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -169,7 +169,7 @@ export default function IndigoStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">IndiGo</h1>
-                    <span className="bg-[#EAF0FA] text-[#00205B] text-xs font-bold px-3 py-1 rounded-full border border-[#D6E0F0]">
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Flight Bookings & Air Travel
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export default function IndigoStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#00205B] bg-[#EAF0FA] px-2.5 py-1 rounded-full border border-[#D6E0F0]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> 10+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,7 +198,7 @@ export default function IndigoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#F5A623] hover:bg-[#D68F0F] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit IndiGo</span>
                   <ExternalLink size={16} />
@@ -224,10 +224,10 @@ export default function IndigoStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#00205B] to-[#0B3D91] items-center justify-center text-center p-8"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
               <div className="text-white space-y-3 relative z-10">
-                <span className="inline-block bg-[#F5A623] text-[#00205B] text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">
                   Limited Time
                 </span>
                 <h3 className="text-2xl font-black leading-tight">Fly More, Pay Less</h3>
@@ -244,7 +244,7 @@ export default function IndigoStore() {
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#EAF0FA] text-[#00205B] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -254,7 +254,7 @@ export default function IndigoStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FDF3E3] text-[#F5A623] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -274,7 +274,7 @@ export default function IndigoStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#EAF0FA] text-[#00205B] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -316,9 +316,9 @@ export default function IndigoStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#00205B) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#00205B] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -341,8 +341,8 @@ export default function IndigoStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#F5A623) */}
-                <span className="bg-[#F5A623]/10 text-[#F5A623] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -361,7 +361,7 @@ export default function IndigoStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#00205B] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -371,15 +371,15 @@ export default function IndigoStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#00205B]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select flight routes and fare classes.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#00205B]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum booking value might apply as specified in offer description.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#00205B]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers select domestic and international routes.</span>
                   </li>
                 </ul>
@@ -391,7 +391,7 @@ export default function IndigoStore() {
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#F5A623]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -408,13 +408,13 @@ export default function IndigoStore() {
                 </div>
               )}
 
-              {/* Action Button - Vibrant CTA Accent (#F5A623) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#F5A623] hover:bg-[#D68F0F] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -486,7 +486,7 @@ export default function IndigoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#00205B] hover:text-[#00205B] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit IndiGo</span>
                   <ArrowRight size={12} />
@@ -495,12 +495,12 @@ export default function IndigoStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#00205B] to-[#0B3D91] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">IndiGo Seasonal Flight Sale</h3>
-                <span className="inline-block bg-[#F5A623] text-[#00205B] text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -512,7 +512,7 @@ export default function IndigoStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#00205B] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Book Now
               </a>
@@ -1057,7 +1057,7 @@ export default function IndigoStore() {
 
           <button
             onClick={() => setIsReadMore(!isReadMore)}
-            className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
+            className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline cursor-pointer"
           >
             {isReadMore ? "Read Less" : "Read More"}{" "}
             <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
@@ -1155,7 +1155,7 @@ export default function IndigoStore() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get IndiGo deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get IndiGo deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -1181,7 +1181,7 @@ export default function IndigoStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#00205B]">{activeModalCoupon.code}</span> at IndiGo checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at IndiGo checkout for instant discounts.
               </p>
             </div>
 
@@ -1206,7 +1206,7 @@ export default function IndigoStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#F5A623] hover:bg-[#D68F0F] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to IndiGo</span>
                 <ExternalLink size={14} />

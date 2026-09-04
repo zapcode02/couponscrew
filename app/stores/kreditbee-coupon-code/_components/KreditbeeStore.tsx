@@ -129,11 +129,11 @@ export default function KreditbeeStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#1B6FE0] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#1B6FE0] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#1B6FE0] font-semibold">KreditBee Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">KreditBee Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -169,7 +169,7 @@ export default function KreditbeeStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">KreditBee</h1>
-                    <span className="bg-[#E8F1FD] text-[#1B6FE0] text-xs font-bold px-3 py-1 rounded-full border border-[#D3E4FA]">
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Instant Personal Loans
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export default function KreditbeeStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#1B6FE0] bg-[#E8F1FD] px-2.5 py-1 rounded-full border border-[#D3E4FA]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> Active Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,7 +198,7 @@ export default function KreditbeeStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#0D2A4D] hover:bg-[#0A2038] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit KreditBee</span>
                   <ExternalLink size={16} />
@@ -224,7 +224,7 @@ export default function KreditbeeStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#1B6FE0] to-[#0D2A4D] items-center justify-center p-8 text-center"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center p-8 text-center"
             >
               <div className="text-white space-y-3 relative z-10">
                 <h3 className="text-2xl font-black">Apply for a Personal Loan</h3>
@@ -241,7 +241,7 @@ export default function KreditbeeStore() {
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#E8F1FD] text-[#1B6FE0] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -251,7 +251,7 @@ export default function KreditbeeStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#EAF0FB] text-[#0D2A4D] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -271,7 +271,7 @@ export default function KreditbeeStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#E8F1FD] text-[#1B6FE0] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -315,9 +315,9 @@ export default function KreditbeeStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#1B6FE0) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#1B6FE0] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -340,8 +340,8 @@ export default function KreditbeeStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#0D2A4D) */}
-                <span className="bg-[#0D2A4D]/10 text-[#0D2A4D] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -360,7 +360,7 @@ export default function KreditbeeStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#1B6FE0] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -370,15 +370,15 @@ export default function KreditbeeStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#1B6FE0]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Offer terms are set by KreditBee and may change without notice.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#1B6FE0]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Eligibility may vary based on user type and application status.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#1B6FE0]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Please confirm final offer details on the KreditBee app before applying.</span>
                   </li>
                 </ul>
@@ -390,7 +390,7 @@ export default function KreditbeeStore() {
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#0D2A4D]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -407,13 +407,13 @@ export default function KreditbeeStore() {
                 </div>
               )}
 
-              {/* Action Button - Vibrant CTA Accent (#0D2A4D) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#0D2A4D] hover:bg-[#0A2038] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -439,7 +439,7 @@ export default function KreditbeeStore() {
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#1B6FE0]" />
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>KreditBee Coupon Code — What It Means on a Lending Platform</span>
               </h3>
 
@@ -460,7 +460,7 @@ export default function KreditbeeStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#1B6FE0] hover:text-[#1B6FE0] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit KreditBee</span>
                   <ArrowRight size={12} />
@@ -469,12 +469,12 @@ export default function KreditbeeStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#1B6FE0] to-[#0D2A4D] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">Apply for a KreditBee Personal Loan</h3>
-                <span className="inline-block bg-[#0D2A4D] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Check Now
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -486,7 +486,7 @@ export default function KreditbeeStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#1B6FE0] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Apply Now
               </a>
@@ -1226,7 +1226,7 @@ export default function KreditbeeStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#1B6FE0]">{activeModalCoupon.code}</span> on the KreditBee app where applicable.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> on the KreditBee app where applicable.
               </p>
             </div>
 
@@ -1251,7 +1251,7 @@ export default function KreditbeeStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#0D2A4D] hover:bg-[#0A2038] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to KreditBee</span>
                 <ExternalLink size={14} />

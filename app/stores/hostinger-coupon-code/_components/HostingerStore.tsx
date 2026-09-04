@@ -129,11 +129,11 @@ export default function HostingerStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#673DE6] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#673DE6] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#673DE6] font-semibold">Hostinger Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">Hostinger Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -169,7 +169,7 @@ export default function HostingerStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Hostinger</h1>
-                    <span className="bg-[#F0EEFF] text-[#673DE6] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Web Hosting, Domains & VPS
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export default function HostingerStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#673DE6] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> 50+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,7 +198,7 @@ export default function HostingerStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#673DE6] hover:bg-[#5730C4] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Hostinger</span>
                   <ExternalLink size={16} />
@@ -224,7 +224,7 @@ export default function HostingerStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#673DE6] to-[#0F2137] items-center justify-center p-8 text-center"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center p-8 text-center"
             >
               <div className="relative z-10 text-white space-y-3">
                 <span className="inline-block bg-white/15 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">
@@ -248,7 +248,7 @@ export default function HostingerStore() {
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F0EEFF] text-[#673DE6] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -258,7 +258,7 @@ export default function HostingerStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#EDEBFF] text-[#0F2137] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -278,7 +278,7 @@ export default function HostingerStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F0EEFF] text-[#673DE6] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -322,9 +322,9 @@ export default function HostingerStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#673DE6) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#673DE6] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -347,8 +347,8 @@ export default function HostingerStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#0F2137) */}
-                <span className="bg-[#0F2137]/10 text-[#0F2137] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -367,7 +367,7 @@ export default function HostingerStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#673DE6] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -377,15 +377,15 @@ export default function HostingerStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#673DE6]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select hosting, domain & VPS plans.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#673DE6]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum billing cycle might apply as specified on descriptions.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#673DE6]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers selected plans and hosting categories.</span>
                   </li>
                 </ul>
@@ -397,13 +397,13 @@ export default function HostingerStore() {
 
             
 
-              {/* Action Button - Vibrant CTA Accent (#0F2137) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#0F2137] hover:bg-[#193052] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -429,7 +429,7 @@ export default function HostingerStore() {
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#673DE6]" />
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>What is Hostinger and Why Is It Popular in India?</span>
               </h3>
               <p className="text-[#1A1A2E] text-sm mb-3">
@@ -454,7 +454,7 @@ export default function HostingerStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#673DE6] hover:text-[#673DE6] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit Hostinger</span>
                   <ArrowRight size={12} />
@@ -463,12 +463,12 @@ export default function HostingerStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#673DE6] to-[#0F2137] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">Hostinger Seasonal Hosting Sale</h3>
-                <span className="inline-block bg-[#0F2137] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -480,7 +480,7 @@ export default function HostingerStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#673DE6] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Shop Now
               </a>
@@ -599,7 +599,7 @@ export default function HostingerStore() {
               Whether you are looking for free hosting web options to start your first site, a premium shared hosting plan for a growing blog, a dedicated server hosting solution for high-traffic applications, or the hostinger website builder to launch a business site without coding knowledge — this page has the verified deals to reduce what you pay. Updated daily. Bookmark it and check it before every Hostinger purchase.
             </p>
 
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               What Services Can You Purchase at Hostinger?
             </h3>
 
@@ -615,7 +615,7 @@ export default function HostingerStore() {
             {/* Table: Shared Hosting */}
             <div className="overflow-x-auto my-6">
               <table className="w-full text-left bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <thead className="bg-[#673DE6] text-white font-bold">
+                <thead className="bg-[#5B4FBE] text-white font-bold">
                   <tr>
                     <th className="p-4">Plan</th>
                     <th className="p-4">Websites</th>
@@ -730,7 +730,7 @@ export default function HostingerStore() {
             {/* Table: VPS Pricing */}
             <div className="overflow-x-auto my-6">
               <table className="w-full text-left bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <thead className="bg-[#673DE6] text-white font-bold">
+                <thead className="bg-[#5B4FBE] text-white font-bold">
                   <tr>
                     <th className="p-4">Plan</th>
                     <th className="p-4">vCPU</th>
@@ -805,7 +805,7 @@ export default function HostingerStore() {
               <li>No downtime during the transfer process for live websites</li>
             </ul>
 
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Hostinger VPS Coupon Codes & Hosting Deals
             </h3>
             <p>
@@ -823,7 +823,7 @@ export default function HostingerStore() {
             </ul>
 
             {/* Table: Sale Calendar */}
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Best Time to Get Hostinger Deals — Sale Calendar 2026
             </h3>
             <p>
@@ -832,7 +832,7 @@ export default function HostingerStore() {
 
             <div className="overflow-x-auto my-6">
               <table className="w-full text-left bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <thead className="bg-[#673DE6] text-white font-bold">
+                <thead className="bg-[#5B4FBE] text-white font-bold">
                   <tr>
                     <th className="p-4">Sale Event</th>
                     <th className="p-4">Expected Time</th>
@@ -861,13 +861,13 @@ export default function HostingerStore() {
               The Republic Day Sale and Independence Day Sale are both strong for web hosting and WordPress plans specifically — if you miss the Diwali or year-end windows, these two events are the next-best discount opportunities.
             </p>
 
-            <div className="bg-[#f0ebfe] border-l-4 border-[#673DE6] p-4 my-6 rounded-r-xl">
-              <p className="m-0 text-[#673DE6] font-semibold">
+            <div className="bg-[#f0ebfe] border-l-4 border-[#5B4FBE] p-4 my-6 rounded-r-xl">
+              <p className="m-0 text-[#5B4FBE] font-semibold">
                 💡 CouponsCrew publishes early deal previews for each major Hostinger sale event 2–3 days before they go live — including the best available promo codes and plan-specific deal breakdowns. Bookmark this page and check back before each sale date.
               </p>
             </div>
 
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Free Hosting Web Options at Hostinger
             </h3>
             <p>
@@ -888,7 +888,7 @@ export default function HostingerStore() {
               For genuinely free hosting, the honest answer is that free web hosting tiers from any provider come with significant limitations — storage caps, no custom domain, bandwidth throttling, and mandatory ads displayed on your site. For anyone serious about building a website — even a personal blog — a Hostinger Premium plan on a 1-year cycle (especially with a Hostinger discount code from CouponsCrew bringing the cost to under ₹100/month) is a substantially better starting point than a permanently free tier from any provider.
             </p>
 
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Hostinger Saving Tips — Get More Off Every Plan
             </h3>
             <ol className="list-decimal pl-6 space-y-4">
@@ -915,7 +915,7 @@ export default function HostingerStore() {
               </li>
             </ol>
 
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Similar Stores You Might Like
             </h3>
             <ul className="list-disc pl-6 space-y-2">
@@ -926,7 +926,7 @@ export default function HostingerStore() {
               <li><strong>DigitalOcean</strong> — Developer-focused VPS and cloud infrastructure; more technical than Hostinger VPS but highly scalable</li>
             </ul>
 
-            <h3 className="text-2xl font-black text-[#673DE6] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Closing — Why CouponsCrew for Hostinger Deals
             </h3>
             <p>
@@ -948,7 +948,7 @@ export default function HostingerStore() {
         {/* Read More Button */}
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-8 flex items-center gap-2 text-[#673DE6] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-8 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"}{" "}
           <ChevronDown className={cn("w-4 h-4 transition-transform duration-200", isReadMore && "rotate-180")} />
@@ -969,7 +969,7 @@ export default function HostingerStore() {
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
               >
                 <span className="text-black font-bold text-base">{faq.q}</span>
-                <div className={cn("bg-gray-100 p-2 rounded-xl transition-all", openFaq === i && "bg-[#673DE6]")}>
+                <div className={cn("bg-gray-100 p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE]")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white rotate-180")} />
                 </div>
               </button>
@@ -1006,7 +1006,7 @@ export default function HostingerStore() {
               <a
                 key={tag}
                 href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-[#f3f0fe] px-4 py-2 rounded-full text-[12px] font-black text-[#673DE6] uppercase tracking-widest hover:bg-[#673DE6] hover:text-white transition-all border border-[#e1d7fd]"
+                className="bg-[#f3f0fe] px-4 py-2 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all border border-[#e1d7fd]"
               >
                 {tag}
               </a>
@@ -1034,7 +1034,7 @@ export default function HostingerStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#673DE6]">{activeModalCoupon.code}</span> at Hostinger checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at Hostinger checkout for instant discounts.
               </p>
             </div>
 
@@ -1059,7 +1059,7 @@ export default function HostingerStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#673DE6] hover:bg-[#5730C4] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Hostinger</span>
                 <ExternalLink size={14} />

@@ -129,11 +129,11 @@ export default function LevisStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#BB1E3C] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#BB1E3C] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#BB1E3C] font-semibold">Levi's Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">Levi's Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -169,7 +169,7 @@ export default function LevisStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Levi's</h1>
-                    <span className="bg-[#FBEAEE] text-[#BB1E3C] text-xs font-bold px-3 py-1 rounded-full border border-[#F5D3DB]">
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Denim, Jackets &amp; Apparel
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export default function LevisStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#BB1E3C] bg-[#FBEAEE] px-2.5 py-1 rounded-full border border-[#F5D3DB]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> 9+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,7 +198,7 @@ export default function LevisStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#2C3E5C] hover:bg-[#243349] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Levi's</span>
                   <ExternalLink size={16} />
@@ -224,7 +224,7 @@ export default function LevisStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#2C3E5C] to-[#1A1A2E] items-center justify-center"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center"
             >
               <div className="text-center text-white px-8 relative z-10">
                 <p className="text-xs font-bold uppercase tracking-[3px] opacity-80 mb-2">Seasonal Sale</p>
@@ -242,7 +242,7 @@ export default function LevisStore() {
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FBEAEE] text-[#BB1E3C] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -252,7 +252,7 @@ export default function LevisStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#EAF0F9] text-[#2C3E5C] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -272,7 +272,7 @@ export default function LevisStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FBEAEE] text-[#BB1E3C] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -316,9 +316,9 @@ export default function LevisStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#BB1E3C) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#BB1E3C] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -341,8 +341,8 @@ export default function LevisStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#2C3E5C) */}
-                <span className="bg-[#2C3E5C]/10 text-[#2C3E5C] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -361,7 +361,7 @@ export default function LevisStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#BB1E3C] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -371,15 +371,15 @@ export default function LevisStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#BB1E3C]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select jeans, jackets &amp; apparel categories.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#BB1E3C]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum cart value might apply as specified on descriptions.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#BB1E3C]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers selected styles and product collections.</span>
                   </li>
                 </ul>
@@ -391,7 +391,7 @@ export default function LevisStore() {
 
               {/* Coupon Code Box */}
               {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#2C3E5C]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                   <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                     {coupon.code}
                   </span>
@@ -408,13 +408,13 @@ export default function LevisStore() {
                 </div>
               )}
 
-              {/* Action Button - Vibrant CTA Accent (#2C3E5C) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#2C3E5C] hover:bg-[#243349] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -441,7 +441,7 @@ export default function LevisStore() {
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#BB1E3C]" />
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>About Levi's India</span>
               </h3>
               <p className="text-[#1A1A2E] text-sm mb-3">
@@ -463,7 +463,7 @@ export default function LevisStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#BB1E3C] hover:text-[#BB1E3C] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit Levi's</span>
                   <ArrowRight size={12} />
@@ -479,42 +479,42 @@ export default function LevisStore() {
 
   <ul className="space-y-4 text-xs font-semibold text-[#3A3A3A]">
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Join the Red Tab programme before your next purchase</span>
         <span>Membership is free and unlocks member pricing, early sale access, and birthday rewards. For anyone buying Levi&apos;s regularly, it is the single most effective way to access consistent savings.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Use the Sale section directly</span>
         <span>The Sale tab on the Levi&apos;s India site is a curated feed of discounted stock. Browsing here first means you are always looking at the current discounted range rather than filtering full-price items manually.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Check CouponsCrew before placing any order</span>
         <span>Active levi&apos;s coupon codes, promo codes, and cashback offers are updated on this page as they become available. Codes that do appear tend to be tied to specific sale events or payment method promotions, so checking here before checkout takes seconds and costs nothing.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Consider core fits over seasonal items</span>
         <span>The levis 501, levis 511, levis 512, and levis 505 go on sale reliably at the end of each season. If you are flexible on wash and colourway, buying a core fit during a sale event rather than at launch saves meaningfully over time.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Buy multiple items to meet minimum cart thresholds</span>
         <span>When a levi&apos;s promo code is active, it frequently carries a minimum cart value. Adding a secondary item — a tee or a belt — to meet the threshold is often worth it when the percentage saving on the overall cart is significant.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#FFF0F0] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Check stock at your nearest levi&apos;s exclusive store</span>
         <span>Some in-store promotions are not available online and vice versa. If you are near a levi&apos;s exclusive store, it is worth checking both channels before committing to a purchase — particularly during sale events where stock allocation differs between online and offline.</span>
@@ -1288,7 +1288,7 @@ export default function LevisStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#BB1E3C]">{activeModalCoupon.code}</span> at Levi's checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at Levi's checkout for instant discounts.
               </p>
             </div>
 
@@ -1313,7 +1313,7 @@ export default function LevisStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#2C3E5C] hover:bg-[#243349] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Levi's</span>
                 <ExternalLink size={14} />

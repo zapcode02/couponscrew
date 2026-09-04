@@ -62,7 +62,7 @@ export default function FashionProductCategory() {
               <ChevronRight size={14} className="text-gray-300 stroke-[2.5]" />
               <Link href="/stores/categories" className="hover:text-[#5B4FBE] transition-colors font-medium">Store Categories</Link>
               <ChevronRight size={14} className="text-gray-300 stroke-[2.5]" />
-              <span className="text-[#FF3F6C] font-semibold">Fashion</span>
+              <span className="text-[#5B4FBE] font-semibold">Fashion</span>
             </div>
             <h1 className="mt-4 font-bold text-5xl text-[#1A1A2E] leading-none tracking-tight">Fashion</h1>
             <p className="mt-3 max-w-md text-[#4A4A6A] text-base leading-relaxed">
@@ -71,7 +71,7 @@ export default function FashionProductCategory() {
             
             <div className="mt-6 flex flex-wrap gap-3 w-full">
               <div className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3 shadow-[0_2px_8px_rgba(232,232,240,0.4)]">
-                <div className="bg-[#FFF0F3] p-2.5 rounded-xl text-[#FF3F6C] shrink-0"><ShoppingBag size={18} /></div>
+                <div className="bg-[#F0EEFF] p-2.5 rounded-xl text-[#5B4FBE] shrink-0"><ShoppingBag size={18} /></div>
                 <div><div className="font-extrabold text-sm text-[#1A1A2E] leading-tight">{categoryStores.length}</div><div className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-1">Stores</div></div>
               </div>
               <div className="bg-white border border-[#E8E8F0] rounded-2xl px-4 py-3 flex items-center gap-3 shadow-[0_2px_8px_rgba(232,232,240,0.4)]">

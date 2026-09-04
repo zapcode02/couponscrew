@@ -149,11 +149,11 @@ export default function DominosStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
-            <Link href="/" className="hover:text-[#006491] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#006491] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#006491] font-semibold">Dominos Coupon Code</span>
+            <span className="text-[#5B4FBE] font-semibold">Dominos Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -189,7 +189,7 @@ export default function DominosStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Dominos</h1>
-                    <span className="bg-[#E7F3F9] text-[#006491] text-xs font-bold px-3 py-1 rounded-full border border-[#D3E9F2]">
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
                       Pizza, Fast Food & Online Ordering
                     </span>
                   </div>
@@ -202,7 +202,7 @@ export default function DominosStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#006491] bg-[#E7F3F9] px-2.5 py-1 rounded-full border border-[#D3E9F2]">
+                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
                       <Tag size={14} /> 10+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -218,7 +218,7 @@ export default function DominosStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#E31837] hover:bg-[#C31530] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Dominos</span>
                   <ExternalLink size={16} />
@@ -244,10 +244,10 @@ export default function DominosStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#006491] to-[#004a6d] items-center justify-center text-center p-8"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
               <div className="text-white space-y-3 relative z-10">
-                <span className="inline-block bg-[#E31837] text-white text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-wider">
                   Limited Time
                 </span>
                 <h3 className="text-2xl font-black leading-tight">Save on Every Pizza Order</h3>
@@ -264,7 +264,7 @@ export default function DominosStore() {
       <section className="hidden lg:block bg-white border-b border-[#E8E8F0] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#E7F3F9] text-[#006491] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -274,7 +274,7 @@ export default function DominosStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#E8E8F0]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FCE8EC] text-[#E31837] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -294,7 +294,7 @@ export default function DominosStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#E7F3F9] text-[#006491] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -338,9 +338,9 @@ export default function DominosStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#006491) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#006491] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -363,8 +363,8 @@ export default function DominosStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#E31837) */}
-                <span className="bg-[#E31837]/10 text-[#E31837] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#FF5722) */}
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -383,7 +383,7 @@ export default function DominosStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#006491] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -393,15 +393,15 @@ export default function DominosStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#006491]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Valid on select pizzas, sides & combo categories.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#006491]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Minimum order value might apply as specified on descriptions.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#006491]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                     <span>Covers select menu items and combo offers.</span>
                   </li>
                 </ul>
@@ -413,13 +413,13 @@ export default function DominosStore() {
 
              
 
-              {/* Action Button - Vibrant CTA Accent (#E31837) */}
+              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#E31837] hover:bg-[#C31530] text-white"
+                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -446,7 +446,7 @@ export default function DominosStore() {
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#006491]" />
+                <Info size={16} className="text-[#5B4FBE]" />
                 <span>The Story Behind Dominos</span>
               </h3>
               <p className="text-[#1A1A2E] text-sm mb-3">
@@ -465,7 +465,7 @@ export default function DominosStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#006491] hover:text-[#006491] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit Dominos</span>
                   <ArrowRight size={12} />
@@ -474,12 +474,12 @@ export default function DominosStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#006491] to-[#004a6d] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">Dominos Seasonal Offers</h3>
-                <span className="inline-block bg-[#E31837] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -491,7 +491,7 @@ export default function DominosStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#006491] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Order Now
               </a>
@@ -506,28 +506,28 @@ export default function DominosStore() {
               <div className="space-y-3.5 text-xs">
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Pizzas</span>
-                  <span className="text-[#E31837] font-bold">Up to 50% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 50% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Sides & Appetizers</span>
-                  <span className="text-[#E31837] font-bold">Up to 30% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 30% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Beverages</span>
-                  <span className="text-[#E31837] font-bold">Up to 20% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 20% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Combos & Meals</span>
-                  <span className="text-[#E31837] font-bold">Up to 25% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 25% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
                   <span className="text-[#1A1A2E]">Desserts</span>
-                  <span className="text-[#E31837] font-bold">Up to 15% OFF</span>
+                  <span className="text-[#FF5722] font-bold">Up to 15% OFF</span>
                 </div>
               </div>
 
               <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/categories" className="text-xs font-black text-[#006491] hover:underline flex items-center justify-center gap-1">
+                <Link href="/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
                   <span>View All Categories</span>
                   <ArrowRight size={12} />
                 </Link>
@@ -652,7 +652,7 @@ export default function DominosStore() {
               CouponsCrew tracks dominos current offers in real time — including limited-window codes, new-user deals, and bank card cashback offers that most aggregator sites miss or leave listed after they expire.
             </p>
 
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Types of Domino's Deals Available on CouponsCrew
             </h3>
 
@@ -691,7 +691,7 @@ export default function DominosStore() {
               Every order of ₹350 or more earns 100 Cheesy Rewards points (maximum 100 per day). Redeem 600 points for a free regular pizza. Points are valid for 365 days from your enrolment date. This programme runs passively — you earn points on every qualifying order regardless of which other deal you are using.
             </p>
 
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Domino's Pizza Menu — What's Available
             </h3>
 
@@ -734,7 +734,7 @@ export default function DominosStore() {
             </p>
 
             {/* Table: Pizza Prices */}
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Domino's Pizza Prices — What to Expect
             </h3>
             <p>
@@ -743,7 +743,7 @@ export default function DominosStore() {
 
             <div className="overflow-x-auto my-6">
               <table className="w-full text-left bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <thead className="bg-[#0066A5] text-white font-bold">
+                <thead className="bg-[#5B4FBE] text-white font-bold">
                   <tr>
                     <th className="p-4">Category</th>
                     <th className="p-4">Price Range</th>
@@ -769,7 +769,7 @@ export default function DominosStore() {
               All prices are subject to change based on city, store, active promotions, and Domino's periodic menu updates. CouponsCrew reflects current pricing where available — always confirm the final price in your cart before checkout.
             </p>
 
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Domino's Current Offers — How to Find the Best Deal for Your Order Size
             </h3>
             <p>
@@ -797,7 +797,7 @@ export default function DominosStore() {
             </p>
 
             {/* Table: Domino's vs Pizza Hut */}
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Domino's vs Pizza Hut — Which Saves You More?
             </h3>
             <p>
@@ -806,7 +806,7 @@ export default function DominosStore() {
 
             <div className="overflow-x-auto my-6">
               <table className="w-full text-left bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <thead className="bg-[#0066A5] text-white font-bold">
+                <thead className="bg-[#5B4FBE] text-white font-bold">
                   <tr>
                     <th className="p-4">Feature</th>
                     <th className="p-4">Domino's</th>
@@ -835,7 +835,7 @@ export default function DominosStore() {
               If you are comparing dominos pizza promo codes vs Pizza Hut deals, the CouponsCrew Domino's page consistently has more active, verified codes at any given time — largely because Domino's runs significantly more concurrent promotions.
             </p>
 
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Domino's Saving Tips — Get More Off Every Order
             </h3>
             <ol className="list-decimal pl-6 space-y-4">
@@ -862,7 +862,7 @@ export default function DominosStore() {
               </li>
             </ol>
 
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Similar Stores You Might Like
             </h3>
             <ul className="list-disc pl-6 space-y-2">
@@ -873,7 +873,7 @@ export default function DominosStore() {
               <li><strong>Swiggy / Zomato</strong> — Aggregator platforms where Domino's and other chains often have platform-exclusive discount codes separate from the Domino's app</li>
             </ul>
 
-            <h3 className="text-2xl font-black text-[#0066A5] mt-10 mb-4">
+            <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">
               Closing — Why CouponsCrew for Domino's Deals
             </h3>
             <p>
@@ -895,7 +895,7 @@ export default function DominosStore() {
         {/* Read More Button */}
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-8 flex items-center gap-2 text-[#0066A5] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-8 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"}{" "}
           <ChevronDown className={cn("w-4 h-4 transition-transform duration-200", isReadMore && "rotate-180")} />
@@ -916,7 +916,7 @@ export default function DominosStore() {
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
               >
                 <span className="text-black font-bold text-base">{faq.q}</span>
-                <div className={cn("bg-gray-100 p-2 rounded-xl transition-all", openFaq === i && "bg-[#0066A5]")}>
+                <div className={cn("bg-gray-100 p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE]")}>
                   <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white rotate-180")} />
                 </div>
               </button>
@@ -953,7 +953,7 @@ export default function DominosStore() {
               <a
                 key={tag}
                 href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-[#f0f7fc] px-4 py-2 rounded-full text-[12px] font-black text-[#0066A5] uppercase tracking-widest hover:bg-[#0066A5] hover:text-white transition-all border border-[#d2e7f7]"
+                className="bg-[#f0eeff] px-4 py-2 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all border border-[#E4E0FF]"
               >
                 {tag}
               </a>
@@ -981,7 +981,7 @@ export default function DominosStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1A1A2E]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#006491]">{activeModalCoupon.code}</span> at Dominos checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#5B4FBE]">{activeModalCoupon.code}</span> at Dominos checkout for instant discounts.
               </p>
             </div>
 
@@ -1006,7 +1006,7 @@ export default function DominosStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#E31837] hover:bg-[#C31530] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Dominos</span>
                 <ExternalLink size={14} />

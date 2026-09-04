@@ -148,7 +148,7 @@ export default function FlipkartStore() {
                   href={STORE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#2874F0] hover:bg-[#1f5fc9] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Flipkart</span>
                   <ExternalLink size={16} />
@@ -170,7 +170,7 @@ export default function FlipkartStore() {
             </div>
 
             {/* Promo Banner (Right 5 Columns) — desktop only, placeholder until a real banner image exists */}
-            <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] border border-[#2874F0]/20 group">
+            <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] border border-[#5B4FBE]/20 group">
   <Link
     href="https://www.flipkart.com"
     target="_blank"
@@ -222,7 +222,7 @@ export default function FlipkartStore() {
                     <div className="flex flex-row items-stretch">
                       {/* LEFT DISCOUNT SECTION */}
                       <div
-                        className="w-24 sm:w-32 lg:w-40 bg-[#2874F0] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+                        className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
                       >
                         <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
                         <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -243,7 +243,7 @@ export default function FlipkartStore() {
                         {/* CENTER CONTENT */}
                         <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
                           <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                            <span className="bg-[#2874F0]/10 text-[#2874F0] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                            <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                               {coupon.type || 'Best Offer'}
                             </span>
                             <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -282,7 +282,7 @@ export default function FlipkartStore() {
                         {/* RIGHT ACTION SECTION */}
                         <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
                           {coupon.code && (
-                            <div className="w-full bg-white border border-dashed border-[#2874F0]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                            <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
                               <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
                                 {coupon.code}
                               </span>
@@ -304,7 +304,7 @@ export default function FlipkartStore() {
                             className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                               isCopied
                                 ? 'bg-green-600 text-white'
-                                : 'bg-[#2874F0] hover:bg-[#1f5fc9] text-white'
+                                : 'bg-[#FF5722] hover:bg-[#E64A19] text-white'
                             }`}
                           >
                             {isCopied ? 'Copied!' : 'Get Deal'}
@@ -366,7 +366,7 @@ export default function FlipkartStore() {
                 {['Mobiles', 'Electronics', 'Fashion', 'Large Appliances', 'Home & Furniture'].map((cat) => (
                   <div key={cat} className="flex justify-between items-center font-semibold">
                     <span className="text-[#1A1A2E]">{cat}</span>
-                    <span className="text-[#2874F0] font-bold">[PLACEHOLDER]</span>
+                    <span className="text-[#FF5722] font-bold">[PLACEHOLDER]</span>
                   </div>
                 ))}
               </div>
@@ -1973,7 +1973,7 @@ export default function FlipkartStore() {
 
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? 'Read Less' : 'Read More'} <ChevronDown className={cn('w-4 h-4 transition-transform', isReadMore && 'rotate-180')} />
         </button>
@@ -2025,12 +2025,12 @@ export default function FlipkartStore() {
           <div className="space-y-6">
             {coupons.slice(0, 5).map((coupon) => (
               <div key={coupon.id} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#2874F0] font-black text-xl italic shadow-inner">F</div>
+                <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">F</div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#2874F0] transition-colors">{coupon.badge}</p>
+                  <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{coupon.badge}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{coupon.title}</p>
                 </div>
-                <a href={STORE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Flipkart deal: ${coupon.title}`} className="bg-[#f0eeff] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={STORE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Flipkart deal: ${coupon.title}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -2079,7 +2079,7 @@ export default function FlipkartStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#2874F0] hover:bg-[#1f5fc9] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Flipkart</span>
                 <ExternalLink size={14} />
