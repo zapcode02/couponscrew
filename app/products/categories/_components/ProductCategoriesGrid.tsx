@@ -13,6 +13,15 @@ import {
   TrendingUp,
   ArrowRight,
   Layers,
+  Monitor,
+  Home,
+  Activity,
+  Sparkles,
+  Trophy,
+  Puzzle,
+  Code,
+  Gamepad2,
+  PawPrint,
 } from 'lucide-react';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
@@ -21,14 +30,105 @@ interface ProductCategoryEntry {
   slug: string;
   name: string;
   description: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: React.ComponentType<{ size?: number | string; className?: string }>;
   productCount: number;
   color: string;
   bg: string;
   image: string;
 }
 
-const PRODUCT_CATEGORIES: ProductCategoryEntry[] = [];
+const PRODUCT_CATEGORIES: ProductCategoryEntry[] = [
+  {
+    slug: 'electronics',
+    name: 'Electronics',
+    description: 'Smartphones, laptops, audio devices and gadgets — verified deal pricing.',
+    icon: Monitor,
+    productCount: 0,
+    color: '#5B4FBE',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530524/electronics_pwzxr4.webp',
+  },
+  {
+    slug: 'home-and-kitchen',
+    name: 'Home and Kitchen',
+    description: 'Cookware, furniture, décor and storage essentials — verified deal pricing.',
+    icon: Home,
+    productCount: 0,
+    color: '#22C55E',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530524/Home_and_Kitchen_n2tjr5.webp',
+  },
+  {
+    slug: 'health',
+    name: 'Health and Household',
+    description: 'Supplements, personal care devices and wellness essentials — verified deal pricing.',
+    icon: Activity,
+    productCount: 0,
+    color: '#DC2626',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530525/Health_and_Household_bxy9c4.webp',
+  },
+  {
+    slug: 'beauty',
+    name: 'Beauty and Personal Care',
+    description: 'Skincare, haircare, makeup and fragrances — verified deal pricing.',
+    icon: Sparkles,
+    productCount: 0,
+    color: '#EC4899',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530525/Beauty_and_Personal_Care_hger7p.webp',
+  },
+  {
+    slug: 'sports',
+    name: 'Sports and Outdoors',
+    description: 'Sportswear, fitness equipment and outdoor gear — verified deal pricing.',
+    icon: Trophy,
+    productCount: 0,
+    color: '#16A34A',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530525/Sports_and_Outdoors_nxcwqb.webp',
+  },
+  {
+    slug: 'toys',
+    name: 'Toys and Games',
+    description: 'Educational toys, collectibles and puzzles — verified deal pricing.',
+    icon: Puzzle,
+    productCount: 0,
+    color: '#FF9900',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530525/Toys_and_Games_n7pa0w.webp',
+  },
+  {
+    slug: 'software',
+    name: 'Software',
+    description: 'Productivity, security and creative software — verified deal pricing.',
+    icon: Code,
+    productCount: 0,
+    color: '#4338CA',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530525/Software_n9veko.webp',
+  },
+  {
+    slug: 'video-games',
+    name: 'Video Games',
+    description: 'Console games, PC downloads and gaming accessories — verified deal pricing.',
+    icon: Gamepad2,
+    productCount: 0,
+    color: '#7C3AED',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530525/Video_Games_x2xy9s.webp',
+  },
+  {
+    slug: 'pet-supplies',
+    name: 'Pet Supplies',
+    description: 'Pet food, grooming, toys and accessories — verified deal pricing.',
+    icon: PawPrint,
+    productCount: 0,
+    color: '#B45309',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788530524/Pet_Supplies_gd58w2.webp',
+  },
+];
 
 export default function ProductCategoriesGrid() {
   const [search, setSearch] = useState('');
