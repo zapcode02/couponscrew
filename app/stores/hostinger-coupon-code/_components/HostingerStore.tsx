@@ -226,17 +226,12 @@ export default function HostingerStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center p-8 text-center"
             >
-              <div className="relative z-10 text-white space-y-3">
-                <span className="inline-block bg-white/15 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">
-                  Limited Time
-                </span>
-                <h3 className="text-2xl font-black leading-tight">
-                  Save Big on Hosting, Domains &amp; VPS
-                </h3>
-                <p className="text-white/80 text-sm">
-                  Verified Hostinger coupon codes updated regularly
-                </p>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788518478/hostinger-offers_cnonee.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>

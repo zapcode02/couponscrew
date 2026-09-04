@@ -226,19 +226,12 @@ export default function Zee5Store() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED]"
             >
-              <div className="absolute inset-0 flex items-center justify-center p-8 text-center">
-                <div className="space-y-3">
-                  <span className="inline-block bg-[#FF5722] text-white text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-wider">
-                    Seasonal Offer
-                  </span>
-                  <h3 className="text-white text-2xl font-black leading-tight">
-                    Save on ZEE5 Subscription Plans
-                  </h3>
-                  <p className="text-white/70 text-sm">
-                    Stream movies, shows & live TV for less
-                  </p>
-                </div>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788518479/zee5-offers_wyjeay.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>
@@ -394,25 +387,6 @@ export default function Zee5Store() {
 
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
-
-              {/* Coupon Code Box */}
-              {coupon.code && (
-                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                    {coupon.code}
-                  </span>
-                  <button
-                    onClick={() => handleCopyCode(coupon)}
-                    className="p-1 hover:bg-slate-50 rounded"
-                  >
-                    {isCopied ? (
-                      <Check size={16} className="text-green-600" />
-                    ) : (
-                      <Copy size={16} className="text-slate-400" />
-                    )}
-                  </button>
-                </div>
-              )}
 
               {/* Action Button - Vibrant CTA Accent (#FF5722) */}
               <button

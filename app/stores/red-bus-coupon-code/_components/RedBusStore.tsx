@@ -226,13 +226,12 @@ export default function RedBusStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
-              <div className="text-white space-y-3">
-                <span className="inline-block bg-white/15 text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">
-                  Travel Season Offer
-                </span>
-                <h3 className="text-2xl font-black leading-tight">Save on Every Bus Booking</h3>
-                <p className="text-white/80 text-sm">Verified redBus coupon codes updated regularly</p>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788517847/redbus-offers_k1cdoh.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>
