@@ -226,11 +226,14 @@ export default function BlinkitStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center"
             >
-              <div className="text-center px-8">
-                <p className="text-white font-black text-2xl tracking-tight">Groceries in Minutes</p>
-                <p className="text-white/70 font-semibold text-sm mt-2">Use verified Blinkit coupon codes on every order</p>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788514954/blinkit-offers_jxcnmd.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
+            
           </div>
         </div>
       </section>

@@ -221,19 +221,19 @@ export default function ZeptoStore() {
 
             {/* Promo Banner Image (Right 5 Columns) — desktop only */}
             <a
-              href={AFFILIATE_URL}
-              target="_blank"
-              rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
-            >
-              <div className="relative z-10 text-white space-y-3">
-                <span className="inline-block bg-white/15 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">
-                  Seasonal Offer
-                </span>
-                <h3 className="text-2xl font-black tracking-tight">Save Big on Every Grocery Run</h3>
-                <p className="text-white/80 text-sm">Verified Zepto coupon codes updated regularly</p>
-              </div>
-            </a>
+  href={AFFILIATE_URL}
+  target="_blank"
+  rel="noopener noreferrer nofollow sponsored"
+  className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] items-center justify-center text-center p-8 bg-[#5B4FBE]"
+>
+  {/* Background Image with Cloudinary ROI Crop */}
+  <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/c_crop,w_800,h_600,g_auto/v1788514952/zepto-offers_bcuaeq.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
+</a>
           </div>
         </div>
       </section>

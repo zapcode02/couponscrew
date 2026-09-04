@@ -226,10 +226,12 @@ export default function OneplusStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED]"
             >
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-8 gap-3">
-                <span className="text-xs font-bold uppercase tracking-[3px] text-white">OnePlus Offers</span>
-                <span className="text-2xl font-black">Save on Smartphones & Accessories</span>
-              </div>
+               <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788514953/oneplus-offers_px0fnm.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>

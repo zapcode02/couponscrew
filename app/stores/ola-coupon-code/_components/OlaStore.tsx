@@ -226,10 +226,12 @@ export default function OlaStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center"
             >
-              <div className="text-white text-center px-8 relative z-10">
-                <p className="text-2xl font-black tracking-tight">Ride Smarter, Save More</p>
-                <p className="text-white/80 text-sm mt-2">Verified Ola coupon codes &amp; offers</p>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788514953/ola-offers_yqbbfk.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>

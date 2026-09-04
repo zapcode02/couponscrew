@@ -45,8 +45,6 @@ export default function ZomatoStore() {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
   const [newsEmail, setNewsEmail] = useState<string>('');
   const [newsSubscribed, setNewsSubscribed] = useState<boolean>(false);
-  const [newsSubmitting, setNewsSubmitting] = useState<boolean>(false);
-  const [newsError, setNewsError] = useState<string>('');
   const [sortBy, setSortBy] = useState<string>('Latest');
 
   const coupons: Coupon[] = ZOMATO_COUPONS;
@@ -65,33 +63,12 @@ export default function ZomatoStore() {
     window.open(AFFILIATE_URL, '_blank', 'noopener,noreferrer');
   };
 
-  const handleNewsSubmit = async (e: React.FormEvent) => {
+  const handleNewsSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newsEmail.trim() || newsSubmitting) return;
-
-    setNewsSubmitting(true);
-    setNewsError('');
-
-    try {
-      const res = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: newsEmail.trim() }),
-      });
-      const data = await res.json();
-
-      if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Subscription failed');
-      }
-
+    if (newsEmail.trim()) {
       setNewsSubscribed(true);
       setNewsEmail('');
       setTimeout(() => setNewsSubscribed(false), 5000);
-    } catch {
-      setNewsError('Something went wrong. Please try again.');
-      setTimeout(() => setNewsError(''), 5000);
-    } finally {
-      setNewsSubmitting(false);
     }
   };
 
@@ -129,11 +106,11 @@ export default function ZomatoStore() {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A4A] select-none mb-6">
-            <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
+            <Link href="/" className="hover:text-[#E23744] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
+            <Link href="/stores" className="hover:text-[#E23744] transition-colors font-medium">Stores</Link>
             <ChevronRight size={14} className="text-gray-400" />
-            <span className="text-[#5B4FBE] font-semibold">Zomato Coupon Code</span>
+            <span className="text-[#E23744] font-semibold">Zomato Coupon Code</span>
           </div>
 
           {/* Main Hero Card Grid */}
@@ -169,7 +146,7 @@ export default function ZomatoStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-wrap items-center gap-3">
                     <h1 className="text-3xl font-black text-[#1C1C1C] tracking-tight">Zomato</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
+                    <span className="bg-[#FDEBEC] text-[#E23744] text-xs font-bold px-3 py-1 rounded-full border border-[#F7D3D5]">
                       Food Delivery & Dining Out
                     </span>
                   </div>
@@ -182,7 +159,7 @@ export default function ZomatoStore() {
                     <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                       <ShieldCheck size={14} /> Verified Store
                     </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
+                    <span className="flex items-center gap-1.5 text-[#E23744] bg-[#FDEBEC] px-2.5 py-1 rounded-full border border-[#F7D3D5]">
                       <Tag size={14} /> 10+ Offers
                     </span>
                     <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
@@ -198,24 +175,22 @@ export default function ZomatoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#1C1C1C] hover:bg-[#333333] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Zomato</span>
                   <ExternalLink size={16} />
                 </a>
 
-                <a
-                  href="https://www.google.com/preferences/source?q=couponscrew.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
+                <button
+                  onClick={() => setIsFavorite(!isFavorite)}
+                  className={`font-bold text-sm px-6 py-3.5 rounded-xl transition-all border flex items-center gap-2 ${isFavorite
+                    ? 'bg-red-50 text-red-500 border-red-200'
+                    : 'bg-white border-[#D9D0D0] text-[#1C1C1C] hover:bg-gray-50'
+                    }`}
                 >
-                  <img
-                    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788011120/google-preferred-sources-561_m6yj79.webp"
-                    alt="Google Preferred Source"
-                    className="h-[56px] w-auto object-contain"
-                  />
-                </a>
+                  <Heart size={16} className={isFavorite ? 'fill-current text-red-500' : 'text-gray-400'} />
+                  <span>{isFavorite ? 'Added to Favorites' : 'Add to Favorites'}</span>
+                </button>
               </div>
             </div>
 
@@ -224,13 +199,14 @@ export default function ZomatoStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] items-center justify-center bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED]"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] items-center justify-center bg-gradient-to-br from-[#E23744] to-[#1C1C1C]"
             >
-              <div className="text-center px-8 select-none">
-                <p className="text-white/80 text-xs font-black uppercase tracking-widest mb-2">Seasonal Offer</p>
-                <h3 className="text-white text-2xl font-black leading-tight">Great Food, Great Savings</h3>
-                <p className="text-white/70 text-sm mt-3">Explore verified Zomato coupon codes updated regularly</p>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788516297/zomato-offers_pdukjq.webp"
+    alt="Zomato Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>
@@ -242,7 +218,7 @@ export default function ZomatoStore() {
       <section className="hidden lg:block bg-white border-b border-[#EDE5E5] py-6 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 select-none">
           <div className="flex items-center gap-3.5 border-r border-[#EDE5E5]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FDEBEC] text-[#E23744] rounded-2xl flex items-center justify-center shrink-0">
               <Tag size={18} />
             </div>
             <div>
@@ -252,7 +228,7 @@ export default function ZomatoStore() {
           </div>
 
           <div className="flex items-center gap-3.5 md:border-r border-[#EDE5E5]/70 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#FFF2ED] text-[#FF5722] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#F2F2F2] text-[#1C1C1C] rounded-2xl flex items-center justify-center shrink-0">
               <TrendingUp size={18} />
             </div>
             <div>
@@ -272,7 +248,7 @@ export default function ZomatoStore() {
           </div>
 
           <div className="flex items-center gap-3.5 last:border-0 pr-4">
-            <div className="w-11 h-11 bg-[#F0EEFF] text-[#5B4FBE] rounded-2xl flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 bg-[#FDEBEC] text-[#E23744] rounded-2xl flex items-center justify-center shrink-0">
               <ShieldCheck size={18} />
             </div>
             <div>
@@ -316,9 +292,9 @@ export default function ZomatoStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#E23744) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#E23744] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -341,8 +317,8 @@ export default function ZomatoStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#FF5722) */}
-                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#1C1C1C) */}
+                <span className="bg-[#1C1C1C]/10 text-[#1C1C1C] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -361,7 +337,7 @@ export default function ZomatoStore() {
               {/* View Details Toggle */}
               <button
                 onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#E23744] hover:opacity-80 w-fit transition-opacity"
               >
                 View Details
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -371,15 +347,15 @@ export default function ZomatoStore() {
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
                     <span>Valid on select restaurants and participating outlets.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
                     <span>Minimum order value might apply as specified in offer terms.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
                     <span>Offer availability may vary by location.</span>
                   </li>
                 </ul>
@@ -391,13 +367,13 @@ export default function ZomatoStore() {
 
              
 
-              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
+              {/* Action Button - Vibrant CTA Accent (#1C1C1C) */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
+                    : "bg-[#1C1C1C] hover:bg-[#333333] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -424,7 +400,7 @@ export default function ZomatoStore() {
             {/* Sidebar Card 1: Store Information */}
             <div className="bg-white border border-[#EDE5E5] rounded-3xl p-5 shadow-xs">
               <h3 className="font-extrabold text-[#1C1C1C] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#EDE5E5] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
+                <Info size={16} className="text-[#E23744]" />
                 <span>About Zomato — India's Largest Food Delivery Platform</span>
               </h3>
               <p className="text-[#1C1C1C] text-sm mb-3">
@@ -447,7 +423,7 @@ export default function ZomatoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D9D0D0] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1C1C1C] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
+                  className="w-full border border-[#D9D0D0] hover:border-[#E23744] hover:text-[#E23744] text-[#1C1C1C] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
                 >
                   <span>Visit Zomato</span>
                   <ArrowRight size={12} />
@@ -456,12 +432,12 @@ export default function ZomatoStore() {
             </div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
+            <div className="bg-gradient-to-br from-[#E23744] to-[#1C1C1C] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
               <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
 
               <div className="space-y-2 relative z-10 text-left">
                 <h3 className="font-extrabold text-lg tracking-tight">Zomato Seasonal Offers</h3>
-                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
+                <span className="inline-block bg-[#1C1C1C] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
                   Live Now!
                 </span>
                 <p className="text-white/80 text-xs mt-2 leading-relaxed">
@@ -473,7 +449,7 @@ export default function ZomatoStore() {
                 href={AFFILIATE_URL}
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
+                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#E23744] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
               >
                 Order Now
               </a>
@@ -493,56 +469,56 @@ export default function ZomatoStore() {
 
   <ul className="space-y-4 text-xs font-semibold text-[#3A3A3A]">
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">First-Order Discount (New User)</span>
         <span>New users placing their first Zomato order are eligible for the highest discounts — typically 40%–60% off or a flat rupee discount. These Zomato promo codes are app-specific and expire after first use.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Flat Rupee Off Coupons</span>
         <span>Common Zomato offer codes that take a fixed amount (e.g. ₹75, ₹100, ₹150) off orders above a minimum cart value. These are available to both new and existing users.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Percentage Discount Codes</span>
         <span>Zomato coupon codes offering a percentage off the total order value — typically 10%–30% — with a maximum discount cap. Minimum order conditions apply.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Free Delivery Codes</span>
         <span>A Zomato discount code that waives the delivery fee on eligible orders. Zomato Pro and Gold members often get this applied automatically; non-members can unlock it through specific codes.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Bank &amp; Payment Partner Offers</span>
         <span>Partner bank credit cards (HDFC, ICICI, Axis, Kotak, SBI, etc.) often unlock an additional 10%–20% cashback or instant discount on Zomato orders. These Zomato discount codes are applied automatically when you choose the eligible card at checkout.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Zomato Gold Membership Discounts</span>
         <span>Gold members get complimentary dishes (Buy 1 Get 1 on select food items) and complimentary drinks at partner restaurants. These benefits don&apos;t require a Zomato coupon code — they&apos;re activated automatically through the membership.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Weekend &amp; Festival Offers</span>
         <span>Zomato runs regular weekend deals, festival-specific promotions (Holi, Diwali, New Year), and seasonal campaigns. These Zomato promo codes are time-limited — check CouponsCrew before placing your order on high-demand days.</span>
       </div>
     </li>
     <li className="flex items-start gap-2.5">
-      <span className="bg-[#F0EEFF] text-[#5B4FBE] rounded-full w-2 h-2 shrink-0 mt-1.5" />
+      <span className="bg-[#F0EEFF] text-[#E4002B] rounded-full w-2 h-2 shrink-0 mt-1.5" />
       <div>
         <span className="font-bold text-[#2C2C40] block mb-0.5">Corporate &amp; Bulk Order Discounts</span>
         <span>For business meals or large group orders, Zomato offers special pricing through its Zomato for Business programme. Contact Zomato directly or speak to a Zomato restaurant partner for bulk pricing.</span>
@@ -578,7 +554,7 @@ export default function ZomatoStore() {
             <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
             <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
           </tr>
-        </thead>
+        </thead>  
         <tbody className="divide-y divide-[#E8E8F0]">
           {ZOMATO_COUPONS.map((coupon) => (
             <tr key={coupon.id} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
@@ -1000,7 +976,7 @@ export default function ZomatoStore() {
 
         <button
           onClick={() => setIsReadMore(!isReadMore)}
-          className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
+          className="mt-10 flex items-center gap-2 text-[#0344b0] font-black text-xs uppercase tracking-widest hover:underline"
         >
           {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
         </button>
@@ -1104,7 +1080,7 @@ export default function ZomatoStore() {
                   <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
                   <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
                 </div>
-                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Zomato deal: ${deal.heading}`} className="bg-[#F0EEFF] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
+                <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Zomato deal: ${deal.heading}`} className="bg-[#F0EEFF] text-[#0451c4] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
               </div>
             ))}
           </div>
@@ -1130,7 +1106,7 @@ export default function ZomatoStore() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#1C1C1C]">Coupon Code Copied!</h3>
               <p className="text-xs text-gray-400 leading-relaxed font-semibold">
-                Use the code <span className="font-extrabold text-[#FF5722]">{activeModalCoupon.code}</span> at Zomato checkout for instant discounts.
+                Use the code <span className="font-extrabold text-[#E23744]">{activeModalCoupon.code}</span> at Zomato checkout for instant discounts.
               </p>
             </div>
 
@@ -1155,7 +1131,7 @@ export default function ZomatoStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#1C1C1C] hover:bg-[#333333] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Zomato</span>
                 <ExternalLink size={14} />

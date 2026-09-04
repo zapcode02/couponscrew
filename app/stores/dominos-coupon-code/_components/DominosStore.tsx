@@ -246,13 +246,12 @@ export default function DominosStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
-              <div className="text-white space-y-3 relative z-10">
-                <span className="inline-block bg-[#FF5722] text-white text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-wider">
-                  Limited Time
-                </span>
-                <h3 className="text-2xl font-black leading-tight">Save on Every Pizza Order</h3>
-                <p className="text-white/80 text-sm">Verified Dominos coupon codes updated regularly</p>
-              </div>
+               <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788516303/domonios-offers_hgc9ja.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>

@@ -226,12 +226,12 @@ export default function SwiggyStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED]"
             >
-              <div className="absolute inset-0 flex items-center justify-center p-8 text-center">
-                <div>
-                  <p className="text-white font-black text-2xl tracking-tight">Swiggy Offers</p>
-                  <p className="text-white/80 font-semibold text-sm mt-2">Food, Instamart & Dineout deals in one place</p>
-                </div>
-              </div>
+               <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788514954/swiggy-offers_rg0fcq.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>

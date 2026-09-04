@@ -226,11 +226,12 @@ export default function LevisStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center"
             >
-              <div className="text-center text-white px-8 relative z-10">
-                <p className="text-xs font-bold uppercase tracking-[3px] opacity-80 mb-2">Seasonal Sale</p>
-                <p className="text-3xl font-black leading-tight">Up to 50% OFF<br />Jeans &amp; Jackets</p>
-                <p className="text-xs font-semibold opacity-70 mt-3">Shop the latest denim collection</p>
-              </div>
+                <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788514953/levis-offers_ex22j2.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>

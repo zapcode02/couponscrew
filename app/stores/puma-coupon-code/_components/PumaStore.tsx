@@ -226,13 +226,12 @@ export default function PumaStore() {
               rel="noopener noreferrer nofollow sponsored"
               className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center text-center p-8"
             >
-              <div className="relative z-10 text-white space-y-3">
-                <span className="inline-block bg-[#FF5722] text-white text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-wider">
-                  Season Sale
-                </span>
-                <h3 className="text-2xl font-black tracking-tight">Save on Shoes & Apparel</h3>
-                <p className="text-white/70 text-sm">Verified Puma coupon codes updated regularly</p>
-              </div>
+               <img
+    src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788516303/puma-offers_ss8dn1.webp"
+    alt="Zepto Offers"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+ 
             </a>
           </div>
         </div>
