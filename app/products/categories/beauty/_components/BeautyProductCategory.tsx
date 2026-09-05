@@ -7,6 +7,7 @@ import {
   ChevronRight, ChevronUp, ChevronDown, ShieldCheck, Tag, Percent,
   Sparkles, RefreshCw, Lock, HelpCircle, Package,
   Monitor, Home, Activity, Trophy, Puzzle, Code, Gamepad2, PawPrint,
+  Star, Truck, Zap,
 } from 'lucide-react';
 import Navbar from '../../../../../src/components/Navbar';
 import Footer from '../../../../../src/components/Footer';
@@ -14,14 +15,45 @@ import Footer from '../../../../../src/components/Footer';
 interface CategoryProduct {
   id: string;
   name: string;
-  logo: string;
-  logoBg: string;
-  logoColor: string;
-  discountLabel: string;
-  slug: string;
+  brand: string;
+  image: string;
+  originalPrice: number;
+  dealPrice: number;
+  discountPercent: number;
+  rating: number;
+  reviewCount: string;
+  hasFreeDelivery: boolean;
+  href: string;
 }
 
-const categoryProducts: CategoryProduct[] = [];
+const categoryProducts: CategoryProduct[] = [
+  {
+    id: 'prod-42',
+    name: 'Minimalist Anti-Pigmentation Kit, Face Wash, Serum & Sunscreen Combo',
+    brand: 'Minimalist',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162150/51VX_QeZjRL._SY450__mhxhvl.jpg',
+    originalPrice: 1299,
+    dealPrice: 1147,
+    discountPercent: 12,
+    rating: 4.1,
+    reviewCount: '306',
+    hasFreeDelivery: true,
+    href: '/products/minimalist-anti-pigmentation-kit',
+  },
+  {
+    id: 'prod-43',
+    name: "DEELMO Men's Cotton Blend Mandarin Collar Casual Short Kurta",
+    brand: 'DEELMO',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162400/71Qhqwnx4JL._SY741__ljgmwm.jpg',
+    originalPrice: 2199,
+    dealPrice: 479,
+    discountPercent: 78,
+    rating: 3.6,
+    reviewCount: '2.3K',
+    hasFreeDelivery: true,
+    href: '/products/deelmo-mens-mandarin-collar-kurta',
+  },
+];
 
 const ALL_CATEGORIES = [
   { name: 'Electronics', slug: 'electronics', icon: Monitor },
@@ -121,39 +153,73 @@ export default function BeautyProductCategory() {
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {categoryProducts.map(product => (
-                  <Link
-                    key={product.id}
-                    href={`/products/${product.slug}`}
-                    className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg hover:border-[#5B4FBE] transition-all duration-300 group flex flex-col justify-between"
-                  >
-                    <div>
-                      <div
-                        className="mx-auto w-16 h-16 rounded-2xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-[1.04] overflow-hidden shadow-2xs"
-                        style={{ backgroundColor: product.logoBg }}
-                      >
-                        <span
-                          className={`font-black tracking-tighter ${product.logo.length > 3 ? 'text-sm' : 'text-lg md:text-xl'}`}
-                          style={{ color: product.logoColor }}
-                        >
-                          {product.logo}
-                        </span>
+                {categoryProducts.map(product => {
+                  const savings = product.originalPrice - product.dealPrice;
+                  return (
+                    <Link
+                      key={product.id}
+                      href={product.href}
+                      className="bg-white rounded-2xl border border-[#E8E8F0] overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+                    >
+                      <div className="relative bg-[#F8F8FF] aspect-square overflow-hidden select-none">
+                        {product.discountPercent >= 10 && (
+                          <div className="absolute top-3 left-3 bg-[#FF5722] border border-orange-600/10 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-xs z-10 uppercase tracking-wide">
+                            {product.discountPercent}% OFF
+                          </div>
+                        )}
+                        <NextImage
+                          src={product.image}
+                          alt={product.name}
+                          width={300}
+                          height={300}
+                          sizes="(max-width: 768px) 45vw, 200px"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          referrerPolicy="no-referrer"
+                        />
                       </div>
-                      <h3 className="font-extrabold text-sm text-[#1A1A2E] leading-tight truncate px-0.5 group-hover:text-[#5B4FBE] transition-colors">
-                        {product.name}
-                      </h3>
-                    </div>
-                    <div className="space-y-2 mt-3">
-                      <div className="text-xs font-black text-[#FF5722] bg-[#FFF2ED] rounded-lg py-1 px-2 inline-block max-w-full truncate">
-                        {product.discountLabel}
+                      <div className="p-4 flex flex-col flex-1 justify-between text-left">
+                        <div className="space-y-1.5">
+                          <span className="bg-[#F0EEFF] text-[#5B4FBE] text-[10px] font-extrabold px-2.5 py-0.5 rounded-full inline-block uppercase tracking-wider">
+                            {product.brand}
+                          </span>
+                          <h3 className="text-sm font-bold text-[#1A1A2E] leading-snug line-clamp-2 group-hover:text-[#5B4FBE] transition-colors" title={product.name}>
+                            {product.name}
+                          </h3>
+                          <div className="flex items-center gap-1 select-none">
+                            <Star size={13} className="text-[#F59E0B] fill-[#F59E0B]" />
+                            <span className="text-xs font-bold text-[#1A1A2E]">{product.rating}</span>
+                            <span className="text-gray-400 text-[11px] font-medium">({product.reviewCount})</span>
+                          </div>
+                        </div>
+                        <div className="mt-3.5 space-y-2">
+                          <div>
+                            <div className="flex items-baseline flex-wrap">
+                              <span className="font-black text-lg text-[#1A1A2E]">
+                                ₹{product.dealPrice.toLocaleString('en-IN')}
+                              </span>
+                              <span className="line-through text-xs text-gray-400 ml-2 font-medium">
+                                ₹{product.originalPrice.toLocaleString('en-IN')}
+                              </span>
+                            </div>
+                            <div className="text-xs font-black text-[#22C55E] tracking-tight mt-0.5 uppercase leading-none select-none">
+                              Save ₹{savings.toLocaleString('en-IN')}
+                            </div>
+                          </div>
+                          {product.hasFreeDelivery && (
+                            <div className="bg-[#F0FDF4] text-[#22C55E] text-[10px] font-black uppercase tracking-wide px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 select-none">
+                              <Truck size={11} className="stroke-[2.5]" />
+                              <span>FREE Delivery</span>
+                            </div>
+                          )}
+                          <div className="mt-2 w-full bg-[#FF5722] group-hover:bg-orange-600 text-white py-2.5 rounded-xl font-extrabold text-sm transition-all flex items-center justify-center gap-2 select-none">
+                            <Zap size={14} className="fill-white font-medium shrink-0" />
+                            <span>Get Deal</span>
+                          </div>
+                        </div>
                       </div>
-                      <div className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-extrabold py-2.5 rounded-xl flex items-center justify-center gap-1.5 transition-all mt-1">
-                        <span>View Deal</span>
-                        <ChevronRight size={12} className="stroke-[3]" />
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  );
+                })}
               </div>
             )}
           </div>
