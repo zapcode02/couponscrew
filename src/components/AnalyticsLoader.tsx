@@ -23,12 +23,12 @@ export default function AnalyticsLoader() {
 
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-DL0FC9NS5Q" strategy="afterInteractive" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-KY4367XTLE" strategy="afterInteractive" />
       <Script id="google-analytics" strategy="afterInteractive">{`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-DL0FC9NS5Q');
+        gtag('config', 'G-KY4367XTLE');
       `}</Script>
     </>
   );

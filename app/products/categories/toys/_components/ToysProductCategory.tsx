@@ -6,6 +6,7 @@ import NextImage from 'next/image';
 import {
   ChevronRight, Gamepad2,ChevronUp, ChevronDown, ShieldCheck, Tag, Percent,
   Puzzle, RefreshCw, Lock, HelpCircle, Sparkles, Package,
+  Monitor, Home, Activity, Trophy, Code, PawPrint,
 } from 'lucide-react';
 import Navbar from '../../../../../src/components/Navbar';
 import Footer from '../../../../../src/components/Footer';
@@ -21,6 +22,18 @@ interface CategoryProduct {
 }
 
 const categoryProducts: CategoryProduct[] = [];
+
+const ALL_CATEGORIES = [
+  { name: 'Electronics', slug: 'electronics', icon: Monitor },
+  { name: 'Home & Kitchen', slug: 'home-and-kitchen', icon: Home },
+  { name: 'Health & Household', slug: 'health', icon: Activity },
+  { name: 'Beauty & Personal Care', slug: 'beauty', icon: Sparkles },
+  { name: 'Sports & Outdoors', slug: 'sports', icon: Trophy },
+  { name: 'Toys & Games', slug: 'toys', icon: Puzzle },
+  { name: 'Software', slug: 'software', icon: Code },
+  { name: 'Video Games', slug: 'video-games', icon: Gamepad2 },
+  { name: 'Pet Supplies', slug: 'pet-supplies', icon: PawPrint },
+];
 
 export default function ToysProductCategory() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -164,16 +177,31 @@ export default function ToysProductCategory() {
                 <span className="text-[10px] font-bold bg-[#F8F8FF] text-[#4A4A6A] px-2 py-0.5 rounded-full border border-[#E8E8F0]">Filter</span>
               </h3>
               <div className="space-y-1.5">
-                <Link
-                  href="/products/categories/toys"
-                  className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 select-none group bg-[#5B4FBE] text-white shadow-xs"
-                >
-                  <Puzzle size={16} className="text-white" />
-                  <span className="text-sm text-left truncate font-bold">Toys</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full ml-auto font-bold bg-white/20 text-white">
-                    {categoryProducts.length}
-                  </span>
-                </Link>
+                {ALL_CATEGORIES.map(cat => {
+                  const isActive = cat.name === 'Toys & Games';
+                  const IconComp = cat.icon;
+                  return (
+                    <Link
+                      key={cat.slug}
+                      href={`/products/categories/${cat.slug}`}
+                      className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 select-none group ${
+                        isActive
+                          ? 'bg-[#5B4FBE] text-white shadow-xs'
+                          : 'hover:bg-[#F0EEFF] text-[#4A4A6A] hover:text-[#5B4FBE]'
+                      }`}
+                    >
+                      <IconComp size={16} className={isActive ? 'text-white' : 'text-[#4A4A6A] group-hover:text-[#5B4FBE]'} />
+                      <span className={`text-sm text-left truncate ${isActive ? 'font-bold' : 'font-medium'}`}>
+                        {cat.name}
+                      </span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full ml-auto font-bold ${
+                        isActive ? 'bg-white/20 text-white' : 'bg-[#F8F8FF] text-[#4A4A6A] group-hover:bg-white group-hover:text-[#5B4FBE]'
+                      }`}>
+                        {isActive ? categoryProducts.length : 0}
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </aside>
