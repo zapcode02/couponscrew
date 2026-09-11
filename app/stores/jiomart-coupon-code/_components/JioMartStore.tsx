@@ -224,7 +224,7 @@ export default function JioMartStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center p-8"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] items-center justify-center p-8"
             >
                 <img
     src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788516298/jiomart-offers_amvvrq.webp"

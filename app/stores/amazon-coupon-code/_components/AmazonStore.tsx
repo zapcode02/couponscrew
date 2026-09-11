@@ -69,7 +69,7 @@ export default function AmazonStore() {
       <section className="w-full bg-[#FFFFFF] pt-6 pb-12 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2  text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
+          <div className="flex items-center gap-2 text-xs md:text-sm text-[#4A4A6A] select-none mb-6">
             <Link href="/" className="hover:text-[#5B4FBE] transition-colors font-medium">Home</Link>
             <ChevronRight size={14} className="text-gray-400" />
             <Link href="/stores" className="hover:text-[#5B4FBE] transition-colors font-medium">Stores</Link>
@@ -164,22 +164,22 @@ export default function AmazonStore() {
             </div>
 
             {/* Promo Banner Panel (Right 5 Columns) — desktop only */}
-             <a
-                          href={AFFILIATE_URL}
-                          target="_blank"
-                          rel="noopener noreferrer nofollow sponsored"
-                          className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px]"
-                        >
-                          <NextImage
-                            src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786254328/amazon-coupon-code_jrseqd.webp"
-                            alt="Amazon Offers"
-                            fill
-                            sizes="(max-width: 1024px) 0px, 480px"
-                            referrerPolicy="no-referrer"
-                            className="object-cover"
-                            priority
-                          />
-                        </a>
+            <a
+              href={AFFILIATE_URL}
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563]"
+            >
+              <NextImage
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786254328/amazon-coupon-code_jrseqd.webp"
+                alt="Amazon Offers"
+                fill
+                sizes="(max-width: 1024px) 0px, 480px"
+                referrerPolicy="no-referrer"
+                className="object-cover w-full h-full"
+                priority
+              />
+            </a>
           </div>
         </div>
       </section>

@@ -224,7 +224,7 @@ export default function Zee5Store() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED]"
+              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED]"
             >
                 <img
     src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788518479/zee5-offers_wyjeay.webp"

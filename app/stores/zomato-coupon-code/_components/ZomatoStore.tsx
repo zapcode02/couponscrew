@@ -199,7 +199,7 @@ export default function ZomatoStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] items-center justify-center bg-gradient-to-br from-[#E23744] to-[#1C1C1C]"
+              className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] items-center justify-center bg-gradient-to-br from-[#E23744] to-[#1C1C1C]"
             >
                 <img
     src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788516297/zomato-offers_pdukjq.webp"

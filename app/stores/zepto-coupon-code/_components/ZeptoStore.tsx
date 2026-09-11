@@ -224,7 +224,7 @@ export default function ZeptoStore() {
   href={AFFILIATE_URL}
   target="_blank"
   rel="noopener noreferrer nofollow sponsored"
-  className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px] items-center justify-center text-center p-8 bg-[#5B4FBE]"
+  className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] items-center justify-center text-center p-8 bg-[#5B4FBE]"
 >
   {/* Background Image with Cloudinary ROI Crop */}
   <img

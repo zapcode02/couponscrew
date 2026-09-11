@@ -1,0 +1,312 @@
+// Coupon type
+export interface Coupon {
+  id: string;
+  badge: string;
+  badgeType: 'UP TO' | 'FLAT' | 'FREE' | 'PERCENT';
+  badgeColor: string;
+  color: string;
+  type: string;
+  title: string;
+  description: string;
+  code: string;
+  verified: string;
+  userType: string;
+  validTill: string;
+}
+
+export const LIFESTYLE_COUPONS: Coupon[] = [
+  {
+    id: 'coupon-1',
+    badge: 'UP TO 70% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#1A1A2E]',
+    color: '#1A1A2E',
+    type: 'FOOTWEAR & HOME',
+    title: 'Up to 70% Off on Footwear & Home Furnishings',
+    description: 'Enjoy discounts of up to 70% OFF across footwear brands and home furnishings collections at Lifestyle.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Jun 2026'
+  },
+  {
+    id: 'coupon-2',
+    badge: 'UP TO 60% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#5B4FBE]',
+    color: '#5B4FBE',
+    type: "MEN'S FASHION",
+    title: "Up to 60% Off on Men's Shirts, T-Shirts & Casual Wear",
+    description: "Shop the latest men's fashion collection — shirts, t-shirts, denims & casual wear — at up to 60% OFF at Lifestyle.",
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Jun 2026'
+  },
+  {
+    id: 'coupon-3',
+    badge: 'UP TO 60% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#FF9500]',
+    color: '#FF9500',
+    type: 'SITEWIDE',
+    title: 'Sitewide Offer — Up to 60% Off + Extra 10% Off',
+    description: 'Up to 60% off across purchases on Lifestyle with an additional 10% off using code SELECT10. Prices start from ₹29.',
+    code: 'SELECT10',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-4',
+    badge: 'UP TO 60% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#32ADE6]',
+    color: '#32ADE6',
+    type: "MEN'S TOPWEAR",
+    title: "Men's Polo & Topwear — Up to 60% Off",
+    description: "Up to 60% off on men's polo shirts and topwear with prices starting from ₹359.",
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-5',
+    badge: 'UP TO 50% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#4A3AFF]',
+    color: '#0D9488',
+    type: 'KIDS WEAR',
+    title: 'Up to 50% Off on Kids Clothing & Accessories',
+    description: 'Shop trendy clothing, footwear and accessories for kids at up to 50% OFF at Lifestyle.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Jun 2026'
+  },
+  {
+    id: 'coupon-6',
+    badge: 'UP TO 50% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#5856D6]',
+    color: '#5856D6',
+    type: 'SEASON SALE',
+    title: 'End of Season Sale — Up to 50% Off + Extra ₹500 Off',
+    description: 'Up to 50% off sitewide and an extra ₹500 off on orders above ₹2,500 using code LS500.',
+    code: 'LS500',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-7',
+    badge: 'BOGO + 10% OFF',
+    badgeType: 'FREE',
+    badgeColor: 'bg-[#A2845E]',
+    color: '#A2845E',
+    type: 'BOGO',
+    title: 'Buy 1 Get 1 Free + Extra 10% Off',
+    description: 'Buy one item and get one free on eligible products, plus an extra 10% off with code SELECT10. Prices start from ₹349.',
+    code: 'SELECT10',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-8',
+    badge: 'UP TO 50% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#AF52DE]',
+    color: '#AF52DE',
+    type: 'WINTER WEAR',
+    title: 'Winter Wear — Up to 50% Off + Extra 5% Off',
+    description: "Men's winter wear at up to 50% off with an extra 5% off on orders above ₹999 using code FR5.",
+    code: 'FR5',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-9',
+    badge: 'UP TO 50% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#34C759]',
+    color: '#34C759',
+    type: 'BAGS & SHOES',
+    title: 'Bags & Shoes — Up to 50% Off',
+    description: 'Up to 50% off on sandals, handbags, heels, shoes, and more with prices starting from ₹74.',
+    code: '',
+    verified: 'Verified',
+    userType: 'Existing Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-10',
+    badge: 'FLAT 50% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#FF2D55]',
+    color: '#FF2D55',
+    type: 'KIDS WEAR',
+    title: "Kids' Wear — Flat 50% Off",
+    description: "Flat 50% off on all kids' clothing with prices starting from ₹199.",
+    code: '',
+    verified: 'Verified',
+    userType: 'Existing Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-11',
+    badge: 'FLAT 50% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#007AFF]',
+    color: '#007AFF',
+    type: 'PLUS SIZE',
+    title: 'Plus Size Fashion — Flat 50% Off from Nexus Brand',
+    description: 'Flat 50% off on plus size tops and bottoms from Nexus. No code required.',
+    code: '',
+    verified: 'Verified',
+    userType: 'Existing Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-12',
+    badge: 'FLAT 40% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#FF5722]',
+    color: '#FF5722',
+    type: "WOMEN'S FASHION",
+    title: "Flat 40% Off on Women's Ethnic & Western Wear",
+    description: "Get a flat 40% discount on women's kurtas, dresses, tops and western wear collections at Lifestyle.",
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Jun 2026'
+  },
+  {
+    id: 'coupon-13',
+    badge: 'FLAT 40% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#5AC8FA]',
+    color: '#5AC8FA',
+    type: "MEN'S FASHION",
+    title: "Men's Fashion — Flat 40% Off on Celio Brand",
+    description: 'Flat 40% off on shirts, t-shirts, pants, and jeans from the Celio brand range.',
+    code: '',
+    verified: 'Verified',
+    userType: 'Existing Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-14',
+    badge: 'UP TO 30% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#FFCC00]',
+    color: '#FFCC00',
+    type: "WOMEN'S FASHION",
+    title: "Women's Western Wear — Up to 30% Off",
+    description: 'Up to 30% off on western wear for women with over 3,000 styles available.',
+    code: '',
+    verified: 'Verified',
+    userType: 'Women',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-15',
+    badge: 'UP TO 25% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#FF3B30]',
+    color: '#FF3B30',
+    type: "MEN'S LINEN",
+    title: "Men's Linen — Up to 25% Off",
+    description: 'Up to 25% off on men\'s linen clothing covering tops and bottoms starting from ₹849.',
+    code: '',
+    verified: 'Verified',
+    userType: 'Existing Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-16',
+    badge: 'FLAT 20% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#1A1A2E]',
+    color: '#1A1A2E',
+    type: 'WATCHES',
+    title: 'Watches — Flat 20% Off + Extra 5% Off',
+    description: 'Flat 20% off on watches plus an additional 5% off with code LESS5 on cart values above ₹2,199.',
+    code: 'LESS5',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-17',
+    badge: 'EXTRA 20% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#5B4FBE]',
+    color: '#5B4FBE',
+    type: 'LINGERIE',
+    title: 'Lingerie & Sleepwear — Extra 20% Off on Orders Above ₹999',
+    description: 'Additional 20% off on lingerie and sleepwear when your cart value is ₹999 or above using code LG20.',
+    code: 'LG20',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-18',
+    badge: 'FLAT 10% OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#FF9500]',
+    color: '#FF9500',
+    type: 'LINGERIE',
+    title: 'Lingerie & Sleepwear — Flat 10% Off',
+    description: 'Flat 10% off on all lingerie and sleepwear purchases using code LG10.',
+    code: 'LG10',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-19',
+    badge: 'FLAT ₹200 OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#000000]',
+    color: '#000000',
+    type: 'APP OFFER',
+    title: 'App Offer — Extra ₹200 Off on Orders Above ₹999',
+    description: 'First purchase on the Lifestyle app? Get an extra ₹200 off on orders of ₹999 or more using code APP200.',
+    code: 'APP200',
+    verified: 'Verified',
+    userType: 'App Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-20',
+    badge: 'FLAT ₹100 OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#32ADE6]',
+    color: '#32ADE6',
+    type: 'NEW USERS',
+    title: 'Flat ₹100 Off on Orders Above ₹999 — New Users',
+    description: 'New to Lifestyle? Get flat ₹100 off on your first order of ₹999 or more using code FLAT100.',
+    code: 'FLAT100',
+    verified: 'Verified',
+    userType: 'New Users',
+    validTill: '30 Sep 2026'
+  },
+  {
+    id: 'coupon-21',
+    badge: 'FREE SHIPPING',
+    badgeType: 'FREE',
+    badgeColor: 'bg-[#34C759]',
+    color: '#34C759',
+    type: 'SHIPPING',
+    title: 'Free Shipping on All Orders Above ₹499',
+    description: 'No code needed — enjoy free shipping on any Lifestyle order above ₹499.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Sep 2026'
+  }
+];

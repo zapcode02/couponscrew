@@ -229,7 +229,7 @@ export default function PepperfryStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm min-h-[300px]"
+              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563]"
             >
               <NextImage
                 src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782752788/pepperfry-offers_qm0srt.webp"
@@ -237,7 +237,7 @@ export default function PepperfryStore() {
                 fill
                 sizes="(max-width: 1024px) 0px, 480px"
                 referrerPolicy="no-referrer"
-                className="object-cover"
+                className="object-cover w-full h-full"
                 priority
               />
             </a>

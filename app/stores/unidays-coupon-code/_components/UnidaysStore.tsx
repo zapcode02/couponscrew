@@ -178,7 +178,7 @@ export default function UnidaysStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Discover verified UNiDAYS coupon codes and UNiDAYS promo codes at Maxiku Offers. Save up to 60% OFF fashion, 40% OFF tech, 50% OFF food and beauty, plus enjoy free student verification and exclusive offers from Apple, HP, ASUS, MAC, and more.
+                    Discover verified UNiDAYS coupxon codes and UNiDAYS promo codes at Maxiku Offers. Save up to 60% OFF fashion, 40% OFF tech, 50% OFF food and beauty, plus enjoy free student verification and exclusive offers from Apple, HP, ASUS, MAC, and more.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
