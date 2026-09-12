@@ -168,6 +168,9 @@ const jsonLd = {
       brand: {
         '@type': 'Brand',
         name: 'Minimalist',
+        sameAs: [
+          'https://www.beminimalist.co',
+        ],
       },
       sku: 'minimalist-anti-pigmentation-kit',
       category: 'Beauty & Skincare > Face Care > Skincare Kits',
@@ -179,6 +182,11 @@ const jsonLd = {
         priceValidUntil,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
+        seller: {
+          '@type': 'Organization',
+          name: 'Amazon.in',
+          url: 'https://www.amazon.in',
+        },
       },
       aggregateRating: {
         '@type': 'AggregateRating',

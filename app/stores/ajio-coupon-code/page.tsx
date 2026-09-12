@@ -119,6 +119,12 @@ const schema = {
         ],
       },
     },
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/ajio-coupon-code#brand',
+      name: 'Ajio',
+      url: 'https://www.ajio.com',
+    },
 
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {

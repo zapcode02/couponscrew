@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/hm-coupon-code#brand',
+      name: 'H&M',
+      url: 'https://www2.hm.com/en_in/index.html',
+      sameAs: ['https://en.wikipedia.org/wiki/H%26M'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

@@ -113,6 +113,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/kfc-coupon-code#brand',
+      name: 'KFC',
+      url: 'https://global.kfc.com',
+      sameAs: ['https://en.wikipedia.org/wiki/KFC'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
      {
   '@context': 'https://schema.org',

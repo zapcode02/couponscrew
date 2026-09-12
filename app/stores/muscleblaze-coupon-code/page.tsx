@@ -120,6 +120,13 @@ const schema = {
     },
 
     {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/muscleblaze-coupon-code#brand',
+      name: 'MuscleBlaze',
+      url: 'https://www.muscleblaze.com',
+    },
+
+    {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponscrew.com/stores/muscleblaze-coupon-code#faqpage",

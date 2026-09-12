@@ -119,6 +119,13 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/lifestyle-coupon-code#brand',
+      name: 'Lifestyle',
+      url: 'https://www.lifestylestores.com',
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/rapido-coupon-code#brand',
+      name: 'Rapido',
+      url: 'https://www.rapido.bike',
+      sameAs: ['https://en.wikipedia.org/wiki/Rapido_(company)'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

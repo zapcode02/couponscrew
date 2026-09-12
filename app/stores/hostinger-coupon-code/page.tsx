@@ -120,6 +120,14 @@ const schema = {
     },
 
     {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/hostinger-coupon-code#brand',
+      name: 'Hostinger',
+      url: 'https://www.hostinger.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Hostinger'],
+    },
+
+    {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://www.couponscrew.com/stores/hostinger-coupon-code#faqpage",

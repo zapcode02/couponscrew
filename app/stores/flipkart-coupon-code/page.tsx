@@ -119,6 +119,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for Flipkart)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/flipkart-coupon-code#brand',
+      name: 'Flipkart',
+      url: 'https://www.flipkart.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Flipkart'],
+    },
+
     // FAQPage — only the 3 questions with real (non-placeholder) answers.
     // The 4th visible FAQ item ("Where can I find the best Flipkart offers?")
     // has a [PLACEHOLDER] answer and is deliberately excluded from schema

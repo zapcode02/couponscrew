@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/zomato-coupon-code#brand',
+      name: 'Zomato',
+      url: 'https://www.zomato.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Zomato'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/pw-coupon-code#brand',
+      name: 'Physics Wallah',
+      url: 'https://www.pw.live',
+      sameAs: ['https://en.wikipedia.org/wiki/Physics_Wallah'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

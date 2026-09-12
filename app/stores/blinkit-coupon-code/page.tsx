@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/blinkit-coupon-code#brand',
+      name: 'Blinkit',
+      url: 'https://blinkit.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Blinkit'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

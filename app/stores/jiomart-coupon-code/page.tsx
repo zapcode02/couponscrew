@@ -119,6 +119,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for JioMart)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/jiomart-coupon-code#brand',
+      name: 'JioMart',
+      url: 'https://www.jiomart.com',
+      sameAs: ['https://en.wikipedia.org/wiki/JioMart'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@context": "https://schema.org",

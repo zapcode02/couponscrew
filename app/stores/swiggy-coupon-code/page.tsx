@@ -113,6 +113,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/swiggy-coupon-code#brand',
+      name: 'Swiggy',
+      url: 'https://www.swiggy.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Swiggy'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

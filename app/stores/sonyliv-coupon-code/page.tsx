@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/sonyliv-coupon-code#brand',
+      name: 'SonyLIV',
+      url: 'https://www.sonyliv.com',
+      sameAs: ['https://en.wikipedia.org/wiki/SonyLIV'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

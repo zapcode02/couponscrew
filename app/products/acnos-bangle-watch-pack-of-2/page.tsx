@@ -181,6 +181,11 @@ const jsonLd = {
         priceValidUntil,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
+        seller: {
+          '@type': 'Organization',
+          name: 'Amazon.in',
+          url: 'https://www.amazon.in',
+        },
       },
       aggregateRating: {
         '@type': 'AggregateRating',

@@ -119,6 +119,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for Puma)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/puma-coupon-code#brand',
+      name: 'Puma',
+      url: 'https://in.puma.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Puma_(brand)'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
    {
   "@context": "https://schema.org",

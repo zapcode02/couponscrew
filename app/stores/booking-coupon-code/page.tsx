@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/booking-coupon-code#brand',
+      name: 'Booking.com',
+      url: 'https://www.booking.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Booking.com'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

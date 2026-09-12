@@ -118,6 +118,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for Myntra)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/myntra-coupon-code#brand',
+      name: 'Myntra',
+      url: 'https://www.myntra.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Myntra'],
+    },
+
     // FAQPage — only the 3 questions with real (non-placeholder) answers.
     // The 4th visible FAQ item ("Where can I find the best Myntra offers?")
     // has a [PLACEHOLDER] answer and is deliberately excluded from schema

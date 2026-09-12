@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/nike-coupon-code#brand',
+      name: 'Nike',
+      url: 'https://www.nike.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Nike,_Inc.'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

@@ -120,6 +120,13 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/kreditbee-coupon-code#brand',
+      name: 'KreditBee',
+      url: 'https://www.kreditbee.in',
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@context": "https://schema.org",

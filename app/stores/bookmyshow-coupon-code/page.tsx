@@ -120,6 +120,13 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/bookmyshow-coupon-code#brand',
+      name: 'BookMyShow',
+      url: 'https://in.bookmyshow.com',
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

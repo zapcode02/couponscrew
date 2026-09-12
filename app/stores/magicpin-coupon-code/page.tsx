@@ -120,6 +120,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/magicpin-coupon-code#brand',
+      name: 'Magicpin',
+      url: 'https://www.magicpin.in',
+      sameAs: ['https://en.wikipedia.org/wiki/Magicpin'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

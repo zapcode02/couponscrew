@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/adidas-coupon-code#brand',
+      name: 'Adidas',
+      url: 'https://www.adidas.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Adidas'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

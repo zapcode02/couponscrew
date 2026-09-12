@@ -172,6 +172,15 @@ const jsonLd = {
       },
     },
 
+    // 1b. Organization Schema (Brand entity for Amazon)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/amazon-coupon-code#brand',
+      name: 'Amazon',
+      url: 'https://www.amazon.in',
+      sameAs: ['https://en.wikipedia.org/wiki/Amazon_(company)'],
+    },
+
     // 2. ItemList Schema (Amazon Deal Categories)
     {
       '@type': 'ItemList',

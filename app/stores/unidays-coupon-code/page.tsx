@@ -119,6 +119,13 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/unidays-coupon-code#brand',
+      name: 'UNiDAYS',
+      url: 'https://www.myunidays.com',
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
       '@type': 'FAQPage',

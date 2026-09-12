@@ -224,6 +224,7 @@ export default function Footer() {
               <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Privacy Policy</Link></li>
               <li><Link href="/terms-conditions" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Terms & Conditions</Link></li>
               <li><Link href="/faqs" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">FAQ</Link></li>
+              <li><Link href="/sitemap" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Sitemap</Link></li>
             </ul>
           </div>
 

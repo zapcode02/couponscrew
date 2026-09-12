@@ -113,6 +113,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/testbook-coupon-code#brand',
+      name: 'Testbook',
+      url: 'https://testbook.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Testbook'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
    {
   '@context': 'https://schema.org',

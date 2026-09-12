@@ -119,6 +119,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for Pepperfry)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/pepperfry-coupon-code#brand',
+      name: 'Pepperfry',
+      url: 'https://www.pepperfry.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Pepperfry'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
       '@type': 'FAQPage',

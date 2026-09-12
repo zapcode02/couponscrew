@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/firstcry-coupon-code#brand',
+      name: 'FirstCry',
+      url: 'https://www.firstcry.com',
+      sameAs: ['https://en.wikipedia.org/wiki/FirstCry'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

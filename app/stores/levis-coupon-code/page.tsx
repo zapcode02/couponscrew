@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/levis-coupon-code#brand',
+      name: "Levi's",
+      url: 'https://www.levi.in',
+      sameAs: ['https://en.wikipedia.org/wiki/Levi_Strauss_%26_Co.'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@context": "https://schema.org",

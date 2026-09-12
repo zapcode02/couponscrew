@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/flixbus-coupon-code#brand',
+      name: 'FlixBus',
+      url: 'https://www.flixbus.in',
+      sameAs: ['https://en.wikipedia.org/wiki/FlixBus'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

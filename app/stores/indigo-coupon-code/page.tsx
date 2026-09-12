@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/indigo-coupon-code#brand',
+      name: 'IndiGo',
+      url: 'https://www.goindigo.in',
+      sameAs: ['https://en.wikipedia.org/wiki/IndiGo'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     
     {

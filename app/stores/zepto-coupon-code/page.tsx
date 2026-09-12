@@ -119,6 +119,15 @@ const schema = {
         ],
       },
     },
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/zepto-coupon-code#brand',
+      name: 'Zepto',
+      url: 'https://www.zepto.com',
+      sameAs: [
+        'https://en.wikipedia.org/wiki/Zepto_(company)',
+      ],
+    },
 
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {

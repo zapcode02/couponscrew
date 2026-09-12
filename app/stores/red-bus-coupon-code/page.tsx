@@ -119,6 +119,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for redBus)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/red-bus-coupon-code#brand',
+      name: 'redBus',
+      url: 'https://www.redbus.in',
+      sameAs: ['https://en.wikipedia.org/wiki/RedBus'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@context": "https://schema.org",

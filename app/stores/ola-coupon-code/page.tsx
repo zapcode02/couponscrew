@@ -120,6 +120,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/ola-coupon-code#brand',
+      name: 'Ola',
+      url: 'https://www.olacabs.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Ola_Consumer'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

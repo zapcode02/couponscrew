@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/uber-coupon-code#brand',
+      name: 'Uber',
+      url: 'https://www.uber.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Uber'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@type": "FAQPage",

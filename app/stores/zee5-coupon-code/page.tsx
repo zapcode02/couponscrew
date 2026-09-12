@@ -120,6 +120,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/zee5-coupon-code#brand',
+      name: 'ZEE5',
+      url: 'https://www.zee5.com',
+      sameAs: ['https://en.wikipedia.org/wiki/ZEE5'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
      {
   "@context": "https://schema.org",

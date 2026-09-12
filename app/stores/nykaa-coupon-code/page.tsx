@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/nykaa-coupon-code#brand',
+      name: 'Nykaa',
+      url: 'https://www.nykaa.com',
+      sameAs: ['https://en.wikipedia.org/wiki/Nykaa'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   "@context": "https://schema.org",

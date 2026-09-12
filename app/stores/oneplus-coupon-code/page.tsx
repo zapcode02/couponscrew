@@ -119,6 +119,14 @@ const schema = {
       },
     },
 
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/oneplus-coupon-code#brand',
+      name: 'OnePlus',
+      url: 'https://www.oneplus.in',
+      sameAs: ['https://en.wikipedia.org/wiki/OnePlus'],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@context': 'https://schema.org',

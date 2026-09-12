@@ -120,6 +120,15 @@ const schema = {
       },
     },
 
+    // Organization Schema (Brand entity for Domino's)
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.couponscrew.com/stores/dominos-coupon-code#brand',
+      name: "Domino's Pizza",
+      url: 'https://www.dominos.co.in',
+      sameAs: ["https://en.wikipedia.org/wiki/Domino's_Pizza"],
+    },
+
     // FAQPage Schema (AEO + AI Search — sourced from this page's own visible FAQ accordion)
     {
   '@type': 'FAQPage',
