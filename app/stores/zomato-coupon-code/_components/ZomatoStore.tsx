@@ -144,9 +144,9 @@ export default function ZomatoStore() {
 
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <h1 className="text-3xl font-black text-[#1C1C1C] tracking-tight">Zomato</h1>
-                    <span className="bg-[#FDEBEC] text-[#E23744] text-xs font-bold px-3 py-1 rounded-full border border-[#F7D3D5]">
+                  <div className="flex flex-col gap-2">
+                    <h1 className="text-3xl font-black text-[#1C1C1C] tracking-tight">Zomato Coupon Codes</h1>
+                    <span className="bg-[#FDEBEC] text-[#E23744] text-xs font-bold px-3 py-1 rounded-full border border-[#F7D3D5] w-fit">
                       Food Delivery & Dining Out
                     </span>
                   </div>

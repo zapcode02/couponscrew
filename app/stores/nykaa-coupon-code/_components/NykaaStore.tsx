@@ -167,9 +167,9 @@ export default function NykaaStore() {
 
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Nykaa</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF]">
+                  <div className="flex flex-col gap-2">
+                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Nykaa Coupon Codes</h1>
+                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF] w-fit">
                       Beauty, Makeup & Skincare
                     </span>
                   </div>
