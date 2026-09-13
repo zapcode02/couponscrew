@@ -220,6 +220,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1 text-sm">
               <li><Link href="/about-us" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">About Us</Link></li>
+              <li><Link href="/branding" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Branding</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Contact Us</Link></li>
               <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Privacy Policy</Link></li>
               <li><Link href="/terms-conditions" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Terms & Conditions</Link></li>

@@ -125,6 +125,7 @@ const BLOG_POSTS: SiteLink[] = [
 
 const COMPANY_LEGAL: SiteLink[] = [
   { label: 'About Us', href: '/about-us' },
+  { label: 'Branding', href: '/branding' },
   { label: 'Contact', href: '/contact' },
   { label: 'FAQ', href: '/faqs' },
   { label: 'Privacy Policy', href: '/privacy-policy' },

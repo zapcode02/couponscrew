@@ -54,6 +54,7 @@ Couponscrew helps Indian shoppers find verified, working coupon codes, deals, an
 ## About
 
 - [About Us](https://www.couponscrew.com/about-us): Company background, mission, and the manual coupon-verification process.
+- [Branding](https://www.couponscrew.com/branding): CouponsCrew brand identity, logo assets, color palette, typography, and usage guidelines.
 - [Contact](https://www.couponscrew.com/contact): How to reach the Couponscrew team.
 - [FAQ](https://www.couponscrew.com/faqs): Answers to common questions about using coupons and the platform.
 
