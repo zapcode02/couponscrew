@@ -121,6 +121,7 @@ const PRODUCTS: SiteLink[] = [
 const BLOG_POSTS: SiteLink[] = [
   { label: 'How to Save Money Shopping Online in India', href: '/blog/how-to-save-money-shopping-online-india' },
   { label: 'Best Raksha Bandhan Gift Ideas', href: '/blog/raksha-bandhan-gift-ideas' },
+  { label: 'Bigg Boss Season 20: Where to Watch & Best Deals', href: '/blog/bigg-boss-season-20-where-to-watch-deals' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

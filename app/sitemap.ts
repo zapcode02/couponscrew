@@ -85,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/blog/how-to-save-money-shopping-online-india`, lastModified: new Date('2026-06-22'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/raksha-bandhan-gift-ideas`, lastModified: new Date('2026-08-24'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/bigg-boss-season-20-where-to-watch-deals`, lastModified: new Date('2026-09-06'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/branding`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
