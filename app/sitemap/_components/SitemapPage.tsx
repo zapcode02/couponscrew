@@ -129,6 +129,7 @@ const COMPANY_LEGAL: SiteLink[] = [
   { label: 'Branding', href: '/branding' },
   { label: 'Contact', href: '/contact' },
   { label: 'FAQ', href: '/faqs' },
+  { label: 'Feedback', href: '/feedback' },
   { label: 'Privacy Policy', href: '/privacy-policy' },
   { label: 'Terms & Conditions', href: '/terms-conditions' },
 ];

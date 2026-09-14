@@ -226,6 +226,14 @@ export default function Footer() {
               <li><Link href="/terms-conditions" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Terms & Conditions</Link></li>
               <li><Link href="/faqs" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">FAQ</Link></li>
               <li><Link href="/sitemap" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8">Sitemap</Link></li>
+              <li className="pt-2">
+                <Link
+                  href="/feedback"
+                  className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[#5B4FBE]/60 text-[#9B8FE8] hover:bg-[#5B4FBE] hover:text-white hover:border-[#5B4FBE] text-xs font-semibold transition-all duration-200 hover:scale-[1.04] active:scale-[0.97]"
+                >
+                  ❤️ Feedback
+                </Link>
+              </li>
             </ul>
           </div>
 
