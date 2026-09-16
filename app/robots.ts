@@ -5,7 +5,7 @@ const baseUrl = 'https://www.couponscrew.com'
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: '*', allow: '/' },
+      { userAgent: '*', allow: '/', disallow: '/_next/static/' },
       { userAgent: 'GPTBot', allow: '/' },
       { userAgent: 'ChatGPT-User', allow: '/' },
       { userAgent: 'OAI-SearchBot', allow: '/' },

@@ -81,6 +81,12 @@ const nextConfig = {
       },
     ]
   },
+  async redirects() {
+    return [
+      { source: '/faq', destination: '/faqs', permanent: true },
+      { source: '/categories', destination: '/stores/categories', permanent: true },
+    ]
+  },
 }
 
 export default nextConfig;
