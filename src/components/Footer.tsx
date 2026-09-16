@@ -231,10 +231,11 @@ export default function Footer() {
                   href="/feedback"
                   className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[#5B4FBE]/60 text-[#9B8FE8] hover:bg-[#5B4FBE] hover:text-white hover:border-[#5B4FBE] text-xs font-semibold transition-all duration-200 hover:scale-[1.04] active:scale-[0.97]"
                 >
-                  ❤️ Feedback
+                  Feedback
                 </Link>
               </li>
             </ul>
+            
           </div>
 
           {/* COL 3: Quick Links */}
@@ -245,6 +246,7 @@ export default function Footer() {
             <ul className="space-y-1 text-sm">
               <li><Link href="/stores" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Stores</Link></li>
               <li><Link href="/products" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Products</Link></li>
+              <li><Link href="/festival-offers" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Festival Offers</Link></li>
               <li><Link href="/stores/categories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Stores Categories</Link></li>
               <li><Link href="/products/categories" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Product Categories</Link></li>
               <li><Link href="/deals-of-the-day" className="text-gray-400 hover:text-white hover:pl-1 transition-all leading-8 cursor-pointer">Deals of the Day</Link></li>

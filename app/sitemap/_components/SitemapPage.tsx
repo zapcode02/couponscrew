@@ -31,6 +31,7 @@ const MAIN_PAGES: SiteLink[] = [
   { label: 'Home', href: '/' },
   { label: 'Stores', href: '/stores' },
   { label: 'Products', href: '/products' },
+  { label: 'Festival Offers', href: '/festival-offers' },
   { label: 'Deals', href: '/deals' },
   { label: 'Deals of the Day', href: '/deals-of-the-day' },
   { label: 'Offers', href: '/offers' },
