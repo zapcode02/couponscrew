@@ -3,6 +3,7 @@ import type React from 'react'
 import { Inter, Outfit, Fira_Code } from 'next/font/google'
 import AnalyticsLoader from '../src/components/AnalyticsLoader'
 import CookieConsentBanner from '../src/components/CookieConsentBanner'
+import FloatingContactWidget from '../src/components/FloatingContactWidget'
 import './globals.css'
 
 const inter = Inter({
@@ -100,6 +101,7 @@ export default function RootLayout({
       <body className="bg-[#F8F8FF] text-[#4A4A6A] selection:bg-[#5B4FBE] selection:text-white">
         {children}
         <CookieConsentBanner />
+        <FloatingContactWidget />
       </body>
     </html>
   )
