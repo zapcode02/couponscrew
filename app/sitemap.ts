@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/stores/flixbus-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/lifestyle-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/nike-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/stores/expedia-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/categories`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/stores/categories/fashion`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/stores/categories/beauty`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

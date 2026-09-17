@@ -679,5 +679,22 @@ export const STORES_DATA: Store[] = [
     isPopular: true,
     isFeatured: false,
     description: 'Shop footwear, apparel & running gear online with the best Nike offers'
+  },
+  {
+    id: 'store-40',
+    name: 'Expedia',
+    slug: 'expedia-coupon-code',
+    logo: 'expedia',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1789605021/expedia-logo_oysjh1.webp',
+    logoColor: '#1A1A2E',
+    logoBg: '#F0EEFF',
+    category: 'Travel',
+    categories: ['Travel'],
+    offerCount: 40,
+    maxDiscount: 50,
+    discountLabel: 'Up to 50% OFF',
+    isPopular: true,
+    isFeatured: false,
+    description: 'Book flights, hotels, car rentals & vacation packages online with the best Expedia offers'
   }
 ];

@@ -73,6 +73,7 @@ const STORES: SiteLink[] = [
   { label: 'FlixBus', href: '/stores/flixbus-coupon-code' },
   { label: 'Lifestyle', href: '/stores/lifestyle-coupon-code' },
   { label: 'Nike', href: '/stores/nike-coupon-code' },
+  { label: 'Expedia', href: '/stores/expedia-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [
