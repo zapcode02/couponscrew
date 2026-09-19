@@ -240,9 +240,9 @@ export default function DeelmoKurtaPage() {
 
           {/* Key Features */}
           <div className="lg:col-span-4 bg-white rounded-3xl p-6 md:p-8 border border-[#E8E8F0] shadow-sm flex flex-col">
-            <h3 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
+            <h2 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
               Key Features
-            </h3>
+            </h2>
             <ul className="space-y-4 flex-1">
               {keyFeatures.map((feat, i) => (
                 <li key={i} className="flex gap-3 items-start text-left text-xs font-semibold text-gray-500">
@@ -255,9 +255,9 @@ export default function DeelmoKurtaPage() {
 
           {/* Product Specifications */}
           <div className="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 border border-[#E8E8F0] shadow-sm flex flex-col">
-            <h3 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
+            <h2 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
               Product Specifications
-            </h3>
+            </h2>
             <div className="divide-y divide-gray-100 flex-1">
               {specifications.map((spec, i) => (
                 <div key={i} className="flex justify-between items-center py-2.5 text-xs">
@@ -274,7 +274,7 @@ export default function DeelmoKurtaPage() {
               <Award size={32} />
             </div>
             <div className="space-y-2">
-              <h4 className="text-lg font-black text-[#1A1A2E]">10-Day Return & Exchange</h4>
+              <h3 className="text-lg font-black text-[#1A1A2E]">10-Day Return & Exchange</h3>
               <p className="text-xs text-gray-500 font-semibold leading-relaxed">
                 Not satisfied with the fit or fabric? This kurta comes with a 10-day return & exchange window for genuine sizing or quality concerns.
               </p>

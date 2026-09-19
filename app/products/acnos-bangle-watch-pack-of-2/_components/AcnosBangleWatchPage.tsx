@@ -239,9 +239,9 @@ export default function AcnosBangleWatchPage() {
 
           {/* Key Features */}
           <div className="lg:col-span-4 bg-white rounded-3xl p-6 md:p-8 border border-[#E8E8F0] shadow-sm flex flex-col">
-            <h3 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
+            <h2 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
               Key Features
-            </h3>
+            </h2>
             <ul className="space-y-4 flex-1">
               {keyFeatures.map((feat, i) => (
                 <li key={i} className="flex gap-3 items-start text-left text-xs font-semibold text-gray-500">
@@ -254,9 +254,9 @@ export default function AcnosBangleWatchPage() {
 
           {/* Product Specifications */}
           <div className="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 border border-[#E8E8F0] shadow-sm flex flex-col">
-            <h3 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
+            <h2 className="text-lg font-black text-[#1A1A2E] mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
               Product Specifications
-            </h3>
+            </h2>
             <div className="divide-y divide-gray-100 flex-1">
               {specifications.map((spec, i) => (
                 <div key={i} className="flex justify-between items-center py-2.5 text-xs">
@@ -273,7 +273,7 @@ export default function AcnosBangleWatchPage() {
               <Award size={32} />
             </div>
             <div className="space-y-2">
-              <h4 className="text-lg font-black text-[#1A1A2E]">1 Year Warranty</h4>
+              <h3 className="text-lg font-black text-[#1A1A2E]">1 Year Warranty</h3>
               <p className="text-xs text-gray-500 font-semibold leading-relaxed">
                 Covered by a 1-year manufacturer warranty against manufacturing defects, plus a 10-day return window. Contact Acnos support for quick processing.
               </p>
@@ -605,7 +605,7 @@ export default function AcnosBangleWatchPage() {
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-black text-lg">Acnos Bangle Watch (Rosegold & D-White)</h4>
+            <p className="text-slate-900 font-black text-lg">Acnos Bangle Watch (Rosegold & D-White)</p>
             <p className="text-slate-500 text-xs mt-1">Rosegold + D-White Color Combination</p>
           </div>
 
@@ -626,9 +626,9 @@ export default function AcnosBangleWatchPage() {
 
         {/* Quick Specs Highlight Box */}
         <div className="bg-slate-900 text-white rounded-2xl p-6 shadow-sm space-y-4">
-          <h4 className="text-xs font-bold text-indigo-300 uppercase tracking-wider">
+          <p className="text-xs font-bold text-indigo-300 uppercase tracking-wider">
             At A Glance
-          </h4>
+          </p>
           <ul className="space-y-3 text-xs">
             <li className="flex justify-between border-b border-slate-800 pb-2">
               <span className="text-slate-400">Contents:</span>
@@ -655,9 +655,9 @@ export default function AcnosBangleWatchPage() {
 
         {/* Trending Store Links */}
         <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-4">
-          <h4 className="text-slate-900 font-bold text-xs uppercase tracking-wider">
+          <p className="text-slate-900 font-bold text-xs uppercase tracking-wider">
             Popular Categories
-          </h4>
+          </p>
           <div className="flex flex-wrap gap-2">
             {[
               "Watch Combo Packs", "Rosegold Watches", "Gifts Under 1000",
