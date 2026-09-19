@@ -210,6 +210,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/testbook-coupon-code#offerlist',
+      name: 'Testbook Coupon Codes & Offers',
+      numberOfItems: testbookOffers.length,
+      itemListElement: testbookOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...testbookOffers,
   ],

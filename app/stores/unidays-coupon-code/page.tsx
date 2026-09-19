@@ -182,6 +182,19 @@ const schema = {
       ],
     },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/unidays-coupon-code#offerlist',
+      name: 'UNiDAYS Coupon Codes & Offers',
+      numberOfItems: unidaysOffers.length,
+      itemListElement: unidaysOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...unidaysOffers,
   ],

@@ -217,6 +217,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/dominos-coupon-code#offerlist',
+      name: "Domino's Coupon Codes & Offers",
+      numberOfItems: dominosOffers.length,
+      itemListElement: dominosOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...dominosOffers,
   ],

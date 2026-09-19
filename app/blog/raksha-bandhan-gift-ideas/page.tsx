@@ -94,7 +94,26 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
 
-    // 1. BlogPosting Schema
+    // 1. WebPage Schema
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas#webpage',
+      url: 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
+      name: 'Best Raksha Bandhan Gift Ideas 2026 — Save Big with Verified Deals | CouponsCrew',
+      description:
+        'Discover thoughtful and trending Raksha Bandhan gift ideas for brothers and sisters. Learn how to stack coupons, bank offers, and cashback to save extra.',
+      inLanguage: 'en-IN',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://www.couponscrew.com/#website',
+        name: 'CouponsCrew',
+        url: 'https://www.couponscrew.com',
+      },
+      datePublished: '2026-08-24',
+      dateModified: '2026-08-24',
+    },
+
+    // 2. BlogPosting Schema
     {
       '@type': 'BlogPosting',
       '@id': 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas#blogposting',
@@ -111,6 +130,28 @@ const jsonLd = {
       dateModified: '2026-08-24',
       url: 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
       inLanguage: 'en-IN',
+      about: {
+        '@type': 'Thing',
+        name: 'Raksha Bandhan',
+        sameAs: 'https://en.wikipedia.org/wiki/Raksha_Bandhan',
+      },
+      mentions: [
+        {
+          '@type': 'Organization',
+          name: 'Amazon',
+          sameAs: 'https://en.wikipedia.org/wiki/Amazon_India',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Flipkart',
+          sameAs: 'https://en.wikipedia.org/wiki/Flipkart',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Myntra',
+          sameAs: 'https://en.wikipedia.org/wiki/Myntra',
+        },
+      ],
       author: {
         '@type': 'Organization',
         '@id': 'https://www.couponscrew.com/#organization',
@@ -164,7 +205,7 @@ const jsonLd = {
       },
     },
 
-    // 2. FAQPage Schema (AEO + AI Search)
+    // 3. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
       '@id': 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas#faqpage',

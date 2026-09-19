@@ -110,6 +110,11 @@ const priceValidUntilDate = new Date()
 priceValidUntilDate.setDate(priceValidUntilDate.getDate() + 60)
 const priceValidUntil = priceValidUntilDate.toISOString().slice(0, 10)
 
+// validFrom — computed at build time (today), same rationale as priceValidUntil:
+// no per-product offer-start-date is tracked in the data model, so this
+// reflects the page's current build date rather than a fixed hardcoded value.
+const validFrom = new Date().toISOString().slice(0, 10)
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -179,6 +184,7 @@ const jsonLd = {
         price: '299',
         priceCurrency: 'INR',
         priceValidUntil,
+        validFrom,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
         seller: {

@@ -216,6 +216,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/rapido-coupon-code#offerlist',
+      name: 'Rapido Coupon Codes & Offers',
+      numberOfItems: rapidoOffers.length,
+      itemListElement: rapidoOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...rapidoOffers,
   ],

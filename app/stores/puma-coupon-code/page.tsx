@@ -217,6 +217,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/puma-coupon-code#offerlist',
+      name: 'Puma Coupon Codes & Offers',
+      numberOfItems: pumaOffers.length,
+      itemListElement: pumaOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...pumaOffers,
   ],

@@ -331,9 +331,9 @@ export default function UberStore() {
                         <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
                           {coupon.badgeType || "UP TO"}
                         </span>
-                        <h2 className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
+                        <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
                           {coupon.badge ? coupon.badge.replace("UP TO ", "").replace("FLAT ", "") : "50%"}
-                        </h2>
+                        </span>
                         <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
                           OFF
                         </span>
@@ -354,9 +354,9 @@ export default function UberStore() {
                             </span>
                           </div>
 
-                          <h2 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
+                          <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
                             {coupon.title}
-                          </h2>
+                          </h3>
 
                           <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
                             {coupon.description}
@@ -979,9 +979,9 @@ export default function UberStore() {
 
          {/* FAQs Accordion */}
           <div className="mt-20 space-y-4">
-            <h3 className="text-2xl font-black text-black mb-8">
+            <h2 className="text-2xl font-black text-black mb-8">
               Frequently Asked Questions
-            </h3>
+            </h2>
             {[
               {
                 q: "What is an Uber coupon code and how do I apply it?",

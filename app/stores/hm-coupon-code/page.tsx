@@ -215,6 +215,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/hm-coupon-code#offerlist',
+      name: 'H&M Coupon Codes & Offers',
+      numberOfItems: handmOffers.length,
+      itemListElement: handmOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...handmOffers,
   ],

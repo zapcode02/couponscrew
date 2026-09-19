@@ -210,6 +210,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/kfc-coupon-code#offerlist',
+      name: 'KFC Coupon Codes & Offers',
+      numberOfItems: kfcOffers.length,
+      itemListElement: kfcOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...kfcOffers,
   ],

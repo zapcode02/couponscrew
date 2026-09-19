@@ -91,7 +91,26 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
-    // 1. BlogPosting Schema
+    // 1. WebPage Schema
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals#webpage',
+      url: 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
+      name: 'Bigg Boss Season 20 (2026): Where to Watch, Price & Best Deals — CouponsCrew',
+      description:
+        "Bigg Boss 20 is streaming on JioHotstar from September 6, 2026. Here's where to watch, what it costs, confirmed contestants, and the best deals to make your BB nights cheaper.",
+      inLanguage: 'en-IN',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://www.couponscrew.com/#website',
+        name: 'CouponsCrew',
+        url: 'https://www.couponscrew.com',
+      },
+      datePublished: '2026-09-06',
+      dateModified: '2026-09-06',
+    },
+
+    // 2. BlogPosting Schema
     {
       '@type': 'BlogPosting',
       '@id': 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals#blogposting',
@@ -108,6 +127,28 @@ const jsonLd = {
       dateModified: '2026-09-06',
       url: 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
       inLanguage: 'en-IN',
+      about: {
+        '@type': 'TVSeries',
+        name: 'Bigg Boss',
+        sameAs: 'https://en.wikipedia.org/wiki/Bigg_Boss_(Hindi_TV_series)',
+      },
+      mentions: [
+        {
+          '@type': 'Person',
+          name: 'Salman Khan',
+          sameAs: 'https://en.wikipedia.org/wiki/Salman_Khan',
+        },
+        {
+          '@type': 'Organization',
+          name: 'JioHotstar',
+          sameAs: 'https://en.wikipedia.org/wiki/JioHotstar',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Colors TV',
+          sameAs: 'https://en.wikipedia.org/wiki/Colors_(TV_channel)',
+        },
+      ],
       author: {
         '@type': 'Organization',
         '@id': 'https://www.couponscrew.com/#organization',
@@ -161,7 +202,7 @@ const jsonLd = {
       },
     },
 
-    // 2. FAQPage Schema
+    // 3. FAQPage Schema
     {
       '@type': 'FAQPage',
       '@id': 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals#faqpage',

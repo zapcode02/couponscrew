@@ -217,6 +217,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/magicpin-coupon-code#offerlist',
+      name: 'Magicpin Coupon Codes & Offers',
+      numberOfItems: magicpinOffers.length,
+      itemListElement: magicpinOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...magicpinOffers,
   ],

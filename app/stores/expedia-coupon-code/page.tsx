@@ -216,6 +216,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/expedia-coupon-code#offerlist',
+      name: 'Expedia Coupon Codes & Offers',
+      numberOfItems: expediaOffers.length,
+      itemListElement: expediaOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...expediaOffers,
   ],

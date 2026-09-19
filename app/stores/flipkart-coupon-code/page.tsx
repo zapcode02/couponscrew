@@ -206,6 +206,19 @@ const schema = {
 },
     // Offer Schema (one per placeholder deal card — replace FLIPKART_COUPONS
     // with real data before this page is linked/indexed)
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/flipkart-coupon-code#offerlist',
+      name: 'Flipkart Coupon Codes & Offers',
+      numberOfItems: flipkartOffers.length,
+      itemListElement: flipkartOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     ...flipkartOffers,
   ],
 }

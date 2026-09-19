@@ -177,6 +177,19 @@ const schema = {
       ],
     },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/zepto-coupon-code#offerlist',
+      name: 'Zepto Coupon Codes & Offers',
+      numberOfItems: zeptoOffers.length,
+      itemListElement: zeptoOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...zeptoOffers,
   ],

@@ -214,6 +214,19 @@ const schema = {
       ],
     },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/ajio-coupon-code#offerlist',
+      name: 'Ajio Coupon Codes & Offers',
+      numberOfItems: ajioOffers.length,
+      itemListElement: ajioOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...ajioOffers,
   ],

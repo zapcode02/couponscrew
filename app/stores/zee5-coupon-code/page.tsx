@@ -257,6 +257,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/zee5-coupon-code#offerlist',
+      name: 'ZEE5 Coupon Codes & Offers',
+      numberOfItems: zee5Offers.length,
+      itemListElement: zee5Offers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...zee5Offers,
   ],

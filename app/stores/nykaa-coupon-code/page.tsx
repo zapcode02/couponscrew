@@ -216,6 +216,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/nykaa-coupon-code#offerlist',
+      name: 'Nykaa Coupon Codes & Offers',
+      numberOfItems: nykaaOffers.length,
+      itemListElement: nykaaOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...nykaaOffers,
   ],

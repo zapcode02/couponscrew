@@ -256,6 +256,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/kreditbee-coupon-code#offerlist',
+      name: 'KreditBee Coupon Codes & Offers',
+      numberOfItems: kreditbeeOffers.length,
+      itemListElement: kreditbeeOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...kreditbeeOffers,
   ],

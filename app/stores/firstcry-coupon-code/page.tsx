@@ -215,6 +215,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/firstcry-coupon-code#offerlist',
+      name: 'FirstCry Coupon Codes & Offers',
+      numberOfItems: firstcryOffers.length,
+      itemListElement: firstcryOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...firstcryOffers,
   ],

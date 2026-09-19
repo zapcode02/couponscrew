@@ -215,6 +215,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/booking-coupon-code#offerlist',
+      name: 'Booking.com Coupon Codes & Offers',
+      numberOfItems: bookingOffers.length,
+      itemListElement: bookingOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...bookingOffers,
   ],

@@ -201,6 +201,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/indigo-coupon-code#offerlist',
+      name: 'IndiGo Coupon Codes & Offers',
+      numberOfItems: indigoOffers.length,
+      itemListElement: indigoOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...indigoOffers,
   ],

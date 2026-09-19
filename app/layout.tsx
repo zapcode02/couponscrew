@@ -56,6 +56,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  manifest: '/manifest.json',
   icons: {
     // Browser-tab favicon — sized down from the 145KB source PNG via a
     // Cloudinary transform (32x32, ICO format) instead of shipping the

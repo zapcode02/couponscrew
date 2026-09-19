@@ -326,9 +326,9 @@ export default function Zee5Store() {
             <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
               {coupon.badgeType || "UP TO"}
             </span>
-            <h2 className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
+            <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
               {coupon.badge ? coupon.badge.replace("UP TO ", "").replace("FLAT ", "") : "50%"}
-            </h2>
+            </span>
             <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
               OFF
             </span>
@@ -349,9 +349,9 @@ export default function Zee5Store() {
                 </span>
               </div>
 
-              <h2 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
+              <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
                 {coupon.title}
-              </h2>
+                          </h3>
 
               <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
                 {coupon.description}
@@ -604,9 +604,9 @@ export default function Zee5Store() {
             <div className="space-y-8 text-slate-700">
   {/* ZEE5 Subscription Plans Compared Section */}
   <div className="space-y-4">
-    <h2 className="text-xl font-black text-[#5B4FBE]">
+    <h3 className="text-xl font-black text-[#5B4FBE]">
       ZEE5 Subscription Plans Compared
-    </h2>
+    </h3>
     <p>
       ZEE5 offers multiple subscription plans tailored to different viewing preferences, from language-specific packs and kids content to live TV. Here is a complete breakdown of all current plans available in India:
     </p>
@@ -667,9 +667,9 @@ export default function Zee5Store() {
 
   {/* ZEE5 Regional Language Packs Compared Section */}
   <div className="space-y-4">
-    <h2 className="text-xl font-black text-[#5B4FBE]">
+    <h3 className="text-xl font-black text-[#5B4FBE]">
       ZEE5 Regional Language Packs Compared
-    </h2>
+    </h3>
     <p>
       ZEE5 offers dedicated regional language packs for viewers who primarily consume content in their native language. These plans are a cost-effective option compared to the all-languages plan, and each supports up to 2 devices simultaneously.
     </p>
@@ -754,9 +754,9 @@ export default function Zee5Store() {
 
   {/* Popular Genres on ZEE5 Section */}
   <div className="space-y-4">
-    <h2 className="text-xl font-black text-[#5B4FBE]">
+    <h3 className="text-xl font-black text-[#5B4FBE]">
       Popular Genres on ZEE5
-    </h2>
+    </h3>
     <p>
       ZEE5's content library is organised across a set of categories that cover the full range of what Indian streaming audiences watch.
     </p>
@@ -829,9 +829,9 @@ export default function Zee5Store() {
 
   {/* What to Watch on the ZEE5 OTT Platform? Section */}
   <div className="space-y-4">
-    <h2 className="text-xl font-black text-[#5B4FBE]">
+    <h3 className="text-xl font-black text-[#5B4FBE]">
       What to Watch on the ZEE5 OTT Platform?
-    </h2>
+    </h3>
     <p>
       ZEE5 is a particularly strong choice for viewers whose watchlist falls into any of these categories:
     </p>
@@ -876,9 +876,9 @@ export default function Zee5Store() {
 
   {/* What is the ZEEPLEX Subscription? Section */}
   <div className="space-y-4">
-    <h2 className="text-xl font-black text-[#5B4FBE]">
+    <h3 className="text-xl font-black text-[#5B4FBE]">
       What is the ZEEPLEX Subscription?
-    </h2>
+    </h3>
     <p>
       ZEEPLEX is ZEE5's premium video-on-demand (PVOD) service — a separate offering from the standard ZEE5 subscription. On ZEEPLEX, certain new Bollywood releases are made available for a per-title rental or purchase fee shortly after their theatrical run, sometimes before they enter the standard ZEE5 subscription library.
     </p>
@@ -892,9 +892,9 @@ export default function Zee5Store() {
 
   {/* ZEE5 vs SonyLiv vs JioHotstar Section */}
   <div className="space-y-4">
-    <h2 className="text-xl font-black text-[#5B4FBE]">
+    <h3 className="text-xl font-black text-[#5B4FBE]">
       ZEE5 vs SonyLiv vs JioHotstar
-    </h2>
+    </h3>
     <p>
       Choosing the right OTT platform depends on what you watch, how many devices you use, and how much you want to spend. Here is a head-to-head comparison of ZEE5, SonyLiv, and JioHotstar across pricing, content, and key features:
     </p>
@@ -1152,9 +1152,9 @@ export default function Zee5Store() {
 
         {/* Frequently Asked Questions Accordion */}
         <div className="mt-16 space-y-4">
-          <h3 className="text-2xl font-black text-slate-900 mb-8">
+          <h2 className="text-2xl font-black text-slate-900 mb-8">
             Frequently Asked Questions About ZEE5 Coupon Codes
-          </h3>
+          </h2>
           {[
             {
               q: "What is a ZEE5 coupon code and how do I apply it?",

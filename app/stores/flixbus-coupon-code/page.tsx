@@ -215,6 +215,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/flixbus-coupon-code#offerlist',
+      name: 'FlixBus Coupon Codes & Offers',
+      numberOfItems: flixbusOffers.length,
+      itemListElement: flixbusOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...flixbusOffers,
   ],

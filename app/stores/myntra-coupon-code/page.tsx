@@ -206,6 +206,19 @@ const schema = {
 
     // Offer Schema (one per placeholder deal card — replace MYNTRA_COUPONS
     // with real data before this page is linked/indexed)
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/myntra-coupon-code#offerlist',
+      name: 'Myntra Coupon Codes & Offers',
+      numberOfItems: myntraOffers.length,
+      itemListElement: myntraOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     ...myntraOffers,
   ],
 }

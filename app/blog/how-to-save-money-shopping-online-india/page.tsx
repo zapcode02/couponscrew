@@ -106,7 +106,26 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
 
-    // 1. BlogPosting Schema
+    // 1. WebPage Schema
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india#webpage',
+      url: 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india',
+      name: 'How to Save Money Shopping Online in India — Introducing CouponsCrew',
+      description:
+        'Practical, no-fluff ways to save money shopping online in India — coupon stacking, bank offers, cashback layers — plus how CouponsCrew verifies every code before it goes live.',
+      inLanguage: 'en-IN',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://www.couponscrew.com/#website',
+        name: 'CouponsCrew',
+        url: 'https://www.couponscrew.com',
+      },
+      datePublished: '2026-06-22',
+      dateModified: '2026-06-22',
+    },
+
+    // 2. BlogPosting Schema
     // 💡 For every new blog post — update: headline, description, image,
     //    datePublished, dateModified, url, breadcrumb position 3, and FAQs
     {
@@ -126,6 +145,23 @@ const jsonLd = {
       dateModified: '2026-06-22',
       url: 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india',
       inLanguage: 'en-IN',
+      about: {
+        '@type': 'Thing',
+        name: 'Online Shopping in India',
+        sameAs: 'https://en.wikipedia.org/wiki/E-commerce_in_India',
+      },
+      mentions: [
+        {
+          '@type': 'Organization',
+          name: 'Amazon',
+          sameAs: 'https://en.wikipedia.org/wiki/Amazon_India',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Flipkart',
+          sameAs: 'https://en.wikipedia.org/wiki/Flipkart',
+        },
+      ],
       // 💡 author is required for Google News / Top Stories eligibility
       author: {
         '@type': 'Organization',
@@ -180,7 +216,7 @@ const jsonLd = {
       },
     },
 
-    // 2. FAQPage Schema (AEO + AI Search)
+    // 3. FAQPage Schema (AEO + AI Search)
     // 💡 Update FAQs to match the actual questions answered in the blog post
     {
       '@type': 'FAQPage',

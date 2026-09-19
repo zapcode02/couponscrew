@@ -215,6 +215,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/adidas-coupon-code#offerlist',
+      name: 'Adidas Coupon Codes & Offers',
+      numberOfItems: adidasOffers.length,
+      itemListElement: adidasOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...adidasOffers,
   ],

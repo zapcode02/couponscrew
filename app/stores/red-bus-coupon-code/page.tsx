@@ -217,6 +217,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/red-bus-coupon-code#offerlist',
+      name: 'redBus Coupon Codes & Offers',
+      numberOfItems: redBusOffers.length,
+      itemListElement: redBusOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...redBusOffers,
   ],

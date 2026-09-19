@@ -217,6 +217,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/ola-coupon-code#offerlist',
+      name: 'Ola Coupon Codes & Offers',
+      numberOfItems: olaOffers.length,
+      itemListElement: olaOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...olaOffers,
   ],

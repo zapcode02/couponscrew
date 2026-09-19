@@ -215,6 +215,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/sonyliv-coupon-code#offerlist',
+      name: 'SonyLIV Coupon Codes & Offers',
+      numberOfItems: sonyliveOffers.length,
+      itemListElement: sonyliveOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...sonyliveOffers,
   ],

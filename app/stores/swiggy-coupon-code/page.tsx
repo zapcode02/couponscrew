@@ -210,6 +210,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/swiggy-coupon-code#offerlist',
+      name: 'Swiggy Coupon Codes & Offers',
+      numberOfItems: swiggyOffers.length,
+      itemListElement: swiggyOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...swiggyOffers,
   ],

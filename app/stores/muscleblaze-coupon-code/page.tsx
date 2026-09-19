@@ -198,6 +198,19 @@ const schema = {
   ]
 },
 
+    // ItemList Schema — groups all coupon Offers into one connected list
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/stores/muscleblaze-coupon-code#offerlist',
+      name: 'MuscleBlaze Coupon Codes & Offers',
+      numberOfItems: muscleblazeOffers.length,
+      itemListElement: muscleblazeOffers.map((offer, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: offer,
+      })),
+    },
+
     // Offer Schema (one per visible deal card)
     ...muscleblazeOffers,
   ],
