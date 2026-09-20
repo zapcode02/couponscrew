@@ -49,6 +49,16 @@ const posts = [
     excerpt: "Bigg Boss 20 is streaming on JioHotstar from September 6, 2026. Here's where to watch, what it costs, confirmed contestants, and the best deals to make your BB nights cheaper.",
     tags: ['Bigg Boss', 'Entertainment', 'OTT Deals'],
   },
+  {
+    slug: 'upi-changes-2000-payments-merchants-mdr-2026',
+    title: 'UPI Is Changing: What ₹2,000+ Payments Mean for Merchants in 2026',
+    category: 'Fintech Guides',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1789908955/upi-changes-2000-payments-merchants-mdr-2026_cwjqa7.webp',
+    date: 'Sep 20, 2026',
+    readTime: '6 min read',
+    excerpt: 'From October 15, 2026, UPI transactions above ₹2,000 at merchants attract a 0.4% MDR. Here is who pays, who does not, and what your business should do now.',
+    tags: ['UPI Payments', 'Merchant MDR', 'Fintech 2026'],
+  },
 ];
 
 export default function Blog() {

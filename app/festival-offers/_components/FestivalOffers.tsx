@@ -637,13 +637,19 @@ export default function FestivalOffers() {
                       </h3>
 
                       {/* View Button */}
-                      <button
-                        onClick={() => alert(`Showing exclusive offers for ${item.title}`)}
+                      <Link
+                        href={item.id === 'diwali' || item.title.toLowerCase().includes('diwali') ? '/festival-offers/diwali-offers' : '#'}
+                        onClick={(e) => {
+                          if (item.id !== 'diwali' && !item.title.toLowerCase().includes('diwali')) {
+                            e.preventDefault();
+                            alert(`Showing exclusive offers for ${item.title}`);
+                          }
+                        }}
                         className="w-full mt-4 py-2.5 px-4 rounded-xl font-bold text-xs border bg-purple-50 hover:bg-purple-100 text-purple-800 border-purple-200 transition-all flex items-center justify-center gap-1.5"
                       >
                         <span>View Offers</span>
                         <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -821,9 +827,12 @@ export default function FestivalOffers() {
                 <h3 className="text-sm font-extrabold text-[#1A1A2E]">{item.title}</h3>
               </div>
               <p className="text-xs text-[#4A4A6A] leading-relaxed mb-3">{item.desc}</p>
-              <a href="#" className="text-xs font-black text-[#5B4FBE] hover:underline inline-flex items-center gap-1">
+              <Link
+                href={item.title.toLowerCase().includes('diwali') ? '/festival-offers/diwali-offers' : '#'}
+                className="text-xs font-black text-[#5B4FBE] hover:underline inline-flex items-center gap-1"
+              >
                 → {item.link}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

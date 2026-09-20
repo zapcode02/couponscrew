@@ -124,6 +124,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'How to Save Money Shopping Online in India', href: '/blog/how-to-save-money-shopping-online-india' },
   { label: 'Best Raksha Bandhan Gift Ideas', href: '/blog/raksha-bandhan-gift-ideas' },
   { label: 'Bigg Boss Season 20: Where to Watch & Best Deals', href: '/blog/bigg-boss-season-20-where-to-watch-deals' },
+  { label: 'UPI Is Changing: What ₹2,000+ Payments Mean for Merchants', href: '/blog/upi-changes-2000-payments-merchants-mdr-2026' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [
