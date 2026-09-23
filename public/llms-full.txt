@@ -24,6 +24,19 @@ Couponscrew organizes its 500+ partner stores across these categories: Fashion, 
 - [Products](https://www.couponscrew.com/products): Discounted products across categories with verified deal pricing.
 - [Product Categories](https://www.couponscrew.com/products/categories): Browse discounted products by category — Electronics, Home and Kitchen, Health and Household, Beauty and Personal Care, Sports and Outdoors, Toys and Games, Software, Video Games, Pet Supplies.
 - [Festival Offers](https://www.couponscrew.com/festival-offers): Verified festival coupon codes and sale offers for Diwali, Christmas, New Year, Holi, Black Friday, and 30+ other Indian and global shopping events.
+- [Amazon Great Indian Sale Offers](https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers): Verified Amazon Great Indian Sale coupon codes and sale offers.
+- [Black Friday Offers](https://www.couponscrew.com/festival-offers/black-friday-offers): Verified Black Friday coupon codes and sale offers.
+- [Children's Day Offers](https://www.couponscrew.com/festival-offers/childrens-day-offers): Verified Children's Day coupon codes and sale offers.
+- [Christmas Offers](https://www.couponscrew.com/festival-offers/christmas-offers): Verified Christmas coupon codes and sale offers.
+- [Cyber Monday Offers](https://www.couponscrew.com/festival-offers/cyber-monday-offers): Verified Cyber Monday coupon codes and sale offers.
+- [Diwali Offers](https://www.couponscrew.com/festival-offers/diwali-offers): Verified Diwali coupon codes and sale offers.
+- [Dussehra Offers](https://www.couponscrew.com/festival-offers/dusshera-offers): Verified Dussehra coupon codes and sale offers.
+- [Flipkart Big Billion Day Sale Offers](https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers): Verified Flipkart Big Billion Day Sale coupon codes and sale offers.
+- [Halloween Offers](https://www.couponscrew.com/festival-offers/halloween-offers): Verified Halloween coupon codes and sale offers.
+- [New Year Offers](https://www.couponscrew.com/festival-offers/new-year-offers): Verified New Year coupon codes and sale offers.
+- [Super Saturday Offers](https://www.couponscrew.com/festival-offers/super-saturday-offers): Verified Super Saturday coupon codes and sale offers.
+- [Thanksgiving Offers](https://www.couponscrew.com/festival-offers/thanksgiving-offers): Verified Thanksgiving coupon codes and sale offers.
+- [Veterans Day Offers](https://www.couponscrew.com/festival-offers/veterans-day-offers): Verified Veterans Day coupon codes and sale offers.
 - [Deals of the Day](https://www.couponscrew.com/deals-of-the-day): Daily-refreshed selection of the best verified coupon codes.
 - [Deals](https://www.couponscrew.com/deals): General deals listing across brands and products.
 - [Offers](https://www.couponscrew.com/offers): Brand offers and promotions, filterable by category.

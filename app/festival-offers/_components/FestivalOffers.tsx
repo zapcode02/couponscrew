@@ -377,6 +377,25 @@ function getFestivalStatus(dateStr: string | null): FestivalStatus | null {
   return diffDays > 1 ? 'upcoming' : 'ended';
 }
 
+const getFestivalHref = (id: string) => {
+  switch (id) {
+    case 'amazon-great-indian-sale': return '/festival-offers/amazongreatindiansale-offers';
+    case 'black-friday': return '/festival-offers/black-friday-offers';
+    case 'childrens-day': return '/festival-offers/childrens-day-offers';
+    case 'christmas': return '/festival-offers/christmas-offers';
+    case 'cyber-monday': return '/festival-offers/cyber-monday-offers';
+    case 'diwali': return '/festival-offers/diwali-offers';
+    case 'dussehra': return '/festival-offers/dusshera-offers';
+    case 'flipkart-big-billion-day-sale': return '/festival-offers/flipkartbigbilliondaysale-offers';
+    case 'halloween': return '/festival-offers/halloween-offers';
+    case 'new-year': return '/festival-offers/new-year-offers';
+    case 'super-saturday': return '/festival-offers/super-saturday-offers';
+    case 'thanksgiving': return '/festival-offers/thanksgiving-offers';
+    case 'veterans-day': return '/festival-offers/veterans-day-offers';
+    default: return '#';
+  }
+};
+
 export default function FestivalOffers() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [sidebarEmail, setSidebarEmail] = useState('');
@@ -638,9 +657,9 @@ export default function FestivalOffers() {
 
                       {/* View Button */}
                       <Link
-                        href={item.id === 'diwali' || item.title.toLowerCase().includes('diwali') ? '/festival-offers/diwali-offers' : '#'}
+                        href={getFestivalHref(item.id)}
                         onClick={(e) => {
-                          if (item.id !== 'diwali' && !item.title.toLowerCase().includes('diwali')) {
+                          if (getFestivalHref(item.id) === '#') {
                             e.preventDefault();
                             alert(`Showing exclusive offers for ${item.title}`);
                           }

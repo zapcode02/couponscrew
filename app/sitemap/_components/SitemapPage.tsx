@@ -120,6 +120,22 @@ const PRODUCTS: SiteLink[] = [
   { label: 'PulGos 15-in-1 Pushup Board', href: '/products/pulgos-15-in-1-pushup-board' },
 ];
 
+const FESTIVAL_OFFERS_LINKS: SiteLink[] = [
+  { label: 'Amazon Great Indian Sale Offers', href: '/festival-offers/amazongreatindiansale-offers' },
+  { label: 'Black Friday Offers', href: '/festival-offers/black-friday-offers' },
+  { label: "Children's Day Offers", href: '/festival-offers/childrens-day-offers' },
+  { label: 'Christmas Offers', href: '/festival-offers/christmas-offers' },
+  { label: 'Cyber Monday Offers', href: '/festival-offers/cyber-monday-offers' },
+  { label: 'Diwali Offers', href: '/festival-offers/diwali-offers' },
+  { label: 'Dussehra Offers', href: '/festival-offers/dusshera-offers' },
+  { label: 'Flipkart Big Billion Day Sale Offers', href: '/festival-offers/flipkartbigbilliondaysale-offers' },
+  { label: 'Halloween Offers', href: '/festival-offers/halloween-offers' },
+  { label: 'New Year Offers', href: '/festival-offers/new-year-offers' },
+  { label: 'Super Saturday Offers', href: '/festival-offers/super-saturday-offers' },
+  { label: 'Thanksgiving Offers', href: '/festival-offers/thanksgiving-offers' },
+  { label: 'Veterans Day Offers', href: '/festival-offers/veterans-day-offers' },
+];
+
 const BLOG_POSTS: SiteLink[] = [
   { label: 'How to Save Money Shopping Online in India', href: '/blog/how-to-save-money-shopping-online-india' },
   { label: 'Best Raksha Bandhan Gift Ideas', href: '/blog/raksha-bandhan-gift-ideas' },
@@ -143,6 +159,7 @@ const SECTIONS: SiteSection[] = [
   { title: 'Store Categories', icon: Grid3x3, links: STORE_CATEGORIES },
   { title: 'Product Categories', icon: Grid3x3, links: PRODUCT_CATEGORIES },
   { title: 'Products', icon: Package, links: PRODUCTS },
+  { title: 'Festival Offers', icon: Tag, links: FESTIVAL_OFFERS_LINKS },
   { title: 'Blog Posts', icon: FileText, links: BLOG_POSTS },
   { title: 'Company & Legal', icon: Info, links: COMPANY_LEGAL },
 ];
