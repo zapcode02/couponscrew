@@ -195,6 +195,227 @@ export default function HalloweenOffers() {
                     </div>
                   </div>
                 </div>
+
+                {/* Flipkart Offer Card */}
+                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
+                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">80%</span>
+                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON ELECTRONICS</span>
+                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">MOBILES</span>
+                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                      </div>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
+                        Flipkart Big Billion Days â€“ Up to 80% OFF on Smartphones
+                      </h3>
+                      <p className="text-xs text-gray-500 mt-1">
+                        Best deals on iPhones, Samsung, OnePlus, Poco & more this Halloween season.
+                      </p>
+                      <div className="mt-3">
+                        <button
+                          onClick={() => { document.getElementById('hw-fk-details-1')?.classList.toggle('hidden'); }}
+                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
+                        >
+                          <span>View Details</span>
+                          <ChevronDown className="w-4 h-4 text-indigo-600" />
+                        </button>
+                        <div id="hw-fk-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid across top smartphone brands.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                    <div className="flex flex-col items-center gap-1">
+                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
+                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
+                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
+                      </Link>
+                    </div>
+                    <div className="w-full space-y-2">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
+                      </a>
+                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
+                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Myntra Offer Card */}
+                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
+                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">90%</span>
+                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON FASHION</span>
+                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">FASHION</span>
+                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                      </div>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
+                        Myntra Halloween Sale â€“ Up to 90% OFF on Costumes & Fashion
+                      </h3>
+                      <p className="text-xs text-gray-500 mt-1">
+                        Shop spooky Halloween costumes, fashion & accessories at unbeatable prices.
+                      </p>
+                      <div className="mt-3">
+                        <button
+                          onClick={() => { document.getElementById('hw-myn-details-1')?.classList.toggle('hidden'); }}
+                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
+                        >
+                          <span>View Details</span>
+                          <ChevronDown className="w-4 h-4 text-indigo-600" />
+                        </button>
+                        <div id="hw-myn-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected collections only.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                    <div className="flex flex-col items-center gap-1">
+                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
+                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
+                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
+                      </Link>
+                    </div>
+                    <div className="w-full space-y-2">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
+                      </a>
+                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
+                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                {/* Nykaa Offer Card */}
+                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
+                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
+                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON BEAUTY</span>
+                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
+                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                      </div>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Halloween Sale – Up to 50% OFF on Makeup & Skincare</h3>
+                      <p className="text-xs text-gray-500 mt-1">Get spooky with Halloween makeup deals! Shop face paints, bold lipsticks & more.</p>
+                      <div className="mt-3">
+                        <button onClick={() => { document.getElementById('hw-nyk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
+                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
+                        </button>
+                        <div id="hw-nyk-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected Nykaa beauty brands.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                    <div className="flex flex-col items-center gap-1">
+                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/nykaa-logo_et8g79.webp" alt="Nykaa" className="h-9 w-auto object-contain" />
+                      <Link href="/stores/nykaa-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All Nykaa Offers <ExternalLink className="w-3 h-3" /></Link>
+                    </div>
+                    <div className="w-full space-y-2">
+                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <Link href="/stores/nykaa-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
+                    </div>
+                  </div>
+                </div>
+                {/* H&M Offer Card */}
+                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
+                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">40%</span>
+                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON FASHION</span>
+                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-[10px] font-bold text-gray-700 bg-gray-100 px-2 py-0.5 rounded uppercase">FASHION</span>
+                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                      </div>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">H&M Halloween – Up to 40% OFF on Costumes & Fashion</h3>
+                      <p className="text-xs text-gray-500 mt-1">Find your perfect Halloween costume! Shop spooky-season fashion at H&M.</p>
+                      <div className="mt-3">
+                        <button onClick={() => { document.getElementById('hw-hm-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
+                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
+                        </button>
+                        <div id="hw-hm-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected H&M clothing items.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                    <div className="flex flex-col items-center gap-1">
+                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1788611917/handm-logo_vtzhhn.webp" alt="H&M" className="h-9 w-auto object-contain" />
+                      <Link href="/stores/hm-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All H&M Offers <ExternalLink className="w-3 h-3" /></Link>
+                    </div>
+                    <div className="w-full space-y-2">
+                      <a href="https://www2.hm.com/en_in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <Link href="/stores/hm-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
+                    </div>
+                  </div>
+                </div>
+                {/* Zomato Offer Card */}
+                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
+                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
+                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON FOOD</span>
+                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded uppercase">FOOD</span>
+                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                      </div>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Zomato Halloween Offers – Flat 50% OFF on Party Food</h3>
+                      <p className="text-xs text-gray-500 mt-1">Order spooky Halloween party food! Get flat discounts on party platters & more.</p>
+                      <div className="mt-3">
+                        <button onClick={() => { document.getElementById('hw-zmt-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
+                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
+                        </button>
+                        <div id="hw-zmt-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected restaurants and orders.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                    <div className="flex flex-col items-center gap-1">
+                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787537869/zamato-logo_mlqure.webp" alt="Zomato" className="h-9 w-auto object-contain" />
+                      <Link href="/stores/zomato-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All Zomato Offers <ExternalLink className="w-3 h-3" /></Link>
+                    </div>
+                    <div className="w-full space-y-2">
+                      <a href="https://www.zomato.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <Link href="/stores/zomato-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
+                    </div>
+                  </div>
+                </div>
+
                 {/* ADD MORE OFFER CARDS HERE */}
 
               </div>

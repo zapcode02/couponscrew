@@ -1,10 +1,12 @@
 // Content-Security-Policy — Report-Only for now (see FIX-ISSUES.md Phase 4).
 // Scoped from an actual audit of every external origin loaded by this codebase:
 //   scripts: www.googletagmanager.com (GA4 gtag.js), translate.google.com (Google
-//            Translate widget), www.google.com + www.gstatic.com (reCAPTCHA v2)
+//            Translate widget), www.google.com + www.gstatic.com (reCAPTCHA v2),
+//            www.clarity.ms (Microsoft Clarity session recording/heatmaps)
 //   frames:  www.google.com (reCAPTCHA widget), translate.google.com (Translate banner)
 //   images:  res.cloudinary.com, images.unsplash.com (the only two next/image remotePatterns)
-//   connect: www.google-analytics.com (GA4 beacon calls made internally by gtag.js)
+//   connect: www.google-analytics.com (GA4 beacon calls made internally by gtag.js),
+//            www.clarity.ms + c.clarity.ms (Clarity's own beacon/data endpoints)
 // No Vercel Analytics/Speed Insights package is installed, so no vercel.live/
 // vitals.vercel-insights.com entries are included.
 // Violation reporting endpoint — added so real data starts collecting while
@@ -17,12 +19,12 @@ const CSP_REPORT_GROUP = 'csp-endpoint'
 
 const cspReportOnly = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com translate.google.com www.google.com www.gstatic.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com translate.google.com www.google.com www.gstatic.com www.clarity.ms",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: res.cloudinary.com images.unsplash.com www.google.com www.gstatic.com",
   "font-src 'self' data:",
   "frame-src 'self' www.google.com translate.google.com",
-  "connect-src 'self' www.google-analytics.com www.googletagmanager.com",
+  "connect-src 'self' www.google-analytics.com www.googletagmanager.com www.clarity.ms c.clarity.ms",
   "object-src 'none'",
   "base-uri 'self'",
   `report-uri ${CSP_REPORT_ENDPOINT}`,

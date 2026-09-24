@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
+import { FLIPKART_COUPONS } from '../../../stores/flipkart-coupon-code/_components/flipkartCoupons';
 import {
   LayoutGrid,
   Store, AlertCircle, ShieldCheck, Plus, HelpCircle, CheckCircle2, TrendingUp,
@@ -260,21 +261,21 @@ export default function FlipkartBigBillionDays() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img
-                        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"
-                        alt="Amazon"
+                        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp"
+                        alt="Flipkart"
                         className="h-9 w-auto object-contain"
                       />
                       <Link
-                        href="/stores/amazon-coupon-code"
+                        href="/stores/flipkart-coupon-code"
                         className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1"
                       >
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
+                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
                       </Link>
                     </div>
 
                     <div className="w-full space-y-2">
                       <a
-                        href="https://www.amazon.in"
+                        href="https://www.flipkart.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
@@ -282,7 +283,7 @@ export default function FlipkartBigBillionDays() {
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link
-                        href="/stores/amazon-coupon-code"
+                        href="/stores/flipkart-coupon-code"
                         className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
                       >
                         <span>Visit Store</span>
@@ -292,6 +293,69 @@ export default function FlipkartBigBillionDays() {
                   </div>
 
                 </div>
+
+                {FLIPKART_COUPONS.map((coupon, index) => (
+                  <div key={coupon.id} className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                    <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                      <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">{coupon.badgeType || 'UP TO'}</span>
+                      <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">{coupon.badge ? coupon.badge.replace('UP TO ', '').replace('FLAT ', '').replace(' OFF', '') : ''}</span>
+                      <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                      <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">{coupon.type}</span>
+                      <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+                    <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                      <div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">{coupon.type}</span>
+                          <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">{coupon.verified || 'VERIFIED'}</span>
+                        </div>
+                        <h3 className="font-extrabold text-lg text-gray-900 leading-snug">{coupon.title}</h3>
+                        <p className="text-xs text-gray-500 mt-1">{coupon.description}</p>
+                        {coupon.bullets && coupon.bullets.length > 0 && (
+                          <div className="mt-3">
+                            <button onClick={() => {
+                              const detailsEl = document.getElementById(`offer-details-content-${coupon.id}`);
+                              detailsEl?.classList.toggle('hidden');
+                            }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
+                              <span>View Details</span>
+                              <ChevronDown className="w-4 h-4 text-indigo-600" />
+                            </button>
+                            <div id={`offer-details-content-${coupon.id}`} className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600 hidden">
+                              {coupon.bullets.map((bullet, i) => (
+                                <div key={i} className="flex items-start gap-2">
+                                  <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-purple-600 shrink-0"></span>
+                                  <span>{bullet}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                      <div className="flex flex-col items-center gap-1">
+                        <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
+                        <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
+                          View All Flipkart Offers <ExternalLink className="w-3 h-3" />
+                        </Link>
+                      </div>
+                      <div className="w-full space-y-2">
+                        {coupon.code ? (
+                          <div className="w-full bg-slate-50 border border-dashed border-slate-300 text-center py-2.5 rounded-xl font-bold text-slate-800 text-sm">
+                            {coupon.code}
+                          </div>
+                        ) : null}
+                        <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                          Get Deal <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
+                        <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center">
+                          <span>Visit Store</span>
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
               </div>
             </section>
