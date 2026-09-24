@@ -359,8 +359,8 @@ export default function BlackFridayOffers() {
                         <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Black Friday – Up to 50% OFF on Beauty</h3>
-                      <p className="text-xs text-gray-500 mt-1">The biggest beauty sale of the year — makeup, skincare, haircare at record-low prices.</p>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Black Friday â€” Up to 50% OFF on Beauty</h3>
+                      <p className="text-xs text-gray-500 mt-1">The biggest beauty sale of the year â€” makeup, skincare, haircare at record-low prices.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('bf-nyk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
                           <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
@@ -397,7 +397,7 @@ export default function BlackFridayOffers() {
                         <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">SPORTS</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nike Black Friday Sale – Up to 50% OFF on Sneakers & Apparel</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nike Black Friday Sale â€” Up to 50% OFF on Sneakers & Apparel</h3>
                       <p className="text-xs text-gray-500 mt-1">Best Black Friday deal for sports lovers! Shop Nike shoes, tees, jackets & more.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('bf-nike-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -435,7 +435,7 @@ export default function BlackFridayOffers() {
                         <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">SPORTS</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Adidas Black Friday – Up to 50% OFF on Sportswear</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Adidas Black Friday â€” Up to 50% OFF on Sportswear</h3>
                       <p className="text-xs text-gray-500 mt-1">Grab epic Black Friday deals on Adidas shoes, tracksuits, bags & accessories.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('bf-adidas-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -473,7 +473,7 @@ export default function BlackFridayOffers() {
                         <span className="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded uppercase">SPORTS</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Puma Black Friday – Up to 50% OFF on Shoes & Clothing</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Puma Black Friday â€” Up to 50% OFF on Shoes & Clothing</h3>
                       <p className="text-xs text-gray-500 mt-1">Score big this Black Friday with Puma's deepest discounts on footwear and activewear.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('bf-puma-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -511,7 +511,7 @@ export default function BlackFridayOffers() {
                         <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">EYEWEAR</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Lenskart Black Friday – Up to 50% OFF on Eyewear</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Lenskart Black Friday â€” Up to 50% OFF on Eyewear</h3>
                       <p className="text-xs text-gray-500 mt-1">Black Friday eye-deals! Buy 1 Get 1 Free on premium glasses, sunglasses & lenses.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('bf-lk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -892,7 +892,7 @@ export default function BlackFridayOffers() {
                 <div className="bg-[#F0EEFF] border border-[#5B4FBE]/20 rounded-2xl p-4 mt-4 flex items-start gap-3">
                   <Sparkles className="w-5 h-5 text-[#5B4FBE] shrink-0 mt-0.5" />
                   <p className="text-xs font-bold text-[#5B4FBE] leading-relaxed">
-                    Check CouponsCrew on November 27 to stack verified coupon codes on top of Black Friday discounts. ðŸ–¤
+                    Check CouponsCrew on November 27 to stack verified coupon codes on top of Black Friday discounts. 
                   </p>
                 </div>
               </div>

@@ -359,7 +359,7 @@ export default function ChristmasOffers() {
                         <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">TRAVEL</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Booking.com Christmas Sale – Flat 40% OFF on Hotels & Flights</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Booking.com Christmas Sale â€” Flat 40% OFF on Hotels & Flights</h3>
                       <p className="text-xs text-gray-500 mt-1">Book your Christmas getaway! Save on hotels, flights & holiday packages worldwide.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('xmas-bk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -397,7 +397,7 @@ export default function ChristmasOffers() {
                         <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Christmas Sale – Up to 50% OFF on Beauty & Gifting</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Christmas Sale â€” Up to 50% OFF on Beauty & Gifting</h3>
                       <p className="text-xs text-gray-500 mt-1">Perfect Christmas gifts! Shop makeup, skincare, perfumes & gift sets at amazing prices.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('xmas-nyk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -435,7 +435,7 @@ export default function ChristmasOffers() {
                         <span className="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded uppercase">FURNITURE</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Pepperfry Christmas Sale – Up to 70% OFF on Home Decor</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Pepperfry Christmas Sale â€” Up to 70% OFF on Home Decor</h3>
                       <p className="text-xs text-gray-500 mt-1">Deck the halls! Shop Christmas decor, furniture & gifting items for a cozy holiday season.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('xmas-pf-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -473,7 +473,7 @@ export default function ChristmasOffers() {
                         <span className="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">EVENTS</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">BookMyShow Christmas Offers – Up to 20% OFF on Movies & Events</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">BookMyShow Christmas Offers â€” Up to 20% OFF on Movies & Events</h3>
                       <p className="text-xs text-gray-500 mt-1">Celebrate Christmas! Get cashback and discounts on movies, plays, concerts & more.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('xmas-bms-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">

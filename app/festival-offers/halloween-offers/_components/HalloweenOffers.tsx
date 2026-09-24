@@ -316,7 +316,7 @@ export default function HalloweenOffers() {
                         <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Halloween Sale – Up to 50% OFF on Makeup & Skincare</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Halloween Sale â€” Up to 50% OFF on Makeup & Skincare</h3>
                       <p className="text-xs text-gray-500 mt-1">Get spooky with Halloween makeup deals! Shop face paints, bold lipsticks & more.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('hw-nyk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -354,7 +354,7 @@ export default function HalloweenOffers() {
                         <span className="text-[10px] font-bold text-gray-700 bg-gray-100 px-2 py-0.5 rounded uppercase">FASHION</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">H&M Halloween – Up to 40% OFF on Costumes & Fashion</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">H&M Halloween â€” Up to 40% OFF on Costumes & Fashion</h3>
                       <p className="text-xs text-gray-500 mt-1">Find your perfect Halloween costume! Shop spooky-season fashion at H&M.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('hw-hm-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -392,7 +392,7 @@ export default function HalloweenOffers() {
                         <span className="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded uppercase">FOOD</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Zomato Halloween Offers – Flat 50% OFF on Party Food</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Zomato Halloween Offers â€” Flat 50% OFF on Party Food</h3>
                       <p className="text-xs text-gray-500 mt-1">Order spooky Halloween party food! Get flat discounts on party platters & more.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('hw-zmt-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">

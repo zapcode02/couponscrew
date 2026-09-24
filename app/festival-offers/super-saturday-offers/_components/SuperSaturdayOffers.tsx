@@ -318,7 +318,7 @@ export default function SuperSaturdayOffers() {
                         <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Super Saturday – Up to 50% OFF on Beauty</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Super Saturday â€” Up to 50% OFF on Beauty</h3>
                       <p className="text-xs text-gray-500 mt-1">Shop makeup, skincare & haircare at special Super Saturday prices before the holiday rush.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('ss-nyk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -356,7 +356,7 @@ export default function SuperSaturdayOffers() {
                         <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">EYEWEAR</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Lenskart Super Saturday – Up to 50% OFF on Eyewear</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Lenskart Super Saturday â€” Up to 50% OFF on Eyewear</h3>
                       <p className="text-xs text-gray-500 mt-1">Last-minute holiday eye deals! Buy 1 Get 1 Free on glasses, sunglasses & contacts.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('ss-lk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -394,7 +394,7 @@ export default function SuperSaturdayOffers() {
                         <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">SPORTS</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nike Super Saturday Sale – Up to 50% OFF on Sneakers</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nike Super Saturday Sale â€” Up to 50% OFF on Sneakers</h3>
                       <p className="text-xs text-gray-500 mt-1">Score holiday deals on Nike shoes, apparel & sports gear before Sunday.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('ss-nike-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
@@ -432,7 +432,7 @@ export default function SuperSaturdayOffers() {
                         <span className="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded uppercase">SPORTS</span>
                         <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Puma Super Saturday – Up to 50% OFF on Shoes & Apparel</h3>
+                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Puma Super Saturday â€” Up to 50% OFF on Shoes & Apparel</h3>
                       <p className="text-xs text-gray-500 mt-1">Super Saturday sports deals! Shop Puma footwear and activewear at holiday low prices.</p>
                       <div className="mt-3">
                         <button onClick={() => { document.getElementById('ss-puma-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
