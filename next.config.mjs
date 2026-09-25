@@ -87,6 +87,7 @@ const nextConfig = {
     return [
       { source: '/faq', destination: '/faqs', permanent: true },
       { source: '/categories', destination: '/stores/categories', permanent: true },
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
     ]
   },
 }
