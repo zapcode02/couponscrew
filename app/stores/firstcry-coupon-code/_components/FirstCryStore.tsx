@@ -838,7 +838,7 @@ export default function FirstCryStore() {
       </table>
     </div>
     <p className="mt-4">
-      FirstCry's depth in baby-specific categories — particularly firstcry diapers, firstcry babyhug products, and first cry dresses — gives it an edge over general marketplaces for parents doing consolidated baby shopping. Amazon is competitive on pricing for repeat-purchase items like pampers, but lacks the specialty curation.
+      FirstCry's depth in baby-specific categories — particularly firstcry diapers, firstcry babyhug products, and first cry dresses — gives it an edge over general marketplaces for parents doing consolidated baby shopping. <Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link> is competitive on pricing for repeat-purchase items like pampers, but lacks the specialty curation.
     </p>
   </div>
 </div>

@@ -960,7 +960,7 @@ export default function SonyLiveStore() {
             </p>
 
             <p>
-              <strong className="text-[#2C2C40]">Zee5: </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/zee5-coupon-code" className="text-[#5B4FBE] hover:underline">Zee5</Link>: </strong>
               Best regional language library across 12+ languages. Weaker on sports; stronger than SonyLIV for non-Hindi Indian language content. Annual plan is price-equivalent to SonyLIV Premium.
             </p>
 

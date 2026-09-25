@@ -835,14 +835,15 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                 If Magicpin covers your local spending, these platforms are worth checking for additional online deals:
               </p>
               {[
-                { name: "Zomato", desc: "restaurant delivery with Gold membership deals" },
-                { name: "Swiggy", desc: "food and quick-commerce delivery with seasonal promo codes" },
-                { name: "CashKaro", desc: "cashback platform for online retail and travel" },
-                { name: "Nearbuy", desc: "experiences and wellness deals in major cities" },
-                { name: "Little App", desc: "dining and entertainment deals for partner outlets" }
+                { name: "Zomato", href: "/stores/zomato-coupon-code", desc: "restaurant delivery with Gold membership deals" },
+                { name: "Swiggy", href: "/stores/swiggy-coupon-code", desc: "food and quick-commerce delivery with seasonal promo codes" },
+                { name: "CashKaro", href: null, desc: "cashback platform for online retail and travel" },
+                { name: "Nearbuy", href: null, desc: "experiences and wellness deals in major cities" },
+                { name: "Little App", href: null, desc: "dining and entertainment deals for partner outlets" }
               ].map((item, idx) => (
                 <p key={idx}>
-                  <strong className="text-slate-900">{item.name} — </strong>
+                  <strong className="text-slate-900">
+                    {item.href ? <Link href={item.href} className="text-[#5B4FBE] hover:underline">{item.name}</Link> : item.name} — </strong>
                   {item.desc}
                 </p>
               ))}

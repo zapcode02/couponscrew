@@ -1047,7 +1047,7 @@ export default function PwStore() {
               Premium animated video-based learning for school and entrance exam prep
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Testbook — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/testbook-coupon-code" className="text-[#5B4FBE] hover:underline">Testbook</Link> — </strong>
               India's strongest platform for government competitive exam mock tests and coaching
             </p>
             <p>

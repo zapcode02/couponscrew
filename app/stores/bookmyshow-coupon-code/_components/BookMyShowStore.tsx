@@ -1085,7 +1085,7 @@ Today, BookMyShow is far more than a place to book my movie tickets. The platfor
               Direct booking for Cinepolis screens with VIP seat options
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Zomato — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/zomato-coupon-code" className="text-[#5B4FBE] hover:underline">Zomato</Link> — </strong>
               For dining deals near your cinema; use a Zomato coupon code for a pre-show dinner discount
             </p>
             <p>

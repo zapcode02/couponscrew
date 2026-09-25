@@ -1064,11 +1064,11 @@ export default function OlaStore() {
               If you're comparing ride-hailing and mobility options, these platforms are worth considering:
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Uber — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/uber-coupon-code" className="text-[#5B4FBE] hover:underline">Uber</Link> — </strong>
               Premium cab service with strong metro and airport coverage; check CouponsCrew for active Uber promo codes
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Rapido — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/rapido-coupon-code" className="text-[#5B4FBE] hover:underline">Rapido</Link> — </strong>
               India's largest bike taxi platform for short urban commutes at the lowest fares; active Rapido coupon codes on CouponsCrew
             </p>
             <p>

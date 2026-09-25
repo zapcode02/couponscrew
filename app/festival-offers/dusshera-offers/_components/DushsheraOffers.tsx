@@ -220,12 +220,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -275,12 +272,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -330,12 +324,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -375,10 +366,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/nykaa-logo_et8g79.webp" alt="Nykaa" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/nykaa-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All Nykaa Offers <ExternalLink className="w-3 h-3" /></Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
                       <Link href="/stores/nykaa-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
                     </div>
                   </div>
@@ -414,10 +404,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787277414/lenskart-logo_oyfbdu.webp" alt="Lenskart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/lenskart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All Lenskart Offers <ExternalLink className="w-3 h-3" /></Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.lenskart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <a href="https://www.lenskart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
                       <Link href="/stores/lenskart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
                     </div>
                   </div>
@@ -453,10 +442,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787277415/joi-mart-logo_imkftb.webp" alt="JioMart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/jiomart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All JioMart Offers <ExternalLink className="w-3 h-3" /></Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.jiomart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <a href="https://www.jiomart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
                       <Link href="/stores/jiomart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
                     </div>
                   </div>
@@ -492,10 +480,9 @@ export default function DushsheraOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg" alt="Pepperfry" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/pepperfry-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">View All Pepperfry Offers <ExternalLink className="w-3 h-3" /></Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.pepperfry.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
+                      <a href="https://www.pepperfry.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
                       <Link href="/stores/pepperfry-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
                     </div>
                   </div>
@@ -743,7 +730,7 @@ export default function DushsheraOffers() {
 
                 {/* Amazon Great Indian Festival Sale or Dussehra Sale */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]">Amazon Great Indian Festival Sale or Dussehra Sale</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link> Great Indian Festival Sale or Dussehra Sale</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Amazon India's Great Indian Festival is the platform's biggest annual sale, and it almost always runs during the Navratri–Dussehra–Diwali window. In 2026, with Dussehra on October 2, the Great Indian Festival is expected to start in late September or early October — which means Vijayadashami falls right in the middle of the sale.
                   </p>
@@ -784,7 +771,7 @@ export default function DushsheraOffers() {
 
                 {/* Flipkart Big Billion Day Sale or Dussehra Sale 2026 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]">Flipkart Big Billion Day Sale or Dussehra Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> Big Billion Day Sale or Dussehra Sale 2026</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Flipkart's Big Billion Days is the company's flagship annual sale — and just like Amazon's GIF, it is timed to land in the Navratri–Dussehra window every year. In 2026, the Big Billion Days sale is expected to run for five to ten days starting in late September, making it a direct Dussehra sale in practice.
                   </p>
@@ -799,7 +786,7 @@ export default function DushsheraOffers() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Fashion (via Myntra):</strong> Flipkart owns Myntra, and the festive fashion sale runs simultaneously. Ethnic wear, sarees, and kurtas — relevant for the dussehra festival — are heavily discounted. Brands like W, Biba, and Global Desi have historically had 50–60% off during this period.</span>
+                      <span><strong>Fashion (via <Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link>):</strong> Flipkart owns Myntra, and the festive fashion sale runs simultaneously. Ethnic wear, sarees, and kurtas — relevant for the dussehra festival — are heavily discounted. Brands like W, Biba, and Global Desi have historically had 50–60% off during this period.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>

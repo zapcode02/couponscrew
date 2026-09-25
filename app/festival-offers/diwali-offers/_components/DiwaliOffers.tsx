@@ -472,19 +472,13 @@ export default function DiwaliOffers() {
                         alt="Amazon"
                         className="h-9 w-auto object-contain"
                       />
-                      <Link
-                        href="/stores/amazon-coupon-code"
-                        className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1"
-                      >
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
 
                     <div className="w-full space-y-2">
                       <a
                         href="https://www.amazon.in"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow sponsored"
                         className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
                       >
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
@@ -527,12 +521,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -568,12 +559,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -609,12 +597,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -650,12 +635,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -691,12 +673,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/nykaa-logo_et8g79.webp" alt="Nykaa" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/nykaa-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Nykaa Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/nykaa-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -732,12 +711,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787537869/swiggy-logo_n32rt9.webp" alt="Swiggy" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/swiggy-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Swiggy Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.swiggy.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.swiggy.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/swiggy-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -773,12 +749,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787796580/blinkit-logo_f9retd.webp" alt="Blinkit" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/blinkit-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Blinkit Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://blinkit.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://blinkit.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/blinkit-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -814,12 +787,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -855,12 +825,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -896,12 +863,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg" alt="Pepperfry" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/pepperfry-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Pepperfry Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.pepperfry.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.pepperfry.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/pepperfry-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -937,12 +901,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787624557/zaptio-logo_zsybmq.webp" alt="Zepto" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/zepto-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Zepto Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.zeptonow.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.zeptonow.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/zepto-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -978,12 +939,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1019,12 +977,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1060,12 +1015,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1101,12 +1053,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1142,12 +1091,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1183,12 +1129,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1224,12 +1167,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1265,12 +1205,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1306,12 +1243,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1347,12 +1281,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1388,12 +1319,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1429,12 +1357,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1470,12 +1395,9 @@ export default function DiwaliOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
@@ -1677,7 +1599,7 @@ export default function DiwaliOffers() {
 
                 {/* Flipkart Section */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-lg font-bold text-[#1A1A2E]">Flipkart — The Big Billion Days Meets Diwali</h3>
+                  <h3 className="text-lg font-bold text-[#1A1A2E]"><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> — The Big Billion Days Meets Diwali</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Flipkart runs the Big Billion Days sale in October, which overlaps directly with the diwali celebration window. The diwali offer Flipkart runs are some of the steepest on electronics, fashion, and home goods.
                   </p>
@@ -1707,7 +1629,7 @@ export default function DiwaliOffers() {
 
                 {/* Amazon Section */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-lg font-bold text-[#1A1A2E]">Amazon — Great Indian Festival (Diwali Edition)</h3>
+                  <h3 className="text-lg font-bold text-[#1A1A2E]"><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link> — Great Indian Festival (Diwali Edition)</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Amazon India runs the Great Indian Festival sale in the same October window. The diwali offer Amazon covers everything from electronics and fashion to Amazon Fresh grocery deals and home decor.
                   </p>
@@ -1741,11 +1663,11 @@ export default function DiwaliOffers() {
                   <ul className="mt-3 space-y-2 text-xs text-[#4A4A6A]">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Myntra</strong> — Diwali fashion sale with brands like Fabindia, W, Biba, and international labels. Good for ethnic wear, kurtis, and lehengas for the festive occasion.</span>
+                      <span><strong><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link></strong> — Diwali fashion sale with brands like Fabindia, W, Biba, and international labels. Good for ethnic wear, kurtis, and lehengas for the festive occasion.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Nykaa</strong> — Beauty and skincare diwali gift hampers are a Nykaa specialty. Sets from brands like Forest Essentials, Kama Ayurveda, and international beauty brands work well as gifts.</span>
+                      <span><strong><Link href="/stores/nykaa-coupon-code" className="text-[#5B4FBE] hover:underline">Nykaa</Link></strong> — Beauty and skincare diwali gift hampers are a Nykaa specialty. Sets from brands like Forest Essentials, Kama Ayurveda, and international beauty brands work well as gifts.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
@@ -1753,7 +1675,7 @@ export default function DiwaliOffers() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Pepperfry and IKEA</strong> — For diwali decorations, home decor, and furniture, these are the best online destinations. Pepperfry specifically runs "Diwali Home Makeover" sales with decor discounts.</span>
+                      <span><strong><Link href="/stores/pepperfry-coupon-code" className="text-[#5B4FBE] hover:underline">Pepperfry</Link> and IKEA</strong> — For diwali decorations, home decor, and furniture, these are the best online destinations. Pepperfry specifically runs "Diwali Home Makeover" sales with decor discounts.</span>
                     </li>
                   </ul>
                 </div>
@@ -1767,11 +1689,11 @@ export default function DiwaliOffers() {
                   <ul className="mt-3 space-y-2 text-xs text-[#4A4A6A]">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Amazon</strong> — has curated hampers from ₹499 to ₹5,000+ with dry fruits, sweets, chocolates, and wellness products bundled together</span>
+                      <span><strong><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link></strong> — has curated hampers from ₹499 to ₹5,000+ with dry fruits, sweets, chocolates, and wellness products bundled together</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Nykaa</strong> — beauty and skincare hampers that work well for gifting to women</span>
+                      <span><strong><Link href="/stores/nykaa-coupon-code" className="text-[#5B4FBE] hover:underline">Nykaa</Link></strong> — beauty and skincare hampers that work well for gifting to women</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>

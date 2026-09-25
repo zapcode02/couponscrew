@@ -956,19 +956,19 @@ export default function PumaStore() {
             </h3>
 
             <p>
-              <strong className="text-[#2C2C40]">Nike — </strong> Premium performance and lifestyle sportswear; strong running and basketball range
+              <strong className="text-[#2C2C40]"><Link href="/stores/nike-coupon-code" className="text-[#5B4FBE] hover:underline">Nike</Link> — </strong> Premium performance and lifestyle sportswear; strong running and basketball range
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Adidas — </strong> Direct Puma competitor; strong in running, football, and lifestyle with frequent sale events
+              <strong className="text-[#2C2C40]"><Link href="/stores/adidas-coupon-code" className="text-[#5B4FBE] hover:underline">Adidas</Link> — </strong> Direct Puma competitor; strong in running, football, and lifestyle with frequent sale events
             </p>
             <p>
               <strong className="text-[#2C2C40]">Reebok — </strong> Fitness and training-focused footwear and apparel at competitive prices
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Myntra — </strong> Stocks Puma alongside hundreds of other fashion and sportswear brands; frequent additional discounts via Myntra codes
+              <strong className="text-[#2C2C40]"><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link> — </strong> Stocks Puma alongside hundreds of other fashion and sportswear brands; frequent additional discounts via Myntra codes
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Flipkart — </strong> Puma products available with bank card offers and Big Billion Days discounts
+              <strong className="text-[#2C2C40]"><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> — </strong> Puma products available with bank card offers and Big Billion Days discounts
             </p>
 
             {/* Section: Closing */}

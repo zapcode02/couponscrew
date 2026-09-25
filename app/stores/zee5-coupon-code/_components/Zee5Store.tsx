@@ -1099,15 +1099,16 @@ export default function Zee5Store() {
                 Similar OTT Platforms to Explore
               </h3>
               {[
-                { name: "JioStar / Disney+ Hotstar", desc: "dominant for cricket and major network content; high quality streaming support" },
-                { name: "SonyLIV", desc: "strongest on international sports; UEFA, Wimbledon, WWE, along with original series" },
-                { name: "Amazon Prime Video", desc: "wide Hollywood and Bollywood catalogue; fast original releases" },
-                { name: "Netflix India", desc: "premium global originals and growing Indian content slate" },
-                { name: "Sun NXT", desc: "strong regional OTT for Tamil, Telugu, Kannada, and Malayalam content" },
-                { name: "Aha", desc: "dedicated Telugu and Tamil original content focus; competitive regional pricing" }
+                { name: "JioStar / Disney+ Hotstar", href: null, desc: "dominant for cricket and major network content; high quality streaming support" },
+                { name: "SonyLIV", href: "/stores/sonyliv-coupon-code", desc: "strongest on international sports; UEFA, Wimbledon, WWE, along with original series" },
+                { name: "Amazon Prime Video", href: null, desc: "wide Hollywood and Bollywood catalogue; fast original releases" },
+                { name: "Netflix India", href: null, desc: "premium global originals and growing Indian content slate" },
+                { name: "Sun NXT", href: null, desc: "strong regional OTT for Tamil, Telugu, Kannada, and Malayalam content" },
+                { name: "Aha", href: null, desc: "dedicated Telugu and Tamil original content focus; competitive regional pricing" }
               ].map((item, idx) => (
                 <p key={idx}>
-                  <strong className="text-slate-900">{item.name} — </strong>
+                  <strong className="text-slate-900">
+                    {item.href ? <Link href={item.href} className="text-[#5B4FBE] hover:underline">{item.name}</Link> : item.name} — </strong>
                   {item.desc}
                 </p>
               ))}

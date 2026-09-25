@@ -221,12 +221,9 @@ export default function CyberMondayOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -274,12 +271,9 @@ export default function CyberMondayOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -327,12 +321,9 @@ export default function CyberMondayOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -621,15 +612,15 @@ export default function CyberMondayOffers() {
                   <ul className="mt-3 space-y-2 text-xs text-[#4A4A6A]">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Flipkart:</strong> Extends Black Friday smartphone, laptop, and electronics deals through November 30 with fresh lightning deals on Monday.</span>
+                      <span><strong><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link>:</strong> Extends Black Friday smartphone, laptop, and electronics deals through November 30 with fresh lightning deals on Monday.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Ajio & Myntra:</strong> Continue their cyber week fashion sales, featuring 40–70% off on brands like Nike, Adidas, H&M, and Mango. Weekend restocks often make missed sizes available again by Monday.</span>
+                      <span><strong><Link href="/stores/ajio-coupon-code" className="text-[#5B4FBE] hover:underline">Ajio</Link> & <Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link>:</strong> Continue their cyber week fashion sales, featuring 40–70% off on brands like Nike, Adidas, H&M, and Mango. Weekend restocks often make missed sizes available again by Monday.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0"></span>
-                      <span><strong>Nykaa:</strong> Wraps up its "Pink Friday" sale, clearing final beauty and skincare gift bundles from premium brands like The Ordinary and Charlotte Tilbury.</span>
+                      <span><strong><Link href="/stores/nykaa-coupon-code" className="text-[#5B4FBE] hover:underline">Nykaa</Link>:</strong> Wraps up its "Pink Friday" sale, clearing final beauty and skincare gift bundles from premium brands like The Ordinary and Charlotte Tilbury.</span>
                     </li>
                   </ul>
                 </div>

@@ -732,21 +732,21 @@ export default function PepperfryStore() {
   </p>
 
   <p>
-    <strong className="text-[#2C2C40]">Sofas & Seating — Up to 60% Off: </strong>
+    <strong className="text-[#2C2C40]"><Link href="/stores/categories/furniture" className="text-[#5B4FBE] hover:underline">Sofas & Seating</Link> — Up to 60% Off: </strong>
     The sofa section is Pepperfry's single largest revenue category and also the most popular among buyers. You will find 3-seater fabric sofas, L-shaped sectionals, sofa-cum-beds for studio apartments, recliners, loveseats, and ottomans — all from brands like Wakefit, Godrej Interio, Nilkamal, and dozens of independent furniture manufacturers. Prices range from ₹8,000 for a compact 2-seater to ₹80,000+ for premium leather sectionals.
     <br />
     Pepperfry coupon codes for sofas are among the most frequently searched, and for good reason — a 20% discount on a ₹30,000 sofa saves you ₹6,000 in one transaction. The best time to apply a Pepperfry promo code on sofas is during the Big Home Sale in October–November, when discounts reach up to 75% on the entire sofa collection.
   </p>
 
   <p>
-    <strong className="text-[#2C2C40]">Beds & Bedroom Furniture — Up to 70% Off: </strong>
+    <strong className="text-[#2C2C40]"><Link href="/stores/categories/furniture" className="text-[#5B4FBE] hover:underline">Beds & Bedroom Furniture</Link> — Up to 70% Off: </strong>
     Beds with hydraulic storage drawers are the consistent bestseller in this category — Indian apartments benefit enormously from the under-bed storage, and Pepperfry's engineered wood options deliver this at a fraction of what carpenter-made alternatives cost. Queen and king-size frames in walnut, white, and wenge finishes dominate the catalogue, with prices starting at ₹10,000 and going up to ₹60,000 for premium upholstered headboard options.
     <br />
     A Pepperfry discount code applied on bedroom furniture during sale events can bring a ₹25,000 bed down to under ₹18,000. Alongside beds, this section also covers bedside tables, dressers, mirrors, and full bedroom sets — making it possible to furnish an entire bedroom in one order and potentially qualify for bundle discounts at checkout.
   </p>
 
   <p>
-    <strong className="text-[#2C2C40]">Wardrobes & Storage — Up to 70% Off: </strong>
+    <strong className="text-[#2C2C40]"><Link href="/stores/categories/furniture" className="text-[#5B4FBE] hover:underline">Wardrobes & Storage</Link> — Up to 70% Off: </strong>
     Pepperfry's wardrobe section is one of the most comprehensive online, covering sliding-door wardrobes, 2-door and 3-door options, modular wardrobes, and open-shelf designs. Brands like Spacewood, Godrej Interio, Mintwud, and Woodsworth are regularly stocked with competitive pricing. Engineered wood in white and walnut finishes makes up the majority of the catalogue, with prices starting at ₹7,999.
     <br />
     Storage solutions beyond wardrobes — inc  luding shoe racks, bookshelves, display cabinets, and TV units — are also part of this section. A Pepperfry coupon code in the storage category is particularly useful for new homeowners who need to furnish multiple rooms in a single purchase, where the cumulative savings on a large order can be substantial.

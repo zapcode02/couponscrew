@@ -929,7 +929,7 @@ export default function TestbookStore() {
               Strong coverage of banking, SSC, and teaching exams with Hindi-medium content
             </p>
             <p>
-              <strong className="text-[#2C2C40]">PW (Physics Wallah) — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/pw-coupon-code" className="text-[#5B4FBE] hover:underline">PW</Link> (Physics Wallah) — </strong>
               Popular for JEE, NEET, and expanding government exam preparation
             </p>
             <p>

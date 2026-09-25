@@ -895,7 +895,7 @@ export default function RedBusStore() {
               <strong className="text-[#2C2C40]">IRCTC — </strong> Official train ticket booking; no third-party coupons applicable
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Rapido / Ola / Uber — </strong> For local city travel connecting to your bus or train departure point
+              <strong className="text-[#2C2C40]"><Link href="/stores/rapido-coupon-code" className="text-[#5B4FBE] hover:underline">Rapido</Link> / <Link href="/stores/ola-coupon-code" className="text-[#5B4FBE] hover:underline">Ola</Link> / <Link href="/stores/uber-coupon-code" className="text-[#5B4FBE] hover:underline">Uber</Link> — </strong> For local city travel connecting to your bus or train departure point
             </p>
 
             {/* Section: Closing */}

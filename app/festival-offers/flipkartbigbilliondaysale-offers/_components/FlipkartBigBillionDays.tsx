@@ -265,19 +265,13 @@ export default function FlipkartBigBillionDays() {
                         alt="Flipkart"
                         className="h-9 w-auto object-contain"
                       />
-                      <Link
-                        href="/stores/flipkart-coupon-code"
-                        className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1"
-                      >
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
 
                     <div className="w-full space-y-2">
                       <a
                         href="https://www.flipkart.com"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow sponsored"
                         className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
                       >
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
@@ -335,9 +329,6 @@ export default function FlipkartBigBillionDays() {
                     <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                       <div className="flex flex-col items-center gap-1">
                         <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                        <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                          View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                        </Link>
                       </div>
                       <div className="w-full space-y-2">
                         {coupon.code ? (
@@ -345,7 +336,7 @@ export default function FlipkartBigBillionDays() {
                             {coupon.code}
                           </div>
                         ) : null}
-                        <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                        <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                           Get Deal <ArrowRight className="w-3.5 h-3.5" />
                         </a>
                         <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center">

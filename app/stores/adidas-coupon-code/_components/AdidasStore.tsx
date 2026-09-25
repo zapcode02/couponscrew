@@ -895,13 +895,13 @@ export default function AdidasStore() {
                     <td className="py-3 px-4">EOSS twice yearly + festive</td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 font-bold text-black">Nike</td>
+                    <td className="py-3 px-4 font-bold text-black"><Link href="/stores/nike-coupon-code" className="text-[#5B4FBE] hover:underline">Nike</Link></td>
                     <td className="py-3 px-4">Performance and basketball-driven range</td>
                     <td className="py-3 px-4">Mid to premium</td>
                     <td className="py-3 px-4">Similar sale calendar</td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 font-bold text-black">Puma</td>
+                    <td className="py-3 px-4 font-bold text-black"><Link href="/stores/puma-coupon-code" className="text-[#5B4FBE] hover:underline">Puma</Link></td>
                     <td className="py-3 px-4">Value-friendly sportswear, strong India presence</td>
                     <td className="py-3 px-4">Budget to mid</td>
                     <td className="py-3 px-4">Frequent category sales</td>

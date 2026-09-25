@@ -932,11 +932,11 @@ export default function ZomatoStore() {
               If you're comparing food delivery and dining options, these platforms are worth considering:
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Swiggy — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/swiggy-coupon-code" className="text-[#5B4FBE] hover:underline">Swiggy</Link> — </strong>
               Zomato's closest competitor, with strong coverage in metro cities and its own Swiggy One membership
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Blinkit — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/blinkit-coupon-code" className="text-[#5B4FBE] hover:underline">Blinkit</Link> — </strong>
               Zomato's own rapid grocery delivery service, covering essentials in 10–30 minutes
             </p>
             <p>

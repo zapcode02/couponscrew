@@ -932,12 +932,12 @@ export default function UberStore() {
             </h3>
 
             <p>
-              <strong className="text-[#2C2C40]">Rapido: </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/rapido-coupon-code" className="text-[#5B4FBE] hover:underline">Rapido</Link>: </strong>
               Strong in bike taxis and auto rides, often cheaper than Uber Moto for short urban distances. No Intercity option.
             </p>
 
             <p>
-              <strong className="text-[#2C2C40]">Ola: </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/ola-coupon-code" className="text-[#5B4FBE] hover:underline">Ola</Link>: </strong>
               Comparable service range to Uber with its own wallet (Ola Money) and loyalty features. Competitive on surge pricing in some corridors.
             </p>
 

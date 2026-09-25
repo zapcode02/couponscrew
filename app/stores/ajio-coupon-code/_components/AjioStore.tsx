@@ -1177,7 +1177,7 @@ export default function AjioStore() {
             Similar Stores You Might Like
           </h3>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 font-bold text-sm">
-            <li><strong>Myntra</strong> — Strong competitor on fashion; EORS twice yearly delivers comparable discounts</li>
+            <li><strong><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link></strong> — Strong competitor on fashion; EORS twice yearly delivers comparable discounts</li>
             <li><strong>Nykaa Fashion</strong> — Women's fashion focus; good for ethnic and western wear</li>
             <li><strong>Flipkart Fashion</strong> — Wide fashion catalogue with Big Billion Days discounts</li>
             <li><strong>H&amp;M India</strong> — Direct H&amp;M website; check whether AJIO's H&amp;M pricing is lower before purchasing</li>

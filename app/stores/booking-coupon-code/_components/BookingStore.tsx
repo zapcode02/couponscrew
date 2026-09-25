@@ -689,11 +689,11 @@ export default function BookingStore() {
     </p>
     <p>
       <strong className="text-[#2C2C40]">Flights within India: </strong>
-      Booking.com's flight search includes domestic routes across Indian carriers. For travellers accustomed to IndiGo flight ticket booking or IndiGo manage booking on the IndiGo website directly, Booking.com provides a comparison view — you can check IndiGo fares alongside other carriers before deciding where to book. IndiGo ticket booking and IndiGo flight searches return results on the Booking.com flights tab.
+      Booking.com's flight search includes domestic routes across Indian carriers. For travellers accustomed to <Link href="/stores/indigo-coupon-code" className="text-[#5B4FBE] hover:underline">IndiGo</Link> flight ticket booking or IndiGo manage booking on the IndiGo website directly, Booking.com provides a comparison view — you can check IndiGo fares alongside other carriers before deciding where to book. IndiGo ticket booking and IndiGo flight searches return results on the Booking.com flights tab.
     </p>
     <p>
       <strong className="text-[#2C2C40]">Bus Bookings: </strong>
-      Booking.com does not currently operate a direct bus ticket booking or bus booking service in India. For bus travel — including SETC bus booking, TNSTC bus booking, or inter-city coach services — dedicated platforms like redBus are the recommended route. CouponsCrew also lists redBus offer codes and redBus coupon codes on the redBus deals page if that's what you're looking for.
+      Booking.com does not currently operate a direct bus ticket booking or bus booking service in India. For bus travel — including SETC bus booking, TNSTC bus booking, or inter-city coach services — dedicated platforms like <Link href="/stores/red-bus-coupon-code" className="text-[#5B4FBE] hover:underline">redBus</Link> are the recommended route. CouponsCrew also lists redBus offer codes and redBus coupon codes on the redBus deals page if that's what you're looking for.
     </p>
     <p>
       <strong className="text-[#2C2C40]">Taxi Booking: </strong>

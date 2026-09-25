@@ -1005,7 +1005,7 @@ export default function KfcStore() {
               Burger-focused fast food with its own McSaver combos and app-exclusive deals
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Domino's — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/dominos-coupon-code" className="text-[#5B4FBE] hover:underline">Domino's</Link> — </strong>
               Pizza delivery with the Domino's app offering some of India's most consistent fast food discounts
             </p>
             <p>
@@ -1017,11 +1017,11 @@ export default function KfcStore() {
               Dine-in and delivery with combo meals and regular promotional pricing
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Swiggy — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/swiggy-coupon-code" className="text-[#5B4FBE] hover:underline">Swiggy</Link> — </strong>
               Food delivery marketplace covering KFC and thousands of other restaurants; use a Swiggy coupon code for extra savings
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Zomato — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/zomato-coupon-code" className="text-[#5B4FBE] hover:underline">Zomato</Link> — </strong>
               Restaurant discovery and food delivery with Zomato Gold dining benefits; use a Zomato coupon code before ordering
             </p>
             <p>

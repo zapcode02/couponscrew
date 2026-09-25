@@ -771,10 +771,10 @@ export default function NikeStore() {
       For shoppers comparing before committing, here's how Nike sits alongside its two closest competitors in the Indian market:
     </p>
     <p>
-      For those seeking alternatives, Puma offers stylish and functional sportswear at a generally lower price point — from sneakers to apparel. Puma covers everyday sport and casual wear well, and Puma coupons make it a practical alternative when budget is a factor.
+      For those seeking alternatives, <Link href="/stores/puma-coupon-code" className="text-[#5B4FBE] hover:underline">Puma</Link> offers stylish and functional sportswear at a generally lower price point — from sneakers to apparel. Puma covers everyday sport and casual wear well, and Puma coupons make it a practical alternative when budget is a factor.
     </p>
     <p>
-      Adidas brings a strong combination of performance footwear (Ultraboost, Adizero) and heritage lifestyle silhouettes (Samba, Gazelle, Superstar) — comparable to Nike's Jordan and Dunk lines in terms of streetwear demand. Adidas promo codes apply across a similarly broad catalogue.
+      <Link href="/stores/adidas-coupon-code" className="text-[#5B4FBE] hover:underline">Adidas</Link> brings a strong combination of performance footwear (Ultraboost, Adizero) and heritage lifestyle silhouettes (Samba, Gazelle, Superstar) — comparable to Nike's Jordan and Dunk lines in terms of streetwear demand. Adidas promo codes apply across a similarly broad catalogue.
     </p>
     <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
       <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">

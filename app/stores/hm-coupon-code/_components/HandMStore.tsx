@@ -891,7 +891,7 @@ export default function HandMStore() {
             </p>
 
             <p>
-              <strong className="text-[#2C2C40]">Myntra: </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link>: </strong>
               Multi-brand marketplace with frequent promotions across hundreds of brands including H&M itself. Worth comparing prices on Myntra vs hm.com for H&M items — Myntra occasionally runs deeper platform-level discounts.
             </p>
 

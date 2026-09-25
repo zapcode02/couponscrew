@@ -866,10 +866,10 @@ export default function DominosStore() {
             </h3>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Pizza Hut</strong> — Loaded crusts, combo meals, and sit-down dining style</li>
-              <li><strong>KFC</strong> — Fried chicken, wraps, and combo meals with frequent app deals</li>
+              <li><strong><Link href="/stores/kfc-coupon-code" className="text-[#5B4FBE] hover:underline">KFC</Link></strong> — Fried chicken, wraps, and combo meals with frequent app deals</li>
               <li><strong>McDonald's</strong> — Burgers, McSavers menu, and McDelivery app-exclusive offers</li>
               <li><strong>Burger King</strong> — Competitive burger deals with frequent BOGO promotions</li>
-              <li><strong>Swiggy / Zomato</strong> — Aggregator platforms where Domino's and other chains often have platform-exclusive discount codes separate from the Domino's app</li>
+              <li><strong><Link href="/stores/swiggy-coupon-code" className="text-[#5B4FBE] hover:underline">Swiggy</Link> / <Link href="/stores/zomato-coupon-code" className="text-[#5B4FBE] hover:underline">Zomato</Link></strong> — Aggregator platforms where Domino's and other chains often have platform-exclusive discount codes separate from the Domino's app</li>
             </ul>
 
             <h3 className="text-2xl font-black text-[#5B4FBE] mt-10 mb-4">

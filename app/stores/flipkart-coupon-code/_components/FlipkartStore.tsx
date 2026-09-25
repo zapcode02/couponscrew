@@ -1942,10 +1942,10 @@ export default function FlipkartStore() {
               Similar Stores You Might Like
             </h3>
             <ul className="list-disc pl-5 space-y-2 font-medium">
-              <li><strong>Amazon</strong> — Widest product range; strong for Prime delivery and global brands</li>
-              <li><strong>Myntra</strong> — Best-in-class for fashion, ethnic wear, and the EORS twice yearly</li>
+              <li><strong><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link></strong> — Widest product range; strong for Prime delivery and global brands</li>
+              <li><strong><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link></strong> — Best-in-class for fashion, ethnic wear, and the EORS twice yearly</li>
               <li><strong>Meesho</strong> — Ultra-budget fashion and home essentials</li>
-              <li><strong>Ajio</strong> — Strong ethnic wear and western fashion catalogue</li>
+              <li><strong><Link href="/stores/ajio-coupon-code" className="text-[#5B4FBE] hover:underline">Ajio</Link></strong> — Strong ethnic wear and western fashion catalogue</li>
               <li><strong>Croma</strong> — Specialist electronics retailer; strong for offline-to-online deals</li>
             </ul>
           </div>

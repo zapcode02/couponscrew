@@ -675,7 +675,7 @@ export default function LifestyleStore() {
       <li>Premium bags in the LUXE section for elevated options</li>
     </ul>
     <p>
-      <strong className="text-[#2C2C40]">Beauty: </strong>
+      <strong className="text-[#2C2C40]"><Link href="/stores/categories/beauty" className="text-[#5B4FBE] hover:underline">Beauty</Link>: </strong>
       Lifestyle's Beauty section stocks skincare, makeup, haircare, and fragrance from national and international brands:
     </p>
     <ul className="list-disc pl-5 space-y-2">
@@ -689,7 +689,7 @@ export default function LifestyleStore() {
       Beauty products at Lifestyle include mid-market brands alongside premium imported labels — worth checking before buying individually on a brand-specific site.
     </p>
     <p>
-      <strong className="text-[#2C2C40]">Home & Living: </strong>
+      <strong className="text-[#2C2C40]"><Link href="/stores/categories/home-and-kitchen" className="text-[#5B4FBE] hover:underline">Home & Living</Link>: </strong>
       Lifestyle's Home & Living section covers décor, bedding, kitchen accessories, and storage:
     </p>
     <ul className="list-disc pl-5 space-y-2">

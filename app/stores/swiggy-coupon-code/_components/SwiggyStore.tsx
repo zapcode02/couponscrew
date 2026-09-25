@@ -1066,15 +1066,15 @@ export default function SwiggyStore() {
               If you're comparing food delivery and quick commerce options, these platforms are worth considering:
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Zomato — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/zomato-coupon-code" className="text-[#5B4FBE] hover:underline">Zomato</Link> — </strong>
               Food delivery and restaurant discovery with Zomato Gold dining benefits; check CouponsCrew for active Zomato coupon codes
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Blinkit — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/blinkit-coupon-code" className="text-[#5B4FBE] hover:underline">Blinkit</Link> — </strong>
               Zomato's rapid grocery delivery service, competing directly with Swiggy Instamart
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Zepto — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/zepto-coupon-code" className="text-[#5B4FBE] hover:underline">Zepto</Link> — </strong>
               Rapid commerce platform focused on 10-minute grocery delivery in major cities
             </p>
             <p>

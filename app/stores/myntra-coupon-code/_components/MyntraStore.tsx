@@ -1217,9 +1217,9 @@ export default function MyntraStore() {
                 </h3>
                 <p>If you are comparing options or want to shop across platforms:</p>
                 <ul className="list-disc pl-5 space-y-2 font-bold">
-                  <li><strong>Flipkart —</strong> Wide fashion catalogue with regular Big Billion Days discounts</li>
+                  <li><strong><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> —</strong> Wide fashion catalogue with regular Big Billion Days discounts</li>
                   <li><strong>Amazon Fashion —</strong> Competitive on footwear and basics; frequent bank offer stacking</li>
-                  <li><strong>Ajio —</strong> Strong in ethnic wear and western casuals; competitor to Myntra on EORS-equivalent sale events</li>
+                  <li><strong><Link href="/stores/ajio-coupon-code" className="text-[#5B4FBE] hover:underline">Ajio</Link> —</strong> Strong in ethnic wear and western casuals; competitor to Myntra on EORS-equivalent sale events</li>
                   <li><strong>Nykaa Fashion —</strong> Focused on women's fashion; strong beauty + fashion bundle deals</li>
                   <li><strong>Tata CLiQ —</strong> Premium and luxury fashion; less aggressive discounting but consistent bank offers</li>
                 </ul>

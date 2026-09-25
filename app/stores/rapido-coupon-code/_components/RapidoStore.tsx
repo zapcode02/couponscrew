@@ -1052,11 +1052,11 @@ export default function RapidoStore() {
               If you're comparing urban mobility and commuting options, these platforms are worth considering:
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Ola — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/ola-coupon-code" className="text-[#5B4FBE] hover:underline">Ola</Link> — </strong>
               India's largest cab platform covering bike, auto, and cab services across 250+ cities
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Uber — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/uber-coupon-code" className="text-[#5B4FBE] hover:underline">Uber</Link> — </strong>
               Premium cab service with strong presence in metros and airport transfers
             </p>
             <p>

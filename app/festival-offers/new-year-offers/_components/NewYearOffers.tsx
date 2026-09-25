@@ -220,12 +220,9 @@ export default function NewYearOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/amazon-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Amazon Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -273,12 +270,9 @@ export default function NewYearOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/flipkart-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Flipkart Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -326,12 +320,9 @@ export default function NewYearOffers() {
                   <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                     <div className="flex flex-col items-center gap-1">
                       <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                      <Link href="/stores/myntra-coupon-code" className="text-xs font-semibold text-blue-600 hover:underline flex items-center gap-1 mt-1">
-                        View All Myntra Offers <ExternalLink className="w-3 h-3" />
-                      </Link>
                     </div>
                     <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
+                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
                         Get Deal <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                       <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
@@ -533,7 +524,7 @@ export default function NewYearOffers() {
               <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm space-y-8">
                 {/* Flipkart New Year Sale 2026 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]">Flipkart New Year Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> New Year Sale 2026</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Flipkart runs its Year End Sale and New Year Sale in the December 26–January 3 window. This is one of the better secondary sales on Flipkart — not as big as the Big Billion Days, but more consistent in discount depth because it is driven by inventory clearance rather than manufactured hype.
                   </p>
@@ -563,7 +554,7 @@ export default function NewYearOffers() {
 
                 {/* Amazon New Year Sale 2026 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]">Amazon New Year Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link> New Year Sale 2026</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Amazon India's Year End Sale runs from December 26 through January 1 or 2. It serves as an extension of the Great Indian Festival energy, but focused heavily on clearance, gifting, and new-year fresh-start buying.
                   </p>
@@ -590,7 +581,7 @@ export default function NewYearOffers() {
 
                 {/* Myntra New Year Sale 2026 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]">Myntra New Year Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link> New Year Sale 2026</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Myntra's End of Reason Sale (EORS) in December/January is consistently one of the two best fashion sales of the year in India (alongside the mid-year EORS in June).
                   </p>
