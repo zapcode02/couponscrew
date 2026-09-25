@@ -913,11 +913,11 @@ export default function BlinkitStore() {
               If you shop on Blinkit, you might also find deals worth checking on these platforms:
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Zepto — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/zepto-coupon-code" className="text-[#5B4FBE] hover:underline">Zepto</Link> — </strong>
               fast delivery competitor with frequent first-order codes
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Swiggy Instamart — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/swiggy-coupon-code" className="text-[#5B4FBE] hover:underline">Swiggy Instamart</Link> — </strong>
               bundled with Swiggy food delivery, strong on beverages and snacks
             </p>
             <p>
@@ -925,11 +925,11 @@ export default function BlinkitStore() {
               broader range with scheduled delivery options alongside quick-commerce slots
             </p>
             <p>
-              <strong className="text-[#2C2C40]">JioMart — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/jiomart-coupon-code" className="text-[#5B4FBE] hover:underline">JioMart</Link> — </strong>
               strong on FMCG staples and frequent wallet cashback deals
             </p>
             <p>
-              <strong className="text-[#2C2C40]">Amazon Fresh — </strong>
+              <strong className="text-[#2C2C40]"><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon Fresh</Link> — </strong>
               solid for branded packaged goods with Prime-linked savings
             </p>
 
