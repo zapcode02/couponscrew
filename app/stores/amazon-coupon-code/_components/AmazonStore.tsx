@@ -151,7 +151,7 @@ export default function AmazonStore() {
                 <a
                   href="https://www.google.com/preferences/source?q=couponscrew.com"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
                 >
                   <img
@@ -664,7 +664,7 @@ export default function AmazonStore() {
   {/* Digital Music */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Digital Music</h3>
-    <a href="https://www.amazon.com/s?k=Digital+Music&crid=2NIFBXLL5Z1A3&sprefix=%2Caps%2C255&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Digital+Music&crid=2NIFBXLL5Z1A3&sprefix=%2Caps%2C255&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp"
         alt="Digital Music"
@@ -686,7 +686,7 @@ export default function AmazonStore() {
   {/* Electronics */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Electronics</h3>
-    <a href="https://www.amazon.com/s?k=Electronics&crid=21IFEFQYKAM59&sprefix=digital+music%2Caps%2C308&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Electronics&crid=21IFEFQYKAM59&sprefix=digital+music%2Caps%2C308&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp"
         alt="Electronics"
@@ -708,7 +708,7 @@ export default function AmazonStore() {
   {/* Girls' Fashion */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Girls' Fashion</h3>
-    <a href="https://www.amazon.com/s?k=Girls%27+Fashion&crid=XX07RQNM2V6L&sprefix=%2Caps%2C299&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Girls%27+Fashion&crid=XX07RQNM2V6L&sprefix=%2Caps%2C299&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp"
         alt="Girls' Fashion"
@@ -730,7 +730,7 @@ export default function AmazonStore() {
   {/* Health & Household */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Health & Household</h3>
-    <a href="https://www.amazon.com/s?k=Health+%26+Household&crid=2IV9IQPXFWABC&sprefix=%2Caps%2C281&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Health+%26+Household&crid=2IV9IQPXFWABC&sprefix=%2Caps%2C281&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp"
         alt="Health & Household"
@@ -752,7 +752,7 @@ export default function AmazonStore() {
   {/* Home & Kitchen */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Home & Kitchen</h3>
-    <a href="https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp"
         alt="Home & Kitchen"
@@ -774,7 +774,7 @@ export default function AmazonStore() {
   {/* Industrial & Scientific */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Industrial & Scientific</h3>
-    <a href="https://www.amazon.com/s?k=Industrial+%26+Scientific&crid=313VQV9YAJTJ5&sprefix=%2Caps%2C297&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Industrial+%26+Scientific&crid=313VQV9YAJTJ5&sprefix=%2Caps%2C297&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp"
         alt="Industrial & Scientific"
@@ -796,7 +796,7 @@ export default function AmazonStore() {
   {/* Kindle Store */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Kindle Store</h3>
-    <a href="https://www.amazon.com/s?k=Kindle+Store&crid=TOGVXR58FT4D&sprefix=%2Caps%2C285&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Kindle+Store&crid=TOGVXR58FT4D&sprefix=%2Caps%2C285&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp"
         alt="Kindle Store"
@@ -818,7 +818,7 @@ export default function AmazonStore() {
   {/* Luggage */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Luggage</h3>
-    <a href="https://www.amazon.com/s?k=Luggage&crid=20S9KCDUJCXOW&sprefix=%2Caps%2C308&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Luggage&crid=20S9KCDUJCXOW&sprefix=%2Caps%2C308&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp"
         alt="Luggage"
@@ -840,7 +840,7 @@ export default function AmazonStore() {
   {/* Men's Fashion */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Men's Fashion</h3>
-    <a href="https://www.amazon.com/s?k=Men%27s+Fashion&crid=32HY571UHUFNA&sprefix=luggage%2Caps%2C332&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Men%27s+Fashion&crid=32HY571UHUFNA&sprefix=luggage%2Caps%2C332&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp"
         alt="Men's Fashion"
@@ -862,7 +862,7 @@ export default function AmazonStore() {
   {/* Movies & TV */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Movies & TV</h3>
-    <a href="https://www.amazon.com/s?k=Movies+%26+TV&crid=10NKB4YZZDE9O&sprefix=%2Caps%2C293&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Movies+%26+TV&crid=10NKB4YZZDE9O&sprefix=%2Caps%2C293&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp"
         alt="Movies & TV"
@@ -884,7 +884,7 @@ export default function AmazonStore() {
   {/* Music, CDs & Vinyl */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Music, CDs & Vinyl</h3>
-    <a href="https://www.amazon.com/s?k=Music%2C+CDs+%26+Vinyl&crid=3PGC2A6OF48YT&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Music%2C+CDs+%26+Vinyl&crid=3PGC2A6OF48YT&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp"
         alt="Music, CDs & Vinyl"
@@ -906,7 +906,7 @@ export default function AmazonStore() {
   {/* Pet Supplies */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Pet Supplies</h3>
-    <a href="https://www.amazon.com/s?k=Pet+Supplies&crid=2FDO7PR0RR4EE&sprefix=%2Caps%2C307&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Pet+Supplies&crid=2FDO7PR0RR4EE&sprefix=%2Caps%2C307&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp"
         alt="Pet Supplies"
@@ -928,7 +928,7 @@ export default function AmazonStore() {
   {/* Prime Video */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Prime Video</h3>
-    <a href="https://www.primevideo.com/region/eu/" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.primevideo.com/region/eu/" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/prime-video_rh68ok.webp"
         alt="Prime Video"
@@ -950,7 +950,7 @@ export default function AmazonStore() {
   {/* Software */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Software</h3>
-    <a href="https://www.amazon.com/s?k=Software&crid=2UANDI5I6UN7A&sprefix=%2Caps%2C314&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Software&crid=2UANDI5I6UN7A&sprefix=%2Caps%2C314&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp"
         alt="Software"
@@ -972,7 +972,7 @@ export default function AmazonStore() {
   {/* Sports & Outdoors */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Sports & Outdoors</h3>
-    <a href="https://www.amazon.com/s?k=Sports+%26+Outdoors&crid=31W9FSA2B00K0&sprefix=%2Caps%2C310&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Sports+%26+Outdoors&crid=31W9FSA2B00K0&sprefix=%2Caps%2C310&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp"
         alt="Sports & Outdoors"
@@ -994,7 +994,7 @@ export default function AmazonStore() {
   {/* Tools & Home Improvement */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Tools & Home Improvement</h3>
-    <a href="https://www.amazon.com/s?k=Tools+%26+Home+Improvement&crid=3G0COOI6O799D&sprefix=%2Caps%2C291&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Tools+%26+Home+Improvement&crid=3G0COOI6O799D&sprefix=%2Caps%2C291&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp"
         alt="Tools & Home Improvement"
@@ -1016,7 +1016,7 @@ export default function AmazonStore() {
   {/* Toys & Games */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Toys & Games</h3>
-    <a href="https://www.amazon.com/s?k=Toys+%26+Games&crid=3N8EHDC3584CS&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Toys+%26+Games&crid=3N8EHDC3584CS&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp"
         alt="Toys & Games"
@@ -1038,7 +1038,7 @@ export default function AmazonStore() {
   {/* Video Games */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Video Games</h3>
-    <a href="https://www.amazon.com/s?k=Video+Games&crid=PAOA9FXMRRMR&sprefix=%2Caps%2C304&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Video+Games&crid=PAOA9FXMRRMR&sprefix=%2Caps%2C304&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp"
         alt="Video Games"
@@ -1060,7 +1060,7 @@ export default function AmazonStore() {
   {/* Women's Fashion */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Women's Fashion</h3>
-    <a href="https://www.amazon.com/s?k=Women%27s+Fashion&crid=OA50VIVKRLY7&sprefix=%2Caps%2C322&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer" className="block w-full">
+    <a href="https://www.amazon.com/s?k=Women%27s+Fashion&crid=OA50VIVKRLY7&sprefix=%2Caps%2C322&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp"
         alt="Women's Fashion"

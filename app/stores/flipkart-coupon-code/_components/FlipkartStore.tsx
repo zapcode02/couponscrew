@@ -157,7 +157,7 @@ export default function FlipkartStore() {
                 <a
                   href="https://www.google.com/preferences/source?q=couponscrew.com"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
                 >
                   <img
@@ -174,7 +174,7 @@ export default function FlipkartStore() {
   <Link
     href="https://www.flipkart.com"
     target="_blank"
-    rel="noopener noreferrer"
+    rel="noopener noreferrer nofollow sponsored"
     className="relative w-full h-full block"
   >
     <Image

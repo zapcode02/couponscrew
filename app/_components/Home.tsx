@@ -269,9 +269,9 @@ export default function Home() {
       ].map((card, i) => (
         <a 
           key={i} 
-          href={card.href} 
+          href={card.href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow sponsored"
           className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#FF9900] transition-all group/card block flex flex-col"
         >
           <div className="w-full overflow-hidden bg-gray-50 relative">
@@ -367,9 +367,9 @@ export default function Home() {
       ].map((card, i) => (
         <a 
           key={i} 
-          href={card.href} 
+          href={card.href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow sponsored"
           className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#2874F0] transition-all group/card block flex flex-col"
         >
           <div className="w-full overflow-hidden bg-gray-50 relative">
@@ -459,9 +459,9 @@ export default function Home() {
       ].map((card, i) => (
         <a 
           key={i} 
-          href={card.href} 
+          href={card.href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow sponsored"
           className="shrink-0 w-[calc(33.333%-16px)] min-w-[340px] bg-white border border-[#E8E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#FF3F6C] transition-all group/card block flex flex-col"
         >
           <div className="w-full overflow-hidden bg-gray-50 relative">
@@ -678,7 +678,7 @@ export default function Home() {
   <a
     href="https://www.google.com/preferences/source?q=couponscrew.com"
     target="_blank"
-    rel="noopener noreferrer"
+    rel="noopener noreferrer nofollow"
     className="w-full sm:w-auto flex justify-center items-center hover:opacity-90 transition-opacity active:scale-[0.98] shrink-0"
   >
     <img

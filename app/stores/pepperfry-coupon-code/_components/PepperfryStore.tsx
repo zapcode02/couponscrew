@@ -212,7 +212,7 @@ export default function PepperfryStore() {
   <a
     href="https://www.google.com/preferences/source?q=couponscrew.com"
     target="_blank"
-    rel="noopener noreferrer"
+    rel="noopener noreferrer nofollow"
     className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
   >
     <img
@@ -749,7 +749,7 @@ export default function PepperfryStore() {
     <strong className="text-[#2C2C40]">Wardrobes & Storage — Up to 70% Off: </strong>
     Pepperfry's wardrobe section is one of the most comprehensive online, covering sliding-door wardrobes, 2-door and 3-door options, modular wardrobes, and open-shelf designs. Brands like Spacewood, Godrej Interio, Mintwud, and Woodsworth are regularly stocked with competitive pricing. Engineered wood in white and walnut finishes makes up the majority of the catalogue, with prices starting at ₹7,999.
     <br />
-    Storage solutions beyond wardrobes — including shoe racks, bookshelves, display cabinets, and TV units — are also part of this section. A Pepperfry coupon code in the storage category is particularly useful for new homeowners who need to furnish multiple rooms in a single purchase, where the cumulative savings on a large order can be substantial.
+    Storage solutions beyond wardrobes — inc  luding shoe racks, bookshelves, display cabinets, and TV units — are also part of this section. A Pepperfry coupon code in the storage category is particularly useful for new homeowners who need to furnish multiple rooms in a single purchase, where the cumulative savings on a large order can be substantial.
   </p>
 
   <p>
@@ -1066,3 +1066,4 @@ export default function PepperfryStore() {
     </div>
   );
 }
+

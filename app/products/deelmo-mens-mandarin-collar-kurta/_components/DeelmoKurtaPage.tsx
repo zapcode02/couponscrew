@@ -220,7 +220,7 @@ export default function DeelmoKurtaPage() {
   <a
     href="https://www.google.com/preferences/source?q=couponscrew.com"
     target="_blank"
-    rel="noopener noreferrer"
+    rel="noopener noreferrer nofollow"
     className="w-full sm:w-auto h-14 flex justify-center items-center hover:opacity-90 transition-opacity active:scale-[0.98] shrink-0"
   >
     <img

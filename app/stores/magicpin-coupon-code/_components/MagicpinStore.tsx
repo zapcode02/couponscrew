@@ -207,7 +207,7 @@ Discover verified Magicpin coupon codes and promo codes to save on top brands ac
                 <a
                   href="https://www.google.com/preferences/source?q=couponscrew.com"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="inline-flex items-center hover:opacity-90 transition-opacity active:scale-95"
                 >
                   <img
