@@ -102,6 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/raksha-bandhan-gift-ideas`, lastModified: new Date('2026-08-24'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/bigg-boss-season-20-where-to-watch-deals`, lastModified: new Date('2026-09-06'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/upi-changes-2000-payments-merchants-mdr-2026`, lastModified: new Date('2026-09-20'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/big-billion-days-vs-amazon-great-indian-festival`, lastModified: new Date('2026-09-25'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/feedback`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

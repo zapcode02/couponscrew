@@ -59,6 +59,16 @@ const posts = [
     excerpt: 'From October 15, 2026, UPI transactions above ₹2,000 at merchants attract a 0.4% MDR. Here is who pays, who does not, and what your business should do now.',
     tags: ['UPI Payments', 'Merchant MDR', 'Fintech 2026'],
   },
+  {
+    slug: 'big-billion-days-vs-amazon-great-indian-festival',
+    title: 'Big Billion Days vs Amazon Great Indian Festival 2026: Dates, Bank Offers and Which Sale Is Better',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1790298079/big-billion-days-vs-amazon-great-indian-festival_dmjxxj.webp',
+    date: 'Sep 25, 2026',
+    readTime: '8 min read',
+    excerpt: 'Big Billion Days 2026 starts Oct 9, Amazon Great Indian Festival on Oct 8. Compare dates, bank offers, early access and phone deals to pick the right sale.',
+    tags: ['Big Billion Days', 'Great Indian Festival', 'Festival Offers'],
+  },
 ];
 
 export default function Blog() {
