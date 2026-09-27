@@ -20,6 +20,26 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'amazon-great-indian-festival-2026-upcoming-sales',
+    title: 'Amazon Great Indian Festival 2026: Sale Date, Prime Early Access, SBI Offer and Live Deals',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1790492673/amazon-great-indian-festival-2026-upcoming-sales_zz7w76.webp',
+    date: 'Sep 27, 2026',
+    readTime: '10 min read',
+    excerpt: 'Amazon Great Indian Festival 2026 starts 8 October. See the SBI 10% offer, Prime early access, live Early Deal prices, deal timings and Amazon\'s full sale calendar.',
+    tags: ['Amazon Great Indian Festival', 'Amazon Sale', 'Festival Offers'],
+  },
+  {
+    slug: 'big-billion-days-2026-flipkart-upcoming-sales',
+    title: "Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart's Upcoming Sales",
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1790489840/big-billion-days-2026-flipkart-upcoming-sales_vdosgd.webp',
+    date: 'Sep 27, 2026',
+    readTime: '9 min read',
+    excerpt: "Flipkart Big Billion Days 2026 starts 9 October with early access on 8 October. Axis Bank and ICICI Bank are the bank partners this year. See the full sale calendar, deal timings and tips to save more.",
+    tags: ['Big Billion Days', 'Flipkart Sale', 'Festival Offers'],
+  },
+  {
     slug: 'how-to-save-money-shopping-online-india',
     title: 'How to Save Money Shopping Online in India — Introducing CouponsCrew',
     category: 'Shopping Guides',
