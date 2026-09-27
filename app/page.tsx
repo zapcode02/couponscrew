@@ -137,6 +137,7 @@ const jsonLd = {
         'https://www.instagram.com/couponscrew',
         'https://www.facebook.com/couponscrew',
         'https://twitter.com/couponscrew',
+        'https://www.wikidata.org/wiki/Q141574340',
       ],
     },
 

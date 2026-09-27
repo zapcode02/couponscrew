@@ -46,6 +46,36 @@ const blogPosts = [
   { title: 'How to Save Money While Shopping Online in India', date: 'June 22, 2026', read: '5 Min Read', img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783232571/home-kitchen_wtn75z.webp', slug: '/blog/how-to-save-money-shopping-online-india' },
 ];
 
+const featuredBlogPosts = [
+  {
+    slug: 'big-billion-days-vs-amazon-great-indian-festival',
+    title: 'Big Billion Days vs Amazon Great Indian Festival 2026: Dates, Bank Offers and Which Sale Is Better',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1790298079/big-billion-days-vs-amazon-great-indian-festival_dmjxxj.webp',
+    date: 'Sep 25, 2026',
+    readTime: '8 min read',
+    excerpt: 'Big Billion Days 2026 starts Oct 9, Amazon Great Indian Festival on Oct 8. Compare dates, bank offers, early access and phone deals to pick the right sale.',
+  },
+  {
+    slug: 'big-billion-days-2026-flipkart-upcoming-sales',
+    title: 'Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart\'s Upcoming Sales',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1790489840/big-billion-days-2026-flipkart-upcoming-sales_vdosgd.webp',
+    date: 'Sep 27, 2026',
+    readTime: '9 min read',
+    excerpt: 'Flipkart Big Billion Days 2026 starts 9 October with early access on 8 October. Axis Bank and ICICI Bank are the bank partners this year. See the full sale calendar, deal timings and tips to save more.',
+  },
+  {
+    slug: 'raksha-bandhan-gift-ideas',
+    title: '10 Best Raksha Bandhan Gift Ideas 2026 — Discount Codes to Save More',
+    category: 'Festive Guides',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1787588384/raksha-bandhan-gift-ideas_z16zzz.webp',
+    date: 'Aug 24, 2026',
+    readTime: '8 min read',
+    excerpt: 'Discover thoughtful and trending Raksha Bandhan gift ideas for brothers and sisters, and learn how to stack coupons, bank offers, and cashback to save extra on every gift.',
+  }
+];
+
 const saleEvents = [
   { icon: <Flame className="w-5 h-5 text-orange-500" />, title: "Flipkart Big Billion Days & Amazon Great Indian Festival", timeline: "October", description: "The two biggest platforms run their flagship sales at the same time every October. Set your alarm - the best electronics and smartphone deals sell out in the first few hours. Grab a discount code before your cart fills up.", tag: "Deepest Discounts", bgColor: "bg-orange-50/60 border-orange-100" },
   { icon: <Shirt className="w-5 h-5 text-pink-500" />, title: "Myntra End of Reason Sale (EORS)", timeline: "June & December", description: "Twice a year, Myntra clears warehouse stock with genuine markdowns. The app-exclusive coupons stack on top. June and December. Both are worth showing up for.", tag: "Bi-Annual Fashion", bgColor: "bg-pink-50/60 border-pink-100" },
@@ -736,6 +766,86 @@ export default function Home() {
         </section>
 
       </main>
+
+      {/* Read More Section */}
+      <section className="py-12 sm:py-16 border-t border-[#E8E8F0] bg-[#F8F8FF]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="text-center">
+            <span className="text-xs font-black text-[#5B4FBE] uppercase tracking-widest block mb-1">
+              EXPLORE MORE
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-[#1A1A2E]">
+              Read More Blogs
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-500 mt-1">
+              Discover more money-saving tips, shopping guides and exclusive deal updates.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {featuredBlogPosts.map((blog) => (
+              <div
+                key={blog.slug}
+                className="bg-white border border-[#E8E8F0] rounded-3xl overflow-hidden shadow-xs hover:shadow-md hover:border-[#5B4FBE] transition-all flex flex-col justify-between"
+              >
+                <Link href={`/blog/${blog.slug}`} className="relative w-full aspect-[16/9] overflow-hidden bg-gray-100 block">
+                  <NextImage
+                    src={blog.image}
+                    alt={blog.title}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </Link>
+                <div className="p-6 flex flex-col flex-1 justify-between space-y-4">
+                  <div className="space-y-2">
+                    <span className="inline-block bg-[#F0EEFF] text-[#5B4FBE] text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                      {blog.category}
+                    </span>
+                    <Link href={`/blog/${blog.slug}`}>
+                      <h3 className="font-extrabold text-base sm:text-lg text-[#1A1A2E] leading-snug hover:text-[#5B4FBE] transition-colors">
+                        {blog.title}
+                      </h3>
+                    </Link>
+                    <p className="text-xs text-[#4A4A6A] line-clamp-3 leading-relaxed">
+                      {blog.excerpt}
+                    </p>
+                  </div>
+
+                  <div className="pt-4 border-t border-[#E8E8F0] flex items-center justify-between text-xs text-gray-500 font-medium">
+                    <div className="flex items-center gap-3">
+                      <span className="flex items-center gap-1">
+                        <Calendar size={13} className="text-gray-400" />
+                        {blog.date}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock size={13} className="text-gray-400" />
+                        {blog.readTime}
+                      </span>
+                    </div>
+                    <Link
+                      href={`/blog/${blog.slug}`}
+                      className="text-[#5B4FBE] font-bold hover:underline flex items-center gap-1"
+                    >
+                      <span>Read More</span>
+                      <ArrowRight size={13} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center pt-4">
+            <Link
+               href="/blog"
+               className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-[#5B4FBE] text-[#5B4FBE] font-bold hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              <span>View All Blogs</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="bg-white py-20 px-6">
