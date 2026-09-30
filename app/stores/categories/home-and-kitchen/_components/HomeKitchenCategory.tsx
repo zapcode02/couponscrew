@@ -14,13 +14,6 @@ import Navbar from '../../../../../src/components/Navbar';
 import Footer from '../../../../../src/components/Footer';
 import { STORES_DATA } from '../../../../../src/data/stores';
 
-function getStoreHref(storeName: string): string {
-  const key = storeName.toLowerCase();
-  if (key === 'pepperfry') return '/stores/pepperfry-coupon-code';
-  if (key === 'amazon') return '/stores/amazon-coupon-code';
-  return '/stores';
-}
-
 const ALL_CATEGORIES = [
   { name: 'Fashion', slug: 'fashion', icon: ShoppingBag },
   { name: 'Beauty', slug: 'beauty', icon: Heart },
@@ -144,7 +137,7 @@ export default function HomeKitchenCategory() {
               {categoryStores.map(store => (
                 <Link
                   key={store.id}
-                  href={getStoreHref(store.name)}
+                  href={`/stores/${store.slug}`}
                   className="bg-white rounded-2xl border border-[#E8E8F0] p-4 text-center hover:shadow-lg hover:border-[#5B4FBE] transition-all duration-300 group flex flex-col justify-between"
                 >
                   <div>
