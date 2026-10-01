@@ -144,6 +144,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'Big Billion Days vs Great Indian Festival 2026: Dates, Bank Offers and Which Sale Is Better', href: '/blog/big-billion-days-vs-amazon-great-indian-festival' },
   { label: "Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart's Upcoming Sales", href: '/blog/big-billion-days-2026-flipkart-upcoming-sales' },
   { label: 'Amazon Great Indian Festival 2026: Date, SBI Offer & Deals', href: '/blog/amazon-great-indian-festival-2026-upcoming-sales' },
+  { label: 'Myntra Big Fashion Festival 2026: Date, Insider Early Access and Bank Offers', href: '/blog/myntra-big-fashion-festival-2026' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

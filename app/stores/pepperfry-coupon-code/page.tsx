@@ -199,6 +199,7 @@ export default function Page() {
     <>
       <script
         type="application/ld+json"
+        
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Suspense fallback={null}>

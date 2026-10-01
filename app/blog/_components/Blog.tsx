@@ -89,6 +89,16 @@ const posts = [
     excerpt: 'Big Billion Days 2026 starts Oct 9, Amazon Great Indian Festival on Oct 8. Compare dates, bank offers, early access and phone deals to pick the right sale.',
     tags: ['Big Billion Days', 'Great Indian Festival', 'Festival Offers'],
   },
+  {
+    slug: 'myntra-big-fashion-festival-2026',
+    title: 'Myntra Big Fashion Festival 2026: Date, Insider Early Access and Bank Offers',
+    category: 'Fashion',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1790820841/myntra-big-fashion-festival-2026_gbsc9h.webp',
+    date: 'Oct 1, 2026',
+    readTime: '8 min read',
+    excerpt: "Myntra Big Fashion Festival (BFF) 2026 opens on 8 October 2026 at midnight, with early access from 7 October for Myntra Insiders and VIP ticket holders.",
+    tags: ['Myntra', 'Big Fashion Festival', 'Festival Offers'],
+  },
 ];
 
 export default function Blog() {
