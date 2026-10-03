@@ -175,7 +175,7 @@ export default function Stores() {
   }, [selectedCategory, searchQuery, sortBy]);
 
   // Pagination bounds safety
-  const itemsPerPage = 24;
+  const itemsPerPage = 28;
   const totalPages = useMemo(() => {
     return Math.ceil(filteredAndSorted.length / itemsPerPage) || 1;
   }, [filteredAndSorted.length]);

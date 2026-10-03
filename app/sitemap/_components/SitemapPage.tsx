@@ -74,6 +74,11 @@ const STORES: SiteLink[] = [
   { label: 'Lifestyle', href: '/stores/lifestyle-coupon-code' },
   { label: 'Nike', href: '/stores/nike-coupon-code' },
   { label: 'Expedia', href: '/stores/expedia-coupon-code' },
+  { label: 'Airbnb', href: '/stores/airbnb-coupon-code' },
+  { label: 'Crocs', href: '/stores/crocs-coupon-code' },
+  { label: 'Pizza Hut', href: '/stores/pizzahut-coupon-code' },
+  { label: 'Samsung', href: '/stores/samsung-coupon-code' },
+  { label: 'Vistaprint', href: '/stores/vistaprint-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [
@@ -145,6 +150,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: "Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart's Upcoming Sales", href: '/blog/big-billion-days-2026-flipkart-upcoming-sales' },
   { label: 'Amazon Great Indian Festival 2026: Date, SBI Offer & Deals', href: '/blog/amazon-great-indian-festival-2026-upcoming-sales' },
   { label: 'Myntra Big Fashion Festival 2026: Date, Insider Early Access and Bank Offers', href: '/blog/myntra-big-fashion-festival-2026' },
+  { label: 'October 2026 Sale Calendar: Amazon, Flipkart, Myntra, Ajio, Nykaa', href: '/blog/october-2026-sale-calendar-india' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

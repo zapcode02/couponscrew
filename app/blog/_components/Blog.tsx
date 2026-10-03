@@ -99,6 +99,16 @@ const posts = [
     excerpt: "Myntra Big Fashion Festival (BFF) 2026 opens on 8 October 2026 at midnight, with early access from 7 October for Myntra Insiders and VIP ticket holders.",
     tags: ['Myntra', 'Big Fashion Festival', 'Festival Offers'],
   },
+  {
+    slug: 'october-2026-sale-calendar-india',
+    title: 'October 2026 Sale Calendar: Amazon, Flipkart, Myntra, Ajio, Nykaa and What Comes After',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1791033597/October_2026_Sale_Calendar_Festivities_i9ydzz.webp',
+    date: 'Oct 3, 2026',
+    readTime: '10 min read',
+    excerpt: 'Every October 2026 sale date in one place: Amazon from 8 Oct, Flipkart from 9 Oct, Myntra from 8 Oct, plus Ajio, Nykaa and the festival dates to plan around.',
+    tags: ['Sale Calendar', 'Festival Offers', 'October 2026'],
+  },
 ];
 
 export default function Blog() {

@@ -146,27 +146,17 @@ export default function VistaprintStore() {
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-col gap-2">
-                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Vistaprint Coupon Codes</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF] w-fit">
-                      Business Cards, Custom Printing & Signage
-                    </span>
+                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">
+                      Vistaprint Coupon Code – Get 100 Premium Visiting Cards for ₹200
+                      </h1>
+                    
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Design and order business cards, signage, apparel & custom stationery online. Get the best deals with Vistaprint coupon codes & offers.
+                    Create professional business cards for less with the latest Vistaprint Coupon Code. Get 100 premium visiting cards for just ₹200 and customise them with your logo, contact details, and branding. Use a Vistaprint Discount Code to enjoy verified online savings and order high-quality prints at an affordable price.
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
-                    <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                      <ShieldCheck size={14} /> Verified Store
-                    </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
-                      <Tag size={14} /> 40+ Offers
-                    </span>
-                    <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Codes Reviewed Daily
-                    </span>
-                  </div>
+                  
                 </div>
               </div>
 
@@ -393,31 +383,40 @@ export default function VistaprintStore() {
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
             {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
-                <span>The Story Behind Vistaprint</span>
-              </h3>
-              <p className="text-[#1A1A2E] text-sm mb-3">
-                Vistaprint was founded in 1995 by Robert Keane, originally launched in France as a print-on-demand technology company aimed at making professional printing accessible and affordable for small businesses. Before Vistaprint, ordering custom-printed business cards or marketing materials typically required expensive minimum orders that priced out small businesses and freelancers.
-              </p>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
+  <div className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    Shop from CouponsCrew and Save on Vistaprint
+  </div>
 
-              <p className="text-[#1A1A2E] text-sm">
-                Vistaprint pioneered a model that pooled small orders from many customers onto shared print runs, dramatically lowering the cost per unit. Today the company is part of Cimpress N.V., a Nasdaq-listed parent company, and serves tens of millions of small business customers worldwide with an ever-expanding catalogue spanning print, signage, apparel, and digital design tools.
-              </p>
+  <div className="text-xs text-[#4A4A6A] space-y-3">
+    <div className="font-normal">
+      CouponsCrew lists Vistaprint offers only when we can see them on vistaprint.in or on the offering bank's official page, with the terms and expiry date. If no public code is live, we say so, instead of filling this page with codes that fail at checkout.
+    </div>
 
-              <div className="mt-5 select-none">
-                <a
-                  href={AFFILIATE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
-                >
-                  <span>Visit Vistaprint</span>
-                  <ArrowRight size={12} />
-                </a>
-              </div>
-            </div>
+    <div className="font-bold text-[#2C2C40] pt-1">
+      To save on your next Vistaprint order:
+    </div>
+
+    <ol className="space-y-2.5 list-decimal pl-4 font-normal text-[#4A4A6A]">
+      <li>
+        Check the offers listed on this page, then confirm them on vistaprint.in.
+      </li>
+      <li>
+        Get your file print-ready using the checklist above, so you only pay once.
+      </li>
+      <li>
+        Compare two or three quantities in the cart to find the best price per piece.
+      </li>
+      <li>
+        Order early for festive prints and pick standard delivery.
+      </li>
+    </ol>
+
+    <div className="font-normal pt-1">
+      Setting up a new business online too? See our <a href="https://www.couponscrew.com/stores/hostinger-coupon-code" className="text-indigo-600 hover:underline font-semibold">Hostinger coupon codes</a> for website hosting.
+    </div>
+  </div>
+</div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
             <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
@@ -480,57 +479,7 @@ export default function VistaprintStore() {
               </div>
             </div>
 
-            {/* Sidebar Card 4: Why Shop at Vistaprint */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Use CouponScrew for Vistaprint Deals?
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
-                    <span>Every Vistaprint coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
-                    <span>We display live success percentages for every deal based on actual user attempts, so you can pick the most reliable Vistaprint offer without guessing.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
-                    <span>We specifically track Indian bank promotions from HDFC and ICICI so you always know which card unlocks the maximum instant discount at checkout.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bulk Order Alerts</span>
-                    <span>Bulk-pricing promotions on business cards and marketing materials are flagged on CouponScrew as soon as they go live.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
-                    <span>CouponScrew publishes Vistaprint sale codes ahead of major business seasons, so you do not need to wait for the sale to start.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
-                    <span>Finding and using a Vistaprint coupon code on CouponScrew is completely free and requires no account or sign-up.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+           
 
           </aside>
 
@@ -538,366 +487,600 @@ export default function VistaprintStore() {
       </section>
 
       <section className="py-24 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Left: Text Content */}
-            <div className="prose max-w-none">
-              <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Vistaprint Coupon Code India (August 2026): Up to 50% Off Business Cards & Printing — Verified
-              </h2>
+      {/* Main Content Column */}
+      <div className="prose max-w-none">
+        
+        {/* Main Title - Replaced H1 with Styled Paragraph */}
+        <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Vistaprint Coupon Code: Save on Business Cards, Flyers and Custom Prints in India
+        </p>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                  <caption className="sr-only">Vistaprint Business Printing and Design Coupon Offers</caption>
-                  <thead>
-                    <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E8E8F0]">
-                    {[
-                      {
-                        offerType: 'UP TO 50% OFF',
-                        category: 'Business Cards',
-                        discount: 'Up to 50% OFF',
-                        highlights: 'Standard and premium finish business cards.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'FLAT 300',
-                        category: 'New User',
-                        discount: 'Flat ₹300',
-                        highlights: 'First order discount above ₹999.',
-                        userType: 'New Users'
-                      },
-                      {
-                        offerType: 'UP TO 40% OFF',
-                        category: 'Marketing Materials',
-                        discount: 'Up to 40% OFF',
-                        highlights: 'Flyers, brochures, and banners.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 35% OFF',
-                        category: 'Signage',
-                        discount: 'Up to 35% OFF',
-                        highlights: 'Yard signs and trade show displays.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 30% OFF',
-                        category: 'Apparel',
-                        discount: 'Up to 30% OFF',
-                        highlights: 'Custom t-shirts, mugs, and tote bags.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 25% OFF',
-                        category: 'Bulk Order',
-                        discount: 'Up to 25% OFF',
-                        highlights: 'Bulk business cards and flyer orders.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'FREE DESIGN',
-                        category: 'Design Tool',
-                        discount: 'Free Access',
-                        highlights: 'VistaCreate design templates.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 10% OFF',
-                        category: 'Bank Offer',
-                        discount: 'Up to 10% OFF',
-                        highlights: 'Instant discount with HDFC & ICICI cards.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 45% OFF',
-                        category: 'Custom Stationery',
-                        discount: 'Up to 45% OFF',
-                        highlights: 'Invitations and holiday greeting cards.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'RUSH DELIVERY',
-                        category: 'Fast Turnaround',
-                        discount: 'Discounted Add-On',
-                        highlights: 'Rush production on select print products.',
-                        userType: 'All Users'
-                      }
-                    ].map((row, i) => (
-                      <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                        <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                          {row.offerType}
-                        </td>
-                        <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                          {row.category}
-                        </td>
-                        <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                          {row.discount}
-                        </td>
-                        <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                          {row.highlights}
-                        </td>
-                        <td className="px-5 py-4 whitespace-nowrap">
-                          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                            {row.userType}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+        <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+          <p>
+            A Vistaprint coupon code is a promo code you enter at checkout on vistaprint.in to lower the price of business cards, flyers, posters, stickers, T-shirts and other custom prints. The code is only part of the saving. On print orders, the quantity you choose, the paper you pick and getting your file right the first time usually matter more.
+          </p>
 
-              <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+    <caption className="sr-only">Vistaprint Offers and Discount List</caption>
+    <thead>
+      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          Offer Type
+        </th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          Discount / Price
+        </th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
+          Offer Highlights
+        </th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          User Eligibility / Terms
+        </th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#E8E8F0]">
+      {[
+        {
+          offerType: '100 VISITING CARDS @ ₹200',
+          discount: '₹200 for 100 Cards',
+          highlights: '100 premium-quality visiting cards customizable with logo & contact details.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹850',
+          discount: 'From ₹850',
+          highlights: 'Custom hoodies, jackets, and team wear with your own logo or artwork.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹2,500',
+          discount: 'From ₹2,500',
+          highlights: 'Premium Layflat Photo Albums for weddings, trips, and family celebrations.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹1,005',
+          discount: 'From ₹1,005',
+          highlights: "Men's Half Sleeve Dress Shirts with custom company logo embroidery.",
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹980',
+          discount: 'From ₹980',
+          highlights: "Men's Dress Shirts with custom embroidery for a professional corporate look.",
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹980',
+          discount: 'From ₹980',
+          highlights: "Women's Embroidered Dress Shirts in multiple colors and sizes.",
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹890',
+          discount: 'From ₹890',
+          highlights: 'Custom Self-Inking Stamps (64mm × 44mm) for office and business needs.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹390',
+          discount: 'From ₹390',
+          highlights: 'Bamboo Fiber Eco Mugs printed with company logo or custom graphics.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹200',
+          discount: 'From ₹200',
+          highlights: 'Sticker Singles cut individually for custom product branding & labels.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹190',
+          discount: 'From ₹190',
+          highlights: 'Sheet Stickers in various shapes, designs, and finish options.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'FROM ₹170',
+          discount: 'From ₹170',
+          highlights: 'Custom Window Stickers for shop fronts, offices, and promo displays.',
+          eligibility: 'All Users'
+        }
+      ].map((row, i) => (
+        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+            {row.offerType}
+          </td>
+          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+            {row.discount}
+          </td>
+          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
+            {row.highlights}
+          </td>
+          <td className="px-5 py-4 whitespace-nowrap">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+              {row.eligibility}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
-                <p>
-                  Looking for a verified Vistaprint coupon code before placing your next print order? You have come to the right place. CouponScrew tracks and verifies every active Vistaprint discount code, promo code, and bulk-pricing offer daily — so you always get a working offer, never an expired one. From business cards and signage to apparel and custom stationery, we cover every category. Copy your code above and start saving on your next Vistaprint order right now.
-                </p>
+          <p className="italic text-sm text-gray-500">
+            *Last checked: 30 September 2026.*
+          </p>
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  From a French Print-Tech Startup to a Global Small-Business Partner
-                </h3>
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Vistaprint in Numbers — Scale That Speaks for Itself
-                </h3>
 
-                <p>
-                  Today, Vistaprint serves tens of millions of small business customers globally, with a catalogue that has expanded well beyond its original business card focus into signage, apparel, packaging, and full website and logo design services. As part of Cimpress N.V., Vistaprint benefits from shared manufacturing scale across the parent company's broader print network, which is part of why per-unit prices stay competitive even at small order quantities.
-                </p>
+          <hr className="my-8 border-gray-200" />
 
-                <p>
-                  Add to this the free VistaCreate design tool, automatic bulk pricing tiers that reward larger orders, and a satisfaction guarantee covering print defects, and it becomes clear why using a Vistaprint coupon code from CouponScrew on top of already accessible small-business pricing is simply the smartest way to shop here.
-                </p>
+          {/* Section Header - Replaced H2 with Styled Paragraph */}
+          <p className="text-xl font-black text-[#5B4FBE] mb-4">
+            Is This the Official Vistaprint India Site?
+          </p>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Everything You Can Shop at Vistaprint
-                  </h3>
-                  <p>
-                    Vistaprint covers every print and design need for small businesses and individuals. Here is a detailed look at what each section offers and what kind of Vistaprint discount codes apply to each.
-                  </p>
+          <p>
+            The official Indian store is <strong>vistaprint.in</strong>. If you searched "vistaprintindia" or "vista printed" and landed somewhere else, check the address before uploading your logo or paying. Vistaprint has operated in India since June 2011, when it bought the Mumbai-based online printer PrintBell, which became Vistaprint India. Its parent company is Cimpress.
+          </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Business Cards — Up to 50% Off: </strong>
-                    Business cards remain Vistaprint's founding category and still the most frequently ordered product on the platform. Standard matte and glossy finishes sit alongside premium options like textured, foil-stamped, and rounded-corner cards, with pricing starting from a pack of 100 cards and scaling down per-unit as quantity increases.
-                    <br />
-                    Vistaprint coupon codes for business cards are among the most frequently searched, and for good reason — a 40% discount on a 500-card premium order can save several hundred rupees in one transaction. The best time to apply a Vistaprint promo code is when placing a first-time or bulk order, since both first-order and bulk discounts often apply on the same cart.
-                  </p>
+          {/* Section Header - Replaced H2 with Styled Paragraph */}
+          <p className="text-xl font-black text-[#5B4FBE] mt-10 mb-4">
+            How to Use a Vistaprint Promo Code
+          </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Marketing Materials — Up to 40% Off: </strong>
-                    Flyers, brochures, and banners round out Vistaprint's core small-business marketing offering, with templates covering everything from restaurant menus to real estate listing flyers. Custom sizing and paper stock options let businesses match materials to specific use cases, from handout flyers to large event banners.
-                    <br />
-                    A Vistaprint discount code applied on a bulk flyer order for an event or campaign launch can meaningfully reduce total marketing spend, especially when combined with the automatic bulk-pricing tier.
-                  </p>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Design or upload your artwork on vistaprint.in and choose the quantity, paper and finish.</li>
+            <li>Review the digital proof carefully. Check spelling, phone numbers and that nothing sits too close to the edge.</li>
+            <li>Add the item to your cart.</li>
+            <li>Find the promo code field in the cart and enter the code exactly as issued.</li>
+            <li>Confirm the discount appears before you move to payment. Some codes apply only to certain products or above a minimum order value.</li>
+            <li>Note the delivery date shown at checkout before you pay.</li>
+          </ol>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Signage & Displays — Up to 35% Off: </strong>
-                    Yard signs, retractable banners, and trade show displays serve businesses that need visible, durable signage for events, storefronts, or open houses. Weather-resistant materials are standard for outdoor signage, while trade show displays are built for repeated setup and breakdown.
-                    <br />
-                    Vistaprint promo codes for signage are especially valuable ahead of trade shows and seasonal sales events, when businesses often order multiple display pieces at once.
-                  </p>
+          <p>
+            If a Vistaprint discount code won't apply, check whether it's limited to one product type (a business card code won't work on T-shirts), whether your cart meets the minimum, and whether it has expired.
+          </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Apparel & Promotional Products — Up to 30% Off: </strong>
-                    Custom t-shirts, mugs, and tote bags let businesses and individuals create branded merchandise or personalised gifts without needing a separate print shop relationship. This category sees consistent demand around corporate events, team merchandise, and personalised gifting occasions.
-                    <br />
-                    Vistaprint coupon codes apply to this category sitewide, meaning you can mix apparel with a business card or stationery order and apply a single promo code to the entire cart.
-                  </p>
+          <div>
+  <div className="space-y-4 text-slate-700">
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      How Print Pricing Works (And Where the Real Savings Are)
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Custom Stationery — Up to 45% Off: </strong>
-                    Invitations and holiday greeting cards make up Vistaprint's personal-use stationery range, distinct from the business-focused categories. Wedding invitations, birthday party invites, and festive season cards are all customisable through the same VistaCreate design tool used for business products.
-                    <br />
-                    The deepest Vistaprint discount codes for stationery typically appear ahead of major holiday and wedding seasons, when demand — and promotional activity — both peak.
-                  </p>
-                </div>
+    <p>
+      On custom printing, the price per piece falls as the quantity rises, because setup is a fixed cost spread over the whole run. That's why a small increase in quantity often adds very little to the total. It's also why ordering "just in case" extras can waste money if the details on the print change.
+    </p>
 
-                <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Vistaprint Coupon Code — Step by Step</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Using a Vistaprint discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
-                  <div className="space-y-6">
-                    {[
-                      "Find Your Code on CouponScrew — Browse the verified Vistaprint offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant Vistaprint page.",
-                      "Choose Your Product — Go to Vistaprint.in and select the product category — business cards, signage, apparel, or stationery.",
-                      "Customise Your Design — Use a free VistaCreate template or upload your own design, then choose your paper stock, size, and quantity.",
-                      "Go to Checkout — Proceed to checkout. Find the \"Enter promo code\" field in the order summary section.",
-                      "Paste Your Vistaprint Promo Code — Paste the code you copied from CouponScrew and click Apply. The discount updates in your order total immediately.",
-                      "Stack Your Bank Card Offer — At the payment step, check for eligible HDFC or ICICI card discounts. Apply both. This is the step most shoppers miss — and it is where you unlock the second layer of savings.",
-                      "Complete Payment — Confirm your order. You will receive an order confirmation with an estimated production and delivery timeline via email."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+      <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">Your decision</th>
+        <th className="p-4 font-bold">How it affects the price</th>
+        <th className="p-4 font-bold">What to do</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Quantity</td>
+        <td className="p-4">Per-piece cost falls as quantity rises</td>
+        <td className="p-4">Order what you'll use before details change (phone, address, offer)</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Paper and finish</td>
+        <td className="p-4">Thicker stock, special coatings and premium finishes cost more</td>
+        <td className="p-4">Upgrade only for pieces people keep, like business cards</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Print sides</td>
+        <td className="p-4">Printing both sides usually costs more</td>
+        <td className="p-4">Use the back for something useful: a map, QR code or services</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Delivery speed</td>
+        <td className="p-4">Faster delivery costs more</td>
+        <td className="p-4">Order early and choose standard delivery</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Reprints due to errors</td>
+        <td className="p-4">You pay twice</td>
+        <td className="p-4">Check the proof slowly before ordering</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Why Millions of Small Businesses Choose Vistaprint
-                  </h3>
+    <p>
+      The last row is the one most people underestimate. A misspelt email address on 500 flyers costs more than any coupon saves.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">VistaCreate — Free, Genuinely Usable Design Tool: </strong>
-                    Most small businesses do not have a dedicated designer on staff. VistaCreate exists specifically to solve this, offering free browser-based templates for business cards, flyers, and social media graphics — no separate design software subscription required.
-                  </p>
+    <hr className="my-6 border-slate-200" />
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Automatic Bulk Pricing — Rewards for Larger Orders: </strong>
-                    Unlike flat per-unit pricing across the board, Vistaprint's per-unit cost automatically drops as order quantity increases, making it genuinely economical for businesses that need hundreds or thousands of units rather than just a handful.
-                  </p>
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Everything to Market Your Business
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Satisfaction Guarantee on Print Defects: </strong>
-                    Print quality issues do happen occasionally with any printer. Vistaprint's satisfaction guarantee covers reprints or refunds for genuine production defects, reported within the claim window shown on your order confirmation — a meaningful safety net for businesses ordering in bulk.
-                  </p>
+    <p>
+      Vistaprint's range covers most printed and branded material a small business needs, from the first business card to event signage and staff T-shirts. Here's what to check for each product before ordering.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">One Platform for Every Print Need: </strong>
-                    From a first batch of business cards to full event signage and branded apparel, Vistaprint lets businesses consolidate multiple print needs into a single order and a single coupon code, rather than juggling several vendor relationships.
-                  </p>
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">Product</th>
+        <th className="p-4 font-bold">Best for</th>
+        <th className="p-4 font-bold">Check before ordering</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint business cards</td>
+        <td className="p-4">Networking, client meetings, shop counters</td>
+        <td className="p-4">Paper thickness, both-side printing, QR code size</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint flyers</td>
+        <td className="p-4">Local promotion, events, door-to-door</td>
+        <td className="p-4">Size, paper weight, whether one or both sides</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint poster print</td>
+        <td className="p-4">Shop windows, events, notice boards</td>
+        <td className="p-4">Image resolution at the final poster size</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint stickers</td>
+        <td className="p-4">Packaging, labels, giveaways</td>
+        <td className="p-4">Shape, indoor or outdoor use, finish</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint T-shirts</td>
+        <td className="p-4">Staff uniforms, events, team merchandise</td>
+        <td className="p-4">Print area, size mix, fabric type</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint calendar</td>
+        <td className="p-4">Year-end client gifts</td>
+        <td className="p-4">Month layout, start month, photo quality</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Vistaprint booklet</td>
+        <td className="p-4">Menus, catalogues, price lists</td>
+        <td className="p-4">Page count, binding type, page order in the proof</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Envelope printing</td>
+        <td className="p-4">Invoices, official letters, invitations</td>
+        <td className="p-4">Envelope size matches your letterhead or card</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Invitations and cards</td>
+        <td className="p-4">Weddings, launches, festive greetings</td>
+        <td className="p-4">Names and dates, envelope pairing</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Part of Cimpress — Backed by Shared Manufacturing Scale: </strong>
-                    As part of the Nasdaq-listed Cimpress group, Vistaprint benefits from shared production infrastructure across the parent company's global print network, contributing to consistently competitive small-order pricing.
-                  </p>
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Vistaprint Business Cards
+    </p>
 
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Print Smarter — Make Every Rupee Count at Vistaprint
-                  </h3>
+    <p>
+      Business cards are what most people come to Vistaprint for, and they're the product where paper choice shows most, because people hold them. A thicker card with a clean design does more than a thin card with every detail crammed in. Keep the front simple (name, role, business, phone, email) and use the back for a QR code linking to your website, WhatsApp Business or Google Business Profile.
+    </p>
 
-                  <p>
-                    Every business card, banner, or invitation you order is a reflection of your brand — and there is no reason to pay full price for any of it. CouponScrew keeps every active Vistaprint coupon code, promo code, and bulk-pricing offer verified and ready for you, updated daily, completely free. Bookmark this page before your next Vistaprint order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price.
-                  </p>
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Vistaprint Flyers and Posters
+    </p>
 
-                </div>
+    <p>
+      For flyers, a lighter paper is fine if they're handed out and thrown away; a heavier paper helps if they're left on counters. For a Vistaprint poster, the image quality matters more than the paper: a photo that looks sharp on your phone can look blurry at A2 size. Use the highest-resolution image you have and zoom into the proof at full size.
+    </p>
 
-                {!isReadMore && (
-                  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                )}
-              </div>
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Vistaprint Calendars and Invitations
+    </p>
 
-              <button
-                onClick={() => setIsReadMore(!isReadMore)}
-                className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
-              >
-                {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-              </button>
+    <p>
+      Calendars, festive invitations and Vistaprint cards for greetings are seasonal. If you're looking for a Vistaprint invitation coupon for Diwali, a wedding or a New Year event, remember that the calendar's start month and the event date on an invitation are the two things people most often get wrong. Double-check them in the proof.
+    </p>
 
-              {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h2 className="text-2xl font-black text-black mb-8">
-                  Frequently Asked Questions About Vistaprint Coupon Codes
-                </h2>
-                {[
-                  {
-                    q: "What is the best Vistaprint coupon code available right now?",
-                    a: "The best active Vistaprint coupon code is listed at the top of this page along with its verified date, so you can see which offer is working best right now. New users typically get a flat discount on their first order, while business cards and bulk print orders regularly carry the deepest percentage discounts. Codes are checked daily, so the listing reflects what is actually live rather than a static page."
-                  },
-                  {
-                    q: "Is there a minimum order quantity on Vistaprint?",
-                    a: "Minimum order quantities vary by product — business cards are typically sold starting from packs of 100, while larger-format items like banners and signage can often be ordered as a single piece. Bulk pricing tiers automatically apply as quantity increases, so the per-unit cost drops the more you order, which is displayed on the product page before checkout."
-                  },
-                  {
-                    q: "How does the VistaCreate design tool work?",
-                    a: "VistaCreate is Vistaprint's free online design tool that lets you customise templates for business cards, flyers, social media graphics, and more, directly in your browser without needing separate design software. Free templates cover most common use cases, while some premium templates and stock assets may carry an additional cost — clearly marked before you add them to your design."
-                  },
-                  {
-                    q: "How long does a rush order take to arrive?",
-                    a: "Standard production and delivery timelines are shown on every product page before you order, typically ranging from a few business days to around two weeks depending on the product and customisation complexity. Rush production is available as a paid add-on on select products, reducing production time — though shipping time is separate and depends on your delivery location."
-                  },
-                  {
-                    q: "Are there bulk discounts for business orders?",
-                    a: "Yes. Vistaprint applies automatic bulk pricing tiers as your order quantity increases — the per-unit price for 500 business cards is lower than for 100, and larger quantities unlock progressively deeper per-unit rates. This is separate from promotional coupon codes, so a bulk order combined with an active CouponsCrew offer typically delivers the best overall value."
-                  },
-                  {
-                    q: "What is Vistaprint's return and reprint policy?",
-                    a: "Vistaprint offers a satisfaction guarantee on most products — if an order arrives with a print defect or production error, a free reprint or refund is typically available when reported within the stated claim window on the order confirmation. Custom-designed items are generally non-returnable for buyer's-remorse reasons once printed, since they are made to order, so it is worth reviewing your proof carefully before confirming."
-                  },
-                  {
-                    q: "Can I use a Vistaprint coupon code with a bank card offer?",
-                    a: "Yes. Apply your CouponsCrew Vistaprint offer at checkout, then pay with an eligible HDFC or ICICI card to unlock an additional instant discount. This stacks on top of any bulk-order pricing tier already applied to your cart, giving you multiple layers of savings on the same order."
-                  },
-                  {
-                    q: "Does VistaCreate cost anything to use?",
-                    a: "The core VistaCreate design tool and most templates are free to use for designing your print products. Certain premium stock photos, fonts, or advanced template packs may carry a small additional licensing cost, which is clearly shown before you add them to a design — the base design experience itself does not require a paid subscription."
-                  }
-                ].map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+    <hr className="my-6 border-slate-200" />
 
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      More Premium and Personalization
+    </p>
+
+    <p>
+      Premium finishes and personalised products cost more, so spend on them where they're noticed. A client keeps a business card and a calendar; nobody keeps a flyer.
+    </p>
+
+   <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">Where premium is worth it</th>
+        <th className="p-4 font-bold">Where standard is fine</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Business cards for client-facing roles</td>
+        <td className="p-4">Flyers for one-time events</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Year-end calendars and client gifts</td>
+        <td className="p-4">Internal notices and posters</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Wedding and launch invitations</td>
+        <td className="p-4">Price lists that change often</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Packaging stickers for a product brand</td>
+        <td className="p-4">Short-run test prints</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Personalization tips:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        <strong>Use one design, change the details.</strong> For team business cards, keep the layout identical and change only the name, role and number for each person. It looks consistent and is quicker to proof.
+      </li>
+      <li>
+        <strong>Match your brand colours across products.</strong> Use the same logo file and colour codes on cards, flyers and T-shirts. Colours on screen and on paper can differ slightly, so compare with a previous print if you have one.
+      </li>
+      <li>
+        <strong>Get design help if you don't have a designer.</strong> Vistaprint offers templates, and it also owns the design marketplace 99designs for businesses that want a custom logo or brand identity.
+      </li>
+    </ul>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Before You Upload: Print-Ready File Checklist
+    </p>
+
+    <p>
+      Most print complaints trace back to the file, not the printer. Run through this before ordering; it's the single cheapest way to save money on Vistaprint.
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        <strong>Resolution:</strong> use images at 300 DPI at the final print size. Logos taken from a website are usually too low.
+      </li>
+      <li>
+        <strong>Bleed:</strong> extend background colours and images slightly past the trim line so no white edge shows after cutting.
+      </li>
+      <li>
+        <strong>Safe zone:</strong> keep text and logos away from the edges. Anything too close can get trimmed.
+      </li>
+      <li>
+        <strong>Colour:</strong> printing uses CMYK, so bright on-screen colours can print slightly duller. Very dark blues and blacks can look similar on paper.
+      </li>
+      <li>
+        <strong>Fonts:</strong> if you upload a PDF, embed or outline the fonts so they don't get substituted.
+      </li>
+      <li>
+        <strong>Proof:</strong> read every line on the proof, including the small print, and check QR codes by scanning them from the proof on another screen.
+      </li>
+    </ul>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Vistaprint and the Flipkart Big Billion Days and Amazon Great Indian Festival 2026
+    </p>
+
+    <p>
+      Vistaprint orders are placed on vistaprint.in, so Flipkart and Amazon sale prices and their bank offers don't apply to them. The festive season still matters for Vistaprint buyers, though: October to December is when businesses order Diwali greeting cards, client gifts, invitations and next year's calendars, all at the same time.
+    </p>
+
+    <div className="overflow-x-auto my-4">
+      <table className="w-full text-left border-collapse border border-slate-200 text-sm">
+        <thead>
+          <tr className="bg-slate-100">
+            <th className="border border-slate-200 p-2"></th>
+            <th className="border border-slate-200 p-2">Flipkart Big Billion Days 2026</th>
+            <th className="border border-slate-200 p-2">Amazon Great Indian Festival 2026</th>
+            <th className="border border-slate-200 p-2">Vistaprint</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-slate-200 p-2 font-medium">Starts</td>
+            <td className="border border-slate-200 p-2">9 Oct 2026 (early access 8 Oct)</td>
+            <td className="border border-slate-200 p-2">8 Oct 2026</td>
+            <td className="border border-slate-200 p-2">Orders anytime on vistaprint.in</td>
+          </tr>
+          <tr>
+            <td className="border border-slate-200 p-2 font-medium">Bank offers announced</td>
+            <td className="border border-slate-200 p-2">Axis Bank and ICICI Bank cards, up to 10%</td>
+            <td className="border border-slate-200 p-2">SBI cards, 10% instant discount</td>
+            <td className="border border-slate-200 p-2">Only offers shown on vistaprint.in apply</td>
+          </tr>
+          <tr>
+            <td className="border border-slate-200 p-2 font-medium">Useful for</td>
+            <td className="border border-slate-200 p-2">Office equipment, printers, gifting products</td>
+            <td className="border border-slate-200 p-2">Office supplies, gifting products</td>
+            <td className="border border-slate-200 p-2">Custom printed cards, calendars, invitations, merchandise</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Festive Print Planner
+    </p>
+
+    <p>
+      Order festive prints early. Seasonal demand is high, and delivery delays are a common complaint in recent vistaprint.in reviews on Trustpilot (2.5 out of 5 from 271 reviews when we checked). Reviews also include praise for print quality and on-time delivery, but leaving a buffer is the safe choice.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">What you're printing</th>
+        <th className="p-4 font-bold">Needed by</th>
+        <th className="p-4 font-bold">Suggested order window</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Diwali greeting cards and invitations</td>
+        <td className="p-4">Before Diwali</td>
+        <td className="p-4">Early to mid October</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Client gift stickers and packaging labels</td>
+        <td className="p-4">Before gifting starts</td>
+        <td className="p-4">Early October</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">2027 calendars</td>
+        <td className="p-4">Late December</td>
+        <td className="p-4">November</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">New Year event invitations and posters</td>
+        <td className="p-4">Late December</td>
+        <td className="p-4">Early December</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <p>
+      Check the delivery date at checkout for your pin code and choose a date comfortably before your deadline.
+    </p>
+
+    <p className="mt-4">
+      Related: <a href="https://www.couponscrew.com/festival-offers/diwali-offers" className="text-[#5B4FBE] underline">Diwali offers</a>, <a href="https://www.couponscrew.com/festival-offers/dusshera-offers" className="text-[#5B4FBE] underline">Dussehra offers</a>, <a href="https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers" className="text-[#5B4FBE] underline">Flipkart Big Billion Days offers</a>, <a href="https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers" className="text-[#5B4FBE] underline">Amazon Great Indian Festival offers</a> and our <a href="https://www.couponscrew.com/blog/big-billion-days-vs-amazon-great-indian-festival" className="text-[#5B4FBE] underline">BBD vs GIF comparison</a>.
+    </p>
+  </div>
+</div>
+
+          <hr className="my-10 border-gray-200" />
+
+          {/* FAQs Section Header - Replaced H1 with Styled Paragraph */}
+          <p className="text-2xl font-black text-black mt-16 mb-8">
+            Vistaprint Coupon Code FAQs
+          </p>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is there a working Vistaprint coupon code today?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Check the offers listed on this page and confirm them on vistaprint.in. Vistaprint codes are often product-specific or need a minimum order, so read the terms before applying one.
+              </p>
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-10">
-              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Vistaprint Searches</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {["Vistaprint Coupons", "Business Card Offers", "Signage Discount Deals", "Vistaprint Bulk Order Sale", "VistaCreate Templates", "New User Vistaprint Offer", "Vistaprint Bank Offers", "CouponsCrew Home"].map(tag => (
-                    <a
-                      key={tag}
-                      href={`/search?q=${encodeURIComponent(tag)}`}
-                      className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Where do I enter a Vistaprint promo code?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                In the promo code field in your cart on vistaprint.in, before you pay. The discount should show in the order total.
+              </p>
+            </div>
 
-              <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Vistaprint Deals</h3>
-                <div className="space-y-6">
-                  {[
-                    { heading: "Business Cards — Up to 50% OFF", sub: "Standard and premium finishes — deepest discounts of the year" },
-                    { heading: "Bulk Order Discount — Up to 25% OFF", sub: "Larger quantities of cards and flyers, lower per-unit cost" },
-                    { heading: "Free VistaCreate Templates", sub: "Design your print products online, no extra cost" },
-                    { heading: "10% Bank Card Discount", sub: "HDFC, ICICI — instant discount at checkout" },
-                    { heading: "New User First-Order Offer", sub: "Flat ₹300 off for first-time Vistaprint customers" }
-                  ].map((deal, i) => (
-                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                      <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">V</div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
-                        <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                      </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Vistaprint deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is vistaprint.in the official Vistaprint site in India?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Yes. Vistaprint has run its Indian business since acquiring PrintBell in June 2011.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Can I use Flipkart or Amazon bank offers on Vistaprint?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                No. Those offers apply to purchases on Flipkart and Amazon. Only offers shown on vistaprint.in apply to Vistaprint orders.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                How do I avoid a bad print from Vistaprint?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Upload high-resolution artwork, keep text away from the edges, add bleed to backgrounds, and read the proof line by line before ordering.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                When should I order Diwali cards and 2027 calendars?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Order Diwali cards and invitations in early to mid October, and 2027 calendars in November, to leave room for delivery delays.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Can Vistaprint help with design?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Yes. You can start from Vistaprint's templates, and Vistaprint also owns 99designs for custom logo and brand design.
+              </p>
             </div>
 
           </div>
+
+          <hr className="my-10 border-gray-200" />
+
+          <p>
+            The best Vistaprint deal comes from a correct file, the right quantity and an early order. A Vistaprint coupon code on top of that is a bonus, so check this page for current offers before you check out.
+          </p>
+
         </div>
-      </section>
+      </div>
+
+      {/* Sidebar Column */}
+      <div className="space-y-10">
+        <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+          <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular Vistaprint Searches
+          </p>
+          <div className="flex flex-wrap gap-2.5">
+            {["Vistaprint Coupons", "Business Card Offers", "Custom Printing Deals", "Flyers & Posters", "Diwali Cards", "Corporate Gifts", "CouponsCrew Home"].map(tag => (
+              <a
+                key={tag}
+                href={`/search?q=${encodeURIComponent(tag)}`}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ==========================================
           INTERACTIVE CODE COPYING MODAL / POPUP

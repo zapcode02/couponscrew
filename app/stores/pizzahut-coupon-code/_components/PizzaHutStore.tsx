@@ -146,27 +146,17 @@ export default function PizzaHutStore() {
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-col gap-2">
-                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Pizza Hut Coupon Codes</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF] w-fit">
-                      Pizza, Sides & Delivery Deals
-                    </span>
+                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">
+                      Pizza Hut Coupon Code – Save ₹125 & Enjoy Buy 1 Get 3 Free
+                    </h1>
+                   
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Order Pan Pizza, Cheese Burst, sides & WOW Box combos at India's favourite pizza chain. Get the best deals with Pizza Hut coupon codes & offers.
+                    Save more with the latest Pizza Hut Coupon Code on your favourite pizzas, sides, and desserts. Get ₹125 OFF on orders above ₹500 or enjoy the Buy 1 Pizza, Get 3 Free offer. Use a Pizza Hut Discount Code to unlock verified online deals and make every meal more affordable.
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
-                    <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                      <ShieldCheck size={14} /> Verified Store
-                    </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
-                      <Tag size={14} /> 55+ Offers
-                    </span>
-                    <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Codes Reviewed Daily
-                    </span>
-                  </div>
+                 
                 </div>
               </div>
 
@@ -392,32 +382,41 @@ export default function PizzaHutStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
-                <span>The Story Behind Pizza Hut</span>
-              </h3>
-              <p className="text-[#1A1A2E] text-sm mb-3">
-                Pizza Hut was founded in 1958 in Wichita, Kansas, by brothers Dan and Frank Carney, who borrowed $600 from their mother to open the first restaurant. The chain expanded rapidly through the following decades, growing into one of the world's largest pizza chains by number of locations. Since 1997, Pizza Hut has operated as part of Yum! Brands, alongside KFC and Taco Bell.
-              </p>
+           <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
+  <div className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    Why Your Pizza Hut Discount Code Isn't Working
+  </div>
 
-              <p className="text-[#1A1A2E] text-sm">
-                In India, Pizza Hut runs through master franchisee partners across metro and Tier 2 cities, offering dine-in, delivery, and takeaway channels. The India menu blends global favourites like Pan Pizza and Stuffed Crust with locally adapted vegetarian options and value combos like the WOW Box, built specifically for the Indian market.
-              </p>
+  <div className="text-xs text-[#4A4A6A] space-y-3">
+    <div className="font-normal">
+      If a Pizza Hut discount code fails, the reason is almost always one of these:
+    </div>
 
-              <div className="mt-5 select-none">
-                <a
-                  href={AFFILIATE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
-                >
-                  <span>Visit Pizza Hut</span>
-                  <ArrowRight size={12} />
-                </a>
-              </div>
-            </div>
+    <ul className="space-y-2.5 list-disc pl-4 font-normal text-[#4A4A6A]">
+      <li>
+        <span className="font-bold text-[#2C2C40]">Cart below the minimum value.</span> Add a side or drink and try again.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Wrong items in the cart.</span> Some codes work only on specific pizzas, sizes or combos.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Store or city restriction.</span> Your nearest store may not take part in the offer.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Delivery-only or takeaway-only offer.</span> Switch the order type and check again.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Already used.</span> Many codes are one-time per account or phone number.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Expired or an old campaign.</span> Codes from old ads, like past ₹99 or ₹79 promotions, won't work now.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Doesn't combine with a deal.</span> Items already on a combo price usually can't take another code.
+      </li>
+    </ul>
+  </div>
+</div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
             <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
@@ -480,57 +479,7 @@ export default function PizzaHutStore() {
               </div>
             </div>
 
-            {/* Sidebar Card 4: Why Shop at Pizza Hut */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Use CouponScrew for Pizza Hut Deals?
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
-                    <span>Every Pizza Hut coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
-                    <span>We display live success percentages for every deal based on actual user attempts, so you can pick the most reliable Pizza Hut offer without guessing.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
-                    <span>We specifically track Indian bank promotions from HDFC and Axis Bank so you always know which card unlocks the maximum instant discount at checkout.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Combo Deal Alerts</span>
-                    <span>WOW Box and Buy 1 Get 1 pizza offers are flagged on CouponScrew as soon as they go live, giving you the best chance to grab them.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
-                    <span>CouponScrew publishes Pizza Hut sale codes ahead of major cricket-season and festive promotions.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
-                    <span>Finding and using a Pizza Hut coupon code on CouponScrew is completely free and requires no account or sign-up.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            
 
           </aside>
 
@@ -538,362 +487,459 @@ export default function PizzaHutStore() {
       </section>
 
       <section className="py-24 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Left: Text Content */}
-            <div className="prose max-w-none">
-              <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Pizza Hut Coupon Code India (August 2026): Up to 50% Off + Free Delivery — Verified
-              </h2>
+      {/* Main Content Column */}
+      <div className="prose max-w-none">
+        
+        {/* Main Title - Replaced H1 with Styled Paragraph */}
+        <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Pizza Hut Coupon Code: Offers, Deals and How to Pay Less in India
+        </p>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                  <caption className="sr-only">Pizza Hut Pizza, Sides, and Combo Coupon Offers</caption>
-                  <thead>
-                    <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E8E8F0]">
-                    {[
-                      {
-                        offerType: 'UP TO 50% OFF',
-                        category: 'Pizza',
-                        discount: 'Up to 50% OFF',
-                        highlights: 'Pan Pizza and Cheese Burst range combos.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'FLAT 150',
-                        category: 'New User',
-                        discount: 'Flat ₹150',
-                        highlights: 'First app order discount above ₹399.',
-                        userType: 'New Users'
-                      },
-                      {
-                        offerType: 'BUY 1 GET 1',
-                        category: 'Medium Pizza',
-                        discount: 'Buy 1 Get 1 Free',
-                        highlights: 'Selected weekdays via the app.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 40% OFF',
-                        category: 'WOW Box',
-                        discount: 'Up to 40% OFF',
-                        highlights: 'Value combo meals.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 30% OFF',
-                        category: 'Sides',
-                        discount: 'Up to 30% OFF',
-                        highlights: 'Garlic breadsticks, wings, and pasta.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'FREE DELIVERY',
-                        category: 'Delivery',
-                        discount: 'Free Delivery',
-                        highlights: 'On orders above ₹499.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 20% OFF',
-                        category: 'Dine-In',
-                        discount: 'Up to 20% OFF',
-                        highlights: 'Select outlet dine-in bills.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 15% OFF',
-                        category: 'Bank Offer',
-                        discount: 'Up to 15% OFF',
-                        highlights: 'Instant discount with HDFC & Axis cards.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 35% OFF',
-                        category: 'Stuffed Crust',
-                        discount: 'Up to 35% OFF',
-                        highlights: 'Stuffed Crust pizza range.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 25% OFF',
-                        category: 'Party Orders',
-                        discount: 'Up to 25% OFF',
-                        highlights: 'Bulk orders for parties and gatherings.',
-                        userType: 'All Users'
-                      }
-                    ].map((row, i) => (
-                      <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                        <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                          {row.offerType}
-                        </td>
-                        <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                          {row.category}
-                        </td>
-                        <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                          {row.discount}
-                        </td>
-                        <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                          {row.highlights}
-                        </td>
-                        <td className="px-5 py-4 whitespace-nowrap">
-                          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                            {row.userType}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+        <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+          <p>
+            A Pizza Hut coupon code is a promo code you apply in the Pizza Hut app or on pizzahut.co.in to take money off a delivery or takeaway order. Most codes need a minimum order value and apply to specific pizzas or combos, so the best saving depends on what and how much you order, not only on the code.
+          </p>
 
-              <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <p className="italic text-sm text-gray-500">
+            *Last checked: 30 September 2026.*
+          </p>
 
-                <p>
-                  Looking for a verified Pizza Hut coupon code before placing your next order? You have come to the right place. CouponScrew tracks and verifies every active Pizza Hut discount code, promo code, and combo deal daily — so you always get a working offer, never an expired one. From Pan Pizza and Stuffed Crust to WOW Box combos and dine-in bills, we cover every category. Copy your code above and start saving on your next Pizza Hut order right now.
-                </p>
+          <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+  <table className="w-full text-left border-collapse min-w-[700px]" itemScope itemType="https://schema.org/Table">
+    <caption className="sr-only">Pizza Hut Coupon and Offer List</caption>
+    <thead>
+      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+        <th scope="col" className="px-6 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          Offer Type
+        </th>
+        <th scope="col" className="px-6 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          Discount / Price
+        </th>
+        <th scope="col" className="px-6 py-4 text-[#5B4FBE] font-extrabold text-sm">
+          Offer Highlights
+        </th>
+        <th scope="col" className="px-6 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          User Eligibility / Terms
+        </th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#E8E8F0]">
+      {[
+        {
+          offerType: 'FLAT ₹125 OFF',
+          discount: 'Flat ₹125 OFF',
+          highlights: 'Valid on pizzas, sides, beverages, and desserts.',
+          eligibility: 'Min. order ₹500 (All Users)'
+        },
+        {
+          offerType: 'FLAT ₹100 OFF',
+          discount: 'Flat ₹100 OFF',
+          highlights: 'Applicable on eligible online Pizza Hut menu items.',
+          eligibility: 'Min. order ₹400'
+        },
+        {
+          offerType: 'BUY 1 GET 3 FREE',
+          discount: '3 Free Items',
+          highlights: 'Get Classic Breadstix, Cheezy Sprinkled Fries, and Pepsi free on ordering 1 Medium or Thin Pizza.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'SAVE 36%',
+          discount: 'Up to 36% OFF',
+          highlights: 'Double Treat Meal starting at ₹449. Includes 2 Personal Pizzas + 1 Classic Breadstix.',
+          eligibility: 'Combo Deal'
+        },
+        {
+          offerType: 'SAVE 25%',
+          discount: '25% OFF',
+          highlights: 'Save 25% on pizzas, sides, drinks, and desserts (Max discount up to ₹300).',
+          eligibility: 'Min. order ₹600'
+        },
+        {
+          offerType: 'SAVE UP TO ₹300',
+          discount: 'Up to ₹300 OFF',
+          highlights: 'Get 25% OFF on qualifying online orders. Excludes combos and deal meals.',
+          eligibility: 'Min. order ₹600'
+        },
+        {
+          offerType: 'FROM ₹1,008',
+          discount: 'From ₹1,008',
+          highlights: 'Hut Treat Box: Includes 2 Medium Pizzas, 2 Breadstix, 2 Pepsi & 1 Divine Chocolate Tub.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'MOMO PIZZA OFFER',
+          discount: 'Flat ₹125 OFF',
+          highlights: 'Flat discount on Momo Pizza orders above ₹500 across menu items.',
+          eligibility: 'Min. order ₹500 (All Users)'
+        }
+      ].map((row, i) => (
+        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+          <td className="px-6 py-4 font-bold text-[#2D3748] text-sm whitespace-nowrap uppercase">
+            {row.offerType}
+          </td>
+          <td className="px-6 py-4 font-extrabold text-[#FF9900] text-sm whitespace-nowrap">
+            {row.discount}
+          </td>
+          <td className="px-6 py-4 text-[#4A5568] text-sm leading-relaxed" itemProp="description">
+            {row.highlights}
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+              {row.eligibility}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  From a Wichita Storefront to a Global Pizza Icon
-                </h3>
+          <hr className="my-8 border-gray-200" />
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Pizza Hut in Numbers — Scale That Speaks for Itself
-                </h3>
+          {/* Section Header - Replaced H2 with Styled Paragraph */}
+          <p className="text-xl font-black text-[#5B4FBE] mb-4">
+            How to Apply a Pizza Hut Promo Code
+          </p>
 
-                <p>
-                  Today, Pizza Hut operates across metro and Tier 2 cities in India through master franchisee partners, spanning dine-in restaurants, delivery-only kitchens, and takeaway counters. As part of Yum! Brands, Pizza Hut shares infrastructure and delivery-technology learnings with sister brands KFC and Taco Bell, contributing to consistently fast app-ordering experiences across all three chains in India.
-                </p>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Open the Pizza Hut app or pizzahut.co.in and set your delivery address or choose takeaway from a nearby store.</li>
+            <li>Add your pizzas, sides and drinks to the cart.</li>
+            <li>On the cart page, open the offers or coupon section.</li>
+            <li>Pick an offer from the list, or type in your code, and tap Apply.</li>
+            <li>Check the discount in the bill summary. If it isn't showing, your cart may be below the minimum value or have an item the code excludes.</li>
+            <li>Place the order.</li>
+          </ol>
 
-                <p>
-                  Add to this India-specific value innovations like the WOW Box — built specifically to compete on price-per-order value — and a steady stream of app-exclusive weekday deals, and it becomes clear why using a Pizza Hut coupon code from CouponScrew on top of an already competitive combo price is simply the smartest way to order here.
-                </p>
+          <p>
+            Offers and prices can differ by store and city, so a code a friend used in another city may not work at your address.
+          </p>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Everything You Can Order at Pizza Hut
-                  </h3>
-                  <p>
-                    Pizza Hut covers every craving from a quick snack to a full party order. Here is a detailed look at what each section offers and what kind of Pizza Hut discount codes apply to each.
-                  </p>
+          <div>
+  <div className="space-y-4 text-slate-700">
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Pizza Hut's Value Offers Over the Years
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Pan Pizza & Cheese Burst — Up to 50% Off: </strong>
-                    The Pan Pizza and Cheese Burst ranges are Pizza Hut's signature revenue category and the most popular among Indian customers, with a thick, buttery crust and a wide selection of vegetarian and non-vegetarian toppings. Sizes range from personal to family portions, with combo pricing typically starting around ₹199 for a personal pizza and going up to ₹899+ for large family combos.
-                    <br />
-                    Pizza Hut coupon codes for pizza combos are among the most frequently searched, and for good reason — a 40% discount on a ₹700 family combo saves you close to ₹280 in one order. The best time to apply a Pizza Hut promo code is during weekday app-exclusive windows, when discounts on medium and large pizzas reach their deepest levels of the week.
-                  </p>
+    <p>
+      People still search for the Pizza Hut 99 offer and the Pizza Hut unlimited offer, and the reason is history. Pizza Hut India has run several low-price campaigns, and old ads keep circulating long after an offer ends. Here's what Pizza Hut has actually launched, with dates, so you can tell a current deal from an old one.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">WOW Box Value Meals — Up to 40% Off: </strong>
-                    The WOW Box is Pizza Hut India's dedicated value-combo line, bundling a pizza, side, and beverage at a fixed low price point aimed squarely at budget-conscious solo diners and students. This category has become one of the fastest-growing parts of the India menu specifically because of its predictable, low starting price.
-                    <br />
-                    A Pizza Hut discount code applied on a WOW Box order stacks well with the already-low combo price, making it one of the most cost-effective ways to order a full meal from the app.
-                  </p>
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">When</th>
+        <th className="p-4 font-bold">Offer</th>
+        <th className="p-4 font-bold">What it was</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">April 2019</td>
+        <td className="p-4 font-medium">Wow Everyday Value</td>
+        <td className="p-4">Pan pizzas starting at ₹99, plus Masala Pepsi and Masala Mirinda</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">September 2022</td>
+        <td className="p-4 font-medium">Flavour Fun pizzas</td>
+        <td className="p-4">12 personal-size pizzas starting at ₹79, with five sauces (Tandoori, Schezwan, Italian, Cheezy, Classic)</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">September 2025</td>
+        <td className="p-4 font-medium">Ultimate Cheese Crust</td>
+        <td className="p-4">New crust with extra cheese on all pan pizzas, launched with a brand refresh</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">June 2026</td>
+        <td className="p-4 font-medium">30 years in India</td>
+        <td className="p-4">₹30 crore in rewards: a free item such as Classic Breadstix or Choco Volcano above a minimum order, until 30 June 2026</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Sides & Desserts — Up to 30% Off: </strong>
-                    Garlic breadsticks, chicken wings, pasta, and choco lava cakes round out the Pizza Hut menu beyond pizza itself, frequently ordered as an add-on to boost order value past the free-delivery threshold. This category sees consistent demand year-round, with wings and breadsticks being the most reordered items.
-                    <br />
-                    Pizza Hut promo codes for sides are commonly bundled into combo deals rather than offered standalone, so checking the combo builder before ordering items individually is worth doing.
-                  </p>
+    <p>
+      <strong>Is the ₹99 offer still running?</strong> We couldn't confirm a ₹99 pizza on Pizza Hut's current menu when we checked. The entry-level personal pizzas are the closest equivalent. Open the app with your address to see today's lowest prices.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Stuffed Crust — Up to 35% Off: </strong>
-                    The Stuffed Crust range wraps a ring of melted cheese into the pizza crust itself, positioned as a premium option above the standard Pan Pizza base. This category carries a higher price point but also sees some of the deepest percentage discounts during major festive and cricket-season promotions.
-                    <br />
-                    A Pizza Hut coupon code on Stuffed Crust during a promotional window can bring the premium price close to standard Pan Pizza pricing, making it a popular upgrade choice when an active offer is live.
-                  </p>
+    <p>
+      <strong>Is there a Pizza Hut unlimited offer?</strong> We found no unlimited pizza offer running now. If you see one advertised, check it's on Pizza Hut's own app or website and confirm it at your local store before you go.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Party & Bulk Orders — Up to 25% Off: </strong>
-                    Pizza Hut accepts bulk orders for birthday parties, office gatherings, and family events, with discount tiers activating once the order crosses a set pizza count or total value. Advance notice to the specific outlet is generally recommended for very large orders to ensure timely preparation.
-                    <br />
-                    Pizza Hut coupon codes apply to bulk orders sitewide in most cases, meaning any active code typically works here alongside the bulk-order pricing tier.
-                  </p>
-                </div>
+    <hr className="my-6 border-slate-200" />
 
-                <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Pizza Hut Coupon Code — Step by Step</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Using a Pizza Hut discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
-                  <div className="space-y-6">
-                    {[
-                      "Find Your Code on CouponScrew — Browse the verified Pizza Hut offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant Pizza Hut page.",
-                      "Open the App or Website — Go to the Pizza Hut app or website and select your delivery address or nearest outlet.",
-                      "Build Your Order — Add pizzas, sides, and combos to your cart. Check the offer description for any combo exclusions before finalising items.",
-                      "Go to Checkout — Proceed to checkout. Find the \"Apply Coupon\" field just above the order total section.",
-                      "Paste Your Pizza Hut Promo Code — Paste the code you copied from CouponScrew and click Apply. The discount updates in your order total immediately.",
-                      "Stack Your Bank Card Offer — At the payment step, check for eligible HDFC or Axis Bank card discounts. Apply both. This is the step most customers miss — and it is where you unlock the second layer of savings.",
-                      "Complete Payment — Confirm your order. You will receive an order confirmation with estimated delivery time via the app or SMS."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Pizza Hut Pizza Menu: What to Order for Better Value
+    </p>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Why Millions of Customers Choose Pizza Hut
-                  </h3>
+    <p>
+      The Pizza Hut pizza menu is built around its pan pizzas, now with the Ultimate Cheese Crust, alongside personal pizzas, sides, desserts and drinks. Value on a pizza order comes more from how you combine sizes than from the code.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Decades of Consistent Recipe Quality: </strong>
-                    Few pizza chains can match Pizza Hut's global track record for recipe consistency across thousands of outlets. The Pan Pizza formula in particular has remained a defining differentiator against thinner-crust competitors for decades.
-                  </p>
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">If you're ordering for...</th>
+        <th className="p-4 font-bold">Better-value approach</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">One person</td>
+        <td className="p-4">A personal pizza with a side, or a single-person combo</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Two people</td>
+        <td className="p-4">One medium pizza plus a side often beats two personal pizzas</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Three to four people</td>
+        <td className="p-4">Two medium pizzas, or a large plus sides; compare the per-person total</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">A group or party</td>
+        <td className="p-4">Combos and meal deals first, then apply a coupon if it stacks</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">WOW Box — Built Specifically for Value-Conscious India: </strong>
-                    Most global pizza chains sell a scaled-down version of their international menu in India. The WOW Box is a genuine India-market innovation, designed from the ground up to hit an accessible price point without sacrificing the core Pizza Hut combo experience.
-                  </p>
+    <p>
+      Pizza Hut garlic bread and breadsticks are the side people add most often. Before adding sides separately, check whether a combo already includes one. Sides and desserts are also what Pizza Hut has typically given away free in reward campaigns, such as the Classic Breadstix and Choco Volcano in the 30th-anniversary offer.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Multiple Ordering Channels — Delivery, Dine-In, Takeaway: </strong>
-                    Unlike delivery-only competitors, Pizza Hut maintains a genuine dine-in restaurant network alongside its app-ordering business, giving customers the flexibility to choose based on occasion — a quick solo delivery order versus a full family dine-in experience.
-                  </p>
+    <p>
+      <strong>Pizza Hut express deals for one:</strong> if you want something quick and cheap for yourself, the personal pizzas and single-person combos are the fastest route. They're what Pizza Hut's lowest-price campaigns have been built around.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Yum! Brands Backing — Shared Delivery Infrastructure: </strong>
-                    As part of Yum! Brands alongside KFC and Taco Bell, Pizza Hut benefits from shared logistics learnings and technology investment across the group's India operations, contributing to consistently fast app-ordering and delivery tracking.
-                  </p>
+    <hr className="my-6 border-slate-200" />
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Frequent App-Exclusive Weekday Deals: </strong>
-                    Pizza Hut regularly runs weekday-specific promotions — Buy 1 Get 1 medium pizzas on select days being a recurring favourite — that are only available through the app rather than dine-in ordering, rewarding customers who order digitally.
-                  </p>
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Pizza Hut Delivery: App, Website or Food Delivery Apps?
+    </p>
 
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Order Smarter — Make Every Rupee Count at Pizza Hut
-                  </h3>
+    <p>
+      You can order Pizza Hut delivery through the Pizza Hut app, pizzahut.co.in, or food delivery apps like Swiggy and Zomato. Each channel can show different offers for the same pizza, so it's worth comparing before paying.
+    </p>
 
-                  <p>
-                    Every pizza night is worth getting right — and there is no reason to pay full price for any of it. CouponScrew keeps every active Pizza Hut coupon code, promo code, and combo deal verified and ready for you, updated daily, completely free. Bookmark this page before your next Pizza Hut order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price.
-                  </p>
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold"></th>
+        <th className="p-4 font-bold">Pizza Hut app / website</th>
+        <th className="p-4 font-bold">Food delivery apps</th>
+        <th className="p-4 font-bold">Dine-in / takeaway</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Offers</td>
+        <td className="p-4">Pizza Hut's own deals and codes</td>
+        <td className="p-4">The app's own discounts and bank offers, plus restaurant offers</td>
+        <td className="p-4">Store offers; takeaway avoids delivery charges</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Menu</td>
+        <td className="p-4">Full Pizza Hut menu</td>
+        <td className="p-4">Usually the full menu; check for combos</td>
+        <td className="p-4">Full menu, including dine-in only items where offered</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Best for</td>
+        <td className="p-4">Using a Pizza Hut coupon code</td>
+        <td className="p-4">Stacking the app's discount or membership benefits</td>
+        <td className="p-4">Larger groups, no delivery fee</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                </div>
+    <p>
+      <strong>Quick way to find the lowest price:</strong> build the same cart in the Pizza Hut app and one food delivery app, then compare the final amount to pay, including delivery fee, packaging charges and taxes. The cart with the bigger "discount" isn't always the cheaper one.
+    </p>
 
-                {!isReadMore && (
-                  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                )}
-              </div>
+    <p>
+      Pizza Hut restaurants in India are run by franchise partners, including Devyani International and Sapphire Foods. That's one reason offers and menus can differ between cities and even between stores.
+    </p>
 
-              <button
-                onClick={() => setIsReadMore(!isReadMore)}
-                className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
-              >
-                {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-              </button>
+    <hr className="my-6 border-slate-200" />
 
-              {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h2 className="text-2xl font-black text-black mb-8">
-                  Frequently Asked Questions About Pizza Hut Coupon Codes
-                </h2>
-                {[
-                  {
-                    q: "What is the best Pizza Hut coupon code available right now?",
-                    a: "The best active Pizza Hut coupon code is listed at the top of this page along with its verified date, so you can see which offer is working best right now. New users typically get a flat discount on their first app order, while WOW Box combos and Buy 1 Get 1 pizza offers regularly carry the deepest value. Codes are checked daily, so the listing reflects what is actually live rather than a static page."
-                  },
-                  {
-                    q: "What is the minimum order value for free delivery?",
-                    a: "Pizza Hut typically offers free delivery on app and website orders above a minimum cart value, commonly around ₹499, though this threshold can vary by city and active promotion. The exact minimum for your delivery address is always shown at checkout before you confirm payment, so it is worth checking there if you are close to the threshold."
-                  },
-                  {
-                    q: "Do combo and bundle deals have exclusions?",
-                    a: "Yes. WOW Box and other combo deals are typically built around specific pizza sizes, crusts, or side combinations, and substituting items outside the set combo can affect the final price or void the bundle discount. The exact inclusions for each combo are listed on the order page before you add it to your cart, so it is worth reviewing before assuming full customisation is included at the bundle price."
-                  },
-                  {
-                    q: "Are app-exclusive deals different from dine-in offers?",
-                    a: "Yes, generally. Delivery and app-ordering promotions — like new-user discounts and WOW Box pricing — are usually separate from dine-in bill discounts available at physical outlets. Some dine-in offers require showing the deal on the app at the table, so it is worth confirming with staff whether an online promo code applies to an in-restaurant order before assuming it carries over automatically."
-                  },
-                  {
-                    q: "What is Pizza Hut's cancellation and refund policy?",
-                    a: "Orders can typically be cancelled within a short window immediately after placing them, before the kitchen begins preparation — usually just a few minutes. Once preparation has started, cancellation is generally not possible given the perishable nature of the order. If an order arrives incorrect or damaged, Pizza Hut customer support can be contacted through the app for a replacement or refund review."
-                  },
-                  {
-                    q: "How does Pizza Hut handle bulk or party orders?",
-                    a: "Pizza Hut accepts bulk orders for parties and corporate gatherings, often with a discount tier applied once the order crosses a certain value or pizza count. Advance notice is generally recommended for very large orders to ensure the outlet can prepare everything within your requested delivery or pickup window — checking with the specific outlet ahead of a large event is worth doing."
-                  },
-                  {
-                    q: "Can I use a Pizza Hut coupon code with a bank card offer?",
-                    a: "Yes. Apply your CouponsCrew Pizza Hut offer at checkout, then pay with an eligible HDFC or Axis Bank card to unlock an additional instant discount. This stacks on top of any active combo pricing or sitewide promotion, giving you multiple layers of savings on the same order."
-                  }
-                ].map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Pizza Hut Offers During Flipkart Big Billion Days and Amazon Great Indian Festival 2026
+    </p>
 
+    <p>
+      Pizza Hut isn't part of Flipkart Big Billion Days or the Amazon Great Indian Festival, and the bank offers running on those sales apply to Flipkart and Amazon purchases, not to pizza orders. Pizza Hut deals still get busier in October, because the festive season brings cricket nights, Navratri and Dussehra get-togethers and Diwali parties.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold"></th>
+            <th className="p-4 font-bold">Flipkart Big Billion Days 2026</th>
+            <th className="p-4 font-bold">Amazon Great Indian Festival 2026</th>
+            <th className="p-4 font-bold">Pizza Hut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-slate-200 p-2 font-medium">Starts</td>
+            <td className="border border-slate-200 p-2">9 Oct 2026 (early access 8 Oct)</td>
+            <td className="border border-slate-200 p-2">8 Oct 2026</td>
+            <td className="border border-slate-200 p-2">Offers change regularly in the app</td>
+          </tr>
+          <tr>
+            <td className="border border-slate-200 p-2 font-medium">Bank offers announced</td>
+            <td className="border border-slate-200 p-2">Axis Bank and ICICI Bank cards, up to 10%</td>
+            <td className="border border-slate-200 p-2">SBI cards, 10% instant discount</td>
+            <td className="border border-slate-200 p-2">Only offers shown in the Pizza Hut app or on the ordering app you use</td>
+          </tr>
+          <tr>
+            <td className="border border-slate-200 p-2 font-medium">Useful for</td>
+            <td className="border border-slate-200 p-2">Electronics, home, fashion</td>
+            <td className="border border-slate-200 p-2">Electronics, home, fashion</td>
+            <td className="border border-slate-200 p-2">Party orders, festive get-togethers</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Festive ordering tips:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        <strong>Order large party orders early in the evening.</strong> Peak festival nights mean longer waits, and ordering earlier or picking up takeaway can save time.
+      </li>
+      <li>
+        <strong>Use combos for groups.</strong> For a party of six or more, a combo deal plus a coupon usually beats ordering pizzas one by one.
+      </li>
+      <li>
+        <strong>Check the minimum order value.</strong> Many Pizza Hut deals apply only above a set amount; a side or drink can push your cart over the line for less than the discount you gain.
+      </li>
+    </ul>
+
+    <p className="mt-4">
+      More festive deals: <a href="https://www.couponscrew.com/festival-offers/dusshera-offers" className="text-[#5B4FBE] underline">Dussehra offers</a>, <a href="https://www.couponscrew.com/festival-offers/diwali-offers" className="text-[#5B4FBE] underline">Diwali offers</a>, <a href="https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers" className="text-[#5B4FBE] underline">Flipkart Big Billion Days offers</a> and <a href="https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers" className="text-[#5B4FBE] underline">Amazon Great Indian Festival offers</a>.
+    </p>
+  </div>
+</div>
+
+          <hr className="my-10 border-gray-200" />
+
+          {/* FAQs Section Header - Replaced H1 with Styled Paragraph */}
+          <p className="text-2xl font-black text-black mt-16 mb-8">
+            Pizza Hut Coupon Code FAQs
+          </p>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is there a Pizza Hut coupon code that works today?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Check the offers listed on this page and the offers section in the Pizza Hut app for your address. Pizza Hut codes usually need a minimum order and vary by store, so the app shows what works for you.
+              </p>
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-10">
-              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Pizza Hut Searches</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {["Pizza Hut Coupons", "Pan Pizza Offers", "WOW Box Deals", "Buy 1 Get 1 Pizza Sale", "Stuffed Crust Discount", "New User Pizza Hut Offer", "Pizza Hut Bank Offers", "CouponsCrew Home"].map(tag => (
-                    <a
-                      key={tag}
-                      href={`/search?q=${encodeURIComponent(tag)}`}
-                      className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Where do I enter a Pizza Hut promo code?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                On the cart page of the Pizza Hut app or pizzahut.co.in, in the offers or coupon section, before you pay.
+              </p>
+            </div>
 
-              <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Pizza Hut Deals</h3>
-                <div className="space-y-6">
-                  {[
-                    { heading: "Pan Pizza — Up to 50% OFF", sub: "Family combos, weekday app deals — deepest discounts of the week" },
-                    { heading: "Buy 1 Get 1 Medium Pizza", sub: "Selected weekdays via the app — limited time" },
-                    { heading: "Free Delivery ₹499+", sub: "No code required — standard delivery included" },
-                    { heading: "15% Bank Card Discount", sub: "HDFC, Axis Bank — instant discount at checkout" },
-                    { heading: "New User First-Order Offer", sub: "Flat ₹150 off for first-time app customers" }
-                  ].map((deal, i) => (
-                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                      <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">P</div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
-                        <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                      </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Pizza Hut deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Does Pizza Hut still have ₹99 pizzas?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Pizza Hut launched pan pizzas from ₹99 in April 2019 and personal pizzas from ₹79 in September 2022. We couldn't confirm either price on the current menu, so check the app for today's lowest-priced pizzas.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is there a Pizza Hut unlimited offer?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We found no unlimited offer running now. Confirm any unlimited deal on Pizza Hut's official app or with your local store.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is it cheaper to order Pizza Hut on the app or on Swiggy or Zomato?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                It depends on the day's offers. Build the same cart on both and compare the final total, including delivery and packaging charges.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Why are Pizza Hut offers different in my city?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Pizza Hut stores in India are run by franchise partners, and offers and menus can vary by city and store.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                What is the Ultimate Cheese Crust?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                It's a crust with extra cheese that Pizza Hut India introduced on all its pan pizzas in September 2025.
+              </p>
             </div>
 
           </div>
+
+          <hr className="my-10 border-gray-200" />
+
+          <p>
+            The cheapest Pizza Hut order comes from the right combo for your group size, a quick comparison between the Pizza Hut app and your food delivery app, and a Pizza Hut coupon code that fits your cart. For other food offers, see our <a href="https://www.couponscrew.com/stores/dominos-coupon-code" className="text-[#5B4FBE] font-bold underline">Domino's coupon codes</a>, <a href="https://www.couponscrew.com/stores/magicpin-coupon-code" className="text-[#5B4FBE] font-bold underline">magicpin coupon codes</a> and the <a href="https://www.couponscrew.com/stores/categories/food-and-grocery" className="text-[#5B4FBE] font-bold underline">food and grocery category</a>.
+          </p>
+
         </div>
-      </section>
+      </div>
+
+      {/* Sidebar Column */}
+      <div className="space-y-10">
+        <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+          <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular Pizza Hut Searches
+          </p>
+          <div className="flex flex-wrap gap-2.5">
+            {["Pizza Hut Coupons", "Pan Pizza Deals", "Combo Offers", "Food Delivery Coupons", "App Exclusive Offers", "CouponsCrew Home"].map(tag => (
+              <a
+                key={tag}
+                href={`/search?q=${encodeURIComponent(tag)}`}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ==========================================
           INTERACTIVE CODE COPYING MODAL / POPUP

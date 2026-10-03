@@ -146,27 +146,17 @@ export default function CrocsStore() {
                 {/* Details Section */}
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-col gap-2">
-                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Crocs Coupon Codes</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF] w-fit">
-                      Clogs, Sandals & Jibbitz Charms
-                    </span>
+                    <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">
+                      Crocs Coupon Code – Save 60% on Jibbitz + Extra 10% OFF
+                    </h1>
+                   
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Shop Classic Clogs, sandals, kids' range & Jibbitz charms at India's favourite comfort footwear store. Get the best deals with Crocs coupon codes & offers.
+                    Save more with the latest Crocs Coupon Code on your favourite footwear and accessories. Enjoy 60% OFF Hashtag Jibbitz and get an extra 10% OFF selected Crocs styles when using a discount code. Shop verified Crocs deals today and save more on every eligible purchase.
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
-                    <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                      <ShieldCheck size={14} /> Verified Store
-                    </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
-                      <Tag size={14} /> 50+ Offers
-                    </span>
-                    <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Codes Reviewed Daily
-                    </span>
-                  </div>
+                 
                 </div>
               </div>
 
@@ -392,32 +382,47 @@ export default function CrocsStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
-                <span>The Story Behind Crocs</span>
-              </h3>
-              <p className="text-[#1A1A2E] text-sm mb-3">
-                Crocs was founded in 2002 in Boulder, Colorado, by Lyndon "Duke" Hanson, George Boedecker Jr., and Scott Seamans. What started as a boating shoe made from a proprietary closed-cell resin foam called Croslite quickly became one of the most recognisable — and polarising — footwear silhouettes in the world, the Classic Clog.
-              </p>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
+  <div className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    How to Avoid Fake Crocs
+  </div>
 
-              <p className="text-[#1A1A2E] text-sm">
-                In 2006, Crocs acquired Jibbitz LLC, the company behind the small decorative charms that snap into the clog's ventilation holes, turning a simple comfort shoe into a genuinely customisable product. Today Crocs sells in more than 85 countries, with high-profile celebrity and brand collaborations regularly driving hype around limited-edition colourways.
-              </p>
+  <div className="text-xs text-[#4A4A6A] space-y-3">
+    <div className="font-normal">
+      Counterfeit Crocs are a real problem in India. In September 2026, police in Kukatpally, Hyderabad, booked two shops for allegedly selling counterfeit Crocs products. Online, fake "Crocs clearance sale" sites promise discounts as steep as 90% off.
+    </div>
 
-              <div className="mt-5 select-none">
-                <a
-                  href={AFFILIATE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
-                >
-                  <span>Visit Crocs</span>
-                  <ArrowRight size={12} />
-                </a>
-              </div>
-            </div>
+    <div className="font-normal">
+      While researching this page, we also saw several lookalike web addresses that combine "crocs" with an unusual ending such as ".it.com" appearing in search results. These are not Crocs' official stores.
+    </div>
+
+    <div className="font-bold text-[#2C2C40] pt-1">
+      Signs to walk away:
+    </div>
+
+    <ul className="space-y-2.5 list-disc pl-4 font-normal text-[#4A4A6A]">
+      <li>
+        <span className="font-bold text-[#2C2C40]">The web address isn't crocs.in</span> (or a known marketplace like Flipkart or Amazon).
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">The discount is far beyond anything on the official Sale page.</span> Genuine Crocs rarely go anywhere near 90% off.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">No contact details,</span> such as a working phone number, address or return policy.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Poor spelling and odd product names</span> on the site or the box.
+      </li>
+      <li>
+        <span className="font-bold text-[#2C2C40]">Payment only by UPI transfer or bank transfer</span> with no card or COD option.
+      </li>
+    </ul>
+
+    <div className="font-normal pt-1">
+      Pay by credit card on unfamiliar sites where possible; it gives you a route to dispute the charge if the product never arrives or turns out to be fake.
+    </div>
+  </div>
+</div>
 
             {/* Sidebar Card 2: Promo Sale Banner */}
             <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
@@ -480,57 +485,7 @@ export default function CrocsStore() {
               </div>
             </div>
 
-            {/* Sidebar Card 4: Why Shop at Crocs */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Use CouponScrew for Crocs Deals?
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
-                    <span>Every Crocs coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
-                    <span>We display live success percentages for every deal based on actual user attempts, so you can pick the most reliable Crocs offer without guessing.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
-                    <span>We specifically track Indian bank promotions from ICICI and SBI so you always know which card unlocks the maximum instant discount at checkout.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Collab Drop Alerts</span>
-                    <span>Limited-edition Crocs collaborations and hype colourways are flagged on CouponScrew as soon as they go live, giving you the best chance to grab a pair before stock runs out.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
-                    <span>CouponScrew publishes Crocs sale codes ahead of major seasonal events, so you do not need to wait for the sale to start.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
-                    <span>Finding and using a Crocs coupon code on CouponScrew is completely free and requires no account or sign-up.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            
 
           </aside>
 
@@ -538,366 +493,658 @@ export default function CrocsStore() {
       </section>
 
       <section className="py-24 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Left: Text Content */}
-            <div className="prose max-w-none">
-              <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Crocs Coupon Code India (August 2026): Up to 40% Off + Free Shipping — Verified
-              </h2>
+      {/* Main Content Column */}
+      <div className="prose max-w-none">
+        
+        {/* Main Title - Replaced H1 with Styled Paragraph */}
+        <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Crocs Coupon Code: Offers, Sale Tips and How to Buy Genuine Crocs in India
+        </p>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                  <caption className="sr-only">Crocs Footwear and Accessories Coupon Offers</caption>
-                  <thead>
-                    <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E8E8F0]">
-                    {[
-                      {
-                        offerType: 'UP TO 40% OFF',
-                        category: 'Classic Clogs',
-                        discount: 'Up to 40% OFF',
-                        highlights: 'Classic Clog for men & women, multiple colours.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'FLAT 500',
-                        category: 'New User',
-                        discount: 'Flat ₹500',
-                        highlights: 'First order discount above ₹2,499.',
-                        userType: 'New Users'
-                      },
-                      {
-                        offerType: 'UP TO 30% OFF',
-                        category: 'Kids Crocs',
-                        discount: 'Up to 30% OFF',
-                        highlights: 'Kids Classic Clogs and sandals.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'BUY 2 GET 1',
-                        category: 'Jibbitz Charms',
-                        discount: 'Buy 2 Get 1 Free',
-                        highlights: '5-pack Jibbitz charm sets.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 35% OFF',
-                        category: 'Sandals',
-                        discount: 'Up to 35% OFF',
-                        highlights: 'Crocs sandals and flip-flops.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 25% OFF',
-                        category: 'Boots',
-                        discount: 'Up to 25% OFF',
-                        highlights: 'Fleece-lined winter boots and clog boots.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 10% OFF',
-                        category: 'Bank Offer',
-                        discount: 'Up to 10% OFF',
-                        highlights: 'Instant discount with ICICI & SBI cards.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'FREE SHIPPING',
-                        category: 'Delivery',
-                        discount: 'Free Shipping',
-                        highlights: 'On all orders above ₹1,499.',
-                        userType: 'All Users'
-                      },
-                      {
-                        offerType: 'UP TO 20% OFF',
-                        category: 'Crocs Club',
-                        discount: 'Up to 20% OFF',
-                        highlights: 'Birthday-month member discount.',
-                        userType: 'Crocs Club Members'
-                      },
-                      {
-                        offerType: 'UP TO 50% OFF',
-                        category: 'Clearance',
-                        discount: 'Up to 50% OFF',
-                        highlights: 'Past-season colourways and styles.',
-                        userType: 'All Users'
-                      }
-                    ].map((row, i) => (
-                      <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                        <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                          {row.offerType}
-                        </td>
-                        <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                          {row.category}
-                        </td>
-                        <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                          {row.discount}
-                        </td>
-                        <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                          {row.highlights}
-                        </td>
-                        <td className="px-5 py-4 whitespace-nowrap">
-                          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                            {row.userType}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+        <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+          <p>
+            A Crocs coupon code is a promo code you enter at checkout on the official Crocs India website to reduce the price of clogs, sandals, slides or Jibbitz charms. Public Crocs codes in India are infrequent, so the most dependable savings come from the Sale section on crocs.in, festive marketplace sales on Flipkart and Amazon, and occasional bank card partnerships.
+          </p>
 
-              <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+          <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+    <caption className="sr-only">Crocs Offers and Discount List</caption>
+    <thead>
+      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          Offer Type
+        </th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          Discount / Price
+        </th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
+          Offer Highlights
+        </th>
+        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+          User Eligibility / Terms
+        </th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#E8E8F0]">
+      {[
+        {
+          offerType: 'SAVE 60%',
+          discount: '60% OFF',
+          highlights: 'Hashtag Jibbitz for ₹160 (down from ₹399) or buy 5 for ₹599.',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'SAVE 50%',
+          discount: 'Up to 50% OFF',
+          highlights: 'Festive Collection clogs, sandals, flips & accessories.',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 45%',
+          discount: '45% OFF',
+          highlights: 'Toddler Crocband Cruiser Sandal for ₹1,922 (MRP ₹3,495).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 45%',
+          discount: '45% OFF',
+          highlights: "Kids' Crocband Cruiser Sandal for ₹2,197 (MRP ₹3,995).",
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 45%',
+          discount: '45% OFF',
+          highlights: 'Toddler Crocband Clog for ₹2,197 (MRP ₹3,995).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: 'InMotion Marbled Clog for ₹4,797 (MRP ₹7,995).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: "Women's InMotion Heel Block Pacer for ₹5,097 (MRP ₹8,495).",
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: 'Echo Clog for ₹4,197 (MRP ₹6,995).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: 'Brooklyn Buckle Low for ₹3,297 (MRP ₹5,495).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: 'Getaway Platform Flip for ₹2,997 (MRP ₹4,995).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: "Women's Getaway Chunky Glitter Platform Flip for ₹3,597 (MRP ₹5,995).",
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 40%',
+          discount: '40% OFF',
+          highlights: 'Number 8 Jibbitz for ₹239 (MRP ₹399).',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: 'Doraemon 3-Jibbitz™ for ₹279 (MRP ₹399).',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: 'Classic Camouflage Clog for ₹3,497 (MRP ₹4,995).',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: 'InMotion Clog for ₹5,247 (MRP ₹7,495).',
+          eligibility: 'All Users'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: 'Echo Gum RO Clog for ₹5,597 (MRP ₹7,995).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: "Women's Brooklyn Flip for ₹3,847 (MRP ₹5,495).",
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: 'Miami Flip for ₹2,447 (MRP ₹3,495).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 30%',
+          discount: '30% OFF',
+          highlights: "Women's Miami Thong Flip for ₹2,797 (MRP ₹3,995).",
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'SAVE 20%',
+          discount: '20% OFF',
+          highlights: 'Echo Wave Clog for ₹6,396 (MRP ₹7,995).',
+          eligibility: 'Extra 5% OFF on Prepaid'
+        },
+        {
+          offerType: 'EXTRA 10% OFF',
+          discount: 'Extra 10% OFF',
+          highlights: "Valid on Classic Ballet, Women's Saturday Platform Sandal & select styles.",
+          eligibility: 'Prepaid Orders Only'
+        }
+      ].map((row, i) => (
+        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+            {row.offerType}
+          </td>
+          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+            {row.discount}
+          </td>
+          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
+            {row.highlights}
+          </td>
+          <td className="px-5 py-4 whitespace-nowrap">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+              {row.eligibility}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
-                <p>
-                  Looking for a verified Crocs coupon code before placing your next order? You have come to the right place. CouponScrew tracks and verifies every active Crocs discount code, promo code, and deal daily — so you always get a working offer, never an expired one. From Classic Clogs and sandals to Jibbitz charms, we cover every category. Copy your code above and start saving on your next Crocs order right now.
-                </p>
+          <p className="italic text-sm text-gray-500">
+            *Last checked: 30 September 2026, a week before the October festive sales.*
+          </p>
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  From a Boulder Boating Shoe to a Global Footwear Icon
-                </h3>
+          <hr className="my-8 border-gray-200" />
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Crocs in Numbers — Scale That Speaks for Itself
-                </h3>
+          {/* Section Header - Replaced H2 with Styled Paragraph */}
+          <p className="text-xl font-black text-[#5B4FBE] mb-4">
+            Crocs Offers: What's Real and What's Expired
+          </p>
 
-                <p>
-                  Today, Crocs sells in more than 85 countries, with the Classic Clog remaining the brand's signature product more than two decades after launch. The Croslite foam construction that made the original boating shoe comfortable is the same core technology used across the entire clog and sandal range today, contributing to the brand's reputation for all-day wearability.
-                </p>
+          <p>
+            Most Crocs codes shared online for India are old bank partnership codes that stopped working years ago. Here are the two that still circulate most, with their actual status, so you don't waste time at checkout.
+          </p>
 
-                <p>
-                  Add to this the acquisition of Jibbitz in 2006, a steady stream of celebrity and designer collaborations that regularly sell out within hours, and a free Crocs Club loyalty programme for repeat shoppers, and it becomes clear why using a Crocs coupon code from CouponScrew on top of an already accessible price point is simply the smartest way to shop here.
-                </p>
+          {/* Data Table */}
+          <div className="overflow-x-auto my-8">
+            <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+              <thead>
+                <tr className="bg-[#5B4FBE] text-white">
+                  <th className="p-4 font-bold">Offer</th>
+                  <th className="p-4 font-bold">Discount</th>
+                  <th className="p-4 font-bold">Conditions</th>
+                  <th className="p-4 font-bold">Valid until</th>
+                  <th className="p-4 font-bold">Status</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                <tr>
+                  <td className="p-4 font-semibold">ICICI Bank cards, code ICICI30</td>
+                  <td className="p-4">30% off full-price items</td>
+                  <td className="p-4">Online only; not on discounted products</td>
+                  <td className="p-4">31 Mar 2020</td>
+                  <td className="p-4 font-bold text-red-500">Expired</td>
+                </tr>
+                <tr className="bg-gray-50/50">
+                  <td className="p-4 font-semibold">Bank of Baroda Mastercard, code MASTER25</td>
+                  <td className="p-4">25% off new arrivals</td>
+                  <td className="p-4">Full payment by the card; no COD; not on discounted items</td>
+                  <td className="p-4">31 Mar 2022</td>
+                  <td className="p-4 font-bold text-red-500">Expired</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Everything You Can Shop at Crocs
-                  </h3>
-                  <p>
-                    Crocs covers footwear for every age group and occasion. Here is a detailed look at what each section offers and what kind of Crocs discount codes apply to each.
-                  </p>
+          <p>
+            Both offers share a pattern worth knowing: bank codes on Crocs have applied only to full-price items, never on top of Sale prices, and could not be combined with other offers. If a new bank offer appears, expect the same rules. A code that claims to stack with an existing sale price is very likely not genuine.
+          </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Classic Clogs — Up to 40% Off: </strong>
-                    The Classic Clog is Crocs' single largest revenue category and the most recognisable silhouette in the brand's lineup. Available in dozens of colours and both closed-heel and slip-on variants, prices range from ₹2,499 for a standard adult pair to ₹4,000+ for licensed collaboration colourways.
-                    <br />
-                    Crocs coupon codes for Classic Clogs are among the most frequently searched, and for good reason — a 30% discount on a ₹3,500 pair saves you over ₹1,000 in one transaction. The best time to apply a Crocs promo code on clogs is during seasonal sales, when discounts reach up to 40% across the core colour range.
-                  </p>
+          {/* Section Header - Replaced H2 with Styled Paragraph */}
+          <p className="text-xl font-black text-[#5B4FBE] mt-10 mb-4">
+            How to Use a Crocs Promo Code
+          </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Kids Crocs — Up to 30% Off: </strong>
-                    The kids range mirrors the adult Classic Clog in a smaller size chart, alongside kids-specific sandals and character-themed colourways featuring popular animated franchises. Parents consistently cite the easy-clean, water-friendly design as the main reason for repeat purchases across growing shoe sizes.
-                    <br />
-                    A Crocs discount code applied on kids' footwear during back-to-school season or festive gifting periods regularly brings the deepest savings, since this is when the brand runs its most aggressive kids-focused promotions.
-                  </p>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li>Go to crocs.in and add your pair to the bag. Check size and colour before moving on.</li>
+            <li>Open the bag and find the field for a promo or coupon code.</li>
+            <li>Enter the code exactly as issued and tap Apply.</li>
+            <li>Confirm the discount shows in the order total. If it doesn't, check whether your item is already on sale; most codes exclude discounted products.</li>
+            <li>Choose a payment method that matches the offer's terms. Bank codes usually require the full amount to be paid on that bank's card.</li>
+          </ol>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Jibbitz Charms — Buy 2 Get 1 Free: </strong>
-                    Jibbitz charms transform a basic clog into a personalised accessory, with themes spanning cartoon characters, sports teams, food, and seasonal designs. This category has become a genuine gifting favourite, since a 5-pack charm set is an affordable add-on to any clog purchase.
-                    <br />
-                    Crocs promo codes on Jibbitz charms are commonly bundle-based rather than percentage discounts, meaning buying multiple packs at once is where the real savings show up.
-                  </p>
+          <p>
+            If a Crocs discount code fails, the usual reasons are: the item is already reduced, the code has expired, the code is limited to a category such as new arrivals, or you're paying with a card the offer doesn't cover.
+          </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Sandals & Flip-Flops — Up to 35% Off: </strong>
-                    Crocs' sandal range includes sport sandals, slide-style flip-flops, and platform variants, all built on the same Croslite comfort base as the clogs. This category sees the strongest demand during the summer months and pre-monsoon season.
-                    <br />
-                    Crocs coupon codes apply sitewide across most sandal styles, so any active code typically works here regardless of the specific silhouette you are buying.
-                  </p>
+          <div>
+  <div className="space-y-4 text-slate-700">
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Crocs Store Collections
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Winter Boots & Clog Boots — Up to 25% Off: </strong>
-                    Fleece-lined clog boots and winter boots extend the Crocs comfort profile into colder months, popular in northern Indian hill regions during winter travel season. Prices range from ₹3,000 for basic clog boots to ₹6,000+ for fully insulated winter styles.
-                    <br />
-                    A Crocs discount code in this category is particularly useful ahead of winter travel, since boots tend to be a higher-ticket purchase than standard clogs.
-                  </p>
-                </div>
+    <p>
+      The Crocs India store is organised into Women, Men, Kids, Jibbitz Charms, Bestsellers, New Arrivals and Sale. Most Crocs are unisex, so the same clog often appears in both the Women and Men sections under the same product.
+    </p>
 
-                <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Crocs Coupon Code — Step by Step</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Using a Crocs discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
-                  <div className="space-y-6">
-                    {[
-                      "Find Your Code on CouponScrew — Browse the verified Crocs offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant Crocs page.",
-                      "Browse and Add to Cart — Go to Crocs.in and select your products. Check the offer description for any category exclusions before adding items to your cart.",
-                      "Check the Size Guide — Crocs sizing runs true-to-size with a roomier fit, so review the foot-length chart on the product page before confirming your size.",
-                      "Go to Checkout — Proceed to checkout. Find the \"Apply Coupon\" field just above the Order Summary section on the checkout page.",
-                      "Paste Your Crocs Promo Code — Paste the code you copied from CouponScrew and click Apply. The discount updates in your order summary immediately.",
-                      "Stack Your Bank Card Offer — At the payment step, check for eligible ICICI or SBI card discounts. Apply both. This is the step most shoppers miss — and it is where you unlock the second layer of savings.",
-                      "Complete Payment — Confirm your order. You will receive a delivery confirmation with tracking details via SMS and email."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">Collection</th>
+        <th className="p-4 font-bold">What you'll find</th>
+        <th className="p-4 font-bold">Worth knowing</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Women</td>
+        <td className="p-4">Clogs, crocs ladies sandals, wedges, slides, flip-flops</td>
+        <td className="p-4">The Brooklyn range covers low wedges and dressier sandals</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Men</td>
+        <td className="p-4">Classic and rugged clogs, slides, sandals</td>
+        <td className="p-4">Many "mens crocs" are unisex styles sized in men's numbers</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Kids</td>
+        <td className="p-4">Kids crocs for toddlers and older children</td>
+        <td className="p-4">Kids' sizing runs separately; buy for the child's current length plus a little room</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Jibbitz Charms</td>
+        <td className="p-4">Clip-in charms for clog holes</td>
+        <td className="p-4">Fit the holes on Classic-style clogs and some LiteRide models</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Bestsellers</td>
+        <td className="p-4">The most-bought styles, led by Classic clogs</td>
+        <td className="p-4">Good starting point if you're buying your first pair</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">New Arrivals</td>
+        <td className="p-4">Latest colours and styles</td>
+        <td className="p-4">Past bank offers have targeted this section</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Sale</td>
+        <td className="p-4">Reduced styles and colours</td>
+        <td className="p-4">Codes usually won't apply here, since items are already discounted</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Why Millions of Shoppers Choose Crocs
-                  </h3>
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Popular Crocs Styles Explained
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Croslite Comfort — A Genuine Material Difference: </strong>
-                    No other mainstream footwear brand builds its entire lineup around a single proprietary foam material the way Crocs does. Croslite is lightweight, odor-resistant, and easy to clean with just soap and water — a genuine differentiator for buyers who want low-maintenance, all-day-wearable footwear.
-                  </p>
+    <p>
+      <strong>Classic Clog.</strong> The original Crocs shape with a pivoting heel strap and holes for Jibbitz charms. White crocs and black are the most requested colours; white shows scuffs faster but cleans up with soap and water.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Jibbitz Customisation — Make Every Pair Unique: </strong>
-                    Most footwear regrets come from buying a plain, generic pair with no personal touch. Jibbitz charms exist specifically to solve this, letting buyers customise their clogs with themed charms for any interest, occasion, or team allegiance — often at the same discounted price you found on CouponScrew.
-                  </p>
+    <p>
+      <strong>Bayaband Clog.</strong> The Classic clog shape with a contrasting band around the sole, for a sportier look. Sold on Flipkart as a unisex clog.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Crocs Club — Free Loyalty Rewards: </strong>
-                    Crocs Club is free to join and offers points on every purchase, a birthday-month discount, and early access to new colourway drops — sometimes ahead of the general public. For anyone who buys Crocs more than once a year, signing up before your next order is a straightforward way to access extra value.
-                  </p>
+    <p>
+      <strong>Crocs LiteRide and LiteRide 360.</strong> LiteRide foam is softer and lighter than the standard Crocs material. The LiteRide 360 Clog uses LiteRide foam all the way around the foot, has a perforated upper designed to flex like knit, and keeps four Jibbitz holes.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Size-Inclusive Range Across Ages: </strong>
-                    Crocs' separate kids and adult size charts, spanning toddler through adult sizing, make it genuinely easy to find matching family sets — a popular gifting and travel-photo trend that has helped keep the brand relevant across generations.
-                  </p>
+    <p>
+      <strong>Crocs Yukon Vista.</strong> The Yukon Vista II is a clog for men with a faux-leather-look upper, adjustable heel strap and a cushioned foam footbed. It's the pick if you want Crocs comfort with a less plasticky look.
+    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">Collaboration Drops — A Genuine Collector's Category: </strong>
-                    Crocs regularly partners with celebrities, artists, and other brands on limited-edition designs that sell out within hours of release. Crocs Club members with early-access notifications generally have the best shot at securing a pair before general release.
-                  </p>
+    <p>
+      <strong>Crocs Brooklyn.</strong> A women's range built around wedge sandals and low wedges, for people who want some height with the Crocs level of cushioning.
+    </p>
 
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Shop Smarter — Make Every Rupee Count at Crocs
-                  </h3>
+    <p>
+      <strong>Crocs slippers, slides and sandals.</strong> Crocs slide sandals and flip-flops are the easiest option for home, pool and quick errands. Crocs sandals with back straps stay on better for walking.
+    </p>
 
-                  <p>
-                    Every pair of Crocs you buy is meant to be worn for years, not just seasons — and there is no reason to pay full price for any of it. CouponScrew keeps every active Crocs coupon code, promo code, and discount code verified and ready for you, updated daily, completely free. Bookmark this page before your next Crocs order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price.
-                  </p>
+    <hr className="my-6 border-slate-200" />
 
-                </div>
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Which Crocs Should You Buy?
+    </p>
 
-                {!isReadMore && (
-                  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                )}
-              </div>
+    <p>
+      The right pair depends on where you'll wear it. This is the question our readers ask most, so here's a straight answer by use.
+    </p>
 
-              <button
-                onClick={() => setIsReadMore(!isReadMore)}
-                className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
-              >
-                {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-              </button>
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">If you need...</th>
+        <th className="p-4 font-bold">Pick</th>
+        <th className="p-4 font-bold">Why</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">All-day wear, first pair</td>
+        <td className="p-4 font-medium">Classic Clog</td>
+        <td className="p-4">Roomy fit, heel strap, easy to clean</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Maximum softness for long days on your feet</td>
+        <td className="p-4 font-medium">LiteRide 360</td>
+        <td className="p-4">Softer, lighter LiteRide foam throughout</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">A clog that looks more like a shoe</td>
+        <td className="p-4 font-medium">Yukon Vista II</td>
+        <td className="p-4">Leather-look upper, adjustable strap</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Clog crocs for men with a sporty look</td>
+        <td className="p-4 font-medium">Bayaband Clog</td>
+        <td className="p-4">Classic comfort, contrasting band</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Something dressier for women</td>
+        <td className="p-4 font-medium">Brooklyn wedges</td>
+        <td className="p-4">Added height with cushioning</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Home, bathroom, pool</td>
+        <td className="p-4 font-medium">Slides or flip-flops</td>
+        <td className="p-4">Quick to slip on, dry fast</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">School and play</td>
+        <td className="p-4 font-medium">Kids Classic Clog</td>
+        <td className="p-4">Heel strap keeps them on while running</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-              {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h2 className="text-2xl font-black text-black mb-8">
-                  Frequently Asked Questions About Crocs Coupon Codes
-                </h2>
-                {[
-                  {
-                    q: "What is the best Crocs coupon code available right now?",
-                    a: "The best active Crocs coupon code is listed at the top of this page along with its verified date, so you can see which offer is working best right now. New users typically get a flat discount on their first order, while Classic Clogs and Jibbitz charm bundles regularly carry the deepest percentage discounts. Codes are checked daily, so the listing reflects what is actually live rather than a static page."
-                  },
-                  {
-                    q: "How do I find my correct Crocs size?",
-                    a: "Crocs Classic Clogs run true to size for most wearers but have a slightly roomier fit than standard sneakers, so many buyers size down by half a size if they prefer a snugger fit. Crocs.in provides a size guide with foot-length measurements on every product page — measuring your foot length in centimetres and comparing it against the chart is the most reliable method, especially since sizing can vary slightly between the Classic Clog, sandals, and boots ranges."
-                  },
-                  {
-                    q: "Are Jibbitz charms compatible with all Crocs styles?",
-                    a: "Jibbitz charms are designed for the perforated holes found on Classic Clogs and most clog-style Crocs, including kids' sizes. They generally do not fit sandals, flip-flops, or fully closed styles without the classic ventilation holes, so it is worth checking a specific style's compatibility before buying charms as a gift for a non-clog style."
-                  },
-                  {
-                    q: "How does the Crocs Club loyalty programme work?",
-                    a: "Crocs Club is a free loyalty programme that rewards members with points on every purchase, a birthday-month discount, and early access to new colourway drops and collaborations. Points can be redeemed against future orders, and members typically get notified first about limited-edition releases before they sell out — a genuine advantage during high-demand collab launches."
-                  },
-                  {
-                    q: "What is Crocs' return and exchange policy?",
-                    a: "Crocs.in typically offers a 30-day return and exchange window on unworn products in original packaging, provided the tags are intact. Sale and clearance items may carry a shorter or non-returnable policy, which is always stated clearly on the product page before checkout, so it is worth confirming return eligibility before buying clearance-priced clogs."
-                  },
-                  {
-                    q: "Can adults and kids wear the same size range?",
-                    a: "No — Crocs uses separate size charts for kids and adults, with kids sizing typically running up to around a US youth size 6 before transitioning into adult sizing. Some older kids and petite adults may find overlap in the largest kids sizes and smallest adult sizes, but it is best to check the specific size chart for the style you are buying rather than assuming a direct crossover."
-                  },
-                  {
-                    q: "When do the best Crocs collaboration drops happen?",
-                    a: "Crocs regularly partners with celebrities, artists, and other brands on limited-edition colourways and designs, with major drops often timed around festive seasons and pop-culture moments. These collabs tend to sell out quickly, so Crocs Club members with early-access notifications generally have the best chance of securing a pair before general release."
-                  },
-                  {
-                    q: "Can I use a Crocs coupon code with a bank card offer?",
-                    a: "Yes. Apply your CouponsCrew Crocs offer at checkout, then pay with an eligible ICICI or SBI card to unlock an additional instant discount. This stacks on top of any sitewide sale or Crocs Club birthday discount, giving you multiple layers of savings on the same order."
-                  }
-                ].map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+    <p>
+      Crocs shoes for men and crocs for women mostly differ in size range and colours rather than build, because so many styles are unisex. If you like a colour in the women's section and wear a larger size, check whether the same style is listed in men's sizing.
+    </p>
 
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Getting Your Crocs Size Right
+    </p>
+
+    <p>
+      Crocs sizing trips up a lot of online buyers, and getting it right first time saves you a return.
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        <strong>Unisex sizes are listed as a pair</strong>, such as "M4 / W6". On unisex styles, the women's size is typically two numbers higher than the men's size.
+      </li>
+      <li>
+        <strong>Classic clogs are designed with a roomy fit.</strong> Your heel should rest near the back with some space in front of your toes. If you're between sizes, compare your foot length against the size chart on the product page before deciding.
+      </li>
+      <li>
+        <strong>LiteRide and sandals can fit differently from the Classic.</strong> Don't assume your Classic size carries over. Use the size guide for each style.
+      </li>
+      <li>
+        <strong>For kids,</strong> measure the foot length and compare with the kids' chart rather than going by age.
+      </li>
+    </ul>
+
+    <p>
+      Buying in a store the first time and online afterwards is a sensible way to avoid sizing returns.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Where Can I Buy Crocs in India?
+    </p>
+
+    <p>
+      You can buy Crocs in India from the official Crocs India website (crocs.in), exclusive Crocs stores, and major marketplaces including Flipkart and Amazon. Metro Brands, Crocs' long-term retail partner in India, runs more than 200 exclusive Crocs stores.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold">Channel</th>
+        <th className="p-4 font-bold">Best for</th>
+        <th className="p-4 font-bold">What to check</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">crocs.in (official)</td>
+        <td className="p-4">Full range, new arrivals, Jibbitz, official Sale section</td>
+        <td className="p-4">Return and exchange terms on the site before ordering</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Exclusive Crocs stores</td>
+        <td className="p-4">Trying sizes, checking fit of new styles</td>
+        <td className="p-4">Store-specific offers may differ from online</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Flipkart</td>
+        <td className="p-4">Festive sale discounts, bank card offers</td>
+        <td className="p-4">Seller name and ratings; stick to well-rated sellers</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Amazon</td>
+        <td className="p-4">Festive deals, Prime delivery</td>
+        <td className="p-4">Whether the listing is from the Crocs brand store or a reputable seller</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Fashion platforms and multi-brand stores</td>
+        <td className="p-4">Comparing prices across brands</td>
+        <td className="p-4">Authorised retailer status</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <p>
+      For coupons on those platforms, see our <a href="https://www.couponscrew.com/stores/flipkart-coupon-code" className="text-[#5B4FBE] underline">Flipkart coupon codes</a>, <a href="https://www.couponscrew.com/stores/amazon-coupon-code" className="text-[#5B4FBE] underline">Amazon coupon codes</a>, <a href="https://www.couponscrew.com/stores/myntra-coupon-code" className="text-[#5B4FBE] underline">Myntra coupon codes</a> and <a href="https://www.couponscrew.com/stores/ajio-coupon-code" className="text-[#5B4FBE] underline">AJIO coupon codes</a>.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Crocs Deals in Flipkart Big Billion Days and Amazon Great Indian Festival 2026
+    </p>
+
+    <p>
+      Crocs are sold on both Flipkart and Amazon, so they fall within this October's festive sales. Discounts on individual styles depend on the seller, and neither platform had published Crocs-specific prices when we checked.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden text-sm">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white">
+        <th className="p-4 font-bold"></th>
+        <th className="p-4 font-bold">Flipkart Big Billion Days 2026</th>
+        <th className="p-4 font-bold">Amazon Great Indian Festival 2026</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-gray-100 text-gray-700">
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Starts</td>
+        <td className="p-4">9 Oct 2026 (early access 8 Oct for VIP, Black and Flipkart credit card members)</td>
+        <td className="p-4">8 Oct 2026</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Bank offers announced</td>
+        <td className="p-4">Axis Bank and ICICI Bank cards, up to 10%</td>
+        <td className="p-4">SBI cards, 10% instant discount</td>
+      </tr>
+      <tr className="hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Crocs styles listed</td>
+        <td className="p-4">Classic, Bayaband, LiteRide, slides, flip-flops</td>
+        <td className="p-4">Check the Crocs brand listings</td>
+      </tr>
+      <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
+        <td className="p-4 font-semibold text-gray-900">Where to compare</td>
+        <td className="p-4">crocs.in Sale section on the same day</td>
+        <td className="p-4">crocs.in Sale section on the same day</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      How to get the best Crocs price this festive season:
+    </p>
+
+    <ol className="list-decimal pl-5 space-y-1">
+      <li>Pick your exact style, colour and size now, and note the price on crocs.in.</li>
+      <li>Check the same pair on Flipkart and Amazon when the sales open, including the bank offer for a card you actually hold.</li>
+      <li>Compare the final price after bank discount, not the struck-through MRP.</li>
+      <li>Buy only from sellers with strong ratings. Popular colours in common sizes sell out early.</li>
+    </ol>
+
+    <p className="mt-4">
+      More festive coverage: <a href="https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers" className="text-[#5B4FBE] underline">Flipkart Big Billion Days offers</a>, <a href="https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers" className="text-[#5B4FBE] underline">Amazon Great Indian Festival offers</a> and our <a href="https://www.couponscrew.com/blog/big-billion-days-vs-amazon-great-indian-festival" className="text-[#5B4FBE] underline">BBD vs GIF comparison</a>.
+    </p>
+  </div>
+</div>
+
+          <hr className="my-10 border-gray-200" />
+
+          {/* FAQs Section Header - Replaced H2 with Styled Paragraph */}
+          <p className="text-2xl font-black text-black mt-16 mb-8">
+            Crocs Coupon Code FAQs
+          </p>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is there a working Crocs coupon code in India right now?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                No public code was live when we checked on 30 September 2026. The widely shared ICICI30 and MASTER25 codes expired in 2020 and 2022. Your best savings right now are the crocs.in Sale section and the October festive sales on Flipkart and Amazon.
+              </p>
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-10">
-              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Crocs Searches</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {["Crocs Coupons", "Classic Clog Offers", "Kids Crocs Deals", "Jibbitz Charm Sale", "Crocs Sandals Discount", "New User Crocs Offer", "Crocs Bank Offers", "CouponsCrew Home"].map(tag => (
-                    <a
-                      key={tag}
-                      href={`/search?q=${encodeURIComponent(tag)}`}
-                      className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Can I use a Crocs promo code on sale items?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Usually not. Past Crocs bank offers in India applied only to full-price items and couldn't be combined with other discounts.
+              </p>
+            </div>
 
-              <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Crocs Deals</h3>
-                <div className="space-y-6">
-                  {[
-                    { heading: "Classic Clogs — Up to 40% OFF", sub: "Multiple colours, seasonal sale — deepest discounts of the year" },
-                    { heading: "Buy 2 Get 1 Jibbitz Charms", sub: "5-pack charm sets — customise your clogs" },
-                    { heading: "Free Shipping ₹1,499+", sub: "No code required — standard delivery included" },
-                    { heading: "10% Bank Card Discount", sub: "ICICI, SBI — instant discount at checkout" },
-                    { heading: "New User First-Order Offer", sub: "Flat ₹500 off for first-time Crocs customers" }
-                  ].map((deal, i) => (
-                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                      <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">C</div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
-                        <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                      </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Crocs deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Are Crocs on Flipkart and Amazon genuine?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Crocs are sold on both platforms, but authenticity depends on the seller. Buy from the Crocs brand listings or sellers with strong ratings, and check reviews for mentions of fakes.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Are Crocs sizes the same for men and women?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Unisex styles are labelled with both, for example "M4 / W6". The women's size is typically two numbers higher than the men's size on unisex pairs.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                What's the difference between Crocs LiteRide and Classic clogs?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                LiteRide foam is softer and lighter than the material used in Classic clogs. The LiteRide 360 wraps that foam all the way round the foot and uses a more flexible, perforated upper.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Where can I try Crocs before buying?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                At an exclusive Crocs store. Metro Brands runs more than 200 of them across India.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Do Jibbitz charms fit all Crocs?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                No. They fit styles with holes in the upper, such as Classic clogs and some LiteRide models. Slides, flip-flops and most sandals don't take them.
+              </p>
             </div>
 
           </div>
+
+          <hr className="my-10 border-gray-200" />
+
+          <p>
+            A Crocs coupon code is a bonus when one exists. For most buyers this October, the bigger win is knowing your exact size and style, comparing crocs.in's Sale price with Flipkart and Amazon during the festive sales, and buying only from the official site, exclusive stores or well-rated sellers. For more footwear and apparel offers, browse our <a href="https://www.couponscrew.com/stores/categories/fashion" className="text-[#5B4FBE] font-bold underline">fashion category</a>.
+          </p>
+
         </div>
-      </section>
+      </div>
+
+      {/* Sidebar Column */}
+      <div className="space-y-10">
+        <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+          <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular Crocs Searches
+          </p>
+          <div className="flex flex-wrap gap-2.5">
+            {["Crocs Coupons", "Classic Clogs Offer", "LiteRide Discounts", "Jibbitz Sale", "Crocs Bank Offers", "Footwear Deals", "CouponsCrew Home"].map(tag => (
+              <a
+                key={tag}
+                href={`/search?q=${encodeURIComponent(tag)}`}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ==========================================
           INTERACTIVE CODE COPYING MODAL / POPUP
