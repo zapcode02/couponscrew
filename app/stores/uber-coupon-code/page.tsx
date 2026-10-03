@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Sept 2026',
+  title: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Sept 2026',
+    title: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Oct 2026',
     description:
       'Find the latest Uber coupon code and Uber promo code at Maxiku Offers. Save up to 50% OFF rides, get ₹100 OFF your first ride, and enjoy 40% OFF Uber Eats orders.',
     url: 'https://www.couponscrew.com/stores/uber-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Sept 2026',
+    title: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Oct 2026',
     description:
       'Find the latest Uber coupon code and Uber promo code at Maxiku Offers. Save up to 50% OFF rides, get ₹100 OFF your first ride, and enjoy 40% OFF Uber Eats orders.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/uber-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/uber-coupon-code',
-      name: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Sept 2026',
+      name: 'Uber Coupon Code: Save 50% OFF Rides + ₹100 OFF First Ride | Oct 2026',
       description: 'Find the latest Uber coupon code and Uber promo code at Maxiku Offers. Save up to 50% OFF rides, get ₹100 OFF your first ride, and enjoy 40% OFF Uber Eats orders.',
       isPartOf: {
         '@type': 'WebSite',

@@ -542,7 +542,7 @@ export default function AmazonStore() {
             {/* Left: Text Content */}
             <div className="prose max-w-none">
               <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Amazon Coupon Code India (August 2026): Up to 90% Off — Verified Promo Codes & Deals
+                Amazon Coupon Code India (October 2026): Up to 90% Off — Verified Promo Codes & Deals
               </h2>
 
               <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm">

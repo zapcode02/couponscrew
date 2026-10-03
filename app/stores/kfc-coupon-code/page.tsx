@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Aug 2026',
+  title: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Aug 2026',
+    title: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Oct 2026',
     description:
       'Save more with the latest KFC coupon codes and offers for August 2026. Enjoy up to 54% OFF on combo meals, ₹100 OFF on bucket deals, 50% OFF every Friday, lunch specials from ₹299, and rolls starting at just ₹99.',
     url: 'https://www.couponscrew.com/stores/kfc-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Aug 2026',
+    title: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Oct 2026',
     description:
       'Save more with the latest KFC coupon codes and offers for August 2026. Enjoy up to 54% OFF on combo meals, ₹100 OFF on bucket deals, 50% OFF every Friday, lunch specials from ₹299, and rolls starting at just ₹99.',
     site: '@couponscrew',
@@ -80,7 +80,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/kfc-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/kfc-coupon-code',
-      name: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Aug 2026',
+      name: 'KFC Coupon Codes & Offers: Up to 54% OFF + ₹100 OFF | Oct 2026',
       description: 'Save more with the latest KFC coupon codes and offers for August 2026. Enjoy up to 54% OFF on combo meals, ₹100 OFF on bucket deals, 50% OFF every Friday, lunch specials from ₹299, and rolls starting at just ₹99.',
       isPartOf: {
         '@type': 'WebSite',

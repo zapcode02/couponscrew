@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Aug 2026',
+  title: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Aug 2026',
+    title: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Oct 2026',
     description:
       'Save more with the latest Zomato coupon codes and offers for August 2026. Get Flat ₹200 OFF, Free Delivery, Zomato Gold at ₹1, cashback deals, bank offers, and exclusive food delivery discounts.',
     url: 'https://www.couponscrew.com/stores/zomato-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Aug 2026',
+    title: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Oct 2026',
     description:
       'Save more with the latest Zomato coupon codes and offers for August 2026. Get Flat ₹200 OFF, Free Delivery, Zomato Gold at ₹1, cashback deals, bank offers, and exclusive food delivery discounts.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/zomato-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/zomato-coupon-code',
-      name: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Aug 2026',
+      name: 'Zomato Coupon Codes & Offers: Up to 60% OFF + ₹200 OFF | Oct 2026',
       description: 'Save more with the latest Zomato coupon codes and offers for August 2026. Get Flat ₹200 OFF, Free Delivery, Zomato Gold at ₹1, cashback deals, bank offers, and exclusive food delivery discounts.',
       isPartOf: {
         '@type': 'WebSite',

@@ -27,7 +27,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: 'DINE150',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: 'SWIGGYIT',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: 'CELEBRATIONS',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: 'TRYNEW',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: 'FLAT175',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: 'FLAVORFUL',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const SWIGGY_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',

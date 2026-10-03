@@ -7,7 +7,7 @@ import EyewearCategory from './_components/EyewearCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Eyewear Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Eyewear Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest eyewear coupon codes, discount codes, and promo codes for August 2026. Save on prescription glasses, sunglasses, contact lenses, blue light glasses, reading glasses, and eyewear accessories from leading brands and online stores.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Eyewear Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Eyewear Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest eyewear coupon codes, discount codes, and promo codes for August 2026. Save on prescription glasses, sunglasses, contact lenses, blue light glasses, reading glasses, and eyewear accessories from leading brands and online stores.',
     url: 'https://www.couponscrew.com/stores/categories/eyewear',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Eyewear Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Eyewear Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest eyewear coupon codes, discount codes, and promo codes for August 2026. Save on prescription glasses, sunglasses, contact lenses, blue light glasses, reading glasses, and eyewear accessories from leading brands and online stores.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/eyewear#webpage',
       url: 'https://www.couponscrew.com/stores/categories/eyewear',
-      name: 'Eyewear Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Eyewear Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest eyewear coupon codes, discount codes, and promo codes for August 2026. Save on prescription glasses, sunglasses, contact lenses, blue light glasses, reading glasses, and eyewear accessories from leading brands and online stores.',
       inLanguage: 'en-IN',

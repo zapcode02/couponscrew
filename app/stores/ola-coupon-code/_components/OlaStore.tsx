@@ -175,7 +175,7 @@ export default function OlaStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                   Find Ola coupon codes, promo codes and cab ride offers for Aug 2026. Save ₹50 on Mini and Prime rides, get ₹300 cashback on eligible Outstation trips, enjoy 20% OFF on selected bookings and claim a FREE first ride with eligible new-user offers.
+                   Find Ola coupon codes, promo codes and cab ride offers for Oct 2026. Save ₹50 on Mini and Prime rides, get ₹300 cashback on eligible Outstation trips, enjoy 20% OFF on selected bookings and claim a FREE first ride with eligible new-user offers.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">

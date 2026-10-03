@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Sept 2026',
+  title: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Sept 2026',
+    title: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Oct 2026',
     description:
       'Find the latest UNiDAYS coupon code and UNiDAYS promo code at Maxiku Offers. Save up to 60% OFF fashion, 40% OFF tech, plus free student verification and exclusive brand discounts.',
     url: 'https://www.couponscrew.com/stores/unidays-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Sept 2026',
+    title: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Oct 2026',
     description:
       'Find the latest UNiDAYS coupon code and UNiDAYS promo code at Maxiku Offers. Save up to 60% OFF fashion, 40% OFF tech, plus free student verification and exclusive brand discounts.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/unidays-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/unidays-coupon-code',
-      name: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Sept 2026',
+      name: 'UNiDAYS Coupon Code: Save Up to 60% OFF + Free Student Verification | Oct 2026',
       description: 'Find the latest UNiDAYS coupon code and UNiDAYS promo code at Maxiku Offers. Save up to 60% OFF fashion, 40% OFF tech, plus free student verification and exclusive brand discounts.',
       isPartOf: {
         '@type': 'WebSite',

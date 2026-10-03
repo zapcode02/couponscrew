@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Aug 2026',
+  title: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Oct 2026',
 
   // Primary + all secondary keywords + max offer | ~150 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Aug 2026',
+    title: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Oct 2026',
     description:
       'Find the latest Magicpin coupon code and promo code for August 2026. Save up to 80% on beauty, fashion, dining, grocery, and pharmacy products, enjoy 100% voucher deals, get up to 60% sitewide savings, and unlock exclusive brand offers.',
     url: 'https://www.couponscrew.com/stores/magicpin-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Aug 2026',
+    title: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Oct 2026',
     description:
       'Find the latest Magicpin coupon code and promo code for August 2026. Save up to 80% on beauty, fashion, dining, grocery, and pharmacy products, enjoy 100% voucher deals, get up to 60% sitewide savings, and unlock exclusive brand offers.',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/magicpin-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/magicpin-coupon-code',
-      name: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Aug 2026',
+      name: 'Magicpin Coupon Code & Promo Code: Save Up to 80% on Top Brands | Oct 2026',
       description: 'Find the latest Magicpin coupon code and promo code for August 2026. Save up to 80% on beauty, fashion, dining, grocery, and pharmacy products, enjoy 100% voucher deals, get up to 60% sitewide savings, and unlock exclusive brand offers.',
       isPartOf: {
         '@type': 'WebSite',

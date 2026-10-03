@@ -153,7 +153,7 @@ export const BLINKIT_COUPONS: Coupon[] = [
     code: 'PAYTMUPI',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const BLINKIT_COUPONS: Coupon[] = [
     code: 'AUCC30',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const BLINKIT_COUPONS: Coupon[] = [
     code: 'BHIMRUPAYCC',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-13',

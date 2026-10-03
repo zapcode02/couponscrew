@@ -7,7 +7,7 @@ import FoodAndGroceryCategory from './_components/FoodAndGroceryCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Food & Grocery Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Food & Grocery Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest food & grocery coupon codes, discount codes, and promo codes for August 2026. Save on food delivery, groceries, fresh fruits, vegetables, beverages, snacks, dairy products, and everyday essentials with verified deals from top brands.',
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Food & Grocery Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Food & Grocery Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest food & grocery coupon codes, discount codes, and promo codes for August 2026. Save on food delivery, groceries, fresh fruits, vegetables, beverages, snacks, dairy products, and everyday essentials with verified deals from top brands.',
     url: 'https://www.couponscrew.com/stores/categories/food-and-grocery',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Food & Grocery Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Food & Grocery Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest food & grocery coupon codes, discount codes, and promo codes for August 2026. Save on food delivery, groceries, fresh fruits, vegetables, beverages, snacks, dairy products, and everyday essentials with verified deals from top brands.',
     site: '@CouponsCrew',
@@ -86,7 +86,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/food-and-grocery#webpage',
       url: 'https://www.couponscrew.com/stores/categories/food-and-grocery',
-      name: 'Food & Grocery Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Food & Grocery Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest food & grocery coupon codes, discount codes, and promo codes for August 2026. Save on food delivery, groceries, fresh fruits, vegetables, beverages, snacks, dairy products, and everyday essentials with verified deals from top brands.',
       inLanguage: 'en-IN',

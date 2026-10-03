@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Aug 2026',
+  title: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Aug 2026',
+    title: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Oct 2026',
     description:
       'Find the latest Physics Wallah coupon code, promo code and course offers for Aug 2026. Save up to 80% on live courses, earn ₹1,000 cashback and get discounts on programming, banking and career programs.',
     url: 'https://www.couponscrew.com/stores/pw-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Aug 2026',
+    title: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Oct 2026',
     description:
       'Find the latest Physics Wallah coupon code, promo code and course offers for Aug 2026. Save up to 80% on live courses, earn ₹1,000 cashback and get discounts on programming, banking and career programs.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/pw-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/pw-coupon-code',
-      name: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Aug 2026',
+      name: 'Physics Wallah Coupon Code – Up to 80% OFF + ₹1,000 Cashback | Oct 2026',
       description: 'Find the latest Physics Wallah coupon code, promo code and course offers for Aug 2026. Save up to 80% on live courses, earn ₹1,000 cashback and get discounts on programming, banking and career programs.',
       isPartOf: {
         '@type': 'WebSite',

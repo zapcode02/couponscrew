@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Aug 2026',
+  title: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Aug 2026',
+    title: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Oct 2026',
     description:
       'Find the latest BookMyShow coupon code, promo code and movie ticket offers for Aug 2026. Get Buy 1 Get 1 Free movie tickets, up to ₹500 OFF with Rewards and 50% OFF online movies.',
     url: 'https://www.couponscrew.com/stores/bookmyshow-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Aug 2026',
+    title: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Oct 2026',
     description:
       'Find the latest BookMyShow coupon code, promo code and movie ticket offers for Aug 2026. Get Buy 1 Get 1 Free movie tickets, up to ₹500 OFF with Rewards and 50% OFF online movies.',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/bookmyshow-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/bookmyshow-coupon-code',
-      name: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Aug 2026',
+      name: 'BookMyShow Coupon Code – Buy 1 Get 1 Free + ₹500 OFF | Oct 2026',
       description: 'Find the latest BookMyShow coupon code, promo code and movie ticket offers for Aug 2026. Get Buy 1 Get 1 Free movie tickets, up to ₹500 OFF with Rewards and 50% OFF online movies.',
       isPartOf: {
         '@type': 'WebSite',

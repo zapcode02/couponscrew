@@ -27,7 +27,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'GET200',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'GET150',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'GET125',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'GET100',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'IDFCSWYP',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'DIGISMART',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'TASTY',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'MUNCHBLISS',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -153,7 +153,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'PAYTMUPI',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'BREKKIE75',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'BHIMAPP',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -223,7 +223,7 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'AMEXEPAY',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -237,6 +237,6 @@ export const ZOMATO_COUPONS: Coupon[] = [
     code: 'AUCC3',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   }
 ];

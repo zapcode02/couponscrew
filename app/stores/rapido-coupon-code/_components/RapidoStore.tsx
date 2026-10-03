@@ -175,7 +175,7 @@ export default function RapidoStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#2A2A2A]">
-                    Find Rapido coupon codes and deals for Aug 2026. Enjoy a free first cab ride, up to 55% OFF on flights, hotels and buses, 20% OFF metro rides, and ₹100 OFF your first Rapido Parcel booking. Check eligible offers before booking.
+                    Find Rapido coupon codes and deals for Oct 2026. Enjoy a free first cab ride, up to 55% OFF on flights, hotels and buses, 20% OFF metro rides, and ₹100 OFF your first Rapido Parcel booking. Check eligible offers before booking.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#2A2A2A]">

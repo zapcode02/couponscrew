@@ -55,7 +55,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -83,7 +83,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -153,7 +153,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -195,7 +195,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-14',
@@ -209,7 +209,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-15',
@@ -223,7 +223,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -237,7 +237,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-17',
@@ -251,7 +251,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-18',
@@ -265,7 +265,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-19',
@@ -279,7 +279,7 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Students Only',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-20',
@@ -293,6 +293,6 @@ export const NIKE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   }
 ];

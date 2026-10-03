@@ -27,7 +27,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'BLAZEX',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'PROTEIN',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBSITE5',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBNEW200',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBGYM',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBSITE5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'BIOX',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBSITE5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBEXTRA',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -153,7 +153,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBSITE5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBNEW10',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBSITE5',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -195,7 +195,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'CREA15',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-14',
@@ -209,7 +209,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'CART5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-15',
@@ -223,7 +223,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MB5OFF',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -237,7 +237,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MB5OFF',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-17',
@@ -251,7 +251,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'WORK10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-18',
@@ -265,7 +265,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBEXTRA',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-19',
@@ -279,7 +279,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'MBNEW10',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-20',
@@ -293,7 +293,7 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'PWNEW',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-21',
@@ -307,6 +307,6 @@ export const MUSCLEBLAZE_COUPONS: Coupon[] = [
     code: 'CREA10',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   }
 ];

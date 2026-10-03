@@ -541,7 +541,7 @@ export default function HostingerStore() {
             )}
           >
             <h2 className="text-3xl font-black text-black mb-6 leading-tight">
-              Hostinger Coupon Code & Web Hosting Deals — Verified for August 2026
+              Hostinger Coupon Code & Web Hosting Deals — Verified for October 2026
             </h2>
 
             <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">

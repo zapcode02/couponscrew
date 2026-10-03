@@ -7,7 +7,7 @@ import FurnitureCategory from './_components/FurnitureCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Furniture Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Furniture Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest furniture coupon codes, discount codes, and promo codes for August 2026. Save on sofas, beds, mattresses, dining sets, office furniture, home décor, storage solutions, lighting, and more from leading furniture brands and online stores.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Furniture Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Furniture Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest furniture coupon codes, discount codes, and promo codes for August 2026. Save on sofas, beds, mattresses, dining sets, office furniture, home décor, storage solutions, lighting, and more from leading furniture brands and online stores.',
     url: 'https://www.couponscrew.com/stores/categories/furniture',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Furniture Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Furniture Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest furniture coupon codes, discount codes, and promo codes for August 2026. Save on sofas, beds, mattresses, dining sets, office furniture, home décor, storage solutions, lighting, and more from leading furniture brands and online stores.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/furniture#webpage',
       url: 'https://www.couponscrew.com/stores/categories/furniture',
-      name: 'Furniture Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Furniture Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest furniture coupon codes, discount codes, and promo codes for August 2026. Save on sofas, beds, mattresses, dining sets, office furniture, home décor, storage solutions, lighting, and more from leading furniture brands and online stores.',
       inLanguage: 'en-IN',

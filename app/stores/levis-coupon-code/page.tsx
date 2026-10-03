@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Aug 2026",
+  title: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Oct 2026",
 
   // Primary + all secondary keywords + max offer
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Aug 2026",
+    title: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Oct 2026",
     description:
       "Find the latest Levi's coupon code and promo code for August 2026. Save up to 60% on jeans, jackets, T-shirts, cargo pants, footwear, and more. Enjoy extra savings on selected orders, new arrivals, and app-exclusive offers.",
     url: 'https://www.couponscrew.com/stores/levis-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Aug 2026",
+    title: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Oct 2026",
     description:
       "Find the latest Levi's coupon code and promo code for August 2026. Save up to 60% on jeans, jackets, T-shirts, cargo pants, footwear, and more. Enjoy extra savings on selected orders, new arrivals, and app-exclusive offers.",
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/levis-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/levis-coupon-code',
-      name: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Aug 2026",
+      name: "Levi's Coupon Code: Up to 60% OFF + Extra 15% OFF | Oct 2026",
       description: "Find the latest Levi's coupon code and promo code for August 2026. Save up to 60% on jeans, jackets, T-shirts, cargo pants, footwear, and more. Enjoy extra savings on selected orders, new arrivals, and app-exclusive offers.",
       isPartOf: {
         '@type': 'WebSite',

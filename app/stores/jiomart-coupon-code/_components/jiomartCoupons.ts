@@ -27,7 +27,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'FRESH10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -41,7 +41,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'JM75',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -55,7 +55,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'WATER5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -69,7 +69,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'JM30',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -83,7 +83,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'JM50',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -97,7 +97,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'VACUUM5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -111,7 +111,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'RAIN5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -125,7 +125,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'TECH400',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -139,7 +139,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'MWO5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -153,7 +153,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'DYSON5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -167,7 +167,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: 'APPLE1000',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -181,7 +181,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-14',
@@ -195,7 +195,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-15',
@@ -209,7 +209,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -223,7 +223,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-17',
@@ -237,7 +237,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-18',
@@ -251,7 +251,7 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-19',
@@ -265,6 +265,6 @@ export const JIOMART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   }
 ];

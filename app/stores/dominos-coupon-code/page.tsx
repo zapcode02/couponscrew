@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Aug 2026",
+  title: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Oct 2026",
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Aug 2026",
+    title: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Oct 2026",
     description:
       "Save with verified Domino's coupon codes and promo codes. Get up to 75% OFF, ₹200 OFF pizzas, exclusive meal deals, free delivery offers, and new user discounts in August 2026.",
     url: 'https://www.couponscrew.com/stores/dominos-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Aug 2026",
+    title: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Oct 2026",
     description:
       "Save with verified Domino's coupon codes and promo codes. Get up to 75% OFF, ₹200 OFF pizzas, exclusive meal deals, free delivery offers, and new user discounts in August 2026.",
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/dominos-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/dominos-coupon-code',
-      name: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Aug 2026",
+      name: "Domino's Coupon Codes – Up to 75% OFF & ₹200 OFF | Oct 2026",
       description: "Save with verified Domino's coupon codes and promo codes. Get up to 75% OFF, ₹200 OFF pizzas, exclusive meal deals, free delivery offers, and new user discounts in August 2026.",
       isPartOf: {
         '@type': 'WebSite',

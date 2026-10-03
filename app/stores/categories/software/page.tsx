@@ -7,7 +7,7 @@ import SoftwareCategory from './_components/SoftwareCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Software Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Software Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest software coupon codes, discount codes, and promo codes for August 2026. Save on AI tools, productivity software, design apps, antivirus, VPNs, developer tools, business software, cloud services, and premium software subscriptions.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Software Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Software Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest software coupon codes, discount codes, and promo codes for August 2026. Save on AI tools, productivity software, design apps, antivirus, VPNs, developer tools, business software, cloud services, and premium software subscriptions.',
     url: 'https://www.couponscrew.com/stores/categories/software',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Software Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Software Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest software coupon codes, discount codes, and promo codes for August 2026. Save on AI tools, productivity software, design apps, antivirus, VPNs, developer tools, business software, cloud services, and premium software subscriptions.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/software#webpage',
       url: 'https://www.couponscrew.com/stores/categories/software',
-      name: 'Software Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Software Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest software coupon codes, discount codes, and promo codes for August 2026. Save on AI tools, productivity software, design apps, antivirus, VPNs, developer tools, business software, cloud services, and premium software subscriptions.',
       inLanguage: 'en-IN',

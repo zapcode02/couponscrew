@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Aug 2026',
+  title: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Aug 2026',
+    title: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Oct 2026',
     description:
       'Find the latest Rapido coupon code , promo code and offers for Aug 2026. Get a free first cab ride, up to 55% OFF travel bookings, 20% OFF metro rides and ₹100 OFF parcels.',
     url: 'https://www.couponscrew.com/stores/rapido-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Aug 2026',
+    title: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Oct 2026',
     description:
       'Find the latest Rapido coupon code , promo code and offers for Aug 2026. Get a free first cab ride, up to 55% OFF travel bookings, 20% OFF metro rides and ₹100 OFF parcels.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/rapido-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/rapido-coupon-code',
-      name: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Aug 2026',
+      name: 'Rapido Coupon Code – Free 1st Ride + Up to 55% OFF Travel | Oct 2026',
       description: 'Find the latest Rapido coupon code , promo code and offers for Aug 2026. Get a free first cab ride, up to 55% OFF travel bookings, 20% OFF metro rides and ₹100 OFF parcels.',
       isPartOf: {
         '@type': 'WebSite',

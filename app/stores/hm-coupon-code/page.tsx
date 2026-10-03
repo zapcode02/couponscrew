@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Sept 2026',
+  title: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | ~150 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Sept 2026',
+    title: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Oct 2026',
     description:
       'Find the latest H&M coupon code and H&M promo code at Maxiku Offers. Save up to 75% OFF, get an extra 10% OFF for new users, plus flat 50% OFF accessories and 50% OFF kidswear.',
     url: 'https://www.couponscrew.com/stores/hm-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Sept 2026',
+    title: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Oct 2026',
     description:
       'Find the latest H&M coupon code and H&M promo code at Maxiku Offers. Save up to 75% OFF, get an extra 10% OFF for new users, plus flat 50% OFF accessories and 50% OFF kidswear.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/hm-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/hm-coupon-code',
-      name: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Sept 2026',
+      name: 'H&M Coupon Code: Save Up to 75% OFF + Get Extra 10% OFF | Oct 2026',
       description: 'Find the latest H&M coupon code and H&M promo code at Maxiku Offers. Save up to 75% OFF, get an extra 10% OFF for new users, plus flat 50% OFF accessories and 50% OFF kidswear.',
       isPartOf: {
         '@type': 'WebSite',

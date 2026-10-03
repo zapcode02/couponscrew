@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Aug 2026',
+  title: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Aug 2026',
+    title: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Oct 2026',
     description:
       'Save with the latest Testbook coupon codes and offers for August 2026. Get up to 61% OFF on Testbook Pass, 35% OFF ITI courses, 44% OFF monthly plans, 8% OFF Pro plans, free mock tests, and course passes from just ₹300/month.',
     url: 'https://www.couponscrew.com/stores/testbook-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Aug 2026',
+    title: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Oct 2026',
     description:
       'Save with the latest Testbook coupon codes and offers for August 2026. Get up to 61% OFF on Testbook Pass, 35% OFF ITI courses, 44% OFF monthly plans, 8% OFF Pro plans, free mock tests, and course passes from just ₹300/month.',
     site: '@couponscrew',
@@ -80,7 +80,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/testbook-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/testbook-coupon-code',
-      name: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Aug 2026',
+      name: 'Testbook Coupon Codes & promo code: Flat 61% OFF | Oct 2026',
       description: 'Save with the latest Testbook coupon codes and offers for August 2026. Get up to 61% OFF on Testbook Pass, 35% OFF ITI courses, 44% OFF monthly plans, 8% OFF Pro plans, free mock tests, and course passes from just ₹300/month.',
       isPartOf: {
         '@type': 'WebSite',

@@ -7,7 +7,7 @@ import WebHostingCategory from './_components/WebHostingCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Web Hosting Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Web Hosting Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest web hosting coupon codes, discount codes, and promo codes for August 2026. Save on shared hosting, VPS hosting, cloud hosting, WordPress hosting, dedicated servers, domains, SSL certificates, email hosting, and website builder plans.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Web Hosting Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Web Hosting Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest web hosting coupon codes, discount codes, and promo codes for August 2026. Save on shared hosting, VPS hosting, cloud hosting, WordPress hosting, dedicated servers, domains, SSL certificates, email hosting, and website builder plans.',
     url: 'https://www.couponscrew.com/stores/categories/web-hosting',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Hosting Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Web Hosting Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest web hosting coupon codes, discount codes, and promo codes for August 2026. Save on shared hosting, VPS hosting, cloud hosting, WordPress hosting, dedicated servers, domains, SSL certificates, email hosting, and website builder plans.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/web-hosting#webpage',
       url: 'https://www.couponscrew.com/stores/categories/web-hosting',
-      name: 'Web Hosting Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Web Hosting Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest web hosting coupon codes, discount codes, and promo codes for August 2026. Save on shared hosting, VPS hosting, cloud hosting, WordPress hosting, dedicated servers, domains, SSL certificates, email hosting, and website builder plans.',
       inLanguage: 'en-IN',

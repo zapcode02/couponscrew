@@ -175,7 +175,7 @@ export default function BookMyShowStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                   Find BookMyShow coupon codes, promo codes and movie ticket deals for Aug 2026. Get Buy 1 Get 1 Free on selected movie tickets, save up to ₹500 with BookMyShow Rewards, enjoy ₹75 OFF on eligible bookings and 50% OFF online movies.
+                   Find BookMyShow coupon codes, promo codes and movie ticket deals for Oct 2026. Get Buy 1 Get 1 Free on selected movie tickets, save up to ₹500 with BookMyShow Rewards, enjoy ₹75 OFF on eligible bookings and 50% OFF online movies.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
+  title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | ~150 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
+    title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Oct 2026',
     description:
       'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/muscleblaze-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
+    title: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Oct 2026',
     description:
       'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/muscleblaze-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/muscleblaze-coupon-code',
-      name: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Aug 2026',
+      name: 'MuscleBlaze Coupon Codes: Up to 50% OFF + ₹200 OFF | Oct 2026',
       description: 'Save with verified MuscleBlaze coupon codes and promo codes. Get up to 50% OFF, flat ₹200 OFF, extra 15% OFF, free shaker, and exclusive deals on whey protein, creatine, gainers & supplements. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',

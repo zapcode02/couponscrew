@@ -176,7 +176,7 @@ export default function PwStore() {
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
                   
-                  Find Physics Wallah coupon codes, promo codes and course deals for Aug 2026. Save up to 80% on live courses, earn up to ₹1,000 cashback through referrals, and get discounts on programming, banking, finance, software development and job assistance programs.
+                  Find Physics Wallah coupon codes, promo codes and course deals for Oct 2026. Save up to 80% on live courses, earn up to ₹1,000 cashback through referrals, and get discounts on programming, banking, finance, software development and job assistance programs.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Aug 2026',
+  title: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Aug 2026',
+    title: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Oct 2026',
     description:
       'Explore Zepto coupon codes and deals for Aug 2026. Save up to 80% on selected electronics and appliances with a ₹549 minimum cart value, plus get ₹200 OFF on eligible ₹1,299+ orders.',
     url: 'https://www.couponscrew.com/stores/zepto-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Aug 2026',
+    title: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Oct 2026',
     description:
       'Explore Zepto coupon codes and deals for Aug 2026. Save up to 80% on selected electronics and appliances with a ₹549 minimum cart value, plus get ₹200 OFF on eligible ₹1,299+ orders.',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/zepto-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/zepto-coupon-code',
-      name: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Aug 2026',
+      name: 'Zepto Coupon Code – Up to 80% OFF + ₹200 OFF  | Oct 2026',
       description: 'Explore Zepto coupon codes and deals for Aug 2026. Save up to 80% on selected electronics and appliances with a ₹549 minimum cart value, plus get ₹200 OFF on eligible ₹1,299+ orders.',
       isPartOf: {
         '@type': 'WebSite',

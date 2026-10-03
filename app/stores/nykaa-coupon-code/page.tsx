@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
+  title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
+    title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Oct 2026',
     description:
       'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
+    title: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Oct 2026',
     description:
       'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/nykaa-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/nykaa-coupon-code',
-      name: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Aug 2026',
+      name: 'Nykaa Coupon Codes: Up to 60% OFF + ₹400 OFF | Oct 2026',
       description: 'Save with verified Nykaa coupon codes and promo codes. Get up to 60% OFF, extra 20% OFF, ₹400 OFF first orders, free shipping, free gifts, and exclusive beauty offers. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',

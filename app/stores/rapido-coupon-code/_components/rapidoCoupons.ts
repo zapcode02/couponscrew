@@ -27,7 +27,7 @@ export const RAPIDO_COUPONS: Coupon[] = [
     code: 'FREERIDE',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const RAPIDO_COUPONS: Coupon[] = [
     code: 'RAPIDOTRAVEL',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const RAPIDO_COUPONS: Coupon[] = [
     code: 'METRO20',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const RAPIDO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const RAPIDO_COUPONS: Coupon[] = [
     code: 'SAVE100',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',

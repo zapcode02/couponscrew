@@ -7,7 +7,7 @@ import HealthCategory from './_components/HealthCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Health Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Health Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest health coupon codes, discount codes, and promo codes for August 2026. Save on medicines, healthcare products, vitamins, supplements, fitness equipment, diagnostic tests, wellness essentials, and personal care from leading health brands.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Health Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Health Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest health coupon codes, discount codes, and promo codes for August 2026. Save on medicines, healthcare products, vitamins, supplements, fitness equipment, diagnostic tests, wellness essentials, and personal care from leading health brands.',
     url: 'https://www.couponscrew.com/stores/categories/health',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Health Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Health Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest health coupon codes, discount codes, and promo codes for August 2026. Save on medicines, healthcare products, vitamins, supplements, fitness equipment, diagnostic tests, wellness essentials, and personal care from leading health brands.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/health#webpage',
       url: 'https://www.couponscrew.com/stores/categories/health',
-      name: 'Health Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Health Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest health coupon codes, discount codes, and promo codes for August 2026. Save on medicines, healthcare products, vitamins, supplements, fitness equipment, diagnostic tests, wellness essentials, and personal care from leading health brands.',
       inLanguage: 'en-IN',

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
+  title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
+    title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Oct 2026',
     description:
       'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
     url: 'https://www.couponscrew.com/stores/indigo-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
+    title: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Oct 2026',
     description:
       'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/indigo-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/indigo-coupon-code',
-      name: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Aug 2026',
+      name: 'IndiGo Coupon Codes: Up to 50% OFF + ₹4,500 OFF | Oct 2026',
       description: 'Save with verified IndiGo coupon codes and flight offers. Get up to 50% OFF flights, ₹4,500 OFF bank deals, ₹2,500 weekend discounts, hotel savings, BluChips rewards, and exclusive August 2026 offers.',
       isPartOf: {
         '@type': 'WebSite',

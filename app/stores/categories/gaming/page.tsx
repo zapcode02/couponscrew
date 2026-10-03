@@ -7,7 +7,7 @@ import GamingCategory from './_components/GamingCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Gaming Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Gaming Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest gaming coupon codes, discount codes, and promo codes for August 2026. Save on PC games, console games, gaming subscriptions, in-game currency, gift cards, gaming accessories, and digital downloads from leading gaming brands.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Gaming Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Gaming Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest gaming coupon codes, discount codes, and promo codes for August 2026. Save on PC games, console games, gaming subscriptions, in-game currency, gift cards, gaming accessories, and digital downloads from leading gaming brands.',
     url: 'https://www.couponscrew.com/stores/categories/gaming',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Gaming Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Gaming Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest gaming coupon codes, discount codes, and promo codes for August 2026. Save on PC games, console games, gaming subscriptions, in-game currency, gift cards, gaming accessories, and digital downloads from leading gaming brands.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/gaming#webpage',
       url: 'https://www.couponscrew.com/stores/categories/gaming',
-      name: 'Gaming Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Gaming Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest gaming coupon codes, discount codes, and promo codes for August 2026. Save on PC games, console games, gaming subscriptions, in-game currency, gift cards, gaming accessories, and digital downloads from leading gaming brands.',
       inLanguage: 'en-IN',

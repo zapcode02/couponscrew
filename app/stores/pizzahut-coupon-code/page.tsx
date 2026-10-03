@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Sept 2026',
+  title: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Sept 2026',
+    title: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Oct 2026',
     description:
       'Use the latest Pizza Hut Coupon Code and Pizza Hut Discount Code to get ₹125 OFF orders above ₹500 and Buy 1 Pizza, Get 3 Free. Enjoy verified Pizza Hut deals. Order now.',
     url: 'https://www.couponscrew.com/stores/pizzahut-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Sept 2026',
+    title: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Oct 2026',
     description:
       'Use the latest Pizza Hut Coupon Code and Pizza Hut Discount Code to get ₹125 OFF orders above ₹500 and Buy 1 Pizza, Get 3 Free. Enjoy verified Pizza Hut deals. Order now.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/pizzahut-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/pizzahut-coupon-code',
-      name: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Sept 2026',
+      name: 'Pizza Hut Coupon Code – ₹125 OFF & Buy 1 Get 3 Free | Oct 2026',
       description: 'Use the latest Pizza Hut Coupon Code and Pizza Hut Discount Code to get ₹125 OFF orders above ₹500 and Buy 1 Pizza, Get 3 Free. Enjoy verified Pizza Hut deals. Order now.',
       isPartOf: {
         '@type': 'WebSite',

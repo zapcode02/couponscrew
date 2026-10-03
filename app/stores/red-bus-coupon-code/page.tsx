@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
+  title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
+    title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Oct 2026',
     description:
       'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/red-bus-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
+    title: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Oct 2026',
     description:
       'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/red-bus-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/red-bus-coupon-code',
-      name: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Aug 2026',
+      name: 'RedBus Coupon Codes: Up to ₹500 OFF + 12% Cashback | Oct 2026',
       description: 'Save with verified redBus coupon codes and promo codes. Get up to ₹500 OFF, 12% OFF bus tickets, 12% cashback, new user discounts, and exclusive bus booking offers. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Sept 2026',
+  title: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Sept 2026',
+    title: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Oct 2026',
     description:
       'Get the latest Samsung Coupon Code and Samsung Discount Code to save up to 41% on the Galaxy S23 5G and ₹30,000 on the Galaxy S25 Ultra. Discover verified Samsung deals on smartphones, TVs, appliances, and more. Shop now.',
     url: 'https://www.couponscrew.com/stores/samsung-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Sept 2026',
+    title: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Oct 2026',
     description:
       'Get the latest Samsung Coupon Code and Samsung Discount Code to save up to 41% on the Galaxy S23 5G and ₹30,000 on the Galaxy S25 Ultra. Discover verified Samsung deals on smartphones, TVs, appliances, and more. Shop now.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/samsung-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/samsung-coupon-code',
-      name: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Sept 2026',
+      name: 'Samsung Coupon Code – Save Up to 41% + ₹30,000 OFF | Oct 2026',
       description: 'Get the latest Samsung Coupon Code and Samsung Discount Code to save up to 41% on the Galaxy S23 5G and ₹30,000 on the Galaxy S25 Ultra. Discover verified Samsung deals on smartphones, TVs, appliances, and more. Shop now.',
       isPartOf: {
         '@type': 'WebSite',

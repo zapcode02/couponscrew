@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // ── Core Meta ──────────────────────────────
-  title: 'Amazon Coupon Code - Up to 90% OFF Today | Aug 2026',
+  title: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
   description:
     'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
 
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Amazon Coupon Code - Up to 90% OFF Today | Aug 2026',
+    title: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
     description:
       'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
     url: 'https://www.couponscrew.com/stores/amazon-coupon-code',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Coupon Code - Up to 90% OFF Today | Aug 2026',
+    title: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
     description:
       'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
     site: '@couponscrew',
@@ -137,7 +137,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/amazon-coupon-code#webpage',
       url: 'https://www.couponscrew.com/stores/amazon-coupon-code',
-      name: 'Amazon Coupon Code - Up to 90% OFF Today | Aug 2026',
+      name: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
       description:
         'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
       inLanguage: 'en-IN',

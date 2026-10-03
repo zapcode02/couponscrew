@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Aug 2026  ',
+  title: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Oct 2026  ',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Aug 2026  ',
+    title: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Oct 2026  ',
     description:
       'Find the latest Ola coupon code, promo code and cab offers for Aug 2026. Get ₹50 OFF on Mini and Prime rides, ₹300 cashback on Outstation trips and a FREE first ride for eligible new users.',
     url: 'https://www.couponscrew.com/stores/ola-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Aug 2026  ',
+    title: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Oct 2026  ',
     description:
       'Find the latest Ola coupon code, promo code and cab offers for Aug 2026. Get ₹50 OFF on Mini and Prime rides, ₹300 cashback on Outstation trips and a FREE first ride for eligible new users.',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/ola-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/ola-coupon-code',
-      name: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Aug 2026  ',
+      name: 'Ola Coupon Code – FREE First Ride + ₹50 OFF | Oct 2026  ',
       description: 'Find the latest Ola coupon code, promo code and cab offers for Aug 2026. Get ₹50 OFF on Mini and Prime rides, ₹300 cashback on Outstation trips and a FREE first ride for eligible new users.',
       isPartOf: {
         '@type': 'WebSite',

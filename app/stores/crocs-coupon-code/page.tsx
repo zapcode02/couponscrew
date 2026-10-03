@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Sept 2026',
+  title: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Sept 2026',
+    title: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Oct 2026',
     description:
       'Use the latest Crocs Coupon Code and Crocs Discount Code to get 60% OFF Hashtag Jibbitz and an extra 10% OFF selected Crocs styles when using a discount code. Shop now.',
     url: 'https://www.couponscrew.com/stores/crocs-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Sept 2026',
+    title: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Oct 2026',
     description:
       'Use the latest Crocs Coupon Code and Crocs Discount Code to get 60% OFF Hashtag Jibbitz and an extra 10% OFF selected Crocs styles when using a discount code. Shop now.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/crocs-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/crocs-coupon-code',
-      name: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Sept 2026',
+      name: 'Crocs Coupon Code – 60% OFF Jibbitz + Extra 10% OFF | Oct 2026',
       description: 'Use the latest Crocs Coupon Code and Crocs Discount Code to get 60% OFF Hashtag Jibbitz and an extra 10% OFF selected Crocs styles when using a discount code. Shop now.',
       isPartOf: {
         '@type': 'WebSite',

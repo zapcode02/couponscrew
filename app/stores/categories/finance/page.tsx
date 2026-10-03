@@ -7,7 +7,7 @@ import FinanceCategory from './_components/FinanceCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Finance Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Finance Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest finance coupon codes, discount codes, and promo codes for August 2026. Save on credit cards, personal loans, insurance, investments, banking services, UPI payments, wallets, tax filing, and other financial products with verified deals.',
   
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Finance Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Finance Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest finance coupon codes, discount codes, and promo codes for August 2026. Save on credit cards, personal loans, insurance, investments, banking services, UPI payments, wallets, tax filing, and other financial products with verified deals.',
     url: 'https://www.couponscrew.com/stores/categories/finance',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Finance Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Finance Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest finance coupon codes, discount codes, and promo codes for August 2026. Save on credit cards, personal loans, insurance, investments, banking services, UPI payments, wallets, tax filing, and other financial products with verified deals.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/finance#webpage',
       url: 'https://www.couponscrew.com/stores/categories/finance',
-      name: 'Finance Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Finance Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest finance coupon codes, discount codes, and promo codes for August 2026. Save on credit cards, personal loans, insurance, investments, banking services, UPI payments, wallets, tax filing, and other financial products with verified deals.',
       inLanguage: 'en-IN',

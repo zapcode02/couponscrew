@@ -640,7 +640,7 @@ export default function BlinkitStore() {
           <li>Save up to 80% and an extra Rs 200 cashback on using the code</li>
           <li>Applicable on groceries, rice, edible oils, ghee, and dry fruits</li>
           <li>Minimum order value: Rs 199</li>
-          <li>Valid till the end of August 2026</li>
+          <li>Valid till the end of October 2026</li>
         </ul>
       </div>
 
@@ -662,7 +662,7 @@ export default function BlinkitStore() {
         <ul className="list-disc pl-5 space-y-1 text-slate-600">
           <li>Get a maximum discount of up to 80% plus an additional Rs 15 cashback</li>
           <li>Applicable on storage & containers, dining & serving, cleaning equipment, and more</li>
-          <li>Valid till the end of August 2026</li>
+          <li>Valid till the end of October 2026</li>
         </ul>
       </div>
 
@@ -684,7 +684,7 @@ export default function BlinkitStore() {
         <ul className="list-disc pl-5 space-y-1 text-slate-600">
           <li>Minimum cart requirement: Rs 249</li>
           <li>Valid for both new and old users, up to twice per session</li>
-          <li>Valid till the end of August 2026</li>
+          <li>Valid till the end of October 2026</li>
         </ul>
       </div>
 

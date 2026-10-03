@@ -27,7 +27,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New & Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -111,7 +111,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Students Only',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -153,7 +153,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -195,6 +195,6 @@ export const ADIDAS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   }
 ];

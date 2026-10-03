@@ -251,7 +251,7 @@ export const LEVIS_COUPONS: Coupon[] = [
     code: 'LEVIIAFF500',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-18',
@@ -293,7 +293,7 @@ export const LEVIS_COUPONS: Coupon[] = [
     code: 'APP15',
     verified: 'Verified',
     userType: 'App Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-21',
@@ -321,7 +321,7 @@ export const LEVIS_COUPONS: Coupon[] = [
     code: 'NEW10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-23',
@@ -335,7 +335,7 @@ export const LEVIS_COUPONS: Coupon[] = [
     code: 'SAVEMORE10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-24',
@@ -349,7 +349,7 @@ export const LEVIS_COUPONS: Coupon[] = [
     code: 'NEW10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-25',

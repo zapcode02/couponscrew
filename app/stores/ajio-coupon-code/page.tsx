@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
+  title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
+    title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Oct 2026',
     description:
       'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/ajio-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
+    title: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Oct 2026',
     description:
       'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/ajio-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/ajio-coupon-code',
-      name: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Aug 2026',
+      name: 'AJIO Coupon Codes: Up to 90% OFF + Extra 25% OFF | Oct 2026',
       description: 'Save more with verified AJIO coupon codes, promo codes & offers. Get up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank offers & new user discounts. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',

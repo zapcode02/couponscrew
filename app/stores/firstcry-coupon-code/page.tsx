@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Sept 2026',
+  title: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Sept 2026',
+    title: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Oct 2026',
     description:
       'Find the latest FirstCry coupon code and FirstCry promo code at Maxiku Offers. Save up to 80% OFF plus an extra 5% OFF, enjoy 70% OFF beauty products and 65% OFF fashion deals.',
     url: 'https://www.couponscrew.com/stores/firstcry-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Sept 2026',
+    title: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Oct 2026',
     description:
       'Find the latest FirstCry coupon code and FirstCry promo code at Maxiku Offers. Save up to 80% OFF plus an extra 5% OFF, enjoy 70% OFF beauty products and 65% OFF fashion deals.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/firstcry-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/firstcry-coupon-code',
-      name: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Sept 2026',
+      name: 'FirstCry Coupon Code: Save Up to 80% OFF + Get extra 5% OFF | Oct 2026',
       description: 'Find the latest FirstCry coupon code and FirstCry promo code at Maxiku Offers. Save up to 80% OFF plus an extra 5% OFF, enjoy 70% OFF beauty products and 65% OFF fashion deals.',
       isPartOf: {
         '@type': 'WebSite',

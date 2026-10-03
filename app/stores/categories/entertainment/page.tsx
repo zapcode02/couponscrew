@@ -7,7 +7,7 @@ import EntertainmentCategory from './_components/EntertainmentCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Entertainment Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Entertainment Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest entertainment coupon codes, discount codes, and promo codes for August 2026. Save on streaming services, movie tickets, gaming, music subscriptions, live events, digital entertainment, and more with verified deals from top brands.',
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Entertainment Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Entertainment Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest entertainment coupon codes, discount codes, and promo codes for August 2026. Save on streaming services, movie tickets, gaming, music subscriptions, live events, digital entertainment, and more with verified deals from top brands.',
     url: 'https://www.couponscrew.com/stores/categories/entertainment',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Entertainment Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Entertainment Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest entertainment coupon codes, discount codes, and promo codes for August 2026. Save on streaming services, movie tickets, gaming, music subscriptions, live events, digital entertainment, and more with verified deals from top brands.',
     site: '@CouponsCrew',
@@ -87,7 +87,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/entertainment#webpage',
       url: 'https://www.couponscrew.com/stores/categories/entertainment',
-      name: 'Entertainment Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Entertainment Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest entertainment coupon codes, discount codes, and promo codes for August 2026. Save on streaming services, movie tickets, gaming, music subscriptions, live events, digital entertainment, and more with verified deals from top brands.',
       inLanguage: 'en-IN',

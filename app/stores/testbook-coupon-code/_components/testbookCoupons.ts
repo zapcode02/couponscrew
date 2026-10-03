@@ -41,7 +41,7 @@ export const TESTBOOK_COUPONS: Coupon[] = [
     code: 'ITI30',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',

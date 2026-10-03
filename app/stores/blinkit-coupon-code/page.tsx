@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Aug 2026 ',
+  title: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Oct 2026 ',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Aug 2026 ',
+    title: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Oct 2026 ',
     description:
       'Find the latest Blinkit coupon code and promo code for August 2026. Save up to 80% on groceries, fruits, vegetables, baby care, pet care, snacks, and personal care. Enjoy up to ₹125 Paytm cashback, bank offers, free delivery, and exclusive app discounts.',
     url: 'https://www.couponscrew.com/stores/blinkit-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Aug 2026 ',
+    title: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Oct 2026 ',
     description:
       'Find the latest Blinkit coupon code and promo code for August 2026. Save up to 80% on groceries, fruits, vegetables, baby care, pet care, snacks, and personal care. Enjoy up to ₹125 Paytm cashback, bank offers, free delivery, and exclusive app discounts.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/blinkit-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/blinkit-coupon-code',
-      name: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Aug 2026 ',
+      name: 'Blinkit Coupon Code: Up to 80% OFF + ₹125 Cashback | Oct 2026 ',
       description: 'Find the latest Blinkit coupon code and promo code for August 2026. Save up to 80% on groceries, fruits, vegetables, baby care, pet care, snacks, and personal care. Enjoy up to ₹125 Paytm cashback, bank offers, free delivery, and exclusive app discounts.',
       isPartOf: {
         '@type': 'WebSite',

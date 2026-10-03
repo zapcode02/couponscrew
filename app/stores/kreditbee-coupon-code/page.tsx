@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Aug 2026',
+  title: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Oct 2026',
 
   // Primary + secondary keywords, generic/placeholder-appropriate
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Aug 2026',
+    title: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Oct 2026',
     description:
       'Explore the latest KreditBee coupon code and offers for August 2026. Apply for personal loans up to ₹10 Lakhs, enjoy fast approvals, flexible EMI options, referral cashback, paperless applications, and competitive interest rates starting from 12% p.a.',
     url: 'https://www.couponscrew.com/stores/kreditbee-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Aug 2026',
+    title: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Oct 2026',
     description:
       'Explore the latest KreditBee coupon code and offers for August 2026. Apply for personal loans up to ₹10 Lakhs, enjoy fast approvals, flexible EMI options, referral cashback, paperless applications, and competitive interest rates starting from 12% p.a.',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/kreditbee-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/kreditbee-coupon-code',
-      name: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Aug 2026',
+      name: 'KreditBee Coupon Code: Personal Loans Up to ₹10 Lakhs | Oct 2026',
       description: 'Explore the latest KreditBee coupon code and offers for August 2026. Apply for personal loans up to ₹10 Lakhs, enjoy fast approvals, flexible EMI options, referral cashback, paperless applications, and competitive interest rates starting from 12% p.a.',
       isPartOf: {
         '@type': 'WebSite',

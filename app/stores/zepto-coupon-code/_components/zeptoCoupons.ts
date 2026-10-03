@@ -27,7 +27,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: 'QUICKSAVE200',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: 'AMAZONPAY',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: 'MBK300',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -153,7 +153,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -181,7 +181,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -237,7 +237,7 @@ export const ZEPTO_COUPONS: Coupon[] = [
     code: 'ZEPHSBC',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-17',

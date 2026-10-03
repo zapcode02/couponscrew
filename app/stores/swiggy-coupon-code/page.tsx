@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | August 2026',
+  title: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | October 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | August 2026',
+    title: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | October 2026',
     description:
       'Save more with the latest Swiggy coupon codes and offers for August 2026. Get up to 50% OFF on food orders, Flat ₹200 OFF, ₹175 OFF, Dineout deals with free drinks, meals from ₹99, free delivery, and exclusive restaurant discounts.',
     url: 'https://www.couponscrew.com/stores/swiggy-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | August 2026',
+    title: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | October 2026',
     description:
       'Save more with the latest Swiggy coupon codes and offers for August 2026. Get up to 50% OFF on food orders, Flat ₹200 OFF, ₹175 OFF, Dineout deals with free drinks, meals from ₹99, free delivery, and exclusive restaurant discounts.',
     site: '@couponscrew',
@@ -80,7 +80,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/swiggy-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/swiggy-coupon-code',
-      name: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | August 2026',
+      name: 'Swiggy Coupon Codes: Up to 50% OFF + Flat ₹200 OFF | October 2026',
       description: 'Save more with the latest Swiggy coupon codes and offers for August 2026. Get up to 50% OFF on food orders, Flat ₹200 OFF, ₹175 OFF, Dineout deals with free drinks, meals from ₹99, free delivery, and exclusive restaurant discounts.',
       isPartOf: {
         '@type': 'WebSite',

@@ -27,7 +27,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'NEW30',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'KIDSCARNIVAL',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '23 Aug 2026'
+    validTill: '23 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'SALE10',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'FLASHSALE',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'RAKHI300',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '28 Aug 2026'
+    validTill: '28 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'CHECKOUT',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'RAKHIFREEDEL',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '28 Aug 2026'
+    validTill: '28 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'WISH',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -153,7 +153,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'COMFYNCHIC',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'PLUS10AURA',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'PLUS20AURA',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -195,7 +195,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'TRYWATCHES',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-14',
@@ -209,7 +209,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'WISH26',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-15',
@@ -223,7 +223,7 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'ONLYEXCLUSIVE20',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -237,6 +237,6 @@ export const AJIO_COUPONS: Coupon[] = [
     code: 'SPORTSRUSH5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   }
 ];

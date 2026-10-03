@@ -528,7 +528,7 @@ export default function AirbnbStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Airbnb Coupon Code: What Actually Works in India (September 2026)
+          Airbnb Coupon Code: What Actually Works in India (October 2026)
         </p>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">

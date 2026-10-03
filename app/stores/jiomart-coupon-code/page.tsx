@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first
-  title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
+  title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Oct 2026',
 
   // Primary + secondary keywords + max offer
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
+    title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Oct 2026',
     description:
       'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
     url: 'https://www.couponscrew.com/stores/jiomart-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
+    title: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Oct 2026',
     description:
       'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/jiomart-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/jiomart-coupon-code',
-      name: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Aug 2026',
+      name: 'JioMart Coupon Codes & Offers – Up to 87% OFF | Oct 2026',
       description: 'Save with verified JioMart coupon codes and promo codes. Get up to 87% OFF, ₹1,000 OFF electronics, up to 80% OFF, flat 40% OFF groceries, extra 10% card offers & August 2026 deals.',
       isPartOf: {
         '@type': 'WebSite',

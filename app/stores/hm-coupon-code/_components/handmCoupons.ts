@@ -27,7 +27,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New & Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -83,7 +83,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-6',
@@ -97,7 +97,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Members Only',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -153,7 +153,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -195,7 +195,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-14',
@@ -209,7 +209,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-15',
@@ -223,7 +223,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -237,7 +237,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-17',
@@ -251,7 +251,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-18',
@@ -265,7 +265,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-19',
@@ -279,7 +279,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-20',
@@ -293,7 +293,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-21',
@@ -307,7 +307,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-22',
@@ -321,7 +321,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-23',
@@ -335,7 +335,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-24',
@@ -349,7 +349,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-25',
@@ -363,7 +363,7 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-26',
@@ -377,6 +377,6 @@ export const HANDM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   }
 ];

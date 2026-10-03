@@ -599,7 +599,7 @@ export default function FlixBusStore() {
           <div className="space-y-6 text-slate-700">
   <div className="space-y-4">
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-      Latest FlixBus Vouchers, Promo Codes & Coupons for September 2026
+      Latest FlixBus Vouchers, Promo Codes & Coupons for October 2026
     </h3>
     <p>
       CouponsCrew updates this page regularly with working FlixBus deals. Active offers typically include:

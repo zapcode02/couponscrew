@@ -7,7 +7,7 @@ import SportsCategory from './_components/SportsCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Sports Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Sports Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest sports coupon codes, discount codes, and promo codes for August 2026. Save on sportswear, footwear, fitness equipment, outdoor gear, gym accessories, cycling, running, cricket, football, and more from leading sports brands.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Sports Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Sports Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest sports coupon codes, discount codes, and promo codes for August 2026. Save on sportswear, footwear, fitness equipment, outdoor gear, gym accessories, cycling, running, cricket, football, and more from leading sports brands.',
     url: 'https://www.couponscrew.com/stores/categories/sports',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Sports Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Sports Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest sports coupon codes, discount codes, and promo codes for August 2026. Save on sportswear, footwear, fitness equipment, outdoor gear, gym accessories, cycling, running, cricket, football, and more from leading sports brands.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/sports#webpage',
       url: 'https://www.couponscrew.com/stores/categories/sports',
-      name: 'Sports Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Sports Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest sports coupon codes, discount codes, and promo codes for August 2026. Save on sportswear, footwear, fitness equipment, outdoor gear, gym accessories, cycling, running, cricket, football, and more from leading sports brands.',
       inLanguage: 'en-IN',

@@ -125,7 +125,7 @@ export default function FlipkartStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest verified Flipkart coupon codes, voucher codes, and exclusive offers for August 2026. Save up to 95% on electronics, fashion, home, and more, plus enjoy 10% off gift cards, Freedom Sale discounts, bank offers, cashback deals, and limited-time promotions across thousands of products.
+                    Find the latest verified Flipkart coupon codes, voucher codes, and exclusive offers for October 2026. Save up to 95% on electronics, fashion, home, and more, plus enjoy 10% off gift cards, Freedom Sale discounts, bank offers, cashback deals, and limited-time promotions across thousands of products.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -445,7 +445,7 @@ export default function FlipkartStore() {
       {/* Left: Text Content */}
       <div className="prose max-w-none">
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Flipkart Coupon Code & Discount Deals — Verified for August 2026
+          Flipkart Coupon Code & Discount Deals — Verified for October 2026
         </h2>
 
         <div className="overflow-x-auto my-6">
@@ -567,7 +567,7 @@ export default function FlipkartStore() {
           {/* Today's Best Flipkart Coupon Codes Table Section */}
           <div className="space-y-4 text-slate-700">
             <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-              Today's Best Flipkart Coupon Codes (August 2026)
+              Today's Best Flipkart Coupon Codes (October 2026)
             </h3>
             <p className="italic text-sm text-gray-500 mb-4">
               💡 [Dev note: This section is dynamically populated by the deals grid component — the intro paragraph and table below are static editorial copy that sits above the card grid.]

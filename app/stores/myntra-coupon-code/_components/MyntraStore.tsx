@@ -133,7 +133,7 @@ export default function MyntraStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Discover the latest verified Myntra coupon codes, Discount codes, and exclusive offers for August 2026. Save up to 90% on fashion, footwear, beauty, and accessories, plus enjoy an extra ₹300 off for new users, 25% off first orders, bank cashback, and exciting discounts from leading brands.
+                    Discover the latest verified Myntra coupon codes, Discount codes, and exclusive offers for October 2026. Save up to 90% on fashion, footwear, beauty, and accessories, plus enjoy an extra ₹300 off for new users, 25% off first orders, bank cashback, and exciting discounts from leading brands.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
@@ -437,7 +437,7 @@ export default function MyntraStore() {
             
             {/* Main Section Header */}
             <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-              Myntra Coupon Code & Discount Deals — Verified for August 2026
+              Myntra Coupon Code & Discount Deals — Verified for October 2026
             </h2>
 
             <div className="overflow-x-auto my-6">
@@ -559,7 +559,7 @@ export default function MyntraStore() {
 
               {/* Sub-header: Today's Best Offers */}
               <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                Today's Best Myntra Coupon Codes (August 2026)
+                Today's Best Myntra Coupon Codes (October 2026)
               </h3>
 
               <p className="italic bg-[#f0eeff] text-[#5B4FBE] p-4 rounded-xl border border-[#5B4FBE]/10">

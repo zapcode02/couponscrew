@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Sept 2026',
+  title: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Sept 2026',
+    title: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Oct 2026',
     description:
       'Find the latest SonyLIV coupon code and SonyLIV promo code at Maxiku Offers. Save up to 50% OFF Premium plans, get 2 extra months FREE, and enjoy 25% OFF Mobile subscriptions.',
     url: 'https://www.couponscrew.com/stores/sonyliv-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Sept 2026',
+    title: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Oct 2026',
     description:
       'Find the latest SonyLIV coupon code and SonyLIV promo code at Maxiku Offers. Save up to 50% OFF Premium plans, get 2 extra months FREE, and enjoy 25% OFF Mobile subscriptions.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/sonyliv-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/sonyliv-coupon-code',
-      name: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Sept 2026',
+      name: 'SonyLIV Coupon Code: Save Up to 50% OFF + Get 2 Months FREE | Oct 2026',
       description: 'Find the latest SonyLIV coupon code and SonyLIV promo code at Maxiku Offers. Save up to 50% OFF Premium plans, get 2 extra months FREE, and enjoy 25% OFF Mobile subscriptions.',
       isPartOf: {
         '@type': 'WebSite',

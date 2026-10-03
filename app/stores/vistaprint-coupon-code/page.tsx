@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Sept 2026',
+  title: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Sept 2026',
+    title: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Oct 2026',
     description:
       'Use the latest Vistaprint Coupon Code and Vistaprint Discount Code to get 100 premium visiting cards for just ₹200. Personalise your design and order online. Shop now.',
     url: 'https://www.couponscrew.com/stores/vistaprint-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Sept 2026',
+    title: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Oct 2026',
     description:
       'Use the latest Vistaprint Coupon Code and Vistaprint Discount Code to get 100 premium visiting cards for just ₹200. Personalise your design and order online. Shop now.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/vistaprint-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/vistaprint-coupon-code',
-      name: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Sept 2026',
+      name: 'Vistaprint Coupon Code – Print 100 Visiting Cards for ₹200 | Oct 2026',
       description: 'Use the latest Vistaprint Coupon Code and Vistaprint Discount Code to get 100 premium visiting cards for just ₹200. Personalise your design and order online. Shop now.',
       isPartOf: {
         '@type': 'WebSite',

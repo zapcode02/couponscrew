@@ -27,7 +27,7 @@ export const ZEE5_COUPONS: Coupon[] = [
     code: 'EXCLUSIVE',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -167,7 +167,7 @@ export const ZEE5_COUPONS: Coupon[] = [
     code: 'EXCLUSIVE',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const ZEE5_COUPONS: Coupon[] = [
     code: 'EXCLUSIVE',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-13',

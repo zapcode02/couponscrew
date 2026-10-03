@@ -7,7 +7,7 @@ import ElectronicsCategory from './_components/ElectronicsCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Electronics Coupons & Offers: Save Up to 80% OFF | August 2026',
+  title: 'Electronics Coupons & Offers: Save Up to 80% OFF | October 2026',
   description:
     'Explore the latest electronics coupon codes and offers for August 2026. Save on smartphones, laptops, TVs, audio devices, gaming accessories, smartwatches, cameras, home appliances, and more with verified discounts from leading brands and retailers.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Electronics Coupons & Offers: Save Up to 80% OFF | August 2026',
+    title: 'Electronics Coupons & Offers: Save Up to 80% OFF | October 2026',
     description:
       'Explore the latest electronics coupon codes and offers for August 2026. Save on smartphones, laptops, TVs, audio devices, gaming accessories, smartwatches, cameras, home appliances, and more with verified discounts from leading brands and retailers.',
     url: 'https://www.couponscrew.com/stores/categories/electronics',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Electronics Coupons & Offers: Save Up to 80% OFF | August 2026',
+    title: 'Electronics Coupons & Offers: Save Up to 80% OFF | October 2026',
     description:
       'Explore the latest electronics coupon codes and offers for August 2026. Save on smartphones, laptops, TVs, audio devices, gaming accessories, smartwatches, cameras, home appliances, and more with verified discounts from leading brands and retailers.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/electronics#webpage',
       url: 'https://www.couponscrew.com/stores/categories/electronics',
-      name: 'Electronics Coupons & Offers: Save Up to 80% OFF | August 2026',
+      name: 'Electronics Coupons & Offers: Save Up to 80% OFF | October 2026',
       description:
         'Explore the latest electronics coupon codes and offers for August 2026. Save on smartphones, laptops, TVs, audio devices, gaming accessories, smartwatches, cameras, home appliances, and more with verified discounts from leading brands and retailers.',
       inLanguage: 'en-IN',

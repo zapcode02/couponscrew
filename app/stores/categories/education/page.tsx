@@ -7,7 +7,7 @@ import EducationCategory from './_components/EducationCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Education Coupon Codes, Discount Code, promo Codes | August 2026 ',
+  title: 'Education Coupon Codes, Discount Code, promo Codes | October 2026 ',
   description:
     'Explore the latest education coupon codes and discounts for August 2026. Save on online courses, certifications, competitive exam preparation, coding bootcamps, language learning, study materials, and professional training from leading education platforms.',
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Education Coupon Codes, Discount Code, promo Codes | August 2026 ',
+    title: 'Education Coupon Codes, Discount Code, promo Codes | October 2026 ',
     description:
       'Explore the latest education coupon codes and discounts for August 2026. Save on online courses, certifications, competitive exam preparation, coding bootcamps, language learning, study materials, and professional training from leading education platforms.',
     url: 'https://www.couponscrew.com/stores/categories/education',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Education Coupon Codes, Discount Code, promo Codes | August 2026 ',
+    title: 'Education Coupon Codes, Discount Code, promo Codes | October 2026 ',
     description:
       'Explore the latest education coupon codes and discounts for August 2026. Save on online courses, certifications, competitive exam preparation, coding bootcamps, language learning, study materials, and professional training from leading education platforms.',
     site: '@CouponsCrew',
@@ -87,7 +87,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/education#webpage',
       url: 'https://www.couponscrew.com/stores/categories/education',
-      name: 'Education Coupon Codes, Discount Code, promo Codes | August 2026 ',
+      name: 'Education Coupon Codes, Discount Code, promo Codes | October 2026 ',
       description:
         'Explore the latest education coupon codes and discounts for August 2026. Save on online courses, certifications, competitive exam preparation, coding bootcamps, language learning, study materials, and professional training from leading education platforms.',
       inLanguage: 'en-IN',

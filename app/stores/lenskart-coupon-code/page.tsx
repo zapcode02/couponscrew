@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Aug 2026',
+  title: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Aug 2026',
+    title: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Oct 2026',
     description:
       'Save with verified Lenskart coupon codes and promo codes. Get up to 78% OFF, ₹1,000 OFF, extra 60% OFF, Buy 1 Get 1 FREE, free shipping, and exclusive eyewear offers. Updated August 2026.',
     url: 'https://www.couponscrew.com/stores/lenskart-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Aug 2026',
+    title: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Oct 2026',
     description:
       'Save with verified Lenskart coupon codes and promo codes. Get up to 78% OFF, ₹1,000 OFF, extra 60% OFF, Buy 1 Get 1 FREE, free shipping, and exclusive eyewear offers. Updated August 2026.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/lenskart-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/lenskart-coupon-code',
-      name: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Aug 2026',
+      name: 'Lenskart Coupon Codes: Up to 78% OFF + ₹1,000 OFF | Oct 2026',
       description: 'Save with verified Lenskart coupon codes and promo codes. Get up to 78% OFF, ₹1,000 OFF, extra 60% OFF, Buy 1 Get 1 FREE, free shipping, and exclusive eyewear offers. Updated August 2026.',
       isPartOf: {
         '@type': 'WebSite',

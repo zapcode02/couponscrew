@@ -27,7 +27,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'HYD50',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -41,7 +41,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'PUNE300',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-3',
@@ -55,7 +55,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'FLAT50',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: '50OLA',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -111,7 +111,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'OLA100',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: '50FOOD',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'STANSALE10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -167,7 +167,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'IND100',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -181,7 +181,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'FLY100',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-13',
@@ -223,7 +223,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'HYD12',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -251,7 +251,7 @@ export const OLA_COUPONS: Coupon[] = [
     code: 'OLA30D',
     verified: 'Verified',
     userType: 'Select Users',
-    validTill: '31 Aug 2026'
+    validTill: '31 Oct 2026'
   },
   {
     id: 'coupon-18',

@@ -6,7 +6,7 @@ import { MYNTRA_COUPONS } from './_components/myntraCoupons'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Aug 2026  ',
+  title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
 
   description:
     '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Aug 2026  ',
+    title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
     description:
       '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
     url: 'https://www.couponscrew.com/stores/myntra-coupon-code',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Aug 2026  ',
+    title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
     description:
       '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
     site: '@couponscrew',
@@ -85,7 +85,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/myntra-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/myntra-coupon-code',
-      name: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Aug 2026  ',
+      name: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
       description: '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
       isPartOf: {
         '@type': 'WebSite',

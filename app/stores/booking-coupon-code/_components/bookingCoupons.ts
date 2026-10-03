@@ -27,7 +27,7 @@ export const BOOKING_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-2',
@@ -251,7 +251,7 @@ export const BOOKING_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Genius Members',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-18',

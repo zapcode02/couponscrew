@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Aug 2026',
+  title: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Aug 2026',
+    title: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Oct 2026',
     description:
       'Get the latest Puma coupon code and discount codes with up to 50% OFF on shoes, apparel & accessories. Discover verified deals and offers, updated regularly. Aug 2026',
     url: 'https://www.couponscrew.com/stores/puma-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Aug 2026',
+    title: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Oct 2026',
     description:
       'Get the latest Puma coupon code and discount codes with up to 50% OFF on shoes, apparel & accessories. Discover verified deals and offers, updated regularly. Aug 2026',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/puma-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/puma-coupon-code',
-      name: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Aug 2026',
+      name: 'Puma Coupon Codes: Up to 60% OFF + Extra 10% OFF | Oct 2026',
       description: 'Get the latest Puma coupon code and discount codes with up to 50% OFF on shoes, apparel & accessories. Discover verified deals and offers, updated regularly. Aug 2026',
       isPartOf: {
         '@type': 'WebSite',

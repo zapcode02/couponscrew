@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first
-  title: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | August 2026',
+  title: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | October 2026',
 
   // Primary + secondary keywords + offer
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | August 2026',
+    title: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | October 2026',
     description:
       'Use the latest ZEE5 coupon code and promo code to save up to 60% on Annual Plans, get an extra 15% OFF with coupon code EXCLUSIVE, enjoy 30% OFF with Visa Debit Cards, and unlock the best subscription',
     url: 'https://www.couponscrew.com/stores/zee5-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | August 2026',
+    title: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | October 2026',
     description:
       'Use the latest ZEE5 coupon code and promo code to save up to 60% on Annual Plans, get an extra 15% OFF with coupon code EXCLUSIVE, enjoy 30% OFF with Visa Debit Cards, and unlock the best subscription',
     site: '@couponscrew',
@@ -87,7 +87,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/zee5-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/zee5-coupon-code',
-      name: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | August 2026',
+      name: 'ZEE5 Coupon Code: Up to 60% OFF + Extra 15% OFF | October 2026',
       description: 'Use the latest ZEE5 coupon code and promo code to save up to 60% on Annual Plans, get an extra 15% OFF with coupon code EXCLUSIVE, enjoy 30% OFF with Visa Debit Cards, and unlock the best subscription',
       isPartOf: {
         '@type': 'WebSite',

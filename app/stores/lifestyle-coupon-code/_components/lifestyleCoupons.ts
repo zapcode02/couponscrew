@@ -55,7 +55,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'SELECT10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-4',
@@ -69,7 +69,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-5',
@@ -97,7 +97,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'LS500',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-7',
@@ -111,7 +111,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'SELECT10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-8',
@@ -125,7 +125,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'FR5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-9',
@@ -139,7 +139,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-10',
@@ -153,7 +153,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-11',
@@ -167,7 +167,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-12',
@@ -195,7 +195,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-14',
@@ -209,7 +209,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Women',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-15',
@@ -223,7 +223,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'Existing Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-16',
@@ -237,7 +237,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'LESS5',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-17',
@@ -251,7 +251,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'LG20',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-18',
@@ -265,7 +265,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'LG10',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-19',
@@ -279,7 +279,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'APP200',
     verified: 'Verified',
     userType: 'App Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-20',
@@ -293,7 +293,7 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: 'FLAT100',
     verified: 'Verified',
     userType: 'New Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   },
   {
     id: 'coupon-21',
@@ -307,6 +307,6 @@ export const LIFESTYLE_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Sep 2026'
+    validTill: '30 Oct 2026'
   }
 ];

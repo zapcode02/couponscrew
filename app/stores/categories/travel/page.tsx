@@ -7,7 +7,7 @@ import TravelCategory from './_components/TravelCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Travel Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Travel Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest travel coupon codes, discount codes, and promo codes for August 2026. Save on flights, hotels, holiday packages, bus and train bookings, car rentals, travel insurance, airport lounges, eSIMs, and other travel essentials with verified discounts.',
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Travel Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Travel Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest travel coupon codes, discount codes, and promo codes for August 2026. Save on flights, hotels, holiday packages, bus and train bookings, car rentals, travel insurance, airport lounges, eSIMs, and other travel essentials with verified discounts.',
     url: 'https://www.couponscrew.com/stores/categories/travel',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Travel Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest travel coupon codes, discount codes, and promo codes for August 2026. Save on flights, hotels, holiday packages, bus and train bookings, car rentals, travel insurance, airport lounges, eSIMs, and other travel essentials with verified discounts.',
     site: '@CouponsCrew',
@@ -86,7 +86,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/travel#webpage',
       url: 'https://www.couponscrew.com/stores/categories/travel',
-      name: 'Travel Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Travel Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest travel coupon codes, discount codes, and promo codes for August 2026. Save on flights, hotels, holiday packages, bus and train bookings, car rentals, travel insurance, airport lounges, eSIMs, and other travel essentials with verified discounts.',
       inLanguage: 'en-IN',

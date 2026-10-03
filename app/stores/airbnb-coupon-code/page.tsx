@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Sept 2026',
+  title: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Sept 2026',
+    title: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Oct 2026',
     description:
       'Use the latest Airbnb Coupon Code and Airbnb Discount Code to get 44% OFF private rooms in Noida and save ₹625 on selected stays. Book verified Airbnb accommodations for less.',
     url: 'https://www.couponscrew.com/stores/airbnb-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Sept 2026',
+    title: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Oct 2026',
     description:
       'Use the latest Airbnb Coupon Code and Airbnb Discount Code to get 44% OFF private rooms in Noida and save ₹625 on selected stays. Book verified Airbnb accommodations for less.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/airbnb-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/airbnb-coupon-code',
-      name: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Sept 2026',
+      name: 'Airbnb Coupon Code – Get 44% OFF & Save ₹625 on Stays | Oct 2026',
       description: 'Use the latest Airbnb Coupon Code and Airbnb Discount Code to get 44% OFF private rooms in Noida and save ₹625 on selected stays. Book verified Airbnb accommodations for less.',
       isPartOf: {
         '@type': 'WebSite',

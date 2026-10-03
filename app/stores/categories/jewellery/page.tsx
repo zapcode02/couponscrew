@@ -7,7 +7,7 @@ import JewelleryCategory from './_components/JewelleryCategory';
 
 export const metadata: Metadata = {
   // ── Core Meta ──────────────────────────────
-  title: 'Jewellery Coupons, Discount Codes & Promo Codes | August 2026',
+  title: 'Jewellery Coupons, Discount Codes & Promo Codes | October 2026',
   description:
     'Explore the latest jewellery coupon codes, discount codes, and promo codes for August 2026. Save on gold, diamond, silver, platinum, gemstone jewellery, engagement rings, earrings, necklaces, bracelets, and more from leading jewellery brands.',
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Jewellery Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Jewellery Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest jewellery coupon codes, discount codes, and promo codes for August 2026. Save on gold, diamond, silver, platinum, gemstone jewellery, engagement rings, earrings, necklaces, bracelets, and more from leading jewellery brands.',
     url: 'https://www.couponscrew.com/stores/categories/jewellery',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Jewellery Coupons, Discount Codes & Promo Codes | August 2026',
+    title: 'Jewellery Coupons, Discount Codes & Promo Codes | October 2026',
     description:
       'Explore the latest jewellery coupon codes, discount codes, and promo codes for August 2026. Save on gold, diamond, silver, platinum, gemstone jewellery, engagement rings, earrings, necklaces, bracelets, and more from leading jewellery brands.',
     site: '@CouponsCrew',
@@ -85,7 +85,7 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/categories/jewellery#webpage',
       url: 'https://www.couponscrew.com/stores/categories/jewellery',
-      name: 'Jewellery Coupons, Discount Codes & Promo Codes | August 2026',
+      name: 'Jewellery Coupons, Discount Codes & Promo Codes | October 2026',
       description:
         'Explore the latest jewellery coupon codes, discount codes, and promo codes for August 2026. Save on gold, diamond, silver, platinum, gemstone jewellery, engagement rings, earrings, necklaces, bracelets, and more from leading jewellery brands.',
       inLanguage: 'en-IN',

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Sept 2026',
+  title: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Sept 2026',
+    title: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Oct 2026',
     description:
       'Find the latest Booking coupon code & promo code. Save up to 60% OFF hotels, enjoy an extra 10% OFF with Genius, plus weekend stay deals worldwide.',
     url: 'https://www.couponscrew.com/stores/booking-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Sept 2026',
+    title: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Oct 2026',
     description:
       'Find the latest Booking coupon code & promo code. Save up to 60% OFF hotels, enjoy an extra 10% OFF with Genius, plus weekend stay deals worldwide.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/booking-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/booking-coupon-code',
-      name: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Sept 2026',
+      name: 'Booking Coupon Code: Save Up to 60% OFF + Extra 10% OFF | Oct 2026',
       description: 'Find the latest Booking coupon code & promo code. Save up to 60% OFF hotels, enjoy an extra 10% OFF with Genius, plus weekend stay deals worldwide.',
       isPartOf: {
         '@type': 'WebSite',

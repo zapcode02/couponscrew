@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // Primary keyword first | ~58 chars
-  title: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Aug 2026',
+  title: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Oct 2026',
 
   // Primary + all secondary keywords + max offer | 148 chars
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Aug 2026',
+    title: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Oct 2026',
     description:
       'Explore the latest OnePlus coupon codes and offers for August 2026. Save up to 50% on smartphones, TVs, audio, and accessories. Enjoy up to ₹4,000 bank discounts, exchange bonuses, free OnePlus Buds 3, welcome gift cards, and exclusive launch offers.',
     url: 'https://www.couponscrew.com/stores/oneplus-coupon-code',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Aug 2026',
+    title: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Oct 2026',
     description:
       'Explore the latest OnePlus coupon codes and offers for August 2026. Save up to 50% on smartphones, TVs, audio, and accessories. Enjoy up to ₹4,000 bank discounts, exchange bonuses, free OnePlus Buds 3, welcome gift cards, and exclusive launch offers.',
     site: '@couponscrew',
@@ -86,7 +86,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/oneplus-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/oneplus-coupon-code',
-      name: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Aug 2026',
+      name: 'OnePlus Coupon Codes: Up to 50% OFF + ₹4,000 Exchange Bonus | Oct 2026',
       description: 'Explore the latest OnePlus coupon codes and offers for August 2026. Save up to 50% on smartphones, TVs, audio, and accessories. Enjoy up to ₹4,000 bank discounts, exchange bonuses, free OnePlus Buds 3, welcome gift cards, and exclusive launch offers.',
       isPartOf: {
         '@type': 'WebSite',
