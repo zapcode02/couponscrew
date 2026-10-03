@@ -10,7 +10,6 @@ import {
   Star,
   Tag,
   ShieldCheck,
-  Clock,
   Heart,
   ExternalLink,
   Copy,
@@ -169,26 +168,11 @@ export default function KfcStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-col gap-2">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">KFC Coupon Codes</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF] w-fit">
-                      Fast Food & Fried Chicken
-                    </span>
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
                   Discover the latest KFC coupon codes and offers to save on your favourite chicken meals. Get up to 54% OFF, ₹100 OFF on bucket deals, 50% OFF Friday specials, affordable lunch combos from ₹299, and delicious KFC rolls starting at just ₹99.
                   </p>
-
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
-                    <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                      <ShieldCheck size={14} /> Verified Store
-                    </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
-                      <Tag size={14} /> 20+ Offers
-                    </span>
-                    <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Codes Reviewed Daily
-                    </span>
-                  </div>
                 </div>
               </div>
 

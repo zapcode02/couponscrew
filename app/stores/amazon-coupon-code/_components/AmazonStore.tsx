@@ -113,26 +113,11 @@ export default function AmazonStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-col gap-2">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Amazon Coupon Codes</h1>
-                    <span className="bg-[#f0eeff] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#D6E7F8] w-fit">
-                      Electronics, Fashion, Home & Everyday Essentials
-                    </span>
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
                     Get Amazon coupon codes & Amazon discount codes exclusively on CouponsCrew — save up to 90% off on Electronics, Fashion, Home Essentials, Groceries & more. Shop 120+ verified offers and save up to 80% on Prime deals today!
                   </p>
-
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
-                    <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                      <ShieldCheck size={14} /> Verified Store
-                    </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#f0eeff] px-2.5 py-1 rounded-full border border-[#D6E7F8]">
-                      <Tag size={14} /> 120+ Offers
-                    </span>
-                    <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Codes Reviewed Daily
-                    </span>
-                  </div>
                 </div>
               </div>
 

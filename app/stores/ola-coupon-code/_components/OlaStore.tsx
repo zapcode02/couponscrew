@@ -10,7 +10,6 @@ import {
   Star,
   Tag,
   ShieldCheck,
-  Clock,
   Heart,
   ExternalLink,
   Copy,
@@ -169,26 +168,11 @@ export default function OlaStore() {
                 <div className="flex-1 space-y-4">
                   <div className="flex flex-col gap-2">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">Ola Coupon Codes</h1>
-                    <span className="bg-[#F0EEFF] text-[#5B4FBE] text-xs font-bold px-3 py-1 rounded-full border border-[#E4E0FF] w-fit">
-                      Cab, Auto &amp; Rental Rides
-                    </span>
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
                    Find Ola coupon codes, promo codes and cab ride offers for Oct 2026. Save ₹50 on Mini and Prime rides, get ₹300 cashback on eligible Outstation trips, enjoy 20% OFF on selected bookings and claim a FREE first ride with eligible new-user offers.
                   </p>
-
-                  <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-[#4A4A6A]">
-                    <span className="flex items-center gap-1.5 text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                      <ShieldCheck size={14} /> Verified Store
-                    </span>
-                    <span className="flex items-center gap-1.5 text-[#5B4FBE] bg-[#F0EEFF] px-2.5 py-1 rounded-full border border-[#E4E0FF]">
-                      <Tag size={14} /> 9+ Offers
-                    </span>
-                    <span className="flex items-center gap-1.5 text-gray-500 bg-gray-50 px-2.5 py-1 rounded-full border border-gray-100">
-                      <Clock size={14} /> Codes Reviewed Daily
-                    </span>
-                  </div>
                 </div>
               </div>
 
