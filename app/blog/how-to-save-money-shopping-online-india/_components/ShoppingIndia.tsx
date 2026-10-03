@@ -4,6 +4,15 @@ import { useState } from 'react'
 import Link from 'next/link'
 import NextImage from 'next/image'
 import {
+  Heart,ChevronDown, HelpCircle,
+  Coins,
+  TrendingDown, 
+  CreditCard, 
+  Percent, 
+  Bookmark, 
+  ShoppingBag, 
+  Layers, 
+  Zap,
   ChevronRight,
   Calendar,
   Clock,
@@ -131,137 +140,342 @@ export default function ShoppingIndia() {
                 />
               </div>
 
-              <div className="prose-content mt-8 space-y-6 text-[#1A1A2E] text-[15px] leading-relaxed">
-                <p className="font-semibold text-[#1A1A2E]">
-                  The short answer: stack your discounts instead of using one. Start with the sale price, add a verified coupon code, apply a bank card offer at checkout, and let a cashback app run in the background. Done right, that combination realistically saves 35–80% on the same order — not a typo, just four layers instead of one.
-                </p>
+              <div className="prose-content mt-8 space-y-10 text-[#1A1A2E] text-[15px] leading-relaxed max-w-4xl mx-auto">
+      
+      {/* Hero Highlight Card */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-[#5B4FBE] to-[#3B2F9E] text-white rounded-3xl p-6 md:p-8 shadow-xl shadow-[#5B4FBE]/15">
+        <div className="absolute -right-8 -bottom-8 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+        <div className="flex items-start gap-4 relative z-10">
+          <div className="p-3 bg-white/15 backdrop-blur-md rounded-2xl shrink-0 hidden sm:flex">
+            <Layers className="w-8 h-8 text-white" />
+          </div>
+          <p className="font-semibold text-white/95 text-[16px] md:text-[17px] leading-relaxed">
+            The short answer: stack your discounts instead of using one. Start with the sale price, add a verified coupon code, apply a bank card offer at checkout, and let a cashback app run in the background. Done right, that combination realistically saves 35–80% on the same order — not a typo, just four layers instead of one.
+          </p>
+        </div>
+      </div>
 
-                <p>
-                  Here&apos;s the part nobody tells you: you&apos;ve probably tried this already and given up. You found a code on some random site, typed it in, got an error. Tried another one. Error. Tried a third. Checkout abandoned, dignity slightly dented, browser tab closed in disgust. Six codes, six failures — that&apos;s not bad luck, that&apos;s just what happens when a site lists every code it can scrape and never checks if any of them still work.
-                </p>
+      {/* Intro Story Callout */}
+      <div className="bg-slate-50 border-l-4 border-[#5B4FBE] rounded-r-2xl p-6 shadow-sm space-y-4">
+        <p className="text-[#3A3A52] text-[15px] leading-relaxed">
+          Here&apos;s the part nobody tells you: you&apos;ve probably tried this already and given up. You found a code on some random site, typed it in, got an error. Tried another one. Error. Tried a third. Checkout abandoned, dignity slightly dented, browser tab closed in disgust. Six codes, six failures — that&apos;s not bad luck, that&apos;s just what happens when a site lists every code it can scrape and never checks if any of them still work.
+        </p>
+        <p className="text-[#3A3A52] font-medium text-[15px] leading-relaxed">
+          This guide is the version of that process that actually works. Eight ways to shop smarter in India, then a straight introduction to CouponsCrew — what it does differently, and why that difference is the whole point.
+        </p>
+      </div>
 
-                <p>
-                  This guide is the version of that process that actually works. Eight ways to shop smarter in India, then a straight introduction to CouponsCrew — what it does differently, and why that difference is the whole point.
-                </p>
+      {/* 8 Tips Section Header */}
+      <div className="pt-4 flex items-center justify-between border-b border-[#E8E8F0] pb-5">
+        <div className="flex items-center gap-3">
+          <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#5B4FBE] to-[#4338CA] text-white flex items-center justify-center font-bold shadow-md shadow-[#5B4FBE]/20">
+            <Zap className="w-6 h-6 fill-current" />
+          </div>
+          <div>
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#5B4FBE]">Pro Guide</span>
+            <h2 className="text-2xl md:text-3xl font-black text-[#1A1A2E] tracking-tight">
+              8 Ways to Shop Smarter in India
+            </h2>
+          </div>
+        </div>
+      </div>
 
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">1. Check the Price History Before You Trust the Discount</h2>
-                <p>
-                  Every platform runs sales — GIF, BBD, EORS, end-of-season clearances — and the discount shown is a starting point, not a verified fact. Someone once noticed a TV listed as &quot;40% off ₹49,999&quot; that had quietly sold for ₹29,999 on the same platform six weeks earlier. The &quot;original price&quot; had been inflated specifically so the markdown looked bigger. Nobody ever paid ₹49,999 for that TV. The 90-day price history told the whole story in about four seconds.
-                </p>
-                <div className="bg-[#F0EEFF] border border-[#E4E0FF] rounded-2xl p-5 space-y-3">
-                  <p className="font-bold text-[#1A1A2E] text-sm flex items-center gap-2">
-                    <CheckCircle size={16} className="text-[#5B4FBE]" />
-                    Before any purchase above ₹3,000:
-                  </p>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#5B4FBE] font-bold">•</span>
-                      <span>Check the 90-day price history with any price-tracking browser extension.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#5B4FBE] font-bold">•</span>
-                      <span>Compare the same product across at least two platforms before checkout.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#5B4FBE] font-bold">•</span>
-                      <span>Treat &quot;limited time&quot; banners as marketing, not urgency — most sales repeat monthly.</span>
-                    </li>
-                  </ul>
+      {/* Tip 1 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-5 relative overflow-hidden">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              01
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              1. Check the Price History Before You Trust the Discount
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 hidden sm:flex">
+            <TrendingDown className="w-5 h-5" />
+          </div>
+        </div>
+        
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          Every platform runs sales — GIF, BBD, EORS, end-of-season clearances — and the discount shown is a starting point, not a verified fact. Someone once noticed a TV listed as &quot;40% off ₹49,999&quot; that had quietly sold for ₹29,999 on the same platform six weeks earlier. The &quot;original price&quot; had been inflated specifically so the markdown looked bigger. Nobody ever paid ₹49,999 for that TV. The 90-day price history told the whole story in about four seconds.
+        </p>
+
+        <div className="bg-gradient-to-r from-[#F0EEFF]/90 via-[#F5F3FF]/70 to-transparent border-l-4 border-[#5B4FBE] rounded-r-2xl p-5 space-y-3">
+          <p className="font-bold text-[#1A1A2E] text-sm flex items-center gap-2">
+            <CheckCircle size={18} className="text-[#5B4FBE]" />
+            Before any purchase above ₹3,000:
+          </p>
+          <ul className="space-y-2.5 text-sm text-[#3A3A52]">
+            <li className="flex items-start gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0" />
+              <span>Check the 90-day price history with any price-tracking browser extension.</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0" />
+              <span>Compare the same product across at least two platforms before checkout.</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-[#5B4FBE] mt-1.5 shrink-0" />
+              <span>Treat &quot;limited time&quot; banners as marketing, not urgency — most sales repeat monthly.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Tip 2 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              02
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              2. Stack a Bank Card Offer — It&apos;s Free Money You&apos;re Already Owed
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-blue-50 text-blue-600 shrink-0 hidden sm:flex">
+            <CreditCard className="w-5 h-5" />
+          </div>
+        </div>
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          HDFC, ICICI, and SBI all run instant 10% discount offers during major sale events on Amazon, Flipkart, and most large platforms. This layer sits quietly at checkout, and most shoppers walk past it because they forget to check, or don&apos;t know it exists. Someone once got to checkout for an ₹8,200 laptop on Flipkart, realised they didn&apos;t personally hold an SBI card — but their spouse did. Same household, one card swap, ₹820 saved in about thirty seconds. (Worth checking who in your house has which card. Couples therapy, but for bank offers.)
+        </p>
+      </div>
+
+      {/* Tip 3 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              03
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              3. Verify Your Coupon Code Before You Trust It
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-purple-50 text-purple-600 shrink-0 hidden sm:flex">
+            <ShieldCheck className="w-5 h-5" />
+          </div>
+        </div>
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          This is the layer most shoppers get wrong — not because they skip it, but because they use codes nobody bothered to check. SAVE50. Error. FLAT50. Error. MYNTRA50. Error. Six codes, six failures, checkout abandoned — that&apos;s the default experience on most coupon sites, and it&apos;s not an accident. Listing dead codes costs a site nothing. Verifying them takes actual work, and most sites skip it because the traffic shows up either way: you land on the page searching &quot;brand coupon code,&quot; the site gets the click, and whether the code works is somehow not its problem.
+        </p>
+        <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/60 text-[#3A3A52] text-[14px] leading-relaxed italic">
+          A coupon that&apos;s actually been checked will show you the discount value, the minimum order, the expiry date, and any restrictions — before you click anything. If a site doesn&apos;t show you that upfront, that&apos;s the tell that nobody checked. Two verified codes beat 47 expired ones every single time, and honestly that math isn&apos;t close.
+        </div>
+      </div>
+
+      {/* Tip 4 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              04
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              4. Time Big Purchases Around Real Sale Windows — But Set an Alarm
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 hidden sm:flex">
+            <Clock className="w-5 h-5" />
+          </div>
+        </div>
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          India&apos;s festive e-commerce season hit $14 billion in GMV in 2024, up 12% year on year. GIF and BBD are real events, not marketing theatre — but the actual deal window is brutally short. Someone set a 12:01am alarm for Big Billion Day once, watched a phone marked down to ₹18,999 from ₹24,999, refreshed the page at 12:08am, and it was already gone. Checked again at 9am: still gone, except now a third-party seller had it relisted at ₹21,500. The deal existed. The window was seven minutes.
+        </p>
+      </div>
+
+      {/* Tip 5 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              05
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              5. Run a Cashback Layer in the Background
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 hidden sm:flex">
+            <Coins className="w-5 h-5" />
+          </div>
+        </div>
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          Browser-extension cashback tools and cashback-linked payment apps add another 1–5% back on top of everything else, with zero extra steps at checkout. It&apos;s the most underused savings tool in Indian online shopping. Most people don&apos;t even know the layer exists — they just see a popup once, dismiss it, and forget cashback apps are a category of thing you can have running quietly forever.
+        </p>
+      </div>
+
+      {/* Tip 6 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              06
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              6. Use the Wishlist + Price-Drop Trick (Then Actually Forget About It)
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-pink-50 text-pink-600 shrink-0 hidden sm:flex">
+            <Heart className="w-5 h-5" />
+          </div>
+        </div>
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          Add the item to your wishlist, turn on price-drop notifications, and walk away. This works especially well on Flipkart and Amazon, and it&apos;s probably the single most underused feature in Indian e-commerce — mostly because everyone&apos;s instinct is to keep checking manually instead of letting the app do it. (Yes, this means your wishlist becomes a graveyard of things you&apos;ll buy in six months. That&apos;s fine. That&apos;s the system working.)
+        </p>
+      </div>
+
+      {/* Tip 7 */}
+      <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+              07
+            </div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1A1A2E] leading-snug">
+              7. Spend Your First-Order Discount on Your Biggest Order, Not a Test Run
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-indigo-50 text-indigo-600 shrink-0 hidden sm:flex">
+            <ShoppingBag className="w-5 h-5" />
+          </div>
+        </div>
+        <p className="text-[#4A4A6A] leading-relaxed text-[15px]">
+          First-order discounts are a one-time thing, which means using them on a small order is just leaving money behind. Someone downloaded a food delivery app for the first time, got a 60% off offer, and used it on a ₹180 chai-and-snacks order — saved ₹108. The same offer had a ₹150 cap, meaning it would have applied just as fully to an order up to ₹250. They had a one-time discount and spent it on the smallest possible order. Save the first-order code for the order you were going to place anyway, not the test one.
+        </p>
+      </div>
+
+      {/* Tip 8 + Stacking Highlight */}
+      <div className="bg-gradient-to-br from-white via-white to-[#F0EEFF]/40 border-2 border-[#5B4FBE]/30 rounded-3xl p-6 md:p-8 shadow-lg space-y-6 relative overflow-hidden">
+        <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#5B4FBE]/10 rounded-full blur-2xl pointer-events-none" />
+
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-2xl bg-[#5B4FBE] text-white flex items-center justify-center font-black text-sm shrink-0 shadow-md">
+              08
+            </div>
+            <h2 className="text-xl md:text-2xl font-black text-[#1A1A2E] leading-snug">
+              8. Stack All Four Layers on the Same Order
+            </h2>
+          </div>
+          <div className="p-2.5 rounded-2xl bg-[#5B4FBE]/10 text-[#5B4FBE] shrink-0 hidden sm:flex">
+            <Layers className="w-5 h-5" />
+          </div>
+        </div>
+
+        <p className="text-[#3A3A52] leading-relaxed text-[15px]">
+          This is the part the other ten-tips listicles skip: these layers aren&apos;t alternatives, they&apos;re additive. A pair of ₹5,499 headphones during a festive sale, with a 30% sale price already applied, plus an ICICI bank card offer (extra 10%), plus a verified ₹300 coupon code, plus a cashback app running quietly in the background — final price, ₹2,900. Less than half. Every layer was a real, legal, intentional offer from the brand, the platform, or the bank. The only thing that changed was using all four at once instead of stopping after the first one.
+        </p>
+
+        {/* Highlight Box */}
+        <div className="bg-[#ECFDF5] border border-[#BBF7D0] rounded-2xl p-6 space-y-2 shadow-sm">
+          <p className="font-bold text-[#15803D] flex items-center gap-2 text-xs uppercase tracking-wider">
+            <Sparkles size={16} />
+            Why This Matters
+          </p>
+          <p className="text-[#1A1A2E] text-sm leading-relaxed">
+            Stacking isn&apos;t a loophole — every layer is an offer the brand, platform, or bank already intended you to use. On a typical ₹5,000 order, sale price plus coupon plus bank offer plus cashback realistically lands a 35–80% total saving, depending on how aggressive the sale already is. Most shoppers use exactly one layer. The gap between that and using all four is rarely luck.
+          </p>
+        </div>
+      </div>
+
+      {/* Brand Section: CouponsCrew */}
+      <div className="bg-gradient-to-br from-[#1A1A2E] via-[#2D2B52] to-[#1A1A2E] text-white rounded-3xl p-6 md:p-10 shadow-2xl space-y-6 relative overflow-hidden">
+        <div className="flex items-center gap-3">
+          <span className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-semibold text-purple-200 border border-white/10 uppercase tracking-widest">
+            The Solution
+          </span>
+        </div>
+
+        <h2 className="text-2xl md:text-3xl font-black tracking-tight text-white">
+          Introducing CouponsCrew
+        </h2>
+
+        <div className="space-y-4 text-gray-200 text-[15px] leading-relaxed">
+          <p>
+            Most coupon sites list expired codes and don&apos;t care, because it&apos;s a traffic play — they rank for &quot;brand coupon code,&quot; you land, you try five dead codes, you leave frustrated, and the site already got its click either way. That&apos;s the only meaningful difference between a real coupon site and a directory of disappointments, and it&apos;s the entire reason CouponsCrew exists.
+          </p>
+          <p>
+            We manually test coupons from 500+ brands — Amazon, Flipkart, Myntra, Swiggy, Hostinger, and hundreds more — before any code goes live. Right now that&apos;s 10,000+ verified coupons, with a 92.4% real-world success rate at checkout. When a code stops working, we pull it fast instead of letting it sit there wasting the next person&apos;s time. (We&apos;ve also definitely refreshed a code page at midnight just to double-check an expiry. No regrets.)
+          </p>
+          <p>
+            It&apos;s free to use — no subscription, no paywall, no account required to copy a code. We earn a small affiliate commission from brands only when you actually complete a purchase through a listed link. You don&apos;t pay anything extra for that, and your data is never sold.
+          </p>
+        </div>
+
+        {/* 30 Sec Guide */}
+        <div className="pt-6 border-t border-white/10 space-y-6">
+          <h3 className="text-xl font-extrabold text-white">
+            How to Use CouponsCrew in Under 30 Seconds
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              { step: '1', text: 'Search your store. Type the brand name into the search bar — Amazon, Myntra, Zomato, Hostinger, whatever you’re buying from.' },
+              { step: '2', text: 'Check the details. Every code shows its discount value, minimum order, expiry date, and any restrictions upfront.' },
+              { step: '3', text: 'Click Get Code. The code copies automatically and the brand page opens, ready for checkout.' },
+              { step: '4', text: 'Paste at checkout, then check for a bank card offer before you pay — that’s your next layer of savings.' },
+            ].map((item) => (
+              <div 
+                key={item.step} 
+                className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all backdrop-blur-sm"
+              >
+                <div className="w-8 h-8 rounded-xl bg-[#5B4FBE] text-white flex items-center justify-center text-sm font-black shrink-0 shadow-md">
+                  {item.step}
                 </div>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">2. Stack a Bank Card Offer — It&apos;s Free Money You&apos;re Already Owed</h2>
-                <p>
-                  HDFC, ICICI, and SBI all run instant 10% discount offers during major sale events on Amazon, Flipkart, and most large platforms. This layer sits quietly at checkout, and most shoppers walk past it because they forget to check, or don&apos;t know it exists. Someone once got to checkout for an ₹8,200 laptop on Flipkart, realised they didn&apos;t personally hold an SBI card — but their spouse did. Same household, one card swap, ₹820 saved in about thirty seconds. (Worth checking who in your house has which card. Couples therapy, but for bank offers.)
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">3. Verify Your Coupon Code Before You Trust It</h2>
-                <p>
-                  This is the layer most shoppers get wrong — not because they skip it, but because they use codes nobody bothered to check. SAVE50. Error. FLAT50. Error. MYNTRA50. Error. Six codes, six failures, checkout abandoned — that&apos;s the default experience on most coupon sites, and it&apos;s not an accident. Listing dead codes costs a site nothing. Verifying them takes actual work, and most sites skip it because the traffic shows up either way: you land on the page searching &quot;brand coupon code,&quot; the site gets the click, and whether the code works is somehow not its problem.
-                </p>
-                <p>
-                  A coupon that&apos;s actually been checked will show you the discount value, the minimum order, the expiry date, and any restrictions — before you click anything. If a site doesn&apos;t show you that upfront, that&apos;s the tell that nobody checked. Two verified codes beat 47 expired ones every single time, and honestly that math isn&apos;t close.
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">4. Time Big Purchases Around Real Sale Windows — But Set an Alarm</h2>
-                <p>
-                  India&apos;s festive e-commerce season hit $14 billion in GMV in 2024, up 12% year on year. GIF and BBD are real events, not marketing theatre — but the actual deal window is brutally short. Someone set a 12:01am alarm for Big Billion Day once, watched a phone marked down to ₹18,999 from ₹24,999, refreshed the page at 12:08am, and it was already gone. Checked again at 9am: still gone, except now a third-party seller had it relisted at ₹21,500. The deal existed. The window was seven minutes.
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">5. Run a Cashback Layer in the Background</h2>
-                <p>
-                  Browser-extension cashback tools and cashback-linked payment apps add another 1–5% back on top of everything else, with zero extra steps at checkout. It&apos;s the most underused savings tool in Indian online shopping. Most people don&apos;t even know the layer exists — they just see a popup once, dismiss it, and forget cashback apps are a category of thing you can have running quietly forever.
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">6. Use the Wishlist + Price-Drop Trick (Then Actually Forget About It)</h2>
-                <p>
-                  Add the item to your wishlist, turn on price-drop notifications, and walk away. This works especially well on Flipkart and Amazon, and it&apos;s probably the single most underused feature in Indian e-commerce — mostly because everyone&apos;s instinct is to keep checking manually instead of letting the app do it. (Yes, this means your wishlist becomes a graveyard of things you&apos;ll buy in six months. That&apos;s fine. That&apos;s the system working.)
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">7. Spend Your First-Order Discount on Your Biggest Order, Not a Test Run</h2>
-                <p>
-                  First-order discounts are a one-time thing, which means using them on a small order is just leaving money behind. Someone downloaded a food delivery app for the first time, got a 60% off offer, and used it on a ₹180 chai-and-snacks order — saved ₹108. The same offer had a ₹150 cap, meaning it would have applied just as fully to an order up to ₹250. They had a one-time discount and spent it on the smallest possible order. Save the first-order code for the order you were going to place anyway, not the test one.
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">8. Stack All Four Layers on the Same Order</h2>
-                <p>
-                  This is the part the other ten-tips listicles skip: these layers aren&apos;t alternatives, they&apos;re additive. A pair of ₹5,499 headphones during a festive sale, with a 30% sale price already applied, plus an ICICI bank card offer (extra 10%), plus a verified ₹300 coupon code, plus a cashback app running quietly in the background — final price, ₹2,900. Less than half. Every layer was a real, legal, intentional offer from the brand, the platform, or the bank. The only thing that changed was using all four at once instead of stopping after the first one.
-                </p>
-
-                <div className="bg-[#ECFDF5] border border-[#BBF7D0] rounded-2xl p-6 mt-2">
-                  <p className="font-bold text-[#15803D] flex items-center gap-2 text-sm uppercase tracking-wide">
-                    <Sparkles size={16} />
-                    Why This Matters
-                  </p>
-                  <p className="text-[#1A1A2E] text-sm mt-2 leading-relaxed">
-                    Stacking isn&apos;t a loophole — every layer is an offer the brand, platform, or bank already intended you to use. On a typical ₹5,000 order, sale price plus coupon plus bank offer plus cashback realistically lands a 35–80% total saving, depending on how aggressive the sale already is. Most shoppers use exactly one layer. The gap between that and using all four is rarely luck.
-                  </p>
-                </div>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">Introducing CouponsCrew</h2>
-                <p>
-                  Most coupon sites list expired codes and don&apos;t care, because it&apos;s a traffic play — they rank for &quot;brand coupon code,&quot; you land, you try five dead codes, you leave frustrated, and the site already got its click either way. That&apos;s the only meaningful difference between a real coupon site and a directory of disappointments, and it&apos;s the entire reason CouponsCrew exists.
-                </p>
-                <p>
-                  We manually test coupons from 500+ brands — Amazon, Flipkart, Myntra, Swiggy, Hostinger, and hundreds more — before any code goes live. Right now that&apos;s 10,000+ verified coupons, with a 92.4% real-world success rate at checkout. When a code stops working, we pull it fast instead of letting it sit there wasting the next person&apos;s time. (We&apos;ve also definitely refreshed a code page at midnight just to double-check an expiry. No regrets.)
-                </p>
-                <p>
-                  It&apos;s free to use — no subscription, no paywall, no account required to copy a code. We earn a small affiliate commission from brands only when you actually complete a purchase through a listed link. You don&apos;t pay anything extra for that, and your data is never sold.
-                </p>
-
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] pt-2">How to Use CouponsCrew in Under 30 Seconds</h2>
-                <div className="space-y-3">
-                  {[
-                    { step: '1', text: 'Search your store. Type the brand name into the search bar — Amazon, Myntra, Zomato, Hostinger, whatever you’re buying from.' },
-                    { step: '2', text: 'Check the details. Every code shows its discount value, minimum order, expiry date, and any restrictions upfront.' },
-                    { step: '3', text: 'Click Get Code. The code copies automatically and the brand page opens, ready for checkout.' },
-                    { step: '4', text: 'Paste at checkout, then check for a bank card offer before you pay — that’s your next layer of savings.' },
-                  ].map((item) => (
-                    <div key={item.step} className="flex gap-4 p-4 bg-white rounded-2xl border border-[#E8E8F0]">
-                      <div className="w-8 h-8 rounded-xl bg-[#5B4FBE] text-white flex items-center justify-center text-sm font-black shrink-0">
-                        {item.step}
-                      </div>
-                      <p className="text-sm text-[#1A1A2E] leading-relaxed">{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <p className="pt-2">
-                  That&apos;s the whole system — sale price, verified code, bank offer, cashback, in that order. Go stack something. Your cart has had it too easy for too long.
+                <p className="text-xs md:text-sm text-gray-200 leading-relaxed">
+                  {item.text}
                 </p>
               </div>
+            ))}
+          </div>
+        </div>
 
+        <p className="pt-2 text-center text-purple-200 font-semibold text-[15px]">
+          That&apos;s the whole system — sale price, verified code, bank offer, cashback, in that order. Go stack something. Your cart has had it too easy for too long.
+        </p>
+      </div>
+
+    </div>
               {/* FAQ */}
-              <div className="mt-12 pt-8 border-t border-[#E8E8F0]">
-                <h2 className="text-2xl font-extrabold text-[#1A1A2E] mb-6">Frequently Asked Questions</h2>
-                <div className="space-y-5">
-                  {faqs.map((item) => (
-                    <div key={item.q} className="bg-white rounded-2xl border border-[#E8E8F0] p-5">
-                      <p className="font-bold text-[#1A1A2E] text-sm">{item.q}</p>
-                      <p className="text-sm text-[#4A4A6A] leading-relaxed mt-2">{item.a}</p>
-                    </div>
-                  ))}
-                </div>
+             <div className="mt-14 pt-10 border-t border-[#E8E8F0] max-w-4xl mx-auto">
+      {/* Header */}
+      <div className="flex items-center gap-3 mb-8">
+        <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] flex items-center justify-center font-bold shadow-inner">
+          <HelpCircle className="w-5 h-5" />
+        </div>
+        <div>
+          <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#5B4FBE]">Got Questions?</span>
+          <h2 className="text-2xl md:text-3xl font-black text-[#1A1A2E] tracking-tight">
+            Frequently Asked Questions
+          </h2>
+        </div>
+      </div>
+
+      {/* FAQ List */}
+      <div className="space-y-4">
+        {faqs.map((item) => (
+          <details
+            key={item.q}
+            className="group bg-white rounded-2xl border border-[#E8E8F0] hover:border-[#5B4FBE]/40 transition-all duration-300 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden"
+          >
+            <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer select-none font-bold text-[#1A1A2E] text-base hover:text-[#5B4FBE] transition-colors">
+              <span className="flex items-center gap-3 pr-4">
+                <span className="w-2 h-2 rounded-full bg-[#5B4FBE] shrink-0" />
+                {item.q}
+              </span>
+              <div className="w-8 h-8 rounded-xl bg-[#F0EEFF] group-open:bg-[#5B4FBE] group-open:text-white text-[#5B4FBE] flex items-center justify-center shrink-0 transition-all duration-300">
+                <ChevronDown className="w-5 h-5 group-open:rotate-180 transition-transform duration-300" />
               </div>
+            </summary>
+            
+            <div className="px-5 pb-5 md:px-6 md:pb-6 text-sm md:text-[15px] text-[#4A4A6A] leading-relaxed border-t border-[#F0F0F8] pt-4 mt-1 bg-gradient-to-b from-slate-50/50 to-transparent">
+              {item.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
 
              
               {/* Share this Blog */}

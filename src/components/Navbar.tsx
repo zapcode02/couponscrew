@@ -65,11 +65,15 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
   const [searchInput, setSearchInput] = useState('');
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
+  const [hasUnreadNotification, setHasUnreadNotification] = useState(true);
   const desktopSearchRef = useRef<HTMLDivElement>(null);
   const mobileSearchRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const categoriesRef = useRef<HTMLDivElement>(null);
   const categoriesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const desktopNotificationsRef = useRef<HTMLDivElement>(null);
+  const mobileNotificationsRef = useRef<HTMLDivElement>(null);
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -136,6 +140,25 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [searchOpen]);
+
+  const toggleNotifications = () => {
+    setNotificationsOpen((prev) => !prev);
+    setHasUnreadNotification(false);
+  };
+
+  useEffect(() => {
+    if (!notificationsOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as Node;
+      const insideDesktop = desktopNotificationsRef.current?.contains(target) ?? false;
+      const insideMobile = mobileNotificationsRef.current?.contains(target) ?? false;
+      if (!insideDesktop && !insideMobile) {
+        setNotificationsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [notificationsOpen]);
 
   const renderSearchPanel = (align: 'left' | 'right' | 'mobile') => (
     <div
@@ -208,6 +231,84 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <span>View all matching stores</span>
         </Link>
       )}
+    </div>
+  );
+
+  const renderNotificationsPanel = (align: 'left' | 'right' | 'mobile') => (
+    <div
+      className={`bg-white rounded-2xl border border-[#E8E8F0] shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200 ${
+        align === 'mobile'
+          ? 'fixed top-16 left-1/2 -translate-x-1/2 w-[calc(100vw-2rem)] max-w-sm'
+          : `absolute top-full mt-3 w-80 sm:w-96 ${align === 'right' ? 'right-0' : 'left-0'}`
+      }`}
+    >
+      <div className="px-4 py-3 border-b border-[#E8E8F0]">
+        <h3 className="text-sm font-black text-[#1A1A2E] tracking-wide uppercase">Notifications</h3>
+      </div>
+
+      <div className="p-3 space-y-1">
+        <Link
+          href="/stores/flipkart-coupon-code"
+          onClick={() => setNotificationsOpen(false)}
+          className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
+        >
+          <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 border border-[#E8E8F0] bg-white">
+            <span className="absolute top-0.5 left-0.5 z-10 bg-[#FF5722] text-white text-[8px] font-black px-1.5 py-0.5 rounded">
+              LIVE NOW
+            </span>
+            <Image
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp"
+              alt="Flipkart"
+              fill
+              sizes="56px"
+              className="object-contain p-2"
+            />
+          </div>
+
+          <div className="flex-1 min-w-0 space-y-1.5">
+            <div className="flex items-start justify-between gap-2">
+              <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
+                Flipkart Big Billion Days is LIVE now!
+              </p>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
+            </div>
+            <span className="inline-flex items-center gap-1.5 bg-[#5B4FBE] text-white text-[11px] font-bold px-3 py-1.5 rounded-full group-hover:bg-[#4a40a0] transition-colors">
+              Shop Now
+            </span>
+          </div>
+        </Link>
+
+        <Link
+          href="/stores/amazon-coupon-code"
+          onClick={() => setNotificationsOpen(false)}
+          className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
+        >
+          <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 border border-[#E8E8F0] bg-white">
+            <span className="absolute top-0.5 left-0.5 z-10 bg-[#FF5722] text-white text-[8px] font-black px-1.5 py-0.5 rounded">
+              LIVE NOW
+            </span>
+            <Image
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"
+              alt="Amazon"
+              fill
+              sizes="56px"
+              className="object-contain p-2"
+            />
+          </div>
+
+          <div className="flex-1 min-w-0 space-y-1.5">
+            <div className="flex items-start justify-between gap-2">
+              <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
+                Amazon Great Indian Festival is LIVE now!
+              </p>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
+            </div>
+            <span className="inline-flex items-center gap-1.5 bg-[#5B4FBE] text-white text-[11px] font-bold px-3 py-1.5 rounded-full group-hover:bg-[#4a40a0] transition-colors">
+              Shop Now
+            </span>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 
@@ -330,9 +431,23 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           >
             <span>🔥 Today&apos;s Best Deals</span>
           </Link>
-          <button aria-label="Notifications" className="p-2 text-[#4A4A6A] hover:text-[#5B4FBE] hover:bg-[#F0EEFF] rounded-full transition-all cursor-pointer">
-            <Bell className="w-5 h-5" />
-          </button>
+          <div className="relative" ref={desktopNotificationsRef}>
+            <button
+              aria-label="Notifications"
+              onClick={toggleNotifications}
+              className={`relative p-2 rounded-full transition-all cursor-pointer ${
+                notificationsOpen ? 'text-[#5B4FBE] bg-[#F0EEFF]' : 'text-[#4A4A6A] hover:text-[#5B4FBE] hover:bg-[#F0EEFF]'
+              }`}
+            >
+              <Bell className="w-5 h-5" />
+              {hasUnreadNotification && (
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#FF5722] text-white text-[9px] font-black rounded-full flex items-center justify-center border-2 border-white">
+                  1
+                </span>
+              )}
+            </button>
+            {notificationsOpen && renderNotificationsPanel('right')}
+          </div>
         </div>
 
         {/* Right Side — mobile only: Search + Bell + Hamburger */}
@@ -349,9 +464,23 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
             </button>
             {searchOpen && renderSearchPanel('mobile')}
           </div>
-          <button aria-label="Notifications" className="p-2 text-[#4A4A6A] hover:text-[#5B4FBE] hover:bg-[#F0EEFF] rounded-full transition-all cursor-pointer">
-            <Bell className="w-5 h-5" />
-          </button>
+          <div className="relative" ref={mobileNotificationsRef}>
+            <button
+              aria-label="Notifications"
+              onClick={toggleNotifications}
+              className={`relative p-2 rounded-full transition-all cursor-pointer ${
+                notificationsOpen ? 'text-[#5B4FBE] bg-[#F0EEFF]' : 'text-[#4A4A6A] hover:text-[#5B4FBE] hover:bg-[#F0EEFF]'
+              }`}
+            >
+              <Bell className="w-5 h-5" />
+              {hasUnreadNotification && (
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#FF5722] text-white text-[9px] font-black rounded-full flex items-center justify-center border-2 border-white">
+                  1
+                </span>
+              )}
+            </button>
+            {notificationsOpen && renderNotificationsPanel('mobile')}
+          </div>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-[#4A4A6A] hover:text-[#5B4FBE] hover:bg-[#F0EEFF] rounded-full transition-all cursor-pointer"

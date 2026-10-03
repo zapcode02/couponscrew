@@ -4,6 +4,18 @@ import { useState } from 'react'
 import Link from 'next/link'
 import NextImage from 'next/image'
 import {
+  Sparkle,
+  Gem, 
+  Smile, 
+  Shirt, 
+  BookOpen, 
+  Dumbbell, 
+  Home, 
+  Glasses, 
+  ShoppingBag, 
+  Zap, 
+  CheckCircle2, 
+  Bookmark,
   ChevronRight,
   Calendar,
   Clock,
@@ -133,315 +145,453 @@ export default function RakshaBandhan() {
                 />
               </div>
 
-              <div className="prose-content max-w-4xl mx-auto mt-10 space-y-6 text-[#1A1A2E] text-[15px] leading-relaxed">
+              <div className="prose-content max-w-4xl mx-auto mt-6 space-y-10 text-[#1A1A2E] text-[15px] leading-relaxed">
 
+      {/* Intro Hero Section */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-[#1A1A2E] via-[#2D2B52] to-[#1A1A2E] text-white rounded-3xl p-6 md:p-10 shadow-xl space-y-5">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#5B4FBE]/20 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="flex items-center gap-2">
+          <span className="px-3.5 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-bold text-purple-200 border border-white/15 uppercase tracking-widest flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+            Raksha Bandhan 2026 Guide
+          </span>
+        </div>
 
-  {/* Intro Section */}
-  <p>
-    Raksha Bandhan is one of those festivals that genuinely makes you pause and think. Not about what you have to do — but about what you actually want to say to your sibling. That "I've got your back, always" feeling that no greeting card ever quite captures. And yet, year after year, the panic sets in around two weeks before the date: What do I even get them this time?
-  </p>
+        <p className="text-gray-200 text-[16px] md:text-[17px] leading-relaxed">
+          Raksha Bandhan is one of those festivals that genuinely makes you pause and think. Not about what you have to do — but about what you actually want to say to your sibling. That &quot;I&apos;ve got your back, always&quot; feeling that no greeting card ever quite captures. And yet, year after year, the panic sets in around two weeks before the date: What do I even get them this time?
+        </p>
 
-  <p>
-    If that sounds familiar, you're not alone. Whether you're shopping for a sister who has expensive taste or a brother who claims he "doesn't need anything" (he's lying), this guide has you covered. We've put together 10 genuinely thoughtful gift ideas for Raksha Bandhan 2026 — and paired each one with the best places to shop, so you can save money while you're at it.
-  </p>
+        <p className="text-gray-300 text-[15px] leading-relaxed">
+          If that sounds familiar, you&apos;re not alone. Whether you&apos;re shopping for a sister who has expensive taste or a brother who claims he &quot;doesn&apos;t need anything&quot; (he&apos;s lying), this guide has you covered. We&apos;ve put together 10 genuinely thoughtful gift ideas for Raksha Bandhan 2026 — and paired each one with the best places to shop, so you can save money while you&apos;re at it.
+        </p>
 
-  <p className="font-bold text-[#1A1A2E]">
-    Let's get into it.
-  </p>
+        <div className="pt-2">
+          <p className="font-extrabold text-white text-lg flex items-center gap-2">
+            <span>Let&apos;s get into it.</span>
+            <ArrowRight className="w-5 h-5 text-[#5B4FBE]" />
+          </p>
+        </div>
+      </div>
 
-  {/* Cards List */}
-  <div className="space-y-6 pt-2">
-    
-    {/* Item 1 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        1. Personalised Jewellery — For the Sister Who Deserves to Shine
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        There's something about a piece of jewellery with her name or initials on it that hits differently. It's not just a gift; it's a reminder that you were thinking specifically about her. Name necklaces, birth month rings, charm bracelets — these never go out of style.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Myntra has a solid range of personalised and fashion jewellery across budgets. Use a{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/myntra-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Myntra coupon code
-        </a>{' '}
-        before checkout and you'll often knock off a decent percentage on top of any sale pricing already running.
-      </p>
+      {/* Cards List Section */}
+      <div className="space-y-6 pt-2">
+        
+        {/* Item 1 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                01
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                1. Personalised Jewellery — For the Sister Who Deserves to Shine
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 hidden sm:flex">
+              <Gem className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            There&apos;s something about a piece of jewellery with her name or initials on it that hits differently. It&apos;s not just a gift; it&apos;s a reminder that you were thinking specifically about her. Name necklaces, birth month rings, charm bracelets — these never go out of style.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Myntra has a solid range of personalised and fashion jewellery across budgets. Use a{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/myntra-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Myntra coupon code
+            </a>{' '}
+            before checkout and you&apos;ll often knock off a decent percentage on top of any sale pricing already running.
+          </p>
+        </div>
+
+        {/* Item 2 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                02
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                2. Skincare & Beauty Sets — A Thoughtful Hamper She&apos;ll Actually Use
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 hidden sm:flex">
+              <Sparkle className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            A well-curated skincare set feels luxurious without being impractical. Think sheet masks, serums, SPF moisturisers — the stuff she might not splurge on herself but absolutely loves when someone else gifts it.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Nykaa is the go-to for this. Their gifting section around Raksha Bandhan is genuinely well-stocked — beauty combos, skincare kits, and hampers that look like you put in serious effort (even if ordering took you 10 minutes). Grab a{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/nykaa-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Nykaa coupon code
+            </a>{' '}
+            from CouponsCrew to save on your order.
+          </p>
+        </div>
+
+        {/* Item 3 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                03
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                3. Trendy Ethnic Wear — For the Occasion and Beyond
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-purple-50 text-purple-600 shrink-0 hidden sm:flex">
+              <Shirt className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Raksha Bandhan often involves a family get-together, a puja, or at minimum a nice home-cooked meal. Gifting ethnic wear — a kurta set, a saree, or even a co-ord set with a festive feel — is always a hit because it&apos;s something she can wear the same day and keep wearing after.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            AJIO is fantastic for ethnic and fusion fashion at genuinely competitive prices. Their Raksha Bandhan collection typically includes both traditional and contemporary options. An{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/ajio-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              AJIO coupon code
+            </a>{' '}
+            at checkout makes it even easier on the wallet.
+          </p>
+        </div>
+
+        {/* Item 4 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                04
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                4. Premium Rakhi + Gift Combo — Sorted in One Go
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-indigo-50 text-indigo-600 shrink-0 hidden sm:flex">
+              <Gift className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Sometimes you want one clean, complete package — a beautiful rakhi paired with sweets, dry fruits, or a small keepsake. It saves time, looks polished, and feels intentional.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Amazon has hundreds of curated Raksha Bandhan combo sets available for delivery across India, including same-day and next-day options in most cities. If you&apos;re cutting it close on time, this is your safest bet. Use an{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/amazon-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Amazon coupon code
+            </a>{' '}
+            to save on your order.
+          </p>
+        </div>
+
+        {/* Item 5 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                05
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                5. Books — For the Sibling Who&apos;s Always &quot;In the Middle of Something&quot;
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 hidden sm:flex">
+              <BookOpen className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Books are underrated as Raksha Bandhan gifts. If your sibling is a reader, this is actually a deeply personal choice — you&apos;re saying &quot;I know what you love.&quot; A bestselling fiction title, a coffee table photography book, or a self-help book they&apos;ve been talking about for months.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Amazon remains the most reliable place for books in India — wide selection, fast delivery, and frequent deals on bestsellers. Check CouponsCrew for the latest{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/amazon-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Amazon coupon codes
+            </a>{' '}
+            before you order.
+          </p>
+        </div>
+
+        {/* Item 6 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                06
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                6. Fitness Gear or Supplements — For the Health-Conscious Brother
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-cyan-50 text-cyan-600 shrink-0 hidden sm:flex">
+              <Dumbbell className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            If your brother is gym-obsessed, into running, or has been talking about &quot;eating clean&quot; since January, lean into it. Protein supplements, resistance bands, a quality shaker bottle, or even a fitness tracker — these are gifts he&apos;ll actually use and appreciate.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Flipkart stocks a strong range of fitness accessories and sports equipment, often at better prices than standalone brand websites. Look out for their festive deals running around Raksha Bandhan and stack a{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/flipkart-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Flipkart coupon code
+            </a>{' '}
+            for extra savings.
+          </p>
+        </div>
+
+        {/* Item 7 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                07
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                7. Home Décor & Kitchen Finds — For the Sibling Who Just Moved In
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-orange-50 text-orange-600 shrink-0 hidden sm:flex">
+              <Home className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            If your sister or brother recently moved into a new place — or has been redecorating — home gifts are incredibly well-received. Think aesthetic storage solutions, a nice scented candle set, a sleek coffee mug, or small wall art.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            JioMart has expanded its home and kitchen category significantly and often runs strong festive offers with fast delivery. A{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/jiomart-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              JioMart coupon code
+            </a>{' '}
+            can bring the total down further on home essentials and lifestyle products.
+          </p>
+        </div>
+
+        {/* Item 8 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                08
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                8. Fashion Accessories — Bags, Sunglasses, Watches
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-teal-50 text-teal-600 shrink-0 hidden sm:flex">
+              <Glasses className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            Accessories are a smart gift choice because they work for most ages, styles, and occasions. A structured tote bag for a working sister, a sleek watch for a brother starting his career, or a pair of good sunglasses that actually suits their face — these feel personal without requiring you to know their exact size.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            <a 
+              href="https://www.couponscrew.com/stores/myntra-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Myntra
+            </a>{' '}
+            and{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/ajio-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              AJIO
+            </a>{' '}
+            both carry strong accessories ranges across brands and price points. Check both before deciding — their pricing on the same brands often differs, and coupon codes on either platform can tip the value further in your favour.
+          </p>
+        </div>
+
+        {/* Item 9 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                09
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                9. Groceries & Gourmet Food Hampers — Sweet and Practical
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-[#5B4FBE]/10 text-[#5B4FBE] shrink-0 hidden sm:flex">
+              <ShoppingBag className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            This one works especially well if your sibling lives away from home or has a family of their own. A premium dry fruit box, an artisanal chocolate hamper, or a quality tea and snack assortment feels festive, is always useful, and requires zero guesswork about preferences.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            <a 
+              href="https://www.couponscrew.com/stores/jiomart-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              JioMart
+            </a>{' '}
+            is a solid choice here for both grocery staples and gourmet gifting options.{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/amazon-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Amazon
+            </a>{' '}
+            also carries curated food hampers that ship quickly. Either way, grab a coupon code from CouponsCrew before you order.
+          </p>
+        </div>
+
+        {/* Item 10 */}
+        <div className="group bg-white border border-[#E8E8F0] rounded-3xl p-6 md:p-7 shadow-sm hover:shadow-xl hover:border-[#5B4FBE]/30 transition-all duration-300 space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] group-hover:bg-[#5B4FBE] group-hover:text-white transition-colors flex items-center justify-center font-black text-sm shrink-0 shadow-inner">
+                10
+              </div>
+              <h2 className="text-xl font-extrabold text-[#1A1A2E] leading-snug">
+                10. Beauty Appliances — For the Sister Who Loves Getting Ready
+              </h2>
+            </div>
+            <div className="p-2.5 rounded-2xl bg-fuchsia-50 text-fuchsia-600 shrink-0 hidden sm:flex">
+              <Zap className="w-5 h-5" />
+            </div>
+          </div>
+
+          <p className="text-[#4A4A6A] leading-relaxed">
+            A quality hair dryer, a straightener, a facial steamer, or a LED face mask — these are the kinds of gifts that feel indulgent but have everyday use. If your sister is into beauty routines or has mentioned wanting one of these, Raksha Bandhan is the perfect excuse.
+          </p>
+          <p className="text-[#4A4A6A] leading-relaxed">
+            <a 
+              href="https://www.couponscrew.com/stores/nykaa-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Nykaa
+            </a>{' '}
+            stocks a well-curated range of beauty devices across brands and budgets.{' '}
+            <a 
+              href="https://www.couponscrew.com/stores/flipkart-coupon-code" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1 text-[#5B4FBE] font-bold bg-[#F0EEFF] px-2.5 py-0.5 rounded-md hover:bg-[#5B4FBE] hover:text-white transition-colors"
+            >
+              Flipkart
+            </a>{' '}
+            is also worth comparing for electronics and appliances, especially during festive sale windows. Use coupon codes from CouponsCrew on either to keep more money in your pocket.
+          </p>
+        </div>
+
+      </div>
+
+      {/* Quick Tips Box */}
+      <div className="bg-gradient-to-r from-[#F0EEFF] via-[#F5F3FF] to-[#E4E0FF]/50 border-l-4 border-[#5B4FBE] rounded-r-3xl p-6 md:p-8 my-10 space-y-5 shadow-sm">
+        <div className="flex items-center gap-2.5">
+          <Bookmark className="w-5 h-5 text-[#5B4FBE]" />
+          <h2 className="text-xl font-black text-[#1A1A2E] tracking-tight">
+            A Few Quick Tips Before You Shop
+          </h2>
+        </div>
+
+        <ul className="space-y-3.5 text-sm md:text-[15px] text-[#3A3A52]">
+          <li className="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-[#5B4FBE] shrink-0 mt-0.5" />
+            <span><strong>Order early.</strong> Delivery timelines can stretch during festive weeks. If Raksha Bandhan falls on a weekend, logistics slow down across the board. Give yourself at least 5–7 days buffer.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-[#5B4FBE] shrink-0 mt-0.5" />
+            <span><strong>Check both the app and website.</strong> Many platforms — especially Myntra, Nykaa, and AJIO — run app-exclusive deals that don&apos;t show up on desktop.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-[#5B4FBE] shrink-0 mt-0.5" />
+            <span><strong>Always check CouponsCrew first.</strong> Before you hit &quot;Place Order&quot; on any platform, visit the store page on CouponsCrew. Even a 5–10% off coupon code on a ₹2,000 order saves you a quick ₹100–200 for zero effort.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-[#5B4FBE] shrink-0 mt-0.5" />
+            <span><strong>Don&apos;t overthink the budget.</strong> The gesture matters more than the price tag. A ₹500 book from a sibling who remembered your favourite author means more than a ₹5,000 gift that clearly came from panic-scrolling.</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Final Thought Section */}
+      <div className="bg-gradient-to-br from-[#1A1A2E] via-[#232142] to-[#1A1A2E] text-white rounded-3xl p-6 md:p-10 shadow-xl space-y-4 relative overflow-hidden">
+        <div className="flex items-center gap-2">
+          <span className="px-3 py-1 bg-white/10 rounded-full text-xs font-semibold text-purple-200 uppercase tracking-widest border border-white/10">
+            Wrapping Up
+          </span>
+        </div>
+
+        <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">
+          Final Thought
+        </h2>
+
+        <p className="text-gray-200 text-[15px] leading-relaxed">
+          Raksha Bandhan 2026 is a chance to be deliberate — to shop with intention instead of convenience. You don&apos;t need to spend a fortune. You just need to think about them for five minutes before you add something to your cart.
+        </p>
+        <p className="text-gray-300 text-[15px] leading-relaxed">
+          The stores listed above — Amazon, Myntra, Flipkart, Nykaa, AJIO, and JioMart — cover everything you&apos;d need across categories, budgets, and delivery timelines.
+        </p>
+        <p className="text-gray-300 text-[15px] leading-relaxed">
+          And before you checkout anywhere, swing by CouponsCrew for the latest coupon codes. Because saving money on a gift you&apos;ve already put thought into? That&apos;s just smart shopping.
+        </p>
+
+        <div className="pt-2">
+          <p className="font-extrabold text-white text-lg flex items-center gap-2">
+            Happy Raksha Bandhan. 🎀
+          </p>
+        </div>
+      </div>
+
     </div>
-
-    {/* Item 2 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        2. Skincare & Beauty Sets — A Thoughtful Hamper She'll Actually Use
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        A well-curated skincare set feels luxurious without being impractical. Think sheet masks, serums, SPF moisturisers — the stuff she might not splurge on herself but absolutely loves when someone else gifts it.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Nykaa is the go-to for this. Their gifting section around Raksha Bandhan is genuinely well-stocked — beauty combos, skincare kits, and hampers that look like you put in serious effort (even if ordering took you 10 minutes). Grab a{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/nykaa-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Nykaa coupon code
-        </a>{' '}
-        from CouponsCrew to save on your order.
-      </p>
-    </div>
-
-    {/* Item 3 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        3. Trendy Ethnic Wear — For the Occasion and Beyond
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Raksha Bandhan often involves a family get-together, a puja, or at minimum a nice home-cooked meal. Gifting ethnic wear — a kurta set, a saree, or even a co-ord set with a festive feel — is always a hit because it's something she can wear the same day and keep wearing after.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        AJIO is fantastic for ethnic and fusion fashion at genuinely competitive prices. Their Raksha Bandhan collection typically includes both traditional and contemporary options. An{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/ajio-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          AJIO coupon code
-        </a>{' '}
-        at checkout makes it even easier on the wallet.
-      </p>
-    </div>
-
-    {/* Item 4 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        4. Premium Rakhi + Gift Combo — Sorted in One Go
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Sometimes you want one clean, complete package — a beautiful rakhi paired with sweets, dry fruits, or a small keepsake. It saves time, looks polished, and feels intentional.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Amazon has hundreds of curated Raksha Bandhan combo sets available for delivery across India, including same-day and next-day options in most cities. If you're cutting it close on time, this is your safest bet. Use an{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/amazon-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Amazon coupon code
-        </a>{' '}
-        to save on your order.
-      </p>
-    </div>
-
-    {/* Item 5 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        5. Books — For the Sibling Who's Always "In the Middle of Something"
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Books are underrated as Raksha Bandhan gifts. If your sibling is a reader, this is actually a deeply personal choice — you're saying "I know what you love." A bestselling fiction title, a coffee table photography book, or a self-help book they've been talking about for months.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Amazon remains the most reliable place for books in India — wide selection, fast delivery, and frequent deals on bestsellers. Check CouponsCrew for the latest{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/amazon-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Amazon coupon codes
-        </a>{' '}
-        before you order.
-      </p>
-    </div>
-
-    {/* Item 6 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        6. Fitness Gear or Supplements — For the Health-Conscious Brother
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        If your brother is gym-obsessed, into running, or has been talking about "eating clean" since January, lean into it. Protein supplements, resistance bands, a quality shaker bottle, or even a fitness tracker — these are gifts he'll actually use and appreciate.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Flipkart stocks a strong range of fitness accessories and sports equipment, often at better prices than standalone brand websites. Look out for their festive deals running around Raksha Bandhan and stack a{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/flipkart-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Flipkart coupon code
-        </a>{' '}
-        for extra savings.
-      </p>
-    </div>
-
-    {/* Item 7 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        7. Home Décor & Kitchen Finds — For the Sibling Who Just Moved In
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        If your sister or brother recently moved into a new place — or has been redecorating — home gifts are incredibly well-received. Think aesthetic storage solutions, a nice scented candle set, a sleek coffee mug, or small wall art.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        JioMart has expanded its home and kitchen category significantly and often runs strong festive offers with fast delivery. A{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/jiomart-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          JioMart coupon code
-        </a>{' '}
-        can bring the total down further on home essentials and lifestyle products.
-      </p>
-    </div>
-
-    {/* Item 8 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        8. Fashion Accessories — Bags, Sunglasses, Watches
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        Accessories are a smart gift choice because they work for most ages, styles, and occasions. A structured tote bag for a working sister, a sleek watch for a brother starting his career, or a pair of good sunglasses that actually suits their face — these feel personal without requiring you to know their exact size.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        <a 
-          href="https://www.couponscrew.com/stores/myntra-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Myntra
-        </a>{' '}
-        and{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/ajio-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          AJIO
-        </a>{' '}
-        both carry strong accessories ranges across brands and price points. Check both before deciding — their pricing on the same brands often differs, and coupon codes on either platform can tip the value further in your favour.
-      </p>
-    </div>
-
-    {/* Item 9 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        9. Groceries & Gourmet Food Hampers — Sweet and Practical
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        This one works especially well if your sibling lives away from home or has a family of their own. A premium dry fruit box, an artisanal chocolate hamper, or a quality tea and snack assortment feels festive, is always useful, and requires zero guesswork about preferences.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        <a 
-          href="https://www.couponscrew.com/stores/jiomart-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          JioMart
-        </a>{' '}
-        is a solid choice here for both grocery staples and gourmet gifting options.{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/amazon-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Amazon
-        </a>{' '}
-        also carries curated food hampers that ship quickly. Either way, grab a coupon code from CouponsCrew before you order.
-      </p>
-    </div>
-
-    {/* Item 10 */}
-    <div className="bg-white border border-[#E8E8F0] rounded-2xl p-6 shadow-sm space-y-3">
-      <h2 className="text-lg font-bold text-[#1A1A2E]">
-        10. Beauty Appliances — For the Sister Who Loves Getting Ready
-      </h2>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        A quality hair dryer, a straightener, a facial steamer, or a LED face mask — these are the kinds of gifts that feel indulgent but have everyday use. If your sister is into beauty routines or has mentioned wanting one of these, Raksha Bandhan is the perfect excuse.
-      </p>
-      <p className="text-[#4A4A6A] leading-relaxed">
-        <a 
-          href="https://www.couponscrew.com/stores/nykaa-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Nykaa
-        </a>{' '}
-        stocks a well-curated range of beauty devices across brands and budgets.{' '}
-        <a 
-          href="https://www.couponscrew.com/stores/flipkart-coupon-code" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-[#5B4FBE] font-bold hover:underline"
-        >
-          Flipkart
-        </a>{' '}
-        is also worth comparing for electronics and appliances, especially during festive sale windows. Use coupon codes from CouponsCrew on either to keep more money in your pocket.
-      </p>
-    </div>
-
-  </div>
-
-  {/* Checklist Box */}
-  <div className="bg-[#F0EEFF] border border-[#E4E0FF] rounded-2xl p-6 my-8 space-y-3">
-    <h2 className="text-lg font-bold text-[#1A1A2E]">
-      A Few Quick Tips Before You Shop
-    </h2>
-    <ul className="space-y-2 text-sm text-[#4A4A6A]">
-      <li className="flex items-start gap-2">
-        <span className="text-[#5B4FBE] font-bold">•</span>
-        <span><strong>Order early.</strong> Delivery timelines can stretch during festive weeks. If Raksha Bandhan falls on a weekend, logistics slow down across the board. Give yourself at least 5–7 days buffer.</span>
-      </li>
-      <li className="flex items-start gap-2">
-        <span className="text-[#5B4FBE] font-bold">•</span>
-        <span><strong>Check both the app and website.</strong> Many platforms — especially Myntra, Nykaa, and AJIO — run app-exclusive deals that don't show up on desktop.</span>
-      </li>
-      <li className="flex items-start gap-2">
-        <span className="text-[#5B4FBE] font-bold">•</span>
-        <span><strong>Always check CouponsCrew first.</strong> Before you hit "Place Order" on any platform, visit the store page on CouponsCrew. Even a 5–10% off coupon code on a ₹2,000 order saves you a quick ₹100–200 for zero effort.</span>
-      </li>
-      <li className="flex items-start gap-2">
-        <span className="text-[#5B4FBE] font-bold">•</span>
-        <span><strong>Don't overthink the budget.</strong> The gesture matters more than the price tag. A ₹500 book from a sibling who remembered your favourite author means more than a ₹5,000 gift that clearly came from panic-scrolling.</span>
-      </li>
-    </ul>
-  </div>
-
-  {/* Final Thought Section */}
-  <div className="space-y-4 pt-2 border-t border-gray-200">
-    <h2 className="text-xl font-extrabold text-[#1A1A2E]">
-      Final Thought
-    </h2>
-    <p>
-      Raksha Bandhan 2026 is a chance to be deliberate — to shop with intention instead of convenience. You don't need to spend a fortune. You just need to think about them for five minutes before you add something to your cart.
-    </p>
-    <p>
-      The stores listed above — Amazon, Myntra, Flipkart, Nykaa, AJIO, and JioMart — cover everything you'd need across categories, budgets, and delivery timelines.
-    </p>
-    <p>
-      And before you checkout anywhere, swing by CouponsCrew for the latest coupon codes. Because saving money on a gift you've already put thought into? That's just smart shopping.
-    </p>
-    <p className="font-bold text-[#1A1A2E] pt-1">
-      Happy Raksha Bandhan. 🎀
-    </p>
-  </div>
-</div>
 
               {/* Share this Blog */}
               <div className="bg-[#F0EEFF] rounded-2xl p-6 border border-[#5B4FBE]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6 mt-8">
