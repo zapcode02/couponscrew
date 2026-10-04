@@ -151,6 +151,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'Amazon Great Indian Festival 2026: Date, SBI Offer & Deals', href: '/blog/amazon-great-indian-festival-2026-upcoming-sales' },
   { label: 'Myntra Big Fashion Festival 2026: Date, Insider Early Access and Bank Offers', href: '/blog/myntra-big-fashion-festival-2026' },
   { label: 'October 2026 Sale Calendar: Amazon, Flipkart, Myntra, Ajio, Nykaa', href: '/blog/october-2026-sale-calendar-india' },
+  { label: 'Buy Your Phone Now or Wait for the Sale? Smartphones to Watch in October 2026', href: '/blog/buy-phone-now-or-wait-for-sale-2026' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

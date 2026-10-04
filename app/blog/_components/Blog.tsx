@@ -109,6 +109,16 @@ const posts = [
     excerpt: 'Every October 2026 sale date in one place: Amazon from 8 Oct, Flipkart from 9 Oct, Myntra from 8 Oct, plus Ajio, Nykaa and the festival dates to plan around.',
     tags: ['Sale Calendar', 'Festival Offers', 'October 2026'],
   },
+  {
+    slug: 'buy-phone-now-or-wait-for-sale-2026',
+    title: 'Buy Your Phone Now or Wait for the Sale? Smartphones to Watch in October 2026',
+    category: 'Electronics',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1791102378/Buy_Now_or_Wait_for_the_Sale_wbznsq.webp',
+    date: 'Oct 4, 2026',
+    readTime: '9 min read',
+    excerpt: 'Phone prices in India rose through 2026. When to buy, which phones Flipkart has teased for Big Billion Days, and how to work out the real sale price.',
+    tags: ['Smartphones', 'Big Billion Days', 'Electronics'],
+  },
 ];
 
 export default function Blog() {
