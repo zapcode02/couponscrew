@@ -119,6 +119,16 @@ const posts = [
     excerpt: 'Phone prices in India rose through 2026. When to buy, which phones Flipkart has teased for Big Billion Days, and how to work out the real sale price.',
     tags: ['Smartphones', 'Big Billion Days', 'Electronics'],
   },
+  {
+    slug: 'no-cost-emi-real-cost-sale-2026',
+    title: 'No Cost EMI in the Sale: What It Actually Costs and How to Check',
+    category: 'Finance',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1791215474/No_Cost_EMI__What_You_Still_Pay_iuhik8.webp',
+    date: 'Oct 5, 2026',
+    readTime: '9 min read',
+    excerpt: 'No Cost EMI is not always free. See the GST, processing fee and lost discounts behind it, with a worked example, before you shop Amazon or Flipkart sales.',
+    tags: ['No Cost EMI', 'Finance', 'Festival Offers'],
+  },
 ];
 
 export default function Blog() {
