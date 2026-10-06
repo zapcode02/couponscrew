@@ -129,6 +129,16 @@ const posts = [
     excerpt: 'No Cost EMI is not always free. See the GST, processing fee and lost discounts behind it, with a worked example, before you shop Amazon or Flipkart sales.',
     tags: ['No Cost EMI', 'Finance', 'Festival Offers'],
   },
+  {
+    slug: 'appliance-buying-guide-exchange-offer-sale-2026',
+    title: 'TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work',
+    category: 'Electronics',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1791303473/appliance-buying-guide-exchange-offer-sale-2026_c1xqzk.webp',
+    date: 'Oct 6, 2026',
+    readTime: '11 min read',
+    excerpt: 'Buying a TV, fridge or washing machine in the October 2026 sales? Check the new star labels, recent price rises and how exchange value is really decided.',
+    tags: ['Appliances', 'Exchange Offer', 'Electronics'],
+  },
 ];
 
 export default function Blog() {

@@ -114,6 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/october-2026-sale-calendar-india`, lastModified: new Date('2026-10-03'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/buy-phone-now-or-wait-for-sale-2026`, lastModified: new Date('2026-10-04'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/no-cost-emi-real-cost-sale-2026`, lastModified: new Date('2026-10-05'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/appliance-buying-guide-exchange-offer-sale-2026`, lastModified: new Date('2026-10-06'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/feedback`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
