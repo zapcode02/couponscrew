@@ -144,12 +144,13 @@ export default function MyntraBigFashionFestival2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1790820841/myntra-big-fashion-festival-2026_gbsc9h.webp"
                   alt="Myntra Big Fashion Festival 2026: Date, Insider Early Access and Bank Offers"
                   fill
                   priority
+                  referrerPolicy="no-referrer"
                   className="object-cover"
                 />
               </div>

@@ -153,7 +153,7 @@ export default function AmazonGreatIndianFestival2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1790492673/amazon-great-indian-festival-2026-upcoming-sales_zz7w76.webp"
                   alt="Amazon Great Indian Festival 2026: Sale Date, Prime Early Access, SBI Offer and Live Deals"

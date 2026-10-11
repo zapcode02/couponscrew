@@ -139,6 +139,16 @@ const posts = [
     excerpt: 'Buying a TV, fridge or washing machine in the October 2026 sales? Check the new star labels, recent price rises and how exchange value is really decided.',
     tags: ['Appliances', 'Exchange Offer', 'Electronics'],
   },
+  {
+    slug: 'navratri-2026-colours-outfit-deals',
+    title: 'Navratri 2026 Colours: Outfit Deals for All Nine Days',
+    category: 'Fashion',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1791728627/Navratri_2026_Colours_and_Outfit_Deals_k0hl00.webp',
+    date: 'Oct 11, 2026',
+    readTime: '8 min read',
+    excerpt: 'Navratri 2026 colours for all nine days, 11 to 19 October, with outfit ideas, a 4-piece plan to wear all nine colours, and where to shop sale deals in time.',
+    tags: ['Navratri', 'Fashion', 'Festival Offers'],
+  },
 ];
 
 export default function Blog() {

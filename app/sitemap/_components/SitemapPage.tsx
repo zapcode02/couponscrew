@@ -154,6 +154,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'Buy Your Phone Now or Wait for the Sale? Smartphones to Watch in October 2026', href: '/blog/buy-phone-now-or-wait-for-sale-2026' },
   { label: 'No Cost EMI in the Sale: What It Actually Costs and How to Check', href: '/blog/no-cost-emi-real-cost-sale-2026' },
   { label: 'TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work', href: '/blog/appliance-buying-guide-exchange-offer-sale-2026' },
+  { label: 'Navratri 2026 Colours: Outfit Deals for All Nine Days', href: '/blog/navratri-2026-colours-outfit-deals' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

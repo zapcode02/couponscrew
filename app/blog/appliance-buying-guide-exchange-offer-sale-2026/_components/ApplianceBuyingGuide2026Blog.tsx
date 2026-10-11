@@ -137,12 +137,13 @@ export default function ApplianceBuyingGuide2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1791303473/appliance-buying-guide-exchange-offer-sale-2026_c1xqzk.webp"
                   alt="TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work"
                   fill
                   priority
+                  referrerPolicy="no-referrer"
                   className="object-cover"
                 />
               </div>

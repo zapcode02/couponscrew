@@ -157,7 +157,7 @@ export default function BigBillionDaysBlog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1790298079/big-billion-days-vs-amazon-great-indian-festival_dmjxxj.webp"
                   alt="Big Billion Days vs Amazon Great Indian Festival 2026"

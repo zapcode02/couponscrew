@@ -149,7 +149,7 @@ export default function BigBillionDays2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1790489840/big-billion-days-2026-flipkart-upcoming-sales_vdosgd.webp"
                   alt="Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart's Upcoming Sales"

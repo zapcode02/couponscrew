@@ -137,12 +137,13 @@ export default function BuyPhoneNowOrWait2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1791102378/Buy_Now_or_Wait_for_the_Sale_wbznsq.webp"
                   alt="Buy Your Phone Now or Wait for the Sale? Smartphones to Watch in October 2026"
                   fill
                   priority
+                  referrerPolicy="no-referrer"
                   className="object-cover"
                 />
               </div>

@@ -138,12 +138,13 @@ export default function NoCostEmiRealCost2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1791215474/No_Cost_EMI__What_You_Still_Pay_iuhik8.webp"
                   alt="No Cost EMI in the Sale: What It Actually Costs and How to Check"
                   fill
                   priority
+                  referrerPolicy="no-referrer"
                   className="object-cover"
                 />
               </div>
