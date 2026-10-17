@@ -117,7 +117,7 @@ export default function ApplianceBuyingGuide2026Blog() {
                   Electronics / Home Appliances
                 </span>
 
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
                   TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work
                 </h1>
 
@@ -137,7 +137,7 @@ export default function ApplianceBuyingGuide2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1791303473/appliance-buying-guide-exchange-offer-sale-2026_c1xqzk.webp"
                   alt="TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work"

@@ -149,6 +149,16 @@ const posts = [
     excerpt: 'Navratri 2026 colours for all nine days, 11 to 19 October, with outfit ideas, a 4-piece plan to wear all nine colours, and where to shop sale deals in time.',
     tags: ['Navratri', 'Fashion', 'Festival Offers'],
   },
+  {
+    slug: 'dussehra-shopping-guide-what-to-buy-where-to-save-2026',
+    title: 'Dussehra Shopping Guide 2026: What to Buy & Where to Save',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1792237484/dussehra-shopping-guide-what-to-buy-where-to-save-2026_khbxak.webp',
+    date: 'Oct 17, 2026',
+    readTime: '8 min read',
+    excerpt: 'Dussehra is on October 20 — and the sales are live. Get the full guide on ethnic wear, home decor, pooja essentials, and gifts, with the best deals across Amazon, Myntra, Ajio, and more.',
+    tags: ['Dussehra Offers', 'Festive Deals', 'Shopping Guide'],
+  },
 ];
 
 export default function Blog() {

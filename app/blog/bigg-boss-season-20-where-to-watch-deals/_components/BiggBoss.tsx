@@ -123,7 +123,7 @@ export default function BiggBoss() {
                   Entertainment &amp; OTT Guides
                 </span>
 
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
                   Bigg Boss Season 20 (2026): Where to Watch, Price &amp; Best Deals — Everything in One Place
                 </h1>
 
@@ -143,7 +143,7 @@ export default function BiggBoss() {
               </div>
 
               {/* Main Banner Image */}
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0]">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0]">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1789314709/bigg-boss-season-20-where-to-watch-deals_ggtlzz.webp"
                   alt="Bigg Boss Season 20 (2026) — Where to Watch on JioHotstar, Price, Contestants & Best Deals | CouponsCrew"

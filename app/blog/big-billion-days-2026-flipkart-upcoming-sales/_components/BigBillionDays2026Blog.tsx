@@ -129,7 +129,7 @@ export default function BigBillionDays2026Blog() {
                   Festival Offers
                 </span>
 
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
                   Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart&apos;s Upcoming Sales
                 </h1>
 
@@ -149,11 +149,12 @@ export default function BigBillionDays2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1790489840/big-billion-days-2026-flipkart-upcoming-sales_vdosgd.webp"
                   alt="Big Billion Days 2026: Sale Date, Early Access, Bank Offers and Flipkart's Upcoming Sales"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
                   priority
                   className="object-cover"
                 />

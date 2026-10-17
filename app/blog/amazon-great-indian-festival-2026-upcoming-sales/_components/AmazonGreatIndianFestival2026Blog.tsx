@@ -133,7 +133,7 @@ export default function AmazonGreatIndianFestival2026Blog() {
                   Festival Offers
                 </span>
 
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
                   Amazon Great Indian Festival 2026: Sale Date, Prime Early Access, SBI Offer and Live Deals
                 </h1>
 
@@ -153,11 +153,12 @@ export default function AmazonGreatIndianFestival2026Blog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1790492673/amazon-great-indian-festival-2026-upcoming-sales_zz7w76.webp"
                   alt="Amazon Great Indian Festival 2026: Sale Date, Prime Early Access, SBI Offer and Live Deals"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
                   priority
                   className="object-cover"
                 />

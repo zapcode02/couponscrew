@@ -118,7 +118,7 @@ export default function UpiChangesBlog() {
                   Fintech &amp; Merchant Guides
                 </span>
 
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
                   UPI Is Changing: ₹2,000+ Payments Raise New Concerns for Merchants
                 </h1>
 
@@ -138,7 +138,7 @@ export default function UpiChangesBlog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1789908955/upi-changes-2000-payments-merchants-mdr-2026_cwjqa7.webp"
                   alt="UPI Is Changing: What ₹2,000+ Payments Mean for Merchants in 2026"

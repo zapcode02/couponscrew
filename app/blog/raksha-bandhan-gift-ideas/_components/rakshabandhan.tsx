@@ -126,7 +126,7 @@ export default function RakshaBandhan() {
                 </div>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight mt-4">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight mt-4">
               10 Best Raksha Bandhan Gift Ideas 2026 — Discount Codes to Save More
               </h1>
 
@@ -134,11 +134,12 @@ export default function RakshaBandhan() {
               Published by CouponsCrew | Festive Deals & Gift Guides
               </p>
 
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden mt-6 shadow-lg">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden mt-6 shadow-lg">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787588384/raksha-bandhan-gift-ideas_z16zzz.webp"
                   alt="Best Raksha Bandhan Gift Ideas — CouponsCrew"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
                   priority
                   referrerPolicy="no-referrer"
                   className="object-cover"

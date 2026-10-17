@@ -117,7 +117,7 @@ export default function Navratri2026ColoursBlog() {
                   Fashion
                 </span>
 
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight">
                   Navratri 2026 Colours: Outfit Deals for All Nine Days
                 </h1>
 
@@ -137,7 +137,7 @@ export default function Navratri2026ColoursBlog() {
               </div>
 
               {/* Banner Image */}
-              <div className="relative w-full sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
+              <div className="relative w-full h-64 sm:h-130 rounded-3xl overflow-hidden shadow-xl border border-[#E8E8F0] bg-gray-100">
                 <NextImage
                   src="https://res.cloudinary.com/dqjlffxja/image/upload/v1791728627/Navratri_2026_Colours_and_Outfit_Deals_k0hl00.webp"
                   alt="Navratri 2026 Colours: Outfit Deals for All Nine Days"

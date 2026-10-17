@@ -160,6 +160,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'No Cost EMI in the Sale: What It Actually Costs and How to Check', href: '/blog/no-cost-emi-real-cost-sale-2026' },
   { label: 'TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work', href: '/blog/appliance-buying-guide-exchange-offer-sale-2026' },
   { label: 'Navratri 2026 Colours: Outfit Deals for All Nine Days', href: '/blog/navratri-2026-colours-outfit-deals' },
+  { label: 'Dussehra Shopping Guide 2026: What to Buy & Where to Save', href: '/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

@@ -121,6 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/no-cost-emi-real-cost-sale-2026`, lastModified: new Date('2026-10-05'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/appliance-buying-guide-exchange-offer-sale-2026`, lastModified: new Date('2026-10-06'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/navratri-2026-colours-outfit-deals`, lastModified: new Date('2026-10-11'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026`, lastModified: new Date('2026-10-17'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/feedback`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

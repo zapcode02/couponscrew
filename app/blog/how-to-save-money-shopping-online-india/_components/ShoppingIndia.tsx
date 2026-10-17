@@ -121,7 +121,7 @@ export default function ShoppingIndia() {
                 </div>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1A1A2E] leading-tight mt-4">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1A1A2E] leading-tight mt-4">
                 How to Save Money Shopping Online in India — Introducing CouponsCrew
               </h1>
 
