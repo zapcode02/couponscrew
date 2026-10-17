@@ -79,6 +79,10 @@ const STORES: SiteLink[] = [
   { label: 'Pizza Hut', href: '/stores/pizzahut-coupon-code' },
   { label: 'Samsung', href: '/stores/samsung-coupon-code' },
   { label: 'Vistaprint', href: '/stores/vistaprint-coupon-code' },
+  { label: 'Trip.com', href: '/stores/trip-coupon-code' },
+  { label: 'IKEA', href: '/stores/ikea-coupon-code' },
+  { label: 'Klook', href: '/stores/klook-coupon-code' },
+  { label: 'GoDaddy', href: '/stores/godaddy-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [
