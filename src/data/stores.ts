@@ -849,5 +849,22 @@ export const STORES_DATA: Store[] = [
     isPopular: false,
     isFeatured: false,
     description: 'Register domains & buy web hosting plans online with the best GoDaddy offers'
+  },
+  {
+    id: 'store-50',
+    name: 'Myprotein',
+    slug: 'myprotein-coupon-code',
+    logo: 'myprotein',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1792222458/myprotein-logo_beyed3.webp',
+    logoColor: '#1A1A2E',
+    logoBg: '#EAEAEF',
+    category: 'Exercise & Fitness',
+    categories: ['Exercise & Fitness'],
+    offerCount: 9,
+    maxDiscount: 50,
+    discountLabel: 'Up to 50% OFF',
+    isPopular: false,
+    isFeatured: false,
+    description: 'Shop whey protein, supplements & sports nutrition online with the best Myprotein offers'
   }
 ];

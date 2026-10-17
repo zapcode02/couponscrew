@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/stores/ikea-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/klook-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/godaddy-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/stores/myprotein-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/categories`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/stores/categories/fashion`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/stores/categories/beauty`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

@@ -176,7 +176,7 @@ export default function MyproteinStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest IKEA Coupon Code and IKEA Promo Code. Enjoy 80% OFF KNOPPSLINGA LED Lights and up to 66% OFF LED Batten Lights. Explore affordable furniture, mattresses, storage, bedroom essentials, and home décor while discovering verified IKEA offers to upgrade your home for less this October 2026.
+                    Save more with the latest MyProtein Coupon Code and MyProtein Promo Code. Enjoy up to 50% OFF vitamins & recovery supplements and 25% OFF the HYROX range. Shop whey protein, creatine, mass gainers, wellness products, and sports nutrition with verified MyProtein offers this October 2026.
                   </p>
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function MyproteinStore() {
               <Tag size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A2E] leading-none">[TODO: N]+</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">9+</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Active Offers</div>
             </div>
           </div>
@@ -249,7 +249,7 @@ export default function MyproteinStore() {
               <TrendingUp size={18} />
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A2E] leading-none">Up to [TODO: N]%</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">Up to 50%</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">Best Discount</div>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function MyproteinStore() {
               <span className="text-lg font-black">₹</span>
             </div>
             <div>
-              <div className="text-lg font-black text-[#1A1A2E] leading-none">[TODO: ₹N]+</div>
+              <div className="text-lg font-black text-[#1A1A2E] leading-none">₹1,000+</div>
               <div className="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">You Can Save</div>
             </div>
           </div>
@@ -456,24 +456,24 @@ export default function MyproteinStore() {
 
               <div className="space-y-3.5 text-xs">
                 <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 1, e.g. Whey Protein]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
+                  <span className="text-[#1A1A2E]">Vitamins & Recovery</span>
+                  <span className="text-[#FF5722] font-bold">Up to 50% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 2, e.g. Vitamins & Supplements]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
+                  <span className="text-[#1A1A2E]">HYROX Range</span>
+                  <span className="text-[#FF5722] font-bold">Up to 25% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 3, e.g. Protein Snacks]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
+                  <span className="text-[#1A1A2E]">Mass Gainer</span>
+                  <span className="text-[#FF5722] font-bold">Up to 13% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 4, e.g. Pre-Workout]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
+                  <span className="text-[#1A1A2E]">Impact Whey</span>
+                  <span className="text-[#FF5722] font-bold">Up to 8% OFF</span>
                 </div>
                 <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 5, e.g. Gym Clothing]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
+                  <span className="text-[#1A1A2E]">Creatine</span>
+                  <span className="text-[#FF5722] font-bold">From ₹299</span>
                 </div>
               </div>
 
@@ -534,7 +534,7 @@ export default function MyproteinStore() {
 
           <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
   <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-    <caption className="sr-only">IKEA Offers and Discount List</caption>
+    <caption className="sr-only">Myprotein Offers and Discount List</caption>
     <thead>
       <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
         <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
@@ -552,81 +552,20 @@ export default function MyproteinStore() {
       </tr>
     </thead>
     <tbody className="divide-y divide-[#E8E8F0]">
-      {[
-        {
-          offerType: 'SAVE 80%',
-          discount: '80% OFF',
-          highlights: 'KNOPPSLINGA LED Light for ₹99 (3600 lm / 6500K daylight illumination, was ₹499).',
-          eligibility: 'Valid till Nov 11'
-        },
-        {
-          offerType: 'UP TO 66% OFF',
-          discount: 'Up to 66% OFF',
-          highlights: 'KNOPPSLINGA LED Batten Light for ₹99 (2160 lm / 2700K warm lighting, was ₹299).',
-          eligibility: 'Limited Stock'
-        },
-        {
-          offerType: 'SAVE 50%',
-          discount: '50% OFF',
-          highlights: 'KNOPPSLINGA LED Batten Light for ₹99 (900 lm warm white, was ₹199).',
-          eligibility: 'Limited Stock'
-        },
-        {
-          offerType: 'FROM ₹2,490',
-          discount: 'From ₹2,490',
-          highlights: 'LÅSBRÄKEN Comforter (240 × 220 cm) soft and comfortable for everyday use.',
-          eligibility: 'All Users'
-        },
-        {
-          offerType: 'FROM ₹1,490',
-          discount: 'From ₹1,490',
-          highlights: 'LENNART Drawer Unit in white to organize paperwork & stationery.',
-          eligibility: 'All Users'
-        },
-        {
-          offerType: 'FROM ₹899',
-          discount: 'From ₹899',
-          highlights: 'LEN Cot Fitted Sheets (2-pack) designed for 60 × 120 cm cots.',
-          eligibility: 'All Users'
-        },
-        {
-          offerType: 'FROM ₹399',
-          discount: 'From ₹399',
-          highlights: 'GREJIG Shoe Rack compact and easy to assemble for small spaces.',
-          eligibility: 'All Users'
-        },
-        {
-          offerType: 'FROM ₹49',
-          discount: 'From ₹49 / pc',
-          highlights: 'POKAL Espresso Glass in sturdy transparent glass.',
-          eligibility: 'Min. Purchase 4 Pcs'
-        },
-        {
-          offerType: 'BEDROOM ESSENTIALS',
-          discount: 'Special Prices',
-          highlights: 'Shop beds, sofas, study tables & bedroom essentials online or in-store.',
-          eligibility: 'All Users'
-        },
-        {
-          offerType: 'MATTRESSES & SETS',
-          discount: 'Best Deals',
-          highlights: 'Explore comfortable IKEA mattresses, wardrobes & bedroom sets.',
-          eligibility: 'All Users'
-        }
-      ].map((row, i) => (
+      {coupons.map((row, i) => (
         <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
           <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-            {row.offerType}
+            {row.type}
           </td>
           <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-            {row.discount}
+            {row.badge}
           </td>
           <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-            {row.highlights}
+            {row.description}
           </td>
           <td className="px-5 py-4 whitespace-nowrap">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-              {row.eligibility}
+              {row.userType}
             </span>
           </td>
         </tr>

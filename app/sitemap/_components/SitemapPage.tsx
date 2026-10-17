@@ -83,6 +83,7 @@ const STORES: SiteLink[] = [
   { label: 'IKEA', href: '/stores/ikea-coupon-code' },
   { label: 'Klook', href: '/stores/klook-coupon-code' },
   { label: 'GoDaddy', href: '/stores/godaddy-coupon-code' },
+  { label: 'Myprotein', href: '/stores/myprotein-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [
