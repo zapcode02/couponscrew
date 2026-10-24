@@ -33,7 +33,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
 }
 
 // TODO: replace with real affiliate tracking link once available
-const AFFILIATE_URL = 'https://www.hotels.com/partnernetwork/p/zz/camref:1101l6vp4p/[p_id:1011l648352]';
+const AFFILIATE_URL = 'https://www.hotels.com/partnernetwork/p/zz/camref:1101l6vp4p';
 
 export default function HotelcomStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);

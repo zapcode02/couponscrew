@@ -32,7 +32,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join('   ');
 }
 
-const AFFILIATE_URL = 'https://www.expedia.com/partnernetwork/p/gp/camref:1101l6vp4q/[p_id:1011l648352]';
+const AFFILIATE_URL = 'https://www.expedia.com/partnernetwork/p/gp/camref:1101l6vp4q';
 
 export default function ExpediaStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
