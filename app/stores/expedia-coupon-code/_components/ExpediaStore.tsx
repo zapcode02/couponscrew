@@ -29,10 +29,10 @@ import { Coupon, EXPEDIA_COUPONS } from './expediaCoupons';
 export type { Coupon };
 
 function cn(...inputs: (string | boolean | undefined | null)[]) {
-  return inputs.filter(Boolean).join(' ');
+  return inputs.filter(Boolean).join('   ');
 }
 
-const AFFILIATE_URL = 'https://www.expedia.co.in';
+const AFFILIATE_URL = 'https://www.expedia.com/partnernetwork/p/gp/camref:1101l6vp4q/[p_id:1011l648352]';
 
 export default function ExpediaStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
@@ -215,12 +215,12 @@ export default function ExpediaStore() {
               className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563]"
             >
               <NextImage
-                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1789605021/expedia-logo_oysjh1.webp"
+                src="https://res.cloudinary.com/dqjlffxja/image/upload/v1792841008/Up_to_50_Off_Holiday_Deals_pugxgc.webp"
                 alt="Expedia Offers"
                 fill
                 sizes="(max-width: 1024px) 0px, 480px"
                 referrerPolicy="no-referrer"
-                className="object-contain w-full h-full bg-white p-10"
+                className="object-contain w-full h-full"
                 priority
               />
             </a>

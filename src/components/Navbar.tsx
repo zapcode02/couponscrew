@@ -248,7 +248,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
 
       <div className="p-3 space-y-1">
         <Link
-          href="/stores/flipkart-coupon-code"
+          href="/stores/polki-sarees-coupon-code"
           onClick={() => setNotificationsOpen(false)}
           className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
         >
@@ -257,8 +257,8 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
               LIVE NOW
             </span>
             <Image
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp"
-              alt="Flipkart"
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1792834602/polki_saress_logo_fwkcng.webp"
+              alt="Polki Sarees"
               fill
               sizes="56px"
               className="object-contain p-2"
@@ -268,7 +268,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <div className="flex-1 min-w-0 space-y-1.5">
             <div className="flex items-start justify-between gap-2">
               <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
-                Flipkart Big Billion Days is LIVE now!
+                Karwa Chauth is near — shop sarees on Polki Sarees!
               </p>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
             </div>
@@ -279,7 +279,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
         </Link>
 
         <Link
-          href="/stores/amazon-coupon-code"
+          href="/stores/myntra-coupon-code"
           onClick={() => setNotificationsOpen(false)}
           className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
         >
@@ -288,8 +288,8 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
               LIVE NOW
             </span>
             <Image
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"
-              alt="Amazon"
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp"
+              alt="Myntra"
               fill
               sizes="56px"
               className="object-contain p-2"
@@ -299,7 +299,38 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <div className="flex-1 min-w-0 space-y-1.5">
             <div className="flex items-start justify-between gap-2">
               <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
-                Amazon Great Indian Festival is LIVE now!
+                Myntra Karwa Chauth deals on ethnic wear are LIVE now!
+              </p>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
+            </div>
+            <span className="inline-flex items-center gap-1.5 bg-[#5B4FBE] text-white text-[11px] font-bold px-3 py-1.5 rounded-full group-hover:bg-[#4a40a0] transition-colors">
+              Shop Now
+            </span>
+          </div>
+        </Link>
+
+        <Link
+          href="/stores/ajio-coupon-code"
+          onClick={() => setNotificationsOpen(false)}
+          className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
+        >
+          <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 border border-[#E8E8F0] bg-white">
+            <span className="absolute top-0.5 left-0.5 z-10 bg-[#FF5722] text-white text-[8px] font-black px-1.5 py-0.5 rounded">
+              LIVE NOW
+            </span>
+            <Image
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/ajio-logo_bmpwf6.webp"
+              alt="Ajio"
+              fill
+              sizes="56px"
+              className="object-contain p-2"
+            />
+          </div>
+
+          <div className="flex-1 min-w-0 space-y-1.5">
+            <div className="flex items-start justify-between gap-2">
+              <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
+                Ajio festive ethnic wear sale is LIVE now!
               </p>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
             </div>

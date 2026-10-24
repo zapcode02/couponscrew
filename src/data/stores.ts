@@ -866,5 +866,39 @@ export const STORES_DATA: Store[] = [
     isPopular: false,
     isFeatured: false,
     description: 'Shop whey protein, supplements & sports nutrition online with the best Myprotein offers'
+  },
+  {
+    id: 'store-66',
+    slug: 'hotelcom-coupon-code',
+    name: 'Hotels.com',
+    logo: 'hotelcom',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1792834602/hotels-logo_ymdio2.webp',
+    logoColor: '#5B4FBE',
+    logoBg: '#F0EEFF',
+    category: 'Travel',
+    categories: ['Travel'],
+    offerCount: 8,
+    maxDiscount: 40,
+    discountLabel: 'Up to 40% OFF',
+    isPopular: false,
+    isFeatured: false,
+    description: 'Book hotels worldwide and earn One Key Cash rewards with the best Hotels.com offers'
+  },
+  {
+    id: 'store-67',
+    slug: 'polki-sarees-coupon-code',
+    name: 'Polki Sarees',
+    logo: 'polkisarees',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1792834602/polki_saress_logo_fwkcng.webp',
+    logoColor: '#5B4FBE',
+    logoBg: '#F0EEFF',
+    category: 'Fashion',
+    categories: ['Fashion', 'Clothing & Accessories'],
+    offerCount: 15,
+    maxDiscount: 39,
+    discountLabel: 'Up to 39% OFF',
+    isPopular: false,
+    isFeatured: false,
+    description: 'Shop handcrafted artisan sarees in silk, cotton & Chanderi with the best Polki Sarees offers'
   }
 ];

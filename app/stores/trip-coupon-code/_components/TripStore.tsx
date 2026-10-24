@@ -213,7 +213,7 @@ export default function TripStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] bg-[#2577E3]/5"
+              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] bg-[#5B4FBE]/5"
             >
               <NextImage
                 src="https://res.cloudinary.com/dqjlffxja/image/upload/v1792222458/trip-logo_hf83mp.webp"
@@ -309,7 +309,7 @@ export default function TripStore() {
 
           {/* LEFT DISCOUNT SECTION */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#2577E3] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -352,7 +352,7 @@ export default function TripStore() {
               {coupon.points && coupon.points.length > 0 && (
                 <button
                   onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                  className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#2577E3] hover:opacity-80 w-fit transition-opacity"
+                  className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
                 >
                   View Details
                   {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -364,7 +364,7 @@ export default function TripStore() {
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
                   {coupon.points.map((point, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#2577E3]" />
+                      <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
                       <span>{point}</span>
                     </li>
                   ))}

@@ -213,7 +213,7 @@ export default function GoDaddyStore() {
               href={AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] bg-[#00A4A6]/5"
+              className="hidden lg:block lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] bg-[#5B4FBE]/5"
             >
               <NextImage
                 src="https://res.cloudinary.com/dqjlffxja/image/upload/v1792222459/godaddy-logo_jdpopf.webp"
@@ -309,7 +309,7 @@ export default function GoDaddyStore() {
 
           {/* LEFT DISCOUNT SECTION */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#00A4A6] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>

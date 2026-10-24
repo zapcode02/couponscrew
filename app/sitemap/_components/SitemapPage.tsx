@@ -84,6 +84,8 @@ const STORES: SiteLink[] = [
   { label: 'Klook', href: '/stores/klook-coupon-code' },
   { label: 'GoDaddy', href: '/stores/godaddy-coupon-code' },
   { label: 'Myprotein', href: '/stores/myprotein-coupon-code' },
+  { label: 'Hotels.com', href: '/stores/hotelcom-coupon-code' },
+  { label: 'Polki Sarees', href: '/stores/polki-sarees-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [
@@ -161,6 +163,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'TV, Fridge, Washing Machine: Appliance Buying Guide and How Exchange Offers Work', href: '/blog/appliance-buying-guide-exchange-offer-sale-2026' },
   { label: 'Navratri 2026 Colours: Outfit Deals for All Nine Days', href: '/blog/navratri-2026-colours-outfit-deals' },
   { label: 'Dussehra Shopping Guide 2026: What to Buy & Where to Save', href: '/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026' },
+  { label: 'Karwa Chauth 2026 Shopping Guide: Best Sarees, Makeup & Jewellery Deals', href: '/blog/karwa-chauth-2026-shopping-guide' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

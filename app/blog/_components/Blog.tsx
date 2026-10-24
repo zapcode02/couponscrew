@@ -159,6 +159,16 @@ const posts = [
     excerpt: 'Dussehra is on October 20 — and the sales are live. Get the full guide on ethnic wear, home decor, pooja essentials, and gifts, with the best deals across Amazon, Myntra, Ajio, and more.',
     tags: ['Dussehra Offers', 'Festive Deals', 'Shopping Guide'],
   },
+  {
+    slug: 'karwa-chauth-2026-shopping-guide',
+    title: 'Karwa Chauth 2026 Shopping Guide: Best Sarees, Makeup & Jewellery Deals',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1792836858/karwa-chauth-2026-shopping-guide_ajy07h.webp',
+    date: 'Oct 24, 2026',
+    readTime: '7 min read',
+    excerpt: 'Karwa Chauth is on Thursday, 29 October. Get the best deals on sarees, makeup, and jewellery from Myntra, Nykaa, Polki Sarees, and more — with coupons.',
+    tags: ['Karwa Chauth', 'Fashion', 'Festival Offers'],
+  },
 ];
 
 export default function Blog() {
