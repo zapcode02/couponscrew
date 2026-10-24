@@ -195,7 +195,10 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           results.map((store) => (
             <button
               key={store.id}
-              onClick={() => goToStore(store.name)}
+              onClick={() => {
+                router.push(`/stores/${store.slug}`);
+                closeSearch();
+              }}
               className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-[#F0EEFF] transition-colors cursor-pointer text-left"
             >
               <div
