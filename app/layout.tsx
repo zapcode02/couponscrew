@@ -4,6 +4,7 @@ import { Inter, Outfit, Fira_Code } from 'next/font/google'
 import AnalyticsLoader from '../src/components/AnalyticsLoader'
 import CookieConsentBanner from '../src/components/CookieConsentBanner'
 import FloatingContactWidget from '../src/components/FloatingContactWidget'
+import Chatbot from '../src/components/Chatbot/Chatbot'
 import './globals.css'
 
 const inter = Inter({
@@ -103,6 +104,7 @@ export default function RootLayout({
         {children}
         <CookieConsentBanner />
         <FloatingContactWidget />
+        <Chatbot />
       </body>
     </html>
   )
