@@ -55,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/stores/myprotein-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/hotelcom-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/polki-sarees-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/stores/underrated-club-coupon-code`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/stores/categories`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/stores/categories/fashion`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/stores/categories/beauty`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

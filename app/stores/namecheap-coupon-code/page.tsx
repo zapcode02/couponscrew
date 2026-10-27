@@ -74,40 +74,58 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/namecheap-coupon-code#faqpage',
-      mainEntity: [
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/namecheap-coupon-code#faqpage",
+      "mainEntity": [
         {
-          '@type': 'Question',
-          name: 'How do I use a Namecheap promo code?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: how-to answer specific to Namecheap checkout flow]' },
+          "@type": "Question",
+          "name": "Is Namecheap available in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Namecheap accepts orders from India and ships domains and hosting globally. The key difference from Indian-based registrars is that Namecheap bills in USD, not INR, and does not accept UPI, net banking, or issue GST invoices. Payment is via international Visa, Mastercard, or PayPal."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Can I use multiple coupon codes on Namecheap?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: stacking rules specific to Namecheap]' },
+          "@type": "Question",
+          "name": "What is the best Namecheap coupon code for a domain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SPECIAL gives up to 97% off a first domain, and NEWCOM679 gives up to 55% off. For domain transfers specifically from GoDaddy, BYEBYEGD gives up to 20% off. Only one code can be applied per order — test both on your cart and pick the one that saves more."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Why is my Namecheap promo code not working?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: common reasons a code might fail on Namecheap]' },
+          "@type": "Question",
+          "name": "Does Namecheap offer a student discount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Namecheap has run student-specific promotions in the past — typically bundled deals including a free .me domain and discounted hosting for verified students. Availability varies by campaign. Check Namecheap's official promotions page or the affiliate pages for active student deals."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Where can I find the best Namecheap offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this Namecheap store page updated 24/7 with the best discounts, verified coupon codes, bank offers, and upcoming sale dates.' },
+          "@type": "Question",
+          "name": "Does Namecheap accept UPI or Indian payment methods?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Namecheap does not accept UPI, net banking, or Indian payment apps. It accepts international Visa, Mastercard, and PayPal. Indian buyers should use a card with zero forex markup (IndusInd Bank or IDFC FIRST Bank are commonly recommended) to avoid paying 1.5%–3.5% extra on the USD conversion."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Does Namecheap offer free domain privacy?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: Namecheap WhoisGuard/domain privacy policy details]' },
+          "@type": "Question",
+          "name": "Can I get a Namecheap renewal discount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Namecheap rarely releases coupon codes for renewals — promo codes are almost always for new purchases or transfers. To save on renewal costs, buy longer terms upfront (2–3 years) at the intro rate, or compare the renewal price against a transfer-in offer from a competing registrar before your domain expires."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'How often are Namecheap coupons updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.' },
-        },
-      ],
+          "@type": "Question",
+          "name": "What is Namecheap's refund policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Namecheap offers a 30-day money-back guarantee on most hosting plans. Domain registrations are generally non-refundable (ICANN requires registrars to pay registry fees on registration). IP addresses purchased as add-ons are also non-refundable. Full refund conditions are listed on the Namecheap refund policy page."
+          }
+        }
+      ]
     },
     {
       '@type': 'ItemList',

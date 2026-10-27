@@ -86,6 +86,7 @@ const STORES: SiteLink[] = [
   { label: 'Myprotein', href: '/stores/myprotein-coupon-code' },
   { label: 'Hotels.com', href: '/stores/hotelcom-coupon-code' },
   { label: 'Polki Sarees', href: '/stores/polki-sarees-coupon-code' },
+  { label: 'Underrated Club', href: '/stores/underrated-club-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [

@@ -74,40 +74,50 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/jockey-coupon-code#faqpage',
-      mainEntity: [
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/jockey-coupon-code#faqpage",
+      "mainEntity": [
         {
-          '@type': 'Question',
-          name: 'How do I use a Jockey coupon code?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: how-to answer specific to Jockey checkout flow]' },
+          "@type": "Question",
+          "name": "What is the best Jockey coupon code in India right now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of October 2026, FLATRS.23OFF gives a flat ₹23 off on a minimum cart of ₹199 at jockeyindia.com — valid until 27 October 2026. For bigger savings, HDFC cardholders get 20% off on carts above ₹3,999, and ICICI cardholders get ₹500 off sitewide — neither requires a code. If you're a new user on Myntra, the extra 30% first-order discount may save more than any available code."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Can I use multiple coupon codes on Jockey?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: stacking rules specific to Jockey]' },
+          "@type": "Question",
+          "name": "Is Jockey India different from Jockey USA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Jockey India is operated by Page Industries Limited under an exclusive licence from Jockey International (US). The two are separate storefronts — jockeyindia.com and jockey.com. Codes from US sites won't work in India, and the product ranges differ."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Why is my Jockey promo code not working?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: common reasons a code might fail on Jockey]' },
+          "@type": "Question",
+          "name": "Does Jockey India offer free shipping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — orders above ₹599 ship free across India. Below ₹599, a flat ₹39 shipping fee applies. COD orders carry an additional ₹69 fee on top of shipping."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Where can I find the best Jockey offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this Jockey store page updated 24/7 with the best discounts, verified coupon codes, bank offers, and upcoming sale dates.' },
+          "@type": "Question",
+          "name": "Can I use a Jockey discount code on Amazon or Flipkart?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Jockey coupon codes from jockeyindia.com are not valid on Amazon, Flipkart, or Myntra. Each platform runs its own Jockey deals independently. Amazon offers ICICI/Axis bank instant discounts; Flipkart runs HDFC offers; Myntra runs first-order and sale deals."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Does Jockey offer free shipping?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: Jockey free shipping policy/threshold details]' },
-        },
-        {
-          '@type': 'Question',
-          name: 'How often are Jockey coupons updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.' },
-        },
-      ],
+          "@type": "Question",
+          "name": "What is the return policy on Jockey India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jockey India accepts returns and exchanges on most products. Where Jockey's own reverse pickup service is unavailable at your location, the return is self-shipped, and Jockey credits a ₹100 gift card to your account to offset the courier cost."
+          }
+        }
+      ]
     },
     {
       '@type': 'ItemList',

@@ -316,13 +316,10 @@ export default function JockeyStore() {
                         <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
 
                         <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          {coupon.badgeType || "UP TO"}
+                          {coupon.badgeType || "DEAL"}
                         </span>
-                        <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
-                          {coupon.badge ? coupon.badge.replace("UP TO ", "").replace("FLAT ", "") : "50%"}
-                        </span>
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          OFF
+                        <span className="text-sm sm:text-xl lg:text-[28px] font-black leading-tight tracking-tight my-1.5 text-center">
+                          {coupon.badge}
                         </span>
                       </div>
 
@@ -357,21 +354,15 @@ export default function JockeyStore() {
                             {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                           </button>
 
-                          {/* Details List */}
-                          {isExpanded && (
+                          {/* Dynamic Client Approved Bullet Points */}
+                          {isExpanded && coupon.details && (
                             <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Valid on select innerwear and apparel categories.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Minimum cart value might apply as specified in offer terms.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Covers selected styles and sizes.</span>
-                              </li>
+                              {coupon.details.map((point, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                  <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                                  <span>{point}</span>
+                                </li>
+                              ))}
                             </ul>
                           )}
                         </div>
@@ -380,11 +371,10 @@ export default function JockeyStore() {
                         <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
                           <button
                             onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
-                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
-                              isCopied
-                                ? "bg-green-600 text-white"
-                                : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
-                            }`}
+                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${isCopied
+                              ? "bg-green-600 text-white"
+                              : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
+                              }`}
                           >
                             {isCopied ? "Copied!" : "Get Deal"}
                           </button>
@@ -401,144 +391,77 @@ export default function JockeyStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
-                <span>The Story Behind Jockey</span>
-              </h3>
-              <p className="text-[#1A1A2E] text-sm mb-3">
-                [TODO: 2 paragraphs on Jockey's founding/history — do not invent dates or founder names, ask the user or leave blank if unknown]
-              </p>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+              <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+                Jockey Promo Code Not Working? What to Check
+              </h2>
 
-              <p className="text-[#1A1A2E] text-sm">
-                [TODO: second history paragraph]
-              </p>
-
-              <div className="mt-5 select-none">
-                <a
-                  href={AFFILIATE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
-                >
-                  <span>Visit Jockey</span>
-                  <ArrowRight size={12} />
-                </a>
-              </div>
-            </div>
-
-            {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
-              <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
-
-              <div className="space-y-2 relative z-10 text-left">
-                <h3 className="font-extrabold text-lg tracking-tight">[TODO: sale name, e.g. "Jockey End of Season Sale"]</h3>
-                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
-                  Live Now!
-                </span>
-                <p className="text-white/80 text-xs mt-2 leading-relaxed">
-                  [TODO: one-line offer text, e.g. "Up to 50% OFF on Innerwear & Loungewear"]
-                </p>
-              </div>
-
-              <a
-                href={AFFILIATE_URL}
-                target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
-              >
-                Shop Now
-              </a>
-            </div>
-
-            {/* Sidebar Card 3: Top Categories */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Top Categories at Jockey
-              </h3>
-
-              <div className="space-y-3.5 text-xs">
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 1, e.g. Men's Innerwear]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 2, e.g. Women's Lingerie]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 3, e.g. Loungewear]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 4, e.g. Sportswear]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 5, e.g. Kids Wear]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-              </div>
-
-              <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/stores/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
-                  <span>View All Categories</span>
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-
-            {/* Sidebar Card 4: Why Shop at Jockey */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Use CouponScrew for Jockey Deals?
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
-                    <span>Every Jockey coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately.</span>
-                  </div>
+              <ul className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-disc list-inside">
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Code validity:</strong> FLATRS.23OFF expires 27 October 2026. Codes listed on third-party sites often expire before the page is updated.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
-                    <span>We display live success percentages for every deal based on actual user attempts, so you can pick the most reliable option without guessing.</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>New-user restriction:</strong> The first-order 10% offer and Myntra's extra 30% apply only to accounts that have not placed an order before on that platform.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
-                    <span>[TODO: which Indian bank promotions apply to Jockey — do not invent specific bank names]</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>COD + cashback:</strong> Bank cashback (HDFC NetBanking ₹400, SBI ₹300) typically applies only on prepaid transactions — cashback is not credited on COD orders.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Flash Sale Alerts</span>
-                    <span>[TODO: Jockey's flash-sale or limited-time offer naming, if any]</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Bank card minimum:</strong> The HDFC 20% and SBI 20% offers require a minimum cart of ₹3,999. Carts below that threshold will not trigger the bank offer.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
-                    <span>[TODO: named Jockey sale events, if any]</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
-                    <span>Finding and using a Jockey coupon code on CouponScrew is completely free and requires no account, no sign-up, and no personal information.</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Amazon vs jockeyindia.com codes:</strong> Codes and offers are platform-specific — a Jockey India code won't apply on Amazon or Myntra, and vice versa.
+                  </span>
                 </li>
               </ul>
+            </div>
+
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+              <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+                How to Apply a Jockey Discount Code
+              </h2>
+
+              <ol className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-decimal list-inside">
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Go to jockeyindia.com and add products to your cart.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    On the cart or checkout page, look for the "Have a promo code?" or "Apply coupon" field.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Type your Jockey coupon code exactly as listed — codes are case-sensitive.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Click Apply and confirm the saving reflects in your order total.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Choose your payment method. If a bank card offer applies to your card (see table below), pay with that card for the additional saving on top.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    For COD orders, a ₹69 convenience fee applies. Prepaid orders (card, UPI, net banking) avoid this charge — worth noting if your cart is below ₹400.
+                  </span>
+                </li>
+              </ol>
             </div>
 
           </aside>
@@ -550,207 +473,541 @@ export default function JockeyStore() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Left: Text Content */}
+            {/* Main Content Column */}
             <div className="prose max-w-none">
+
+              {/* Main Title - Replaced H1 with Styled Paragraph */}
               <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                [TODO: SEO H2, e.g. "Jockey Coupon Code India (Month Year): Up to N% Off — Verified"]
+                Jockey Coupon Code: Save on Innerwear, Activewear, and Loungewear in India
               </h2>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                  <caption className="sr-only">Jockey Innerwear and Apparel Coupon Offers</caption>
-                  <thead>
-                    <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E8E8F0]">
-                    {coupons.map((row, i) => (
-                      <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                        <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                          {row.badge}
-                        </td>
-                        <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                          {row.type}
-                        </td>
-                        <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                          {row.badge}
-                        </td>
-                        <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                          {row.description}
-                        </td>
-                        <td className="px-5 py-4 whitespace-nowrap">
-                          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                            {row.userType}
-                          </span>
-                        </td>
+              <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+                <p>
+                  A Jockey coupon code is a promo code you apply at checkout on jockeyindia.com to reduce the price of innerwear, activewear, loungewear, or kids' wear. Jockey India runs fewer affiliate codes than most apparel brands — their biggest savings come from bank card offers, multi-pack deals, and sitewide sales rather than single-use promo codes. Current offers (October 2026) include up to 50% off sitewide, ₹500 off with ICICI cards, and 20% off for HDFC and SBI cardholders on orders above ₹3,999.
+                </p>
+
+                <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+                  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+                    <caption className="sr-only">Jockey Offers and Discount List</caption>
+                    <thead>
+                      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+                        <th scope="col" className="w-[18%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          Offer Type
+                        </th>
+                        <th scope="col" className="w-[18%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          Discount / Price
+                        </th>
+                        <th scope="col" className="w-[44%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
+                          Offer Highlights
+                        </th>
+                        <th scope="col" className="w-[20%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          User Eligibility / Terms
+                        </th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-
-                <p>
-                  [TODO: intro paragraph — what Jockey is, what CouponScrew tracks for it, 2-3 sentences]
-                </p>
-
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  [TODO: brand-story H3]
-                </h3>
-
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Jockey in Numbers — Scale That Speaks for Itself
-                </h3>
-
-                <p>
-                  [TODO: "in numbers" paragraph — do not invent specific stats; ask the user or omit numeric claims]
-                </p>
-
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Everything You Can Shop at Jockey
-                  </h3>
-                  <p>
-                    [TODO: intro line for category breakdown]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]"><Link href="/stores/categories/clothing-and-accessories" className="text-[#5B4FBE] hover:underline">Men's Innerwear</Link> — [TODO: discount range]: </strong>
-                    [TODO: category description — do not invent specific numbers]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]"><Link href="/stores/categories/clothing-and-accessories" className="text-[#5B4FBE] hover:underline">Women's Lingerie</Link> — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Loungewear — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Sportswear & Activewear — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Kids Wear — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
+                    </thead>
+                    <tbody className="divide-y divide-[#E8E8F0]">
+                      {[
+                        {
+                          offerType: 'ROUND NECK T-SHIRT',
+                          discount: '₹999',
+                          highlights: 'Super Combed Cotton Blend Half Sleeve Round Neck T-Shirt for daily wear.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'MICROFIBER SKORT',
+                          discount: '₹1,249',
+                          highlights: 'Lightweight skort with zippered side pockets for gym, trips, and errands.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'FULL SLEEVE T-SHIRT',
+                          discount: '₹799',
+                          highlights: 'Super Combed Cotton Rich Full Sleeve T-Shirt with solid color design.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'OVERSIZED GRAPHIC TEE',
+                          discount: '₹899',
+                          highlights: 'Loose, easygoing oversized cotton-rich graphic printed T-shirt.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'GRAPHIC COTTON T-SHIRT',
+                          discount: '₹799',
+                          highlights: 'Super Combed Cotton Rich Graphic Printed T-shirt for casual hangouts.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'PACK OF 2 COTTON BRAS',
+                          discount: '₹1,358',
+                          highlights: 'Pack of 2 Wirefree Cotton Stretch Non-Padded Bras for everyday basics.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'FULL COVERAGE BRA',
+                          discount: '₹749',
+                          highlights: 'Wirefree Full Coverage Cotton Stretch Bra designed for all-day comfort.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'MEDIUM COVERAGE BRA',
+                          discount: '₹599',
+                          highlights: 'Wirefree Medium Coverage Cotton Stretch Bra with light, natural cups.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'EVERYDAY BRA',
+                          discount: '₹639',
+                          highlights: 'Full Coverage Everyday Bra in breathable cotton stretch fabric.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'MARVEL BOXER SHORTS',
+                          discount: '₹999',
+                          highlights: 'Marvel Avengers Printed Boxer Shorts in super combed cotton for lounging.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'COTTON T-SHIRT',
+                          discount: '₹599',
+                          highlights: 'Super Combed Cotton Rich Half Sleeve T-Shirt essential basic.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'PACK OF 2 BOXERS',
+                          discount: '₹899 (Save ₹39)',
+                          highlights: 'Pack of 2 Printed Boxer Shorts with handy side pockets.',
+                          eligibility: 'All Users'
+                        }
+                      ].map((row, i) => (
+                        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+                          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+                            {row.offerType}
+                          </td>
+                          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+                            {row.discount}
+                          </td>
+                          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
+                            {row.highlights}
+                          </td>
+                          <td className="px-5 py-4 whitespace-nowrap">
+                            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+                              {row.eligibility}
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
 
-                <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Jockey Coupon Code — Step by Step</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Using a Jockey discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
-                  <div className="space-y-6">
-                    {[
-                      "Find Your Code on CouponScrew — Browse the verified Jockey offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant Jockey page.",
-                      "Browse and Add to Cart — Go to Jockey and select your products, size, and colour. Check the offer description for any category exclusions before adding items to your cart.",
-                      "[TODO: step 3 — brand-specific checkout detail]",
-                      "[TODO: step 4 — brand-specific checkout detail]",
-                      "[TODO: step 5 — brand-specific checkout detail]",
-                      "Stack Your Bank Card Offer — At the payment step, check for any bank card instant discounts available and apply if eligible. This is the step most shoppers miss — and it is where you unlock a second layer of savings.",
-                      "Complete Payment — Confirm your order. You will receive a delivery confirmation with tracking details via SMS and email."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <div>
+                  <div className="space-y-4 text-slate-700">
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Jockey Bank Card Offers
+                    </p>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Why Shoppers Choose Jockey
-                  </h3>
+                    <p>
+                      Beyond the sitewide sales, Jockey India runs card-specific savings through its banking partners. These apply at the payment step — no code needed separately.
+                    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 1 heading]: </strong>
-                    [TODO: reason 1 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 2 heading]: </strong>
-                    [TODO: reason 2 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 3 heading]: </strong>
-                    [TODO: reason 3 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 4 heading]: </strong>
-                    [TODO: reason 4 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 5 heading]: </strong>
-                    [TODO: reason 5 description]
-                  </p>
-
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Shop Smarter — Make Every Rupee Count at Jockey
-                  </h3>
-
-                  <p>
-                    Everyday essentials deserve everyday savings — and there is no reason to pay full price for any of it. CouponScrew keeps every active Jockey coupon code, promo code, and discount code verified and ready for you, updated daily, completely free. Bookmark this page before your next Jockey order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price.
-                  </p>
-                </div>
-
-                {!isReadMore && (
-                  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                )}
-              </div>
-
-              <button
-                onClick={() => setIsReadMore(!isReadMore)}
-                className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
-              >
-                {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-              </button>
-
-              {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h2 className="text-2xl font-black text-black mb-8">
-                  Frequently Asked Questions About Jockey Coupon Codes
-                </h2>
-                {faqs.map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Bank / Card</th>
+                            <th className="p-4 font-bold">Offer</th>
+                            <th className="p-4 font-bold">Min. Cart</th>
+                            <th className="p-4 font-bold">Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">ICICI Bank</td>
+                            <td className="p-4">₹500 off sitewide</td>
+                            <td className="p-4">—</td>
+                            <td className="p-4">Credit and debit cards</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">HDFC Bank</td>
+                            <td className="p-4">Flat 20% off</td>
+                            <td className="p-4">₹3,999</td>
+                            <td className="p-4">Credit and debit</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">HDFC NetBanking</td>
+                            <td className="p-4">₹400 cashback</td>
+                            <td className="p-4">—</td>
+                            <td className="p-4">Via HDFC NetBanking</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">HDFC (Kidswear)</td>
+                            <td className="p-4">₹400 instant discount</td>
+                            <td className="p-4">₹2,499</td>
+                            <td className="p-4">On kids' range only</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">SBI Cards</td>
+                            <td className="p-4">Flat 20% off + ₹300 cashback</td>
+                            <td className="p-4">₹3,999</td>
+                            <td className="p-4">Combined offer</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Bank of Baroda / IDFC / Yes Bank</td>
+                            <td className="p-4">10% off, up to ₹1,000</td>
+                            <td className="p-4">₹3,000</td>
+                            <td className="p-4">On Jockey sitewide (via FLATRS.23OFF)</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </div>
-                ))}
-              </div>
 
+                    <p>
+                      <em>Dev note:</em> Bank offers above sourced from Zoutons and CouponzGuru Jockey pages (October 2026). Bank card offers change by campaign cycle — verify active status and specific terms directly with each bank before publishing. HDFC and SBI minimum of ₹3,999 needs verification — sources listed it inconsistently (some entries said "no minimum"). Use ₹3,999 as the conservative figure and flag for affiliate dashboard confirmation.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Where to Buy Jockey in India for the Best Price
+                    </p>
+
+                    <p>
+                      Jockey products are sold across multiple channels in India, and the best price depends on which bank card you hold and what sale is running.
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Platform</th>
+                            <th className="p-4 font-bold">Bank Offer</th>
+                            <th className="p-4 font-bold">Jockey Coupon Code</th>
+                            <th className="p-4 font-bold">Other Savings</th>
+                            <th className="p-4 font-bold">COD Available</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">jockeyindia.com (official)</td>
+                            <td className="p-4">HDFC 20% off / ICICI ₹500 off / SBI 20% + ₹300</td>
+                            <td className="p-4">FLATRS.23OFF (₹23)</td>
+                            <td className="p-4">Multi-pack 15% off; newsletter 30% off</td>
+                            <td className="p-4">Yes (₹69 fee)</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Amazon India</td>
+                            <td className="p-4">ICICI / Axis 10% off, up to ₹1,250 (min ₹2,490)</td>
+                            <td className="p-4">Amazon-specific codes</td>
+                            <td className="p-4">Lightning deals, Subscribe & Save</td>
+                            <td className="p-4">Yes</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Flipkart</td>
+                            <td className="p-4">HDFC 10% off, above ₹4,990</td>
+                            <td className="p-4">Flipkart coupons available</td>
+                            <td className="p-4">Big Billion Days, sale events</td>
+                            <td className="p-4">Yes</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Myntra</td>
+                            <td className="p-4">HDFC 10% off above ₹3,500, capped ₹800</td>
+                            <td className="p-4">Extra 30% off first order (new users)</td>
+                            <td className="p-4">End-of-Season Sales, brand days</td>
+                            <td className="p-4">Yes</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Physical stores</td>
+                            <td className="p-4">Card machine offers vary by bank</td>
+                            <td className="p-4">Not applicable</td>
+                            <td className="p-4">1,395+ exclusive Jockey stores across India</td>
+                            <td className="p-4">N/A</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      <strong>Key consideration:</strong> If you hold an HDFC card and your cart is above ₹3,999, jockeyindia.com with the 20% HDFC offer gives the biggest saving on the official site. For smaller orders, Myntra's new-user extra 30% off can save more on a first purchase. Amazon's Jockey stock tends to be widest for multi-pack varieties and size availability.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Is Jockey India the Same as Jockey USA? The Page Industries Connection
+                    </p>
+
+                    <p>
+                      Jockey India and Jockey International (US) are different legal entities. Jockey International, based in Kenosha, Wisconsin, owns the global brand. In India, the brand is exclusively operated by Page Industries Limited, a Bengaluru-based company that holds the manufacturing and distribution licence for Jockey products across India, Sri Lanka, Bangladesh, Nepal, Oman, Qatar, Bahrain, UAE, and Saudi Arabia.
+                    </p>
+
+                    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+                      What this means for shoppers:
+                    </p>
+
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        jockeyindia.com is the correct site for Indian buyers. jockey.com is the US store — it does not ship to India and its codes will not work at jockeyindia.com checkout.
+                      </li>
+                      <li>
+                        Product lines, sizing, and collections on jockeyindia.com may differ from the US and European ranges.
+                      </li>
+                      <li>
+                        Customer service, returns, and warranty for products bought in India are handled by Page Industries, not Jockey International.
+                      </li>
+                      <li>
+                        Jockey USA coupon codes found on international affiliate sites will not apply at checkout on jockeyindia.com.
+                      </li>
+                      <li>
+                        Page Industries reported FY2025 revenue of ₹4,934.9 crore, and Jockey accounts for about 99% of that revenue — making it one of India's largest innerwear businesses by sales.
+                      </li>
+                    </ul>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Jockey Product Line Guide: Which Collection Is for What?
+                    </p>
+
+                    <p>
+                      Jockey India's range is broader than most buyers realise. Here's what each line covers:
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Collection</th>
+                            <th className="p-4 font-bold">What It Is</th>
+                            <th className="p-4 font-bold">Best For</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Men's USA Originals</td>
+                            <td className="p-4">Heritage brief and trunk styles with classic waistband</td>
+                            <td className="p-4">Everyday comfort, value pick</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Men's NYC</td>
+                            <td className="p-4">Slimmer fit, fashion-forward cuts</td>
+                            <td className="p-4">Fashion-conscious buyers, younger urban users</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Men's POP</td>
+                            <td className="p-4">Bold prints, colourful waistbands</td>
+                            <td className="p-4">Buyers who want variety in style</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Men's MOVE</td>
+                            <td className="p-4">Stretch fabric, athletic cut</td>
+                            <td className="p-4">Gym, sport, active use</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Women's Innerwear</td>
+                            <td className="p-4">Everyday bras (₹349+), panties, camisoles</td>
+                            <td className="p-4">Daily wear basics</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Women's Sports Bras</td>
+                            <td className="p-4">High and medium-impact support (₹579+)</td>
+                            <td className="p-4">Running, HIIT, gym</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Jockey Shapewear</td>
+                            <td className="p-4">Body-contour shapewear (₹999+)</td>
+                            <td className="p-4">Under fitted clothing, formal wear</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Jockey Life</td>
+                            <td className="p-4">Loungewear — pyjamas, track pants, shorts</td>
+                            <td className="p-4">Home wear, casual daily use</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Jockey Juniors</td>
+                            <td className="p-4">Kids' innerwear and outerwear (from ₹89)</td>
+                            <td className="p-4">Children aged 2–14</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Athleisure</td>
+                            <td className="p-4">Active tops, shorts, gym vests (from ₹129)</td>
+                            <td className="p-4">Casual sport, gym wear on a budget</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Jockey vs Lux vs Dollar vs Calvin Klein: Where It Fits
+                    </p>
+
+                    <p>
+                      Jockey is positioned in the mid-premium tier of Indian innerwear — above economy hosiery brands but below international premium labels.
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Feature</th>
+                            <th className="p-4 font-bold">Jockey India</th>
+                            <th className="p-4 font-bold">Lux / Dollar / Rupa</th>
+                            <th className="p-4 font-bold">Calvin Klein / Tommy Hilfiger</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Segment</td>
+                            <td className="p-4">Mid-premium</td>
+                            <td className="p-4">Economy</td>
+                            <td className="p-4">Premium</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Men's briefs entry price</td>
+                            <td className="p-4">₹199+</td>
+                            <td className="p-4">₹50–₹150</td>
+                            <td className="p-4">₹800–₹2,500</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Women's bras entry price</td>
+                            <td className="p-4">₹349+</td>
+                            <td className="p-4">₹99–₹250</td>
+                            <td className="p-4">₹1,200–₹3,500</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Material</td>
+                            <td className="p-4">Cotton, modal, stretch blends</td>
+                            <td className="p-4">Cotton (often basic)</td>
+                            <td className="p-4">Premium cotton, modal, micro-fibre</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Brand origin</td>
+                            <td className="p-4">US (Jockey Intl.) — India via Page Industries</td>
+                            <td className="p-4">Indian hosiery brands</td>
+                            <td className="p-4">US / European luxury brands</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Physical stores</td>
+                            <td className="p-4">1,395 exclusive outlets; 1,04,000+ stockists</td>
+                            <td className="p-4">Wide hosiery distribution</td>
+                            <td className="p-4">Select standalone stores and department stores</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Coupon codes</td>
+                            <td className="p-4">Rare; bank offers more common</td>
+                            <td className="p-4">Sold mainly via Amazon/Flipkart</td>
+                            <td className="p-4">Rare; mostly full-price</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Target buyer</td>
+                            <td className="p-4">Urban working professional, quality-focused</td>
+                            <td className="p-4">Price-sensitive buyer</td>
+                            <td className="p-4">Fashion-first, premium buyer</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      If you're comparing Jockey with domestic brands like Lux or Dollar, the fabric and finish quality difference is noticeable, especially in briefs and bras. If you're comparing Jockey with Calvin Klein or Tommy Hilfiger, Jockey gives a similar international heritage at roughly one-third the price. Jockey's value case is strongest for buyers who want consistent quality without paying premium-label pricing.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      The ₹599 Free Shipping Trick
+                    </p>
+
+                    <p>
+                      Jockey India ships free on orders above ₹599. Below that, a flat ₹39 shipping charge applies.
+                    </p>
+
+                    <p>
+                      If your cart sits between ₹550 and ₹598, adding a low-cost item — a pair of Jockey socks (from ₹129) or a camisole (from ₹219) — can push it above ₹599 and give you a genuinely useful product instead of paying ₹39 for the same total.
+                    </p>
+
+                    <p>
+                      For orders well below ₹599 (a single brief at ₹199, for example), the ₹39 shipping is fixed regardless of cart size. Prepaid payment removes the ₹69 COD fee — on a ₹199 order, paying by UPI costs ₹39 total for shipping; paying COD costs ₹108 for the same order.
+                    </p>
+                  </div>
+                </div>
+
+                <hr className="my-10 border-gray-200" />
+
+                {/* FAQs Section Header - Replaced H1/H2 with Styled Paragraph */}
+                <p className="text-2xl font-black text-black mt-16 mb-8">
+                  Frequently Asked Questions
+                </p>
+
+                {/* FAQ List */}
+                <div className="space-y-4">
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is the best Jockey coupon code in India right now?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      As of October 2026, FLATRS.23OFF gives a flat ₹23 off on a minimum cart of ₹199 at jockeyindia.com — valid until 27 October 2026. For bigger savings, HDFC cardholders get 20% off on carts above ₹3,999, and ICICI cardholders get ₹500 off sitewide — neither requires a code. If you're a new user on Myntra, the extra 30% first-order discount may save more than any available code.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Is Jockey India different from Jockey USA?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Yes. Jockey India is operated by Page Industries Limited under an exclusive licence from Jockey International (US). The two are separate storefronts — jockeyindia.com and jockey.com. Codes from US sites won't work in India, and the product ranges differ.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Does Jockey India offer free shipping?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Yes — orders above ₹599 ship free across India. Below ₹599, a flat ₹39 shipping fee applies. COD orders carry an additional ₹69 fee on top of shipping.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Can I use a Jockey discount code on Amazon or Flipkart?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      No. Jockey coupon codes from jockeyindia.com are not valid on Amazon, Flipkart, or Myntra. Each platform runs its own Jockey deals independently. Amazon offers ICICI/Axis bank instant discounts; Flipkart runs HDFC offers; Myntra runs first-order and sale deals.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is the return policy on Jockey India?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Jockey India accepts returns and exchanges on most products. Where Jockey's own reverse pickup service is unavailable at your location, the return is self-shipped, and Jockey credits a ₹100 gift card to your account to offset the courier cost.
+                    </p>
+                  </div>
+
+                </div>
+
+                <hr className="my-10 border-gray-200" />
+
+                <p>
+                  On jockeyindia.com, your biggest savings come from stacking what's already on the table: buy a multi-pack (15% off automatically), hit the ₹3,999 threshold if you hold an HDFC or SBI card (20% off), prepay to skip the ₹69 COD charge, and make sure your cart crosses ₹599 to avoid the shipping fee. That combination often saves ₹700–₹1,000 on a mid-size order — more than any single promo code currently available.
+                </p>
+
+              </div>
             </div>
 
-            {/* Sidebar */}
+            {/* Sidebar Column */}
             <div className="space-y-10">
               <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Jockey Searches</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {["Jockey Coupons", "Innerwear Offers India", "Men's Underwear Deals", "Jockey Sale", "Women's Lingerie Discounts", "Loungewear Offers", "Jockey Bank Offers", "CouponsCrew Fashion"].map(tag => (
+                <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                  Popular Jockey Searches
+                </p>
+                <div className="flex flex-wrap gap.2.5 flex-wrap gap-2.5">
+                  {["Jockey Coupons", "Innerwear Offers", "Activewear Deals", "Loungewear Discounts", "Multi-Pack Savings", "Bank Offers", "CouponsCrew Home"].map(tag => (
                     <a
                       key={tag}
                       href={`/search?q=${encodeURIComponent(tag)}`}
@@ -758,28 +1015,6 @@ export default function JockeyStore() {
                     >
                       {tag}
                     </a>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Jockey Deals</h3>
-                <div className="space-y-6">
-                  {[
-                    { heading: "[TODO: deal 1 heading]", sub: "[TODO: deal 1 subtext]" },
-                    { heading: "[TODO: deal 2 heading]", sub: "[TODO: deal 2 subtext]" },
-                    { heading: "[TODO: deal 3 heading]", sub: "[TODO: deal 3 subtext]" },
-                    { heading: "[TODO: deal 4 heading]", sub: "[TODO: deal 4 subtext]" },
-                    { heading: "[TODO: deal 5 heading]", sub: "[TODO: deal 5 subtext]" }
-                  ].map((deal, i) => (
-                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                      <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">J</div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
-                        <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                      </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Jockey deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
-                    </div>
                   ))}
                 </div>
               </div>

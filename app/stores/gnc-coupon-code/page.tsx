@@ -74,40 +74,58 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/gnc-coupon-code#faqpage',
-      mainEntity: [
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/gnc-coupon-code#faqpage",
+      "mainEntity": [
         {
-          '@type': 'Question',
-          name: 'How do I use a GNC coupon code?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: how-to answer specific to GNC checkout flow]' },
+          "@type": "Question",
+          "name": "What is the GNC coupon code for first order in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GNCFIRST gives ₹150 off your first prepaid order on GNC India (gncindia.com). For a potentially larger saving, GET10 gives 10% off with no minimum and no new-user restriction — or download the GNC India app and use APP300 for ₹300 off on a cart above ₹1,899."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Can I use multiple coupon codes on GNC?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: stacking rules specific to GNC]' },
+          "@type": "Question",
+          "name": "Is GNC India and Guardian the same?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Guardian Health & Beauty is GNC's authorised operating partner in India. GNC India products are sold through gncindia.com under this partnership. The stores are the same for Indian shoppers. However, GNC US (gnc.com) is a separate storefront — US coupon codes do not work on gncindia.com."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Why is my GNC promo code not working?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: common reasons a code might fail on GNC]' },
+          "@type": "Question",
+          "name": "Does GNC India offer free shipping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — GNC India offers free shipping on orders above ₹799 across India. Orders below ₹799 carry a standard delivery charge."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Where can I find the best GNC offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this GNC store page updated 24/7 with the best discounts, verified coupon codes, bank offers, and upcoming sale dates.' },
+          "@type": "Question",
+          "name": "What is the GNC PRO Access loyalty programme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GNC PRO Access (also called myGNC Rewards) is GNC's loyalty programme giving members exclusive prices, early access to sales, and additional savings. In India, signing up on gncindia.com gives you access to member-only prices shown when you browse while signed in. The exact current benefits are available on the GNC India loyalty page."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Does GNC offer free shipping?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: GNC free shipping policy/threshold details]' },
+          "@type": "Question",
+          "name": "Can I use a US GNC coupon code on GNC India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. GNC US (gnc.com) and GNC India (gncindia.com) are separate platforms with different checkout systems. A US coupon code will not apply at GNC India checkout, and GNC India codes will not work on gnc.com."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'How often are GNC coupons updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.' },
-        },
-      ],
+          "@type": "Question",
+          "name": "Does GNC India sell creatine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — GNC India's creatine range includes GNC Pro Performance Creatine Monohydrate, starting from around ₹469 for smaller units. Creatine is one of GNC India's highest-discounted categories, with deals going up to 70% off during sale periods."
+          }
+        }
+      ]
     },
     {
       '@type': 'ItemList',

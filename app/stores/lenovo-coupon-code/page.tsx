@@ -74,40 +74,50 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/lenovo-coupon-code#faqpage',
-      mainEntity: [
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/lenovo-coupon-code#faqpage",
+      "mainEntity": [
         {
-          '@type': 'Question',
-          name: 'How do I use a Lenovo coupon code?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: how-to answer specific to Lenovo checkout flow]' },
+          "@type": "Question",
+          "name": "What is the best Lenovo coupon code for laptops in India right now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of October 2026, CUSTOMOFF (₹7,500 off custom PCs, valid till December 31) is the highest-value code currently active. For gaming laptops, EXTRASAVINGS gives ₹1,500 off LOQ models. For tablet buyers, PAMU20 gives up to 70% off. Beyond codes, check the sitewide credit card cashback — at 10% on Legion and Yoga, it often saves more than a flat code."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Can I use multiple coupon codes on Lenovo?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: stacking rules specific to Lenovo]' },
+          "@type": "Question",
+          "name": "Does Lenovo India have a student discount code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Lenovo India offers student discounts through UNiDAYS and Sheer ID (up to 10% each), though the combined cap per order is 5%. ThinkPad E Series also comes with a specific ₹5,000 student saving. Access these through the Lenovo India Education Store on lenovo.com/in."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Why is my Lenovo promo code not working?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: common reasons a code might fail on Lenovo]' },
+          "@type": "Question",
+          "name": "What is Lenovo's exchange offer and how much will I get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lenovo India's exchange offer (via Cashify) gives a bonus of ₹2,500–₹15,000 on top of your old device's base trade-in value, depending on the price of the new product you're buying. The bonus is paid within 30 days of pickup, not as an upfront discount."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Where can I find the best Lenovo offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this Lenovo store page updated 24/7 with the best discounts, verified coupon codes, bank offers, and upcoming sale dates.' },
+          "@type": "Question",
+          "name": "Can I use a Lenovo promo code with no-cost EMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Lenovo India's cashback offers — including those tied to codes — are excluded from no-cost EMI transactions. You get one or the other: either pay in full and claim cashback, or pay in installments at 0% interest."
+          }
         },
         {
-          '@type': 'Question',
-          name: 'Does Lenovo offer a student discount?',
-          acceptedAnswer: { '@type': 'Answer', text: '[TODO: Lenovo student discount program details]' },
-        },
-        {
-          '@type': 'Question',
-          name: 'How often are Lenovo coupons updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.' },
-        },
-      ],
+          "@type": "Question",
+          "name": "What is the difference between Lenovo IdeaPad and ThinkPad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IdeaPad is Lenovo's consumer laptop range — lighter, thinner, and focused on everyday tasks and student use (₹35,000–₹65,000). ThinkPad is Lenovo's business laptop range, built to military durability standards, with a better keyboard, longer support lifecycle, and higher starting price (₹55,000 for ThinkPad E; ₹1,10,000+ for ThinkPad T and X1). ThinkBook sits between the two — business build, consumer pricing."
+          }
+        }
+      ]
     },
     {
       '@type': 'ItemList',

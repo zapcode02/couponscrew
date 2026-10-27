@@ -316,13 +316,10 @@ export default function LenovoStore() {
                         <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
 
                         <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          {coupon.badgeType || "UP TO"}
+                          {coupon.badgeType || "DEAL"}
                         </span>
-                        <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
-                          {coupon.badge ? coupon.badge.replace("UP TO ", "").replace("FLAT ", "") : "40%"}
-                        </span>
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          OFF
+                        <span className="text-sm sm:text-xl lg:text-[28px] font-black leading-tight tracking-tight my-1.5 text-center">
+                          {coupon.badge}
                         </span>
                       </div>
 
@@ -357,21 +354,15 @@ export default function LenovoStore() {
                             {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                           </button>
 
-                          {/* Details List */}
-                          {isExpanded && (
+                          {/* Dynamic Client Approved Bullet Points */}
+                          {isExpanded && coupon.details && (
                             <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Valid on select laptop and PC categories.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Minimum cart value might apply as specified in offer terms.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Covers selected series and configurations.</span>
-                              </li>
+                              {coupon.details.map((point, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                  <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                                  <span>{point}</span>
+                                </li>
+                              ))}
                             </ul>
                           )}
                         </div>
@@ -380,11 +371,10 @@ export default function LenovoStore() {
                         <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
                           <button
                             onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
-                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
-                              isCopied
-                                ? "bg-green-600 text-white"
-                                : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
-                            }`}
+                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${isCopied
+                              ? "bg-green-600 text-white"
+                              : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
+                              }`}
                           >
                             {isCopied ? "Copied!" : "Get Deal"}
                           </button>
@@ -401,142 +391,75 @@ export default function LenovoStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
-                <span>The Story Behind Lenovo</span>
-              </h3>
-              <p className="text-[#1A1A2E] text-sm mb-3">
-                [TODO: 2 paragraphs on Lenovo's founding/history — do not invent dates or founder names, ask the user or leave blank if unknown]
-              </p>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+              <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+                How to Apply a Lenovo Discount Code
+              </h2>
 
-              <p className="text-[#1A1A2E] text-sm">
-                [TODO: second history paragraph]
-              </p>
-
-              <div className="mt-5 select-none">
-                <a
-                  href={AFFILIATE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
-                >
-                  <span>Visit Lenovo</span>
-                  <ArrowRight size={12} />
-                </a>
-              </div>
+              <ol className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-decimal list-inside">
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Go to lenovo.com/in and add your product to the cart.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    On the cart or checkout page, find the "Add Promo Code" or "Coupon Code" field.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Enter your Lenovo coupon code in uppercase exactly as listed — codes are case-sensitive.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Click Apply and confirm the discounted price appears before choosing a payment method.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    If you have a credit card cashback offer active (see below), pay with that card at checkout — the cashback is applied separately from the code and can stack.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Lenovo's Spin & Win coupons (earned from the site's spin wheel) work the same way but expire at 23:59 on the day they're won. Use these immediately.
+                  </span>
+                </li>
+              </ol>
             </div>
 
-            {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
-              <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+              <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+                Lenovo Discount Code Not Working? Check These First
+              </h2>
 
-              <div className="space-y-2 relative z-10 text-left">
-                <h3 className="font-extrabold text-lg tracking-tight">[TODO: sale name, e.g. "Lenovo Tech Sale"]</h3>
-                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
-                  Live Now!
-                </span>
-                <p className="text-white/80 text-xs mt-2 leading-relaxed">
-                  [TODO: one-line offer text, e.g. "Up to 40% OFF on Laptops & Legion Gaming"]
-                </p>
-              </div>
-
-              <a
-                href={AFFILIATE_URL}
-                target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
-              >
-                Shop Now
-              </a>
-            </div>
-
-            {/* Sidebar Card 3: Top Categories */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Top Categories at Lenovo
-              </h3>
-
-              <div className="space-y-3.5 text-xs">
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 1, e.g. Laptops]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 2, e.g. Legion Gaming]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 3, e.g. Desktops & AIO]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 4, e.g. Tablets]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 5, e.g. Monitors]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-              </div>
-
-              <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/stores/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
-                  <span>View All Categories</span>
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-
-            {/* Sidebar Card 4: Why Shop at Lenovo */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Use CouponScrew for Lenovo Deals?
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
-                    <span>Every Lenovo coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately.</span>
-                  </div>
+              <ul className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-disc list-inside">
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>VISALAPTOP2000 requires a Visa card.</strong> Using it at checkout with a Mastercard, RuPay, or UPI returns an error.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
-                    <span>We display live success percentages for every deal based on actual user attempts, so you can pick the most reliable option without guessing.</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Cashback and EMI don't combine.</strong> Cashback offers — whether from a code or the sitewide structure — are excluded on no-cost EMI transactions. If you want the cashback, pay in full.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
-                    <span>[TODO: which Indian bank promotions apply to Lenovo — do not invent specific bank names]</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Spin &amp; Win coupons expire same day.</strong> These are earned from Lenovo's spin wheel and are only valid until 23:59 on the day they were won.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Flash Sale Alerts</span>
-                    <span>[TODO: Lenovo's flash-sale or limited-time offer naming, if any]</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Refurbished outlet exclusions.</strong> Codes and cashback offers that apply to lenovo.com/in regular products typically exclude the refurbished outlet, Pro Store, and Employee Purchase Programme.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
-                    <span>[TODO: named Lenovo sale events, if any]</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
-                    <span>Finding and using a Lenovo coupon code on CouponScrew is completely free and requires no account, no sign-up, and no personal information.</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    <strong>Student codes are capped.</strong> UNiDAYS and Sheer ID discounts are both 10% individually, but the combined maximum on any order is 5%.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -550,207 +473,658 @@ export default function LenovoStore() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Left: Text Content */}
+            {/* Main Content Column */}
             <div className="prose max-w-none">
-              <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                [TODO: SEO H2, e.g. "Lenovo Coupon Code India (Month Year): Up to N% Off — Verified"]
-              </h2>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                  <caption className="sr-only">Lenovo Laptop and PC Coupon Offers</caption>
-                  <thead>
-                    <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E8E8F0]">
-                    {coupons.map((row, i) => (
-                      <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                        <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                          {row.badge}
-                        </td>
-                        <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                          {row.type}
-                        </td>
-                        <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                          {row.badge}
-                        </td>
-                        <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                          {row.description}
-                        </td>
-                        <td className="px-5 py-4 whitespace-nowrap">
-                          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                            {row.userType}
-                          </span>
-                        </td>
+              {/* Main Title - Replaced H1 with Styled Paragraph */}
+              <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+                Lenovo Coupon Code: Save on Laptops, ThinkPads, Legion, and Accessories in India
+              </p>
+
+              <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+                <p>
+                  A Lenovo coupon code is a promo code you apply at lenovo.com/in checkout to reduce the price of a laptop, desktop, tablet, monitor, or accessory. Lenovo India runs codes through affiliate partners and its own seasonal campaigns — current codes (October 2026) cover custom PCs, ThinkBook, LOQ gaming laptops, and tablet bundles. But Lenovo's bigger savings often come from the credit card cashback and UPI cashback the site runs in parallel — those can save more than a code alone.
+                </p>
+
+                <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+                  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+                    <caption className="sr-only">Lenovo Offers and Discount List</caption>
+                    <thead>
+                      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+                        <th scope="col" className="w-[18%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          Offer Type
+                        </th>
+                        <th scope="col" className="w-[18%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          Discount / Price
+                        </th>
+                        <th scope="col" className="w-[44%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
+                          Offer Highlights
+                        </th>
+                        <th scope="col" className="w-[20%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          User Eligibility / Terms
+                        </th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
-
-                <p>
-                  [TODO: intro paragraph — what Lenovo is, what CouponScrew tracks for it, 2-3 sentences]
-                </p>
-
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  [TODO: brand-story H3]
-                </h3>
-
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Lenovo in Numbers — Scale That Speaks for Itself
-                </h3>
-
-                <p>
-                  [TODO: "in numbers" paragraph — do not invent specific stats; ask the user or omit numeric claims]
-                </p>
-
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Everything You Can Shop at Lenovo
-                  </h3>
-                  <p>
-                    [TODO: intro line for category breakdown]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]"><Link href="/stores/categories/electronics" className="text-[#5B4FBE] hover:underline">Laptops</Link> — [TODO: discount range]: </strong>
-                    [TODO: category description — do not invent specific numbers]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Legion Gaming Laptops — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Desktops & All-in-Ones — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Tablets — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Monitors & Accessories — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
+                    </thead>
+                    <tbody className="divide-y divide-[#E8E8F0]">
+                      {[
+                        {
+                          offerType: 'SAVE 55%',
+                          discount: '₹82,991 (55% OFF)',
+                          highlights: 'Lenovo IdeaPad Slim 3 with Intel Core i7, 16GB RAM, and 512GB SSD.',
+                          eligibility: '5% Cashback & 12M 0% EMI'
+                        },
+                        {
+                          offerType: 'SAVE 50%',
+                          discount: '₹1,66,990 (50% OFF)',
+                          highlights: 'Lenovo LOQ gaming laptop with Intel Core i7, RTX 5050 8GB, and 1TB SSD.',
+                          eligibility: 'Extra 10% for Students'
+                        },
+                        {
+                          offerType: 'SAVE 50%',
+                          discount: '₹3,000 (50% OFF)',
+                          highlights: 'Lenovo Legion M410 Wireless RGB Gaming Mouse with customizable lighting.',
+                          eligibility: 'Student Pricing Available'
+                        },
+                        {
+                          offerType: 'SAVE 47%',
+                          discount: '₹88,991 (47% OFF)',
+                          highlights: 'Lenovo ThinkPad E14 business laptop with AMD Ryzen 5, 16GB RAM & 512GB SSD.',
+                          eligibility: '5% Cashback & 12M 0% EMI'
+                        },
+                        {
+                          offerType: 'SAVE 44%',
+                          discount: '₹1,70,990 (44% OFF)',
+                          highlights: 'Lenovo LOQ Tower desktop with Intel Core Ultra 7 and RTX 5050 graphics.',
+                          eligibility: 'Verified Student Savings'
+                        },
+                        {
+                          offerType: 'SAVE 43%',
+                          discount: '₹1,40,991 (43% OFF)',
+                          highlights: 'Lenovo LOQ with Intel Core i5, RTX 4050 6GB graphics, and 1TB SSD.',
+                          eligibility: 'Gamers & Creators'
+                        },
+                        {
+                          offerType: 'SAVE 42%',
+                          discount: '₹6,25,990 (42% OFF)',
+                          highlights: 'Lenovo Legion Pro 7 flagship with Intel Core Ultra 9, 64GB RAM & RTX 5090.',
+                          eligibility: 'AI & Creative Work'
+                        },
+                        {
+                          offerType: 'SAVE 39%',
+                          discount: '₹4,05,991 (39% OFF)',
+                          highlights: 'Lenovo Legion Pro 7 with Intel Core Ultra 9, 32GB RAM & RTX 5070 Ti.',
+                          eligibility: 'Gamers & Creators'
+                        },
+                        {
+                          offerType: 'SAVE 30%',
+                          discount: '₹29,999 (30% OFF)',
+                          highlights: 'Lenovo Idea Tab 11 5G with Pen, 8GB RAM, and 256GB storage.',
+                          eligibility: '₹750 Cashback & 6M 0% EMI'
+                        },
+                        {
+                          offerType: 'SAVE 21%',
+                          discount: '₹1,13,221 (21% OFF)',
+                          highlights: 'Lenovo Yoga 7 2-in-1 Copilot+ PC in Luna Grey and Seashell colors.',
+                          eligibility: 'Professionals & Students'
+                        },
+                        {
+                          offerType: 'SAVE 15%',
+                          discount: '₹2,43,622 (15% OFF)',
+                          highlights: 'Lenovo Legion Pro 5 powered by Intel Core Ultra for demanding titles.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'SAVE 7%',
+                          discount: '₹1,74,240 (7% OFF)',
+                          highlights: 'Lenovo LOQ Gen 10 AMD laptop built with modern hardware.',
+                          eligibility: 'Power Users'
+                        },
+                        {
+                          offerType: 'SAVE 6%',
+                          discount: '₹1,67,879 (6% OFF)',
+                          highlights: 'Lenovo LOQ Gen 10 AMD laptop delivering dependable daily performance.',
+                          eligibility: 'All Users'
+                        }
+                      ].map((row, i) => (
+                        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+                          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+                            {row.offerType}
+                          </td>
+                          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+                            {row.discount}
+                          </td>
+                          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
+                            {row.highlights}
+                          </td>
+                          <td className="px-5 py-4 whitespace-nowrap">
+                            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+                              {row.eligibility}
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
 
-                <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a Lenovo Coupon Code — Step by Step</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Using a Lenovo discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
-                  <div className="space-y-6">
-                    {[
-                      "Find Your Code on CouponScrew — Browse the verified Lenovo offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant Lenovo page.",
-                      "Browse and Add to Cart — Go to Lenovo and select your laptop, desktop, or accessory configuration. Check the offer description for any category exclusions before adding items to your cart.",
-                      "[TODO: step 3 — brand-specific checkout detail]",
-                      "[TODO: step 4 — brand-specific checkout detail]",
-                      "[TODO: step 5 — brand-specific checkout detail]",
-                      "Stack Your Bank Card Offer — At the payment step, check for any bank card instant discounts available and apply if eligible. This is the step most shoppers miss — and it is where you unlock a second layer of savings.",
-                      "Complete Payment — Confirm your order. You will receive a delivery confirmation with tracking details via SMS and email."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Why Shoppers Choose Lenovo
-                  </h3>
+                <div>
+                  <div className="space-y-4 text-slate-700">
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Lenovo Cashback Offers: Often More Than the Code
+                    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 1 heading]: </strong>
-                    [TODO: reason 1 description]
-                  </p>
+                    <p>
+                      On lenovo.com/in, the official credit card and UPI cashback structure can save significantly more than most coupon codes. Cashback is paid to your bank account within 30 days of delivery.
+                    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 2 heading]: </strong>
-                    [TODO: reason 2 description]
-                  </p>
+                    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+                      Credit Card Cashback (Any Bank)
+                    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 3 heading]: </strong>
-                    [TODO: reason 3 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 4 heading]: </strong>
-                    [TODO: reason 4 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 5 heading]: </strong>
-                    [TODO: reason 5 description]
-                  </p>
-
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Shop Smarter — Make Every Rupee Count at Lenovo
-                  </h3>
-
-                  <p>
-                    Every laptop or PC you buy is a long-term investment — and there is no reason to pay full price for any of it. CouponScrew keeps every active Lenovo coupon code, promo code, and discount code verified and ready for you, updated daily, completely free. Bookmark this page before your next Lenovo order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price.
-                  </p>
-                </div>
-
-                {!isReadMore && (
-                  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                )}
-              </div>
-
-              <button
-                onClick={() => setIsReadMore(!isReadMore)}
-                className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
-              >
-                {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-              </button>
-
-              {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h2 className="text-2xl font-black text-black mb-8">
-                  Frequently Asked Questions About Lenovo Coupon Codes
-                </h2>
-                {faqs.map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Product</th>
+                            <th className="p-4 font-bold">Cashback</th>
+                            <th className="p-4 font-bold">Per-Order Cap</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Legion (all models)</td>
+                            <td className="p-4">10%</td>
+                            <td className="p-4">₹10,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Yoga (all laptops)</td>
+                            <td className="p-4">10%</td>
+                            <td className="p-4">₹10,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">IdeaPad 5 (Slim, 2-in-1, Pro)</td>
+                            <td className="p-4">10%</td>
+                            <td className="p-4">₹7,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">LOQ (RTX 4050 / 5050 / 5060)</td>
+                            <td className="p-4">10%</td>
+                            <td className="p-4">₹7,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Gaming Desktops</td>
+                            <td className="p-4">10%</td>
+                            <td className="p-4">₹10,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">ThinkPad T Series</td>
+                            <td className="p-4">7%</td>
+                            <td className="p-4">₹10,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">ThinkBook 14x</td>
+                            <td className="p-4">₹10,000 flat</td>
+                            <td className="p-4">₹10,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">ThinkStation / ThinkPad P & X</td>
+                            <td className="p-4">₹20,000 flat</td>
+                            <td className="p-4">₹20,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">ThinkPad E & L</td>
+                            <td className="p-4">5%</td>
+                            <td className="p-4">₹7,500</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Monitors</td>
+                            <td className="p-4">₹1,000 flat</td>
+                            <td className="p-4">₹1,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Accessories</td>
+                            <td className="p-4">5%</td>
+                            <td className="p-4">₹1,500</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </div>
-                ))}
-              </div>
 
+                    <p>
+                      <strong>Conditions:</strong> Maximum 3 units per card; 1 transaction per card. Cashback does not apply on EMI transactions. Choose either card cashback or UPI cashback — you cannot claim both on the same order.
+                    </p>
+
+                    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+                      UPI Cashback (Alternative)
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Product</th>
+                            <th className="p-4 font-bold">UPI Cashback</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">IdeaPad Slim 3 (Intel Core i5)</td>
+                            <td className="p-4">₹5,000 flat</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">ThinkPad E & L, LOQ RTX 3050, most IdeaPad Slim 3</td>
+                            <td className="p-4">3%</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Monitors</td>
+                            <td className="p-4">3%</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Tablets</td>
+                            <td className="p-4">₹750–₹2,000 flat</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      UPI cashback applies via any UPI app, with no per-card restriction, on carts up to ₹1,00,000.
+                    </p>
+
+                    <p>
+                      On a Legion laptop at ₹80,000, for example, credit card cashback at 10% (capped at ₹10,000) saves more than a flat ₹1,500 or ₹2,000 coupon code. Check the cashback amount on your specific product before deciding whether to use a code or rely on cashback.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Lenovo Promo Code for Students
+                    </p>
+
+                    <p>
+                      Lenovo India offers student-specific savings through two programmes:
+                    </p>
+
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        <strong>UNiDAYS:</strong> Up to 10% extra off for verified students.
+                      </li>
+                      <li>
+                        <strong>Sheer ID:</strong> Up to 10% off after student ID verification.
+                      </li>
+                    </ul>
+
+                    <p className="mt-4">
+                      <strong>Important:</strong> The combined student discount is capped at 5% per purchase, and student discounts cannot be combined with most other active offers. However, ThinkPad E Series comes with ₹5,000 off specifically for students — worth checking against the general 5% cap to see which gives more.
+                    </p>
+
+                    <p>
+                      For student buyers, the ThinkBook and ThinkPad E ranges are the practical choices — they sit at ₹55,000–₹90,000, qualify for student pricing, and are covered by Lenovo's business-grade warranty.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Bank Offers on Lenovo India
+                    </p>
+
+                    <p>
+                      Beyond the sitewide cashback, a few banks have run card-specific Lenovo offers:
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Bank / Card</th>
+                            <th className="p-4 font-bold">Offer</th>
+                            <th className="p-4 font-bold">Details</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Axis Bank</td>
+                            <td className="p-4">₹3,500 off</td>
+                            <td className="p-4">On Lenovo PCs and laptops with Axis Bank card</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">HDFC Bank</td>
+                            <td className="p-4">10% cashback, up to ₹5,000</td>
+                            <td className="p-4">On HDFC credit cards (not valid on EMI)</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">SBI / Yes Bank</td>
+                            <td className="p-4">10% cashback, up to ₹5,000</td>
+                            <td className="p-4">On credit card transactions</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Bank of Baroda</td>
+                            <td className="p-4">Offer available</td>
+                            <td className="p-4">Check bankofbaroda.in for current terms</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      <em>Dev note:</em> Axis Bank offer (₹3,500 off) confirmed via axis.bank.in/offers/lenovo-offers page. HDFC, SBI, and Yes Bank offers sourced from Zoutons. Verify active status and current terms directly with each bank before publishing — bank offers have fixed windows and change by campaign.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Lenovo Exchange Offer: How the Cashify Bonus Works
+                    </p>
+
+                    <p>
+                      Lenovo India's exchange offer is handled through Cashify and gives a bonus above your old device's base trade-in value. The bonus is paid within 30 days of Cashify picking up the device.
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">New Product Price</th>
+                            <th className="p-4 font-bold">Exchange Bonus</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">₹60,000–₹79,999</td>
+                            <td className="p-4">+₹2,500</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">₹80,000–₹1,19,999</td>
+                            <td className="p-4">+₹5,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">₹1,20,000–₹1,49,999</td>
+                            <td className="p-4">+₹10,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Above ₹1,50,000</td>
+                            <td className="p-4">+₹15,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Any Monitor</td>
+                            <td className="p-4">+₹1,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      The base trade-in value for your old device is assessed separately by Cashify and varies by condition, model, and age. The bonus above is on top of that value — not the full exchange amount. The bonus and the base value together are credited within 30 days of pickup; they are not deducted at checkout.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Lenovo Product Line Guide: What to Buy
+                    </p>
+
+                    <p>
+                      Lenovo's lineup is wide enough to be confusing. Here's what each line is actually for:
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Series</th>
+                            <th className="p-4 font-bold">Who It's For</th>
+                            <th className="p-4 font-bold">Price Range (India)</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">IdeaPad Slim / IdeaPad 3</td>
+                            <td className="p-4">Students, general use, everyday computing</td>
+                            <td className="p-4">₹35,000–₹65,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Yoga (Slim, 2-in-1, Pro)</td>
+                            <td className="p-4">Creative work, portability, touchscreen + pen users</td>
+                            <td className="p-4">₹70,000–₹1,50,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">ThinkBook</td>
+                            <td className="p-4">Small business, professionals who want ThinkPad-quality at lower cost</td>
+                            <td className="p-4">₹55,000–₹1,20,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">ThinkPad E / L</td>
+                            <td className="p-4">Entry business laptops with ThinkPad durability</td>
+                            <td className="p-4">₹55,000–₹90,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">ThinkPad T / X1 Carbon</td>
+                            <td className="p-4">Senior professionals, executives — premium business</td>
+                            <td className="p-4">₹1,10,000–₹2,50,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">LOQ</td>
+                            <td className="p-4">Entry to mid-range gaming on a budget</td>
+                            <td className="p-4">₹65,000–₹1,10,000</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Legion</td>
+                            <td className="p-4">Mid to high-end gaming, content creation with GPU need</td>
+                            <td className="p-4">₹80,000–₹2,00,000+</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">IdeaCentre / ThinkCentre</td>
+                            <td className="p-4">Home and office desktops</td>
+                            <td className="p-4">₹40,000–₹1,20,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      <strong>ThinkBook vs ThinkPad:</strong> ThinkPad has a longer military-durability certification history and the iconic TrackPoint; ThinkBook looks more mainstream and costs less for similar specs. For a ₹70,000–₹80,000 budget where both options exist, ThinkBook gives more RAM and storage; ThinkPad gives better build certification and keyboard.
+                    </p>
+
+                    <p>
+                      <strong>LOQ vs Legion:</strong> LOQ is Lenovo's budget gaming line — same GPU options as Legion but with plastic build, lower display quality, and fewer thermal modes. For casual to moderate gaming, LOQ is the better-value pick. For heavy gaming, content creation, or if you keep laptops 4+ years, Legion's build holds up better.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Lenovo vs Dell vs HP: Which Brand for Indian Buyers?
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Feature</th>
+                            <th className="p-4 font-bold">Lenovo</th>
+                            <th className="p-4 font-bold">Dell</th>
+                            <th className="p-4 font-bold">HP</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Price range (India)</td>
+                            <td className="p-4">₹35,000–₹2,50,000</td>
+                            <td className="p-4">₹45,000–₹2,50,000</td>
+                            <td className="p-4">₹30,000–₹2,00,000</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Global PC market share</td>
+                            <td className="p-4">~27.2% (largest)</td>
+                            <td className="p-4">~14.8%</td>
+                            <td className="p-4">~21.3%</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Keyboard quality</td>
+                            <td className="p-4">Best in class (ThinkPad)</td>
+                            <td className="p-4">Average (XPS layout controversial)</td>
+                            <td className="p-4">Decent</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Gaming line</td>
+                            <td className="p-4">Legion + LOQ</td>
+                            <td className="p-4">Alienware</td>
+                            <td className="p-4">Omen</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Business line</td>
+                            <td className="p-4">ThinkPad / ThinkBook</td>
+                            <td className="p-4">Latitude</td>
+                            <td className="p-4">EliteBook</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Entry budget</td>
+                            <td className="p-4">₹35,000 (IdeaPad)</td>
+                            <td className="p-4">₹45,000+</td>
+                            <td className="p-4">₹30,000 (HP 14)</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Student deals</td>
+                            <td className="p-4">UNiDAYS + Sheer ID</td>
+                            <td className="p-4">Dell Student Store</td>
+                            <td className="p-4">HP Education Store</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Coupon codes</td>
+                            <td className="p-4">Yes — affiliate + campaign</td>
+                            <td className="p-4">Yes — limited</td>
+                            <td className="p-4">Yes — frequent</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">No-cost EMI</td>
+                            <td className="p-4">Yes, 3–12 months</td>
+                            <td className="p-4">Yes</td>
+                            <td className="p-4">Yes</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Cashback structure</td>
+                            <td className="p-4">5–10% via any bank card</td>
+                            <td className="p-4">Card-specific</td>
+                            <td className="p-4">Card-specific</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Refurbished outlet</td>
+                            <td className="p-4">Yes (up to 68% off)</td>
+                            <td className="p-4">Dell Outlet</td>
+                            <td className="p-4">HP Renew</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      Lenovo wins on breadth — no other brand covers budget student laptops, mainstream work laptops, ThinkPad-grade business machines, and gaming all in one store with unified cashback offers. Dell's sweet spot is premium build quality above ₹80,000. HP has the widest entry-level range below ₹40,000.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Lenovo Certified Refurbished: Save Up to 68% Off
+                    </p>
+
+                    <p>
+                      Lenovo India runs a Certified Refurbished Outlet (accessible via lenovo.com/in under Deals) that lists returned, open-box, and factory-refurbished units at up to 68% below MRP. Products come with a standard warranty and go through Lenovo's own quality check.
+                    </p>
+
+                    <p>
+                      This is worth checking before buying a new unit — a refurbished ThinkPad E or IdeaPad from the Lenovo outlet often costs ₹10,000–₹20,000 less than the same model new, with the same 1-year warranty.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      My Lenovo Rewards: The Points That Add Up
+                    </p>
+
+                    <p>
+                      My Lenovo Rewards is Lenovo India's free loyalty programme — sign up on lenovo.com/in and earn at least 5% reward points on every purchase. Points can be redeemed on future orders and member-only prices sometimes appear in the account dashboard.
+                    </p>
+
+                    <p>
+                      If you're buying more than one Lenovo product over time (a laptop now, a monitor later, accessories in between), the rewards points from earlier purchases reduce the effective cost on later ones. No annual fee, no tier requirement.
+                    </p>
+                  </div>
+                </div>
+
+                <hr className="my-10 border-gray-200" />
+
+                {/* FAQs Section Header - Replaced H1/H2 with Styled Paragraph */}
+                <p className="text-2xl font-black text-black mt-16 mb-8">
+                  Frequently Asked Questions
+                </p>
+
+                {/* FAQ List */}
+                <div className="space-y-4">
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is the best Lenovo coupon code for laptops in India right now?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      As of October 2026, CUSTOMOFF (₹7,500 off custom PCs, valid till December 31) is the highest-value code currently active. For gaming laptops, EXTRASAVINGS gives ₹1,500 off LOQ models. For tablet buyers, PAMU20 gives up to 70% off. Beyond codes, check the sitewide credit card cashback — at 10% on Legion and Yoga, it often saves more than a flat code.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Does Lenovo India have a student discount code?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Yes — Lenovo India offers student discounts through UNiDAYS and Sheer ID (up to 10% each), though the combined cap per order is 5%. ThinkPad E Series also comes with a specific ₹5,000 student saving. Access these through the Lenovo India Education Store on lenovo.com/in.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is Lenovo's exchange offer and how much will I get?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Lenovo India's exchange offer (via Cashify) gives a bonus of ₹2,500–₹15,000 on top of your old device's base trade-in value, depending on the price of the new product you're buying. The bonus is paid within 30 days of pickup, not as an upfront discount.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Can I use a Lenovo promo code with no-cost EMI?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      No. Lenovo India's cashback offers — including those tied to codes — are excluded from no-cost EMI transactions. You get one or the other: either pay in full and claim cashback, or pay in installments at 0% interest.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is the difference between Lenovo IdeaPad and ThinkPad?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      IdeaPad is Lenovo's consumer laptop range — lighter, thinner, and focused on everyday tasks and student use (₹35,000–₹65,000). ThinkPad is Lenovo's business laptop range, built to military durability standards, with a better keyboard, longer support lifecycle, and higher starting price (₹55,000 for ThinkPad E; ₹1,10,000+ for ThinkPad T and X1). ThinkBook sits between the two — business build, consumer pricing.
+                    </p>
+                  </div>
+
+                </div>
+
+                <hr className="my-10 border-gray-200" />
+
+                <p>
+                  Lenovo India's savings stack best when you combine a campaign coupon code with the sitewide credit card cashback — most eligible products let you use both. For a gaming laptop like LOQ or Legion, 10% cashback (up to ₹7,000–₹10,000) plus a ₹1,500 code adds up faster than either alone. And if you're buying a custom PC, CUSTOMOFF's ₹7,500 off is the highest flat saving currently available with no cart minimum.
+                </p>
+
+              </div>
             </div>
 
-            {/* Sidebar */}
+            {/* Sidebar Column */}
             <div className="space-y-10">
               <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Lenovo Searches</h3>
+                <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                  Popular Lenovo Searches
+                </p>
                 <div className="flex flex-wrap gap-2.5">
-                  {["Lenovo Coupons", "Laptop Offers India", "Legion Gaming Laptop Deals", "Lenovo Sale", "Student Discount", "ThinkPad Offers", "Lenovo Bank Offers", "CouponsCrew Electronics"].map(tag => (
+                  {["Lenovo Coupons", "ThinkPad Deals", "Legion Gaming Laptops", "IdeaPad Offers", "Custom PC Discount", "Student Discount", "CouponsCrew Home"].map(tag => (
                     <a
                       key={tag}
                       href={`/search?q=${encodeURIComponent(tag)}`}
@@ -758,28 +1132,6 @@ export default function LenovoStore() {
                     >
                       {tag}
                     </a>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top Lenovo Deals</h3>
-                <div className="space-y-6">
-                  {[
-                    { heading: "[TODO: deal 1 heading]", sub: "[TODO: deal 1 subtext]" },
-                    { heading: "[TODO: deal 2 heading]", sub: "[TODO: deal 2 subtext]" },
-                    { heading: "[TODO: deal 3 heading]", sub: "[TODO: deal 3 subtext]" },
-                    { heading: "[TODO: deal 4 heading]", sub: "[TODO: deal 4 subtext]" },
-                    { heading: "[TODO: deal 5 heading]", sub: "[TODO: deal 5 subtext]" }
-                  ].map((deal, i) => (
-                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                      <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">L</div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
-                        <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                      </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get Lenovo deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
-                    </div>
                   ))}
                 </div>
               </div>

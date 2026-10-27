@@ -900,5 +900,22 @@ export const STORES_DATA: Store[] = [
     isPopular: false,
     isFeatured: false,
     description: 'Shop handcrafted artisan sarees in silk, cotton & Chanderi with the best Polki Sarees offers'
+  },
+  {
+    id: 'store-68',
+    slug: 'underrated-club-coupon-code',
+    name: 'Underrated Club',
+    logo: 'underratedclub',
+    logoImage: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1793116890/underrated_club_logo_r9juzr.webp',
+    logoColor: '#5B4FBE',
+    logoBg: '#F0EEFF',
+    category: 'Fashion',
+    categories: ['Fashion', 'Clothing & Accessories'],
+    offerCount: 6,
+    maxDiscount: 40,
+    discountLabel: 'Up to 40% OFF',
+    isPopular: false,
+    isFeatured: false,
+    description: 'Shop oversized streetwear, graphic tees & hoodies with the best Underrated Club offers'
   }
 ];

@@ -316,13 +316,10 @@ export default function GncStore() {
                         <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
 
                         <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          {coupon.badgeType || "UP TO"}
+                          {coupon.badgeType || "DEAL"}
                         </span>
-                        <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
-                          {coupon.badge ? coupon.badge.replace("UP TO ", "").replace("FLAT ", "") : "50%"}
-                        </span>
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          OFF
+                        <span className="text-sm sm:text-xl lg:text-[28px] font-black leading-tight tracking-tight my-1.5 text-center">
+                          {coupon.badge}
                         </span>
                       </div>
 
@@ -357,21 +354,15 @@ export default function GncStore() {
                             {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                           </button>
 
-                          {/* Details List */}
-                          {isExpanded && (
+                          {/* Dynamic Approved Bullet Points */}
+                          {isExpanded && coupon.details && (
                             <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Valid on select supplement and nutrition categories.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Minimum cart value might apply as specified in offer terms.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Covers selected flavours and product lines.</span>
-                              </li>
+                              {coupon.details.map((point, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                  <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                                  <span>{point}</span>
+                                </li>
+                              ))}
                             </ul>
                           )}
                         </div>
@@ -380,11 +371,10 @@ export default function GncStore() {
                         <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
                           <button
                             onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
-                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
-                              isCopied
-                                ? "bg-green-600 text-white"
-                                : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
-                            }`}
+                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${isCopied
+                              ? "bg-green-600 text-white"
+                              : "bg-[#FF5722] hover:bg-[#E64A19] text-white"
+                              }`}
                           >
                             {isCopied ? "Copied!" : "Get Deal"}
                           </button>
@@ -401,144 +391,80 @@ export default function GncStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            {/* Sidebar Card 1: Store Information */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight flex items-center gap-2 border-b border-[#E8E8F0] pb-3 select-none">
-                <Info size={16} className="text-[#5B4FBE]" />
-                <span>The Story Behind GNC</span>
-              </h3>
-              <p className="text-[#1A1A2E] text-sm mb-3">
-                [TODO: 2 paragraphs on GNC's founding/history — do not invent dates or founder names, ask the user or leave blank if unknown]
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+              <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+                GNC First Order Coupon Code
+              </h2>
+
+              <p className="text-xs font-semibold text-[#4A4A6A] leading-relaxed mb-4">
+                For a first order on gncindia.com, GNCFIRST gives ₹150 off a prepaid order — note that it applies to pre-paid payment only (UPI, card, net banking), not cash on delivery. The code is specifically for new accounts that have not placed an order on GNC India before.
               </p>
 
-              <p className="text-[#1A1A2E] text-sm">
-                [TODO: second history paragraph]
+              <p className="text-xs font-bold text-[#2C2C40] mb-3">
+                If GNCFIRST is expired or doesn't apply, the next best first-order route:
               </p>
 
-              <div className="mt-5 select-none">
-                <a
-                  href={AFFILIATE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full border border-[#D1D1E9] hover:border-[#5B4FBE] hover:text-[#5B4FBE] text-[#1A1A2E] py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1 bg-white cursor-pointer"
-                >
-                  <span>Visit GNC</span>
-                  <ArrowRight size={12} />
-                </a>
-              </div>
-            </div>
-
-            {/* Sidebar Card 2: Promo Sale Banner */}
-            <div className="bg-gradient-to-br from-[#5B4FBE] to-[#7C3AED] rounded-3xl p-6 text-white relative overflow-hidden flex flex-col justify-between shadow-xs min-h-[220px]">
-              <div className="absolute top-[-20px] right-[-20px] w-28 h-28 bg-white/5 rounded-full pointer-events-none" />
-
-              <div className="space-y-2 relative z-10 text-left">
-                <h3 className="font-extrabold text-lg tracking-tight">[TODO: sale name, e.g. "GNC Nutrition Sale"]</h3>
-                <span className="inline-block bg-[#FF5722] text-white text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider">
-                  Live Now!
-                </span>
-                <p className="text-white/80 text-xs mt-2 leading-relaxed">
-                  [TODO: one-line offer text, e.g. "Up to 50% OFF on Whey Protein & Vitamins"]
-                </p>
-              </div>
-
-              <a
-                href={AFFILIATE_URL}
-                target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
-                className="mt-6 w-full bg-white hover:bg-gray-100 text-[#5B4FBE] py-3 rounded-xl text-xs font-black text-center transition-all cursor-pointer relative z-10 block"
-              >
-                Shop Now
-              </a>
-            </div>
-
-            {/* Sidebar Card 3: Top Categories */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Top Categories at GNC
-              </h3>
-
-              <div className="space-y-3.5 text-xs">
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 1, e.g. Whey Protein]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 2, e.g. Vitamins & Health]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 3, e.g. Weight Management]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 4, e.g. Sports Nutrition]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">[TODO: Category 5, e.g. Herbal Supplements]</span>
-                  <span className="text-[#FF5722] font-bold">Up to [TODO: N]% OFF</span>
-                </div>
-              </div>
-
-              <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/stores/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
-                  <span>View All Categories</span>
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-
-            {/* Sidebar Card 4: Why Shop at GNC */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Why Use CouponScrew for GNC Deals?
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Daily Code Verification</span>
-                    <span>Every GNC coupon code on this page is manually tested before it goes live and re-verified every 24 hours. Expired codes are removed immediately.</span>
-                  </div>
+              <ul className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-disc list-inside">
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Use GET10 for a flat 10% off with no minimum — valid sitewide, no new-user restriction.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Real-Time Success Rates</span>
-                    <span>We display live success percentages for every deal based on actual user attempts, so you can pick the most reliable option without guessing.</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Download the GNC India app and apply APP300 on a cart above ₹1,899 — saves ₹300 vs the ₹150 from GNCFIRST.
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Bank Offer Tracking</span>
-                    <span>[TODO: which Indian bank promotions apply to GNC — do not invent specific bank names]</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Stack either with a MobiKwik cashback at checkout (₹750 cashback on orders above ₹3,999 with code MBK750).
+                  </span>
                 </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Flash Sale Alerts</span>
-                    <span>[TODO: GNC's flash-sale or limited-time offer naming, if any]</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">Pre-Sale Code Publishing</span>
-                    <span>[TODO: named GNC sale events, if any]</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#2C2C40] block mb-0.5">No Registration Required</span>
-                    <span>Finding and using a GNC coupon code on CouponScrew is completely free and requires no account, no sign-up, and no personal information.</span>
-                  </div>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    For a first supplement purchase, the GET10 + MobiKwik cashback stack often saves more than GNCFIRST on its own — especially on bundles above ₹3,999.
+                  </span>
                 </li>
               </ul>
+            </div>
+
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+              <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+                How to Apply a GNC Discount Code
+              </h2>
+
+              <ol className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-decimal list-inside">
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Go to gncindia.com and add products to your cart.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    On the cart or checkout page, look for the "Have a coupon code?" or "Apply promo code" field.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Type or paste your GNC coupon code exactly as listed — codes are case-sensitive.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    Click Apply and confirm the saving appears in your order total before proceeding to payment.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    If you have MobiKwik or CRED Pay linked, apply any cashback offer at the payment step — these are separate from the discount code and can sometimes add on top.
+                  </span>
+                </li>
+                <li className="leading-relaxed">
+                  <span className="text-[#2C2C40]">
+                    App orders: Codes APP300 and APP150 are only valid when ordering through the GNC India mobile app. The app price is the same as the website, but app-only codes give you an extra flat saving unavailable on desktop.
+                  </span>
+                </li>
+              </ol>
             </div>
 
           </aside>
@@ -550,207 +476,636 @@ export default function GncStore() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Left: Text Content */}
+            {/* Main Content Column */}
             <div className="prose max-w-none">
-              <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-                [TODO: SEO H2, e.g. "GNC Coupon Code India (Month Year): Up to N% Off — Verified"]
-              </h2>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                  <caption className="sr-only">GNC Health and Nutrition Coupon Offers</caption>
-                  <thead>
-                    <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-                      <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E8E8F0]">
-                    {coupons.map((row, i) => (
-                      <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                        <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                          {row.badge}
-                        </td>
-                        <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                          {row.type}
-                        </td>
-                        <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                          {row.badge}
-                        </td>
-                        <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                          {row.description}
-                        </td>
-                        <td className="px-5 py-4 whitespace-nowrap">
-                          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                            {row.userType}
-                          </span>
-                        </td>
+              {/* Main Title - Replaced H1 with Styled Paragraph */}
+              <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+                GNC Coupon Code: Save on Protein, Creatine, and Supplements in India
+              </p>
+
+              <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+                <p>
+                  A GNC coupon code is a discount code you apply at checkout on gncindia.com to reduce the price of protein powders, creatine, multivitamins, pre-workout, and other supplements. GNC India runs codes through affiliate partners and seasonal sale campaigns — current codes (October 2026) include a first-order flat saving, sitewide percentage codes, and app-exclusive offers that stack on top of ongoing category discounts that go as deep as 70–80%.
+                </p>
+
+                <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
+                  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
+                    <caption className="sr-only">GNC Offers and Discount List</caption>
+                    <thead>
+                      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
+                        <th scope="col" className="w-[18%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          Offer Type
+                        </th>
+                        <th scope="col" className="w-[18%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          Discount / Price
+                        </th>
+                        <th scope="col" className="w-[44%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
+                          Offer Highlights
+                        </th>
+                        <th scope="col" className="w-[20%] px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
+                          User Eligibility / Terms
+                        </th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                    </thead>
+                    <tbody className="divide-y divide-[#E8E8F0]">
+                      {[
+                        {
+                          offerType: 'SAVE 80%',
+                          discount: '₹499 (80% OFF)',
+                          highlights: 'Creatine Monohydrate (100g unflavoured) with Silver Shaker bottle.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'SAVE 59%',
+                          discount: '₹849 (59% OFF)',
+                          highlights: '100% Whey Protein Vanilla Cream travel sachets with Black Shaker.',
+                          eligibility: 'First-Time & Fitness Users'
+                        },
+                        {
+                          offerType: 'SAVE 57%',
+                          discount: '₹899 (57% OFF)',
+                          highlights: 'Fruit Punch Pre-Workout for high-intensity training sessions during GOAT Sale.',
+                          eligibility: 'GOAT Sale Offer'
+                        },
+                        {
+                          offerType: 'SAVE 56%',
+                          discount: '₹1,949 (56% OFF)',
+                          highlights: '3KG Weight Gainer (Double Chocolate) with durable steel shaker bottle.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'SAVE 53%',
+                          discount: '₹699 (53% OFF)',
+                          highlights: '1KG Pro Performance Weight Gainer (Double Chocolate flavor) under GOAT Sale.',
+                          eligibility: 'Limited Time'
+                        },
+                        {
+                          offerType: 'SAVE 50%',
+                          discount: '₹1,599 (50% OFF)',
+                          highlights: '2 lb Chocolate Fermented Yeast Protein Isolate for plant-based nutrition.',
+                          eligibility: 'Vegetarians'
+                        },
+                        {
+                          offerType: 'SAVE 44%',
+                          discount: '₹6,499 (44% OFF)',
+                          highlights: 'Large 4 lb Chocolate Supreme Pro Performance Whey Protein pack.',
+                          eligibility: 'Frequent Gym-Goers'
+                        },
+                        {
+                          offerType: 'BUY 3 FOR ₹1,499',
+                          discount: '₹1,499 Flat',
+                          highlights: 'Mix and match any 3 selected wellness products from 16 eligible items.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'SAVE 28%',
+                          discount: '₹679 (28% OFF)',
+                          highlights: '60-tablet Sport Multivitamin bottle for everyday nutritional support.',
+                          eligibility: 'GOAT Sale Price'
+                        },
+                        {
+                          offerType: 'SAVE 25%',
+                          discount: '₹899 (25% OFF)',
+                          highlights: 'Mega Men 50+ Multivitamin vegetarian formula for daily wellness.',
+                          eligibility: 'Men Aged 50+'
+                        },
+                        {
+                          offerType: 'PROTEIN OFFERS',
+                          discount: 'Up to 30% OFF',
+                          highlights: 'Save up to 30% across selected GNC protein supplements for different fitness goals.',
+                          eligibility: 'Eligible Products'
+                        },
+                        {
+                          offerType: 'COMBO DEALS',
+                          discount: 'Up to 30% OFF',
+                          highlights: 'Save up to 30% on selected health and fitness combo packs.',
+                          eligibility: 'All Users'
+                        },
+                        {
+                          offerType: 'WEIGHT GAINERS',
+                          discount: 'Up to 30% OFF',
+                          highlights: 'Save up to 30% on selected weight gain supplements across pack sizes.',
+                          eligibility: 'Eligible Products'
+                        },
+                        {
+                          offerType: 'WOMEN\'S WELLNESS',
+                          discount: 'Up to 30% OFF',
+                          highlights: 'Save up to 30% on Women\'s Wellness health and lifestyle supplements.',
+                          eligibility: 'Promotional Sale'
+                        }
+                      ].map((row, i) => (
+                        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
+                          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
+                            {row.offerType}
+                          </td>
+                          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
+                            {row.discount}
+                          </td>
+                          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
+                            {row.highlights}
+                          </td>
+                          <td className="px-5 py-4 whitespace-nowrap">
+                            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
+                              {row.eligibility}
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
 
-              <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
+                <hr className="my-8 border-gray-200" />
 
-                <p>
-                  [TODO: intro paragraph — what GNC is, what CouponScrew tracks for it, 2-3 sentences]
+                {/* Section Header - Replaced H2 with Styled Paragraph */}
+                <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                  GNC Coupon Codes — October 2026
                 </p>
 
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  [TODO: brand-story H3]
-                </h3>
-
-                <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                  GNC in Numbers — Scale That Speaks for Itself
-                </h3>
-
-                <p>
-                  [TODO: "in numbers" paragraph — do not invent specific stats; ask the user or omit numeric claims]
-                </p>
-
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Everything You Can Shop at GNC
-                  </h3>
-                  <p>
-                    [TODO: intro line for category breakdown]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Whey Protein — [TODO: discount range]: </strong>
-                    [TODO: category description — do not invent specific numbers]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Vitamins & Health Supplements — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Weight Management — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Sports Nutrition — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">Herbal Supplements — [TODO: discount range]: </strong>
-                    [TODO: category description]
-                  </p>
+                {/* Data Table */}
+                <div className="overflow-x-auto my-8">
+                  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                    <thead>
+                      <tr className="bg-[#5B4FBE] text-white">
+                        <th className="p-4 font-bold">Code</th>
+                        <th className="p-4 font-bold">Offer</th>
+                        <th className="p-4 font-bold">Min. Cart</th>
+                        <th className="p-4 font-bold">Where It Works</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                      <tr>
+                        <td className="p-4 font-semibold">GNCFIRST</td>
+                        <td className="p-4">₹150 off first prepaid order</td>
+                        <td className="p-4">~₹2,399</td>
+                        <td className="p-4">Website + App (new users)</td>
+                      </tr>
+                      <tr className="bg-gray-50/50">
+                        <td className="p-4 font-semibold">GET10</td>
+                        <td className="p-4">10% off</td>
+                        <td className="p-4">No minimum</td>
+                        <td className="p-4">Sitewide</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-semibold">GNC200</td>
+                        <td className="p-4">Flat ₹200 off</td>
+                        <td className="p-4">₹2,199</td>
+                        <td className="p-4">Sitewide</td>
+                      </tr>
+                      <tr className="bg-gray-50/50">
+                        <td className="p-4 font-semibold">SAVE200</td>
+                        <td className="p-4">Flat ₹200 off</td>
+                        <td className="p-4">₹2,100</td>
+                        <td className="p-4">Sitewide</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-semibold">GRABON5</td>
+                        <td className="p-4">Extra 5% off</td>
+                        <td className="p-4">No minimum</td>
+                        <td className="p-4">Sitewide</td>
+                      </tr>
+                      <tr className="bg-gray-50/50">
+                        <td className="p-4 font-semibold">APP300</td>
+                        <td className="p-4">Flat ₹300 off</td>
+                        <td className="p-4">₹1,899</td>
+                        <td className="p-4">App only</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-semibold">APP150</td>
+                        <td className="p-4">Extra ₹150 off</td>
+                        <td className="p-4">₹999</td>
+                        <td className="p-4">App only</td>
+                      </tr>
+                      <tr className="bg-gray-50/50">
+                        <td className="p-4 font-semibold">GNC33</td>
+                        <td className="p-4">% off</td>
+                        <td className="p-4">No minimum</td>
+                        <td className="p-4">Fitness and wellness</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 font-semibold">MERCH5</td>
+                        <td className="p-4">5% off</td>
+                        <td className="p-4">No minimum</td>
+                        <td className="p-4">Apparel and accessories</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
 
-                <div className="space-y-8 bg-white p-10 rounded-[40px] border border-[#f0f0f0] shadow-sm my-12">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-8">How to Use a GNC Coupon Code — Step by Step</h3>
-                  <p className="text-gray-700 font-bold -mt-4">Using a GNC discount code from CouponScrew takes under two minutes. Here is the exact process:</p>
-                  <div className="space-y-6">
-                    {[
-                      "Find Your Code on CouponScrew — Browse the verified GNC offers on this page and click \"Get Deal\" or \"Copy Code\" on the offer you want. For no-code deals, clicking \"Get Deal\" activates the discount and redirects you directly to the relevant GNC page.",
-                      "Browse and Add to Cart — Go to GNC and select your products, flavour, and size. Check the offer description for any category exclusions before adding items to your cart.",
-                      "[TODO: step 3 — brand-specific checkout detail]",
-                      "[TODO: step 4 — brand-specific checkout detail]",
-                      "[TODO: step 5 — brand-specific checkout detail]",
-                      "Stack Your Bank Card Offer — At the payment step, check for any bank card instant discounts available and apply if eligible. This is the step most shoppers miss — and it is where you unlock a second layer of savings.",
-                      "Complete Payment — Confirm your order. You will receive a delivery confirmation with tracking details via SMS and email."
-                    ].map((step, i) => (
-                      <div key={i} className="flex gap-6 items-start">
-                        <div className="w-10 h-10 shrink-0 bg-[#5B4FBE] text-white font-black rounded-2xl flex items-center justify-center shadow-lg shadow-teal-100 italic">
-                          {i + 1}
-                        </div>
-                        <p className="text-gray-700 font-bold leading-relaxed mt-2">{step}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <div>
+                  <div className="space-y-4 text-slate-700">
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      GNC Promo Code Not Working? What to Check First
+                    </p>
 
-                <div className="space-y-4 text-slate-700">
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Why Fitness Enthusiasts Choose GNC
-                  </h3>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        <strong>Prepaid requirement:</strong> GNCFIRST requires a prepaid payment method. If you selected COD, the code will fail. Switch to UPI or card.
+                      </li>
+                      <li>
+                        <strong>App codes on desktop:</strong> APP300 and APP150 only work through the GNC India app. Using them at the desktop site returns an error.
+                      </li>
+                      <li>
+                        <strong>Minimum cart not met:</strong> SAVE200 needs ₹2,100 and GNC200 needs ₹2,199 — amounts that look similar but are different codes. Double-check your cart total.
+                      </li>
+                      <li>
+                        <strong>Already-discounted products:</strong> Products at 70%+ off sometimes exclude additional code stacking. The checkout page will show a "code not applicable" message.
+                      </li>
+                      <li>
+                        <strong>Expired code:</strong> GNC India campaign codes typically run for 2–4 weeks. Codes from October campaigns expire by month-end — check CouponsCrew's GNC page for live replacements.
+                      </li>
+                    </ul>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 1 heading]: </strong>
-                    [TODO: reason 1 description]
-                  </p>
+                    <hr className="my-6 border-slate-200" />
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 2 heading]: </strong>
-                    [TODO: reason 2 description]
-                  </p>
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      GNC Freebie Threshold Guide
+                    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 3 heading]: </strong>
-                    [TODO: reason 3 description]
-                  </p>
+                    <p>
+                      GNC India runs a tiered freebie system where a higher cart total earns a free product — no code needed, added automatically at checkout. Here are the thresholds based on current offers:
+                    </p>
 
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 4 heading]: </strong>
-                    [TODO: reason 4 description]
-                  </p>
-
-                  <p>
-                    <strong className="text-[#2C2C40]">[TODO: reason 5 heading]: </strong>
-                    [TODO: reason 5 description]
-                  </p>
-
-                  <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                    Shop Smarter — Make Every Rupee Count at GNC
-                  </h3>
-
-                  <p>
-                    Every supplement order is an investment in your health and fitness goals — and there is no reason to pay full price for any of it. CouponScrew keeps every active GNC coupon code, promo code, and discount code verified and ready for you, updated daily, completely free. Bookmark this page before your next GNC order, copy the best available code, stack it with your bank card offer, and walk away paying significantly less than the listed price.
-                  </p>
-                </div>
-
-                {!isReadMore && (
-                  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f5f5f5] to-transparent pointer-events-none" />
-                )}
-              </div>
-
-              <button
-                onClick={() => setIsReadMore(!isReadMore)}
-                className="mt-10 flex items-center gap-2 text-[#5B4FBE] font-black text-xs uppercase tracking-widest hover:underline"
-              >
-                {isReadMore ? "Read Less" : "Read More"} <ChevronDown className={cn("w-4 h-4 transition-transform", isReadMore && "rotate-180")} />
-              </button>
-
-              {/* FAQs Accordion */}
-              <div className="mt-20 space-y-4">
-                <h2 className="text-2xl font-black text-black mb-8">
-                  Frequently Asked Questions About GNC Coupon Codes
-                </h2>
-                {faqs.map((faq, i) => (
-                  <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-[#f0f0f0] shadow-sm transition-all duration-300">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#fcfcfc] transition-colors"
-                    >
-                      <span className="text-black font-black text-base">{faq.q}</span>
-                      <div className={cn("bg-[#f0f0f0] p-2 rounded-xl transition-all", openFaq === i && "bg-[#5B4FBE] rotate-180")}>
-                        <ChevronDown className={cn("w-4 h-4 text-gray-500", openFaq === i && "text-white")} />
-                      </div>
-                    </button>
-                    <div className={cn("overflow-hidden transition-all duration-300 px-8 bg-white", openFaq === i ? "max-h-96 pb-8 opacity-100" : "max-h-0 opacity-0 pb-0")}>
-                      <p className="text-gray-500 font-bold text-sm leading-relaxed pt-2 border-t border-[#f0f0f0]">{faq.a}</p>
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Cart Value</th>
+                            <th className="p-4 font-bold">What You Get</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">₹799+</td>
+                            <td className="p-4">Free shipping (pan India)</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">₹2,999+</td>
+                            <td className="p-4">Free product (Tier 1 — typically a sample or small unit)</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">₹3,499+</td>
+                            <td className="p-4">Free product (Tier 2)</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">₹4,999+</td>
+                            <td className="p-4">Free product (Tier 3 — larger supplement or combo)</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">₹6,499+</td>
+                            <td className="p-4">Free product (Tier 4 — premium freebie bundle)</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </div>
-                ))}
-              </div>
 
+                    <p>
+                      If your cart is close to a threshold, adding a lower-priced item — a GNC creatine sachet (from ₹469), a protein bar, or a shaker — can push it over the line and get you a freebie that costs more than the add-on.
+                    </p>
+
+                    <p>
+                      <em>Dev note:</em> Freebie tier thresholds sourced from Zoutons GNC page (October 2026). Verify against GNC India's live offers page before publishing; specific freebie products rotate with campaigns.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      GNC PRO Access: How GNC's Loyalty Programme Works
+                    </p>
+
+                    <p>
+                      GNC PRO Access is GNC's membership programme, available in India through GNC India. Members get early access to deals, exclusive member prices, and additional savings that non-members don't see. The programme is sometimes listed as "myGNC Rewards" — these refer to the same loyalty structure.
+                    </p>
+
+                    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+                      Key things to know:
+                    </p>
+
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        Member-only prices are shown when you sign in before browsing — they appear as a separate, lower price alongside the standard listed price.
+                      </li>
+                      <li>
+                        PRO Access savings stack differently from coupon codes — the member price is the baseline, and a coupon code is then applied on top of that (subject to the code's stacking rules).
+                      </li>
+                      <li>
+                        Signing up for GNC India's newsletter or creating an account on gncindia.com is the starting point for loyalty savings — no annual fee model is listed for India at the time of writing.
+                      </li>
+                    </ul>
+
+                    <p>
+                      <em>Dev note (EEAT):</em> GNC PRO Access terms in India may differ from the US GNC PRO membership (which has a paid tier). Verify the India-specific programme details at gncindia.com/loyalty or equivalent before publishing.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Is GNC the Same as Guardian? The India Connection Explained
+                    </p>
+
+                    <p>
+                      GNC (General Nutrition Centers) is an American sports nutrition and supplement brand founded in 1935 in Pittsburgh, Pennsylvania. It is one of the largest supplement retail brands globally.
+                    </p>
+
+                    <p>
+                      Guardian Health &amp; Beauty is GNC's authorised operating partner for India. In India, GNC products are sold through the gncindia.com website, operated under the Guardian brand partnership. This is why some searches for "Guardian GNC coupon code" or "Guardian supplement code India" surface GNC India pages — they are the same store.
+                    </p>
+
+                    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+                      Key points:
+                    </p>
+
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        GNC India (gncindia.com) and GNC US (gnc.com) are different storefronts — codes from one will not work on the other.
+                      </li>
+                      <li>
+                        Products on GNC India may have different SKUs, bundle sizes, and pricing from GNC US.
+                      </li>
+                      <li>
+                        Shipping from GNC US to India is not offered — gncindia.com ships only within India.
+                      </li>
+                      <li>
+                        If you found a GNC US code online (common on US affiliate sites), it will not apply at gncindia.com checkout.
+                      </li>
+                    </ul>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      GNC India vs MuscleBlaze vs HealthKart: Which Supplement Store to Buy From?
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Feature</th>
+                            <th className="p-4 font-bold">GNC India</th>
+                            <th className="p-4 font-bold">MuscleBlaze</th>
+                            <th className="p-4 font-bold">HealthKart</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Brand type</td>
+                            <td className="p-4">International brand (US, 1935), India-operated</td>
+                            <td className="p-4">Indian D2C supplement brand</td>
+                            <td className="p-4">Multi-brand supplement marketplace</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Products</td>
+                            <td className="p-4">Own-brand GNC line: protein, creatine, vitamins, women's wellness, fat burners</td>
+                            <td className="p-4">Own-brand: whey protein, mass gainers, creatine, BCAA</td>
+                            <td className="p-4">Stocks 100+ brands including GNC, MuscleBlaze, MyProtein, Optimum Nutrition</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Price range</td>
+                            <td className="p-4">Mid to premium</td>
+                            <td className="p-4">Budget to mid-range</td>
+                            <td className="p-4">Varies by brand; own HK brand is budget</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Coupon codes</td>
+                            <td className="p-4">Yes — affiliate codes, app-only deals, bank offers</td>
+                            <td className="p-4">Yes — frequent sale codes</td>
+                            <td className="p-4">Yes — extensive bank offer tie-ups</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Bank/UPI offers</td>
+                            <td className="p-4">MobiKwik, CRED Pay cashback</td>
+                            <td className="p-4">HDFC, ICICI, SBI card offers</td>
+                            <td className="p-4">Very wide bank offer ecosystem</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Freebies</td>
+                            <td className="p-4">Tiered (₹2,999 / ₹3,499 / ₹4,999 / ₹6,499)</td>
+                            <td className="p-4">Bundle freebies on high-value orders</td>
+                            <td className="p-4">Depends on brand/seller</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Free shipping</td>
+                            <td className="p-4">₹799+</td>
+                            <td className="p-4">₹599+ (varies)</td>
+                            <td className="p-4">₹499+ (varies by seller)</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">International brand access</td>
+                            <td className="p-4">GNC's own products</td>
+                            <td className="p-4">MuscleBlaze own range only</td>
+                            <td className="p-4">Yes — stocks international brands</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Protein price entry</td>
+                            <td className="p-4">From ₹469 (creatine); protein from higher</td>
+                            <td className="p-4">Budget whey from ~₹600</td>
+                            <td className="p-4">Varies; budget options available</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      GNC India is the right choice when you want specifically GNC-brand products — AMP Gold Series, GNC Pro Performance, or GNC Mega Men Multivitamins. HealthKart is better if you're comparing across brands (GNC vs Optimum Nutrition vs MuscleBlaze) in one order. MuscleBlaze competes directly with GNC on protein price and quality for Indian buyers who don't have a brand preference.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      Bank and Payment Offers on GNC India
+                    </p>
+
+                    <p>
+                      Beyond coupon codes, GNC India runs cashback and instant discount offers through payment partners:
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Payment Method</th>
+                            <th className="p-4 font-bold">Offer</th>
+                            <th className="p-4 font-bold">Min. Cart</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">MobiKwik (code: MBK750)</td>
+                            <td className="p-4">₹750 cashback</td>
+                            <td className="p-4">₹3,999</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">MobiKwik (code: MBK1500)</td>
+                            <td className="p-4">₹1,500 cashback</td>
+                            <td className="p-4">₹3,999</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">CRED Pay</td>
+                            <td className="p-4">₹500 cashback</td>
+                            <td className="p-4">Check CRED app for terms</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      MobiKwik cashback is credited to your MobiKwik wallet after the order is delivered — not an instant discount at checkout. The ₹1,500 option and ₹750 option both require ₹3,999 minimum; check which is live in your MobiKwik wallet offer section before applying.
+                    </p>
+
+                    <p>
+                      <em>Dev note:</em> Bank/payment offers sourced from Zoutons GNC page (October 2026). These offers change monthly — verify before publishing.
+                    </p>
+
+                    <hr className="my-6 border-slate-200" />
+
+                    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+                      What GNC India Sells: Products and Price Ranges
+                    </p>
+
+                    <div className="overflow-x-auto my-8">
+                      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+                        <thead>
+                          <tr className="bg-[#5B4FBE] text-white">
+                            <th className="p-4 font-bold">Category</th>
+                            <th className="p-4 font-bold">Key Products</th>
+                            <th className="p-4 font-bold">Price Range</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+                          <tr>
+                            <td className="p-4 font-semibold">Whey Protein</td>
+                            <td className="p-4">AMP Gold Series, Pro Performance Whey, plant protein</td>
+                            <td className="p-4">₹1,499–₹6,499</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Creatine</td>
+                            <td className="p-4">GNC Pro Performance Creatine, monohydrate</td>
+                            <td className="p-4">₹469–₹1,999</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Mass Gainers</td>
+                            <td className="p-4">Weight gainer, serious mass style products</td>
+                            <td className="p-4">₹1,679–₹5,499</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Multivitamins</td>
+                            <td className="p-4">Mega Men, Women's Ultra Mega, fish oil, omega-3</td>
+                            <td className="p-4">₹599–₹2,499</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Pre-Workout</td>
+                            <td className="p-4">Pre-workout powders, intra-workout, HydraRush</td>
+                            <td className="p-4">₹799–₹3,499</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Fat Burners</td>
+                            <td className="p-4">Weight management, appetite control</td>
+                            <td className="p-4">₹999–₹3,499</td>
+                          </tr>
+                          <tr>
+                            <td className="p-4 font-semibold">Women's Wellness</td>
+                            <td className="p-4">Women's multivitamins, collagen, marine collagen</td>
+                            <td className="p-4">₹599–₹3,499</td>
+                          </tr>
+                          <tr className="bg-gray-50/50">
+                            <td className="p-4 font-semibold">Snacks and Shakers</td>
+                            <td className="p-4">Protein bars, protein snacks, shaker bottles</td>
+                            <td className="p-4">₹59–₹999</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p>
+                      <em>Dev note:</em> Price ranges are approximate based on GrabOn category data (October 2026). Flag for auto-pull from gncindia.com product feed before publishing.
+                    </p>
+                  </div>
+                </div>
+
+                <hr className="my-10 border-gray-200" />
+
+                {/* FAQs Section Header - Replaced H1/H2 with Styled Paragraph */}
+                <p className="text-2xl font-black text-black mt-16 mb-8">
+                  Frequently Asked Questions
+                </p>
+
+                {/* FAQ List */}
+                <div className="space-y-4">
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is the GNC coupon code for first order in India?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      GNCFIRST gives ₹150 off your first prepaid order on GNC India (gncindia.com). For a potentially larger saving, GET10 gives 10% off with no minimum and no new-user restriction — or download the GNC India app and use APP300 for ₹300 off on a cart above ₹1,899.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Is GNC India and Guardian the same?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Yes — Guardian Health & Beauty is GNC's authorised operating partner in India. GNC India products are sold through gncindia.com under this partnership. The stores are the same for Indian shoppers. However, GNC US (gnc.com) is a separate storefront — US coupon codes do not work on gncindia.com.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Does GNC India offer free shipping?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Yes — GNC India offers free shipping on orders above ₹799 across India. Orders below ₹799 carry a standard delivery charge.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      What is the GNC PRO Access loyalty programme?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      GNC PRO Access (also called myGNC Rewards) is GNC's loyalty programme giving members exclusive prices, early access to sales, and additional savings. In India, signing up on gncindia.com gives you access to member-only prices shown when you browse while signed in. The exact current benefits are available on the GNC India loyalty page.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Can I use a US GNC coupon code on GNC India?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      No. GNC US (gnc.com) and GNC India (gncindia.com) are separate platforms with different checkout systems. A US coupon code will not apply at GNC India checkout, and GNC India codes will not work on gnc.com.
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+                    <p className="font-black text-black text-base">
+                      Does GNC India sell creatine?
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Yes — GNC India's creatine range includes GNC Pro Performance Creatine Monohydrate, starting from around ₹469 for smaller units. Creatine is one of GNC India's highest-discounted categories, with deals going up to 70% off during sale periods.
+                    </p>
+                  </div>
+
+                </div>
+
+                <hr className="my-10 border-gray-200" />
+
+                <p>
+                  GNC India's best-value approach combines two moves: bring your cart above a freebie threshold (₹2,999 or ₹4,999 are the natural stopping points) and stack a sitewide code (GET10 or GRABON5) with a MobiKwik cashback offer if your cart crosses ₹3,999. That combination — freebie product + percentage discount + wallet cashback — gives a total effective saving well above any single coupon code on its own.
+                </p>
+
+              </div>
             </div>
 
-            {/* Sidebar */}
+            {/* Sidebar Column */}
             <div className="space-y-10">
               <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular GNC Searches</h3>
+                <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+                  Popular GNC Searches
+                </p>
                 <div className="flex flex-wrap gap-2.5">
-                  {["GNC Coupons", "Whey Protein Offers", "Supplement Deals India", "GNC Sale", "Weight Management Discounts", "Sports Nutrition Offers", "GNC Bank Offers", "CouponsCrew Fitness"].map(tag => (
+                  {["GNC Coupons", "Protein Powder Offers", "Creatine Deals", "Multivitamin Discounts", "App Exclusive Offers", "PRO Access Rewards", "CouponsCrew Home"].map(tag => (
                     <a
                       key={tag}
                       href={`/search?q=${encodeURIComponent(tag)}`}
@@ -758,28 +1113,6 @@ export default function GncStore() {
                     >
                       {tag}
                     </a>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white rounded-[40px] p-10 border-2 border-[#f0f0f0] shadow-sm">
-                <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Today's Top GNC Deals</h3>
-                <div className="space-y-6">
-                  {[
-                    { heading: "[TODO: deal 1 heading]", sub: "[TODO: deal 1 subtext]" },
-                    { heading: "[TODO: deal 2 heading]", sub: "[TODO: deal 2 subtext]" },
-                    { heading: "[TODO: deal 3 heading]", sub: "[TODO: deal 3 subtext]" },
-                    { heading: "[TODO: deal 4 heading]", sub: "[TODO: deal 4 subtext]" },
-                    { heading: "[TODO: deal 5 heading]", sub: "[TODO: deal 5 subtext]" }
-                  ].map((deal, i) => (
-                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                      <div className="w-12 h-12 bg-[#f8fafc] rounded-2xl flex items-center justify-center text-[#5B4FBE] font-black text-xl italic shadow-inner">G</div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-black font-black text-[11px] uppercase tracking-widest leading-none group-hover:text-[#5B4FBE] transition-colors">{deal.heading}</p>
-                        <p className="text-gray-600 font-medium text-[12px] truncate leading-none mt-0.5 normal-case">{deal.sub}</p>
-                      </div>
-                      <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Get GNC deal: ${deal.heading}`} className="bg-[#f0eeff] text-[#5B4FBE] px-3.5 py-2 rounded-xl text-[12px] font-black uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-90">Get Deal</a>
-                    </div>
                   ))}
                 </div>
               </div>
