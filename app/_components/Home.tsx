@@ -16,7 +16,8 @@ import Footer from '../../src/components/Footer';
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const heroSlides = [
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239479/Minimalist_qa77z6.webp', alt: 'Minimalist Deals', href: 'https://amzn.to/4oRAEV3' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1793119630/perffy_kh9jh3_q1kczi.webp', alt: 'Minimalist Deals', href: 'https://www.underratedclub.com/?utm_source=affnads&utm_medium=affiliate&utm_campaign=couponscrew' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239479/Minimalist_qa77z6.webp', alt: 'Minimalist Deals', href: 'https://www.underratedclub.com/?utm_source=affnads&utm_medium=affiliate&utm_campaign=couponscrew' },
   { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239172/perffy_kh9jh3.webp', alt: 'Pepperfry Deals', href: 'https://track.vcommission.com/click?campaign_id=10194&pub_id=130349' },
   { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239589/desidiya-moon_n01ghx.webp', alt: 'Desidiya Moon Deals', href: 'https://amzn.to/4bdFyGa' },
 ];
