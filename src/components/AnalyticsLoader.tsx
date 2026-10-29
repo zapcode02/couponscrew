@@ -37,6 +37,7 @@ export default function AnalyticsLoader() {
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "yn30cqgqri");
       `}</Script>
+      <Script src="https://analytics.ahrefs.com/analytics.js" data-key="LPTWZ6t9RabssN/CLhANEw" strategy="afterInteractive" />
     </>
   );
 }
