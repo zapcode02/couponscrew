@@ -69,6 +69,9 @@ export const metadata: Metadata = {
     // 32x32 favicon, which would look blurry there.
     apple: 'https://res.cloudinary.com/dgy1atvb8/image/upload/w_180,h_180,c_fill,f_auto,q_auto/v1781539632/favicon_jxwnvu.png',
   },
+  other: {
+    'ahrefs-site-verification': '5edeec66e91a0699ffac5c23b646221f96e69e4587b8f99fc8c715503e18cc59',
+  },
 }
 
 // Speculation Rules API — prefetch-only hint for high-confidence next
