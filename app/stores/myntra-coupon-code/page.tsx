@@ -6,19 +6,19 @@ import { MYNTRA_COUPONS } from './_components/myntraCoupons'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
+  title: 'Myntra Coupon Code: Up to 70% Off Top Fashion Brands  ',
 
   description:
-    '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
+    'Get the latest Myntra coupon code and Myntra discount code to save up to 70% OFF on Puma, HRX, Carlton London, Roadster, Libas, Wrogn, and more.',
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/myntra-coupon-code',
   },
 
   openGraph: {
-    title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
+    title: 'Myntra Coupon Code: Up to 70% Off Top Fashion Brands  ',
     description:
-      '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
+      'Get the latest Myntra coupon code and Myntra discount code to save up to 70% OFF on Puma, HRX, Carlton London, Roadster, Libas, Wrogn, and more.',
     url: 'https://www.couponscrew.com/stores/myntra-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
+    title: 'Myntra Coupon Code: Up to 70% Off Top Fashion Brands  ',
     description:
-      '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
+      'Get the latest Myntra coupon code and Myntra discount code to save up to 70% OFF on Puma, HRX, Carlton London, Roadster, Libas, Wrogn, and more.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -85,8 +85,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/myntra-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/myntra-coupon-code',
-      name: 'Myntra Coupons code- Get Up to 90% OFF + Extra ₹300 OFF | Oct 2026  ',
-      description: '**Save more with verified Myntra coupon codes, discount codes, and exclusive offers. Get up to 90% OFF sitewide, ₹300 OFF for new users, 25% OFF first orders, plus bank cashback and fashion deals on top brands.**',
+      name: 'Myntra Coupon Code: Up to 70% Off Top Fashion Brands  ',
+      description: 'Get the latest Myntra coupon code and Myntra discount code to save up to 70% OFF on Puma, HRX, Carlton London, Roadster, Libas, Wrogn, and more.',
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',

@@ -315,10 +315,10 @@ export default function ActFibernetStore() {
                         <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
                         <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
 
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
+                        <span className="text-[9px] sm:text-[15px] uppercase tracking-[1px] font-medium opacity-90 text-center">
                           {coupon.badgeType || "OFFER"}
                         </span>
-                        <span className="text-sm sm:text-lg lg:text-xl font-black leading-tight tracking-tight my-1.5 text-center">
+                        <span className="text-sm sm:text-2xl lg:text-2xl font-black leading-tight tracking-tight my-1.5 text-center">
                           {coupon.badge}
                         </span>
                       </div>
@@ -394,98 +394,78 @@ export default function ActFibernetStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                How to Get an ACT Fibernet Offer
-              </h3>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+  <div className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    How to Apply an ACT Fibernet Discount Code
+  </div>
 
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Check serviceability for your address on act.net.in or the ACT app first.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Compare available plans by speed, data limit, and monthly or annual billing.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Choose annual billing if you want to unlock the free-months discount over monthly payment.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Submit the sign-up request — the free-installation offer, if active, applies automatically for new connections.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>An ACT technician will schedule the installation visit based on local team availability.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Existing customers can refer friends through the app to earn referral rewards on successful activations.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  <ol className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-decimal list-inside">
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Go to actcorp.in and check availability at your address — ACT Fibernet operates in select cities; verify your pincode first.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Choose your plan (speed tier + pack type) and select the plan validity — 1, 3, 6, 12, or 24 months.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        At the checkout or payment screen, look for a "Promo Code" or "Coupon Code" field.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Enter your ACT Fibernet coupon code exactly as listed and click Apply.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Confirm the saving reflects before completing payment. Most ACT discounts in October 2026 are applied automatically without a code — if no code field appears, the offer is already factored into the displayed price.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        New connections can also be initiated via the ACT Fibernet app. The app sometimes shows city-specific offers not listed on the website — check both before subscribing.
+      </span>
+    </li>
+  </ol>
+</div>
 
-            {/* Sidebar Card: Top Categories */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                ACT Fibernet Plan Highlights
-              </h3>
+<div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+  <div className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    ACT Fibernet Promo Code Not Working? What to Check
+  </div>
 
-              <div className="space-y-3.5 text-xs">
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">New Connections</span>
-                  <span className="text-[#FF5722] font-bold">Free Installation</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Annual Billing</span>
-                  <span className="text-[#FF5722] font-bold">Up to 2 Months Free</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">100 Mbps+ Plans</span>
-                  <span className="text-[#FF5722] font-bold">Unlimited Data</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Referral Program</span>
-                  <span className="text-[#FF5722] font-bold">Earn Rewards</span>
-                </div>
-              </div>
-
-              <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/stores/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
-                  <span>View All Categories</span>
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Check Serviceability First
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>ACT Fibernet is a regional fiber ISP — it's not available everywhere in India. Always confirm serviceability for your exact address before relying on any offer.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  <ul className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-disc list-inside">
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>ACT rarely releases affiliate codes.</strong> Most third-party sites list codes that either never worked or expired months ago. If a code isn't applying, it's likely inactive — the tenure-based free-months offers in the section above are more reliable savings.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>City eligibility:</strong> Some ACT offers are city-specific. The Bengaluru, Chennai, and Hyderabad pages on actcorp.in may show different plans and offers than Delhi or Pune. Confirm you're checking the page for your city.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>Plan tenure matters:</strong> The ₹500 off offer and free-month benefits apply to 6-month and 12-month plans. They do not apply to monthly or 3-month subscriptions.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>New vs. existing subscriber:</strong> Free routers, free installation, and some campaign offers are for new connections only. Existing subscribers are eligible for the referral cashback and renewal offers, which may differ.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>App vs. website offers:</strong> Log in to the ACT Fibernet app and check the offers section — city-specific deals sometimes appear there before or instead of the website.
+      </span>
+    </li>
+  </ul>
+</div>
 
           </aside>
 
@@ -493,187 +473,501 @@ export default function ActFibernetStore() {
       </section>
 
       <section className="py-24 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Main Content Column */}
-            <div className="prose max-w-none">
+      {/* Main Content Column */}
+      <div className="prose max-w-none">
+        
+        {/* Main Title - Replaced H1 with Styled Paragraph */}
+        <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+          ACT Fibernet Coupon Code: Save on Broadband Plans Across India
+        </p>
 
-              {/* Main Title - Replaced H1 with Styled Paragraph */}
-              <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-                ACT Fibernet Coupon Code: How to Get the Best Broadband Deal
+        <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+          <p>
+            An ACT Fibernet coupon code is a promo code applied during signup or renewal at actcorp.in to reduce the price of a broadband plan. ACT Fibernet runs very few affiliate promo codes — its savings structure works differently from e-commerce sites. The main ways to pay less are tenure commitments (pay for 6 or 12 months and get free months or a free router), the referral programme (₹250 off your next bill per successful referral), and occasional campaign discounts. The current confirmed offer (October 2026) is ₹500 off on eligible 6-month and 12-month plans — no code required.
+          </p>
+
+          <hr className="my-10 border-gray-200" />
+
+          <div>
+  <div className="space-y-4 text-slate-700">
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      ACT Fibernet Coupon Codes — October 2026
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Code</th>
+            <th className="p-4 font-bold">Offer</th>
+            <th className="p-4 font-bold">Condition</th>
+            <th className="p-4 font-bold">Valid Until</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">No code required</td>
+            <td className="p-4">₹500 off</td>
+            <td className="p-4">On eligible 6-month and 12-month plans</td>
+            <td className="p-4">31 Oct 2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <em>Dev note (EEAT):</em> ACT Fibernet does not release standard affiliate promo codes through coupon platforms — its discounts are applied as automatic tenure benefits or through official campaign pages. The ₹500 off offer is sourced from GrabOn (verified October 24, 2026, valid till October 31, 2026). Verify current active offers on actcorp.in before publishing. If this expiry has passed, replace with the current campaign offer from actcorp.in or the affiliate dashboard.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      ACT Fibernet Offers That Don't Need a Code
+    </p>
+
+    <p>
+      The majority of ACT Fibernet's savings are automatic when you choose a longer plan validity or a specific pack type at checkout.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Offer</th>
+            <th className="p-4 font-bold">How to Get It</th>
+            <th className="p-4 font-bold">Notes</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">1 month free</td>
+            <td className="p-4">Choose 6-month plan validity</td>
+            <td className="p-4">Available in Chennai, Hyderabad, Bengaluru, and other cities</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">2 months free</td>
+            <td className="p-4">Choose 12-month plan validity</td>
+            <td className="p-4">Available on select plans in multiple cities</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">6 months free</td>
+            <td className="p-4">Choose 24-month plan validity</td>
+            <td className="p-4">Select cities and plans; maximum saving for long-stay subscribers</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Free router</td>
+            <td className="p-4">6-month or 12-month plan on eligible tiers</td>
+            <td className="p-4">Saves ₹1,500–₹2,500 on hardware cost</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Free installation</td>
+            <td className="p-4">6-month or longer plans</td>
+            <td className="p-4">For shorter plans, installation may cost ₹1,000</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Free Netflix</td>
+            <td className="p-4">Power Pack on 6-month+ validity</td>
+            <td className="p-4">On eligible plans; Netflix subscription value ₹649/month</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Free OTT bundle</td>
+            <td className="p-4">Starter, Value, or Power Pack</td>
+            <td className="p-4">Includes ZEE5, Disney+ Hotstar, SunNXT, YuppTV, Prime Video depending on pack</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">₹250 off next bill</td>
+            <td className="p-4">Refer a friend who subscribes</td>
+            <td className="p-4">Via ACT Fibernet's Customer Referral Programme</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      The free-months deal is often worth more than any promo code. On a plan at ₹1,000/month, a 12-month plan with 2 months free is effectively ₹200/month off across the tenure — equivalent to a 16% discount. Choosing a 1-month plan and trying to apply a code rarely saves more than just committing to 6 or 12 months.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      ACT Fibernet's 4-Pack System Explained
+    </p>
+
+    <p>
+      ACT Fibernet offers the same speed tiers across four different pack types. The pack you choose at any given speed determines what's bundled — not just the speed. Most buyers don't realise this distinction exists and end up paying for OTT subscriptions they already have, or missing the internet-only option that's cheaper.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Pack Type</th>
+            <th className="p-4 font-bold">What's Included</th>
+            <th className="p-4 font-bold">Best For</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Performance Pack</td>
+            <td className="p-4">Internet-only; no OTT bundle</td>
+            <td className="p-4">Buyers who already subscribe to Netflix, JioHotstar, Prime separately — avoids paying for duplicates</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Starter Pack</td>
+            <td className="p-4">Disney+ Hotstar, ZEE5, SunNXT, YuppTV + 300+ TV channels</td>
+            <td className="p-4">Light streamers who want a basic content bundle</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Value Pack</td>
+            <td className="p-4">Prime Video, Disney+ Hotstar, ZEE5, SunNXT, YuppTV + 300+ TV channels</td>
+            <td className="p-4">Mid-range streaming users; no Netflix</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Power Pack</td>
+            <td className="p-4">Netflix, Prime Video, Disney+ Hotstar, ZEE5, SunNXT, YuppTV + 300+ TV channels</td>
+            <td className="p-4">Households that stream across multiple platforms</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Example (Pune, 200 Mbps tier):
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Pack</th>
+            <th className="p-4 font-bold">Monthly Price</th>
+            <th className="p-4 font-bold">Includes</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Performance Pack</td>
+            <td className="p-4">₹899</td>
+            <td className="p-4">Internet only</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Starter Pack</td>
+            <td className="p-4">₹899</td>
+            <td className="p-4">Hotstar + ZEE5 + others</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Value Pack</td>
+            <td className="p-4">₹949</td>
+            <td className="p-4">Prime + Hotstar + ZEE5 + others</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Power Pack</td>
+            <td className="p-4">₹1,049</td>
+            <td className="p-4">Netflix + Prime + Hotstar + ZEE5 + others</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Prices vary by city. Check actcorp.in for your city's current rates. The pack system applies in most ACT cities but individual plan names and bundled apps may differ by location.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      The ACT Fibernet Referral Programme
+    </p>
+
+    <p>
+      ACT Fibernet's referral programme gives existing subscribers ₹250 off their next month's bill for every friend who successfully connects through their referral.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      How it works:
+    </p>
+
+    <ol className="list-decimal pl-5 space-y-2">
+      <li>Log in to your ACT Fibernet account or the ACT app.</li>
+      <li>Go to the "Refer a Friend" or "Customer Referral Programme" section.</li>
+      <li>Share your referral link or enter your friend's details.</li>
+      <li>When your friend subscribes and activates a connection, ₹250 is credited toward your next billing cycle.</li>
+    </ol>
+
+    <p className="mt-4">
+      There is no stated cap on the number of referrals, so active users in buildings or housing societies where ACT is not yet present can reduce their own bills by helping neighbours connect. The ₹250 credit applies to the subscriber's bill — the referred friend gets a new connection, not a discount.
+    </p>
+
+    <p>
+      <em>Dev note:</em> ₹250 confirmed from actcorp.in/crp-new (October 2026). GrabOn listed a higher ₹750 figure for the referral; Cashaly listed ₹250. Use ₹250 as the verified figure. Verify current referral value in the ACT app or affiliate dashboard before publishing, as this amount changes by campaign.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      The "Unlimited" Plan and ACT Fibernet's FUP: What You Need to Know
+    </p>
+
+    <p>
+      ACT Fibernet markets all its plans as unlimited data — and that's accurate in most usage scenarios. However, like most Indian ISPs, ACT applies a Fair Usage Policy (FUP) that may reduce speeds after a high-usage threshold is crossed within a billing month.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Key points:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        Plans are listed as unlimited on actcorp.in, but the ACT app may show a data usage indicator with a high threshold (reports from users have mentioned 1,500 GB limits, though these figures have varied and reportedly changed over time).
+      </li>
+      <li>
+        After the FUP threshold, speed may be throttled to a lower rate for the remainder of that billing month.
+      </li>
+      <li>
+        Most households — even heavy streamers in 4K — are unlikely to hit 1,500 GB in a month (1,500 GB at 4K streaming is roughly 600+ hours of content).
+      </li>
+      <li>
+        Power users running servers, continuous cloud backups, or seeding large files are more likely to be affected.
+      </li>
+    </ul>
+
+    <p className="mt-4">
+      <strong>Bottom line:</strong> For a household of 3–5 people streaming, gaming, and video calling, ACT Fibernet's plans work as effectively unlimited in practice. If you're a very high-volume user, confirm the current FUP terms with ACT support before subscribing.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      ACT Fibernet Upload Speed: What No One Talks About
+    </p>
+
+    <p>
+      Unlike Jio Fiber, which offers symmetric speeds (equal upload and download), ACT Fibernet's upload speed is lower than its download speed on most plans. This matters for specific use cases.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">ACT Plan Speed (Download)</th>
+            <th className="p-4 font-bold">Approximate Upload Speed</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">50 Mbps</td>
+            <td className="p-4">~25 Mbps</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">150 Mbps</td>
+            <td className="p-4">~100 Mbps</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">500 Mbps</td>
+            <td className="p-4">~150 Mbps</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">1 Gbps</td>
+            <td className="p-4">~200 Mbps</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>Who this affects:</strong> Content creators uploading to YouTube, video editors sending large files, remote workers on frequent video calls with screen sharing, and gamers hosting servers. If your primary use is downloading, streaming, and browsing, asymmetric upload is not a practical issue.
+    </p>
+
+    <p>
+      Jio Fiber offers 1 Gbps upload on its 1 Gbps plan. If symmetric upload is a hard requirement, Jio Fiber is the better fit in cities where both are available.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      ACT Fibernet vs Jio Fiber vs Airtel Xstream: Which Broadband Is Right for You?
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Feature</th>
+            <th className="p-4 font-bold">ACT Fibernet</th>
+            <th className="p-4 font-bold">Jio Fiber</th>
+            <th className="p-4 font-bold">Airtel Xstream Fiber</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Technology</td>
+            <td className="p-4">FTTH (fibre to home)</td>
+            <td className="p-4">FTTH (fibre to home)</td>
+            <td className="p-4">FTTH (fibre to home)</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Speed range</td>
+            <td className="p-4">50 Mbps–1 Gbps</td>
+            <td className="p-4">30 Mbps–1 Gbps</td>
+            <td className="p-4">40 Mbps–1 Gbps</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Upload speed</td>
+            <td className="p-4">Asymmetric (lower than download)</td>
+            <td className="p-4">Symmetric (matches download)</td>
+            <td className="p-4">Asymmetric</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">City coverage</td>
+            <td className="p-4">~19 cities</td>
+            <td className="p-4">1,600+ cities</td>
+            <td className="p-4">Pan-India, major cities</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Entry monthly price</td>
+            <td className="p-4">~₹525–₹575 (50 Mbps)</td>
+            <td className="p-4">~₹399 (30 Mbps)</td>
+            <td className="p-4">~₹499 (40 Mbps)</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Latency (South India)</td>
+            <td className="p-4">5–10 ms to local servers</td>
+            <td className="p-4">5–15 ms</td>
+            <td className="p-4">Varies</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">4G backup during outages</td>
+            <td className="p-4">No</td>
+            <td className="p-4">Yes</td>
+            <td className="p-4">No</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">OTT bundle</td>
+            <td className="p-4">Performance/Starter/Value/Power packs</td>
+            <td className="p-4">Bundled (JioTV, JioHotstar, Netflix on higher plans)</td>
+            <td className="p-4">Xstream Box + OTT apps on select plans</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Free installation</td>
+            <td className="p-4">With 6-month+ plans</td>
+            <td className="p-4">With most plans</td>
+            <td className="p-4">With qualifying offers</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Referral programme</td>
+            <td className="p-4">₹250 off next bill</td>
+            <td className="p-4">Available</td>
+            <td className="p-4">Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>Pick ACT Fibernet if:</strong> You're in one of its ~19 cities, prioritise low gaming latency (particularly to South Indian servers), and want to separate your broadband from OTT subscriptions using the Performance Pack.
+    </p>
+
+    <p>
+      <strong>Pick Jio Fiber if:</strong> You're outside ACT's coverage, need 4G backup during outages, require symmetric upload speeds for content creation or remote work, or want bundled TV and OTT in one plan.
+    </p>
+
+    <p>
+      <strong>Pick Airtel Xstream if:</strong> You want broadband bundled with live TV via the Xstream Box, and you value Airtel's pan-India network and customer service infrastructure.
+    </p>
+  </div>
+</div>
+
+          {/* FAQs Section Header - Replaced H1/H2 with Styled Paragraph */}
+          <p className="text-2xl font-black text-black mt-16 mb-8">
+            Frequently Asked Questions
+          </p>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Does ACT Fibernet have a coupon code for new connections in 2026?
               </p>
-
-              <div className="text-gray-600 font-normal leading-relaxed space-y-6">
-                <p>
-                  ACT Fibernet is a fiber-optic broadband internet service provider operating across several Indian cities. Unlike most e-commerce coupon codes, ACT Fibernet's best savings usually come from how you sign up and pay — annual billing instead of monthly, free-installation promotions on new connections, and referral rewards — rather than a single promo code entered at checkout.
-                </p>
-
-                <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                    <caption className="sr-only">ACT Fibernet Offers and Discount List</caption>
-                    <thead>
-                      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          Offer Type
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          Discount / Value
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
-                          Offer Highlights
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          User Eligibility / Terms
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#E8E8F0]">
-                      {coupons.map((row, i) => (
-                        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                            {row.type}
-                          </td>
-                          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                            {row.badge}
-                          </td>
-                          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                            {row.description}
-                          </td>
-                          <td className="px-5 py-4 whitespace-nowrap">
-                            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                              {row.userType}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <hr className="my-8 border-gray-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Monthly vs Annual Billing: Which Saves More?
-                </p>
-
-                <p>
-                  ACT Fibernet typically offers a meaningful discount for paying annually instead of monthly — often equivalent to up to 2 months of service free across a 12-month commitment. This is worth considering if you're confident you'll stay at the same address for the full year, since annual plans also lock in your current rate against future price increases.
-                </p>
-
-                <div className="overflow-x-auto my-8">
-                  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
-                    <thead>
-                      <tr className="bg-[#5B4FBE] text-white">
-                        <th className="p-4 font-bold">Billing Cycle</th>
-                        <th className="p-4 font-bold">Pros</th>
-                        <th className="p-4 font-bold">Cons</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
-                      <tr>
-                        <td className="p-4 font-semibold">Monthly</td>
-                        <td className="p-4">Lower upfront cost, easy to cancel or switch</td>
-                        <td className="p-4">No free-month discount, exposed to rate changes</td>
-                      </tr>
-                      <tr className="bg-gray-50/50">
-                        <td className="p-4 font-semibold">Annual</td>
-                        <td className="p-4">Up to 2 months free, rate locked for the year</td>
-                        <td className="p-4">Larger upfront payment, less flexible if you relocate</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Understanding the Fair Usage Policy (FUP)
-                </p>
-
-                <p>
-                  ACT Fibernet advertises most of its 100 Mbps-and-above plans as "unlimited," but like most Indian ISPs, this is typically governed by a Fair Usage Policy — meaning speeds may be adjusted after an extremely high level of monthly data consumption is crossed. For the vast majority of home users (streaming, video calls, browsing, gaming), this threshold is rarely an issue, but heavy uploaders or those running servers at home should check the current FUP terms for their specific plan.
-                </p>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Why Isn't My ACT Fibernet Offer Showing?
-                </p>
-
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    <strong>Serviceability</strong> — ACT Fibernet is a regional fiber provider and isn't available in every city or even every locality within a serviceable city.
-                  </li>
-                  <li>
-                    <strong>New-connection-only offers</strong> — free installation and similar promotions are typically limited to new sign-ups, not existing customers.
-                  </li>
-                  <li>
-                    <strong>Promotion expired</strong> — offers like student plans and OTT bundles are periodic campaigns, not permanent features.
-                  </li>
-                  <li>
-                    <strong>Plan tier mismatch</strong> — some offers (like unlimited data or OTT bundles) only apply from a certain speed tier upwards.
-                  </li>
-                </ul>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Checking Serviceability Before You Sign Up
-                </p>
-
-                <p>
-                  Before relying on any ACT Fibernet offer, check whether the service is available at your exact address. Enter your pin code or address on act.net.in or the ACT app — serviceability confirmation is the first step, since none of the plan offers matter if fiber infrastructure hasn't reached your building yet.
-                </p>
-
-              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                As of October 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code.
+              </p>
             </div>
 
-            {/* Right Column — FAQs + Sidebar */}
-            <div className="space-y-10">
-              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                  Popular ACT Fibernet Searches
-                </p>
-                <div className="flex flex-wrap gap-2.5">
-                  {["ACT Fibernet Offers", "Free Installation", "Annual Plan Discount", "Broadband Plans", "Fiber Internet Deals", "CouponsCrew Home"].map(tag => (
-                    <a
-                      key={tag}
-                      href={`/search?q=${encodeURIComponent(tag)}`}
-                      className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is ACT Fibernet available in my city?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                ACT Fibernet operates in approximately 19 cities across 8 states including Karnataka, Tamil Nadu, Telangana, Andhra Pradesh, Delhi, Gujarat, Rajasthan, and Uttar Pradesh. Key cities include Bengaluru, Hyderabad, Chennai, Delhi, Madurai, Jaipur, Lucknow, and Ahmedabad. Even within a covered city, street-level availability depends on fibre infrastructure — check your exact address at actcorp.in before subscribing.
+              </p>
             </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                What is the cheapest ACT Fibernet plan?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Entry-level plans start at approximately ₹525–₹575/month for 50 Mbps, depending on the city. The Performance Pack (internet-only) at any speed tier is typically the lowest-priced option for that speed, since it excludes the OTT bundle cost.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                How long does ACT Fibernet installation take?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                ACT Fibernet typically installs within 2–5 working days of subscribing, subject to local technician availability. Installation is free on 6-month and longer plans; shorter plans may carry a ₹1,000 installation charge.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Does ACT Fibernet truly offer unlimited data?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Plans are marketed as unlimited, and for most household usage they work that way. A Fair Usage Policy applies — very high-volume usage in a single billing month may result in reduced speeds for the remainder of that month. Standard streaming, gaming, video calling, and remote work are well within normal usage for all plan tiers.
+              </p>
+            </div>
+
           </div>
 
-          {/* FAQs Section Header - full width */}
-          <div className="mt-10">
-            <p className="text-2xl font-black text-black mt-16 mb-8">
-              ACT Fibernet Coupon Code FAQs
-            </p>
+          <hr className="my-10 border-gray-200" />
 
-            <div className="space-y-4 max-w-4xl">
-              {faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
-                  <p className="font-black text-black text-base">{faq.q}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-
-            <hr className="my-10 border-gray-200 max-w-4xl" />
-
-            <p className="max-w-4xl text-gray-600 leading-relaxed">
-              The biggest ACT Fibernet savings come from choosing annual billing and catching a free-installation window on a new connection, rather than searching for a single discount code. For more broadband and telecom deals, browse our <a href="https://www.couponscrew.com/stores/categories" className="text-[#5B4FBE] font-bold underline">all categories page</a>.
-            </p>
-          </div>
+          <p>
+            For most buyers in ACT Fibernet's cities, the best saving isn't a promo code — it's choosing the right plan tenure and pack type from the start. A 12-month commitment on the Performance Pack at your required speed typically costs 14–16% less per month than the same plan on a monthly basis, while also qualifying for free installation and a free router. Stack that with the referral programme if you know someone else in your building who needs broadband, and the effective monthly cost drops further without needing any code.
+          </p>
 
         </div>
-      </section>
+      </div>
+
+      {/* Sidebar Column */}
+      <div className="space-y-10">
+        <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+          <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular ACT Fibernet Searches
+          </p>
+          <div className="flex flex-wrap gap-2.5">
+            {["ACT Fibernet Coupons", "Broadband Offers", "High-Speed Internet Deals", "Plan Tenure Discounts", "Referral Bonus", "Free Installation", "CouponsCrew Home"].map(tag => (
+              <a
+                key={tag}
+                href={`/search?q=${encodeURIComponent(tag)}`}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* ==========================================
           INTERACTIVE CODE COPYING MODAL / POPUP

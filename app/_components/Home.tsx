@@ -278,25 +278,25 @@ export default function Home() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {[
-                { name: "Digital Music", href: "https://www.amazon.com/s?k=Digital+Music&crid=2NIFBXLL5Z1A3&sprefix=%2Caps%2C255&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp" },
-                { name: "Electronics", href: "https://www.amazon.com/s?k=Electronics&crid=21IFEFQYKAM59&sprefix=digital+music%2Caps%2C308&ref=nb_sb_noss_1", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp" },
-                { name: "Girls' Fashion", href: "https://www.amazon.com/s?k=Girls%27+Fashion&crid=XX07RQNM2V6L&sprefix=%2Caps%2C299&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp" },
-                { name: "Health & Household", href: "https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp" },
-                { name: "Home & Kitchen", href: "https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp" },
-                { name: "Industrial & Scientific", href: "https://www.amazon.com/s?k=Industrial+%26+Scientific&crid=313VQV9YAJTJ5&sprefix=%2Caps%2C297&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp" },
-                { name: "Kindle Store", href: "https://www.amazon.com/s?k=Kindle+Store&crid=TOGVXR58FT4D&sprefix=%2Caps%2C285&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp" },
-                { name: "Luggage", href: "https://www.amazon.com/s?k=Luggage&crid=20S9KCDUJCXOW&sprefix=%2Caps%2C308&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp" },
-                { name: "Men's Fashion", href: "https://www.amazon.com/s?k=Men%27s+Fashion&crid=32HY571UHUFNA&sprefix=luggage%2Caps%2C332&ref=nb_sb_noss_1", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp" },
-                { name: "Movies & TV", href: "https://www.amazon.com/s?k=Movies+%26+TV&crid=10NKB4YZZDE9O&sprefix=%2Caps%2C293&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp" },
-                { name: "Music, CDs & Vinyl", href: "https://www.amazon.com/s?k=Music%2C+CDs+%26+Vinyl&crid=3PGC2A6OF48YT&sprefix=%2Caps%2C292&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp" },
-                { name: "Pet Supplies", href: "https://www.amazon.com/s?k=Pet+Supplies&crid=2FDO7PR0RR4EE&sprefix=%2Caps%2C307&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp" },
+                { name: "Digital Music", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp" },
+                { name: "Electronics", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp" },
+                { name: "Girls' Fashion", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp" },
+                { name: "Health & Household", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp" },
+                { name: "Home & Kitchen", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp" },
+                { name: "Industrial & Scientific", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp" },
+                { name: "Kindle Store", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp" },
+                { name: "Luggage", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp" },
+                { name: "Men's Fashion", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp" },
+                { name: "Movies & TV", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp" },
+                { name: "Music, CDs & Vinyl", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp" },
+                { name: "Pet Supplies", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp" },
                 { name: "Prime Video", href: "https://www.primevideo.com/region/eu/", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/prime-video_rh68ok.webp" },
-                { name: "Software", href: "https://www.amazon.com/s?k=Software&crid=2UANDI5I6UN7A&sprefix=%2Caps%2C314&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp" },
-                { name: "Sports & Outdoors", href: "https://www.amazon.com/s?k=Sports+%26+Outdoors&crid=31W9FSA2B00K0&sprefix=%2Caps%2C310&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp" },
-                { name: "Tools & Home Improvement", href: "https://www.amazon.com/s?k=Tools+%26+Home+Improvement&crid=3G0COOI6O799D&sprefix=%2Caps%2C291&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp" },
-                { name: "Toys & Games", href: "https://www.amazon.com/s?k=Toys+%26+Games&crid=3N8EHDC3584CS&sprefix=%2Caps%2C292&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp" },
-                { name: "Video Games", href: "https://www.amazon.com/s?k=Video+Games&crid=PAOA9FXMRRMR&sprefix=%2Caps%2C304&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp" },
-                { name: "Women's Fashion", href: "https://www.amazon.com/s?k=Women%27s+Fashion&crid=OA50VIVKRLY7&sprefix=%2Caps%2C322&ref=nb_sb_noss_2", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp" }
+                { name: "Software", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp" },
+                { name: "Sports & Outdoors", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp" },
+                { name: "Tools & Home Improvement", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp" },
+                { name: "Toys & Games", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp" },
+                { name: "Video Games", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp" },
+                { name: "Women's Fashion", href: "https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp" }
               ].map((card, i) => (
                 <a
                   key={i}
@@ -384,17 +384,17 @@ export default function Home() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {[
-                { name: "Fashion", href: "https://www.flipkart.com/search?q=fashion", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/fashion_k7hetc.webp" },
-                { name: "Mobile Phones", href: "https://www.flipkart.com/search?q=mobiles", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/mobiles_uqv7yv.webp" },
-                { name: "Electronics", href: "https://www.flipkart.com/search?q=electronics", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/electronics_ld8oad.webp" },
-                { name: "Appliances & Home", href: "https://www.flipkart.com/search?q=appliances", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/appliances_enczxa.webp" },
-                { name: "Grocery", href: "https://www.flipkart.com/grocery-supermart-store", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/food_erg2q2.webp" },
-                { name: "Toys, Baby & Kids", href: "https://www.flipkart.com/search?q=toys+and+baby", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/food_erg2q2.webp" },
-                { name: "Auto Accessories", href: "https://www.flipkart.com/search?q=auto+accessories", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/Auto_ss11ug.webp" },
-                { name: "Sports & Fitness", href: "https://www.flipkart.com/search?q=sports+and+fitness", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/sports_iggh8p.webp" },
-                { name: "Furniture", href: "https://www.flipkart.com/search?q=furniture", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/furtinure_j002jv.webp" },
-                { name: "Books & Media", href: "https://www.flipkart.com/search?q=books", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013943/books_jyrg16.webp" },
-                { name: "Two-Wheelers", href: "https://www.flipkart.com/search?q=two+wheelers", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787014677/two-wheeler_egsg2m.webp" }
+                { name: "Fashion", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/fashion_k7hetc.webp" },
+                { name: "Mobile Phones", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/mobiles_uqv7yv.webp" },
+                { name: "Electronics", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/electronics_ld8oad.webp" },
+                { name: "Appliances & Home", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/appliances_enczxa.webp" },
+                { name: "Grocery", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/food_erg2q2.webp" },
+                { name: "Toys, Baby & Kids", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/food_erg2q2.webp" },
+                { name: "Auto Accessories", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013941/Auto_ss11ug.webp" },
+                { name: "Sports & Fitness", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/sports_iggh8p.webp" },
+                { name: "Furniture", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013942/furtinure_j002jv.webp" },
+                { name: "Books & Media", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787013943/books_jyrg16.webp" },
+                { name: "Two-Wheelers", href: "https://fktr.in/t20Bt7C", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787014677/two-wheeler_egsg2m.webp" }
               ].map((card, i) => (
                 <a
                   key={i}
@@ -482,11 +482,11 @@ export default function Home() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {[
-                { name: "Men's Fashion", href: "https://www.myntra.com/men-clothing", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/mens-fashion_opgug3.webp" },
-                { name: "Women's Fashion", href: "https://www.myntra.com/fusion-wear", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016852/womens-fashion_ey5y9t.webp" },
-                { name: "Kids' Fashion", href: "https://www.myntra.com/kids", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787017225/kid-fashion_oq7snr.webp" },
-                { name: "Beauty & Personal Care", href: "https://www.myntra.com/personal-care", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016786/beauty-personal_pna7wy.webp" },
-                { name: "Gift Cards", href: "https://www.myntra.com/giftcard", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/myntra-gift-card_ppyusj.webp" }
+                { name: "Men's Fashion", href: "https://myntr.it/y6bko1t", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/mens-fashion_opgug3.webp" },
+                { name: "Women's Fashion", href: "https://myntr.it/y6bko1t", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016852/womens-fashion_ey5y9t.webp" },
+                { name: "Kids' Fashion", href: "https://myntr.it/y6bko1t", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787017225/kid-fashion_oq7snr.webp" },
+                { name: "Beauty & Personal Care", href: "https://myntr.it/y6bko1t", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016786/beauty-personal_pna7wy.webp" },
+                { name: "Gift Cards", href: "https://myntr.it/y6bko1t", img: "https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/myntra-gift-card_ppyusj.webp" }
               ].map((card, i) => (
                 <a
                   key={i}

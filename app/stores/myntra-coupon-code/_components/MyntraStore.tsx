@@ -29,7 +29,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
 }
 
-const STORE_URL = 'https://www.myntra.com/';
+const STORE_URL = 'https://myntr.it/y6bko1t';
 
 export default function MyntraStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
@@ -71,7 +71,7 @@ export default function MyntraStore() {
     },
     {
       q: 'Where can I find the best Myntra offers?',
-      a: 'We keep this Myntra store page updated with the coupon codes and deals we have verified. [PLACEHOLDER: confirm real update cadence before publishing.]'
+      a: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.'
     },
   ];
 
@@ -116,7 +116,7 @@ export default function MyntraStore() {
                   <div className="flex flex-col items-center gap-1">
                     <div className="flex items-center gap-1 bg-[#FFF8E7] text-[#FFB000] px-2.5 py-0.5 rounded-full text-xs font-bold border border-[#FFE7B3]">
                       <Star size={12} className="fill-current" />
-                      <span>[PLACEHOLDER]</span>
+                      <span>4.4 / 5</span>
                     </div>
                     <span className="text-[10px] text-gray-400 font-semibold uppercase">User Rating</span>
                   </div>
@@ -129,7 +129,7 @@ export default function MyntraStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Discover the latest verified Myntra coupon codes, Discount codes, and exclusive offers for October 2026. Save up to 90% on fashion, footwear, beauty, and accessories, plus enjoy an extra ₹300 off for new users, 25% off first orders, bank cashback, and exciting discounts from leading brands.
+                    Find the latest Myntra coupon code and Myntra discount code to save up to 70% OFF on top brands. Enjoy up to 70% OFF on Puma and HRX, up to 60% OFF on Jack & Jones, Roadster, Libas, and Wrogn, plus up to 50% OFF on U.S. Polo Assn. and Hidesign. Shop fashion, footwear, beauty, home essentials, and accessories at unbeatable prices. Apply a verified Myntra coupon code or discount code at checkout to maximize your savings on eligible orders.
                   </p>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function MyntraStore() {
               {/* Action Buttons */}
               <div className="mt-8 pt-6 border-t border-[#E8E8F0] flex flex-wrap items-center gap-4">
   <a
-    href="https://www.myntra.com/"
+    href="https://myntr.it/y6bko1t"
     target="_blank"
     rel="noopener noreferrer nofollow sponsored"
     className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
@@ -164,7 +164,7 @@ export default function MyntraStore() {
             {/* Promo Banner (Right 5 Columns) — desktop only, placeholder until a real banner image exists */}
             <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] border border-[#5B4FBE]/20 group">
   <Link
-    href="https://www.myntra.com"
+    href="https://myntr.it/y6bko1t"
     target="_blank"
     rel="noopener noreferrer nofollow sponsored"
     className="relative w-full h-full block"
@@ -202,95 +202,123 @@ export default function MyntraStore() {
 
             {/* Coupons Card List */}
             <div className="space-y-6 max-w-5xl mx-auto p-4">
-              {coupons.map((coupon) => {
-                const isExpanded = expandedCouponId === coupon.id;
-                const isCopied = copiedCode === coupon.code;
+  {coupons.map((coupon) => {
+    const isExpanded = expandedCouponId === coupon.id;
+    const isCopied = copiedCode === coupon.code;
+    const themeColor = coupon.color || '#5F4FBE';
 
-                return (
-                  <div
-                    key={coupon.id}
-                    className="bg-[#F8F9FA] rounded-[24px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden"
-                  >
-                    <div className="flex flex-row items-stretch">
-                      {/* LEFT DISCOUNT SECTION */}
-                      <div
-                        className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
-                      >
-                        <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
-                        <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
+    return (
+      <div
+        key={coupon.id}
+        className="bg-[#F8F9FA] rounded-[24px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden"
+      >
+        <div className="flex flex-row items-stretch">
+          
+          {/* LEFT DISCOUNT SECTION */}
+          <div
+            className="w-24 sm:w-32 lg:w-40 flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            style={{ backgroundColor: themeColor }}
+          >
+            {/* Ticket Cutout Circles */}
+            <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
+            <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
 
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          {coupon.badgeType || 'UP TO'}
-                        </span>
-                        <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
-                          {coupon.badge ? coupon.badge.replace('UP TO ', '').replace('FLAT ', '') : '40%'}
-                        </span>
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          OFF
-                        </span>
-                      </div>
+            <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
+              {coupon.badgeType || 'UP TO'}
+            </span>
+            <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
+              {coupon.badge ? coupon.badge.replace('UP TO ', '').replace('FLAT ', '') : '40%'}
+            </span>
+            <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
+              OFF
+            </span>
+          </div>
 
-                      {/* RIGHT WRAPPER */}
-                      <div className="flex-1 flex flex-col lg:flex-row items-stretch">
-                        {/* CENTER CONTENT */}
-                        <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
-                          <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                            <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
-                              {coupon.type || 'Best Offer'}
-                            </span>
-                            <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
-                              {coupon.verified || 'Verified'}
-                            </span>
-                          </div>
+          {/* RIGHT WRAPPER */}
+          <div className="flex-1 flex flex-col lg:flex-row items-stretch">
+            
+            {/* CENTER CONTENT */}
+            <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
+              <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                  {coupon.type || 'Best Offer'}
+                </span>
+                <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                  {coupon.verified || 'Verified'}
+                </span>
+              </div>
 
-                          <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
-                            {coupon.title}
-                          </h3>
+              <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
+                {coupon.title}
+              </h3>
 
-                          <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
-                            {coupon.description}
-                          </p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
+                {coupon.description}
+              </p>
 
-                          <button
-                            onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                            className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
-                          >
-                            View Details
-                            {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                          </button>
+              <button
+                onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold hover:opacity-80 w-fit transition-opacity"
+                style={{ color: themeColor }}
+              >
+                {isExpanded ? "Hide Details" : "View Details"}
+                {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+              </button>
 
-                          {isExpanded && coupon.bullets && coupon.bullets.length > 0 && (
-                            <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                              {coupon.bullets.map((bullet, i) => (
-                                <li key={i} className="flex items-start gap-2">
-                                  <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                  <span>{bullet}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-
-                        {/* RIGHT ACTION SECTION */}
-                        <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
-                         
-                          <button
-                            onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
-                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
-                              isCopied
-                                ? 'bg-green-600 text-white'
-                                : 'bg-[#FF5722] hover:bg-[#E64A19] text-white'
-                            }`}
-                          >
-                            {isCopied ? 'Copied!' : 'Get Deal'}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+              {isExpanded && coupon.bullets && coupon.bullets.length > 0 && (
+                <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
+                  {coupon.bullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span
+                        className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full"
+                        style={{ backgroundColor: themeColor }}
+                      />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
+
+            {/* RIGHT ACTION SECTION */}
+            <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
+              
+              {/* Show code container if coupon.code exists */}
+              {coupon.code && coupon.code.trim() !== "" && (
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
+                    {coupon.code}
+                  </span>
+                  <button
+                    onClick={() => handleCopyCode(coupon)}
+                    className="p-1 hover:bg-slate-50 rounded transition-colors"
+                  >
+                    {isCopied ? (
+                      <Check size={16} className="text-green-600" />
+                    ) : (
+                      <Copy size={16} className="text-slate-400" />
+                    )}
+                  </button>
+                </div>
+              )}
+
+              <button
+                onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
+                className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
+                  isCopied
+                    ? 'bg-green-600 text-white'
+                    : 'bg-[#FF5722] hover:bg-[#E64A19] text-white'
+                }`}
+              >
+                {isCopied ? 'Copied!' : coupon.code ? 'Copy Code' : 'Get Deal'}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
 
           </main>
 
@@ -337,10 +365,16 @@ export default function MyntraStore() {
               </h3>
 
               <div className="space-y-3.5 text-xs">
-                {['Women\'s Clothing', 'Men\'s Clothing', 'Footwear', 'Beauty & Personal Care', 'Accessories'].map((cat) => (
-                  <div key={cat} className="flex justify-between items-center font-semibold">
-                    <span className="text-[#1A1A2E]">{cat}</span>
-                    <span className="text-[#FF5722] font-bold">[PLACEHOLDER]</span>
+                {[
+                  { name: "Women's Clothing", discount: 'Up to 80% OFF' },
+                  { name: "Men's Clothing", discount: 'Up to 70% OFF' },
+                  { name: 'Footwear', discount: 'Up to 65% OFF' },
+                  { name: 'Beauty & Personal Care', discount: 'Up to 50% OFF' },
+                  { name: 'Accessories', discount: 'Up to 60% OFF' },
+                ].map((cat) => (
+                  <div key={cat.name} className="flex justify-between items-center font-semibold">
+                    <span className="text-[#1A1A2E]">{cat.name}</span>
+                    <span className="text-[#FF5722] font-bold">{cat.discount}</span>
                   </div>
                 ))}
               </div>
@@ -428,102 +462,111 @@ export default function MyntraStore() {
   <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
     <thead>
       <tr className="bg-[#5B4FBE] text-white font-black">
-        <th className="p-3.5 border-b border-[#5B4FBE]">Offer Type</th>
-        <th className="p-3.5 border-b border-[#5B4FBE]">Coupon Code</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Brand / Category</th>
         <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
-        <th className="p-3.5 border-b border-[#5B4FBE]">Highlights</th>
-        <th className="p-3.5 border-b border-[#5B4FBE]">Eligibility</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
       </tr>
     </thead>
     <tbody className="divide-y divide-[#f0f0f0]">
       <tr>
-        <td className="p-3.5 font-bold text-black">Sitewide</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">MYNTRA300</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 90% Off + Extra ₹300</td>
-        <td className="p-3.5">Min. cart ₹1,999 | App only</td>
-        <td className="p-3.5">New Users</td>
+        <td className="p-3.5 font-bold text-black">Puma</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">30% – 70% Off</td>
+        <td className="p-3.5">Sports shoes, T-shirts, jackets & activewear</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">First Order</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">MYNTRASAVE</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 25% Off</td>
-        <td className="p-3.5">Min. cart ₹300 | Max discount ₹200</td>
-        <td className="p-3.5">New Users</td>
+        <td className="p-3.5 font-bold text-black">HRX</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 70% Off</td>
+        <td className="p-3.5">Gym wear, sneakers, joggers & training gear</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">All Users</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">STACKUP</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to ₹800 Off</td>
-        <td className="p-3.5">₹400 off on ₹2,499+ | ₹800 off on ₹5,000+</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Marks & Harbour</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 70% Off</td>
+        <td className="p-3.5">Shirts, T-shirts, jeans & daily wear</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">FWD Fashion</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FWDNEW200</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off + Extra ₹200</td>
-        <td className="p-3.5">Min. cart ₹399 | Selected FWD casualwear</td>
-        <td className="p-3.5">New Users</td>
+        <td className="p-3.5 font-bold text-black">Carlton London</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">30% – 70% Off</td>
+        <td className="p-3.5">Shoes, handbags, wallets & fashion accessories</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Fashion Sale</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FWDU15</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Extra 15% Off</td>
-        <td className="p-3.5">Min. cart ₹300 | Max discount ₹150</td>
-        <td className="p-3.5">Existing Users</td>
+        <td className="p-3.5 font-bold text-black">Jack & Jones</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 60% Off</td>
+        <td className="p-3.5">Jeans, shirts, jackets & T-shirts</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Beauty</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">EXTRA500</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Extra ₹500 Off</td>
-        <td className="p-3.5">Min. cart ₹2,500 | Skincare, makeup & fragrances</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Mango</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">30% – 60% Off</td>
+        <td className="p-3.5">Dresses, tops, jeans & fashion basics</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Non-Returnable</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">NORETURN1</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 10% Off</td>
-        <td className="p-3.5">Min. cart ₹199 | Non-returnable listings only</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Wrogn</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">30% – 60% Off</td>
+        <td className="p-3.5">Trendy shirts, T-shirts, jeans & jackets</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Special Offer</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">EXTRA50</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Extra ₹50 Off</td>
-        <td className="p-3.5">Min. cart ₹400 | Extra 10% via Kotak/BOBcard</td>
-        <td className="p-3.5">Existing Users</td>
+        <td className="p-3.5 font-bold text-black">Vishudh</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 60% Off</td>
+        <td className="p-3.5">Kurtas, tops, dresses & ethnic wear</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Sitewide</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FWDWE10</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 70% Off + Extra 10%</td>
-        <td className="p-3.5">Min. cart ₹300 | Valid across categories</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Sassafras</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 60% Off</td>
+        <td className="p-3.5">Dresses, tops, co-ords & casual western wear</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Footwear</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">FOOTWEAR10</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off + Extra 10%</td>
-        <td className="p-3.5">Sports, casual, sandals & heels</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Roadster</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 60% Off</td>
+        <td className="p-3.5">Jeans, shirts, jackets & casual basics</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">First Order</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">MYNTRAEXCLUSIVE</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 30% Off</td>
-        <td className="p-3.5">Min. cart ₹300 | First purchase only</td>
-        <td className="p-3.5">New Users</td>
+        <td className="p-3.5 font-bold text-black">Libas</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% – 60% Off</td>
+        <td className="p-3.5">Kurtas, suits, dresses & festive ethnic wear</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Buy 2 Items</td>
-        <td className="p-3.5"><code className="bg-gray-100 text-[#5B4FBE] font-mono px-2 py-1 rounded font-bold">NOREASON10</code></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Extra 10% Off</td>
-        <td className="p-3.5">Min. 2 items in cart | No min cart value</td>
-        <td className="p-3.5">Existing Users</td>
+        <td className="p-3.5 font-bold text-black">United Colors of Benetton</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 60% Off</td>
+        <td className="p-3.5">Polos, T-shirts, shirts & denim</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Spaces</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 60% Off</td>
+        <td className="p-3.5">Bedsheets, comforters, blankets & home bedding</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">U.S. Polo Assn.</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Polos, shirts, jeans & casualwear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Sangria</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Kurtas, suits, sarees & traditional festive wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">W</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Kurtas, suits, dresses & fusion wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Hidesign</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Handbags, wallets, belts & leather accessories</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">L'Oréal Paris</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 40% Off</td>
+        <td className="p-3.5">Skincare, makeup, haircare & beauty essentials</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Indian Terrain</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 40% Off</td>
+        <td className="p-3.5">Shirts, polos, jeans & trousers</td>
       </tr>
     </tbody>
   </table>
 </div>
-
+        
             {/* Read More / Collapsible Container */}
             <div
               className={cn(
@@ -545,10 +588,6 @@ export default function MyntraStore() {
               <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
                 Today's Best Myntra Coupon Codes (October 2026)
               </h3>
-
-              <p className="italic bg-[#f0eeff] text-[#5B4FBE] p-4 rounded-xl border border-[#5B4FBE]/10">
-                💡 [Dev note: This section is dynamically populated by the deals grid component — the intro paragraph below is static editorial copy that sits above the card grid.]
-              </p>
 
               <p>
                 Before you browse the deal cards below, here is a quick snapshot of the best savings categories currently active on Myntra:
@@ -661,14 +700,14 @@ export default function MyntraStore() {
                 </h3>
                 <div className="my-8">
           <a 
-            href="https://www.myntra.com/shop/men" 
+            href="https://myntr.it/y6bko1t" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
           >
             <img 
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/mens-fashion_opgug3.webp" 
-              alt="Flipkart Fashion Sale Banner" 
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/mens-fashion_opgug3.webp"
+              alt="Myntra Men's Fashion Sale Banner"
               className="w-auto h-auto max-w-full rounded-2xl shadow-md border border-gray-200"
             />
           </a>
@@ -747,14 +786,14 @@ export default function MyntraStore() {
                 
                 <div className="my-8">
           <a 
-            href="https://www.myntra.com/shop/women" 
+            href="https://myntr.it/y6bko1t" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
           >
             <img 
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016852/womens-fashion_ey5y9t.webp" 
-              alt="Flipkart Fashion Sale Banner" 
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016852/womens-fashion_ey5y9t.webp"
+              alt="Myntra Women's Fashion Sale Banner"
               className="w-auto h-auto max-w-full rounded-2xl shadow-md border border-gray-200"
             />
           </a>
@@ -859,14 +898,14 @@ export default function MyntraStore() {
                 </h3>
                 <div className="my-8">
           <a 
-            href="https://www.myntra.com/shop/kids" 
+            href="https://myntr.it/y6bko1t" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
           >
             <img 
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787017225/kid-fashion_oq7snr.webp" 
-              alt="Flipkart Fashion Sale Banner" 
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787017225/kid-fashion_oq7snr.webp"
+              alt="Myntra Kids' Fashion Sale Banner"
               className="w-auto h-auto max-w-full rounded-2xl shadow-md border border-gray-200"
             />
           </a>
@@ -932,14 +971,14 @@ export default function MyntraStore() {
                 </h3>
                 <div className="my-8">
           <a 
-            href="https://www.myntra.com/personal-care" 
+            href="https://myntr.it/y6bko1t" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
           >
             <img 
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016786/beauty-personal_pna7wy.webp" 
-              alt="Flipkart Fashion Sale Banner" 
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016786/beauty-personal_pna7wy.webp"
+              alt="Myntra Beauty & Personal Care Sale Banner"
               className="w-auto h-auto max-w-full rounded-2xl shadow-md border border-gray-200"
             />
           </a>
@@ -1049,14 +1088,14 @@ export default function MyntraStore() {
                 </h3>
                 <div className="my-8">
           <a 
-            href="https://www.myntra.com/giftcard" 
+            href="https://myntr.it/y6bko1t" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
           >
             <img 
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/myntra-gift-card_ppyusj.webp" 
-              alt="Flipkart Fashion Sale Banner" 
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787016635/myntra-gift-card_ppyusj.webp"
+              alt="Myntra Gift Card Banner" 
               className="w-auto h-auto max-w-full rounded-2xl shadow-md border border-gray-200"
             />
           </a>

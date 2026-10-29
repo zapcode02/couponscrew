@@ -76,42 +76,52 @@ const schema = {
       sameAs: ['https://www.instagram.com/igp.com'],
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
+   {
+  "@type": "FAQPage",
+  "@id": "https://www.couponscrew.com/stores/igp-coupon-code#faqpage",
+  "mainEntity": [
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/igp-coupon-code#faqpage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'How do I use an IGP coupon code?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Add your gift items to the cart on igp.com, go to checkout, and enter the code in the "Apply Coupon" field before payment. The discount updates the order total instantly.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can I use multiple coupon codes on IGP?',
-          acceptedAnswer: { '@type': 'Answer', text: 'No — IGP allows one promo code per order. Occasion-specific sale pricing may already be reflected in the listed price alongside a code, but two separate codes cannot be combined.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Why is my IGP promo code not working?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Common reasons: the code has expired, your cart is below the minimum order value, the code excludes personalized or corporate gifting items, or it was limited to new users only.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Where can I find the best IGP offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this IGP store page updated 24/7 with the best discounts, verified coupon codes, and upcoming occasion-based sale dates.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Does IGP offer same-day delivery?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, IGP offers same-day delivery on cakes, flowers, and select gifts in major Indian cities, subject to ordering before the cut-off time shown on the product page.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'How often are IGP coupons updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.' },
-        },
-      ],
+      "@type": "Question",
+      "name": "What is the best IGP coupon code right now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As of October 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Does IGP offer same-day delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — IGP offers same-day delivery in 400+ cities and 30-minute delivery in 25+ cities. Fresh flowers and cakes qualify for express slots. Personalised items require 2–3 additional production days and do not qualify for same-day or express delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel an IGP order after placing it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the product type. Standard courier items can be cancelled before dispatch — contact support immediately after ordering. Personalised gifts (photo products, engraved items, custom cakes) cannot be cancelled once confirmed. Perishables (fresh flowers and plain cakes) are not refunded, but IGP issues a replacement if you report a problem within 24 hours of delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does IGP coupon code work with CashKaro cashback?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can use a valid coupon code at IGP checkout and earn CashKaro cashback on the same order, as long as you shop through the CashKaro portal link (not the app), and pay without IGP Wallet or gift vouchers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is IGP reliable for international delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IGP ships to 100+ countries for international orders and processes most international deliveries within 4–7 business days. For NRIs sending gifts to Indian addresses, the delivery is domestic (within India) — you just pay from abroad using an international card. This typically processes faster than true cross-border shipping."
+      }
+    }
+  ]
+},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/igp-coupon-code#offerlist',

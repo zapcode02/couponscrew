@@ -77,41 +77,51 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/act-fibernet-coupon-code#faqpage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'How do I use an ACT Fibernet coupon code?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Most ACT Fibernet offers — free installation, annual plan discounts — are applied automatically when you sign up or renew through act.net.in or the ACT app, rather than through a manually entered code.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can I combine multiple ACT Fibernet offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Some offers can combine, such as free installation with an annual plan discount, while others (like a referral reward) are separate and credited independently. Check the terms shown at sign-up for your specific plan.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Why is my ACT Fibernet offer not available?',
-          acceptedAnswer: { '@type': 'Answer', text: 'The most common reason is serviceability — ACT Fibernet is not available in every city or locality. Other reasons include a promotion having ended, or the offer being limited to new connections only.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Where can I find the best ACT Fibernet offers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this ACT Fibernet store page updated 24/7 with the best discounts, verified offers, and upcoming promotional plans.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Does ACT Fibernet charge for installation?',
-          acceptedAnswer: { '@type': 'Answer', text: 'ACT Fibernet frequently runs free-installation promotions on new connections, though this can vary by city and current campaign. Confirm the applicable terms when you sign up.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'How often are ACT Fibernet offers updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates offers every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working offers.' },
-        },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponscrew.com/stores/act-fibernet-coupon-code#faqpage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does ACT Fibernet have a coupon code for new connections in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As of October 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "Is ACT Fibernet available in my city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ACT Fibernet operates in approximately 19 cities across 8 states including Karnataka, Tamil Nadu, Telangana, Andhra Pradesh, Delhi, Gujarat, Rajasthan, and Uttar Pradesh. Key cities include Bengaluru, Hyderabad, Chennai, Delhi, Madurai, Jaipur, Lucknow, and Ahmedabad. Even within a covered city, street-level availability depends on fibre infrastructure — check your exact address at actcorp.in before subscribing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cheapest ACT Fibernet plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entry-level plans start at approximately ₹525–₹575/month for 50 Mbps, depending on the city. The Performance Pack (internet-only) at any speed tier is typically the lowest-priced option for that speed, since it excludes the OTT bundle cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does ACT Fibernet installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ACT Fibernet typically installs within 2–5 working days of subscribing, subject to local technician availability. Installation is free on 6-month and longer plans; shorter plans may carry a ₹1,000 installation charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ACT Fibernet truly offer unlimited data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plans are marketed as unlimited, and for most household usage they work that way. A Fair Usage Policy applies — very high-volume usage in a single billing month may result in reduced speeds for the remainder of that month. Standard streaming, gaming, video calling, and remote work are well within normal usage for all plan tiers."
+      }
+    }
+  ]
+},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/act-fibernet-coupon-code#offerlist',

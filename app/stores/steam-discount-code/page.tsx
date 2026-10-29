@@ -77,41 +77,51 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-      '@type': 'FAQPage',
-      '@id': 'https://www.couponscrew.com/stores/steam-discount-code#faqpage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'How do I use a Steam discount code?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Most Steam discounts are shown directly on the store page during sale events — no code needs to be entered at checkout. Gift cards and wallet codes are redeemed separately under Account > Add Funds.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can I stack multiple Steam discounts?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Sale discounts, regional pricing, and wallet credit (from selling trading cards) can all combine on a single purchase, but Steam does not support separate stackable promo codes beyond the sale price shown.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Why can\'t I get a Steam refund?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Refunds are only available within 14 days of purchase and under 2 hours of playtime. Games played beyond this window, or purchased outside the eligibility period, are generally not eligible for a standard refund.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Where can I find the best Steam deals?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We keep this Steam store page updated 24/7 with the best discounts, sale events, and upcoming promotional periods.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Is it safe to buy Steam keys from third-party resellers?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Only buy from Steam directly or well-known, reputable resellers. Unofficial key resellers carry a risk of invalid, region-locked, or fraudulently obtained keys — if in doubt, buy directly on store.steampowered.com.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'How often are Steam offers updated?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Our deals team verifies and updates offers every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working offers.' },
-        },
-      ],
+  "@type": "FAQPage",
+  "@id": "https://www.couponscrew.com/stores/steam-discount-code#faqpage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Steam have coupon codes in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Steam does not release affiliate promo codes or coupon codes for games. The platform's discount system works entirely through seasonal sales (where individual game prices drop by up to 95%) and the Steam Wallet gift card programme. There is no code field at checkout for game purchases."
+      }
     },
+    {
+      "@type": "Question",
+      "name": "When is the next Steam sale in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The next major Steam event is Steam Scream V Fest (horror game sale), starting October 26, 2026 and running through November 2. The next sitewide sale after that is the Steam Winter Sale, from December 17, 2026 to January 4, 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much cheaper is Steam in India compared to USA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "India's INR pricing is typically 35–45% below the global price on most titles. After Valve's January 2026 price revision, some games are 10–20% higher than they were in 2024, but India still has meaningful regional pricing benefits. The full discount is calculated at checkout automatically when you buy from an India-registered account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use UPI to buy games on Steam in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Steam accepts UPI payments in India. You can add it as a payment method on your account, or use a Steam Wallet balance funded by a Wallet gift card if you prefer not to link a card or UPI directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Steam Scream Fest and when does it start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Steam Scream V Fest is Steam's annual horror gaming sale event. It starts October 26, 2026 at 10:00 AM Pacific (10:30 PM IST) and runs until November 2, 2026. Discounts on horror, survival, and Halloween-themed games can reach up to 95% off."
+      }
+    }
+  ]
+},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/steam-discount-code#offerlist',

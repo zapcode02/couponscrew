@@ -1,4 +1,3 @@
-
 export interface Coupon {
   id: string;
   badge: string;
@@ -64,7 +63,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     color: '#002D62',
     type: 'KIDS SPORT SHOES',
     title: 'Skechers Discount Code – Save 50% on Boys Elite Sport Shoes',
-    description: 'Find tough sports shoes for kids at a price that\'s hard to beat.',
+    description: "Find tough sports shoes for kids at a price that's hard to beat.",
     points: [
       'Get the Boys Skechers Elite Sport shoes at 50% off for ₹2,149.',
       'Made for energetic kids who need comfort that lasts through the day.',
@@ -106,7 +105,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     title: 'Skechers Promo Code – Save 50% on Pin Tuck Pants',
     description: 'Refresh your closet with easy-fitting pants at half price.',
     points: [
-      'Get the Women\'s Pin Tuck Pants at 50% off for ₹1,749.',
+      "Get the Women's Pin Tuck Pants at 50% off for ₹1,749.",
       'Made to feel relaxed while keeping a polished look.',
       'The original price is ₹3,499.',
       'A smart pick for brunches, errands, and busy days.'
@@ -126,7 +125,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     title: 'Skechers Promo Code – Save 50% on Puffer Jacket',
     description: 'Keep warm and look sharp while saving big.',
     points: [
-      'Grab the Men\'s Puffer Full-Zip Jacket at 50% off for ₹3,499.',
+      "Grab the Men's Puffer Full-Zip Jacket at 50% off for ₹3,499.",
       'The full-length zip makes it quick to put on and take off.',
       'The original price is ₹6,999.',
       'A handy outer layer when the temperature dips.'
@@ -146,7 +145,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     title: 'Skechers Voucher Code – Save 50% on GOwalk Pant Joy',
     description: 'Move in light, comfy activewear from Skechers at a lower price.',
     points: [
-      'Get the Women\'s GOwalk Pant Joy at 50% off for ₹1,499.',
+      "Get the Women's GOwalk Pant Joy at 50% off for ₹1,499.",
       'Suited to walks, gym sessions, and relaxed days at home.',
       'The original price is ₹2,999.',
       'Fits well with an active routine.'
@@ -286,7 +285,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     title: 'Save 20% on Skechers Color Blocked Jacket',
     description: 'Finish your look with a trendy Skechers jacket.',
     points: [
-      'Get the Women\'s Color Blocked Jacket at 20% off for ₹3,599.',
+      "Get the Women's Color Blocked Jacket at 20% off for ₹3,599.",
       'Showcases a contemporary color-block pattern.',
       'The original price is ₹4,499.',
       'A nice layer for relaxed plans and chilly weather.'

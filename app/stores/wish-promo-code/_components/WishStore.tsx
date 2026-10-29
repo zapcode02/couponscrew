@@ -394,104 +394,84 @@ export default function WishStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                How to Use a Wish Promo Code
-              </h3>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+  <div className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    How to Apply a Wish Discount Code
+  </div>
 
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Open the Wish app or wish.com and browse Daily Deals, Clearance, or search for a product.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Check the seller's rating and reviews before adding the item to your cart.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Most discounted pricing is already shown on the product listing — no code entry needed.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>If a promo code field appears at checkout, enter your code and confirm the discount applies before paying.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Review the estimated delivery window shown on the product page — shipping times vary widely by seller.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Track your order status in the Wish app under "My Orders" once it ships.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  <ol className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-decimal list-inside">
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Open wish.com or the Wish app and add items to your cart.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        At checkout, look for the "Enter promo code" or "Add coupon" field.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Type your Wish coupon code exactly as listed — codes are case-sensitive.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Click Apply and confirm the saving updates in your order total before entering payment.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Complete payment using an international credit or debit card (Visa, Mastercard, or Amex). Wish prices in USD — your bank will convert at the prevailing rate.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Wish does not accept UPI, net banking, or RuPay directly. Payments go through international card processors. If your card isn't enabled for international transactions, enable it through your bank's app before checkout.
+      </span>
+    </li>
+  </ol>
+</div>
 
-            {/* Sidebar Card: Top Categories */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Top Categories at Wish
-              </h3>
 
-              <div className="space-y-3.5 text-xs">
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Daily Deals</span>
-                  <span className="text-[#FF5722] font-bold">Up to 90% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Electronics</span>
-                  <span className="text-[#FF5722] font-bold">Up to 70% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Home & Garden</span>
-                  <span className="text-[#FF5722] font-bold">Up to 60% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Clearance</span>
-                  <span className="text-[#FF5722] font-bold">Extra Markdowns</span>
-                </div>
-              </div>
+<div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+  <div className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    Wish Promo Code Not Working? What to Check
+  </div>
 
-              <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/stores/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
-                  <span>View All Categories</span>
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Buying Smart on Wish
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Wish is a marketplace of independent sellers, so quality and sizing can vary even within the same category — always read reviews with photos first.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Not to be confused with wishlist features on other shopping apps — "Wish" here refers to the Wish.com/ContextLogic marketplace specifically.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  <ul className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-disc list-inside">
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>Code frequency is low.</strong> Wish runs fewer affiliate codes than most sites — most discounts are automatic, not code-based. If a code isn't working, the offers table above may already have the best available discount without a code.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>New-user vs. existing-user codes:</strong> Some Wish codes are for new accounts only. If FIRST15 isn't applying to an existing account, it may be new-user restricted.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>USD pricing and code minimums:</strong> Some Wish codes have a minimum order in USD (e.g., $30). A cart that looks large in rupees might be below the minimum in dollars.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>App vs. website:</strong> A few Wish codes work only in the app. If a code fails on the website, try applying it through the Wish app.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>Code expiry:</strong> FIRST15 is valid until October 31, 2026. Codes on third-party sites are often listed after they've expired — check the source's last-verified date.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        <strong>Geographic restriction:</strong> Some Wish codes are issued for specific regions (US, EU). If you're browsing wish.com from India, a code marked for US users may not apply at checkout.
+      </span>
+    </li>
+  </ul>
+</div>
 
           </aside>
 
@@ -499,182 +479,425 @@ export default function WishStore() {
       </section>
 
       <section className="py-24 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Main Content Column */}
-            <div className="prose max-w-none">
+      {/* Main Content Column */}
+      <div className="prose max-w-none">
+        
+        {/* Main Title - Replaced H1 with Styled Paragraph */}
+        <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+          Wish Coupon Code: Save on Fashion, Gadgets, and Home Goods in India
+        </p>
 
-              {/* Main Title - Replaced H1 with Styled Paragraph */}
-              <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-                Wish Promo Code: How to Shop Smart on a Budget Marketplace
+        <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+          <p>
+            A Wish coupon code is a promo code entered at checkout on wish.com or the Wish app to reduce the price of an order. Wish runs fewer active codes than most e-commerce sites — its bigger discounts come through sitewide sales, the daily login reward system, and new-user offers. Current verified offers (October 2026) include FIRST15 (15% off, valid till October 31) and REFRESH10 (extra 10% off, up to two uses). Wish is an international marketplace that ships to India from sellers mostly based in Asia, so several factors — currency, shipping time, customs — differ from Indian-first sites and are worth knowing before you order.
+          </p>
+
+
+          <hr className="my-10 border-gray-200" />
+
+          <div>
+  <div className="space-y-4 text-slate-700">
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Wish Coupon Codes — October 2026
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Code</th>
+            <th className="p-4 font-bold">Offer</th>
+            <th className="p-4 font-bold">Condition</th>
+            <th className="p-4 font-bold">Valid Until</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">FIRST15</td>
+            <td className="p-4">15% off sitewide</td>
+            <td className="p-4">New and existing users</td>
+            <td className="p-4">31 Oct 2026</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">REFRESH10</td>
+            <td className="p-4">Extra 10% off</td>
+            <td className="p-4">Up to $100 per order; can be redeemed twice</td>
+            <td className="p-4">Not stated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Wish Deals That Don't Need a Code
+    </p>
+
+    <p>
+      Most of Wish's active discounts are automatic — no coupon required. These apply by category or product selection.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Offer</th>
+            <th className="p-4 font-bold">Discount</th>
+            <th className="p-4 font-bold">Notes</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Weekly Deals</td>
+            <td className="p-4">Up to 60% off</td>
+            <td className="p-4">Fashion, gadgets, and home — rotates weekly</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Pet items</td>
+            <td className="p-4">Up to 90% off</td>
+            <td className="p-4">Cat toys, dog accessories, pet beds, GPS trackers</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Sunglasses and accessories</td>
+            <td className="p-4">Up to 75% off</td>
+            <td className="p-4">Fashion and lifestyle</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Sitewide sale</td>
+            <td className="p-4">Up to 50% off</td>
+            <td className="p-4">All orders, on select products</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Home decor and essentials</td>
+            <td className="p-4">Up to 45% off</td>
+            <td className="p-4">Lamps, vases, storage, kitchen</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Health and Beauty</td>
+            <td className="p-4">Up to 40% off</td>
+            <td className="p-4">Skincare, haircare, makeup, wellness</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Fashion and clothing</td>
+            <td className="p-4">Up to 40% off</td>
+            <td className="p-4">Clothing, shoes, accessories</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Prices on Wish are listed in USD. A product at $4.99 typically includes free shipping — which is one of the genuine differences between Wish and Indian-domestic marketplaces. The item is cheap because it ships directly from a manufacturer in China; the trade-off is delivery time (covered below).
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      The Daily Login Stamp Trick: How to Get 50% Off
+    </p>
+
+    <p>
+      Wish runs a daily login reward system. Log in to the app or website each day, earn one stamp per day, and collect 7 stamps to receive a 50% off coupon on a future order. The coupon is tied to your account — no separate code is needed.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      How to use it:
+    </p>
+
+    <ol className="list-decimal pl-5 space-y-2">
+      <li>Open the Wish app or wish.com daily.</li>
+      <li>Navigate to the "Rewards" or "Earn" section and claim your daily stamp.</li>
+      <li>After 7 consecutive or accumulated stamps, a 50% coupon is credited to your account.</li>
+      <li>Apply it during checkout — it typically shows as an available reward in your payment step.</li>
+    </ol>
+
+    <p className="mt-4">
+      This is worth doing if you're planning a larger order. The 50% off cap applies to eligible items, not necessarily the full cart — check the coupon's terms in your account when it activates.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      How Wish Actually Works: What You're Buying
+    </p>
+
+    <p>
+      Wish is a marketplace, not a retailer. When you buy on Wish, you're purchasing directly from an individual seller — most are based in China or Southeast Asia — rather than from Wish itself. This is why prices are low: there's no Indian distributor, no local importer markup, and no warehouse in India.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      What this means in practice:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        Each seller is independent. Quality, packaging, and shipping speed vary by seller, not by category.
+      </li>
+      <li>
+        Product photos may differ from what arrives. This is Wish's most common complaint — items photographed on models or in ideal conditions that look different in person.
+      </li>
+      <li>
+        Reviews with photos are the most reliable signal. Before buying, filter for buyer-uploaded photos in the reviews section. If a product has hundreds of text reviews but few photo reviews, treat the listing cautiously.
+      </li>
+      <li>
+        Wish does not manufacture or warehouse products. It is the platform; the individual seller is responsible for the item.
+      </li>
+      <li>
+        Wish was acquired by Qoo10, an Asian e-commerce group, in 2024 for $173 million — a steep fall from its ~$17 billion valuation at its 2020 IPO. The platform is still active and accepting orders, but its buyer base has contracted significantly. For Indian buyers, this affects seller selection and the variety of available products.
+      </li>
+    </ul>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Wish for Indian Buyers: Currency, Shipping, and Customs
+    </p>
+
+    <p>
+      Wish is set up for international buying, but several things work differently than on Indian-first sites.
+    </p>
+
+    <p>
+      <strong>Currency:</strong> All prices are in USD. Your bank or card issuer converts the amount at the prevailing exchange rate plus any foreign transaction fee (typically 1.5–3.5% depending on your card). A $10 item costs roughly ₹835–860 at current rates before card fees.
+    </p>
+
+    <p>
+      <strong>Payment:</strong> Visa, Mastercard, and Amex credit and debit cards work. Make sure your card is enabled for international transactions. Some Indian debit cards block international payments by default — enable it in your bank's app or by calling customer service.
+    </p>
+
+    <p>
+      <strong>Shipping to India:</strong> Wish ships to India through its partner logistics network. Items ship from sellers in China or Southeast Asia. Not all sellers ship to India — check the delivery estimate on the product page before adding to cart. If no India delivery is shown, that seller doesn't ship here.
+    </p>
+
+    <p>
+      <strong>Customs and import duty:</strong> India levies import duty on goods above the de minimis threshold. For personal imports via courier (which is how Wish ships), goods valued above approximately ₹10,000 ($120 at current rates) may attract customs duty at 20% or more depending on the product category. Wish's cart value in USD should be checked against this threshold before placing a large order. Multiple small shipments from different sellers typically clear individually.
+    </p>
+
+    <p>
+      <strong>Returns:</strong> Wish's return policy allows refunds within a set window, but returning an item to China from India involves international shipping costs that often exceed the item's value. For low-value items (below $15), Wish sometimes issues a refund without requiring the item back — check support options before initiating a return.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Wish Shipping Time: What to Expect
+    </p>
+
+    <p>
+      Wish does not have a warehouse in India. Every item ships from the seller's location, most of which are in China. Delivery times vary considerably.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Shipping Type</th>
+            <th className="p-4 font-bold">Estimated Delivery to India</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Standard (most orders)</td>
+            <td className="p-4">14–45 days</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Wish Express (select products)</td>
+            <td className="p-4">5–10 days</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Slow-shipping sellers</td>
+            <td className="p-4">Up to 60–90 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Wish Express items are marked with a badge on the listing. These ship from sellers with faster logistics partners and are the closest equivalent to standard Indian e-commerce delivery windows. For anything time-sensitive, only buy Wish Express items.
+    </p>
+
+    <p>
+      For standard orders, the variance is real — some orders arrive in 2 weeks, others take 6. Tracking is provided but updates can be infrequent once the package enters India's postal system. Order only what you're comfortable waiting for.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      Wish vs Temu vs AliExpress: Which Budget Import Site Suits Indian Buyers?
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Feature</th>
+            <th className="p-4 font-bold">Wish</th>
+            <th className="p-4 font-bold">Temu</th>
+            <th className="p-4 font-bold">AliExpress</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Platform type</td>
+            <td className="p-4">Marketplace (independent sellers)</td>
+            <td className="p-4">Marketplace (direct factory deals)</td>
+            <td className="p-4">Marketplace (independent sellers)</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Currency</td>
+            <td className="p-4">USD</td>
+            <td className="p-4">USD / INR (varies)</td>
+            <td className="p-4">USD</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">UPI / Indian payment</td>
+            <td className="p-4">No</td>
+            <td className="p-4">No</td>
+            <td className="p-4">No</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Standard shipping to India</td>
+            <td className="p-4">14–45 days</td>
+            <td className="p-4">7–20 days (select items)</td>
+            <td className="p-4">15–60 days</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Express option</td>
+            <td className="p-4">Wish Express (select)</td>
+            <td className="p-4">Yes (faster sellers)</td>
+            <td className="p-4">AliExpress Standard / Premium</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Minimum order</td>
+            <td className="p-4">No minimum</td>
+            <td className="p-4">No minimum</td>
+            <td className="p-4">No minimum</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Product quality signal</td>
+            <td className="p-4">Photo reviews from buyers</td>
+            <td className="p-4">Early-stage reviews (newer platform)</td>
+            <td className="p-4">Seller rating + years active</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Active promo codes</td>
+            <td className="p-4">Rare — low frequency</td>
+            <td className="p-4">Frequent</td>
+            <td className="p-4">Moderate</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Returns to India</td>
+            <td className="p-4">Refund without return (low value)</td>
+            <td className="p-4">Generally refund-friendly</td>
+            <td className="p-4">Seller-dependent</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Platform size (2024)</td>
+            <td className="p-4">Declining — sold to Qoo10</td>
+            <td className="p-4">Rapidly growing</td>
+            <td className="p-4">Established</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      For Indian buyers choosing between the three: AliExpress has the longest track record and widest seller variety. Temu has been growing faster with aggressive pricing and newer buyer reviews. Wish's advantage used to be its gamified discount system and ultra-low price floor — that's still present but the platform is smaller than it was at its peak.
+    </p>
+  </div>
+</div>
+
+          {/* FAQs Section Header - Replaced H1/H2 with Styled Paragraph */}
+          <p className="text-2xl font-black text-black mt-16 mb-8">
+            Frequently Asked Questions
+          </p>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                What is the best Wish coupon code in India right now?
               </p>
-
-              <div className="text-gray-600 font-normal leading-relaxed space-y-6">
-                <p>
-                  A Wish promo code is a discount applied on the Wish app or wish.com to reduce the price of marketplace listings across fashion, electronics, and home categories. Most discounts on Wish are built directly into the listed price rather than requiring a separate code — the Daily Deals and Clearance sections are where the steepest markdowns typically show up.
-                </p>
-
-                <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                    <caption className="sr-only">Wish Offers and Discount List</caption>
-                    <thead>
-                      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          Offer Type
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          Discount / Price
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
-                          Offer Highlights
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          User Eligibility / Terms
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#E8E8F0]">
-                      {coupons.map((row, i) => (
-                        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                            {row.type}
-                          </td>
-                          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                            {row.badge}
-                          </td>
-                          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                            {row.description}
-                          </td>
-                          <td className="px-5 py-4 whitespace-nowrap">
-                            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                              {row.userType}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <hr className="my-8 border-gray-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Understanding Wish Shipping Times
-                </p>
-
-                <p>
-                  Unlike domestic marketplaces, Wish listings often ship directly from overseas sellers, which means delivery can take anywhere from one to several weeks depending on the item and seller location. This is the single biggest thing to plan around before ordering — check the estimated delivery window shown on each product page, and avoid ordering on Wish if you need something urgently.
-                </p>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Reading Seller Ratings Before You Buy
-                </p>
-
-                <p>
-                  Because Wish connects you to a wide network of independent sellers rather than a single retailer, product quality and accuracy can vary significantly between listings — even for similar-looking items. The most reliable signal is the seller's star rating and recent review photos, which show what buyers actually received rather than the listing photos alone.
-                </p>
-
-                <div className="overflow-x-auto my-8">
-                  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
-                    <thead>
-                      <tr className="bg-[#5B4FBE] text-white">
-                        <th className="p-4 font-bold">What to Check</th>
-                        <th className="p-4 font-bold">Why It Matters</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
-                      <tr>
-                        <td className="p-4 font-semibold">Seller rating (4+ stars)</td>
-                        <td className="p-4">Indicates consistent order fulfillment and product accuracy</td>
-                      </tr>
-                      <tr className="bg-gray-50/50">
-                        <td className="p-4 font-semibold">Review photos</td>
-                        <td className="p-4">Shows real product condition versus listing photos</td>
-                      </tr>
-                      <tr>
-                        <td className="p-4 font-semibold">Number of reviews</td>
-                        <td className="p-4">A higher review count is more statistically reliable than a few 5-star ratings</td>
-                      </tr>
-                      <tr className="bg-gray-50/50">
-                        <td className="p-4 font-semibold">Return/refund policy</td>
-                        <td className="p-4">Confirm before ordering, since return processes vary by seller and item</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Why Is My Wish Promo Code Not Working?
-                </p>
-
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    <strong>The offer was seller-specific</strong> — not every discount applies sitewide across all sellers.
-                  </li>
-                  <li>
-                    <strong>The promotional window ended</strong> — Daily Deals and Clearance pricing refreshes frequently and can expire.
-                  </li>
-                  <li>
-                    <strong>It was a new-user-only deal</strong> — some introductory pricing applies only to first-time app users.
-                  </li>
-                  <li>
-                    <strong>The discount is already built into the price</strong> — most Wish pricing doesn't need a separate code to apply.
-                  </li>
-                </ul>
-
-              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                As of October 2026, FIRST15 (15% off, valid till October 31) is the most recently confirmed code, sourced from GrabOn. REFRESH10 gives an additional 10% off and can be used twice. Both are worth trying at checkout — Wish code availability is low overall, and automatic deals (up to 60% off in weekly sales, up to 90% off pet items) often save more than a single code.
+              </p>
             </div>
 
-            {/* Right Column — FAQs + Sidebar */}
-            <div className="space-y-10">
-              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                  Popular Wish Searches
-                </p>
-                <div className="flex flex-wrap gap-2.5">
-                  {["Wish Promo Codes", "Daily Deals", "Clearance Sale", "Electronics Deals", "Budget Shopping", "CouponsCrew Home"].map(tag => (
-                    <a
-                      key={tag}
-                      href={`/search?q=${encodeURIComponent(tag)}`}
-                      className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Does Wish ship to India?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Yes, Wish ships to India through international logistics partners. Delivery takes 14–45 days for standard shipping and 5–10 days for Wish Express items. Not every seller on Wish ships to India — check the delivery estimate on the product page before adding to cart.
+              </p>
             </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is Wish safe to buy from in India?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Wish is a legitimate platform now owned by Qoo10. The main risks are product quality (items may differ from photos) and long shipping times, not payment fraud. For safer buying, filter for products with photo reviews, buy only Wish Express items when speed matters, and pay on an internationally-enabled credit card so you can raise a dispute if needed.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Can I pay with UPI or Indian debit cards on Wish?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                UPI is not accepted on Wish. International Visa, Mastercard, and Amex cards work. Many Indian debit cards block international transactions by default — enable yours through your bank's app before placing an order.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                How do I get 50% off on Wish without a code?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Log in to the Wish app or website every day. After 7 logins, a 50% off coupon is credited to your account and shows as a reward at checkout — no separate code is needed. This is Wish's most reliable route to a significant discount.
+              </p>
+            </div>
+
           </div>
 
-          {/* FAQs Section Header - full width */}
-          <div className="mt-10">
-            <p className="text-2xl font-black text-black mt-16 mb-8">
-              Wish Promo Code FAQs
-            </p>
+          <hr className="my-10 border-gray-200" />
 
-            <div className="space-y-4 max-w-4xl">
-              {faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
-                  <p className="font-black text-black text-base">{faq.q}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-
-            <hr className="my-10 border-gray-200 max-w-4xl" />
-
-            <p className="max-w-4xl text-gray-600 leading-relaxed">
-              A Wish promo code is less about finding a secret discount code and more about knowing where to look — the Daily Deals and Clearance sections consistently carry the steepest markdowns. For more budget-friendly shopping deals, browse our <a href="https://www.couponscrew.com/stores/categories/electronics" className="text-[#5B4FBE] font-bold underline">electronics category</a>.
-            </p>
-          </div>
+          <p>
+            Wish's value case for Indian buyers is strongest on categories where product photos and reviews are enough to judge quality before buying: phone accessories, basic gadgets, pet supplies, small home decor items, and fashion accessories. For anything where fit, sizing, or build quality matters — clothing, shoes, electronics with safety implications — the photo-review filter and the Wish Express badge are the two most important checks before placing an order. Combined with the FIRST15 code and the daily login stamp system, the effective price on a carefully chosen order can be significantly below what Indian-domestic sites would charge for equivalent items.
+          </p>
 
         </div>
-      </section>
+      </div>
+
+      {/* Sidebar Column */}
+      <div className="space-y-10">
+        <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+          <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular Wish Searches
+          </p>
+          <div className="flex flex-wrap gap-2.5">
+            {["Wish Coupons", "Fashion Deals", "Gadget Offers", "Home Goods Discounts", "Wish Express", "Daily Login Rewards", "CouponsCrew Home"].map(tag => (
+              <a
+                key={tag}
+                href={`/search?q=${encodeURIComponent(tag)}`}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ==========================================
           INTERACTIVE CODE COPYING MODAL / POPUP

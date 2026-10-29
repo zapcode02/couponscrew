@@ -394,98 +394,47 @@ export default function IgpStore() {
           {/* RIGHT COLUMN: Sidebar (30% width) */}
           <aside className="w-full lg:w-80 flex-shrink-0 self-start space-y-6 order-2">
 
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                How to Use an IGP Promo Code
-              </h3>
+            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
+  <div className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
+    How to Apply an IGP Discount Code
+  </div>
 
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Open igp.com or the IGP app and browse by occasion, recipient, or category.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>For personalized gifts, upload your photo or message and preview it before adding to cart.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Select your delivery date and city — same-day delivery availability depends on your pin code.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Go to the cart and find the "Apply Coupon" field.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Enter the code and confirm the discount is reflected in the total before paying.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>If a code fails, check the minimum order value and whether personalized items are excluded.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  <ol className="space-y-3.5 text-xs font-semibold text-[#4A4A6A] list-decimal list-inside">
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Go to igp.com and add your chosen gift, flower, or cake to the cart.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        At checkout, look for the "Apply Coupon" or "Use Coupon Code" field.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Enter your IGP coupon code exactly as shown — codes are case-sensitive.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Click Apply and confirm the saving reflects in your order total before paying.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Complete payment. If you hold an HDFC card, see the SmartBuy section below — using an IGP gift voucher purchased on SmartBuy gives a separate 17.5% instant off that stacks with site-level offers.
+      </span>
+    </li>
+    <li className="leading-relaxed">
+      <span className="text-[#2C2C40]">
+        Important for personalised orders: Once you place an order for a personalised item (custom engraving, photo print, name on cake), it cannot be cancelled regardless of when you contact support. Apply any code before confirming — a cancelled personalised order is not refundable or swappable.
+      </span>
+    </li>
+  </ol>
+</div>
 
-            {/* Sidebar Card: Top Categories */}
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Top Categories at IGP
-              </h3>
 
-              <div className="space-y-3.5 text-xs">
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Sitewide Gifting</span>
-                  <span className="text-[#FF5722] font-bold">Up to 40% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Personalized Gifts</span>
-                  <span className="text-[#FF5722] font-bold">Up to 25% OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">First Order</span>
-                  <span className="text-[#FF5722] font-bold">Flat ₹200 OFF</span>
-                </div>
-                <div className="flex justify-between items-center font-semibold">
-                  <span className="text-[#1A1A2E]">Same-Day Delivery</span>
-                  <span className="text-[#FF5722] font-bold">Available</span>
-                </div>
-              </div>
 
-              <div className="mt-5 border-t border-[#E8E8F0] pt-4 text-center select-none">
-                <Link href="/stores/categories" className="text-xs font-black text-[#5B4FBE] hover:underline flex items-center justify-center gap-1">
-                  <span>View All Categories</span>
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-5 shadow-xs text-left">
-              <h3 className="font-extrabold text-[#1A1A2E] text-base mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
-                Ordering Personalized Gifts
-              </h3>
-
-              <ul className="space-y-3 text-xs font-semibold text-[#4A4A6A]">
-                <li className="flex items-start gap-2.5">
-                  <ShieldCheck size={16} className="text-emerald-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span>Personalized items need 1-2 extra days of processing time before they ship — order a little earlier than standard gifts for time-sensitive occasions.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
 
           </aside>
 
@@ -493,182 +442,561 @@ export default function IgpStore() {
       </section>
 
       <section className="py-24 bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-20">
 
-            {/* Main Content Column */}
-            <div className="prose max-w-none">
+      {/* Main Content Column */}
+      <div className="prose max-w-none">
+        
+        {/* Main Title - Replaced H1 with Styled Paragraph */}
+        <p className="text-3xl font-black text-black mb-10 leading-tight italic">
+          IGP Coupon Code: Save on Gifts, Flowers, and Cakes in India (October 2026)
+        </p>
 
-              {/* Main Title - Replaced H1 with Styled Paragraph */}
-              <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-                IGP Coupon Code: How to Save on Gifts and Same-Day Delivery
+        <div className="text-gray-600 font-normal leading-relaxed space-y-6">
+          <p>
+            An IGP coupon code is a promo code entered at checkout on igp.com to reduce the price of flowers, cakes, personalised gifts, hampers, or plants. Indian Gifts Portal (IGP) does release affiliate codes — unlike many gifting sites. Current working codes for October 2026 include CK20 (20% off above ₹1,299) and FLOWER12 (12% off above ₹199 on select products). Beyond codes, IGP's bigger savings come from HDFC SmartBuy gift vouchers (flat 17.5% instant discount), CashKaro cashback (9–10% on website orders), and bank card stacking.
+          </p>
+
+          <hr className="my-10 border-gray-200" />
+
+          <div>
+  <div className="space-y-4 text-slate-700">
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      IGP Coupon Codes — October 2026
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Code</th>
+            <th className="p-4 font-bold">Offer</th>
+            <th className="p-4 font-bold">Min. Cart</th>
+            <th className="p-4 font-bold">Valid Until</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">CK20</td>
+            <td className="p-4">20% off</td>
+            <td className="p-4">₹1,299</td>
+            <td className="p-4">31 Oct 2026</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">FLOWER12</td>
+            <td className="p-4">12% off</td>
+            <td className="p-4">₹199</td>
+            <td className="p-4">~30 Oct 2026</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">CK10</td>
+            <td className="p-4">10% off</td>
+            <td className="p-4">No minimum confirmed</td>
+            <td className="p-4">~31 Oct 2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      IGP Offers That Don't Need a Code
+    </p>
+
+    <p>
+      Most of IGP's best discounts apply automatically without any coupon code.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Offer</th>
+            <th className="p-4 font-bold">Discount</th>
+            <th className="p-4 font-bold">Notes</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Sitewide sale</td>
+            <td className="p-4">Up to 60% off</td>
+            <td className="p-4">On select gifts and seasonal collections</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Flowers</td>
+            <td className="p-4">Up to 40% off</td>
+            <td className="p-4">Fresh flowers and bouquets</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Cakes</td>
+            <td className="p-4">Up to 30% off</td>
+            <td className="p-4">Flavours, custom, and theme cakes</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Personalised gifts</td>
+            <td className="p-4">Up to 30% off</td>
+            <td className="p-4">Photo gifts, name products, engraving</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Hampers</td>
+            <td className="p-4">Up to 25% off</td>
+            <td className="p-4">Gift hampers and combo boxes</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">First-order discount</td>
+            <td className="p-4">10–15% off</td>
+            <td className="p-4">For new users on the IGP website</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">App-exclusive deals</td>
+            <td className="p-4">Varies</td>
+            <td className="p-4">Some discounts are app-only — check both channels</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      The HDFC SmartBuy IGP Gift Voucher Method
+    </p>
+
+    <p>
+      This is the saving angle most IGP coupon pages skip — and for HDFC cardholders, it often outperforms any available promo code.
+    </p>
+
+    <p>
+      Instead of buying directly on igp.com, buy an IGP gift voucher through HDFC SmartBuy first. The voucher earns you an instant discount at purchase, and then you redeem its full face value on igp.com as normal — on top of whatever sale is running at the time.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Card</th>
+            <th className="p-4 font-bold">Saving on Voucher Purchase</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">HDFC Infinia / Infinia Metal</td>
+            <td className="p-4">Up to 16.5% value via 5X reward points</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">HDFC Diners Club Black / Biz Black / Black Metal</td>
+            <td className="p-4">Up to 9.9% value via reward points</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">HDFC Regalia / Diners Privilege</td>
+            <td className="p-4">Up to 6.6% via 5X reward points</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Other HDFC credit and debit cards</td>
+            <td className="p-4">5% cashback</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Insta Deals option (select cards)</td>
+            <td className="p-4">Flat 17.5% instant discount</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>Example:</strong> Buy a ₹2,000 IGP gift voucher on HDFC SmartBuy using a standard HDFC credit card. Get 5% cashback (₹100 credited later). Redeem the full ₹2,000 on igp.com during a 30% flowers sale. Total saving: ₹600 from the sale + ₹100 cashback = ₹700 off a ₹2,000 cart.
+    </p>
+
+    <p className="mt-4">
+      Vouchers are valid for 6 months from purchase. Source: GyFTR HDFC SmartBuy IGP voucher page (October 2026). Savings calculations are indicative — check HDFC SmartBuy for per-card maximums and caps before purchasing.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      CashKaro Cashback on IGP: The 9–10% You Might Be Missing
+    </p>
+
+    <p>
+      CashKaro gives 9–10% cashback on IGP website orders when you shop through the CashKaro portal or app. Most buyers miss this because it's not a code — it's a cashback layer on top of whatever price and coupon is already applied.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      How it works:
+    </p>
+
+    <ol className="list-decimal pl-5 space-y-2">
+      <li>Log in to CashKaro (cashkaro.com) and search for IGP.</li>
+      <li>Click the "Get Cashback" or "Shop Now" button on the CashKaro IGP page.</li>
+      <li>You'll be taken to igp.com — apply your coupon code (CK20, FLOWER12, etc.) at checkout as normal.</li>
+      <li>Cashback is tracked within ~5 minutes and confirmed within ~45 days.</li>
+    </ol>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      What CashKaro cashback excludes:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>IGP app orders — cashback only tracks on igp.com website orders</li>
+      <li>Payments made using IGP Wallet, SuperCoins, or gift vouchers</li>
+      <li>Platform and shipping fees</li>
+    </ul>
+
+    <p className="mt-4">
+      <strong>If cashback doesn't track:</strong> Report a missing cashback claim within 30 days of the order date through your CashKaro account.
+    </p>
+
+    <p>
+      Source: CashKaro Indian Gifts Portal page (October 2026).
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      IGP's Delivery Tier System Explained
+    </p>
+
+    <p>
+      IGP has four delivery speed tiers — and which one applies depends on your city, not just the product.
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Delivery Type</th>
+            <th className="p-4 font-bold">Speed</th>
+            <th className="p-4 font-bold">Available In</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">30-minute delivery</td>
+            <td className="p-4">Within 30 minutes</td>
+            <td className="p-4">25+ cities (select express zones)</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Same-day delivery</td>
+            <td className="p-4">Within a few hours</td>
+            <td className="p-4">400+ cities</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Next-day / 1-2 day</td>
+            <td className="p-4">By next evening</td>
+            <td className="p-4">1,000+ cities</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">International delivery</td>
+            <td className="p-4">4–7 business days</td>
+            <td className="p-4">100+ countries</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      What affects delivery speed more than your city:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        Personalised items (photo prints, custom engraving, name cakes) need 2–3 additional production days before they can be dispatched — 30-minute or same-day delivery does not apply to these.
+      </li>
+      <li>
+        Fresh flowers and cakes qualify for express slots in most cities where IGP has dark stores (50+ dark stores across India).
+      </li>
+      <li>
+        Time-slot selection at checkout matters — IGP lets you choose delivery windows (morning, afternoon, evening) for same-day orders in major cities.
+      </li>
+    </ul>
+
+    <p className="mt-4">
+      For last-minute gifting — office anniversaries, forgotten birthdays, hospital visits — the 30-minute and same-day tiers are what make IGP genuinely different from courier-based gifting services.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      The Personalised Gift Cancellation Warning
+    </p>
+
+    <p>
+      This is the most important thing to know before placing a personalised order on IGP — and most coupon pages don't mention it.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      Once you confirm a personalised gift order, it cannot be cancelled. This applies to:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>Photo gifts (frames, mugs, cushions with printed images)</li>
+      <li>Engraved products (pens, keychains, jewellery)</li>
+      <li>Custom cakes with names or messages</li>
+      <li>Any product where you upload an image or enter a personalisation detail</li>
+    </ul>
+
+    <p className="mt-4">
+      <strong>The reason is production:</strong> personalised items go into manufacture immediately after order confirmation. IGP cannot reverse that process.
+    </p>
+
+    <p>
+      <strong>For all other products (standard courier items):</strong> You can cancel before dispatch — contact IGP customer support as quickly as possible after placing the order.
+    </p>
+
+    <p>
+      <strong>For perishables (fresh flowers, fresh cakes without personalisation):</strong> IGP offers a replacement (not a refund) if you report an issue within 24 hours of delivery.
+    </p>
+
+    <p>
+      Apply your discount code, confirm the product details, and verify the delivery address before clicking "Place Order" on any personalised item.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      IGP Artisan Sourcing: Why Prices on Some Products Are Higher
+    </p>
+
+    <p>
+      IGP operates a direct-from-artisan model for handcrafted products. Artisans receive 25% of the selling price of each product — a deliberate revenue share built into the platform's pricing structure.
+    </p>
+
+    <p>
+      This is worth knowing if you're comparing IGP's prices on handcrafted gifts (pottery, textiles, handmade jewellery) with mass-produced alternatives on Amazon or Meesho. The price difference partly reflects artisan sourcing, not just brand margin. Products sourced this way are not available for the deepest coupon discounts — codes like CK20 apply to "selected products" and typically exclude premium artisan items.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      IGP vs FNP vs FlowerAura: Which Platform for Which Occasion?
+    </p>
+
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
+        <thead>
+          <tr className="bg-[#5B4FBE] text-white">
+            <th className="p-4 font-bold">Feature</th>
+            <th className="p-4 font-bold">IGP</th>
+            <th className="p-4 font-bold">FNP (Ferns N Petals)</th>
+            <th className="p-4 font-bold">FlowerAura</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
+          <tr>
+            <td className="p-4 font-semibold">Founded</td>
+            <td className="p-4">~1999</td>
+            <td className="p-4">1994</td>
+            <td className="p-4">2010</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">City coverage (same-day)</td>
+            <td className="p-4">400+ cities</td>
+            <td className="p-4">400+ cities</td>
+            <td className="p-4">300+ cities</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Express delivery</td>
+            <td className="p-4">30 min in 25+ cities</td>
+            <td className="p-4">Not standard</td>
+            <td className="p-4">3-hour delivery in select cities</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">International delivery</td>
+            <td className="p-4">100+ countries</td>
+            <td className="p-4">100+ countries</td>
+            <td className="p-4">Limited international</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Personalised gifts</td>
+            <td className="p-4">1,000+ options</td>
+            <td className="p-4">Moderate range</td>
+            <td className="p-4">Moderate range</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Fresh flowers entry price</td>
+            <td className="p-4">From ₹499</td>
+            <td className="p-4">From ₹399</td>
+            <td className="p-4">From ₹349</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Cakes entry price</td>
+            <td className="p-4">From ₹549</td>
+            <td className="p-4">From ₹499</td>
+            <td className="p-4">From ₹349</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Cancellation (personalised)</td>
+            <td className="p-4">Cannot cancel once placed</td>
+            <td className="p-4">Varies by product</td>
+            <td className="p-4">Varies by product</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Artisan products</td>
+            <td className="p-4">Available (25% artisan revenue share)</td>
+            <td className="p-4">Limited</td>
+            <td className="p-4">Limited</td>
+          </tr>
+          <tr className="bg-gray-50/50">
+            <td className="p-4 font-semibold">Affiliate cashback</td>
+            <td className="p-4">CashKaro 9–10% (website only)</td>
+            <td className="p-4">Varies</td>
+            <td className="p-4">Varies</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">HDFC SmartBuy voucher</td>
+            <td className="p-4">17.5% instant off available</td>
+            <td className="p-4">Not listed</td>
+            <td className="p-4">Not listed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>Pick IGP if:</strong> You need 30-minute delivery in a metro, want more than 1,000 personalisation options, or plan to gift internationally. Also the strongest choice if you hold an HDFC card and want to use the SmartBuy voucher discount.
+    </p>
+
+    <p>
+      <strong>Pick FNP if:</strong> You're ordering fresh flowers on a tighter budget (lower entry price), or you're more comfortable with a brand that has 30+ years of retail presence across India.
+    </p>
+
+    <p>
+      <strong>Pick FlowerAura if:</strong> You want lower entry prices on flowers and cakes and don't need personalisation or international delivery.
+    </p>
+
+    <hr className="my-6 border-slate-200" />
+
+    <p className="text-xl font-black text-[#5B4FBE] mb-4">
+      IGP for NRI Gifting: Sending Gifts to India from Abroad
+    </p>
+
+    <p>
+      IGP has a practical use case most Indian coupon pages ignore: NRIs sending gifts to family in India from overseas.
+    </p>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      How it works:
+    </p>
+
+    <ol className="list-decimal pl-5 space-y-2">
+      <li>Create an IGP account using your international email and phone number.</li>
+      <li>Browse and select gifts — flowers, cakes, personalised items, hampers.</li>
+      <li>Enter the recipient's address in India at checkout.</li>
+      <li>Pay in INR using an international credit/debit card (Visa, Mastercard, Amex accepted).</li>
+      <li>IGP delivers in India directly — you don't need a local forwarding address.</li>
+    </ol>
+
+    <p className="text-lg font-bold text-[#2C2C40] mt-6">
+      What makes it practical for NRI use:
+    </p>
+
+    <ul className="list-disc pl-5 space-y-2">
+      <li>
+        Same-day delivery is available even for orders placed from overseas time zones (as long as the checkout window for same-day is still open in Indian time).
+      </li>
+      <li>
+        Real-time order tracking — you get SMS and email updates on delivery status without being in India.
+      </li>
+      <li>
+        Customer support handles delivery disputes — if flowers arrive damaged, you raise it from wherever you are.
+      </li>
+    </ul>
+
+    <p className="mt-4">
+      IGP ships to 100+ countries for international delivery, but for NRI-to-India gifting, you're shipping within India — the NRI just pays from abroad. This is an important distinction: international delivery and NRI gifting use different logistics paths.
+    </p>
+  </div>
+</div>
+
+          {/* FAQs Section Header - Replaced H1/H2 with Styled Paragraph */}
+          <p className="text-2xl font-black text-black mt-16 mb-8">
+            Frequently Asked Questions
+          </p>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                What is the best IGP coupon code right now?
               </p>
-
-              <div className="text-gray-600 font-normal leading-relaxed space-y-6">
-                <p>
-                  An IGP coupon code is a discount code you apply at checkout on igp.com to reduce the price of cakes, flowers, personalized gifts, and hampers. IGP also runs occasion-based campaigns around birthdays, anniversaries, Rakhi, and Diwali, where discounts can be deeper than the standard sitewide offer.
-                </p>
-
-                <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-                  <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-                    <caption className="sr-only">IGP Offers and Discount List</caption>
-                    <thead>
-                      <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          Offer Type
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          Discount / Price
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">
-                          Offer Highlights
-                        </th>
-                        <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">
-                          User Eligibility / Terms
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#E8E8F0]">
-                      {coupons.map((row, i) => (
-                        <tr key={i} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-                          <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                            {row.type}
-                          </td>
-                          <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                            {row.badge}
-                          </td>
-                          <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-relaxed" itemProp="description">
-                            {row.description}
-                          </td>
-                          <td className="px-5 py-4 whitespace-nowrap">
-                            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                              {row.userType}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <hr className="my-8 border-gray-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Planning Around Same-Day Delivery
-                </p>
-
-                <p>
-                  IGP's same-day delivery is one of its strongest features for last-minute gifting, but it's subject to a daily cut-off time and city-level coverage. Metro and tier-1 cities generally have the widest same-day availability, while smaller towns may only support next-day or longer delivery windows. Always check the delivery estimate shown on the specific product page for your pin code before assuming same-day service is available.
-                </p>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Personalized Gifts: What to Know Before Ordering
-                </p>
-
-                <p>
-                  Personalized items — custom mugs, photo frames, printed cushions — typically require 1-2 extra days of processing before they're shipped, since each item is made or printed to order. If you're buying for a specific occasion date, factor in this extra lead time on top of standard shipping, rather than relying on the same delivery speed as a ready-made gift.
-                </p>
-
-                <div className="overflow-x-auto my-8">
-                  <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-sm overflow-hidden">
-                    <thead>
-                      <tr className="bg-[#5B4FBE] text-white">
-                        <th className="p-4 font-bold">Gift Type</th>
-                        <th className="p-4 font-bold">Typical Lead Time</th>
-                        <th className="p-4 font-bold">Best For</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-100 text-sm text-gray-700">
-                      <tr>
-                        <td className="p-4 font-semibold">Ready-made gifts, flowers, cakes</td>
-                        <td className="p-4">Same-day to next-day</td>
-                        <td className="p-4">Last-minute occasions</td>
-                      </tr>
-                      <tr className="bg-gray-50/50">
-                        <td className="p-4 font-semibold">Personalized items</td>
-                        <td className="p-4">1-2 days processing + shipping</td>
-                        <td className="p-4">Planned occasions, birthdays, anniversaries</td>
-                      </tr>
-                      <tr>
-                        <td className="p-4 font-semibold">Corporate bulk orders</td>
-                        <td className="p-4">Longer, custom quote-based</td>
-                        <td className="p-4">Business gifting, employee hampers</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <hr className="my-6 border-slate-200" />
-
-                <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  Why Is My IGP Coupon Code Not Working?
-                </p>
-
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    <strong>Minimum order value not met</strong> — some codes require a minimum cart total before applying.
-                  </li>
-                  <li>
-                    <strong>Category exclusions</strong> — personalized or corporate bulk orders are sometimes excluded from sitewide codes.
-                  </li>
-                  <li>
-                    <strong>New-user-only code</strong> — welcome offers like the ₹200 first-order discount apply only once per new account.
-                  </li>
-                  <li>
-                    <strong>Code has expired</strong> — occasion-specific campaign codes have fixed end dates tied to the festival or event.
-                  </li>
-                </ul>
-
-              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                As of October 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving.
+              </p>
             </div>
 
-            {/* Right Column — FAQs + Sidebar */}
-            <div className="space-y-10">
-              <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
-                <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
-                  Popular IGP Searches
-                </p>
-                <div className="flex flex-wrap gap-2.5">
-                  {["IGP Coupons", "Same-Day Gift Delivery", "Personalized Gifts", "Birthday Gift Offers", "Corporate Gifting", "CouponsCrew Home"].map(tag => (
-                    <a
-                      key={tag}
-                      href={`/search?q=${encodeURIComponent(tag)}`}
-                      className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Does IGP offer same-day delivery?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Yes — IGP offers same-day delivery in 400+ cities and 30-minute delivery in 25+ cities. Fresh flowers and cakes qualify for express slots. Personalised items require 2–3 additional production days and do not qualify for same-day or express delivery.
+              </p>
             </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Can I cancel an IGP order after placing it?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                It depends on the product type. Standard courier items can be cancelled before dispatch — contact support immediately after ordering. Personalised gifts (photo products, engraved items, custom cakes) cannot be cancelled once confirmed. Perishables (fresh flowers and plain cakes) are not refunded, but IGP issues a replacement if you report a problem within 24 hours of delivery.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Does IGP coupon code work with CashKaro cashback?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Yes. You can use a valid coupon code at IGP checkout and earn CashKaro cashback on the same order, as long as you shop through the CashKaro portal link (not the app), and pay without IGP Wallet or gift vouchers.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
+              <p className="font-black text-black text-base">
+                Is IGP reliable for international delivery?
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                IGP ships to 100+ countries for international orders and processes most international deliveries within 4–7 business days. For NRIs sending gifts to Indian addresses, the delivery is domestic (within India) — you just pay from abroad using an international card. This typically processes faster than true cross-border shipping.
+              </p>
+            </div>
+
           </div>
 
-          {/* FAQs Section Header - full width */}
-          <div className="mt-10">
-            <p className="text-2xl font-black text-black mt-16 mb-8">
-              IGP Coupon Code FAQs
-            </p>
+          <hr className="my-10 border-gray-200" />
 
-            <div className="space-y-4 max-w-4xl">
-              {faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm space-y-2">
-                  <p className="font-black text-black text-base">{faq.q}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-
-            <hr className="my-10 border-gray-200 max-w-4xl" />
-
-            <p className="max-w-4xl text-gray-600 leading-relaxed">
-              An IGP coupon code helps most when combined with planning around delivery timelines — same-day for last-minute gifts, a little extra lead time for personalized items. For more gifting and occasion deals, browse our <a href="https://www.couponscrew.com/stores/categories" className="text-[#5B4FBE] font-bold underline">all categories page</a>.
-            </p>
-          </div>
+          <p>
+            For most buyers in October 2026, the practical stack is: use CK20 on an order above ₹1,299 (20% off), activate it through CashKaro's portal (9–10% cashback), and if you hold an HDFC card, buy an IGP voucher on SmartBuy first (17.5% instant off the voucher purchase) and redeem it at checkout. The three mechanisms are independent — they don't cancel each other out. On a ₹2,000 order, that combination can bring the effective cost down by ₹500–₹700 depending on which HDFC card you hold.
+          </p>
 
         </div>
-      </section>
+      </div>
+
+      {/* Sidebar Column */}
+      <div className="space-y-10">
+        <div className="bg-[#f0eeff] rounded-[40px] p-10 border border-[#5B4FBE]/5">
+          <p className="text-black font-black text-lg mb-8 uppercase tracking-widest">
+            Popular IGP Searches
+          </p>
+          <div className="flex flex-wrap gap-2.5">
+            {["IGP Coupons", "Flowers & Cakes", "Personalised Gifts", "Same Day Delivery", "Cashback Offers", "Festive Hampers", "CouponsCrew Home"].map(tag => (
+              <a
+                key={tag}
+                href={`/search?q=${encodeURIComponent(tag)}`}
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ==========================================
           INTERACTIVE CODE COPYING MODAL / POPUP

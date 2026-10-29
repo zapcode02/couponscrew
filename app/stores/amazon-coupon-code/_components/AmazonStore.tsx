@@ -31,7 +31,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
 }
 
-const AFFILIATE_URL = 'https://www.amazon.com/';
+const AFFILIATE_URL = 'https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl';
 
 
 export default function AmazonStore() {
@@ -116,7 +116,7 @@ export default function AmazonStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Get Amazon coupon codes & Amazon discount codes exclusively on CouponsCrew — save up to 90% off on Electronics, Fashion, Home Essentials, Groceries & more. Shop 120+ verified offers and save up to 80% on Prime deals today!
+                    Find the latest Amazon coupon code and Amazon discount code to save big during the Amazon Great Indian Festival. Grab up to 92% OFF on Nillkin iPhone cases, 91% OFF on women's kurtis, 84% OFF on Safari backpacks and BRUTON running shoes, plus huge discounts on Samsung Galaxy phones, JBL earbuds, Apple iPhone 16, washing machines, and more. Apply a verified Amazon coupon code or discount code at checkout to unlock extra savings on eligible orders.
                   </p>
                 </div>
               </div>
@@ -299,22 +299,30 @@ export default function AmazonStore() {
                           </button>
 
                           {/* Details List */}
-                          {isExpanded && (
-                            <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Valid on select categories as listed on the product page.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Minimum cart value might apply as specified on descriptions.</span>
-                              </li>
-                              <li className="flex items-start gap-2">
-                                <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                <span>Covers selected brands and product collections.</span>
-                              </li>
-                            </ul>
-                          )}
+                          {/* Details List Dynamic Rendering */}
+{isExpanded && (
+  <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
+    {coupon.points && coupon.points.length > 0 ? (
+      coupon.points.map((point, index) => (
+        <li key={index} className="flex items-start gap-2">
+          <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+          <span>{point}</span>
+        </li>
+      ))
+    ) : (
+      <>
+        <li className="flex items-start gap-2">
+          <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+          <span>Valid on select categories as listed on the product page.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+          <span>Minimum cart value might apply as specified on descriptions.</span>
+        </li>
+      </>
+    )}
+  </ul>
+)}
                         </div>
 
                         {/* RIGHT ACTION SECTION */}
@@ -530,91 +538,184 @@ export default function AmazonStore() {
                 Amazon Coupon Code India (October 2026): Up to 90% Off — Verified Promo Codes & Deals
               </h2>
 
-              <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm">
-  <table className="w-full text-xs border-collapse min-w-[700px]" itemScope itemType="https://schema.org/Table">
-    <caption className="sr-only">Amazon Offers, Coupons, and Discounts</caption>
+              <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
     <thead>
-      <tr>
-        <th scope="col" className="bg-[#f0eeff] text-[#5B4FBE] font-black px-4 py-3 text-left whitespace-nowrap">Offer Type</th>
-        <th scope="col" className="bg-[#f0eeff] text-[#5B4FBE] font-black px-4 py-3 text-left whitespace-nowrap">Category</th>
-        <th scope="col" className="bg-[#f0eeff] text-[#5B4FBE] font-black px-4 py-3 text-left whitespace-nowrap">Discount / Price</th>
-        <th scope="col" className="bg-[#f0eeff] text-[#5B4FBE] font-black px-4 py-3 text-left">Offer Highlights</th>
-        <th scope="col" className="bg-[#f0eeff] text-[#5B4FBE] font-black px-4 py-3 text-left whitespace-nowrap">User Eligibility</th>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Product Name</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Deal Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Original Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
       </tr>
     </thead>
-    <tbody>
-      {[
-        { type: 'UP TO 90% OFF', category: 'Electronics, Fashion, Beauty & More', discount: 'Up to 90% OFF', details: 'No coupon required; daily deals on leading top brands.', user: 'New User' },
-        { type: 'UP TO 65% OFF', category: 'Sitewide / All Categories', discount: 'Up to 65% OFF', details: 'Handpicked savings on electronics, fashion, and home essentials.', user: 'Existing User' },
-        { type: 'UP TO 60% OFF', category: 'Amazon Bestsellers', discount: 'Up to 60% OFF', details: 'Curated favorites in tech, kitchen gadgets, fashion, and beauty.', user: 'Existing User' },
-        { type: 'UP TO 80% OFF', category: 'Pharmacy & Meds', discount: 'Up to 80% OFF', details: 'Exclusive Prime member healthcare savings starting from $10.', user: 'New User' },
-        { type: 'SAVE 62% OFF', category: 'Electronics (JBL Headphones)', discount: 'Flat 62% OFF', details: 'JBL Live 670NC wireless noise-cancelling headphones with 65h battery.', user: 'Existing User' },
-        { type: 'UP TO 60% OFF', category: 'Garden & Outdoor', discount: 'Up to 60% OFF', details: 'Includes garden tools, pest control, outdoor storage, and grills.', user: 'Existing User' },
-        { type: 'UP TO 56% OFF', category: 'Beauty & Personal Care', discount: 'Up to 56% OFF', details: 'Select skincare items; discount automatically applied in cart.', user: 'Existing User' },
-        { type: 'DEAL', category: 'Home Essentials', discount: 'Special Pricing', details: 'Furniture, room decor, bedding, bath, and kitchen products.', user: 'New User' },
-        { type: 'UP TO 58% OFF', category: 'Smart Home Security Cameras', discount: 'Up to 58% OFF', details: 'Up to 40% off Ring Doorbells and 49% off Blink cameras (from $29.99).', user: 'Existing User' },
-        { type: 'BEST OFFER', category: 'Fashion & Apparel', discount: 'Up to 55% OFF', details: 'Discounted clothing, shoes, and accessories across all sizes.', user: 'Existing User' },
-        { type: 'UP TO 51% OFF', category: 'Audio (Wireless Headphones)', discount: 'Up to 51% OFF', details: 'Bluetooth headsets, EarPods, and earbuds for workout and commutes.', user: 'Existing User' },
-        { type: '15% OFF', category: 'Luxury Designer Handbags', discount: 'Flat 15% OFF', details: 'Pre-loved and iconic luxury bags from LV, Dior, Gucci, and Hermes.', user: 'New User' },
-        { type: 'UP TO 50% OFF', category: 'Toys & Games', discount: 'Up to 50% OFF', details: 'Building sets, arts & crafts, dolls, and collectibles starting at $1.', user: 'Existing User' },
-        { type: 'BEST DEAL', category: 'Smart Home Accessories', discount: 'Up to 50% OFF', details: 'Savings on smart lighting, entry systems, and home security.', user: 'Existing User' },
-        { type: 'UP TO 40% OFF', category: 'Smart Home (Ring Indoor Cam)', discount: '40% OFF', details: 'Ring 1080p HD Indoor Cam with complete Ring app integration.', user: 'Existing User' },
-        { type: 'UP TO 50% OFF', category: 'Skincare (Tretinoin Treatment)', discount: 'Up to 50% OFF', details: 'Budget-friendly anti-aging skincare; reduces fine lines and texture.', user: 'Existing User' },
-        { type: 'UP TO 46% OFF', category: 'Home Essentials & Decor', discount: 'Up to 46% OFF', details: 'Home decor, furniture, kitchenware, and area rugs starting at $9.', user: 'Existing User' },
-        { type: '43% DISCOUNT', category: 'Home Security Bundle', discount: '43% OFF', details: 'Ring Battery Doorbell + Pan-Tilt Cam Combo for $79.99 ($60 savings).', user: 'Existing User' },
-        { type: 'UP TO 40% OFF', category: 'Home Appliances & Toys', discount: 'Up to 40% OFF', details: 'Automatic cart discounts on home tools, toys, and fashion picks.', user: 'New User' },
-        { type: 'HOT DEAL', category: 'Sports & Outdoors', discount: 'Up to 40% OFF', details: 'Fitness gear, hunting/fishing equipment, and outdoor activewear.', user: 'Existing User' },
-        { type: 'UP TO 36% OFF', category: 'Electronics & Tech', discount: 'Up to 36% OFF', details: 'Smartphones, computers, video games, TVs, and tech accessories.', user: 'Existing User' },
-        { type: 'UP TO 35% OFF', category: 'Kitchen Appliances', discount: 'Up to 35% OFF', details: 'Air fryers, multicookers, ice cream makers, and kitchen gadgets.', user: 'Existing User' },
-        { type: 'UP TO 34% OFF', category: 'Amazon Kids Devices', discount: 'Up to 34% OFF', details: 'Alexa-enabled Echo gadgets designed specifically for children.', user: 'Existing User' },
-        { type: 'UP TO 30% OFF', category: 'Outdoor Apparel', discount: 'Up to 30% OFF', details: 'Lightweight waterproof packable rain jackets for women.', user: 'Existing User' },
-        { type: 'UP TO 30% OFF', category: 'Computers & IT Accessories', discount: 'Up to 30% OFF', details: 'Laptops, desktops, monitors, and tablets starting from $19.99.', user: 'Existing User' },
-        { type: 'UP TO 30% OFF', category: 'Health & Nutrition', discount: 'Up to 30% OFF', details: 'Plant-based organic protein powders and wellness shakes.', user: 'Existing User' },
-        { type: '20% OFF', category: 'Amazon Devices', discount: '20% OFF', details: 'Trade-in discount + estimated trade value given via Gift Card.', user: 'Existing User' },
-        { type: '20% DISCOUNT', category: 'Beauty (Collagen Mask)', discount: '20% OFF', details: 'Collagen Night Wrapping Mask price drop from $18.90 to $15.20.', user: 'Existing User' },
-        { type: 'NEW ARRIVALS', category: 'Multi-Category Releases', discount: 'From $4.99', details: 'Hot new releases in pet supplies, kitchen, clothing, and tech.', user: 'Existing User' },
-        { type: 'FROM $6', category: 'Party Supplies', discount: 'From $5.99', details: 'Silver Metallic Tinsel Foil Fringe Backdrop Curtains (2-pack).', user: 'Existing User' },
-        { type: 'GIFT CARDS', category: 'Gift Cards', discount: 'From $10', details: 'US-redeemable physical and digital Amazon gift cards from $10.', user: 'Existing User' },
-        { type: 'FROM $20', category: 'Footwear (Crocs)', discount: 'From $19.98', details: 'Crocs Kids Classic Clogs in soft Croslite material.', user: 'Existing User' },
-        { type: 'PRICE DROP', category: 'Beverages (Unwell Hydration)', discount: 'Starting $25', details: 'Wellness hydration drink mixes in Orange, Strawberry, and Mango.', user: 'New User' },
-        { type: 'UNDER $30', category: 'Fitness Equipment', discount: 'Under $30', details: '4+ Star top-rated workout equipment and home fitness gear.', user: 'Existing User' },
-        { type: 'FROM $35', category: 'Smart Speakers', discount: 'From $34.99', details: 'Echo and Alexa smart speakers and smart display models.', user: 'Existing User' },
-        { type: 'PRICE DROP', category: 'Bedding (Comforter Set)', discount: 'Only $35.99', details: 'SDIII 3-Piece Twin Blue Butterfly Comforter Set with pillowcases.', user: 'Existing User' },
-        { type: 'UNDER $50', category: 'Kitchen Essentials', discount: 'Under $50', details: 'Toasters, popcorn makers, electric kettles, and pressure cookers.', user: 'Existing User' },
-        { type: 'FROM $70', category: 'Luxury Beauty', discount: 'From $70', details: 'High-end skincare, fragrances, cosmetics, and luxury haircare.', user: 'Existing User' },
-        { type: 'FROM $169', category: 'Smart Security (Blink Camera)', discount: 'From $169', details: 'Blink Outdoor 4 wire-free HD live security camera with 2-way audio.', user: 'Existing User' },
-        { type: 'SPECIAL PRICE', category: 'Laptops (MacBook Neo)', discount: 'From $599', details: 'New Apple MacBook Neo productivity laptop.', user: 'Existing User' },
-        { type: 'NEW USER OFFER', category: 'Prime Membership', discount: '30-Day Free Trial', details: '30-day free trial with fast shipping, video streaming, and perks.', user: 'New User' },
-        { type: 'DEAL', category: 'Pet Care & Meds', discount: 'From $20', details: 'Prescription pet medications, health products, and pet food.', user: 'Existing User' },
-        { type: 'NEW ARRIVAL', category: 'Footwear (Converse)', discount: 'Featured Deal', details: 'Classic Chuck Taylor Converse sneakers on Amazon.', user: 'Existing User' },
-      ].map((row, i) => (
-        <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAFA]'}>
-          <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A] whitespace-nowrap">
-            {row.type}
-          </td>
-          <td className="px-4 py-3 border-b border-[#E8E8F0] font-semibold text-[#4A4A6A]" itemProp="name">
-            {row.category}
-          </td>
-          <td className="px-4 py-3 border-b border-[#E8E8F0] font-black text-[#FF5722] whitespace-nowrap">
-            {row.discount}
-          </td>
-          <td className="px-4 py-3 border-b border-[#E8E8F0] text-[#666680] leading-normal" itemProp="description">
-            {row.details}
-          </td>
-          <td className="px-4 py-3 border-b border-[#E8E8F0] whitespace-nowrap">
-            <span className={`inline-block px-2 py-1 rounded-md text-[10px] font-bold ${
-              row.user === 'New User' 
-                ? 'bg-[#E6F4EA] text-[#137333]' 
-                : 'bg-[#F1F3F4] text-[#5F6368]'
-            }`}>
-              {row.user}
-            </span>
-          </td>
-        </tr>
-      ))}
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">Nillkin iPhone 15 Pro Max Magnetic Case</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">92% Off</td>
+        <td className="p-3.5 font-bold">₹679</td>
+        <td className="p-3.5 text-gray-500 line-through">₹7,998</td>
+        <td className="p-3.5">Magnetic liquid silicone with premium feel</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Women's Cotton Blend Printed Short Kurti</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">91% Off</td>
+        <td className="p-3.5 font-bold">₹179</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,999</td>
+        <td className="p-3.5">Regular fit, round neck & half sleeves</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Nillkin CamShield iPhone 13 Pro Case</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">90% Off</td>
+        <td className="p-3.5 font-bold">₹509</td>
+        <td className="p-3.5 text-gray-500 line-through">₹4,999</td>
+        <td className="p-3.5">Slide-over camera lens cover for scratch protection</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Women's Crepe Kurti</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">87% Off</td>
+        <td className="p-3.5 font-bold">₹99</td>
+        <td className="p-3.5 text-gray-500 line-through">₹749</td>
+        <td className="p-3.5">Straight fit with 3/4 sleeves</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Safari Omega 30L Laptop Backpack</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">84% Off</td>
+        <td className="p-3.5 font-bold">₹549</td>
+        <td className="p-3.5 text-gray-500 line-through">₹3,396</td>
+        <td className="p-3.5">Includes rain cover & multiple storage sections</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">BRUTON EVA Lite Running Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">84% Off</td>
+        <td className="p-3.5 font-bold">₹398</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,499</td>
+        <td className="p-3.5">Lightweight build; extra coupon on select sizes</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">BlueBlaze EVA Lite Running Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">84% Off</td>
+        <td className="p-3.5 font-bold">₹483</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,999</td>
+        <td className="p-3.5">Breathable mesh upper; extra coupon on select sizes</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">BRUTON Women's Wedge Sandals</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">83% Off</td>
+        <td className="p-3.5 font-bold">₹418</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,499</td>
+        <td className="p-3.5">Cushioned sole & adjustable buckle strap</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Amazon Basics 3-Tier Storage Rack</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">66% Off</td>
+        <td className="p-3.5 font-bold">₹509</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,500</td>
+        <td className="p-3.5">Slim design for kitchens, bathrooms & utilities</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Solimo Stainless Steel Insulated Bottle</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">65% Off</td>
+        <td className="p-3.5 font-bold">₹528</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,500</td>
+        <td className="p-3.5">Insulated bottle keeps drinks hot or cold</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">American Tourister 20L Backpack</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">64% Off</td>
+        <td className="p-3.5 font-bold">₹896</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,470</td>
+        <td className="p-3.5">Multiple compartments & 1-year warranty</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">JBL Vibe Beam 2 ANC Earbuds</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">60% Off</td>
+        <td className="p-3.5 font-bold">₹2,999</td>
+        <td className="p-3.5 text-gray-500 line-through">N/A</td>
+        <td className="p-3.5">Active Noise Cancellation, Pure Bass & 48h battery</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Xiaomi 20000mAh 165W Power Bank</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">53% Off</td>
+        <td className="p-3.5 font-bold">₹5,199</td>
+        <td className="p-3.5 text-gray-500 line-through">₹10,999</td>
+        <td className="p-3.5">Built-in USB-C cable & digital display</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">JBL Tune 770NC Wireless Headphones</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹4,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹9,999</td>
+        <td className="p-3.5">Adaptive ANC, 70h battery & Multipoint pairing</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Samsung Galaxy Tab S10 Lite</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">47% Off</td>
+        <td className="p-3.5 font-bold">₹30,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹57,999</td>
+        <td className="p-3.5">10.9" display, 6GB RAM & 128GB storage</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Redmi 15C 5G Prime Edition</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">47% Off</td>
+        <td className="p-3.5 font-bold">₹15,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹29,999</td>
+        <td className="p-3.5">6000mAh battery & 128GB storage</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Lenovo Tab Plus Gen 2</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">46% Off</td>
+        <td className="p-3.5 font-bold">₹33,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹63,000</td>
+        <td className="p-3.5">12.1" display & 9-speaker JBL sound setup</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">realme P4 Lite 5G</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">44% Off</td>
+        <td className="p-3.5 font-bold">₹16,249</td>
+        <td className="p-3.5 text-gray-500 line-through">N/A</td>
+        <td className="p-3.5">Dimensity processor & 144Hz display</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Haier 6kg Fully Automatic Washing Machine</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">38% Off</td>
+        <td className="p-3.5 font-bold">₹13,890</td>
+        <td className="p-3.5 text-gray-500 line-through">₹22,400</td>
+        <td className="p-3.5">5-Star rating & Oceanus Wave Drum</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">realme Buds Air 8</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">28% Off</td>
+        <td className="p-3.5 font-bold">₹3,799</td>
+        <td className="p-3.5 text-gray-500 line-through">N/A</td>
+        <td className="p-3.5">55dB ANC, Hi-Res audio & 58h playback</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Samsung Galaxy S25 Ultra 5G</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">27% Off</td>
+        <td className="p-3.5 font-bold">₹94,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,29,999</td>
+        <td className="p-3.5">200MP camera & Galaxy AI features</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Apple iPhone 16 (128GB)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">14% Off</td>
+        <td className="p-3.5 font-bold">₹76,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹89,900</td>
+        <td className="p-3.5">Apple A18 chip & enhanced battery life</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Amazon Great Indian Festival (Top Categories)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Deals across electronics, fashion, home & lifestyle</td>
+      </tr>
     </tbody>
   </table>
 </div>
+
+
 
                <p className = "mb-4">
                  Welcome to CouponScrew's dedicated Amazon deals page — your one-stop destination for verified Amazon coupon codes, promo codes, and discount codes updated every single day. Whether you are shopping for the latest smartphone, refreshing your wardrobe, or stocking up on daily essentials, we track 43+ active Amazon offers daily so you never have to pay full price. Browse the list above, copy your code, and start saving instantly.
@@ -649,7 +750,7 @@ export default function AmazonStore() {
   {/* Digital Music */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Digital Music</h3>
-    <a href="https://www.amazon.com/s?k=Digital+Music&crid=2NIFBXLL5Z1A3&sprefix=%2Caps%2C255&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/digital-music_sfq4s2.webp"
         alt="Digital Music"
@@ -671,7 +772,7 @@ export default function AmazonStore() {
   {/* Electronics */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Electronics</h3>
-    <a href="https://www.amazon.com/s?k=Electronics&crid=21IFEFQYKAM59&sprefix=digital+music%2Caps%2C308&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256137/electronics_jfn4db.webp"
         alt="Electronics"
@@ -693,7 +794,7 @@ export default function AmazonStore() {
   {/* Girls' Fashion */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Girls' Fashion</h3>
-    <a href="https://www.amazon.com/s?k=Girls%27+Fashion&crid=XX07RQNM2V6L&sprefix=%2Caps%2C299&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/girls-fashion_us71ay.webp"
         alt="Girls' Fashion"
@@ -715,7 +816,7 @@ export default function AmazonStore() {
   {/* Health & Household */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Health & Household</h3>
-    <a href="https://www.amazon.com/s?k=Health+%26+Household&crid=2IV9IQPXFWABC&sprefix=%2Caps%2C281&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256134/health-households_e716tz.webp"
         alt="Health & Household"
@@ -737,7 +838,7 @@ export default function AmazonStore() {
   {/* Home & Kitchen */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Home & Kitchen</h3>
-    <a href="https://www.amazon.com/s?k=Home+%26+Kitchen&crid=1OA6Y08ZIYG6Z&sprefix=home+%26+kitche%2Caps%2C315&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/home-kitchen_p8ntrt.webp"
         alt="Home & Kitchen"
@@ -759,7 +860,7 @@ export default function AmazonStore() {
   {/* Industrial & Scientific */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Industrial & Scientific</h3>
-    <a href="https://www.amazon.com/s?k=Industrial+%26+Scientific&crid=313VQV9YAJTJ5&sprefix=%2Caps%2C297&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/industries-scientific_ckravz.webp"
         alt="Industrial & Scientific"
@@ -781,7 +882,7 @@ export default function AmazonStore() {
   {/* Kindle Store */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Kindle Store</h3>
-    <a href="https://www.amazon.com/s?k=Kindle+Store&crid=TOGVXR58FT4D&sprefix=%2Caps%2C285&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/kindle-store_alz8bq.webp"
         alt="Kindle Store"
@@ -803,7 +904,7 @@ export default function AmazonStore() {
   {/* Luggage */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Luggage</h3>
-    <a href="https://www.amazon.com/s?k=Luggage&crid=20S9KCDUJCXOW&sprefix=%2Caps%2C308&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256133/luggage_uxj786.webp"
         alt="Luggage"
@@ -825,7 +926,7 @@ export default function AmazonStore() {
   {/* Men's Fashion */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Men's Fashion</h3>
-    <a href="https://www.amazon.com/s?k=Men%27s+Fashion&crid=32HY571UHUFNA&sprefix=luggage%2Caps%2C332&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/mens-fashion_afvzqj.webp"
         alt="Men's Fashion"
@@ -847,7 +948,7 @@ export default function AmazonStore() {
   {/* Movies & TV */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Movies & TV</h3>
-    <a href="https://www.amazon.com/s?k=Movies+%26+TV&crid=10NKB4YZZDE9O&sprefix=%2Caps%2C293&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/movies-tv_bvqvhx.webp"
         alt="Movies & TV"
@@ -869,7 +970,7 @@ export default function AmazonStore() {
   {/* Music, CDs & Vinyl */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Music, CDs & Vinyl</h3>
-    <a href="https://www.amazon.com/s?k=Music%2C+CDs+%26+Vinyl&crid=3PGC2A6OF48YT&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/music-cds-vinyl_ml12ca.webp"
         alt="Music, CDs & Vinyl"
@@ -891,7 +992,7 @@ export default function AmazonStore() {
   {/* Pet Supplies */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Pet Supplies</h3>
-    <a href="https://www.amazon.com/s?k=Pet+Supplies&crid=2FDO7PR0RR4EE&sprefix=%2Caps%2C307&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/pet-supplies_gjwhfl.webp"
         alt="Pet Supplies"
@@ -913,7 +1014,7 @@ export default function AmazonStore() {
   {/* Prime Video */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Prime Video</h3>
-    <a href="https://www.primevideo.com/region/eu/" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/prime-video_rh68ok.webp"
         alt="Prime Video"
@@ -935,7 +1036,7 @@ export default function AmazonStore() {
   {/* Software */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Software</h3>
-    <a href="https://www.amazon.com/s?k=Software&crid=2UANDI5I6UN7A&sprefix=%2Caps%2C314&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/software_z7qnmh.webp"
         alt="Software"
@@ -957,7 +1058,7 @@ export default function AmazonStore() {
   {/* Sports & Outdoors */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Sports & Outdoors</h3>
-    <a href="https://www.amazon.com/s?k=Sports+%26+Outdoors&crid=31W9FSA2B00K0&sprefix=%2Caps%2C310&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256132/sports-outdoors_glpxod.webp"
         alt="Sports & Outdoors"
@@ -979,7 +1080,7 @@ export default function AmazonStore() {
   {/* Tools & Home Improvement */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Tools & Home Improvement</h3>
-    <a href="https://www.amazon.com/s?k=Tools+%26+Home+Improvement&crid=3G0COOI6O799D&sprefix=%2Caps%2C291&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/tools-home-improvements_pyjbga.webp"
         alt="Tools & Home Improvement"
@@ -1001,7 +1102,7 @@ export default function AmazonStore() {
   {/* Toys & Games */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Toys & Games</h3>
-    <a href="https://www.amazon.com/s?k=Toys+%26+Games&crid=3N8EHDC3584CS&sprefix=%2Caps%2C292&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256128/toys-games_aatlz3.webp"
         alt="Toys & Games"
@@ -1023,7 +1124,7 @@ export default function AmazonStore() {
   {/* Video Games */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Video Games</h3>
-    <a href="https://www.amazon.com/s?k=Video+Games&crid=PAOA9FXMRRMR&sprefix=%2Caps%2C304&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256131/vidoeo-games_zynphm.webp"
         alt="Video Games"
@@ -1045,7 +1146,7 @@ export default function AmazonStore() {
   {/* Women's Fashion */}
   <section>
     <h3 className="text-xl font-black text-[#5B4FBE] mb-4">Women's Fashion</h3>
-    <a href="https://www.amazon.com/s?k=Women%27s+Fashion&crid=OA50VIVKRLY7&sprefix=%2Caps%2C322&ref=nb_sb_noss_2" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
+    <a href="https://www.amazon.in/events/greatindianfestival?&linkCode=ll2&tag=mg0001-21&linkId=5a5f03ecebab7f949fede3f000c62658&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full">
       <NextImage
         src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786256127/womens-fashion_bsvzwa.webp"
         alt="Women's Fashion"

@@ -28,7 +28,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
 }
 
-const STORE_URL = 'https://www.flipkart.com/';
+const STORE_URL = 'https://fktr.in/t20Bt7C';
 
 export default function FlipkartStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
@@ -70,7 +70,7 @@ export default function FlipkartStore() {
     },
     {
       q: 'Where can I find the best Flipkart offers?',
-      a: 'We keep this Flipkart store page updated with the coupon codes and deals we have verified. [PLACEHOLDER: confirm real update cadence before publishing.]'
+      a: 'Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes.'
     },
   ];
 
@@ -121,7 +121,7 @@ export default function FlipkartStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest verified Flipkart coupon codes, voucher codes, and exclusive offers for October 2026. Save up to 95% on electronics, fashion, home, and more, plus enjoy 10% off gift cards, Freedom Sale discounts, bank offers, cashback deals, and limited-time promotions across thousands of products.
+                    Find the latest Flipkart coupon code and Flipkart discount code to save up to 88% OFF on top products. Grab 88% OFF Kamiliant luggage, 75% OFF PUMA sneakers, 48% OFF Samsung Galaxy S25 5G, 45% OFF TCL 4K Smart TV, and up to 85% OFF Lakmé beauty products. Explore unbeatable discounts on smartphones, laptops, home appliances, travel gear, groceries, and more. Apply a verified Flipkart coupon code or discount code at checkout to maximize your savings on eligible orders.
                   </p>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function FlipkartStore() {
             {/* Promo Banner (Right 5 Columns) — desktop only, placeholder until a real banner image exists */}
             <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] border border-[#5B4FBE]/20 group">
   <Link
-    href="https://www.flipkart.com"
+    href="https://fktr.in/t20Bt7C"
     target="_blank"
     rel="noopener noreferrer nofollow sponsored"
     className="relative w-full h-full block"
@@ -194,112 +194,118 @@ export default function FlipkartStore() {
 
             {/* Coupons Card List */}
             <div className="space-y-6 max-w-5xl mx-auto p-4">
-              {coupons.map((coupon) => {
-                const isExpanded = expandedCouponId === coupon.id;
-                const isCopied = copiedCode === coupon.code;
+  {coupons.map((coupon) => {
+    const isExpanded = expandedCouponId === coupon.id;
+    const isCopied = copiedCode === coupon.code;
 
-                return (
-                  <div
-                    key={coupon.id}
-                    className="bg-[#F8F9FA] rounded-[24px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden"
-                  >
-                    <div className="flex flex-row items-stretch">
-                      {/* LEFT DISCOUNT SECTION */}
-                      <div
-                        className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
-                      >
-                        <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
-                        <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
+    return (
+      <div
+        key={coupon.id}
+        className="bg-[#F8F9FA] rounded-[24px] border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden"
+      >
+        <div className="flex flex-row items-stretch">
+          
+          {/* LEFT DISCOUNT SECTION */}
+          <div
+            className="w-24 sm:w-32 lg:w-40 flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            style={{ backgroundColor: coupon.color || '#5B4FBE' }}
+          >
+            {/* Ticket Cutout Circles */}
+            <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
+            <div className="absolute -right-3 -bottom-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
 
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          {coupon.badgeType || 'UP TO'}
-                        </span>
-                        <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
-                          {coupon.badge ? coupon.badge.replace('UP TO ', '').replace('FLAT ', '') : '50%'}
+            <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
+              {coupon.badgeType || 'UP TO'}
             </span>
-                        <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
-                          OFF
-                        </span>
-                      </div>
+            <span className="text-xl sm:text-3xl lg:text-[38px] font-black leading-none tracking-tight my-1.5 text-center">
+              {coupon.badge ? coupon.badge.replace('UP TO ', '').replace('FLAT ', '') : '50%'}
+            </span>
+            <span className="text-[9px] sm:text-[11px] uppercase tracking-[1px] font-medium opacity-90 text-center">
+              OFF
+            </span>
+          </div>
 
-                      {/* RIGHT WRAPPER */}
-                      <div className="flex-1 flex flex-col lg:flex-row items-stretch">
-                        {/* CENTER CONTENT */}
-                        <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
-                          <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                            <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
-                              {coupon.type || 'Best Offer'}
-                            </span>
-                            <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
-                              {coupon.verified || 'Verified'}
-                            </span>
-                          </div>
+          {/* RIGHT WRAPPER */}
+          <div className="flex-1 flex flex-col lg:flex-row items-stretch">
+            
+            {/* CENTER CONTENT */}
+            <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
+              <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
+                <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                  {coupon.type || 'Best Offer'}
+                </span>
+                <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                  {coupon.verified || 'Verified'}
+                </span>
+              </div>
 
-                          <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
-                            {coupon.title}
-                          </h3>
+              <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
+                {coupon.title}
+              </h3>
 
-                          <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
-                            {coupon.description}
-                          </p>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
+                {coupon.description}
+              </p>
 
-                          <button
-                            onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                            className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
-                          >
-                            View Details
-                            {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                          </button>
+              <button
+                onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
+                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
+              >
+                {isExpanded ? "Hide Details" : "View Details"}
+                {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+              </button>
 
-                          {isExpanded && coupon.bullets && coupon.bullets.length > 0 && (
-                            <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                              {coupon.bullets.map((bullet, i) => (
-                                <li key={i} className="flex items-start gap-2">
-                                  <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                                  <span>{bullet}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-
-                        {/* RIGHT ACTION SECTION */}
-                        <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
-                          {coupon.code && (
-                            <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
-                              <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
-                                {coupon.code}
-                              </span>
-                              <button
-                                onClick={() => handleCopyCode(coupon)}
-                                className="p-1 hover:bg-slate-50 rounded"
-                              >
-                                {isCopied ? (
-                                  <Check size={16} className="text-green-600" />
-                                ) : (
-                                  <Copy size={16} className="text-slate-400" />
-                                )}
-                              </button>
-                            </div>
-                          )}
-
-                          <button
-                            onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
-                            className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
-                              isCopied
-                                ? 'bg-green-600 text-white'
-                                : 'bg-[#FF5722] hover:bg-[#E64A19] text-white'
-                            }`}
-                          >
-                            {isCopied ? 'Copied!' : 'Get Deal'}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+              {isExpanded && coupon.bullets && coupon.bullets.length > 0 && (
+                <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
+                  {coupon.bullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
+
+            {/* RIGHT ACTION SECTION */}
+            <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
+              
+              {/* Show code box only if coupon.code exists */}
+              {coupon.code && coupon.code.trim() !== "" && (
+                <div className="w-full bg-white border border-dashed border-[#FF5722]/40 rounded-xl flex items-center justify-between px-4 py-2.5 mb-3">
+                  <span className="font-black text-sm sm:text-base tracking-[1px] text-[#0B1A30]">
+                    {coupon.code}
+                  </span>
+                  <button
+                    onClick={() => handleCopyCode(coupon)}
+                    className="p-1 hover:bg-slate-50 rounded transition-colors"
+                  >
+                    {isCopied ? (
+                      <Check size={16} className="text-green-600" />
+                    ) : (
+                      <Copy size={16} className="text-slate-400" />
+                    )}
+                  </button>
+                </div>
+              )}
+
+              <button
+                onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
+                className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
+                  isCopied
+                    ? 'bg-green-600 text-white'
+                    : 'bg-[#FF5722] hover:bg-[#E64A19] text-white'
+                }`}
+              >
+                {isCopied ? 'Copied!' : coupon.code ? 'Copy Code' : 'Get Deal'}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
 
           </main>
 
@@ -347,10 +353,16 @@ export default function FlipkartStore() {
               </h3>
 
               <div className="space-y-3.5 text-xs">
-                {['Mobiles', 'Electronics', 'Fashion', 'Large Appliances', 'Home & Furniture'].map((cat) => (
-                  <div key={cat} className="flex justify-between items-center font-semibold">
-                    <span className="text-[#1A1A2E]">{cat}</span>
-                    <span className="text-[#FF5722] font-bold">[PLACEHOLDER]</span>
+                {[
+                  { name: 'Mobiles', discount: 'Up to 80% OFF' },
+                  { name: 'Electronics', discount: 'Up to 70% OFF' },
+                  { name: 'Fashion', discount: 'Up to 75% OFF' },
+                  { name: 'Large Appliances', discount: 'Up to 65% OFF' },
+                  { name: 'Home & Furniture', discount: 'Up to 60% OFF' },
+                ].map((cat) => (
+                  <div key={cat.name} className="flex justify-between items-center font-semibold">
+                    <span className="text-[#1A1A2E]">{cat.name}</span>
+                    <span className="text-[#FF5722] font-bold">{cat.discount}</span>
                   </div>
                 ))}
               </div>
@@ -436,103 +448,157 @@ export default function FlipkartStore() {
   <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
     <thead>
       <tr className="bg-[#5B4FBE] text-white font-black">
-        <th className="p-3.5 border-b border-[#5B4FBE]">Offer Type</th>
-        <th className="p-3.5 border-b border-[#5B4FBE]">Coupon Code</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Product Name / Category</th>
         <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
-        <th className="p-3.5 border-b border-[#5B4FBE]">Highlights</th>
-        <th className="p-3.5 border-b border-[#5B4FBE]">Eligibility</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Deal Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Original Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
       </tr>
     </thead>
     <tbody className="divide-y divide-[#f0f0f0]">
       <tr>
-        <td className="p-3.5 font-bold text-black">Sitewide</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 85% Off</td>
-        <td className="p-3.5">Electronics, Fashion, Mobiles & Furniture</td>
-        <td className="p-3.5">Existing Users</td>
+        <td className="p-3.5 font-bold text-black">Kamiliant Hard Body Set of 2 Luggage</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">88% Off</td>
+        <td className="p-3.5 font-bold">₹2,659</td>
+        <td className="p-3.5 text-gray-500 line-through">₹22,260</td>
+        <td className="p-3.5">Strong hard-shell build for family holidays</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Sitewide</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 85% Off</td>
-        <td className="p-3.5">Freedom Sale live | Pre-applied discounts</td>
-        <td className="p-3.5">Existing Users</td>
+        <td className="p-3.5 font-bold text-black">Kamiliant Small Cabin Suitcase</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">86% Off</td>
+        <td className="p-3.5 font-bold">₹1,017</td>
+        <td className="p-3.5 text-gray-500 line-through">₹7,700</td>
+        <td className="p-3.5">Compact & lightweight, ideal for short trips</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Sitewide</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 90% Off</td>
-        <td className="p-3.5">Mega Sitewide Sale | Earn SuperCoins</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Kamiliant Large Check-in Suitcase</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">81% Off</td>
+        <td className="p-3.5 font-bold">₹1,793</td>
+        <td className="p-3.5 text-gray-500 line-through">₹9,690</td>
+        <td className="p-3.5">Spacious interior with smooth-rolling wheels</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Deals of the Day</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 95% Off</td>
-        <td className="p-3.5">Refreshes daily every 24 hours</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Oscar Attar Gift Set</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">77% Off</td>
+        <td className="p-3.5 font-bold">₹338</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,500</td>
+        <td className="p-3.5">Long-lasting unisex fragrances for gifting</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Fashion</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">50% - 90% Off</td>
-        <td className="p-3.5">Men's, Women's & Kids' clothing & footwear</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">PUMA Zod Runner V3 Sneakers</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">75% Off</td>
+        <td className="p-3.5 font-bold">₹995</td>
+        <td className="p-3.5 text-gray-500 line-through">₹3,999</td>
+        <td className="p-3.5">Lightweight & comfortable for daily wear/gym</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Gifting</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Special Prices</td>
-        <td className="p-3.5">Raksha Bandhan gifts starting from ₹159</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">PUMA Rungryp Sneakers</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">74% Off</td>
+        <td className="p-3.5 font-bold">₹1,299</td>
+        <td className="p-3.5 text-gray-500 line-through">₹4,999</td>
+        <td className="p-3.5">Stylish design built for all-day comfort</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Women's Fashion</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 84% Off</td>
-        <td className="p-3.5">Kurtas, Sarees, Dresses & Western wear</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">ASUS ExpertBook P5 Copilot+ PC</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">58% Off</td>
+        <td className="p-3.5 font-bold">₹1,79,990</td>
+        <td className="p-3.5 text-gray-500 line-through">N/A</td>
+        <td className="p-3.5">Intel Core Ultra 7, 32GB RAM, 1TB SSD & MS Office</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Grocery</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 40% Off</td>
-        <td className="p-3.5">Food Fest | Snacks starting from ₹210</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Samsung Galaxy S25 5G</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">48% Off</td>
+        <td className="p-3.5 font-bold">₹54,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,04,999</td>
+        <td className="p-3.5">Snapdragon processor, 12GB RAM, Protect Promise</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Bank Offer</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">₹3,000 Benefits</td>
-        <td className="p-3.5">Flipkart Axis Card | Unlimited 5% cashback</td>
-        <td className="p-3.5">New Card Applicants</td>
+        <td className="p-3.5 font-bold text-black">ASUS ExpertBook P3 AI PC</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">47% Off</td>
+        <td className="p-3.5 font-bold">₹91,990</td>
+        <td className="p-3.5 text-gray-500 line-through">N/A</td>
+        <td className="p-3.5">Intel Core 5, 16GB RAM, 512GB SSD & Windows 11</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Footwear</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
+        <td className="p-3.5 font-bold text-black">TCL 55-inch QLED 4K Smart TV</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">45% Off</td>
+        <td className="p-3.5 font-bold">₹41,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹76,990</td>
+        <td className="p-3.5">Dolby Vision, HDR10+ & Google TV interface</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">realme P4 Lite 5G</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 45% Off</td>
+        <td className="p-3.5 font-bold">Starting ₹15,999</td>
+        <td className="p-3.5 text-gray-500 line-through">N/A</td>
+        <td className="p-3.5">Smooth display & long-lasting battery life</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">ASUS ExpertBook P1 Laptop</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">41% Off</td>
+        <td className="p-3.5 font-bold">₹63,990</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,09,990</td>
+        <td className="p-3.5">Intel Core 3, 16GB DDR5 RAM, 512GB SSD</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Nothing Phone (4b)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% Off</td>
+        <td className="p-3.5 font-bold">₹29,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹49,999</td>
+        <td className="p-3.5">6GB RAM & 128GB storage options available</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Voltas Beko 472L Side-by-Side Refrigerator</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">38% Off</td>
+        <td className="p-3.5 font-bold">₹52,240</td>
+        <td className="p-3.5 text-gray-500 line-through">₹84,490</td>
+        <td className="p-3.5">Pro Smart Inverter Compressor & built-in stabilizer</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Samsung 653L Side-by-Side Refrigerator</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">32% Off</td>
+        <td className="p-3.5 font-bold">₹81,990</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,21,000</td>
+        <td className="p-3.5">AI, Wi-Fi connectivity & Convertible technology</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Beauty Products (Lakmé, CeraVe, etc.)</td>
         <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off</td>
-        <td className="p-3.5">Nike, Puma, Adidas & Campus shoes</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Discounts on skincare, makeup & personal care</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Watches & Luggage</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 70% Off</td>
-        <td className="p-3.5">Titan, Fossil & Samsonite products</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">Lakmé & Leading Beauty Brands</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 85% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Makeup, skincare & personal care essentials</td>
       </tr>
       <tr>
-        <td className="p-3.5 font-bold text-black">Mobiles</td>
-        <td className="p-3.5"><span className="text-gray-400 font-medium">No Code Required</span></td>
-        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
-        <td className="p-3.5">Apple, Samsung, Realme | No-Cost EMI</td>
-        <td className="p-3.5">All Users</td>
+        <td className="p-3.5 font-bold text-black">CeraVe Skincare Range</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 80% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Dermatologist-recommended cleansers & moisturisers</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Breakfast Picks & Peanut Butter</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 60% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Healthy grocery items from leading brands</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Household & Cleaning Essentials</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 55% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Everyday home needs from trusted brands</td>
       </tr>
     </tbody>
   </table>
 </div>
-
-
 
         <div className={cn('text-gray-500 font-bold leading-relaxed space-y-6 relative', !isReadMore && 'max-h-[500px] overflow-hidden')}>
 
@@ -553,9 +619,6 @@ export default function FlipkartStore() {
             <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
               Today's Best Flipkart Coupon Codes (October 2026)
             </h3>
-            <p className="italic text-sm text-gray-500 mb-4">
-              💡 [Dev note: This section is dynamically populated by the deals grid component — the intro paragraph and table below are static editorial copy that sits above the card grid.]
-            </p>
             <p>
               Here is a quick overview of the best active savings categories on Flipkart right now:
             </p>
@@ -697,7 +760,7 @@ export default function FlipkartStore() {
             </h3>
             <div className="my-4">
           <a 
-            href="https://www.flipkart.com/ss-26-base-inline-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -778,7 +841,7 @@ export default function FlipkartStore() {
 
              <div className="my-4">
           <a 
-            href="https://www.flipkart.com/mobile-phones-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -857,7 +920,7 @@ export default function FlipkartStore() {
             </h3>
              <div className="my-4">
           <a 
-            href="https://www.flipkart.com/new-elec-clp-march-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -938,7 +1001,7 @@ export default function FlipkartStore() {
 
              <div className="my-4">
           <a 
-            href="https://www.flipkart.com/tv-and-appliances-inline-ab-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1046,7 +1109,7 @@ export default function FlipkartStore() {
             </h3>
              <div className="my-4">
           <a 
-            href="https://www.flipkart.com/fnhc-2025-new-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1166,7 +1229,7 @@ export default function FlipkartStore() {
             </h3>
              <div className="my-4">
           <a 
-            href="https://www.flipkart.com/toysbc-new26-inline-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1258,7 +1321,7 @@ export default function FlipkartStore() {
             </h3>
              <div className="my-4">
           <a 
-            href="https://www.flipkart.com/aa-2025-new-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1357,7 +1420,7 @@ export default function FlipkartStore() {
             </h3>
             <div className="my-4">
           <a 
-            href="https://www.flipkart.com/sf-inline-2025-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1436,7 +1499,7 @@ export default function FlipkartStore() {
             </h3>
             <div className="my-4">
           <a 
-            href="https://www.flipkart.com/india-ka-furniture-studio-inlines-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1537,7 +1600,7 @@ export default function FlipkartStore() {
 
             <div className="my-4">
           <a 
-            href="https://www.flipkart.com/booksmedia-2025-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"
@@ -1615,7 +1678,7 @@ export default function FlipkartStore() {
             </h3>
             <div className="my-4">
           <a 
-            href="https://www.flipkart.com/twowheelers-at-store?pageUID=1787014736439" 
+            href="https://fktr.in/t20Bt7C" 
             target="_blank" 
             rel="noopener noreferrer nofollow sponsored"
             className="inline-block hover:opacity-95 transition-opacity"

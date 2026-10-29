@@ -6,19 +6,19 @@ import { FLIPKART_COUPONS } from './_components/flipkartCoupons'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  title: 'Flipkart Coupon Codes & Deals – Up to 95% OFF | Oct 2026',
+  title: 'Flipkart Coupon Code: Up to 88% Off Festival Deals',
 
   description:
-    "Save more with verified Flipkart coupon codes, voucher codes, and today's best offers. Enjoy up to 95% OFF sitewide, 10% OFF gift cards, Freedom Sale discounts, bank offers, and exclusive deals across mobiles, fashion, electronics, home, beauty, and more.",
+    "Get the latest Flipkart coupon code and Flipkart discount code to save up to 88% OFF on luggage, smartphones, laptops, TVs, beauty products, and more.",
 
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/flipkart-coupon-code',
   },
 
   openGraph: {
-    title: 'Flipkart Coupon Codes & Deals – Up to 95% OFF | Oct 2026',
+    title: 'Flipkart Coupon Code: Up to 88% Off Festival Deals',
     description:
-      "Save more with verified Flipkart coupon codes, voucher codes, and today's best offers. Enjoy up to 95% OFF sitewide, 10% OFF gift cards, Freedom Sale discounts, bank offers, and exclusive deals across mobiles, fashion, electronics, home, beauty, and more.",
+      "Get the latest Flipkart coupon code and Flipkart discount code to save up to 88% OFF on luggage, smartphones, laptops, TVs, beauty products, and more.",
     url: 'https://www.couponscrew.com/stores/flipkart-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Flipkart Coupon Codes & Deals – Up to 95% OFF | Oct 2026',
+    title: 'Flipkart Coupon Code: Up to 88% Off Festival Deals',
     description:
-      "Save more with verified Flipkart coupon codes, voucher codes, and today's best offers. Enjoy up to 95% OFF sitewide, 10% OFF gift cards, Freedom Sale discounts, bank offers, and exclusive deals across mobiles, fashion, electronics, home, beauty, and more.",
+      "Get the latest Flipkart coupon code and Flipkart discount code to save up to 88% OFF on luggage, smartphones, laptops, TVs, beauty products, and more.",
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -86,8 +86,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/flipkart-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/flipkart-coupon-code',
-      name: 'Flipkart Coupon Codes & Deals – Up to 95% OFF | Oct 2026',
-      description: "Save more with verified Flipkart coupon codes, voucher codes, and today's best offers. Enjoy up to 95% OFF sitewide, 10% OFF gift cards, Freedom Sale discounts, bank offers, and exclusive deals across mobiles, fashion, electronics, home, beauty, and more.",
+      name: 'Flipkart Coupon Code: Up to 88% Off Festival Deals',
+      description: "Get the latest Flipkart coupon code and Flipkart discount code to save up to 88% OFF on luggage, smartphones, laptops, TVs, beauty products, and more.",
       isPartOf: {
         '@type': 'WebSite',
         '@id': 'https://www.couponscrew.com/#website',
@@ -128,11 +128,7 @@ const schema = {
       sameAs: ['https://en.wikipedia.org/wiki/Flipkart'],
     },
 
-    // FAQPage — only the 3 questions with real (non-placeholder) answers.
-    // The 4th visible FAQ item ("Where can I find the best Flipkart offers?")
-    // has a [PLACEHOLDER] answer and is deliberately excluded from schema
-    // until it has real content, so JSON-LD never claims more than the page
-    // actually says.
+    // FAQPage — matches the visible FAQ accordion in FlipkartStore.tsx verbatim.
     {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -140,66 +136,34 @@ const schema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Use the Flipkart App for Lower Prices",
+      "name": "How do I use a Flipkart coupon code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Flipkart shopping via the app frequently yields prices 5–10% lower than the same product on the desktop site. For any purchase over ₹1,000, check the app price before completing the order on desktop."
+        "text": "Browse verified codes here on Couponscrew, copy your preferred code by clicking \"Copy Code\", and paste it into the promo code field during checkout on the Flipkart website or app. If it is a deal, simply click \"Visit Flipkart\" to get the discount auto-applied."
       }
     },
     {
       "@type": "Question",
-      "name": "Get the Flipkart Axis Bank Credit Card",
+      "name": "Can I use multiple coupon codes on Flipkart?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you shop on Flipkart more than 3–4 times a month, the axis bank Flipkart credit card is one of the best cashback cards available — 5% unlimited cashback on Flipkart, no cap, applied as a statement credit. Over a year of regular shopping it can add up to significant savings without requiring any additional effort."
+        "text": "Generally, Flipkart only allows one promotional code per order. You can often combine a coupon code with automatic sitewide promotions or select bank card offers — check the terms on each code before applying."
       }
     },
     {
       "@type": "Question",
-      "name": "Stack a Coupon with a Bank Offer",
+      "name": "Why is my Flipkart coupon code not working?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Flipkart allows stacking a Flipkart promo code on top of an eligible bank-card discount in many (not all) promotions. The combination of a sale price + a coupon + a bank card offer is where the deepest discounts happen — especially during Big Billion Days and the Diwali sale."
+        "text": "A coupon might not work due to category exclusions, minimum spend requirements, expiry, or user eligibility restrictions (e.g. new users only). Check the terms listed with each code on Couponscrew before applying."
       }
     },
     {
       "@type": "Question",
-      "name": "Join Flipkart Plus or Upgrade to Black",
+      "name": "Where can I find the best Flipkart offers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Flipkart Plus (free tier, earned via SuperCoins) gives early access to sale events and member-only deals. Flipkart Black (₹1,499/year) adds free delivery on all orders, priority service, and exclusive discounts. If you are a frequent Flipkart shopper, Flipkart Black pays for itself within 2–3 large purchases annually."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Track the Flipkart Upcoming Sale Calendar",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Timing your purchases around Flipkart upcoming sale events is the single most reliable way to save on big-ticket items. Smartphones, televisions, and appliances all see their deepest annual discounts during Big Billion Days and the Diwali sale. Use the sale calendar on this page to plan purchases 2–3 weeks in advance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Check Flipkart Gift Card Bonus Promotions",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "During certain promotional windows, Flipkart runs bonus-credit offers on gift card purchases — e.g., buy ₹2,000 in gift cards and receive ₹100–200 in extra credits. If you are a regular shopper, purchasing gift cards during these windows is a low-effort way to bank free credits. CouponsCrew lists all active Flipkart gift card free bonus offers on this page."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Enable Price Drop Alerts on Saved Items",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Flipkart's wishlist feature sends price-drop notifications when a saved item goes on sale. For high-demand items during Flipkart big billion days or the Flipkart mobile sale, enabling this alert lets you act immediately when the discount hits — before stock sells out."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Watch for the Christmas Sale on Flipkart",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Christmas sale on Flipkart (late December) is often overlooked but delivers strong discounts, particularly on electronics and fashion — essentially a continuation of the year-end clearance window. Combined with a Flipkart voucher code, this is a reliable time to pick up high-value items at reduced prices."
+        "text": "Our deals team verifies and updates coupons every morning. Expired promotions are automatically filtered out, ensuring you only spend time on working codes."
       }
     }
   ]

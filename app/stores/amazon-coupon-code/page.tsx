@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
   // ── Core Meta ──────────────────────────────
-  title: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
+  title: 'Amazon Coupon Code: Up to 92% Off Great Indian Festival',
   description:
-    'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
+    'Get the latest Amazon coupon code and Amazon discount code to save up to 92% OFF on mobiles, electronics, fashion, home essentials, and Great Indian Festival deals.',
 
   keywords: [
     'Amazon coupon code',
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
 
   // ── Open Graph ─────────────────────────────
   openGraph: {
-    title: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
+    title: 'Amazon Coupon Code: Up to 92% Off Great Indian Festival',
     description:
-      'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
+      'Get the latest Amazon coupon code and Amazon discount code to save up to 92% OFF on mobiles, electronics, fashion, home essentials, and Great Indian Festival deals.',
     url: 'https://www.couponscrew.com/stores/amazon-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   // ── Twitter Card ───────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
+    title: 'Amazon Coupon Code: Up to 92% Off Great Indian Festival',
     description:
-      'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
+      'Get the latest Amazon coupon code and Amazon discount code to save up to 92% OFF on mobiles, electronics, fashion, home essentials, and Great Indian Festival deals.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-images/amazon-coupon-code.jpg'],
@@ -137,9 +137,9 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/amazon-coupon-code#webpage',
       url: 'https://www.couponscrew.com/stores/amazon-coupon-code',
-      name: 'Amazon Coupon Code - Up to 90% OFF Today | Oct 2026',
+      name: 'Amazon Coupon Code: Up to 92% Off Great Indian Festival',
       description:
-        'Use Amazon coupon code & Amazon discount code to save up to 90% OFF on Electronics, Fashion & more. Prime Members save up to 80% on medicines. 120+ verified deals! Aug 2026',
+        'Get the latest Amazon coupon code and Amazon discount code to save up to 92% OFF on mobiles, electronics, fashion, home essentials, and Great Indian Festival deals.',
       inLanguage: 'en-IN',
       isPartOf: {
         '@type': 'WebSite',

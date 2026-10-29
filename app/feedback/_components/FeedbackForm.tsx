@@ -316,9 +316,14 @@ export default function FeedbackForm() {
                 </div>
               </div>
               <p className="text-sm text-slate-500 mb-6">2,540+ Reviews</p>
-              <button className="w-full py-3 rounded-xl bg-orange-50 text-[#FF5E20] hover:bg-[#FF5E20] hover:text-white font-semibold flex items-center justify-center gap-2 transition-colors border border-[#FF5E20]/20 hover:border-transparent mt-auto">
-                View Google Reviews <ArrowRight className="w-4 h-4" />
-              </button>
+              <a
+                href="https://g.page/r/CSpF0pXLTu3VECE/review"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="w-full py-3 rounded-xl bg-orange-50 text-[#FF5E20] hover:bg-[#FF5E20] hover:text-white font-semibold flex items-center justify-center gap-2 transition-colors border border-[#FF5E20]/20 hover:border-transparent mt-auto"
+              >
+                Write a Google Review <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col items-center hover:shadow-md transition-shadow">

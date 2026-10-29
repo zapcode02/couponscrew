@@ -32,7 +32,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
 }
 
-const AFFILIATE_URL = 'https://www.ajio.com/';
+const AFFILIATE_URL = 'https://ajiio.in/Q6clHNy';
 
 export default function AjioStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
@@ -171,7 +171,7 @@ export default function AjioStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save big with verified AJIO coupon codes, promo codes, discount codes and exclusive offers. Enjoy up to 90% OFF, extra 25% OFF, ₹400 OFF, free delivery, bank discounts, and new user deals. Discover the latest working AJIO offers and shop top fashion brands for less.
+                    Find the latest AJIO coupon code and AJIO discount code to save on the best fashion deals. Get 30% OFF your first order, up to 70% OFF Trampoline Kids Wear, up to 60% OFF Lee Cooper, and 50% OFF MIRAGGIO Bags, Rare Rabbit, and more. Shop clothing, footwear, handbags, beauty products, and premium brands at unbeatable prices. Apply a verified AJIO coupon code or discount code at checkout to unlock extra savings on eligible purchases and limited-time offers.
                   </p>
                 </div>
               </div>
@@ -287,8 +287,7 @@ export default function AjioStore() {
 
             </div>
 
-            {/* Coupons Card List */}
-<div className="space-y-6 max-w-5xl mx-auto p-4">
+            <div className="space-y-6 max-w-5xl mx-auto p-4">
   {coupons.map((coupon) => {
     const isExpanded = expandedCouponId === coupon.id;
     const isCopied = copiedCode === coupon.code;
@@ -301,7 +300,7 @@ export default function AjioStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
+          {/* LEFT DISCOUNT SECTION */}
           <div
             className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
@@ -326,10 +325,11 @@ export default function AjioStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#FF5722) */}
+                {/* Category Badge */}
                 <span className="bg-[#FF5722]/10 text-[#FF5722] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
+                {/* Verified Badge */}
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.verified || "Verified"}
                 </span>
@@ -337,7 +337,7 @@ export default function AjioStore() {
 
               <h3 className="text-base sm:text-lg lg:text-[22px] font-black text-[#0B1A30] leading-snug tracking-tight">
                 {coupon.title}
-                          </h3>
+              </h3>
 
               <p className="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed max-w-2xl">
                 {coupon.description}
@@ -352,21 +352,28 @@ export default function AjioStore() {
                 {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
               </button>
 
-              {/* Details List */}
+              {/* Dynamic Details List */}
               {isExpanded && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                    <span>Valid on select fashion & lifestyle categories.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                    <span>Minimum cart value might apply as specified on descriptions.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                    <span>Covers selected brands and product collections.</span>
-                  </li>
+                  {coupon.points && coupon.points.length > 0 ? (
+                    coupon.points.map((point, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                        <span>{point}</span>
+                      </li>
+                    ))
+                  ) : (
+                    <>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                        <span>Valid on select fashion & lifestyle categories.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                        <span>Minimum cart value might apply as specified on descriptions.</span>
+                      </li>
+                    </>
+                  )}
                 </ul>
               )}
             </div>
@@ -374,9 +381,7 @@ export default function AjioStore() {
             {/* RIGHT ACTION SECTION */}
             <div className="lg:w-64 w-full border-t lg:border-t-0 lg:border-l border-dashed border-slate-300 p-4 sm:p-5 lg:p-6 flex flex-col justify-center items-center lg:items-stretch bg-transparent">
 
-            
-
-              {/* Action Button - Vibrant CTA Accent (#FF5722) */}
+              {/* Action Button */}
               <button
                 onClick={() => (coupon.code ? handleCopyCode(coupon) : handleGetDeal())}
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
@@ -396,8 +401,6 @@ export default function AjioStore() {
     );
   })}
 </div>
-
-
 
 
           </main>
@@ -578,43 +581,129 @@ export default function AjioStore() {
           AJIO Coupon Code &amp; Fashion Deals — Verified for October 2026
         </h2>
 
-        <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
-      <table className="w-full text-left border-collapse min-w-[750px]" itemScope itemType="https://schema.org/Table">
-        <caption className="sr-only">AJIO Coupon Offers and Deals</caption>
-        <thead>
-          <tr className="bg-[#F3F0FF] border-b border-[#E8E8F0]">
-            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Offer Type</th>
-            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Category</th>
-            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">Discount / Price</th>
-            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm">Offer Highlights</th>
-            <th scope="col" className="px-5 py-4 text-[#5B4FBE] font-extrabold text-sm whitespace-nowrap">User Eligibility</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-[#E8E8F0]">
-          {AJIO_COUPONS.map((coupon) => (
-            <tr key={coupon.id} className="border-b border-[#E8E8F0] last:border-none align-middle hover:bg-[#FAFAFC] transition-colors">
-              <td className="px-5 py-4 font-bold text-[#4A5568] text-xs sm:text-sm whitespace-nowrap uppercase">
-                {coupon.badge}
-              </td>
-              <td className="px-5 py-4 font-bold text-[#2D3748] text-xs sm:text-sm" itemProp="name">
-                {coupon.type}
-              </td>
-              <td className="px-5 py-4 font-extrabold text-[#FF9900] text-xs sm:text-sm whitespace-nowrap">
-                {coupon.badge}
-              </td>
-              <td className="px-5 py-4 text-[#4A5568] text-xs sm:text-sm leading-snug font-medium" itemProp="description">
-                {coupon.title}
-              </td>
-              <td className="px-5 py-4 whitespace-nowrap">
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#E6F4EA] text-[#137333]">
-                  {coupon.userType}
-                </span>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Brand / Offer Category</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount / Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">First Purchase (New Users)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 30% Off</td>
+        <td className="p-3.5">Valid for new users across fashion, footwear, accessories & beauty</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Lee Cooper</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 60% Off</td>
+        <td className="p-3.5">Casual wear, jeans & everyday basics (Brand Day offer)</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">MIRAGGIO Bags</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">Handbags, totes, sling bags & shoulder bags</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Rare Rabbit Collection</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">Premium shirts, polos, trousers & casual wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">U.S. Polo Assn.</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 40% Off</td>
+        <td className="p-3.5">Polos, shirts, denim & accessories</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Under Armour</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 40% Off</td>
+        <td className="p-3.5">Activewear, sportswear, shoes & workout accessories</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">DA MILANO</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 40% Off</td>
+        <td className="p-3.5">Premium leather wallets, handbags, belts & travel accessories</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Trampoline Kids Wear</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 70% Off</td>
+        <td className="p-3.5">Trendy clothing & everyday basics for boys and girls</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Arrow Collection</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">Formal shirts, trousers & polos for work/events</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">WROGN Fashion</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">Casual streetwear, T-shirts, shirts, jeans & sweatshirts</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Premium Edit (Allen Solly, Van Heusen, etc.)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off + Extra 20% Off</td>
+        <td className="p-3.5">Limited-time savings on top premium fashion brands</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Brooks Brothers Collection</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">Luxury international fashion including shirts, polos & trousers</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Tops & Tees (DNMX, Teamspirit, etc.)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Starting under ₹299</td>
+        <td className="p-3.5">Everyday essential tops and t-shirts in multiple styles</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Ethnic Wear (Jompers, See Designs, etc.)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Starting under ₹999</td>
+        <td className="p-3.5">Kurtas, traditional sets & festive wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">SHOWOFF & KOTTY</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 65% Off</td>
+        <td className="p-3.5">Dresses, tops, jeans & trendy western wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Clarks & Steve Madden Footwear</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">Heels, loafers, sandals & sneakers from top shoe brands</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Laney Fashion Collection</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 60% Off</td>
+        <td className="p-3.5">Trendy women's dresses, tops & daily fashion</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">GAS, GANT & Premium Brands</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off</td>
+        <td className="p-3.5">International casual and smart-casual wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">U.S. Polo Assn. & Rare Rabbit Combo Deal</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 45% Off</td>
+        <td className="p-3.5">Shirts, polos, jeans & daily wear staples</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Allen Solly & Van Heusen</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">At least 50% Off (Extra 20% on select)</td>
+        <td className="p-3.5">Office wear & smart casual wardrobe essentials</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Budget Fashion Hub</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Under ₹299</td>
+        <td className="p-3.5">Budget-friendly tops, tees & basics across top categories</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">AJIO Brand Day Event</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Special sales event across clothing, shoes & accessories</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className={cn("text-gray-500 font-bold leading-relaxed space-y-6 relative", !isReadMore && "max-h-[500px] overflow-hidden")}>
           <p>
