@@ -19,7 +19,7 @@ import {
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
 
-const AFFILIATE_URL = 'https://amzn.to/4uUuG7b';
+const AFFILIATE_URL = 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl';
 
 function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');

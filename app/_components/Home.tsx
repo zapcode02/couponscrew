@@ -19,13 +19,13 @@ const heroSlides = [
   { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1793119630/perffy_kh9jh3_q1kczi.webp', alt: 'Minimalist Deals', href: 'https://www.underratedclub.com/?utm_source=affnads&utm_medium=affiliate&utm_campaign=couponscrew' },
   { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239479/Minimalist_qa77z6.webp', alt: 'Minimalist Deals', href: 'https://www.underratedclub.com/?utm_source=affnads&utm_medium=affiliate&utm_campaign=couponscrew' },
   { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239172/perffy_kh9jh3.webp', alt: 'Pepperfry Deals', href: 'https://track.vcommission.com/click?campaign_id=10194&pub_id=130349' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239589/desidiya-moon_n01ghx.webp', alt: 'Desidiya Moon Deals', href: 'https://amzn.to/4bdFyGa' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239589/desidiya-moon_n01ghx.webp', alt: 'Desidiya Moon Deals', href: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl' },
 ];
 
 const rightSlides = [
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239996/delmo_wnabi8.webp', alt: 'DEELMO Deals', href: 'https://amzn.to/3R7tzTR' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239996/acnos_ctezij.webp', alt: 'Acnos Deals', href: 'https://amzn.to/4gbffUx' },
-  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783240053/pulgo_q20hdz.webp', alt: 'PulGos Deals', href: 'https://amzn.to/4uUuG7b' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239996/delmo_wnabi8.webp', alt: 'DEELMO Deals', href: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783239996/acnos_ctezij.webp', alt: 'Acnos Deals', href: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl' },
+  { src: 'https://res.cloudinary.com/dqjlffxja/image/upload/f_auto,q_auto/v1783240053/pulgo_q20hdz.webp', alt: 'PulGos Deals', href: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl' },
 ];
 
 const productCategoryCards = [
@@ -36,11 +36,11 @@ const productCategoryCards = [
 ];
 
 const featuredProducts = [
-  { id: 'pulgos', name: "PulGos 15-in-1 Pushup Board", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162810/81RW0nGbEZL._SL1500__u4abvp.jpg', price: 399, mrp: 999, discount: 60, store: 'Amazon', url: 'https://amzn.to/4uUuG7b', slug: '/products/pulgos-15-in-1-pushup-board' },
-  { id: 'desidiya', name: "Desidiya Moon Crystal Night Light", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162551/61XWYda0HoL._SL1500__klyexw.jpg', price: 197, mrp: 1999, discount: 90, store: 'Amazon', url: 'https://amzn.to/4bdFyGa', slug: '/products/desidiya-moon-crystal-night-light' },
-  { id: 'deelmo', name: "DEELMO Men's Mandarin Collar Kurta", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162400/71Qhqwnx4JL._SY741__ljgmwm.jpg', price: 479, mrp: 2199, discount: 78, store: 'Amazon', url: 'https://amzn.to/3R7tzTR', slug: '/products/deelmo-mens-mandarin-collar-kurta' },
-  { id: 'acnos', name: "Acnos Bangle Analog Watch Pack of 2", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162305/41oui_xq1PL_zndlwz.jpg', price: 299, mrp: 1999, discount: 85, store: 'Amazon', url: 'https://amzn.to/4gbffUx', slug: '/products/acnos-bangle-watch-pack-of-2' },
-  { id: 'minimalist', name: "Minimalist Anti-Pigmentation Kit", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162150/51VX_QeZjRL._SY450__mhxhvl.jpg', price: 1147, mrp: 1299, discount: 12, store: 'Amazon', url: 'https://amzn.to/4oRAEV3', slug: '/products/minimalist-anti-pigmentation-kit' },
+  { id: 'pulgos', name: "PulGos 15-in-1 Pushup Board", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162810/81RW0nGbEZL._SL1500__u4abvp.jpg', price: 399, mrp: 999, discount: 60, store: 'Amazon', url: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl', slug: '/products/pulgos-15-in-1-pushup-board' },
+  { id: 'desidiya', name: "Desidiya Moon Crystal Night Light", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162551/61XWYda0HoL._SL1500__klyexw.jpg', price: 197, mrp: 1999, discount: 90, store: 'Amazon', url: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl', slug: '/products/desidiya-moon-crystal-night-light' },
+  { id: 'deelmo', name: "DEELMO Men's Mandarin Collar Kurta", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162400/71Qhqwnx4JL._SY741__ljgmwm.jpg', price: 479, mrp: 2199, discount: 78, store: 'Amazon', url: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl', slug: '/products/deelmo-mens-mandarin-collar-kurta' },
+  { id: 'acnos', name: "Acnos Bangle Analog Watch Pack of 2", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162305/41oui_xq1PL_zndlwz.jpg', price: 299, mrp: 1999, discount: 85, store: 'Amazon', url: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl', slug: '/products/acnos-bangle-watch-pack-of-2' },
+  { id: 'minimalist', name: "Minimalist Anti-Pigmentation Kit", img: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1783162150/51VX_QeZjRL._SY450__mhxhvl.jpg', price: 1147, mrp: 1299, discount: 12, store: 'Amazon', url: 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl', slug: '/products/minimalist-anti-pigmentation-kit' },
 ];
 
 const blogPosts = [
