@@ -169,6 +169,16 @@ const posts = [
     excerpt: 'Karwa Chauth is on Thursday, 29 October. Get the best deals on sarees, makeup, and jewellery from Myntra, Nykaa, Polki Sarees, and more — with coupons.',
     tags: ['Karwa Chauth', 'Fashion', 'Festival Offers'],
   },
+  {
+    slug: 'halloween-shopping-india-amazon-myntra-flipkart-under-999',
+    title: 'Halloween Shopping in India: Amazon, Myntra & Flipkart Best Picks Under ₹999',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1793376959/Halloween_Shopping_in_India_f1otc2.webp',
+    date: 'Oct 30, 2026',
+    readTime: '7 min read',
+    excerpt: 'Halloween kal hai aur deals aaj hain. Shop the best costumes, decor, and party picks under ₹999 on Amazon, Myntra, and Flipkart — before the cart haunts you.',
+    tags: ['Halloween', 'Festival Offers', 'Shopping Guide'],
+  },
 ];
 
 export default function Blog() {
