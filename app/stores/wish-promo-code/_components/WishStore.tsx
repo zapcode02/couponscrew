@@ -176,7 +176,7 @@ export default function WishStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest Wish Promo Code and Wish Discount Code. Get up to 90% OFF in Daily Deals, up to 70% OFF electronics and gadgets, and extra markdowns in the Clearance section. Shop budget-friendly fashion, home, and tech with verified Wish offers this October 2026.
+                    Find the latest Wish coupon code and Wish discount code for October 2026 to save on trending products across multiple categories. Enjoy up to 60% OFF Doorbuster Deals, 57% OFF Rainbow LED Shower Heads, 57% OFF Braided PE Fishing Lines, 53% OFF Mountain Bike Gloves, and 51% OFF Alien Action Figures. Shop home essentials, pet accessories, outdoor gear, collectibles, and lifestyle products at unbeatable prices. Apply a verified Wish coupon code or discount code at checkout to maximize your savings on eligible orders.
                   </p>
                 </div>
               </div>
@@ -489,6 +489,85 @@ export default function WishStore() {
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
           Wish Coupon Code: Save on Fashion, Gadgets, and Home Goods in India
         </p>
+
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Product / Offer Title</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Deal Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Original Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">Doorbuster Deals Event</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 60% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Limited-time savings across home, fashion, sports & lifestyle</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Rainbow LED Shower Head</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">57% Off</td>
+        <td className="p-3.5 font-bold">₹211.57</td>
+        <td className="p-3.5 text-gray-500 line-through">₹497.52</td>
+        <td className="p-3.5">Color-changing LED lights for modern bathrooms</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">4-Strand Braided PE Fishing Line</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 57% Off</td>
+        <td className="p-3.5 font-bold">Starting ₹165.89</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">1000m spool; available in multiple colors and sizes</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Mountain Bike Gloves</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">53% Off</td>
+        <td className="p-3.5 font-bold">Starting ₹170.54</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Cushioned padding for road rides, trail biking & outdoor trips</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">1000M 8-Strand Braided PE Fishing Line</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">48% Off</td>
+        <td className="p-3.5 font-bold">₹369.15</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Durable 8-strand braid for freshwater & saltwater fishing</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Remote Dog Training Collar</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 48% Off</td>
+        <td className="p-3.5 font-bold">Starting ₹398.91</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Includes vibration & training functions in multiple color options</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Alien Articulated Action Figure</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">51% Off</td>
+        <td className="p-3.5 font-bold">₹302.98</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Multiple articulation points for posing; collectible item</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Boys Elite Sport Shoes & Sale Items</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Trending deals across home, electronics, fashion & footwear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Wish Lifestyle Accessories</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 39% Off</td>
+        <td className="p-3.5 font-bold">Varies</td>
+        <td className="p-3.5 text-gray-500 line-through">Varies</td>
+        <td className="p-3.5">Selected lifestyle essentials with regular new additions</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>

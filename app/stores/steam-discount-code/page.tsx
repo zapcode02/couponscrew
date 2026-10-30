@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import SteamStore from './_components/SteamStore'
 import { STEAM_COUPONS } from './_components/steamCoupons'
 
-const TITLE = 'Steam Discount Code – Up to 90% OFF Seasonal Sales | Oct 2026'
-const DESCRIPTION = 'Verified Steam discounts: up to 90% OFF seasonal sales, up to 75% OFF publisher sales, free wishlist price alerts, and India-specific INR pricing this October 2026.'
+const TITLE = 'Steam Coupon Code: 90% Off The Walking Dead & Killing Floor 2'
+const DESCRIPTION = 'Get the latest Steam coupon code and Steam discount code for October 2026 to save 90% OFF The Walking Dead, 90% OFF Killing Floor 2, and more PC game deals.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -77,51 +77,51 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponscrew.com/stores/steam-discount-code#faqpage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does Steam have coupon codes in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Steam does not release affiliate promo codes or coupon codes for games. The platform's discount system works entirely through seasonal sales (where individual game prices drop by up to 95%) and the Steam Wallet gift card programme. There is no code field at checkout for game purchases."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/steam-discount-code#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Steam have coupon codes in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Steam does not release affiliate promo codes or coupon codes for games. The platform's discount system works entirely through seasonal sales (where individual game prices drop by up to 95%) and the Steam Wallet gift card programme. There is no code field at checkout for game purchases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the next Steam sale in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The next major Steam event is Steam Scream V Fest (horror game sale), starting October 26, 2026 and running through November 2. The next sitewide sale after that is the Steam Winter Sale, from December 17, 2026 to January 4, 2027."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much cheaper is Steam in India compared to USA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "India's INR pricing is typically 35–45% below the global price on most titles. After Valve's January 2026 price revision, some games are 10–20% higher than they were in 2024, but India still has meaningful regional pricing benefits. The full discount is calculated at checkout automatically when you buy from an India-registered account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use UPI to buy games on Steam in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Steam accepts UPI payments in India. You can add it as a payment method on your account, or use a Steam Wallet balance funded by a Wallet gift card if you prefer not to link a card or UPI directly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Steam Scream Fest and when does it start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Steam Scream V Fest is Steam's annual horror gaming sale event. It starts October 26, 2026 at 10:00 AM Pacific (10:30 PM IST) and runs until November 2, 2026. Discounts on horror, survival, and Halloween-themed games can reach up to 95% off."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "When is the next Steam sale in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The next major Steam event is Steam Scream V Fest (horror game sale), starting October 26, 2026 and running through November 2. The next sitewide sale after that is the Steam Winter Sale, from December 17, 2026 to January 4, 2027."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much cheaper is Steam in India compared to USA?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "India's INR pricing is typically 35–45% below the global price on most titles. After Valve's January 2026 price revision, some games are 10–20% higher than they were in 2024, but India still has meaningful regional pricing benefits. The full discount is calculated at checkout automatically when you buy from an India-registered account."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use UPI to buy games on Steam in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Steam accepts UPI payments in India. You can add it as a payment method on your account, or use a Steam Wallet balance funded by a Wallet gift card if you prefer not to link a card or UPI directly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the Steam Scream Fest and when does it start?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Steam Scream V Fest is Steam's annual horror gaming sale event. It starts October 26, 2026 at 10:00 AM Pacific (10:30 PM IST) and runs until November 2, 2026. Discounts on horror, survival, and Halloween-themed games can reach up to 95% off."
-      }
-    }
-  ]
-},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/steam-discount-code#offerlist',

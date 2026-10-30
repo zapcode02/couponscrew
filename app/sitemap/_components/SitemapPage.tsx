@@ -87,6 +87,11 @@ const STORES: SiteLink[] = [
   { label: 'Hotels.com', href: '/stores/hotelcom-coupon-code' },
   { label: 'Polki Sarees', href: '/stores/polki-sarees-coupon-code' },
   { label: 'Underrated Club', href: '/stores/underrated-club-coupon-code' },
+  { label: 'Skechers', href: '/stores/skechers-coupon-code' },
+  { label: 'Wish', href: '/stores/wish-promo-code' },
+  { label: 'ACT Fibernet', href: '/stores/act-fibernet-coupon-code' },
+  { label: 'Steam', href: '/stores/steam-discount-code' },
+  { label: 'IGP', href: '/stores/igp-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [

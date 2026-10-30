@@ -176,7 +176,7 @@ export default function SteamStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with Steam's seasonal and publisher sales. Get up to 90% OFF during major sale events, track price drops with free wishlist alerts, and enjoy India-specific INR pricing on most titles. Shop PC games with verified Steam offers this October 2026.
+                    Find the latest Steam coupon code and Steam discount code for October 2026 to save on top PC games. Grab 90% OFF The Walking Dead, 90% OFF Killing Floor 2, 75% OFF Red Dead Redemption 2, and 70% OFF Cyberpunk 2077. You'll also find great deals on Total War: WARHAMMER III, Grand Theft Auto V Enhanced, Palworld, and more. Apply eligible Steam coupon codes or discount codes where available and enjoy huge savings on popular action, RPG, strategy, and multiplayer games.
                   </p>
                 </div>
               </div>
@@ -517,6 +517,113 @@ export default function SteamStore() {
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
           Steam Coupon Code: How to Save on Games in India (October 2026)
         </p>
+
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Game Title</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Deal Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Original Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">The Walking Dead</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">90% Off</td>
+        <td className="p-3.5 font-bold">₹200</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,000</td>
+        <td className="p-3.5">Award-winning narrative zombie adventure in Robert Kirkman's universe</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Styx: Master of Shadows</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">90% Off</td>
+        <td className="p-3.5 font-bold">₹119</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,199</td>
+        <td className="p-3.5">Stealth-focused gameplay; Daily Deal available until 7 November</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Killing Floor 2</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">90% Off</td>
+        <td className="p-3.5 font-bold">₹72</td>
+        <td className="p-3.5 text-gray-500 line-through">₹729</td>
+        <td className="p-3.5">Action-packed co-op wave survival; Daily Deal until 7 November</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Total War: WARHAMMER III</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">85% Off</td>
+        <td className="p-3.5 font-bold">$8.99</td>
+        <td className="p-3.5 text-gray-500 line-through">$59.99</td>
+        <td className="p-3.5">Large-scale RTS strategy battles with multiple factions</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Airborne Kingdom</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">80% Off</td>
+        <td className="p-3.5 font-bold">₹219</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,099</td>
+        <td className="p-3.5">Build and manage a flying city; Daily Deal ends 7 November</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Red Dead Redemption 2</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">75% Off</td>
+        <td className="p-3.5 font-bold">$14.99</td>
+        <td className="p-3.5 text-gray-500 line-through">$59.99</td>
+        <td className="p-3.5">Expansive open-world Wild West action & story-rich gameplay</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Cyberpunk 2077</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">70% Off</td>
+        <td className="p-3.5 font-bold">₹899</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,999</td>
+        <td className="p-3.5">Futuristic open-world action RPG set in Night City</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Dead by Daylight</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">60% Off</td>
+        <td className="p-3.5 font-bold">$7.99</td>
+        <td className="p-3.5 text-gray-500 line-through">$19.99</td>
+        <td className="p-3.5">Asymmetrical multiplayer horror matches (Killer vs Survivors)</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Grand Theft Auto V Enhanced</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹1,249</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,499</td>
+        <td className="p-3.5">Includes Legacy Edition & Criminal Enterprise Starter Pack (until 5 Nov)</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Palworld</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">30% Off</td>
+        <td className="p-3.5 font-bold">$20.99</td>
+        <td className="p-3.5 text-gray-500 line-through">$29.99</td>
+        <td className="p-3.5">Open-world survival, creature collecting, crafting & battling</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Over the Hill</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">20% Off</td>
+        <td className="p-3.5 font-bold">₹919</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,149</td>
+        <td className="p-3.5">Introductory launch offer (ended 28 October)</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Moon Sweepers</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">15% Off</td>
+        <td className="p-3.5 font-bold">₹398</td>
+        <td className="p-3.5 text-gray-500 line-through">₹469</td>
+        <td className="p-3.5">Introductory launch offer (ends 30 October); bundles available</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Enshrouded</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">10% Off</td>
+        <td className="p-3.5 font-bold">₹1,619</td>
+        <td className="p-3.5 text-gray-500 line-through">₹1,799</td>
+        <td className="p-3.5">Introductory launch discount (ended 29 October)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>

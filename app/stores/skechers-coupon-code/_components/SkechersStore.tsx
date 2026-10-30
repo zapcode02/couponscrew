@@ -176,7 +176,7 @@ export default function SkechersStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest Skechers Coupon Code and Skechers Promo Code. Get up to 50% OFF in the End of Season Sale, up to 40% OFF the Arch Fit comfort range, and free shipping on every order. Shop men's, women's, and kids' footwear with verified Skechers offers this October 2026.
+                    Find the latest Skechers coupon code and Skechers discount code for October 2026 to save on premium footwear and apparel. Grab 50% OFF SKX Float Basketball Sneakers, 50% OFF Boss Treatment Shoes, 40% OFF GO Run Max Road 6, and 40% OFF GO Run Razor 5 running shoes. You'll also find discounts on kids' footwear, jackets, joggers, and activewear. Apply a verified Skechers coupon code or discount code at checkout to unlock extra savings on eligible Skechers purchases.
                   </p>
                 </div>
               </div>
@@ -486,6 +486,120 @@ export default function SkechersStore() {
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
           Skechers Coupon Code: Save on Footwear, Apparel, and Accessories in India
         </p>
+
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Product Name</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Deal Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Original Price</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">SKX Float Basketball Sneakers</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹9,499</td>
+        <td className="p-3.5 text-gray-500 line-through">₹18,999</td>
+        <td className="p-3.5">High-end basketball shoes with cushioning & quick response support</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Boss Treatment Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹7,499</td>
+        <td className="p-3.5 text-gray-500 line-through">₹14,999</td>
+        <td className="p-3.5">Comfortable build & stylish design for daily & weekend wear</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Boys Skechers Elite Sport Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹2,149</td>
+        <td className="p-3.5 text-gray-500 line-through">₹4,299</td>
+        <td className="p-3.5">Durable & comfortable sports shoes for active kids</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Girls Sport Court 92 Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹2,149</td>
+        <td className="p-3.5 text-gray-500 line-through">₹4,299</td>
+        <td className="p-3.5">Light, supportive fit for daily routines & outdoor activities</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Women's Pin Tuck Pants</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹1,749</td>
+        <td className="p-3.5 text-gray-500 line-through">₹3,499</td>
+        <td className="p-3.5">Easy-fitting pants with a polished look for busy days & brunches</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Men's Puffer Full-Zip Jacket</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹3,499</td>
+        <td className="p-3.5 text-gray-500 line-through">₹6,999</td>
+        <td className="p-3.5">Warm outer layer with a full-length zip design</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Women's GOwalk Pant Joy</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹1,499</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,999</td>
+        <td className="p-3.5">Lightweight activewear suited for walks, gym & lounging</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Embroidered Boxy Fit T-Shirt</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off</td>
+        <td className="p-3.5 font-bold">₹1,149</td>
+        <td className="p-3.5 text-gray-500 line-through">₹2,299</td>
+        <td className="p-3.5">Roomy, oversized cut with stitched embroidery accents</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">GO Run Max Road 6 Running Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% Off</td>
+        <td className="p-3.5 font-bold">₹9,599</td>
+        <td className="p-3.5 text-gray-500 line-through">₹15,999</td>
+        <td className="p-3.5">Soft cushioning & responsive feel for long distance running</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">GO Run Razor 5 Running Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% Off</td>
+        <td className="p-3.5 font-bold">₹8,999</td>
+        <td className="p-3.5 text-gray-500 line-through">₹14,999</td>
+        <td className="p-3.5">Featherweight performance shoes built for speed & training</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Skechers Elite Sport Shoes for Boys</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% Off</td>
+        <td className="p-3.5 font-bold">Starting ₹2,399</td>
+        <td className="p-3.5 text-gray-500 line-through">₹3,999</td>
+        <td className="p-3.5">Lightweight build allowing free movement for class & sports</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Girls Skechers Elite Sport Shoes</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">40% Off</td>
+        <td className="p-3.5 font-bold">₹2,279</td>
+        <td className="p-3.5 text-gray-500 line-through">₹3,799</td>
+        <td className="p-3.5">Lightweight sports footwear for all-day comfort</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Arch Fit Vista 2.0</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">20% Off</td>
+        <td className="p-3.5 font-bold">₹5,599</td>
+        <td className="p-3.5 text-gray-500 line-through">₹6,999</td>
+        <td className="p-3.5">Arch Fit technology providing supportive cushioning for long walks</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Women's Color Blocked Jacket</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">20% Off</td>
+        <td className="p-3.5 font-bold">₹3,599</td>
+        <td className="p-3.5 text-gray-500 line-through">₹4,499</td>
+        <td className="p-3.5">Trendy outerwear featuring a contemporary color-block pattern</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>

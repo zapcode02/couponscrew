@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import ActFibernetStore from './_components/ActFibernetStore'
 import { ACT_FIBERNET_COUPONS } from './_components/actFibernetCoupons'
 
-const TITLE = 'ACT Fibernet Coupon Code – Free Installation + 2 Months Free | Oct 2026'
-const DESCRIPTION = 'Verified ACT Fibernet offers: free installation on new connections, up to 2 months free on annual plans, and unlimited data on 100 Mbps and above this October 2026.'
+const TITLE = 'ACT Fibernet Coupon Code: 1000 Mbps & Plans from ₹575'
+const DESCRIPTION = 'Get the latest ACT Fibernet coupon code and ACT Fibernet discount code for October 2026. Explore 1000 Mbps plans from ₹2,999/month and broadband plans starting at ₹575/month.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -77,51 +77,51 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponscrew.com/stores/act-fibernet-coupon-code#faqpage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does ACT Fibernet have a coupon code for new connections in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of October 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/act-fibernet-coupon-code#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does ACT Fibernet have a coupon code for new connections in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of October 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ACT Fibernet available in my city?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ACT Fibernet operates in approximately 19 cities across 8 states including Karnataka, Tamil Nadu, Telangana, Andhra Pradesh, Delhi, Gujarat, Rajasthan, and Uttar Pradesh. Key cities include Bengaluru, Hyderabad, Chennai, Delhi, Madurai, Jaipur, Lucknow, and Ahmedabad. Even within a covered city, street-level availability depends on fibre infrastructure — check your exact address at actcorp.in before subscribing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cheapest ACT Fibernet plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entry-level plans start at approximately ₹525–₹575/month for 50 Mbps, depending on the city. The Performance Pack (internet-only) at any speed tier is typically the lowest-priced option for that speed, since it excludes the OTT bundle cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does ACT Fibernet installation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ACT Fibernet typically installs within 2–5 working days of subscribing, subject to local technician availability. Installation is free on 6-month and longer plans; shorter plans may carry a ₹1,000 installation charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ACT Fibernet truly offer unlimited data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plans are marketed as unlimited, and for most household usage they work that way. A Fair Usage Policy applies — very high-volume usage in a single billing month may result in reduced speeds for the remainder of that month. Standard streaming, gaming, video calling, and remote work are well within normal usage for all plan tiers."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Is ACT Fibernet available in my city?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ACT Fibernet operates in approximately 19 cities across 8 states including Karnataka, Tamil Nadu, Telangana, Andhra Pradesh, Delhi, Gujarat, Rajasthan, and Uttar Pradesh. Key cities include Bengaluru, Hyderabad, Chennai, Delhi, Madurai, Jaipur, Lucknow, and Ahmedabad. Even within a covered city, street-level availability depends on fibre infrastructure — check your exact address at actcorp.in before subscribing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the cheapest ACT Fibernet plan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Entry-level plans start at approximately ₹525–₹575/month for 50 Mbps, depending on the city. The Performance Pack (internet-only) at any speed tier is typically the lowest-priced option for that speed, since it excludes the OTT bundle cost."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does ACT Fibernet installation take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ACT Fibernet typically installs within 2–5 working days of subscribing, subject to local technician availability. Installation is free on 6-month and longer plans; shorter plans may carry a ₹1,000 installation charge."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does ACT Fibernet truly offer unlimited data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Plans are marketed as unlimited, and for most household usage they work that way. A Fair Usage Policy applies — very high-volume usage in a single billing month may result in reduced speeds for the remainder of that month. Standard streaming, gaming, video calling, and remote work are well within normal usage for all plan tiers."
-      }
-    }
-  ]
-},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/act-fibernet-coupon-code#offerlist',

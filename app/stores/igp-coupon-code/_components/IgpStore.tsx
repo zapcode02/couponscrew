@@ -176,7 +176,7 @@ export default function IgpStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest IGP Coupon Code and IGP Promo Code. Get up to 40% OFF sitewide, flat ₹200 off your first order, and up to 25% OFF personalized gifts. Shop cakes, flowers, hampers, and same-day delivery gifting with verified IGP offers this October 2026.
+                    Find the latest IGP coupon code and IGP discount code for October 2026 to save on gifts, flowers, cakes, and personalized products. Enjoy up to 50% + 10% OFF during the IGP Bhai Dooj Sale, 49% OFF Personalized Bryan Candy Jars, free standard delivery, and 5% cashback on eligible orders. Shop personalized gifts, premium hampers, cakes, and festive surprises with same-day delivery in selected cities. Apply a verified IGP coupon code or discount code at checkout to maximize your savings.
                   </p>
                 </div>
               </div>
@@ -452,6 +452,70 @@ export default function IgpStore() {
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
           IGP Coupon Code: Save on Gifts, Flowers, and Cakes in India (October 2026)
         </p>
+
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Product / Offer Category</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Discount / Offer</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">Bhai Dooj Sale Event</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Up to 50% Off</td>
+        <td className="p-3.5">Cakes, hampers, flowers & personalized festive gifts</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Personalized Bryan Candy Jar (Lavender Vanilla)</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">49% Off</td>
+        <td className="p-3.5">Customizable jar; same-day delivery in select areas</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Decadent Delight Hamper</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">33% Off</td>
+        <td className="p-3.5">Curated treat hamper; 90-minute delivery in select cities</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Personalized Spotify Couple Plaque</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">30% Off</td>
+        <td className="p-3.5">Custom song & details keepsake; same-day delivery in select areas</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Personalized Daily Journal</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">26% Off</td>
+        <td className="p-3.5">Custom name cover for daily notes, planning & journaling</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Personalized Make Your Own Gift</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">19% Off</td>
+        <td className="p-3.5">Customizable keepsake; 90-minute delivery in select locations</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Shahi Rasmalai Cake</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">10% Off</td>
+        <td className="p-3.5">Freshly prepared cake; 90-minute delivery in select cities</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Every Order Cashback</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Flat 5% Cashback</td>
+        <td className="p-3.5">Earn cashback on every eligible purchase across categories</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Standard Delivery Offer</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Free Delivery</td>
+        <td className="p-3.5">Complimentary standard delivery on eligible products</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Special Delivery Fees</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">50% Off Fees</td>
+        <td className="p-3.5">Discounted express & same-day delivery shipping charges</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>

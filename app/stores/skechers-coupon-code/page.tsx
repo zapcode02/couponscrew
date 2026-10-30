@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import SkechersStore from './_components/SkechersStore'
 import { SKECHERS_COUPONS } from './_components/skechersCoupons'
 
-const TITLE = 'Skechers Coupon Code – Up to 50% OFF + Free Shipping | Oct 2026'
-const DESCRIPTION = 'Save big with verified Skechers coupon codes and promo codes. Get up to 50% OFF the End of Season Sale plus free shipping on men\'s, women\'s and kids\' footwear this October 2026.'
+const TITLE = 'Skechers Coupon Code: 50% Off Shoes & 40% Off Running Gear'
+const DESCRIPTION = 'Get the latest Skechers coupon code and Skechers discount code for October 2026 to enjoy 50% OFF SKX Float Basketball Sneakers, 50% OFF Boss Treatment Shoes, 40% OFF GO Run Max Road 6, and more.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -77,59 +77,59 @@ const schema = {
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
     {
-  "@type": "FAQPage",
-  "@id": "https://www.couponscrew.com/stores/skechers-coupon-code#faqpage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best Skechers coupon code in India right now?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of October 2026, Skechers India's biggest savings come through spend-tier discounts (no code needed): ₹750 off above ₹6,999, ₹2,000 off above ₹12,999, and ₹4,000 off above ₹19,999. For HDFC cardholders, the SmartBuy gift voucher method (up to 8% instant off via Tata Neu Infinity, or 5% cashback + 2.5% instant with other HDFC cards) adds savings on top. Single-use affiliate codes are infrequent on skechers.in — the spend-tier structure is how most of the saving happens."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/skechers-coupon-code#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best Skechers coupon code in India right now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of October 2026, Skechers India's biggest savings come through spend-tier discounts (no code needed): ₹750 off above ₹6,999, ₹2,000 off above ₹12,999, and ₹4,000 off above ₹19,999. For HDFC cardholders, the SmartBuy gift voucher method (up to 8% instant off via Tata Neu Infinity, or 5% cashback + 2.5% instant with other HDFC cards) adds savings on top. Single-use affiliate codes are infrequent on skechers.in — the spend-tier structure is how most of the saving happens."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Skechers India offer free shipping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — skechers.in offers free shipping on all orders, with no minimum cart value required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Skechers' return policy in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skechers India accepts returns within 10 days of delivery on eligible items."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Skechers Arch Fit and is it worth paying extra for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Arch Fit is Skechers' proprietary insole designed with podiatric input — it features a contoured arch and deep heel cup. It's worth the extra cost if you have arch discomfort, flat feet, or spend several hours walking or standing. For buyers who have no foot issues and want a casual walking shoe, a standard GOwalk with Air-Cooled Memory Foam is sufficient."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Skechers Slip-ins different from regular slip-ons?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Slip-ins use a hands-free entry system — a stretchy heel collar and Heel Pillow that allows you to step in without bending, touching the shoe, or loosening anything. Once in, the heel snaps back into shape and the fit is secure. Standard slip-ons are just shoes without laces; Slip-ins are a distinct construction with Skechers' own IP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where else can I buy Skechers in India besides skechers.in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skechers is also available on Amazon India, Flipkart, Myntra, and Ajio. Each platform runs its own discounts and bank offers — Amazon and Flipkart often list bank-card specific deals (ICICI, HDFC, Axis) that can stack with sale prices. Skechers also has standalone stores in major Indian cities."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Does Skechers India offer free shipping?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — skechers.in offers free shipping on all orders, with no minimum cart value required."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Skechers' return policy in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Skechers India accepts returns within 10 days of delivery on eligible items."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Skechers Arch Fit and is it worth paying extra for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Arch Fit is Skechers' proprietary insole designed with podiatric input — it features a contoured arch and deep heel cup. It's worth the extra cost if you have arch discomfort, flat feet, or spend several hours walking or standing. For buyers who have no foot issues and want a casual walking shoe, a standard GOwalk with Air-Cooled Memory Foam is sufficient."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are Skechers Slip-ins different from regular slip-ons?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Slip-ins use a hands-free entry system — a stretchy heel collar and Heel Pillow that allows you to step in without bending, touching the shoe, or loosening anything. Once in, the heel snaps back into shape and the fit is secure. Standard slip-ons are just shoes without laces; Slip-ins are a distinct construction with Skechers' own IP."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where else can I buy Skechers in India besides skechers.in?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Skechers is also available on Amazon India, Flipkart, Myntra, and Ajio. Each platform runs its own discounts and bank offers — Amazon and Flipkart often list bank-card specific deals (ICICI, HDFC, Axis) that can stack with sale prices. Skechers also has standalone stores in major Indian cities."
-      }
-    }
-  ]
-},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/skechers-coupon-code#offerlist',

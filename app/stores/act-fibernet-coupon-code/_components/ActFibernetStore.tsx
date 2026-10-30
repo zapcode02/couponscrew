@@ -176,7 +176,7 @@ export default function ActFibernetStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest ACT Fibernet offers. Get free installation on new connections, up to 2 months free on annual plan payments, and unlimited data on 100 Mbps and above. Check serviceability and compare high-speed broadband plans with verified ACT Fibernet offers this October 2026.
+                    Find the latest ACT Fibernet coupon code and ACT Fibernet discount code for October 2026 to save on high-speed broadband plans. Explore 1000 Mbps plans from ₹2,999/month, plans starting at ₹575/month, Buy 6 Months & Get 1 Month Free, and 3 Months of Spotify Premium free on eligible subscriptions. Selected plans also include Amazon Prime, JioHotstar, ZEE5, free Wi-Fi routers, and unlimited data. Apply verified ACT Fibernet coupon codes or discount codes to maximize your broadband savings.
                   </p>
                 </div>
               </div>
@@ -483,6 +483,93 @@ export default function ActFibernetStore() {
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
           ACT Fibernet Coupon Code: Save on Broadband Plans Across India
         </p>
+
+        <div className="overflow-x-auto my-6">
+  <table className="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm border border-[#f0f0f0]">
+    <thead>
+      <tr className="bg-[#5B4FBE] text-white font-black">
+        <th className="p-3.5 border-b border-[#5B4FBE]">Plan / Offer Title</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Speed / Type</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Pricing</th>
+        <th className="p-3.5 border-b border-[#5B4FBE]">Key Highlights & Benefits</th>
+      </tr>
+    </thead>
+    <tbody className="divide-y divide-[#f0f0f0]">
+      <tr>
+        <td className="p-3.5 font-bold text-black">ACT GIGA Promo Plan</td>
+        <td className="p-3.5 font-bold">1000 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹2,999 / month</td>
+        <td className="p-3.5">Unlimited data; built for gaming, 4K streaming & heavy downloads</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">ACT Giga Bonanza Plan</td>
+        <td className="p-3.5 font-bold">1000 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹3,199 / month</td>
+        <td className="p-3.5">Includes Amazon Prime, JioHotstar, ZEE5, Sun NXT, YuppTV & 450+ live channels</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Mesh Wi-Fi Bonanza Plan</td>
+        <td className="p-3.5 font-bold">400 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹1,675 / month</td>
+        <td className="p-3.5">Includes 2 Mesh Wi-Fi Pods + Amazon Prime, JioHotstar, ZEE5 & YuppTV</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">ACT Storm Bonanza Plan</td>
+        <td className="p-3.5 font-bold">400 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹1,549 / month</td>
+        <td className="p-3.5">Free router & setup + Amazon Prime, JioHotstar, ZEE5, Sun NXT, YuppTV & 450+ TV channels</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Mesh Wi-Fi 200 Mbps Plan</td>
+        <td className="p-3.5 font-bold">200 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹1,375 / month</td>
+        <td className="p-3.5">Includes 2 Mesh Wi-Fi Pods + Amazon Prime, JioHotstar, ZEE5 & YuppTV</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">ACT Sprint Standard Bonanza Plan</td>
+        <td className="p-3.5 font-bold">200 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹1,149 / month</td>
+        <td className="p-3.5">Unlimited data & free Wi-Fi router + Amazon Prime, JioHotstar, ZEE5, Sun NXT, YuppTV & 450+ TV channels</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">ACT Premium Bonanza Plan</td>
+        <td className="p-3.5 font-bold">100 Mbps</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹949 / month</td>
+        <td className="p-3.5">Unlimited data & free router + Amazon Prime, JioHotstar, ZEE5, YuppTV & 450+ live TV channels</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Starter Broadband Plans</td>
+        <td className="p-3.5 font-bold">Standard</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Starting from ₹575 / month</td>
+        <td className="p-3.5">Unlimited data & router benefits on select plans; buy 6 months get 1 month free</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">6-Month Subscription Offer</td>
+        <td className="p-3.5 font-bold">Long-term Plan</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Buy 6 Months, Get 1 Month Free</td>
+        <td className="p-3.5">Extra month of service free on eligible 6-month broadband plans</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Bundled Entertainment Offers</td>
+        <td className="p-3.5 font-bold">OTT & TV Pack</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">Included with Select Plans</td>
+        <td className="p-3.5">Amazon Prime, JioHotstar, ZEE5, Sun NXT, YuppTV & 450+ live channels</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Yearly Subscription Plan</td>
+        <td className="p-3.5 font-bold">Annual Plan</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">₹449 / year</td>
+        <td className="p-3.5">Budget-friendly annual option for eligible customers and ACT services</td>
+      </tr>
+      <tr>
+        <td className="p-3.5 font-bold text-black">Spotify Premium Promotion</td>
+        <td className="p-3.5 font-bold">Add-on Offer</td>
+        <td className="p-3.5 text-[#5B4FBE] font-black">3 Months Free Spotify Premium</td>
+        <td className="p-3.5">Available on select plans; includes free Wi-Fi router & OTT benefits (Netflix, Prime Video, etc.)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>

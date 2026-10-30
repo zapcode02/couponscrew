@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import IgpStore from './_components/IgpStore'
 import { IGP_COUPONS } from './_components/igpCoupons'
 
-const TITLE = 'IGP Coupon Code – Up to 40% OFF + ₹200 Off First Order | Oct 2026'
-const DESCRIPTION = 'Save big with verified IGP coupon codes and promo codes. Get up to 40% OFF sitewide, flat ₹200 off your first order, and up to 25% OFF personalized gifts this October 2026.'
+const TITLE = 'IGP Coupon Code: Get 50% + 10% Off Bhai Dooj Gifts | Oct 26'
+const DESCRIPTION = 'Get the latest IGP coupon code and IGP discount code for October 2026. Enjoy up to 50% + 10% OFF Bhai Dooj gifts, free delivery, and 5% cashback on eligible orders.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -76,52 +76,52 @@ const schema = {
       sameAs: ['https://www.instagram.com/igp.com'],
     },
     // FAQPage Schema — MUST mirror the component's visible FAQ accordion verbatim, full parity
-   {
-  "@type": "FAQPage",
-  "@id": "https://www.couponscrew.com/stores/igp-coupon-code#faqpage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "What is the best IGP coupon code right now?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As of October 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.couponscrew.com/stores/igp-coupon-code#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best IGP coupon code right now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of October 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does IGP offer same-day delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — IGP offers same-day delivery in 400+ cities and 30-minute delivery in 25+ cities. Fresh flowers and cakes qualify for express slots. Personalised items require 2–3 additional production days and do not qualify for same-day or express delivery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cancel an IGP order after placing it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the product type. Standard courier items can be cancelled before dispatch — contact support immediately after ordering. Personalised gifts (photo products, engraved items, custom cakes) cannot be cancelled once confirmed. Perishables (fresh flowers and plain cakes) are not refunded, but IGP issues a replacement if you report a problem within 24 hours of delivery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does IGP coupon code work with CashKaro cashback?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can use a valid coupon code at IGP checkout and earn CashKaro cashback on the same order, as long as you shop through the CashKaro portal link (not the app), and pay without IGP Wallet or gift vouchers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is IGP reliable for international delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IGP ships to 100+ countries for international orders and processes most international deliveries within 4–7 business days. For NRIs sending gifts to Indian addresses, the delivery is domestic (within India) — you just pay from abroad using an international card. This typically processes faster than true cross-border shipping."
+          }
+        }
+      ]
     },
-    {
-      "@type": "Question",
-      "name": "Does IGP offer same-day delivery?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — IGP offers same-day delivery in 400+ cities and 30-minute delivery in 25+ cities. Fresh flowers and cakes qualify for express slots. Personalised items require 2–3 additional production days and do not qualify for same-day or express delivery."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I cancel an IGP order after placing it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the product type. Standard courier items can be cancelled before dispatch — contact support immediately after ordering. Personalised gifts (photo products, engraved items, custom cakes) cannot be cancelled once confirmed. Perishables (fresh flowers and plain cakes) are not refunded, but IGP issues a replacement if you report a problem within 24 hours of delivery."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does IGP coupon code work with CashKaro cashback?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You can use a valid coupon code at IGP checkout and earn CashKaro cashback on the same order, as long as you shop through the CashKaro portal link (not the app), and pay without IGP Wallet or gift vouchers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is IGP reliable for international delivery?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IGP ships to 100+ countries for international orders and processes most international deliveries within 4–7 business days. For NRIs sending gifts to Indian addresses, the delivery is domestic (within India) — you just pay from abroad using an international card. This typically processes faster than true cross-border shipping."
-      }
-    }
-  ]
-},
     {
       '@type': 'ItemList',
       '@id': 'https://www.couponscrew.com/stores/igp-coupon-code#offerlist',
