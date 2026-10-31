@@ -6,7 +6,10 @@ import NextImage from 'next/image';
 import {
   ChevronRight,
   Calendar,
+  Zap,
   Clock,
+  CheckCircle2,
+  Palette,
   ArrowRight,
   Share2,
   Facebook,
@@ -16,6 +19,7 @@ import {
   Check,
   List,
   Sparkles,
+  Home,
   ShoppingBag,
   ChevronDown,
   Ghost,
@@ -187,24 +191,42 @@ export default function HalloweenShopping2026Blog() {
               </div>
 
               {/* Intro Box */}
-              <div className="relative overflow-hidden bg-gradient-to-br from-white via-[#FCFAFF] to-[#FFF2EA] rounded-3xl p-6 sm:p-8 border border-orange-100 shadow-sm space-y-4">
-                <div className="absolute top-0 right-0 w-36 h-36 bg-orange-500/5 rounded-full blur-2xl pointer-events-none" />
-                <p className="text-lg sm:text-xl font-black text-[#1A1A2E] italic">
-                  The Haunt is Beginning.
-                </p>
-                <p className="text-base sm:text-lg text-[#1A1A2E] font-medium leading-relaxed">
-                  The season to spend — but don&apos;t let your wallet haunt you.
-                </p>
-                <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed">
-                  Halloween lands on <strong className="text-[#5B4FBE]">31 October 2026</strong>. And if you&apos;re still scrolling for a costume at 9 PM tonight, congratulations, you are statistically the most Indian person in this story.
-                </p>
-                <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed">
-                  But here&apos;s the good news: Amazon, Myntra, and Flipkart are stacked right now. Costumes, face paint, spooky decor, party lights — most of it under ₹999. You don&apos;t need a big budget to walk into a room and make everyone go <em>&quot;oh damn.&quot;</em>
-                </p>
-                <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed">
-                  This guide is for last-minute shoppers, budget-first buyers, and anyone who typed &quot;Halloween costume India&quot; into a search bar with mild panic.
-                </p>
-              </div>
+              <div className="relative overflow-hidden bg-gradient-to-br from-white via-[#FCFAFF] to-[#FFF2EA] rounded-3xl p-6 sm:p-8 border border-orange-100/80 shadow-md border-l-4 border-l-[#FF5722] space-y-5 group transition-all duration-300 hover:shadow-lg">
+  {/* Ambient Background Glow Effects */}
+  <div className="absolute top-0 right-0 w-44 h-44 bg-[#FF5722]/10 rounded-full blur-3xl pointer-events-none" />
+  <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#5B4FBE]/10 rounded-full blur-2xl pointer-events-none" />
+
+  {/* Catchy Sub-heading / Hook Header */}
+  <div className="flex items-center gap-2 flex-wrap">
+    <span className="inline-flex items-center gap-1.5 bg-[#FF5722]/10 border border-[#FF5722]/20 px-3.5 py-1 rounded-full text-lg sm:text-xl font-black text-[#1A1A2E] italic tracking-tight shadow-xs">
+      <Sparkles size={16} className="text-[#FF5722]" />
+      The Haunt is Beginning.
+    </span>
+  </div>
+
+  {/* Subtitle Line */}
+  <p className="text-base sm:text-lg text-[#1A1A2E] font-extrabold leading-snug tracking-tight border-b border-[#E8E8F0]/80 pb-3">
+    The season to spend — but don&apos;t let your wallet haunt you.
+  </p>
+
+  {/* Paragraphs with Improved Paragraph Spacing & Highlights */}
+  <div className="space-y-3.5 text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+    <p>
+      Halloween lands on <strong className="text-[#5B4FBE] font-bold underline decoration-[#5B4FBE]/30 underline-offset-4">31 October 2026</strong>. And if you&apos;re still scrolling for a costume at 9 PM tonight, congratulations, you are statistically the most Indian person in this story.
+    </p>
+
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-orange-100 shadow-xs space-y-2">
+      <p>
+        But here&apos;s the good news: Amazon, Myntra, and Flipkart are stacked right now. Costumes, face paint, spooky decor, party lights — most of it under ₹999. You don&apos;t need a big budget to walk into a room and make everyone go <em className="text-[#FF5722] font-semibold not-italic">&quot;oh damn.&quot;</em>
+      </p>
+    </div>
+
+    <p className="text-[#1A1A2E] font-semibold pt-1 flex items-center gap-2">
+      <Ghost size={16} className="text-[#5B4FBE] shrink-0" />
+      <span>This guide is for last-minute shoppers, budget-first buyers, and anyone who typed &quot;Halloween costume India&quot; into a search bar with mild panic.</span>
+    </p>
+  </div>
+</div>
 
               {/* Mobile Table of Contents */}
               <div className="lg:hidden bg-white rounded-2xl p-5 border border-[#E8E8F0] shadow-xs">
@@ -227,233 +249,311 @@ export default function HalloweenShopping2026Blog() {
               </div>
 
               {/* SECTION 1: Why Halloween Is No Longer "Just a Western Thing" */}
-              <section id="not-just-western" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-[#FFF0EA] text-[#FF5722] flex items-center justify-center font-black text-xl shrink-0">
-                    👻
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E]">
-                    Why Halloween Is No Longer &quot;Just a Western Thing&quot;
-                  </h2>
-                </div>
+              
+<section id="not-just-western" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-sm space-y-6 group transition-all duration-300 hover:shadow-md">
+  {/* Section Heading */}
+  <div className="flex items-center gap-3 border-b border-[#E8E8F0]/80 pb-4">
+    <div className="w-11 h-11 rounded-2xl bg-[#FFF0EA] text-[#FF5722] flex items-center justify-center font-black text-2xl shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+      👻
+    </div>
+    <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E] tracking-tight">
+      Why Halloween Is No Longer &quot;Just a Western Thing&quot;
+    </h2>
+  </div>
 
-                <div className="relative pl-6 py-3 border-l-4 border-[#FF5722] bg-[#FFF9F5] rounded-r-2xl italic text-sm sm:text-base text-[#1A1A2E] font-medium leading-relaxed">
-                  &ldquo;Are we really celebrating Halloween in India?&rdquo;
-                  <br />
-                  <span className="text-xs sm:text-sm text-gray-500 not-italic">— Someone, every year, while wearing a ghost filter on Instagram.</span>
-                </div>
+  {/* Highlight Quote Card */}
+  <div className="relative pl-5 py-3.5 border-l-4 border-[#FF5722] bg-gradient-to-r from-[#FFF9F5] to-white rounded-r-2xl italic text-sm sm:text-base text-[#1A1A2E] font-medium leading-relaxed shadow-xs space-y-1">
+    <p>&ldquo;Are we really celebrating Halloween in India?&rdquo;</p>
+    <p className="text-xs sm:text-sm text-gray-500 not-italic font-normal">
+      — Someone, every year, while wearing a ghost filter on Instagram.
+    </p>
+  </div>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  Yes, bhai. We are.
-                </p>
+  {/* Main Paragraph Content */}
+  <div className="space-y-4 text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+    <p className="text-[#1A1A2E] font-bold text-base sm:text-lg">
+      Yes, bhai. We are.
+    </p>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  Halloween in India has quietly gone from &quot;niche college party thing&quot; to mainstream retail event. Metros like Mumbai, Delhi, Bangalore, Hyderabad — bars, clubs, cafes, schools, and housing societies are all going all-in. Bigbasket reportedly clocked a massive spike in Halloween-related orders this year. Myntra added a dedicated Halloween edit. Amazon India&apos;s Halloween category has been live for weeks.
-                </p>
+    <p>
+      Halloween in India has quietly gone from &quot;niche college party thing&quot; to mainstream retail event. Metros like Mumbai, Delhi, Bangalore, Hyderabad — bars, clubs, cafes, schools, and housing societies are all going all-in. Bigbasket reportedly clocked a massive spike in Halloween-related orders this year. Myntra added a dedicated Halloween edit. Amazon India&apos;s Halloween category has been live for weeks.
+    </p>
 
-                <p className="text-[#4A4A6A] leading-relaxed font-semibold text-[#1A1A2E]">
-                  The culture landed. The products followed. Now the deals are here.
-                </p>
-              </section>
-
+    <div className="bg-[#FAF9FF] border border-[#5B4FBE]/15 rounded-2xl p-4 text-[#1A1A2E] font-bold text-sm sm:text-base shadow-xs">
+      The culture landed. The products followed. Now the deals are here.
+    </div>
+  </div>
+</section>
               {/* SECTION 2: Where to Shop Halloween Stuff */}
-              <section id="where-to-shop" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] flex items-center justify-center font-black text-xl shrink-0">
-                    <ShoppingCart size={20} />
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E]">
-                    Where to Shop Halloween Stuff in India Right Now
-                  </h2>
-                </div>
+              <section id="where-to-shop" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-sm space-y-6 group transition-all duration-300 hover:shadow-md">
+  {/* Main Section Header (h2) */}
+  <div className="flex items-center gap-3 border-b border-[#E8E8F0]/80 pb-4">
+    <div className="w-11 h-11 rounded-2xl bg-[#F0EEFF] text-[#5B4FBE] flex items-center justify-center font-black text-xl shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+      <ShoppingCart size={22} />
+    </div>
+    <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E] tracking-tight">
+      Where to Shop Halloween Stuff in India Right Now
+    </h2>
+  </div>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  Let&apos;s break this down by platform — what each one does well, and what you should actually buy there.
-                </p>
+  <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+    Let&apos;s break this down by platform — what each one does well, and what you should actually buy there.
+  </p>
 
-                {/* Amazon subsection */}
-                <div className="bg-[#FAF9FF] border border-[#E8E8F0] rounded-2xl p-5 space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-[#1A1A2E]">Amazon India — The Widest Selection, Fastest Delivery</h3>
-                  <p className="italic font-bold text-[#FF5722] text-sm sm:text-base">
-                    &quot;The place where you find everything weird at 2 AM.&quot;
-                  </p>
-                  <p className="text-sm text-[#4A4A6A] leading-relaxed">
-                    Amazon India carries the broadest range of Halloween products — full costumes, props, LED string lights, pumpkin cutouts, fake spiderwebs, glow-in-the-dark face paint, and more. The advantage here is Prime delivery — if you order in the next few hours, some pincode might still pull off a same-day or next-morning drop.
-                  </p>
-                  <p className="text-xs sm:text-sm font-bold text-[#1A1A2E]">Under ₹999 picks to look for:</p>
-                  <ul className="space-y-1.5 text-xs sm:text-sm text-[#4A4A6A]">
-                    {[
-                      'Skeleton print full-suit jumpsuit (unisex)',
-                      'LED pumpkin string lights for room decor',
-                      'Witch hat + cape combo sets',
-                      'Fake blood + face paint kits',
-                      'Spooky garland and hanging props',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <span className="text-[#FF5722] font-bold mt-0.5">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-xs sm:text-sm text-[#4A4A6A] pt-1">
-                    👉 Save more with <Link href="/stores/amazon-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Amazon coupon codes</Link> before checkout — bank offers on select cards can knock off another ₹50–₹100.
-                  </p>
-                </div>
+  {/* Platform Subsections Grid / Stack */}
+  <div className="space-y-6">
+    {/* Amazon Subsection */}
+    <div className="relative overflow-hidden bg-gradient-to-br from-[#FAF9FF] via-white to-[#FFF9F5] border border-[#E8E8F0] rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs hover:border-[#FF5722]/30 transition-colors">
+      <div className="flex flex-col space-y-1">
+        <h3 className="text-base sm:text-lg font-black text-[#1A1A2E] tracking-tight flex items-center gap-2">
+          Amazon India — The Widest Selection, Fastest Delivery
+        </h3>
+        <p className="italic font-bold text-[#FF5722] text-sm sm:text-base">
+          &quot;The place where you find everything weird at 2 AM.&quot;
+        </p>
+      </div>
 
-                {/* Myntra subsection */}
-                <div className="bg-[#FAF9FF] border border-[#E8E8F0] rounded-2xl p-5 space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-[#1A1A2E]">Myntra — Best for Wearable Costumes &amp; Accessories</h3>
-                  <p className="italic font-bold text-[#FF5722] text-sm sm:text-base">
-                    &quot;Because showing up in a ₹800 outfit and still looking fire is a skill.&quot;
-                  </p>
-                  <p className="text-sm text-[#4A4A6A] leading-relaxed">
-                    Myntra&apos;s Halloween edit this year has some genuinely solid picks — especially if you want something that looks like an actual costume and not a plastic bag with eyeholes. Think:
-                  </p>
-                  <ul className="space-y-1.5 text-xs sm:text-sm text-[#4A4A6A]">
-                    {[
-                      'Cape + mask combos',
-                      'Devil horns + tail accessories',
-                      'Black mesh party dresses (Halloween or regular, your call)',
-                      'Printed Halloween tees for casual observers who "don\'t really do costumes"',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <span className="text-[#FF5722] font-bold mt-0.5">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-sm text-[#4A4A6A] leading-relaxed">
-                    The advantage of Myntra is fit, finish, and return policy. If the costume looks terrible when it arrives (we&apos;ve all been there), you can return it without drama.
-                  </p>
-                  <p className="text-xs sm:text-sm text-[#4A4A6A] pt-1">
-                    👉 <Link href="/stores/myntra-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Myntra coupon codes</Link> are currently active — check before you add to cart.
-                  </p>
-                </div>
+      <p className="text-sm text-[#4A4A6A] leading-relaxed font-medium">
+        Amazon India carries the broadest range of Halloween products — full costumes, props, LED string lights, pumpkin cutouts, fake spiderwebs, glow-in-the-dark face paint, and more. The advantage here is Prime delivery — if you order in the next few hours, some pincode might still pull off a same-day or next-morning drop.
+      </p>
 
-                {/* Flipkart subsection */}
-                <div className="bg-[#FAF9FF] border border-[#E8E8F0] rounded-2xl p-5 space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-[#1A1A2E]">Flipkart — Budget-First Finds &amp; Home Decor</h3>
-                  <p className="italic font-bold text-[#FF5722] text-sm sm:text-base">
-                    &quot;For when you need the whole vibe, not just the outfit.&quot;
-                  </p>
-                  <p className="text-sm text-[#4A4A6A] leading-relaxed">
-                    Flipkart tends to win on price for prop-heavy and decor-heavy Halloween shopping. If you&apos;re setting up a room for a party — lights, fake skulls, spooky tablecloths, pumpkin lanterns — Flipkart has the widest assortment at the lowest price points.
-                  </p>
-                  <p className="text-xs sm:text-sm font-bold text-[#1A1A2E]">Under ₹999 decor picks:</p>
-                  <ul className="space-y-1.5 text-xs sm:text-sm text-[#4A4A6A]">
-                    {[
-                      '3D pumpkin paper lanterns',
-                      'Ghost and bat window stickers',
-                      'Halloween-themed fairy lights (purple + orange)',
-                      'Skeleton wall hangings',
-                      'Halloween balloon packs',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <span className="text-[#FF5722] font-bold mt-0.5">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-xs sm:text-sm text-[#4A4A6A] pt-1">
-                    👉 Don&apos;t forget to check <Link href="/stores/flipkart-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Flipkart coupon codes</Link> — Big Billion Day residual deals are still floating around on some categories.
-                  </p>
-                </div>
-              </section>
+      <div className="bg-white/80 rounded-xl p-4 border border-[#E8E8F0]/80 space-y-2.5">
+        <p className="text-xs sm:text-sm font-extrabold text-[#1A1A2E] tracking-wide uppercase">Under ₹999 picks to look for:</p>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+          {[
+            'Skeleton print full-suit jumpsuit (unisex)',
+            'LED pumpkin string lights for room decor',
+            'Witch hat + cape combo sets',
+            'Fake blood + face paint kits',
+            'Spooky garland and hanging props',
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2 bg-[#FAF9FF] p-2 rounded-lg border border-[#F0EEFF]">
+              <span className="text-[#FF5722] font-bold mt-0.5">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="bg-[#FFF5F2] border border-[#FF5722]/20 rounded-xl p-3 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+        👉 Save more with <Link href="/stores/amazon-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Amazon coupon codes</Link> before checkout — bank offers on select cards can knock off another ₹50–₹100.
+      </div>
+    </div>
+
+    {/* Myntra Subsection */}
+    <div className="relative overflow-hidden bg-gradient-to-br from-[#FAF9FF] via-white to-[#F9F8FF] border border-[#E8E8F0] rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs hover:border-[#5B4FBE]/30 transition-colors">
+      <div className="flex flex-col space-y-1">
+        <h3 className="text-base sm:text-lg font-black text-[#1A1A2E] tracking-tight">
+          Myntra — Best for Wearable Costumes &amp; Accessories
+        </h3>
+        <p className="italic font-bold text-[#FF5722] text-sm sm:text-base">
+          &quot;Because showing up in a ₹800 outfit and still looking fire is a skill.&quot;
+        </p>
+      </div>
+
+      <p className="text-sm text-[#4A4A6A] leading-relaxed font-medium">
+        Myntra&apos;s Halloween edit this year has some genuinely solid picks — especially if you want something that looks like an actual costume and not a plastic bag with eyeholes. Think:
+      </p>
+
+      <ul className="space-y-2 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+        {[
+          'Cape + mask combos',
+          'Devil horns + tail accessories',
+          'Black mesh party dresses (Halloween or regular, your call)',
+          'Printed Halloween tees for casual observers who "don\'t really do costumes"',
+        ].map((item) => (
+          <li key={item} className="flex items-start gap-2 bg-white p-2.5 rounded-xl border border-[#E8E8F0]/80">
+            <span className="text-[#FF5722] font-bold mt-0.5">•</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+
+      <p className="text-sm text-[#4A4A6A] leading-relaxed font-medium">
+        The advantage of Myntra is fit, finish, and return policy. If the costume looks terrible when it arrives (we&apos;ve all been there), you can return it without drama.
+      </p>
+
+      <div className="bg-[#F0EEFF]/60 border border-[#5B4FBE]/20 rounded-xl p-3 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+        👉 <Link href="/stores/myntra-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Myntra coupon codes</Link> are currently active — check before you add to cart.
+      </div>
+    </div>
+
+    {/* Flipkart Subsection */}
+    <div className="relative overflow-hidden bg-gradient-to-br from-[#FAF9FF] via-white to-[#FFF9F5] border border-[#E8E8F0] rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs hover:border-[#FF5722]/30 transition-colors">
+      <div className="flex flex-col space-y-1">
+        <h3 className="text-base sm:text-lg font-black text-[#1A1A2E] tracking-tight">
+          Flipkart — Budget-First Finds &amp; Home Decor
+        </h3>
+        <p className="italic font-bold text-[#FF5722] text-sm sm:text-base">
+          &quot;For when you need the whole vibe, not just the outfit.&quot;
+        </p>
+      </div>
+
+      <p className="text-sm text-[#4A4A6A] leading-relaxed font-medium">
+        Flipkart tends to win on price for prop-heavy and decor-heavy Halloween shopping. If you&apos;re setting up a room for a party — lights, fake skulls, spooky tablecloths, pumpkin lanterns — Flipkart has the widest assortment at the lowest price points.
+      </p>
+
+      <div className="bg-white/80 rounded-xl p-4 border border-[#E8E8F0]/80 space-y-2.5">
+        <p className="text-xs sm:text-sm font-extrabold text-[#1A1A2E] tracking-wide uppercase">Under ₹999 decor picks:</p>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+          {[
+            '3D pumpkin paper lanterns',
+            'Ghost and bat window stickers',
+            'Halloween-themed fairy lights (purple + orange)',
+            'Skeleton wall hangings',
+            'Halloween balloon packs',
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2 bg-[#FAF9FF] p-2 rounded-lg border border-[#F0EEFF]">
+              <span className="text-[#FF5722] font-bold mt-0.5">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="bg-[#FFF5F2] border border-[#FF5722]/20 rounded-xl p-3 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+        👉 Don&apos;t forget to check <Link href="/stores/flipkart-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Flipkart coupon codes</Link> — Big Billion Day residual deals are still floating around on some categories.
+      </div>
+    </div>
+  </div>
+</section>
 
               {/* SECTION 3: Nykaa */}
-              <section id="nykaa-makeup" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center font-black text-xl shrink-0">
-                    💄
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E]">
-                    Nykaa — For the Face Paint &amp; Makeup Moment
-                  </h2>
-                </div>
+              <section id="nykaa-makeup" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-sm space-y-6 group transition-all duration-300 hover:shadow-md">
+  {/* Section Header (h2) */}
+  <div className="flex items-center gap-3 border-b border-[#E8E8F0]/80 pb-4">
+    <div className="w-11 h-11 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center font-black text-xl shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+      💄
+    </div>
+    <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E] tracking-tight">
+      Nykaa — For the Face Paint &amp; Makeup Moment
+    </h2>
+  </div>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  The most underrated Halloween move: skip the full costume and just do the face.
-                </p>
+  {/* Main Intro Paragraph */}
+  <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+    The most underrated Halloween move: skip the full costume and just do the face.
+  </p>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  A good Halloween face — white base, dark circles, cracked lips, some fake blood — costs maybe ₹500–₹700 in products and hits harder than a ₹2,000 costume. Nykaa carries:
-                </p>
+  {/* Featured Value Card */}
+  <div className="relative overflow-hidden bg-gradient-to-r from-[#F0EEFF]/70 via-[#FAF9FF] to-[#FFF9F5] rounded-2xl p-4 sm:p-5 border border-[#5B4FBE]/20 space-y-2 shadow-xs">
+    <div className="flex items-center gap-2 text-[#5B4FBE] font-bold text-xs uppercase tracking-wider">
+      <Sparkles size={14} />
+      <span>Budget Hack</span>
+    </div>
+    <p className="text-sm sm:text-base text-[#1A1A2E] font-medium leading-relaxed">
+      A good Halloween face — white base, dark circles, cracked lips, some fake blood — costs maybe ₹500–₹700 in products and hits harder than a ₹2,000 costume. Nykaa carries:
+    </p>
+  </div>
 
-                <ul className="space-y-1.5 text-sm text-[#4A4A6A]">
-                  {[
-                    'White and black face paint sticks',
-                    'Liquid latex for wound effects',
-                    'Dark eyeshadow palettes in smoky, deep tones',
-                    'Setting spray (because you will sweat)',
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <span className="text-[#5B4FBE] font-bold mt-0.5">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+  {/* Visual List Grid */}
+  <div className="bg-[#FAF9FF] rounded-2xl p-4 border border-[#E8E8F0]/80 space-y-3">
+    <div className="flex items-center gap-2 text-xs font-extrabold text-[#1A1A2E] tracking-wide uppercase">
+      <Palette size={14} className="text-[#5B4FBE]" />
+      <span>Top Nykaa Picks</span>
+    </div>
+    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+      {[
+        'White and black face paint sticks',
+        'Liquid latex for wound effects',
+        'Dark eyeshadow palettes in smoky, deep tones',
+        'Setting spray (because you will sweat)',
+      ].map((item) => (
+        <li key={item} className="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-[#E8E8F0] shadow-2xs hover:border-[#5B4FBE]/30 transition-colors">
+          <CheckCircle2 size={16} className="text-[#5B4FBE] shrink-0 mt-0.5" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
 
-                <p className="text-sm text-[#4A4A6A] pt-1">
-                  👉 <Link href="/stores/nykaa-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Nykaa coupon codes</Link> — check for active bank offers before buying.
-                </p>
-              </section>
+  {/* Coupon Callout */}
+  <div className="bg-[#FFF5F2] border border-[#FF5722]/20 rounded-xl p-3.5 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+    👉 <Link href="/stores/nykaa-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Nykaa coupon codes</Link> — check for active bank offers before buying.
+  </div>
+</section>
 
               {/* SECTION 4: AJIO */}
-              <section id="ajio-looks" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center font-black text-xl shrink-0">
-                    🧡
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E]">
-                    AJIO — Underrated for Full Halloween Looks
-                  </h2>
-                </div>
+             <section id="ajio-looks" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-sm space-y-6 group transition-all duration-300 hover:shadow-md">
+  {/* Section Header (h2) */}
+  <div className="flex items-center gap-3 border-b border-[#E8E8F0]/80 pb-4">
+    <div className="w-11 h-11 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center font-black text-xl shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+      🧡
+    </div>
+    <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E] tracking-tight">
+      AJIO — Underrated for Full Halloween Looks
+    </h2>
+  </div>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  AJIO has quietly built a solid accessories and fusion fashion section that works surprisingly well for Halloween. If you want a coordinated look — not just a single piece — AJIO&apos;s brand mix (both Indian and international) gives you options that feel considered, not random.
-                </p>
+  {/* Main Intro Paragraph */}
+  <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+    AJIO has quietly built a solid accessories and fusion fashion section that works surprisingly well for Halloween. If you want a coordinated look — not just a single piece — AJIO&apos;s brand mix (both Indian and international) gives you options that feel considered, not random.
+  </p>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  Great for: capes, dark florals, mesh tops, statement jewellery that reads &quot;witch chic.&quot;
-                </p>
+  {/* Visual Highlights Box */}
+  <div className="bg-gradient-to-br from-[#FFF9F5] via-[#FAF9FF] to-white rounded-2xl p-5 border border-orange-100/80 space-y-3 shadow-xs">
+    <div className="flex items-center gap-2 text-xs font-extrabold text-[#1A1A2E] tracking-wide uppercase">
+      <Sparkles size={14} className="text-[#FF5722]" />
+      <span>Styling Highlights</span>
+    </div>
+    <p className="text-sm sm:text-base text-[#1A1A2E] font-semibold leading-relaxed">
+      Great for: capes, dark florals, mesh tops, statement jewellery that reads &quot;witch chic.&quot;
+    </p>
+  </div>
 
-                <p className="text-sm text-[#4A4A6A] pt-1">
-                  👉 <Link href="/stores/ajio-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">AJIO coupon codes</Link> — active deals on fashion and accessories.
-                </p>
-              </section>
+  {/* Coupon Callout */}
+  <div className="bg-[#FFF5F2] border border-[#FF5722]/20 rounded-xl p-3.5 text-xs sm:text-sm text-[#4A4A6A] font-medium">
+    👉 <Link href="/stores/ajio-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">AJIO coupon codes</Link> — active deals on fashion and accessories.
+  </div>
+</section>
 
               {/* SECTION 5: Party Food */}
-              <section id="party-food" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center font-black text-xl shrink-0">
-                    🍕
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E]">
-                    Don&apos;t Forget the Party Food
-                  </h2>
-                </div>
+              <section id="party-food" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-sm space-y-6 group transition-all duration-300 hover:shadow-md">
+  {/* Section Header (h2) */}
+  <div className="flex items-center gap-3 border-b border-[#E8E8F0]/80 pb-4">
+    <div className="w-11 h-11 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center font-black text-xl shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+      🍕
+    </div>
+    <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E] tracking-tight">
+      Don&apos;t Forget the Party Food
+    </h2>
+  </div>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  No Halloween party survives on costumes alone. If you&apos;re hosting:
-                </p>
+  {/* Intro Paragraph */}
+  <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+    No Halloween party survives on costumes alone. If you&apos;re hosting:
+  </p>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  <strong className="text-[#1A1A2E]">Zepto &amp; Blinkit</strong> are your best bets for last-minute party supplies — chips, cold drinks, candy, Halloween-themed chocolates, and snack boxes delivered in minutes.
-                </p>
+  {/* Quick Delivery Feature Box */}
+  <div className="bg-gradient-to-br from-[#FAF9FF] via-white to-[#FFF9F5] border border-[#E8E8F0] rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs">
+    <div className="flex items-center gap-2 text-xs font-extrabold text-[#5B4FBE] uppercase tracking-wider">
+      <Zap size={14} className="text-[#FF5722]" />
+      <span>Instant Delivery Essentials</span>
+    </div>
 
-                <div className="flex flex-wrap gap-3 text-sm">
-                  <Link href="/stores/zepto-coupon-code" className="inline-flex items-center gap-1.5 bg-[#F0EEFF] text-[#5B4FBE] font-bold px-4 py-2 rounded-xl hover:bg-[#E3DFFF] transition-colors">
-                    👉 Zepto coupon codes
-                  </Link>
-                  <Link href="/stores/blinkit-coupon-code" className="inline-flex items-center gap-1.5 bg-[#F0EEFF] text-[#5B4FBE] font-bold px-4 py-2 rounded-xl hover:bg-[#E3DFFF] transition-colors">
-                    👉 Blinkit coupon codes
-                  </Link>
-                </div>
+    <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+      <strong className="text-[#1A1A2E] font-bold">Zepto &amp; Blinkit</strong> are your best bets for last-minute party supplies — chips, cold drinks, candy, Halloween-themed chocolates, and snack boxes delivered in minutes.
+    </p>
 
-                <p className="text-[#4A4A6A] leading-relaxed">
-                  And if the party goes late and nobody wants to cook: <Link href="/stores/dominos-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Domino&apos;s coupon codes</Link> — because a Halloween pizza with extra jalapenos is a perfectly valid life choice.
-                </p>
-              </section>
+    {/* Coupon Pills */}
+    <div className="flex flex-wrap gap-3 text-sm pt-1">
+      <Link href="/stores/zepto-coupon-code" className="inline-flex items-center gap-1.5 bg-[#F0EEFF] text-[#5B4FBE] font-bold px-4 py-2 rounded-xl hover:bg-[#E3DFFF] transition-colors shadow-2xs">
+        👉 Zepto coupon codes
+      </Link>
+      <Link href="/stores/blinkit-coupon-code" className="inline-flex items-center gap-1.5 bg-[#F0EEFF] text-[#5B4FBE] font-bold px-4 py-2 rounded-xl hover:bg-[#E3DFFF] transition-colors shadow-2xs">
+        👉 Blinkit coupon codes
+      </Link>
+    </div>
+  </div>
+
+  {/* Domino's Late-Night Craving Callout */}
+  <div className="bg-[#FFF5F2] border border-[#FF5722]/20 rounded-2xl p-4 sm:p-5 flex items-start gap-3">
+    <Pizza size={20} className="text-[#FF5722] shrink-0 mt-0.5" />
+    <p className="text-sm sm:text-base text-[#4A4A6A] leading-relaxed font-medium">
+      And if the party goes late and nobody wants to cook: <Link href="/stores/dominos-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Domino&apos;s coupon codes</Link> — because a Halloween pizza with extra jalapenos is a perfectly valid life choice.
+    </p>
+  </div>
+</section>
 
               {/* SECTION 6: Cheat Sheet */}
               <section id="cheat-sheet" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
@@ -496,37 +596,74 @@ export default function HalloweenShopping2026Blog() {
               </section>
 
               {/* SECTION 7: Budget Rules */}
-              <section id="budget-rules" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-xs space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-black text-xl shrink-0">
-                    <Skull size={20} />
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E]">
-                    Three Budget Halloween Rules (That Actually Work)
-                  </h2>
-                </div>
+              <section id="budget-rules" className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E8F0] shadow-sm space-y-6 group transition-all duration-300 hover:shadow-md">
+  {/* Section Header (h2) */}
+  <div className="flex items-center gap-3 border-b border-[#E8E8F0]/80 pb-4">
+    <div className="w-11 h-11 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center font-black text-xl shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+      <Skull size={22} />
+    </div>
+    <h2 className="text-xl sm:text-2xl font-black text-[#1A1A2E] tracking-tight">
+      Three Budget Halloween Rules (That Actually Work)
+    </h2>
+  </div>
 
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200/80 rounded-2xl p-5">
-                    <p className="font-black text-[#1A1A2E] text-sm sm:text-base mb-1.5">Rule 1: Face paint &gt; full costume, always.</p>
-                    <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed">
-                      A ₹500 face paint setup looks more intentional than a ₹1,500 pre-packaged costume that everyone else is also wearing.
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200/80 rounded-2xl p-5">
-                    <p className="font-black text-[#1A1A2E] text-sm sm:text-base mb-1.5">Rule 2: Buy the accessory, wear your own clothes.</p>
-                    <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed">
-                      Devil horns on a black outfit. Witch hat on a dark dress. Vampire cape on a blazer. You look like <em>you tried</em>, without trying too hard.
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-r from-slate-100 to-gray-100 border border-slate-200/80 rounded-2xl p-5">
-                    <p className="font-black text-[#1A1A2E] text-sm sm:text-base mb-1.5">Rule 3: Decor is the actual vibe.</p>
-                    <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed">
-                      If you&apos;re hosting: spend ₹300 on string lights and ₹200 on pumpkin props. Nobody remembers whose costume was best. Everyone remembers the house that looked actually spooky.
-                    </p>
-                  </div>
-                </div>
-              </section>
+  {/* Rules Stack */}
+  <div className="space-y-4">
+    {/* Rule 1 */}
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#FFF5F2] via-[#FFF9F5] to-white border border-[#FF5722]/20 rounded-2xl p-5 space-y-2 shadow-2xs hover:border-[#FF5722]/40 transition-colors">
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2">
+          <Palette size={16} className="text-[#FF5722]" />
+          <p className="font-black text-[#1A1A2E] text-sm sm:text-base tracking-tight">
+            Rule 1: Face paint &gt; full costume, always.
+          </p>
+        </div>
+        <span className="text-xs font-black text-[#FF5722] bg-[#FF5722]/10 px-2.5 py-1 rounded-full shrink-0">
+          01
+        </span>
+      </div>
+      <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed font-medium pl-6">
+        A ₹500 face paint setup looks more intentional than a ₹1,500 pre-packaged costume that everyone else is also wearing.
+      </p>
+    </div>
+
+    {/* Rule 2 */}
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#F0EEFF] via-[#FAF9FF] to-white border border-[#5B4FBE]/20 rounded-2xl p-5 space-y-2 shadow-2xs hover:border-[#5B4FBE]/40 transition-colors">
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2">
+          <Sparkles size={16} className="text-[#5B4FBE]" />
+          <p className="font-black text-[#1A1A2E] text-sm sm:text-base tracking-tight">
+            Rule 2: Buy the accessory, wear your own clothes.
+          </p>
+        </div>
+        <span className="text-xs font-black text-[#5B4FBE] bg-[#5B4FBE]/10 px-2.5 py-1 rounded-full shrink-0">
+          02
+        </span>
+      </div>
+      <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed font-medium pl-6">
+        Devil horns on a black outfit. Witch hat on a dark dress. Vampire cape on a blazer. You look like <em>you tried</em>, without trying too hard.
+      </p>
+    </div>
+
+    {/* Rule 3 */}
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#F8F9FA] via-[#FAF9FF] to-white border border-slate-200 rounded-2xl p-5 space-y-2 shadow-2xs hover:border-slate-300 transition-colors">
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2">
+          <Home size={16} className="text-[#1A1A2E]" />
+          <p className="font-black text-[#1A1A2E] text-sm sm:text-base tracking-tight">
+            Rule 3: Decor is the actual vibe.
+          </p>
+        </div>
+        <span className="text-xs font-black text-[#1A1A2E] bg-slate-200/80 px-2.5 py-1 rounded-full shrink-0">
+          03
+        </span>
+      </div>
+      <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed font-medium pl-6">
+        If you&apos;re hosting: spend ₹300 on string lights and ₹200 on pumpkin props. Nobody remembers whose costume was best. Everyone remembers the house that looked actually spooky.
+      </p>
+    </div>
+  </div>
+</section>
 
               {/* Halloween Offers Hub Callout */}
               <div className="bg-gradient-to-r from-[#5B4FBE]/5 via-orange-500/5 to-transparent border border-[#5B4FBE]/20 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">

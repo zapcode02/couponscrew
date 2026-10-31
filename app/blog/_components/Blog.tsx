@@ -179,6 +179,16 @@ const posts = [
     excerpt: 'Halloween kal hai aur deals aaj hain. Shop the best costumes, decor, and party picks under ₹999 on Amazon, Myntra, and Flipkart — before the cart haunts you.',
     tags: ['Halloween', 'Festival Offers', 'Shopping Guide'],
   },
+  {
+    slug: 'dhanteras-diwali-november-2026-india-deals',
+    title: 'November 2026 Festival Calendar India: Dhanteras, Diwali, Bhai Dooj & More — Deals & Offers',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1793435015/November_2026_Festival_Deals_Calendar_n87njb.webp',
+    date: 'Oct 31, 2026',
+    readTime: '11 min read',
+    excerpt: "Your complete November 2026 India festival guide — Dhanteras to Cyber Monday. Every festival, every deal, every offer in one place. Don't miss a single saving.",
+    tags: ['Diwali', 'Dhanteras', 'Festival Offers'],
+  },
 ];
 
 export default function Blog() {

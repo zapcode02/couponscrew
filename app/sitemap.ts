@@ -132,6 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026`, lastModified: new Date('2026-10-17'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/karwa-chauth-2026-shopping-guide`, lastModified: new Date('2026-10-24'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/halloween-shopping-india-amazon-myntra-flipkart-under-999`, lastModified: new Date('2026-10-30'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/dhanteras-diwali-november-2026-india-deals`, lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/feedback`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

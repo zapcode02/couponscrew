@@ -171,6 +171,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'Dussehra Shopping Guide 2026: What to Buy & Where to Save', href: '/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026' },
   { label: 'Karwa Chauth 2026 Shopping Guide: Best Sarees, Makeup & Jewellery Deals', href: '/blog/karwa-chauth-2026-shopping-guide' },
   { label: 'Halloween Shopping in India: Amazon, Myntra & Flipkart Best Picks Under ₹999', href: '/blog/halloween-shopping-india-amazon-myntra-flipkart-under-999' },
+  { label: 'November 2026 Festival Calendar India: Dhanteras, Diwali, Bhai Dooj & More', href: '/blog/dhanteras-diwali-november-2026-india-deals' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [
