@@ -96,6 +96,19 @@ const jsonLd = {
       },
       datePublished: '2026-10-01',
       dateModified: '2026-10-01',
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.couponscrew.com' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.couponscrew.com/blog' },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'Myntra Big Fashion Festival 2026',
+            item: 'https://www.couponscrew.com/blog/myntra-big-fashion-festival-2026',
+          },
+        ],
+      },
     },
 
     // 2. BlogPosting Schema
@@ -164,19 +177,6 @@ const jsonLd = {
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': 'https://www.couponscrew.com/blog/myntra-big-fashion-festival-2026#webpage',
-      },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.couponscrew.com' },
-          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.couponscrew.com/blog' },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'Myntra Big Fashion Festival 2026',
-            item: 'https://www.couponscrew.com/blog/myntra-big-fashion-festival-2026',
-          },
-        ],
       },
     },
 

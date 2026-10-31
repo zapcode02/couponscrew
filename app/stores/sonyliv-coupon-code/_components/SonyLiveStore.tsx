@@ -1058,13 +1058,12 @@ export default function SonyLiveStore() {
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular SonyLIV Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["SonyLIV Coupons", "Annual Plan Offers", "Mobile Only Plan", "WWE Live Streaming", "Sports Pack Discount", "SonyLIV Renewal Promo", "OTT Bundle Deals", "CouponsCrew Home"].map(tag => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

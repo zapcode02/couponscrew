@@ -113,7 +113,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/products/pulgos-15-in-1-pushup-board`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/deals`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/deals-of-the-day`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
-    { url: `${baseUrl}/deals-page`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
     { url: `${baseUrl}/offers`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/blog/how-to-save-money-shopping-online-india`, lastModified: new Date('2026-06-22'), changeFrequency: 'monthly', priority: 0.5 },

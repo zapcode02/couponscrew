@@ -1168,13 +1168,12 @@ export default function AirbnbStore() {
           </p>
           <div className="flex flex-wrap gap-2.5">
             {["Airbnb Coupons", "Entire Home Offers", "Unique Stays Deals", "Airbnb Long Stay Sale", "Experiences Discount", "New User Airbnb Offer", "Airbnb Bank Offers", "CouponsCrew Home"].map(tag => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

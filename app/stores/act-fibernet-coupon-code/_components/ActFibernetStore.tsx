@@ -1039,13 +1039,12 @@ export default function ActFibernetStore() {
           </p>
           <div className="flex flex-wrap gap-2.5">
             {["ACT Fibernet Coupons", "Broadband Offers", "High-Speed Internet Deals", "Plan Tenure Discounts", "Referral Bonus", "Free Installation", "CouponsCrew Home"].map(tag => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

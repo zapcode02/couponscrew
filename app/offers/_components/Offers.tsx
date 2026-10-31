@@ -738,7 +738,7 @@ export default function Offers() {
                   return (
                     <Link
                       key={idx}
-                      href="/brands"
+                      href="/stores"
                       className="flex items-center gap-3 hover:translate-x-0.5 transition-transform duration-200"
                     >
                       {/* Avatar design */}
@@ -763,7 +763,7 @@ export default function Offers() {
 
               {/* View all brands navigation link */}
               <div className="mt-4 pt-4 border-t border-[#E8E8F0] text-center select-none">
-                <Link href="/brands"
+                <Link href="/stores"
                   className="text-xs text-[#5B4FBE] font-semibold inline-flex items-center gap-1 hover:underline"
                 >
                   <span>View All Brands</span>

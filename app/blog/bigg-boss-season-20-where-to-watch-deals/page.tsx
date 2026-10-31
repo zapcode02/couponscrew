@@ -108,6 +108,29 @@ const jsonLd = {
       },
       datePublished: '2026-09-06',
       dateModified: '2026-09-06',
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.couponscrew.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://www.couponscrew.com/blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'Bigg Boss Season 20 Where to Watch',
+            item: 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
+          },
+        ],
+      },
     },
 
     // 2. BlogPosting Schema
@@ -176,29 +199,6 @@ const jsonLd = {
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals#webpage',
-      },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: 'https://www.couponscrew.com',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: 'https://www.couponscrew.com/blog',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'Bigg Boss Season 20 Where to Watch',
-            item: 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
-          },
-        ],
       },
     },
 

@@ -123,6 +123,29 @@ const jsonLd = {
       },
       datePublished: '2026-06-22',
       dateModified: '2026-06-22',
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.couponscrew.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://www.couponscrew.com/blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'How to Save Money Shopping Online in India',
+            item: 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india',
+          },
+        ],
+      },
     },
 
     // 2. BlogPosting Schema
@@ -190,29 +213,6 @@ const jsonLd = {
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india#webpage',
-      },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: 'https://www.couponscrew.com',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: 'https://www.couponscrew.com/blog',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'How to Save Money Shopping Online in India',
-            item: 'https://www.couponscrew.com/blog/how-to-save-money-shopping-online-india',
-          },
-        ],
       },
     },
 

@@ -1030,13 +1030,12 @@ export default function TestbookStore() {
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Testbook Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Testbook Coupon Code", "Testbook Pass Offers", "Testbook Select Discount", "Testbook Promo Code", "Skill Academy Offers", "Testbook App Exclusive", "SSC Mock Test Deals", "CouponsCrew EdTech"].map(tag => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

@@ -933,13 +933,12 @@ export default function DominosStore() {
               "Everyday Value",
               "Dominos App Offers"
             ].map((tag) => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-[#f0eeff] px-4 py-2 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest hover:bg-[#5B4FBE] hover:text-white transition-all border border-[#E4E0FF]"
+                className="bg-[#f0eeff] px-4 py-2 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest border border-[#E4E0FF]"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

@@ -1184,13 +1184,12 @@ export default function LevisStore() {
               "Levis Vintage Clothing",
               "End of Season Sale"
             ].map((tag) => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-white px-3.5 py-2 rounded-full text-[11px] font-black text-[#5B4FBE] uppercase tracking-wider shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-3.5 py-2 rounded-full text-[11px] font-black text-[#5B4FBE] uppercase tracking-wider shadow-sm border border-white"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

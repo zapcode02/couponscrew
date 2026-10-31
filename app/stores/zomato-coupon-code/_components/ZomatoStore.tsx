@@ -1037,13 +1037,12 @@ export default function ZomatoStore() {
           <h3 className="text-black font-black text-lg mb-8 uppercase tracking-widest">Popular Zomato Searches</h3>
           <div className="flex flex-wrap gap-2.5">
             {["Zomato Coupons", "Zomato Gold Offers", "Zomato First Order Code", "Zomato Promo Code", "Bank Card Cashback", "Swiggy vs Zomato", "Zomato Delivery Offers", "CouponsCrew Food"].map(tag => (
-              <a
+              <span
                 key={tag}
-                href={`/search?q=${encodeURIComponent(tag)}`}
-                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm hover:bg-[#5B4FBE] hover:text-white transition-all active:scale-95 border border-white"
+                className="bg-white px-4 py-2.5 rounded-full text-[12px] font-black text-[#5B4FBE] uppercase tracking-widest shadow-sm border border-white"
               >
                 {tag}
-              </a>
+              </span>
             ))}
           </div>
         </div>

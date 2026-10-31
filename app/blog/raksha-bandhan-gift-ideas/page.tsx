@@ -111,6 +111,29 @@ const jsonLd = {
       },
       datePublished: '2026-08-24',
       dateModified: '2026-08-24',
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.couponscrew.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://www.couponscrew.com/blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'Raksha Bandhan Gift Ideas',
+            item: 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
+          },
+        ],
+      },
     },
 
     // 2. BlogPosting Schema
@@ -179,29 +202,6 @@ const jsonLd = {
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas#webpage',
-      },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: 'https://www.couponscrew.com',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: 'https://www.couponscrew.com/blog',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'Raksha Bandhan Gift Ideas',
-            item: 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
-          },
-        ],
       },
     },
 

@@ -107,7 +107,38 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
 
-    // 1. Blog Schema
+    // 1. WebPage Schema (carries breadcrumb — not a valid Blog property)
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.couponscrew.com/blog#webpage',
+      url: 'https://www.couponscrew.com/blog',
+      name: 'CouponsCrew Blog',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://www.couponscrew.com/#website',
+        name: 'CouponsCrew',
+        url: 'https://www.couponscrew.com',
+      },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.couponscrew.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://www.couponscrew.com/blog',
+          },
+        ],
+      },
+    },
+
+    // 2. Blog Schema
     {
       '@type': 'Blog',
       '@id': 'https://www.couponscrew.com/blog#blog',
@@ -134,26 +165,9 @@ const jsonLd = {
         name: 'CouponsCrew',
         url: 'https://www.couponscrew.com',
       },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: 'https://www.couponscrew.com',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Blog',
-            item: 'https://www.couponscrew.com/blog',
-          },
-        ],
-      },
     },
 
-    // 2. FAQPage Schema (AEO + AI Search)
+    // 3. FAQPage Schema (AEO + AI Search)
     {
       '@type': 'FAQPage',
       '@id': 'https://www.couponscrew.com/blog#faqpage',
