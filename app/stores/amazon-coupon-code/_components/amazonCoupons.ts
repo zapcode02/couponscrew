@@ -34,7 +34,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-2',
@@ -54,7 +54,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-3',
@@ -74,7 +74,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-4',
@@ -94,7 +94,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-5',
@@ -114,7 +114,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-6',
@@ -134,7 +134,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-7',
@@ -154,7 +154,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-8',
@@ -174,7 +174,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-9',
@@ -194,7 +194,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-10',
@@ -214,7 +214,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-11',
@@ -234,7 +234,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-12',
@@ -254,7 +254,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-13',
@@ -274,7 +274,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-14',
@@ -294,7 +294,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-15',
@@ -314,7 +314,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-16',
@@ -334,7 +334,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-17',
@@ -354,7 +354,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-18',
@@ -374,7 +374,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-19',
@@ -394,7 +394,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-20',
@@ -414,7 +414,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-21',
@@ -434,7 +434,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-22',
@@ -454,7 +454,7 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'amazon-coupon-23',
@@ -474,6 +474,6 @@ export const AMAZON_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   }
 ];

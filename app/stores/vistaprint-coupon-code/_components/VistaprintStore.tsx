@@ -903,7 +903,7 @@ export default function VistaprintStore() {
           <tr>
             <td className="border border-slate-200 p-2 font-medium">Starts</td>
             <td className="border border-slate-200 p-2">9 Oct 2026 (early access 8 Oct)</td>
-            <td className="border border-slate-200 p-2">8 Oct 2026</td>
+            <td className="border border-slate-200 p-2">30 Nov 2026</td>
             <td className="border border-slate-200 p-2">Orders anytime on vistaprint.in</td>
           </tr>
           <tr>

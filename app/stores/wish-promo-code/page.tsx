@@ -4,7 +4,7 @@ import WishStore from './_components/WishStore'
 import { WISH_COUPONS } from './_components/wishCoupons'
 
 const TITLE = 'Wish Coupon Code: 60% Off Doorbuster Deals & LED Shower'
-const DESCRIPTION = 'Get the latest Wish coupon code and Wish discount code for October 2026 to save up to 60% OFF Doorbuster Deals and 57% OFF LED Shower Heads.'
+const DESCRIPTION = 'Get the latest Wish coupon code and Wish discount code for November 2026 to save up to 60% OFF Doorbuster Deals and 57% OFF LED Shower Heads.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -85,7 +85,7 @@ const schema = {
           "name": "What is the best Wish coupon code in India right now?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As of October 2026, FIRST15 (15% off, valid till October 31) is the most recently confirmed code, sourced from GrabOn. REFRESH10 gives an additional 10% off and can be used twice. Both are worth trying at checkout — Wish code availability is low overall, and automatic deals (up to 60% off in weekly sales, up to 90% off pet items) often save more than a single code."
+            "text": "As of November 2026, FIRST15 (15% off, valid till October 31) is the most recently confirmed code, sourced from GrabOn. REFRESH10 gives an additional 10% off and can be used twice. Both are worth trying at checkout — Wish code availability is low overall, and automatic deals (up to 60% off in weekly sales, up to 90% off pet items) often save more than a single code."
           }
         },
         {

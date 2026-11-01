@@ -4,7 +4,7 @@ import ActFibernetStore from './_components/ActFibernetStore'
 import { ACT_FIBERNET_COUPONS } from './_components/actFibernetCoupons'
 
 const TITLE = 'ACT Fibernet Coupon Code: 1000 Mbps & Plans from ₹575'
-const DESCRIPTION = 'Get the latest ACT Fibernet coupon code and ACT Fibernet discount code for October 2026. Explore 1000 Mbps plans from ₹2,999/month and broadband plans starting at ₹575/month.'
+const DESCRIPTION = 'Get the latest ACT Fibernet coupon code and ACT Fibernet discount code for November 2026. Explore 1000 Mbps plans from ₹2,999/month and broadband plans starting at ₹575/month.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -85,7 +85,7 @@ const schema = {
           "name": "Does ACT Fibernet have a coupon code for new connections in 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As of October 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code."
+            "text": "As of November 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code."
           }
         },
         {

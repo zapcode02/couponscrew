@@ -85,7 +85,7 @@ const schema = {
       "name": "What is the best Underrated Club coupon code right now?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of October 2026, CREW10 gives 10% off sitewide with no minimum — that's the strongest single code available right now. For larger orders, flat 20% off (above ₹7,999) and flat 25% off (above ₹9,999) give better savings if your cart crosses those thresholds. Stack CREW10 with the prepaid 5% off for maximum saving without needing any code changes."
+        "text": "As of November 2026, CREW10 gives 10% off sitewide with no minimum — that's the strongest single code available right now. For larger orders, flat 20% off (above ₹7,999) and flat 25% off (above ₹9,999) give better savings if your cart crosses those thresholds. Stack CREW10 with the prepaid 5% off for maximum saving without needing any code changes."
       }
     },
     {

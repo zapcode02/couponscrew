@@ -497,7 +497,7 @@ export default function UnderratedClubStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Underrated Club Coupon Code: Save on Streetwear, Denim, and Cargos (October 2026)
+          Underrated Club Coupon Code: Save on Streetwear, Denim, and Cargos (November 2026)
         </p>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
@@ -508,7 +508,7 @@ export default function UnderratedClubStore() {
           <div>
   <div className="space-y-4 text-slate-700">
     <p className="text-xl font-black text-[#5B4FBE] mb-4">
-      Underrated Club Coupon Codes — October 2026
+      Underrated Club Coupon Codes — November 2026
     </p>
 
     <div className="overflow-x-auto my-8">
@@ -687,7 +687,7 @@ export default function UnderratedClubStore() {
                 What is the best Underrated Club coupon code right now?
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                As of October 2026, CREW10 gives 10% off sitewide with no minimum — that's the strongest single code available right now. For larger orders, flat 20% off (above ₹7,999) and flat 25% off (above ₹9,999) give better savings if your cart crosses those thresholds. Stack CREW10 with the prepaid 5% off for maximum saving without needing any code changes.
+                As of November 2026, CREW10 gives 10% off sitewide with no minimum — that's the strongest single code available right now. For larger orders, flat 20% off (above ₹7,999) and flat 25% off (above ₹9,999) give better savings if your cart crosses those thresholds. Stack CREW10 with the prepaid 5% off for maximum saving without needing any code changes.
               </p>
             </div>
 

@@ -33,7 +33,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-2',
@@ -53,7 +53,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-3',
@@ -73,7 +73,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-4',
@@ -93,7 +93,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-5',
@@ -113,7 +113,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-6',
@@ -133,7 +133,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-7',
@@ -153,7 +153,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-8',
@@ -173,7 +173,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-9',
@@ -193,7 +193,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-10',
@@ -213,7 +213,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-11',
@@ -233,7 +233,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-12',
@@ -253,7 +253,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-13',
@@ -273,7 +273,7 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'skechers-coupon-14',
@@ -293,6 +293,6 @@ export const SKECHERS_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   }
 ];

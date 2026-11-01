@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import IkeaStore from './_components/IkeaStore'
 import { IKEA_COUPONS } from './_components/ikeaCoupons'
 
-const TITLE = 'IKEA Coupon Code – Get 80% OFF LED Lights | Oct 2026'
-const DESCRIPTION = 'Save more with the latest IKEA Coupon Code and IKEA Promo Code. Enjoy 80% OFF KNOPPSLINGA LED Lights and 66% OFF LED Batten Lights. Shop furniture, mattresses, lighting, storage solutions, and home essentials at the best prices this October 2026.'
+const TITLE = 'IKEA Coupon Code – Get 80% OFF LED Lights | Nov 2026'
+const DESCRIPTION = 'Save more with the latest IKEA Coupon Code and IKEA Promo Code. Enjoy 80% OFF KNOPPSLINGA LED Lights and 66% OFF LED Batten Lights. Shop furniture, mattresses, lighting, storage solutions, and home essentials at the best prices this November 2026.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),

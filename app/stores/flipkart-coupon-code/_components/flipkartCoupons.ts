@@ -27,7 +27,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the Kamiliant Hard Body Set of 2 Luggage for just ₹2,659, an 88% saving.',
       'Has a strong hard-shell build that keeps your belongings safe on the road.',
@@ -47,7 +47,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the Kamiliant Small Cabin Suitcase for only ₹1,017, which is 86% off.',
       'Compact and light, so it is easy to carry on short trips.',
@@ -67,7 +67,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the Kamiliant Large Check-in Suitcase for ₹1,793, an 81% saving.',
       'Has plenty of space inside and wheels that roll smoothly.',
@@ -87,7 +87,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the Oscar Attar Gift Set for just ₹338, which is 77% off.',
       'Includes long-lasting fragrances for both men and women.',
@@ -107,7 +107,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the PUMA Zod Runner V3 Sneakers for ₹995, a 75% saving.',
       'Light in weight, so they feel comfortable all day.',
@@ -127,7 +127,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the PUMA Rungryp Sneakers for only ₹1,299, which is 74% off.',
       'Made to give comfort and style throughout the day.',
@@ -147,7 +147,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the ASUS ExpertBook P5 for ₹1,79,990, a 58% saving.',
       'Runs on Intel Core Ultra 7 with 32GB RAM and a 1TB SSD.',
@@ -167,7 +167,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the Samsung Galaxy S25 5G for ₹54,999, which is 48% off.',
       'Has a Snapdragon processor, 12GB RAM and 128GB storage.',
@@ -187,7 +187,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the ASUS ExpertBook P3 AI PC for ₹91,990, a 47% saving.',
       'Runs on Intel Core 5 with 16GB RAM and a 512GB SSD.',
@@ -207,7 +207,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the TCL 55-inch QLED 4K Google TV for ₹41,999, which is 45% off.',
       'Supports Dolby Vision, HDR10+ and Google TV.',
@@ -227,7 +227,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Save up to 45% on the realme P4 Lite 5G, with prices starting from ₹15,999.',
       'Has a smooth display and a battery that lasts long.',
@@ -247,7 +247,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the ASUS ExpertBook P1 for ₹63,990, a 41% saving.',
       'Has an Intel Core 3 processor, 16GB DDR5 RAM and a 512GB SSD.',
@@ -267,7 +267,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the Nothing Phone (4b) for ₹29,999, which is 40% off.',
       'Has 6GB RAM and 128GB storage.',
@@ -287,7 +287,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Buy the Voltas Beko 472L Refrigerator for ₹52,240, a 38% saving.',
       'Has a Pro Smart Inverter Compressor and a built-in stabilizer.',
@@ -307,7 +307,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Get the Samsung 653L Side-by-Side Refrigerator for ₹81,990, which is 32% off.',
       'Has AI, Wi-Fi connectivity and Convertible technology.',
@@ -327,7 +327,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Save up to 80% on skincare, makeup and other beauty essentials.',
       'Shop top brands while the limited-time sale lasts.',
@@ -347,7 +347,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Save upto 85% on Lakmé and other leading beauty products.',
       'Browse makeup, skincare and personal care essentials.',
@@ -367,7 +367,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Save up to 80% on selected CeraVe skincare products.',
       'Includes cleansers, moisturisers and other daily skincare basics.',
@@ -387,7 +387,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Save up to 60% on peanut butter and other breakfast products.',
       'Explore discounts on leading grocery brands.',
@@ -407,7 +407,7 @@ export const FLIPKART_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '31 Oct 2026',
+    validTill: '30 Nov 2026',
     bullets: [
       'Save up to 55% on household and cleaning essentials.',
       'Shop products from trusted brands.',

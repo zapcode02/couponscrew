@@ -578,7 +578,7 @@ export default function AjioStore() {
         
         {/* Intro / Store Overview */}
         <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-          AJIO Coupon Code &amp; Fashion Deals — Verified for October 2026
+          AJIO Coupon Code &amp; Fashion Deals — Verified for November 2026
         </h2>
 
         <div className="overflow-x-auto my-6">

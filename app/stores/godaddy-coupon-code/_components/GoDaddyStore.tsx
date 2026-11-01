@@ -540,7 +540,7 @@ export default function GoDaddyStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          GoDaddy Coupon Code: Domain, Hosting and Email Offers in India (October 2026)
+          GoDaddy Coupon Code: Domain, Hosting and Email Offers in India (November 2026)
         </p>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">

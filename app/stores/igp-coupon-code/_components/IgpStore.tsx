@@ -176,7 +176,7 @@ export default function IgpStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest IGP coupon code and IGP discount code for October 2026 to save on gifts, flowers, cakes, and personalized products. Enjoy up to 50% + 10% OFF during the IGP Bhai Dooj Sale, 49% OFF Personalized Bryan Candy Jars, free standard delivery, and 5% cashback on eligible orders. Shop personalized gifts, premium hampers, cakes, and festive surprises with same-day delivery in selected cities. Apply a verified IGP coupon code or discount code at checkout to maximize your savings.
+                    Find the latest IGP coupon code and IGP discount code for November 2026 to save on gifts, flowers, cakes, and personalized products. Enjoy up to 50% + 10% OFF during the IGP Bhai Dooj Sale, 49% OFF Personalized Bryan Candy Jars, free standard delivery, and 5% cashback on eligible orders. Shop personalized gifts, premium hampers, cakes, and festive surprises with same-day delivery in selected cities. Apply a verified IGP coupon code or discount code at checkout to maximize your savings.
                   </p>
                 </div>
               </div>
@@ -450,7 +450,7 @@ export default function IgpStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          IGP Coupon Code: Save on Gifts, Flowers, and Cakes in India (October 2026)
+          IGP Coupon Code: Save on Gifts, Flowers, and Cakes in India (November 2026)
         </p>
 
         <div className="overflow-x-auto my-6">
@@ -519,7 +519,7 @@ export default function IgpStore() {
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>
-            An IGP coupon code is a promo code entered at checkout on igp.com to reduce the price of flowers, cakes, personalised gifts, hampers, or plants. Indian Gifts Portal (IGP) does release affiliate codes — unlike many gifting sites. Current working codes for October 2026 include CK20 (20% off above ₹1,299) and FLOWER12 (12% off above ₹199 on select products). Beyond codes, IGP's bigger savings come from HDFC SmartBuy gift vouchers (flat 17.5% instant discount), CashKaro cashback (9–10% on website orders), and bank card stacking.
+            An IGP coupon code is a promo code entered at checkout on igp.com to reduce the price of flowers, cakes, personalised gifts, hampers, or plants. Indian Gifts Portal (IGP) does release affiliate codes — unlike many gifting sites. Current working codes for November 2026 include CK20 (20% off above ₹1,299) and FLOWER12 (12% off above ₹199 on select products). Beyond codes, IGP's bigger savings come from HDFC SmartBuy gift vouchers (flat 17.5% instant discount), CashKaro cashback (9–10% on website orders), and bank card stacking.
           </p>
 
           <hr className="my-10 border-gray-200" />
@@ -527,7 +527,7 @@ export default function IgpStore() {
           <div>
   <div className="space-y-4 text-slate-700">
     <p className="text-xl font-black text-[#5B4FBE] mb-4">
-      IGP Coupon Codes — October 2026
+      IGP Coupon Codes — November 2026
     </p>
 
     <div className="overflow-x-auto my-8">
@@ -545,7 +545,7 @@ export default function IgpStore() {
             <td className="p-4 font-semibold">CK20</td>
             <td className="p-4">20% off</td>
             <td className="p-4">₹1,299</td>
-            <td className="p-4">31 Oct 2026</td>
+            <td className="p-4">30 Nov 2026</td>
           </tr>
           <tr className="bg-gray-50/50">
             <td className="p-4 font-semibold">FLOWER12</td>
@@ -674,7 +674,7 @@ export default function IgpStore() {
     </p>
 
     <p className="mt-4">
-      Vouchers are valid for 6 months from purchase. Source: GyFTR HDFC SmartBuy IGP voucher page (October 2026). Savings calculations are indicative — check HDFC SmartBuy for per-card maximums and caps before purchasing.
+      Vouchers are valid for 6 months from purchase. Source: GyFTR HDFC SmartBuy IGP voucher page (November 2026). Savings calculations are indicative — check HDFC SmartBuy for per-card maximums and caps before purchasing.
     </p>
 
     <hr className="my-6 border-slate-200" />
@@ -713,7 +713,7 @@ export default function IgpStore() {
     </p>
 
     <p>
-      Source: CashKaro Indian Gifts Portal page (October 2026).
+      Source: CashKaro Indian Gifts Portal page (November 2026).
     </p>
 
     <hr className="my-6 border-slate-200" />
@@ -987,7 +987,7 @@ export default function IgpStore() {
                 What is the best IGP coupon code right now?
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                As of October 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving.
+                As of November 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving.
               </p>
             </div>
 
@@ -1032,7 +1032,7 @@ export default function IgpStore() {
           <hr className="my-10 border-gray-200" />
 
           <p>
-            For most buyers in October 2026, the practical stack is: use CK20 on an order above ₹1,299 (20% off), activate it through CashKaro's portal (9–10% cashback), and if you hold an HDFC card, buy an IGP voucher on SmartBuy first (17.5% instant off the voucher purchase) and redeem it at checkout. The three mechanisms are independent — they don't cancel each other out. On a ₹2,000 order, that combination can bring the effective cost down by ₹500–₹700 depending on which HDFC card you hold.
+            For most buyers in November 2026, the practical stack is: use CK20 on an order above ₹1,299 (20% off), activate it through CashKaro's portal (9–10% cashback), and if you hold an HDFC card, buy an IGP voucher on SmartBuy first (17.5% instant off the voucher purchase) and redeem it at checkout. The three mechanisms are independent — they don't cancel each other out. On a ₹2,000 order, that combination can bring the effective cost down by ₹500–₹700 depending on which HDFC card you hold.
           </p>
 
         </div>

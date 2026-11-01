@@ -483,7 +483,7 @@ export default function LenovoStore() {
 
               <div className="text-gray-600 font-normal leading-relaxed space-y-6">
                 <p>
-                  A Lenovo coupon code is a promo code you apply at lenovo.com/in checkout to reduce the price of a laptop, desktop, tablet, monitor, or accessory. Lenovo India runs codes through affiliate partners and its own seasonal campaigns — current codes (October 2026) cover custom PCs, ThinkBook, LOQ gaming laptops, and tablet bundles. But Lenovo's bigger savings often come from the credit card cashback and UPI cashback the site runs in parallel — those can save more than a code alone.
+                  A Lenovo coupon code is a promo code you apply at lenovo.com/in checkout to reduce the price of a laptop, desktop, tablet, monitor, or accessory. Lenovo India runs codes through affiliate partners and its own seasonal campaigns — current codes (November 2026) cover custom PCs, ThinkBook, LOQ gaming laptops, and tablet bundles. But Lenovo's bigger savings often come from the credit card cashback and UPI cashback the site runs in parallel — those can save more than a code alone.
                 </p>
 
                 <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
@@ -1066,7 +1066,7 @@ export default function LenovoStore() {
                       What is the best Lenovo coupon code for laptops in India right now?
                     </p>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      As of October 2026, CUSTOMOFF (₹7,500 off custom PCs, valid till December 31) is the highest-value code currently active. For gaming laptops, EXTRASAVINGS gives ₹1,500 off LOQ models. For tablet buyers, PAMU20 gives up to 70% off. Beyond codes, check the sitewide credit card cashback — at 10% on Legion and Yoga, it often saves more than a flat code.
+                      As of November 2026, CUSTOMOFF (₹7,500 off custom PCs, valid till December 31) is the highest-value code currently active. For gaming laptops, EXTRASAVINGS gives ₹1,500 off LOQ models. For tablet buyers, PAMU20 gives up to 70% off. Beyond codes, check the sitewide credit card cashback — at 10% on Legion and Yoga, it often saves more than a flat code.
                     </p>
                   </div>
 

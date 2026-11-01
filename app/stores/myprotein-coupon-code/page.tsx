@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import MyproteinStore from './_components/MyproteinStore'
 import { MYPROTEIN_COUPONS } from './_components/myproteinCoupons'
 
-const TITLE = 'Myprotein Coupon Code – Up to 50% OFF + Extra 10% | Oct 2026'
-const DESCRIPTION = 'Save big with verified Myprotein coupon codes and promo codes. Get up to 50% OFF plus extra discounts on whey protein, vitamins, snacks, and gym wear this October 2026.'
+const TITLE = 'Myprotein Coupon Code – Up to 50% OFF + Extra 10% | Nov 2026'
+const DESCRIPTION = 'Save big with verified Myprotein coupon codes and promo codes. Get up to 50% OFF plus extra discounts on whey protein, vitamins, snacks, and gym wear this November 2026.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),

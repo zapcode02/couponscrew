@@ -171,7 +171,7 @@ export default function ZeptoStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                   Discover Zepto coupon codes and offers for Oct 2026. Save up to 80% on selected electronics and appliances with a minimum cart value of ₹549. Plus, use QUICKSAVE200 to get an extra ₹200 OFF on eligible orders above ₹1,299.
+                   Discover Zepto coupon codes and offers for Nov 2026. Save up to 80% on selected electronics and appliances with a minimum cart value of ₹549. Plus, use QUICKSAVE200 to get an extra ₹200 OFF on eligible orders above ₹1,299.
                   </p>
                 </div>
               </div>

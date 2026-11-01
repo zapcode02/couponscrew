@@ -455,7 +455,7 @@ export default function MyntraStore() {
             
             {/* Main Section Header */}
             <h2 className="text-3xl font-black text-black mb-10 leading-tight italic">
-              Myntra Coupon Code & Discount Deals — Verified for October 2026
+              Myntra Coupon Code & Discount Deals — Verified for November 2026
             </h2>
 
             <div className="overflow-x-auto my-6">
@@ -586,7 +586,7 @@ export default function MyntraStore() {
 
               {/* Sub-header: Today's Best Offers */}
               <h3 className="text-xl font-black text-[#5B4FBE] mb-4">
-                Today's Best Myntra Coupon Codes (October 2026)
+                Today's Best Myntra Coupon Codes (November 2026)
               </h3>
 
               <p>

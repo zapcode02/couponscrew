@@ -483,7 +483,7 @@ export default function JockeyStore() {
 
               <div className="text-gray-600 font-normal leading-relaxed space-y-6">
                 <p>
-                  A Jockey coupon code is a promo code you apply at checkout on jockeyindia.com to reduce the price of innerwear, activewear, loungewear, or kids' wear. Jockey India runs fewer affiliate codes than most apparel brands — their biggest savings come from bank card offers, multi-pack deals, and sitewide sales rather than single-use promo codes. Current offers (October 2026) include up to 50% off sitewide, ₹500 off with ICICI cards, and 20% off for HDFC and SBI cardholders on orders above ₹3,999.
+                  A Jockey coupon code is a promo code you apply at checkout on jockeyindia.com to reduce the price of innerwear, activewear, loungewear, or kids' wear. Jockey India runs fewer affiliate codes than most apparel brands — their biggest savings come from bank card offers, multi-pack deals, and sitewide sales rather than single-use promo codes. Current offers (November 2026) include up to 50% off sitewide, ₹500 off with ICICI cards, and 20% off for HDFC and SBI cardholders on orders above ₹3,999.
                 </p>
 
                 <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
@@ -663,7 +663,7 @@ export default function JockeyStore() {
                     </div>
 
                     <p>
-                      <em>Dev note:</em> Bank offers above sourced from Zoutons and CouponzGuru Jockey pages (October 2026). Bank card offers change by campaign cycle — verify active status and specific terms directly with each bank before publishing. HDFC and SBI minimum of ₹3,999 needs verification — sources listed it inconsistently (some entries said "no minimum"). Use ₹3,999 as the conservative figure and flag for affiliate dashboard confirmation.
+                      <em>Dev note:</em> Bank offers above sourced from Zoutons and CouponzGuru Jockey pages (November 2026). Bank card offers change by campaign cycle — verify active status and specific terms directly with each bank before publishing. HDFC and SBI minimum of ₹3,999 needs verification — sources listed it inconsistently (some entries said "no minimum"). Use ₹3,999 as the conservative figure and flag for affiliate dashboard confirmation.
                     </p>
 
                     <hr className="my-6 border-slate-200" />
@@ -949,7 +949,7 @@ export default function JockeyStore() {
                       What is the best Jockey coupon code in India right now?
                     </p>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      As of October 2026, FLATRS.23OFF gives a flat ₹23 off on a minimum cart of ₹199 at jockeyindia.com — valid until 27 October 2026. For bigger savings, HDFC cardholders get 20% off on carts above ₹3,999, and ICICI cardholders get ₹500 off sitewide — neither requires a code. If you're a new user on Myntra, the extra 30% first-order discount may save more than any available code.
+                      As of November 2026, FLATRS.23OFF gives a flat ₹23 off on a minimum cart of ₹199 at jockeyindia.com — valid until 27 October 2026. For bigger savings, HDFC cardholders get 20% off on carts above ₹3,999, and ICICI cardholders get ₹500 off sitewide — neither requires a code. If you're a new user on Myntra, the extra 30% first-order discount may save more than any available code.
                     </p>
                   </div>
 

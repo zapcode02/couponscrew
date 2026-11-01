@@ -5,14 +5,14 @@ import { HOTELCOM_COUPONS } from './_components/hotelcomCoupons'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
-  title: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Oct 2026',
-  description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this October 2026.',
+  title: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Nov 2026',
+  description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this November 2026.',
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/hotelcom-coupon-code',
   },
   openGraph: {
-    title: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Oct 2026',
-    description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this October 2026.',
+    title: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Nov 2026',
+    description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this November 2026.',
     url: 'https://www.couponscrew.com/stores/hotelcom-coupon-code',
     siteName: 'CouponsCrew',
     type: 'website',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Oct 2026',
-    description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this October 2026.',
+    title: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Nov 2026',
+    description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this November 2026.',
     site: '@couponscrew',
     creator: '@couponscrew',
     images: ['https://www.couponscrew.com/og-image.jpg'],
@@ -52,8 +52,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/hotelcom-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/hotelcom-coupon-code',
-      name: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Oct 2026',
-      description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this October 2026.',
+      name: 'Hotels.com Coupon Code – ₹4,375 OFF Stays + Rewards | Nov 2026',
+      description: 'Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 Reward Night on this November 2026.',
       isPartOf: { '@type': 'WebSite', '@id': 'https://www.couponscrew.com/#website', name: 'CouponsCrew', url: 'https://www.couponscrew.com' },
       breadcrumb: {
         '@type': 'BreadcrumbList',

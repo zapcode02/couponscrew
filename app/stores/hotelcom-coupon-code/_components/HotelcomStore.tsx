@@ -176,7 +176,7 @@ export default function HotelcomStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 reward night after 10 eligible stays. Discover hotel deals in Delhi, Mumbai, Phuket, Candolim, Udaipur, and other top destinations with verified Hotels.com offers this October 2026.
+                    Save more with the latest Hotels.com Coupon Code and Hotels.com Promo Code. Book hotels from ₹4,375 per night and earn 1 reward night after 10 eligible stays. Discover hotel deals in Delhi, Mumbai, Phuket, Candolim, Udaipur, and other top destinations with verified Hotels.com offers this November 2026.
                   </p>
                 </div>
               </div>

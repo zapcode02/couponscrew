@@ -33,7 +33,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-2',
@@ -53,7 +53,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-3',
@@ -73,7 +73,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-4',
@@ -93,7 +93,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-5',
@@ -113,7 +113,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-6',
@@ -133,7 +133,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-7',
@@ -153,7 +153,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-8',
@@ -173,7 +173,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-9',
@@ -193,7 +193,7 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'igp-coupon-10',
@@ -213,6 +213,6 @@ export const IGP_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   }
 ];

@@ -4,7 +4,7 @@ import SkechersStore from './_components/SkechersStore'
 import { SKECHERS_COUPONS } from './_components/skechersCoupons'
 
 const TITLE = 'Skechers Coupon Code: 50% Off Shoes & 40% Off Running Gear'
-const DESCRIPTION = 'Get the latest Skechers coupon code and Skechers discount code for October 2026 to enjoy 50% OFF SKX Float Basketball Sneakers, 50% OFF Boss Treatment Shoes, 40% OFF GO Run Max Road 6, and more.'
+const DESCRIPTION = 'Get the latest Skechers coupon code and Skechers discount code for November 2026 to enjoy 50% OFF SKX Float Basketball Sneakers, 50% OFF Boss Treatment Shoes, 40% OFF GO Run Max Road 6, and more.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -85,7 +85,7 @@ const schema = {
           "name": "What is the best Skechers coupon code in India right now?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As of October 2026, Skechers India's biggest savings come through spend-tier discounts (no code needed): ₹750 off above ₹6,999, ₹2,000 off above ₹12,999, and ₹4,000 off above ₹19,999. For HDFC cardholders, the SmartBuy gift voucher method (up to 8% instant off via Tata Neu Infinity, or 5% cashback + 2.5% instant with other HDFC cards) adds savings on top. Single-use affiliate codes are infrequent on skechers.in — the spend-tier structure is how most of the saving happens."
+            "text": "As of November 2026, Skechers India's biggest savings come through spend-tier discounts (no code needed): ₹750 off above ₹6,999, ₹2,000 off above ₹12,999, and ₹4,000 off above ₹19,999. For HDFC cardholders, the SmartBuy gift voucher method (up to 8% instant off via Tata Neu Infinity, or 5% cashback + 2.5% instant with other HDFC cards) adds savings on top. Single-use affiliate codes are infrequent on skechers.in — the spend-tier structure is how most of the saving happens."
           }
         },
         {

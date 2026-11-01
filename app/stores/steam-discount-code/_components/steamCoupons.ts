@@ -33,7 +33,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-2',
@@ -93,7 +93,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-5',
@@ -133,7 +133,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-7',
@@ -153,7 +153,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-8',
@@ -173,7 +173,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-9',
@@ -213,7 +213,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-11',
@@ -233,7 +233,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '28 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-12',
@@ -253,7 +253,7 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Oct 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'steam-coupon-13',
@@ -273,6 +273,6 @@ export const STEAM_COUPONS: Coupon[] = [
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '29 Oct 2026'
+    validTill: '30 Nov 2026'
   }
 ];

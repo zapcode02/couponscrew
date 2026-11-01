@@ -4,8 +4,8 @@ import { Suspense } from 'react'
 import TripStore from './_components/TripStore'
 import { TRIP_COUPONS } from './_components/tripCoupons'
 
-const TITLE = 'Trip.com Coupon Code – 50% OFF Hotels & 10% OFF | Oct 2026'
-const DESCRIPTION = 'Save more with the latest Trip.com Coupon Code and Trip.com Promo Code. Enjoy up to 50% OFF hotels in China and 10% OFF hotels, tours, and airport transfers. Book flights, hotels, car rentals, and holiday packages at the best prices this October 2026.'
+const TITLE = 'Trip.com Coupon Code – 50% OFF Hotels & 10% OFF | Nov 2026'
+const DESCRIPTION = 'Save more with the latest Trip.com Coupon Code and Trip.com Promo Code. Enjoy up to 50% OFF hotels in China and 10% OFF hotels, tours, and airport transfers. Book flights, hotels, car rentals, and holiday packages at the best prices this November 2026.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),

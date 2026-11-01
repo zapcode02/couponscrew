@@ -4,7 +4,7 @@ import SteamStore from './_components/SteamStore'
 import { STEAM_COUPONS } from './_components/steamCoupons'
 
 const TITLE = 'Steam Coupon Code: 90% Off The Walking Dead & Killing Floor 2'
-const DESCRIPTION = 'Get the latest Steam coupon code and Steam discount code for October 2026 to save 90% OFF The Walking Dead, 90% OFF Killing Floor 2, and more PC game deals.'
+const DESCRIPTION = 'Get the latest Steam coupon code and Steam discount code for November 2026 to save 90% OFF The Walking Dead, 90% OFF Killing Floor 2, and more PC game deals.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),

@@ -5,13 +5,13 @@ import { POLKI_SAREES_COUPONS } from './_components/polkiSareesCoupons'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
-  title: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Oct 2026',
+  title: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Nov 2026',
   description: 'Save more with the latest Polki Sarees Discount Code and Polki Sarees Promo Code. Get 39% OFF the Hariyali Green Ombre Saree and 23% OFF the Angoori + Mastani.',
   alternates: {
     canonical: 'https://www.couponscrew.com/stores/polki-sarees-coupon-code',
   },
   openGraph: {
-    title: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Oct 2026',
+    title: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Nov 2026',
     description: 'Save more with the latest Polki Sarees Discount Code and Polki Sarees Promo Code. Get 39% OFF the Hariyali Green Ombre Saree and 23% OFF the Angoori + Mastani.',
     url: 'https://www.couponscrew.com/stores/polki-sarees-coupon-code',
     siteName: 'CouponsCrew',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Oct 2026',
+    title: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Nov 2026',
     description: 'Save more with the latest Polki Sarees Discount Code and Polki Sarees Promo Code. Get 39% OFF the Hariyali Green Ombre Saree and 23% OFF the Angoori + Mastani.',
     site: '@couponscrew',
     creator: '@couponscrew',
@@ -52,7 +52,7 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/stores/polki-sarees-coupon-code/#webpage',
       url: 'https://www.couponscrew.com/stores/polki-sarees-coupon-code',
-      name: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Oct 2026',
+      name: 'Polki Sarees Discount Code – 39% OFF + 23% OFF | Nov 2026',
       description: 'Save more with the latest Polki Sarees Discount Code and Polki Sarees Promo Code. Get 39% OFF the Hariyali Green Ombre Saree and 23% OFF the Angoori + Mastani.',
       isPartOf: { '@type': 'WebSite', '@id': 'https://www.couponscrew.com/#website', name: 'CouponsCrew', url: 'https://www.couponscrew.com' },
       breadcrumb: {

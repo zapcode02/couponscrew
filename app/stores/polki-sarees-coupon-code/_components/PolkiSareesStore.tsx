@@ -176,7 +176,7 @@ export default function PolkiSareesStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest Polki Sarees Discount Code and Polki Sarees Promo Code. Enjoy 39% OFF the Hariyali Green Ombre Saree and 23% OFF the Angoori + Mastani Complete Look. Shop elegant festive, wedding, and party wear sarees with verified Polki Sarees offers this October 2026.
+                    Save more with the latest Polki Sarees Discount Code and Polki Sarees Promo Code. Enjoy 39% OFF the Hariyali Green Ombre Saree and 23% OFF the Angoori + Mastani Complete Look. Shop elegant festive, wedding, and party wear sarees with verified Polki Sarees offers this November 2026.
                   </p>
                 </div>
               </div>
@@ -428,7 +428,7 @@ export default function PolkiSareesStore() {
           
 
            <div className="bg-white border border-[#E8E8F0] rounded-3xl p-6 shadow-xs text-left max-w-3xl mx-auto my-6">
-  {/* Dev note (EEAT): No independently verified third-party coupon codes for Polki Sarees were confirmed during research (October 2026). The tiered discount and prepaid saving are confirmed directly from polkisarees.com. Update this section if an affiliate code becomes available. */}
+  {/* Dev note (EEAT): No independently verified third-party coupon codes for Polki Sarees were confirmed during research (November 2026). The tiered discount and prepaid saving are confirmed directly from polkisarees.com. Update this section if an affiliate code becomes available. */}
   <h2 className="font-extrabold text-[#1A1A2E] text-lg mb-4 tracking-tight border-b border-[#E8E8F0] pb-3 select-none">
     How to Apply a Polki Sarees Discount at Checkout
   </h2>
@@ -490,7 +490,7 @@ export default function PolkiSareesStore() {
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>
-            A Polki Sarees coupon code is a discount code you enter at checkout on polkisarees.com to reduce the price of your saree order. As of October 2026, Polki Sarees does not publish standalone promo codes in the traditional sense — instead, the brand runs a tiered discount system: 10% off when you buy one saree, 15% off when you buy two, and an additional prepaid discount on top of that. These apply automatically, without a code, on every eligible order.
+            A Polki Sarees coupon code is a discount code you enter at checkout on polkisarees.com to reduce the price of your saree order. As of November 2026, Polki Sarees does not publish standalone promo codes in the traditional sense — instead, the brand runs a tiered discount system: 10% off when you buy one saree, 15% off when you buy two, and an additional prepaid discount on top of that. These apply automatically, without a code, on every eligible order.
           </p>
 
           <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">

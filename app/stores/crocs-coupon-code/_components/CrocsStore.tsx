@@ -1000,7 +1000,7 @@ export default function CrocsStore() {
       <tr className="hover:bg-gray-50/80 transition-colors">
         <td className="p-4 font-semibold text-gray-900">Starts</td>
         <td className="p-4">9 Oct 2026 (early access 8 Oct for VIP, Black and Flipkart credit card members)</td>
-        <td className="p-4">8 Oct 2026</td>
+        <td className="p-4">30 Nov 2026</td>
       </tr>
       <tr className="bg-gray-50/50 hover:bg-gray-50/80 transition-colors">
         <td className="p-4 font-semibold text-gray-900">Bank offers announced</td>

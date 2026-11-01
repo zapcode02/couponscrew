@@ -4,7 +4,7 @@ import IgpStore from './_components/IgpStore'
 import { IGP_COUPONS } from './_components/igpCoupons'
 
 const TITLE = 'IGP Coupon Code: Get 50% + 10% Off Bhai Dooj Gifts | Oct 26'
-const DESCRIPTION = 'Get the latest IGP coupon code and IGP discount code for October 2026. Enjoy up to 50% + 10% OFF Bhai Dooj gifts, free delivery, and 5% cashback on eligible orders.'
+const DESCRIPTION = 'Get the latest IGP coupon code and IGP discount code for November 2026. Enjoy up to 50% + 10% OFF Bhai Dooj gifts, free delivery, and 5% cashback on eligible orders.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
@@ -85,7 +85,7 @@ const schema = {
           "name": "What is the best IGP coupon code right now?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As of October 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving."
+            "text": "As of November 2026, CK20 gives the highest percentage off at 20% on orders above ₹1,299 — valid until October 31. FLOWER12 gives 12% off with a lower minimum of ₹199. For HDFC cardholders, buying an IGP gift voucher through HDFC SmartBuy (flat 17.5% instant off on select cards) may save more than either code, particularly on larger orders. Stack CashKaro's 9–10% cashback on top for maximum saving."
           }
         },
         {

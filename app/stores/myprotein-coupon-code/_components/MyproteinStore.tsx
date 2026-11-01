@@ -176,7 +176,7 @@ export default function MyproteinStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Save more with the latest MyProtein Coupon Code and MyProtein Promo Code. Enjoy up to 50% OFF vitamins & recovery supplements and 25% OFF the HYROX range. Shop whey protein, creatine, mass gainers, wellness products, and sports nutrition with verified MyProtein offers this October 2026.
+                    Save more with the latest MyProtein Coupon Code and MyProtein Promo Code. Enjoy up to 50% OFF vitamins & recovery supplements and 25% OFF the HYROX range. Shop whey protein, creatine, mass gainers, wellness products, and sports nutrition with verified MyProtein offers this November 2026.
                   </p>
                 </div>
               </div>
@@ -525,7 +525,7 @@ export default function MyproteinStore() {
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>
-            A MyProtein coupon code is a discount code you apply at checkout on myprotein.co.in or the MyProtein app to reduce the price of whey protein, creatine, snacks and other nutrition products. In October 2026, MyProtein India also runs automatic cart discounts: an extra 5% off orders above ₹5,000 and 10% off above ₹10,000, so the size of your order affects the saving as much as any code.
+            A MyProtein coupon code is a discount code you apply at checkout on myprotein.co.in or the MyProtein app to reduce the price of whey protein, creatine, snacks and other nutrition products. In November 2026, MyProtein India also runs automatic cart discounts: an extra 5% off orders above ₹5,000 and 10% off above ₹10,000, so the size of your order affects the saving as much as any code.
           </p>
 
           <p className="italic text-sm text-gray-500">

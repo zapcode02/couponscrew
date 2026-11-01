@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import KlookStore from './_components/KlookStore'
 import { KLOOK_COUPONS } from './_components/klookCoupons'
 
-const TITLE = 'Klook Coupon Code – ₹8,000 OFF + 21% OFF Tickets | Oct 2026'
-const DESCRIPTION = 'Save more with the latest Klook Coupon Code and Klook Promo Code. Get up to ₹8,000 OFF on travel experiences and 21% OFF Universal Studios Singapore tickets. Book tours, attractions, ferry tickets, cruises, and activities worldwide at the best prices this October 2026.'
+const TITLE = 'Klook Coupon Code – ₹8,000 OFF + 21% OFF Tickets | Nov 2026'
+const DESCRIPTION = 'Save more with the latest Klook Coupon Code and Klook Promo Code. Get up to ₹8,000 OFF on travel experiences and 21% OFF Universal Studios Singapore tickets. Book tours, attractions, ferry tickets, cruises, and activities worldwide at the best prices this November 2026.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),

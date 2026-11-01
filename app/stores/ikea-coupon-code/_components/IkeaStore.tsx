@@ -526,7 +526,7 @@ export default function IkeaStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          IKEA Coupon Code: How to Save at IKEA India (October 2026)
+          IKEA Coupon Code: How to Save at IKEA India (November 2026)
         </p>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
@@ -703,7 +703,7 @@ export default function IkeaStore() {
           </p>
 
           <p>
-            At 1 point per ₹50, you need to spend ₹12,500 to earn 250 points, which gives ₹250 off. That's roughly 2% back. It adds up on a big furnishing order, but member prices on selected products usually save more. For example, IKEA was listing a bathrobe at ₹1,990 for members against ₹2,990 regular in October 2026.
+            At 1 point per ₹50, you need to spend ₹12,500 to earn 250 points, which gives ₹250 off. That's roughly 2% back. It adds up on a big furnishing order, but member prices on selected products usually save more. For example, IKEA was listing a bathrobe at ₹1,990 for members against ₹2,990 regular in November 2026.
           </p>
 
           <p>

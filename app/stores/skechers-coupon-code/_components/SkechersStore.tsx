@@ -176,7 +176,7 @@ export default function SkechersStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest Skechers coupon code and Skechers discount code for October 2026 to save on premium footwear and apparel. Grab 50% OFF SKX Float Basketball Sneakers, 50% OFF Boss Treatment Shoes, 40% OFF GO Run Max Road 6, and 40% OFF GO Run Razor 5 running shoes. You'll also find discounts on kids' footwear, jackets, joggers, and activewear. Apply a verified Skechers coupon code or discount code at checkout to unlock extra savings on eligible Skechers purchases.
+                    Find the latest Skechers coupon code and Skechers discount code for November 2026 to save on premium footwear and apparel. Grab 50% OFF SKX Float Basketball Sneakers, 50% OFF Boss Treatment Shoes, 40% OFF GO Run Max Road 6, and 40% OFF GO Run Razor 5 running shoes. You'll also find discounts on kids' footwear, jackets, joggers, and activewear. Apply a verified Skechers coupon code or discount code at checkout to unlock extra savings on eligible Skechers purchases.
                   </p>
                 </div>
               </div>
@@ -603,7 +603,7 @@ export default function SkechersStore() {
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>
-            A Skechers coupon code is a promo code applied at checkout on skechers.in to reduce the price of shoes, apparel, or accessories. Skechers India runs fewer single-use codes than most footwear brands — the main savings mechanism is a spend-tier discount structure (the more you spend, the larger the automatic discount) combined with category-specific sales. Current active offers (October 2026) include ₹4,000 off on orders above ₹19,999, up to 60% off in the sitewide sale, and a buy-1-get-1-50%-off offer on select styles.
+            A Skechers coupon code is a promo code applied at checkout on skechers.in to reduce the price of shoes, apparel, or accessories. Skechers India runs fewer single-use codes than most footwear brands — the main savings mechanism is a spend-tier discount structure (the more you spend, the larger the automatic discount) combined with category-specific sales. Current active offers (November 2026) include ₹4,000 off on orders above ₹19,999, up to 60% off in the sitewide sale, and a buy-1-get-1-50%-off offer on select styles.
           </p>
 
           <div>
@@ -648,7 +648,7 @@ export default function SkechersStore() {
     <hr className="my-6 border-slate-200" />
 
     <p className="text-xl font-black text-[#5B4FBE] mb-4">
-      Skechers Sale Offers — October 2026
+      Skechers Sale Offers — November 2026
     </p>
 
     <p>
@@ -1040,7 +1040,7 @@ export default function SkechersStore() {
                 What is the best Skechers coupon code in India right now?
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                As of October 2026, Skechers India's biggest savings come through spend-tier discounts (no code needed): ₹750 off above ₹6,999, ₹2,000 off above ₹12,999, and ₹4,000 off above ₹19,999. For HDFC cardholders, the SmartBuy gift voucher method (up to 8% instant off via Tata Neu Infinity, or 5% cashback + 2.5% instant with other HDFC cards) adds savings on top. Single-use affiliate codes are infrequent on skechers.in — the spend-tier structure is how most of the saving happens.
+                As of November 2026, Skechers India's biggest savings come through spend-tier discounts (no code needed): ₹750 off above ₹6,999, ₹2,000 off above ₹12,999, and ₹4,000 off above ₹19,999. For HDFC cardholders, the SmartBuy gift voucher method (up to 8% instant off via Tata Neu Infinity, or 5% cashback + 2.5% instant with other HDFC cards) adds savings on top. Single-use affiliate codes are infrequent on skechers.in — the spend-tier structure is how most of the saving happens.
               </p>
             </div>
 

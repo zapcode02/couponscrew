@@ -175,7 +175,7 @@ export default function ExpediaStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Discover verified Expedia coupon codes and promo codes to save up to 50% on holiday deals, get up to 25% OFF flights, and enjoy 20% OFF selected hotels when booking 60 days early. Book hotels, flights, and vacation packages for less in Oct 2026.
+                    Discover verified Expedia coupon codes and promo codes to save up to 50% on holiday deals, get up to 25% OFF flights, and enjoy 20% OFF selected hotels when booking 60 days early. Book hotels, flights, and vacation packages for less in Nov 2026.
                   </p>
                 </div>
               </div>

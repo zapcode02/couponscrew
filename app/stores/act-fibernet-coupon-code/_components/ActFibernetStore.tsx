@@ -176,7 +176,7 @@ export default function ActFibernetStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest ACT Fibernet coupon code and ACT Fibernet discount code for October 2026 to save on high-speed broadband plans. Explore 1000 Mbps plans from ₹2,999/month, plans starting at ₹575/month, Buy 6 Months & Get 1 Month Free, and 3 Months of Spotify Premium free on eligible subscriptions. Selected plans also include Amazon Prime, JioHotstar, ZEE5, free Wi-Fi routers, and unlimited data. Apply verified ACT Fibernet coupon codes or discount codes to maximize your broadband savings.
+                    Find the latest ACT Fibernet coupon code and ACT Fibernet discount code for November 2026 to save on high-speed broadband plans. Explore 1000 Mbps plans from ₹2,999/month, plans starting at ₹575/month, Buy 6 Months & Get 1 Month Free, and 3 Months of Spotify Premium free on eligible subscriptions. Selected plans also include Amazon Prime, JioHotstar, ZEE5, free Wi-Fi routers, and unlimited data. Apply verified ACT Fibernet coupon codes or discount codes to maximize your broadband savings.
                   </p>
                 </div>
               </div>
@@ -422,7 +422,7 @@ export default function ActFibernetStore() {
     </li>
     <li className="leading-relaxed">
       <span className="text-[#2C2C40]">
-        Confirm the saving reflects before completing payment. Most ACT discounts in October 2026 are applied automatically without a code — if no code field appears, the offer is already factored into the displayed price.
+        Confirm the saving reflects before completing payment. Most ACT discounts in November 2026 are applied automatically without a code — if no code field appears, the offer is already factored into the displayed price.
       </span>
     </li>
     <li className="leading-relaxed">
@@ -573,7 +573,7 @@ export default function ActFibernetStore() {
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>
-            An ACT Fibernet coupon code is a promo code applied during signup or renewal at actcorp.in to reduce the price of a broadband plan. ACT Fibernet runs very few affiliate promo codes — its savings structure works differently from e-commerce sites. The main ways to pay less are tenure commitments (pay for 6 or 12 months and get free months or a free router), the referral programme (₹250 off your next bill per successful referral), and occasional campaign discounts. The current confirmed offer (October 2026) is ₹500 off on eligible 6-month and 12-month plans — no code required.
+            An ACT Fibernet coupon code is a promo code applied during signup or renewal at actcorp.in to reduce the price of a broadband plan. ACT Fibernet runs very few affiliate promo codes — its savings structure works differently from e-commerce sites. The main ways to pay less are tenure commitments (pay for 6 or 12 months and get free months or a free router), the referral programme (₹250 off your next bill per successful referral), and occasional campaign discounts. The current confirmed offer (November 2026) is ₹500 off on eligible 6-month and 12-month plans — no code required.
           </p>
 
           <hr className="my-10 border-gray-200" />
@@ -581,7 +581,7 @@ export default function ActFibernetStore() {
           <div>
   <div className="space-y-4 text-slate-700">
     <p className="text-xl font-black text-[#5B4FBE] mb-4">
-      ACT Fibernet Coupon Codes — October 2026
+      ACT Fibernet Coupon Codes — November 2026
     </p>
 
     <div className="overflow-x-auto my-8">
@@ -599,7 +599,7 @@ export default function ActFibernetStore() {
             <td className="p-4 font-semibold">No code required</td>
             <td className="p-4">₹500 off</td>
             <td className="p-4">On eligible 6-month and 12-month plans</td>
-            <td className="p-4">31 Oct 2026</td>
+            <td className="p-4">30 Nov 2026</td>
           </tr>
         </tbody>
       </table>
@@ -789,7 +789,7 @@ export default function ActFibernetStore() {
     </p>
 
     <p>
-      <em>Dev note:</em> ₹250 confirmed from actcorp.in/crp-new (October 2026). GrabOn listed a higher ₹750 figure for the referral; Cashaly listed ₹250. Use ₹250 as the verified figure. Verify current referral value in the ACT app or affiliate dashboard before publishing, as this amount changes by campaign.
+      <em>Dev note:</em> ₹250 confirmed from actcorp.in/crp-new (November 2026). GrabOn listed a higher ₹750 figure for the referral; Cashaly listed ₹250. Use ₹250 as the verified figure. Verify current referral value in the ACT app or affiliate dashboard before publishing, as this amount changes by campaign.
     </p>
 
     <hr className="my-6 border-slate-200" />
@@ -980,7 +980,7 @@ export default function ActFibernetStore() {
                 Does ACT Fibernet have a coupon code for new connections in 2026?
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                As of October 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code.
+                As of November 2026, ACT Fibernet does not release standard affiliate promo codes. The main new-connection offer is ₹500 off on 6-month and 12-month plans (valid till October 31, 2026, no code required). Free installation, free router, and 1–2 free months also apply automatically on eligible plan tenures — these are often worth more than a flat promo code.
               </p>
             </div>
 

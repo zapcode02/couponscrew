@@ -176,7 +176,7 @@ export default function SteamStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest Steam coupon code and Steam discount code for October 2026 to save on top PC games. Grab 90% OFF The Walking Dead, 90% OFF Killing Floor 2, 75% OFF Red Dead Redemption 2, and 70% OFF Cyberpunk 2077. You'll also find great deals on Total War: WARHAMMER III, Grand Theft Auto V Enhanced, Palworld, and more. Apply eligible Steam coupon codes or discount codes where available and enjoy huge savings on popular action, RPG, strategy, and multiplayer games.
+                    Find the latest Steam coupon code and Steam discount code for November 2026 to save on top PC games. Grab 90% OFF The Walking Dead, 90% OFF Killing Floor 2, 75% OFF Red Dead Redemption 2, and 70% OFF Cyberpunk 2077. You'll also find great deals on Total War: WARHAMMER III, Grand Theft Auto V Enhanced, Palworld, and more. Apply eligible Steam coupon codes or discount codes where available and enjoy huge savings on popular action, RPG, strategy, and multiplayer games.
                   </p>
                 </div>
               </div>
@@ -515,7 +515,7 @@ export default function SteamStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Steam Coupon Code: How to Save on Games in India (October 2026)
+          Steam Coupon Code: How to Save on Games in India (November 2026)
         </p>
 
         <div className="overflow-x-auto my-6">
@@ -635,7 +635,7 @@ export default function SteamStore() {
           <div>
   <div className="space-y-4 text-slate-700">
     <p className="text-xl font-black text-[#5B4FBE] mb-4">
-      Steam Coupon Codes — October 2026
+      Steam Coupon Codes — November 2026
     </p>
 
     <div className="overflow-x-auto my-8">
@@ -772,7 +772,7 @@ export default function SteamStore() {
     </p>
 
     <p>
-      <em>Source:</em> Valve's published event calendar confirmed via Sports Digest (October 2026) and Dundle Steam sale guide. Dates are subject to change — verify on store.steampowered.com.
+      <em>Source:</em> Valve's published event calendar confirmed via Sports Digest (November 2026) and Dundle Steam sale guide. Dates are subject to change — verify on store.steampowered.com.
     </p>
 
     <hr className="my-6 border-slate-200" />

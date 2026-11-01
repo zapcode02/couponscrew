@@ -528,7 +528,7 @@ export default function AirbnbStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Airbnb Coupon Code: What Actually Works in India (October 2026)
+          Airbnb Coupon Code: What Actually Works in India (November 2026)
         </p>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
@@ -870,7 +870,7 @@ export default function AirbnbStore() {
           <tr>
             <td className="border border-slate-200 p-2">Starts</td>
             <td className="border border-slate-200 p-2">9 Oct 2026 (early access 8 Oct)</td>
-            <td className="border border-slate-200 p-2">8 Oct 2026</td>
+            <td className="border border-slate-200 p-2">30 Nov 2026</td>
             <td className="border border-slate-200 p-2">No sale event</td>
           </tr>
           <tr>

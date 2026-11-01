@@ -497,7 +497,7 @@ export default function TripStore() {
         
         {/* Main Title - Replaced H1 with Styled Paragraph */}
         <p className="text-3xl font-black text-black mb-10 leading-tight italic">
-          Trip.com Coupon Code: How Trip.com Promo Codes Work in India (October 2026)
+          Trip.com Coupon Code: How Trip.com Promo Codes Work in India (November 2026)
         </p>
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">

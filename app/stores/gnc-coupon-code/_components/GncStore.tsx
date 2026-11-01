@@ -486,7 +486,7 @@ export default function GncStore() {
 
               <div className="text-gray-600 font-normal leading-relaxed space-y-6">
                 <p>
-                  A GNC coupon code is a discount code you apply at checkout on gncindia.com to reduce the price of protein powders, creatine, multivitamins, pre-workout, and other supplements. GNC India runs codes through affiliate partners and seasonal sale campaigns — current codes (October 2026) include a first-order flat saving, sitewide percentage codes, and app-exclusive offers that stack on top of ongoing category discounts that go as deep as 70–80%.
+                  A GNC coupon code is a discount code you apply at checkout on gncindia.com to reduce the price of protein powders, creatine, multivitamins, pre-workout, and other supplements. GNC India runs codes through affiliate partners and seasonal sale campaigns — current codes (November 2026) include a first-order flat saving, sitewide percentage codes, and app-exclusive offers that stack on top of ongoing category discounts that go as deep as 70–80%.
                 </p>
 
                 <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">
@@ -620,7 +620,7 @@ export default function GncStore() {
 
                 {/* Section Header - Replaced H2 with Styled Paragraph */}
                 <p className="text-xl font-black text-[#5B4FBE] mb-4">
-                  GNC Coupon Codes — October 2026
+                  GNC Coupon Codes — November 2026
                 </p>
 
                 {/* Data Table */}
@@ -765,7 +765,7 @@ export default function GncStore() {
                     </p>
 
                     <p>
-                      <em>Dev note:</em> Freebie tier thresholds sourced from Zoutons GNC page (October 2026). Verify against GNC India's live offers page before publishing; specific freebie products rotate with campaigns.
+                      <em>Dev note:</em> Freebie tier thresholds sourced from Zoutons GNC page (November 2026). Verify against GNC India's live offers page before publishing; specific freebie products rotate with campaigns.
                     </p>
 
                     <hr className="my-6 border-slate-200" />
@@ -954,7 +954,7 @@ export default function GncStore() {
                     </p>
 
                     <p>
-                      <em>Dev note:</em> Bank/payment offers sourced from Zoutons GNC page (October 2026). These offers change monthly — verify before publishing.
+                      <em>Dev note:</em> Bank/payment offers sourced from Zoutons GNC page (November 2026). These offers change monthly — verify before publishing.
                     </p>
 
                     <hr className="my-6 border-slate-200" />
@@ -1018,7 +1018,7 @@ export default function GncStore() {
                     </div>
 
                     <p>
-                      <em>Dev note:</em> Price ranges are approximate based on GrabOn category data (October 2026). Flag for auto-pull from gncindia.com product feed before publishing.
+                      <em>Dev note:</em> Price ranges are approximate based on GrabOn category data (November 2026). Flag for auto-pull from gncindia.com product feed before publishing.
                     </p>
                   </div>
                 </div>

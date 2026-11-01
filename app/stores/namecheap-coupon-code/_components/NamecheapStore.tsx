@@ -487,7 +487,7 @@ export default function NamecheapStore() {
 
               <div className="text-gray-600 font-normal leading-relaxed space-y-6">
                 <p>
-                  A Namecheap coupon code is a promo code you enter at checkout on namecheap.com to reduce the price of a domain, hosting plan, SSL certificate, professional email, or VPN subscription. Namecheap runs campaign codes through affiliate partners and seasonal sales — current active codes (October 2026) cover domains up to 97% off, shared hosting up to 56% off first year, and a dedicated GoDaddy-switcher code for anyone transferring a domain across.
+                  A Namecheap coupon code is a promo code you enter at checkout on namecheap.com to reduce the price of a domain, hosting plan, SSL certificate, professional email, or VPN subscription. Namecheap runs campaign codes through affiliate partners and seasonal sales — current active codes (November 2026) cover domains up to 97% off, shared hosting up to 56% off first year, and a dedicated GoDaddy-switcher code for anyone transferring a domain across.
                 </p>
 
                 <div className="overflow-x-auto my-6 rounded-2xl border border-[#E8E8F0] shadow-sm bg-white">

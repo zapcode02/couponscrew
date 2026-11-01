@@ -176,7 +176,7 @@ export default function WishStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest Wish coupon code and Wish discount code for October 2026 to save on trending products across multiple categories. Enjoy up to 60% OFF Doorbuster Deals, 57% OFF Rainbow LED Shower Heads, 57% OFF Braided PE Fishing Lines, 53% OFF Mountain Bike Gloves, and 51% OFF Alien Action Figures. Shop home essentials, pet accessories, outdoor gear, collectibles, and lifestyle products at unbeatable prices. Apply a verified Wish coupon code or discount code at checkout to maximize your savings on eligible orders.
+                    Find the latest Wish coupon code and Wish discount code for November 2026 to save on trending products across multiple categories. Enjoy up to 60% OFF Doorbuster Deals, 57% OFF Rainbow LED Shower Heads, 57% OFF Braided PE Fishing Lines, 53% OFF Mountain Bike Gloves, and 51% OFF Alien Action Figures. Shop home essentials, pet accessories, outdoor gear, collectibles, and lifestyle products at unbeatable prices. Apply a verified Wish coupon code or discount code at checkout to maximize your savings on eligible orders.
                   </p>
                 </div>
               </div>
@@ -571,7 +571,7 @@ export default function WishStore() {
 
         <div className="text-gray-600 font-normal leading-relaxed space-y-6">
           <p>
-            A Wish coupon code is a promo code entered at checkout on wish.com or the Wish app to reduce the price of an order. Wish runs fewer active codes than most e-commerce sites — its bigger discounts come through sitewide sales, the daily login reward system, and new-user offers. Current verified offers (October 2026) include FIRST15 (15% off, valid till October 31) and REFRESH10 (extra 10% off, up to two uses). Wish is an international marketplace that ships to India from sellers mostly based in Asia, so several factors — currency, shipping time, customs — differ from Indian-first sites and are worth knowing before you order.
+            A Wish coupon code is a promo code entered at checkout on wish.com or the Wish app to reduce the price of an order. Wish runs fewer active codes than most e-commerce sites — its bigger discounts come through sitewide sales, the daily login reward system, and new-user offers. Current verified offers (November 2026) include FIRST15 (15% off, valid till October 31) and REFRESH10 (extra 10% off, up to two uses). Wish is an international marketplace that ships to India from sellers mostly based in Asia, so several factors — currency, shipping time, customs — differ from Indian-first sites and are worth knowing before you order.
           </p>
 
 
@@ -580,7 +580,7 @@ export default function WishStore() {
           <div>
   <div className="space-y-4 text-slate-700">
     <p className="text-xl font-black text-[#5B4FBE] mb-4">
-      Wish Coupon Codes — October 2026
+      Wish Coupon Codes — November 2026
     </p>
 
     <div className="overflow-x-auto my-8">
@@ -598,7 +598,7 @@ export default function WishStore() {
             <td className="p-4 font-semibold">FIRST15</td>
             <td className="p-4">15% off sitewide</td>
             <td className="p-4">New and existing users</td>
-            <td className="p-4">31 Oct 2026</td>
+            <td className="p-4">30 Nov 2026</td>
           </tr>
           <tr className="bg-gray-50/50">
             <td className="p-4 font-semibold">REFRESH10</td>
@@ -903,7 +903,7 @@ export default function WishStore() {
                 What is the best Wish coupon code in India right now?
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                As of October 2026, FIRST15 (15% off, valid till October 31) is the most recently confirmed code, sourced from GrabOn. REFRESH10 gives an additional 10% off and can be used twice. Both are worth trying at checkout — Wish code availability is low overall, and automatic deals (up to 60% off in weekly sales, up to 90% off pet items) often save more than a single code.
+                As of November 2026, FIRST15 (15% off, valid till October 31) is the most recently confirmed code, sourced from GrabOn. REFRESH10 gives an additional 10% off and can be used twice. Both are worth trying at checkout — Wish code availability is low overall, and automatic deals (up to 60% off in weekly sales, up to 90% off pet items) often save more than a single code.
               </p>
             </div>
 
