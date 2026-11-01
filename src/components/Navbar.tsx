@@ -251,7 +251,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
 
       <div className="p-3 space-y-1">
         <Link
-          href="/stores/polki-sarees-coupon-code"
+          href="/stores/amazon-coupon-code"
           onClick={() => setNotificationsOpen(false)}
           className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
         >
@@ -260,8 +260,8 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
               LIVE NOW
             </span>
             <Image
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1792834602/polki_saress_logo_fwkcng.webp"
-              alt="Polki Sarees"
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"
+              alt="Amazon"
               fill
               sizes="56px"
               className="object-contain p-2"
@@ -271,7 +271,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <div className="flex-1 min-w-0 space-y-1.5">
             <div className="flex items-start justify-between gap-2">
               <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
-                Karwa Chauth is near — shop sarees on Polki Sarees!
+                Amazon Diwali Sale deals &amp; festive discounts are LIVE now!
               </p>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
             </div>
@@ -302,7 +302,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <div className="flex-1 min-w-0 space-y-1.5">
             <div className="flex items-start justify-between gap-2">
               <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
-                Myntra Karwa Chauth deals on ethnic wear are LIVE now!
+                Myntra Diwali festive offers on ethnic wear &amp; fashion are LIVE!
               </p>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
             </div>
@@ -313,7 +313,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
         </Link>
 
         <Link
-          href="/stores/ajio-coupon-code"
+          href="/stores/flipkart-coupon-code"
           onClick={() => setNotificationsOpen(false)}
           className="flex gap-3 p-3 rounded-xl hover:bg-[#F0EEFF] transition-colors group"
         >
@@ -322,8 +322,8 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
               LIVE NOW
             </span>
             <Image
-              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/ajio-logo_bmpwf6.webp"
-              alt="Ajio"
+              src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp"
+              alt="Flipkart"
               fill
               sizes="56px"
               className="object-contain p-2"
@@ -333,7 +333,7 @@ export default function Navbar({ onCategorySelect, setSearchQuery }: NavbarProps
           <div className="flex-1 min-w-0 space-y-1.5">
             <div className="flex items-start justify-between gap-2">
               <p className="text-sm font-bold text-[#1A1A2E] leading-snug">
-                Ajio festive ethnic wear sale is LIVE now!
+                Flipkart Big Diwali Sale offers &amp; electronics deals are LIVE!
               </p>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1.5" />
             </div>

@@ -176,7 +176,7 @@ export default function NamecheapStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    [TODO: 1-2 sentence hero description — what Namecheap sells (domains, hosting, SSL, VPN) and the headline savings claim]
+                    Find the latest Namecheap coupon code and Namecheap discount code to save on domains, web hosting, WordPress hosting, VPS, and business websites. Enjoy 95% OFF .health domains, 91% OFF .best domains, 88% OFF .blog domains, and 62% OFF Stellar Plus Hosting with verified November 2026 offers. Explore genuine Namecheap deals on domain registration, managed WordPress hosting, VPS hosting, and affordable web solutions to launch or grow your online presence while spending less.
                   </p>
                 </div>
               </div>

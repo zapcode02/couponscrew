@@ -176,7 +176,7 @@ export default function JockeyStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    [TODO: 1-2 sentence hero description — what Jockey sells (innerwear, loungewear, activewear for men, women & kids) and the headline savings claim]
+                    Find the latest Jockey coupon codes and Jockey discount code to save on premium innerwear, activewear, T-shirts, bras, boxer shorts, and everyday essentials. Shop Round Neck Cotton T-Shirts from ₹599, Full Coverage Everyday Bras from ₹639, Graphic T-Shirts from ₹799, and Pack of 2 Cotton Bras from ₹1,358. Explore verified November 2026 Jockey offers on comfortable clothing for men and women, and enjoy great value on everyday wardrobe essentials with the latest online deals.
                   </p>
                 </div>
               </div>

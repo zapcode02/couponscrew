@@ -176,7 +176,7 @@ export default function LenovoStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    [TODO: 1-2 sentence hero description — what Lenovo sells (laptops, desktops, tablets, Legion gaming) and the headline savings claim]
+                    Find the latest Lenovo coupon code and Lenovo discount code to save on laptops, gaming PCs, desktops, tablets, and accessories. Enjoy 55% OFF the IdeaPad Slim 3 Laptop, 50% OFF the LOQ Gaming Laptop, 47% OFF the ThinkPad E14, and 42% OFF the Legion Pro 7 Laptop with verified November 2026 deals. Explore genuine Lenovo offers on business laptops, gaming desktops, Android tablets, and premium Copilot+ PCs while maximizing your savings on the latest technology.
                   </p>
                 </div>
               </div>

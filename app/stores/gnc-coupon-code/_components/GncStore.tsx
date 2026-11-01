@@ -176,7 +176,7 @@ export default function GncStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    [TODO: 1-2 sentence hero description — what GNC sells (whey protein, vitamins, health supplements) and the headline savings claim]
+                    Find the latest GNC coupon code and GNC discount code to save on premium sports nutrition, protein powders, creatine, multivitamins, and wellness supplements. Enjoy 80% OFF Creatine Monohydrate with Shaker, 59% OFF Whey Protein Sachets with a Free Shaker, and 57% OFF Pre-Workout during verified November 2026 promotions. Explore genuine GNC deals on weight gainers, plant protein, wellness bundles, and daily nutrition essentials to support your fitness goals while spending less.
                   </p>
                 </div>
               </div>

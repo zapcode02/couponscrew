@@ -92,6 +92,10 @@ const STORES: SiteLink[] = [
   { label: 'ACT Fibernet', href: '/stores/act-fibernet-coupon-code' },
   { label: 'Steam', href: '/stores/steam-discount-code' },
   { label: 'IGP', href: '/stores/igp-coupon-code' },
+  { label: 'GNC', href: '/stores/gnc-coupon-code' },
+  { label: 'Namecheap', href: '/stores/namecheap-coupon-code' },
+  { label: 'Lenovo', href: '/stores/lenovo-coupon-code' },
+  { label: 'Jockey', href: '/stores/jockey-coupon-code' },
 ];
 
 const STORE_CATEGORIES: SiteLink[] = [
