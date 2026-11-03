@@ -401,6 +401,10 @@ export default function November2026FestivalCalendarBlog() {
     <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed font-medium pl-1">
       For home décor and appliances: <Link href="/stores/pepperfry-coupon-code" className="font-bold text-[#5B4FBE] hover:underline">Pepperfry coupon codes</Link> often run festival deals that bring furniture and home goods into a friendlier price bracket.
     </p>
+
+    <p className="text-xs sm:text-sm text-[#4A4A6A] leading-relaxed font-medium pl-1">
+      Read our full <Link href="/blog/dhanteras-2026-best-deals" className="font-bold text-[#5B4FBE] hover:underline">Dhanteras 2026 shopping guide</Link> for the complete breakdown on gold, electronics, appliances, and gifting.
+    </p>
   </div>
 
   {/* Pro Tip Box */}

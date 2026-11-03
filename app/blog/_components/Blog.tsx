@@ -20,6 +20,16 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'dhanteras-2026-best-deals',
+    title: 'Dhanteras 2026: Best Deals on Gold, Electronics & Home Appliances',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1793721685/Dhanteras_2026_Gold_and_Gadget_Deals_aansol.webp',
+    date: 'Nov 3, 2026',
+    readTime: '9 min read',
+    excerpt: "Dhanteras 2026 is on 6 November — the most auspicious day to buy. Gold, electronics, home appliances — here's what to buy, when to buy, and where to find the best deals.",
+    tags: ['Dhanteras', 'Festival Offers', 'Shopping Guide'],
+  },
+  {
     slug: 'amazon-great-indian-festival-2026-upcoming-sales',
     title: 'Amazon Great Indian Festival 2026: Sale Date, Prime Early Access, SBI Offer and Live Deals',
     category: 'Festival Offers',

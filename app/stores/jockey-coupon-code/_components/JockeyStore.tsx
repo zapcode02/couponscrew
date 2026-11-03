@@ -33,7 +33,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
 }
 
 // TODO: replace with real affiliate tracking link once available
-const AFFILIATE_URL = 'https://www.jockey.in/';
+const AFFILIATE_URL = 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl';
 
 export default function JockeyStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);

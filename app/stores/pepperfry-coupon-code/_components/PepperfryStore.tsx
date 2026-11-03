@@ -32,7 +32,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
 }
 
-const AFFILIATE_URL = 'https://track.vcommission.com/click?campaign_id=10194&pub_id=130349';
+const AFFILIATE_URL = 'https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl';
 
 export default function PepperfryStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);

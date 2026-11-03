@@ -34,7 +34,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
 }
 
 // TODO: replace with real affiliate tracking link once available
-const AFFILIATE_URL = 'https://www.samsung.com/in';
+const AFFILIATE_URL = 'https://fktr.in/t20Bt7C';
 
 export default function SamsungStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);

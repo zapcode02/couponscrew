@@ -32,7 +32,7 @@ function cn(...inputs: (string | boolean | undefined | null)[]) {
   return inputs.filter(Boolean).join(' ');
 }
 
-const AFFILIATE_URL = 'https://www.oneplus.in/';
+const AFFILIATE_URL = 'https://fktr.in/t20Bt7C';
 
 export default function OneplusStore() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
