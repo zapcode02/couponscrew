@@ -137,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/halloween-shopping-india-amazon-myntra-flipkart-under-999`, lastModified: new Date('2026-10-30'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/dhanteras-diwali-november-2026-india-deals`, lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/dhanteras-2026-best-deals`, lastModified: new Date('2026-11-03'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/diwali-2026-last-minute-deals-gifts-offers`, lastModified: new Date('2026-11-08'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/feedback`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

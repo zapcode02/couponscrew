@@ -20,6 +20,16 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'diwali-2026-last-minute-deals-gifts-offers',
+    title: 'Diwali 2026: Last Minute Deals, Gift Ideas & Offers You Can Still Get Today',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1794117712/Diwali_2026_Last-Minute_Deals_ebzpca.webp',
+    date: 'Nov 8, 2026',
+    readTime: '8 min read',
+    excerpt: "Diwali is tomorrow — 8 November 2026. Best last-minute gifts, same-day deals, and offers you can still get tonight. Don't panic. We've got you covered.",
+    tags: ['Diwali 2026', 'Festival Offers', 'Last Minute Deals'],
+  },
+  {
     slug: 'dhanteras-2026-best-deals',
     title: 'Dhanteras 2026: Best Deals on Gold, Electronics & Home Appliances',
     category: 'Festival Offers',
