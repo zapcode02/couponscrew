@@ -178,6 +178,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'November 2026 Festival Calendar India: Dhanteras, Diwali, Bhai Dooj & More', href: '/blog/dhanteras-diwali-november-2026-india-deals' },
   { label: 'Dhanteras 2026: Best Deals on Gold, Electronics & Home Appliances', href: '/blog/dhanteras-2026-best-deals' },
   { label: 'Diwali 2026: Last Minute Deals, Gift Ideas & Offers You Can Still Get Today', href: '/blog/diwali-2026-last-minute-deals-gifts-offers' },
+  { label: 'Bhai Dooj 2026: Best Gift Ideas for Brothers & Sisters — Watches, Perfumes & More', href: '/blog/bhai-dooj-2026-best-gift-ideas' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [

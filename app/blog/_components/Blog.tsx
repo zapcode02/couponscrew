@@ -20,6 +20,16 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'bhai-dooj-2026-best-gift-ideas',
+    title: 'Bhai Dooj 2026: Best Gift Ideas for Brothers & Sisters — Watches, Perfumes & More',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1794196720/Bhai_Dooj_2026_Festive_Celebration_ss93tl.webp',
+    date: 'Nov 9, 2026',
+    readTime: '9 min read',
+    excerpt: 'Bhai Dooj 2026 is on 11 November. Best gift ideas for brothers and sisters — watches, perfumes, skincare, gadgets and more. Every budget covered.',
+    tags: ['Bhai Dooj 2026', 'Festival Offers', 'Gift Ideas'],
+  },
+  {
     slug: 'diwali-2026-last-minute-deals-gifts-offers',
     title: 'Diwali 2026: Last Minute Deals, Gift Ideas & Offers You Can Still Get Today',
     category: 'Festival Offers',

@@ -1,5 +1,6 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Offers from './_components/Offers'
+import { OFFERS_DATA } from './_components/offersData'
 
 // ─────────────────────────────────────────────
 // SEO + AEO + GEO + AI Search Meta
@@ -186,6 +187,29 @@ const jsonLd = {
           },
         },
       ],
+    },
+
+    // 3. ItemList Schema (Offers Schema from offersData)
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.couponscrew.com/offers#itemlist',
+      name: 'Latest Verified Offers & Deals',
+      itemListElement: OFFERS_DATA.map((offer, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        item: {
+          '@type': 'Offer',
+          name: `${offer.brandName} - ${offer.title}`,
+          description: offer.description,
+          url: `https://www.couponscrew.com/offers#${offer.id}`,
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+          seller: {
+            '@type': 'Organization',
+            name: offer.brandName,
+          },
+        },
+      })),
     },
   ],
 }
