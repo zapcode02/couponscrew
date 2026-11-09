@@ -41,6 +41,7 @@ import {
   Utensils,
   MoreHorizontal
 } from 'lucide-react';
+import { DIWALI_OFFERS_DATA } from './diwaliOffersData';
 
 // ============================================================================
 // BRAND LOGOS COMPONENT
@@ -215,6 +216,23 @@ export default function DiwaliOffers() {
   const [email, setEmail] = useState('');
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [expandedOffers, setExpandedOffers] = useState<Record<string, boolean>>({});
+
+  const toggleDetails = (id: string) => {
+    setExpandedOffers((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const getCategoryBadgeClass = (category: string) => {
+    const cat = category.toLowerCase();
+    if (cat.includes('electronics')) return 'text-orange-700 bg-orange-100';
+    if (cat.includes('fashion')) return 'text-pink-700 bg-pink-100';
+    if (cat.includes('beauty')) return 'text-rose-700 bg-rose-100';
+    if (cat.includes('sports')) return 'text-blue-700 bg-blue-100';
+    if (cat.includes('eyewear')) return 'text-purple-700 bg-purple-100';
+    if (cat.includes('mobile') || cat.includes('mobiles')) return 'text-indigo-700 bg-indigo-100';
+    if (cat.includes('home') || cat.includes('grocery')) return 'text-yellow-700 bg-yellow-100';
+    return 'text-gray-700 bg-gray-100';
+  };
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -404,1010 +422,118 @@ export default function DiwaliOffers() {
 
               {/* Single Column Offers List */}
               <div className="grid grid-cols-1 gap-4">
+                {DIWALI_OFFERS_DATA.map((offer) => (
+                  <div
+                    key={offer.id}
+                    id={offer.id}
+                    className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative"
+                  >
+                    {/* Left Badge Section with Notch Effect */}
+                    <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                      <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">
+                        {offer.badgeType || 'UP TO'}
+                      </span>
+                      <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">
+                        {offer.discountValue}
+                      </span>
+                      <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                      <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">
+                        {offer.scopeText}
+                      </span>
 
-                {/* Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                      {/* Notch Cutout Indicator (Visual Ticket Edge Curve) */}
+                      <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                    </div>
 
-                  {/* Left Badge Section with Notch Effect */}
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON ELECTRONICS</span>
-
-                    {/* Notch Cutout Indicator (Visual Ticket Edge Curve) */}
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-
-                  {/* Middle Content Section */}
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">ELECTRONICS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Diwali Special – Up to 70% OFF on Electronics
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Grab the best deals on mobiles, laptops, TVs & more this festive season — no coupon code required.
-                      </p>
-
-                      {/* View Details Toggle & Expandable List */}
-                      <div className="mt-3">
-                        <button
-                          onClick={() => {
-                            const detailsEl = document.getElementById('offer-details-content');
-                            detailsEl?.classList.toggle('hidden');
-                          }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
-                        >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-
-                        <div id="offer-details-content" className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-                            <span>Valid on select categories as listed on the product page.</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-                            <span>Minimum cart value might apply as specified on descriptions.</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-                            <span>Covers selected brands and product collections.</span>
-                          </div>
+                    {/* Middle Content Section */}
+                    <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                      <div>
+                        <div className="flex items-center gap-2 mb-2 flex-wrap">
+                          <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">
+                            {offer.category}
+                          </span>
+                          {offer.isVerified && (
+                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">
+                              VERIFIED
+                            </span>
+                          )}
                         </div>
+                        <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
+                          {offer.title}
+                        </h3>
+                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                          {offer.description}
+                        </p>
+
+                        {/* View Details Toggle & Expandable List */}
+                        {offer.points && offer.points.length > 0 && (
+                          <div className="mt-3">
+                            <button
+                              type="button"
+                              onClick={() => toggleDetails(offer.id)}
+                              className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none cursor-pointer"
+                            >
+                              <span>View Details</span>
+                              <ChevronDown
+                                className={`w-4 h-4 text-indigo-600 transition-transform duration-200 ${expandedOffers[offer.id] ? 'rotate-180' : ''
+                                  }`}
+                              />
+                            </button>
+
+                            {expandedOffers[offer.id] && (
+                              <div className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                                {offer.points.map((pt, pIdx) => (
+                                  <div key={pIdx} className="flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
+                                    <span>{pt}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Right Action Section */}
+                    <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                      <div className="flex flex-col items-center gap-1">
+                        <img
+                          src={offer.brandLogo}
+                          alt={offer.brandName}
+                          className="h-9 w-auto object-contain max-w-[130px]"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+
+                      <div className="w-full space-y-2">
+                        {offer.code ? (
+                          <div className="w-full bg-slate-50 border border-dashed border-slate-300 text-center py-2.5 rounded-xl font-bold text-slate-800 text-sm">
+                            {offer.code}
+                          </div>
+                        ) : null}
+                        <a
+                          href={offer.dealUrl}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow sponsored"
+                          className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
+                        >
+                          <span>Get Deal</span> <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
+                        <Link
+                          href={`/stores/${offer.storeSlug ?? `${offer.brandName.toLowerCase().replace(/\s+/g, '-')}-coupon-code`}`}
+                          className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
+                        >
+                          <span>Visit Store</span>
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
                     </div>
                   </div>
-
-                  {/* Right Action Section */}
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img
-                        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"
-                        alt="Amazon"
-                        className="h-9 w-auto object-contain"
-                      />
-                    </div>
-
-                    <div className="w-full space-y-2">
-                      <a
-                        href="https://www.amazon.in"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow sponsored"
-                        className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
-                      >
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link
-                        href="/stores/amazon-coupon-code"
-                        className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
-                      >
-                        <span>Visit Store</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-
-                </div>
-
-                {/* ── OFFER 2: Flipkart – Big Billion Days ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">80%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON MOBILES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">MOBILES</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Big Billion Days – Up to 80% OFF on Smartphones
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Best deals on iPhones, Samsung, OnePlus, Poco & more during Flipkart's biggest sale.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 3: Myntra – Fashion Sale ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">90%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON FASHION</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">FASHION</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra End of Reason Sale – Up to 90% OFF on Clothing
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Shop ethnic wear, western wear, footwear & accessories at unbeatable Diwali prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 4: Amazon – Home Appliances ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">60%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">HOME APPLIANCES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-yellow-700 bg-yellow-100 px-2 py-0.5 rounded uppercase">HOME</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Diwali Sale – Up to 60% OFF on Home Appliances
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Refrigerators, washing machines, ACs, microwaves & kitchen appliances at festive prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 5: Flipkart – TVs & Large Appliances ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">55%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON TELEVISIONS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">TVs</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Big Diwali Sale – Up to 55% OFF on Smart TVs
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Sony, Samsung, LG, OnePlus & Mi TVs with extra bank discounts available on Flipkart.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 6: Nykaa – Beauty & Skincare ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">60%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">BEAUTY & SKIN</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Nykaa Diwali Dhamaka – Up to 60% OFF on Beauty Products
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Skincare, makeup, haircare & fragrance at the best festive prices with free gifts on select orders.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/nykaa-logo_et8g79.webp" alt="Nykaa" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/nykaa-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 7: Swiggy Instamart – Groceries & Sweets ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">GROCERIES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">GROCERY</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Swiggy Diwali Deals – Up to 50% OFF on Sweets & Groceries
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Order Diwali sweets, dry fruits, diyas & puja items delivered in minutes.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787537869/swiggy-logo_n32rt9.webp" alt="Swiggy" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.swiggy.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/swiggy-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 8: Blinkit – Quick Commerce ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">40%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">INSTANT DELIVERY</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-yellow-700 bg-yellow-100 px-2 py-0.5 rounded uppercase">QUICK COMMERCE</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Blinkit Diwali Offers – Up to 40% OFF on Essentials
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Diwali puja items, candles, sweets & snacks delivered to your door in 10 minutes.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787796580/blinkit-logo_f9retd.webp" alt="Blinkit" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://blinkit.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/blinkit-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 9: Amazon – Laptops & PCs ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">45%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">LAPTOPS & PCs</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-gray-700 bg-gray-100 px-2 py-0.5 rounded uppercase">COMPUTERS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Great Indian Festival – Up to 45% OFF on Laptops
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Dell, HP, Lenovo, ASUS & Apple MacBook deals with no-cost EMI available this Diwali.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 10: Myntra – Footwear ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">75%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">FOOTWEAR</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded uppercase">FOOTWEAR</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra Festive Sale – Up to 75% OFF on Footwear
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Nike, Puma, Adidas, Bata & more with festive discounts on ethnic & casual footwear.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 11: Pepperfry – Furniture & Decor ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">FURNITURE</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">HOME DECOR</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Pepperfry Diwali Sale – Up to 70% OFF on Furniture
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Sofas, beds, dining sets, lamps & home decor at unbeatable Diwali prices with free shipping.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg" alt="Pepperfry" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.pepperfry.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/pepperfry-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 12: Zepto – Diwali Essentials ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">35%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">FESTIVE ITEMS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">QUICK DELIVERY</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Zepto Diwali Fest – Up to 35% OFF on Festive Essentials
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Diyas, rangoli colors, dry fruits & Diwali gift combos delivered in 10 minutes.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787624557/zaptio-logo_zsybmq.webp" alt="Zepto" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.zeptonow.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/zepto-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 13: Flipkart – Clothing & Ethnic Wear ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">85%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ETHNIC WEAR</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">CLOTHING</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Festive Sale – Up to 85% OFF on Ethnic Wear
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Sarees, kurtas, lehengas, sherwanis & more for the festive season at incredible prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 14: Amazon – Watches & Jewellery ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">65%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">WATCHES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">WATCHES & JEWELLERY</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Diwali Gift Sale – Up to 65% OFF on Watches
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Titan, Fastrack, Fossil, Casio & luxury watches — perfect Diwali gift choices at great prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 15: Myntra – Accessories & Bags ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">80%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">BAGS & ACCESSORIES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">ACCESSORIES</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra Diwali – Up to 80% OFF on Bags & Accessories
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Handbags, clutches, sunglasses, belts & jewellery sets — all at Diwali special prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 16: Flipkart – Furniture & Home ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">65%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">HOME & FURNITURE</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">HOME</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Big Diwali – Up to 65% OFF on Home & Furniture
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Diwali decoration lights, diyas, rangoli kits, festive bedsheets & home decor at great prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 17: Amazon – Books & Education ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">BOOKS & KIDS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded uppercase">BOOKS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Festive – Up to 50% OFF on Books & Toys
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Bestsellers, children's books, board games & Diwali gift sets for kids at festive prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 18: Myntra – Kids & Baby Wear ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">KIDS FASHION</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">KIDS WEAR</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra Kids Diwali Sale – Up to 70% OFF on Kids Wear
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Ethnic kurtas, festive dresses, footwear & accessories for boys & girls this Diwali.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 19: Flipkart – Tablets & iPads ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">40%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">TABLETS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded uppercase">TABLETS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Big Billion Days – Up to 40% OFF on Tablets
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Samsung Tab, Apple iPad, Xiaomi Pad & Fire Tablets with festive bank cashback offers.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 20: Amazon – Sports & Fitness ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">55%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">SPORTS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-teal-700 bg-teal-100 px-2 py-0.5 rounded uppercase">SPORTS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Festive Sale – Up to 55% OFF on Sports & Fitness
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Fitness equipment, cricket gear, cycles, yoga mats & gym accessories at Diwali prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 21: Flipkart – Headphones & Audio ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">60%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">AUDIO DEVICES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded uppercase">AUDIO</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Diwali Sale – Up to 60% OFF on Headphones & Speakers
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Sony, JBL, boAt, Bose & Apple AirPods at the best festive prices on Flipkart.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 22: Amazon – Cameras & Photography ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">40%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">CAMERAS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded uppercase">CAMERAS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Diwali – Up to 40% OFF on Cameras & Accessories
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Canon, Nikon, Sony & GoPro cameras with memory cards & lenses at festive discounts.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 23: Myntra – Beauty & Personal Care ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">65%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">BEAUTY</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-rose-700 bg-rose-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra Diwali – Up to 65% OFF on Beauty & Personal Care
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Premium makeup, skincare serums, perfumes & grooming kits for festive gifting.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 24: Flipkart – Kitchen & Cookware ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">KITCHEN</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">KITCHEN</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Diwali Offer – Up to 70% OFF on Kitchen & Cookware
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Pressure cookers, non-stick pans, mixer grinders & Prestige cookware sets at festive prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ── OFFER 25: Amazon – Smart Home & IoT ── */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">SMART HOME</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded uppercase">SMART HOME</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Diwali – Up to 50% OFF on Smart Home Devices
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Echo devices, Alexa smart bulbs, Fire TV Stick & Ring doorbells at Diwali prices.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
+                ))}
               </div>
+
+
             </section>
 
 

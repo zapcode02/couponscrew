@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
-import { FLIPKART_COUPONS } from '../../../stores/flipkart-coupon-code/_components/flipkartCoupons';
+import { FLIPKART_BIG_BILLION_DAYS_OFFERS_DATA } from './flipkartBigBillionDaysOffersData';
 import {
   LayoutGrid,
   Store, AlertCircle, ShieldCheck, Plus, HelpCircle, CheckCircle2, TrendingUp,
@@ -33,6 +33,26 @@ export default function FlipkartBigBillionDays() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [expandedOffers, setExpandedOffers] = useState<Record<string, boolean>>({});
+
+  const toggleDetails = (id: string) => {
+    setExpandedOffers((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const getCategoryBadgeClass = (category: string) => {
+    const cat = category.toLowerCase();
+    if (cat.includes('electronics')) return 'text-orange-700 bg-orange-100';
+    if (cat.includes('fashion') || cat.includes('footwear')) return 'text-pink-700 bg-pink-100';
+    if (cat.includes('beauty') || cat.includes('fragrance')) return 'text-rose-700 bg-rose-100';
+    if (cat.includes('sports')) return 'text-blue-700 bg-blue-100';
+    if (cat.includes('eyewear')) return 'text-purple-700 bg-purple-100';
+    if (cat.includes('mobile') || cat.includes('mobiles')) return 'text-indigo-700 bg-indigo-100';
+    if (cat.includes('laptop')) return 'text-cyan-700 bg-cyan-100';
+    if (cat.includes('luggage')) return 'text-amber-700 bg-amber-100';
+    if (cat.includes('appliance') || cat.includes('tv')) return 'text-purple-700 bg-purple-100';
+    if (cat.includes('grocery') || cat.includes('essential')) return 'text-emerald-700 bg-emerald-100';
+    return 'text-gray-700 bg-gray-100';
+  };
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -197,149 +217,115 @@ export default function FlipkartBigBillionDays() {
               </div>
               {/* Single Column Offers List */}
               <div className="grid grid-cols-1 gap-4">
-
-                {/* Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-
-                  {/* Left Badge Section with Notch Effect */}
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON ELECTRONICS</span>
-
-                    {/* Notch Cutout Indicator (Visual Ticket Edge Curve) */}
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-
-                  {/* Middle Content Section */}
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">ELECTRONICS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Diwali Special – Up to 70% OFF on Electronics
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Grab the best deals on mobiles, laptops, TVs & more this festive season — no coupon code required.
-                      </p>
-
-                      {/* View Details Toggle & Expandable List */}
-                      <div className="mt-3">
-                        <button
-                          onClick={() => {
-                            const detailsEl = document.getElementById('offer-details-content');
-                            detailsEl?.classList.toggle('hidden');
-                          }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
-                        >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-
-                        <div id="offer-details-content" className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-                            <span>Valid on select categories as listed on the product page.</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-                            <span>Minimum cart value might apply as specified on descriptions.</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-                            <span>Covers selected brands and product collections.</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Right Action Section */}
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img
-                        src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp"
-                        alt="Flipkart"
-                        className="h-9 w-auto object-contain"
-                      />
-                    </div>
-
-                    <div className="w-full space-y-2">
-                      <a
-                        href="https://www.flipkart.com"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow sponsored"
-                        className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
-                      >
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link
-                        href="/stores/flipkart-coupon-code"
-                        className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
-                      >
-                        <span>Visit Store</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-
-                </div>
-
-                {FLIPKART_COUPONS.map((coupon, index) => (
-                  <div key={coupon.id} className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
+                {FLIPKART_BIG_BILLION_DAYS_OFFERS_DATA.map((offer) => (
+                  <div
+                    key={offer.id}
+                    id={offer.id}
+                    className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative"
+                  >
+                    {/* Left: Purple Discount Block with Cut-Out Notch */}
                     <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                      <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">{coupon.badgeType || 'UP TO'}</span>
-                      <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">{coupon.badge ? coupon.badge.replace('UP TO ', '').replace('FLAT ', '').replace(' OFF', '') : ''}</span>
+                      <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">
+                        {offer.badgeType || 'UP TO'}
+                      </span>
+                      <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">
+                        {offer.discountValue
+                          ? offer.discountValue
+                            .replace('UP TO ', '')
+                            .replace('FLAT ', '')
+                            .replace(' OFF', '')
+                          : ''}
+                      </span>
                       <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                      <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">{coupon.type}</span>
+                      <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">
+                        {offer.scopeText || offer.category}
+                      </span>
+
+                      {/* Notch Cutout Indicator (Visual Ticket Edge Curve) */}
                       <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
                     </div>
+
+                    {/* Middle: Details & Expandable Points */}
                     <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
                       <div>
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">{coupon.type}</span>
-                          <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">{coupon.verified || 'VERIFIED'}</span>
+                        <div className="flex items-center gap-2 mb-2 flex-wrap">
+                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${typeof getCategoryBadgeClass === 'function' ? getCategoryBadgeClass(offer.category) : 'text-orange-700 bg-orange-100'}`}>
+                            {offer.category}
+                          </span>
+                          {offer.isVerified && (
+                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">
+                              VERIFIED
+                            </span>
+                          )}
                         </div>
-                        <h3 className="font-extrabold text-lg text-gray-900 leading-snug">{coupon.title}</h3>
-                        <p className="text-xs text-gray-500 mt-1">{coupon.description}</p>
-                        {coupon.bullets && coupon.bullets.length > 0 && (
+
+                        <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
+                          {offer.title}
+                        </h3>
+
+                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                          {offer.description}
+                        </p>
+
+                        {/* Accordion Toggle "View Details" */}
+                        {offer.points && offer.points.length > 0 && (
                           <div className="mt-3">
-                            <button onClick={() => {
-                              const detailsEl = document.getElementById(`offer-details-content-${coupon.id}`);
-                              detailsEl?.classList.toggle('hidden');
-                            }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
+                            <button
+                              type="button"
+                              onClick={() => toggleDetails(offer.id)}
+                              className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none cursor-pointer"
+                            >
                               <span>View Details</span>
-                              <ChevronDown className="w-4 h-4 text-indigo-600" />
+                              <ChevronDown
+                                className={`w-4 h-4 text-indigo-600 transition-transform duration-200 ${expandedOffers[offer.id] ? 'rotate-180' : ''
+                                  }`}
+                              />
                             </button>
-                            <div id={`offer-details-content-${coupon.id}`} className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600 hidden">
-                              {coupon.bullets.map((bullet, i) => (
-                                <div key={i} className="flex items-start gap-2">
-                                  <span className="w-1.5 h-1.5 mt-1.5 rounded-full bg-purple-600 shrink-0"></span>
-                                  <span>{bullet}</span>
-                                </div>
-                              ))}
-                            </div>
+                            {expandedOffers[offer.id] && (
+                              <div className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                                {offer.points.map((pt, pIdx) => (
+                                  <div key={pIdx} className="flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
+                                    <span>{pt}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
                     </div>
+
+                    {/* Right: Brand Logo & Actions */}
                     <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
                       <div className="flex flex-col items-center gap-1">
-                        <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
+                        <img
+                          src={offer.brandLogo || "https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp"}
+                          alt={offer.brandName || "Flipkart"}
+                          className="h-9 w-auto object-contain max-w-[130px]"
+                          referrerPolicy="no-referrer"
+                        />
                       </div>
+
                       <div className="w-full space-y-2">
-                        {coupon.code ? (
+                        {offer.code ? (
                           <div className="w-full bg-slate-50 border border-dashed border-slate-300 text-center py-2.5 rounded-xl font-bold text-slate-800 text-sm">
-                            {coupon.code}
+                            {offer.code}
                           </div>
                         ) : null}
-                        <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                          Get Deal <ArrowRight className="w-3.5 h-3.5" />
+                        <a
+                          href={offer.dealUrl}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow sponsored"
+                          className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
+                        >
+                          <span>Get Deal</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
                         </a>
-                        <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center">
+                        <Link
+                          href={`/stores/${offer.storeSlug ?? `${offer.brandName.toLowerCase().replace(/\s+/g, '-')}-coupon-code`}`}
+                          className="w-full bg-white border border-gray-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
+                        >
                           <span>Visit Store</span>
                           <ExternalLink className="w-3.5 h-3.5" />
                         </Link>
@@ -347,7 +333,6 @@ export default function FlipkartBigBillionDays() {
                     </div>
                   </div>
                 ))}
-
               </div>
             </section>
 

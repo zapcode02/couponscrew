@@ -20,6 +20,7 @@ import {
   Flame,
   Calendar,
 } from 'lucide-react';
+import { DUSSHERA_OFFERS_DATA } from './dussheraOffersData';
 
 // ============================================================================
 // MAIN DUSSHERA OFFERS PAGE COMPONENT
@@ -28,6 +29,24 @@ export default function DushsheraOffers() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [expandedOffers, setExpandedOffers] = useState<Record<string, boolean>>({});
+
+  const toggleDetails = (id: string) => {
+    setExpandedOffers((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const getCategoryBadgeClass = (category: string) => {
+    const cat = category.toLowerCase();
+    if (cat.includes('electronics')) return 'text-orange-700 bg-orange-100';
+    if (cat.includes('fashion')) return 'text-pink-700 bg-pink-100';
+    if (cat.includes('beauty')) return 'text-rose-700 bg-rose-100';
+    if (cat.includes('sports')) return 'text-blue-700 bg-blue-100';
+    if (cat.includes('eyewear')) return 'text-purple-700 bg-purple-100';
+    if (cat.includes('mobile') || cat.includes('mobiles')) return 'text-indigo-700 bg-indigo-100';
+    if (cat.includes('home') || cat.includes('decor')) return 'text-amber-700 bg-amber-100';
+    if (cat.includes('grocery') || cat.includes('groceries')) return 'text-emerald-700 bg-emerald-100';
+    return 'text-gray-700 bg-gray-100';
+  };
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -177,319 +196,122 @@ export default function DushsheraOffers() {
               </div>
 
               <div className="grid grid-cols-1 gap-4">
+                {DUSSHERA_OFFERS_DATA.map((offer) => (
+                  <div
+                    key={offer.id}
+                    id={offer.id}
+                    className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative"
+                  >
+                    {/* Left: Purple Discount Block with Cut-Out Notch */}
+                    <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                      <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">
+                        {offer.badgeType || 'UP TO'}
+                      </span>
+                      <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">
+                        {offer.discountValue
+                          ? offer.discountValue
+                            .replace('UP TO ', '')
+                            .replace('FLAT ', '')
+                            .replace(' OFF', '')
+                          : ''}
+                      </span>
+                      <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                      <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">
+                        {offer.scopeText || offer.category}
+                      </span>
 
-                {/* OFFER 1: Amazon Great Indian Festival */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">80%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">GREAT INDIAN FESTIVAL</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">ELECTRONICS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                      {/* Notch Cutout Indicator (Visual Ticket Edge Curve) */}
+                      <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+
+                    {/* Middle: Details & Expandable Points */}
+                    <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                      <div>
+                        <div className="flex items-center gap-2 mb-2 flex-wrap">
+                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${typeof getCategoryBadgeClass === 'function' ? getCategoryBadgeClass(offer.category) : 'text-orange-700 bg-orange-100'}`}>
+                            {offer.category}
+                          </span>
+                          {offer.isVerified && (
+                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">
+                              VERIFIED
+                            </span>
+                          )}
+                        </div>
+
+                        <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
+                          {offer.title}
+                        </h3>
+
+                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                          {offer.description}
+                        </p>
+
+                        {/* Accordion Toggle "View Details" */}
+                        {offer.points && offer.points.length > 0 && (
+                          <div className="mt-3">
+                            <button
+                              type="button"
+                              onClick={() => toggleDetails(offer.id)}
+                              className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none cursor-pointer"
+                            >
+                              <span>View Details</span>
+                              <ChevronDown
+                                className={`w-4 h-4 text-indigo-600 transition-transform duration-200 ${expandedOffers[offer.id] ? 'rotate-180' : ''
+                                  }`}
+                              />
+                            </button>
+                            {expandedOffers[offer.id] && (
+                              <div className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                                {offer.points.map((pt, pIdx) => (
+                                  <div key={pIdx} className="flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
+                                    <span>{pt}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon Great Indian Festival – Up to 80% OFF this Dusshera
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Biggest sale of the season — shop mobiles, laptops, TVs, fashion &amp; more with no coupon code needed.
-                      </p>
-                      <div className="mt-3">
-                        <button
-                          onClick={() => {
-                            document.getElementById('dsh-offer-details-1')?.classList.toggle('hidden');
-                          }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
+                    </div>
+
+                    {/* Right: Brand Logo & Actions */}
+                    <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                      <div className="flex flex-col items-center gap-1">
+                        <img
+                          src={offer.brandLogo || "https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"}
+                          alt={offer.brandName || "Brand"}
+                          className="h-9 w-auto object-contain max-w-[130px]"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+
+                      <div className="w-full space-y-2">
+                        {offer.code ? (
+                          <div className="w-full bg-slate-50 border border-dashed border-slate-300 text-center py-2.5 rounded-xl font-bold text-slate-800 text-sm">
+                            {offer.code}
+                          </div>
+                        ) : null}
+                        <a
+                          href={offer.dealUrl}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow sponsored"
+                          className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
                         >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="dsh-offer-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on select categories as listed on the product page.</span></div>
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Minimum cart value might apply as specified on descriptions.</span></div>
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Covers selected brands and product collections.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Flipkart Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">80%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON SMARTPHONES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">MOBILES</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart Big Billion Days – Up to 80% OFF on Smartphones
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Best deals on iPhones, Samsung, OnePlus, Poco & more during Flipkart's biggest sale.
-                      </p>
-                      <div className="mt-3">
-                        <button
-                          onClick={() => {
-                            document.getElementById('fk-offer-details-1')?.classList.toggle('hidden');
-                          }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
+                          <span>Get Deal</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
+                        <Link
+                          href={`/stores/${offer.storeSlug ?? `${offer.brandName.toLowerCase().replace(/\s+/g, '-')}-coupon-code`}`}
+                          className="w-full bg-white border border-gray-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
                         >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="fk-offer-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid across top smartphone brands.</span></div>
-                        </div>
+                          <span>Visit Store</span>
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Myntra Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">90%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON FASHION</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">FASHION</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra End of Reason Sale – Up to 90% OFF on Clothing
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Shop ethnic wear, western wear, footwear & accessories at unbeatable prices.
-                      </p>
-                      <div className="mt-3">
-                        <button
-                          onClick={() => {
-                            document.getElementById('myn-offer-details-1')?.classList.toggle('hidden');
-                          }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
-                        >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="myn-offer-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected collections only.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Nykaa Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON BEAUTY</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">BEAUTY</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Nykaa Dusshera Sale – Up to 50% OFF on Beauty & Skincare</h3>
-                      <p className="text-xs text-gray-500 mt-1">Glow this festive season! Shop makeup, skincare, haircare & more at unbeatable prices.</p>
-                      <div className="mt-3">
-                        <button onClick={() => { document.getElementById('dsh-nyk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
-                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="dsh-nyk-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected beauty brands and products.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787405831/nykaa-logo_et8g79.webp" alt="Nykaa" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
-                      <Link href="/stores/nykaa-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Lenskart Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">50%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON EYEWEAR</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">EYEWEAR</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Lenskart Dusshera Sale – Up to 50% OFF on Eyewear</h3>
-                      <p className="text-xs text-gray-500 mt-1">Buy 1 Get 1 Free & flat discounts on prescription glasses, sunglasses & contact lenses.</p>
-                      <div className="mt-3">
-                        <button onClick={() => { document.getElementById('dsh-lk-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
-                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="dsh-lk-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected frames and lens collections.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787277414/lenskart-logo_oyfbdu.webp" alt="Lenskart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.lenskart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
-                      <Link href="/stores/lenskart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* JioMart Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">60%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON GROCERIES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded uppercase">GROCERIES</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">JioMart Dusshera Sale – Up to 60% OFF on Groceries & More</h3>
-                      <p className="text-xs text-gray-500 mt-1">Stock up on festive essentials — sweets, snacks, pooja items & daily groceries at great prices.</p>
-                      <div className="mt-3">
-                        <button onClick={() => { document.getElementById('dsh-jm-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
-                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="dsh-jm-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected grocery and festive categories.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1787277415/joi-mart-logo_imkftb.webp" alt="JioMart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.jiomart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
-                      <Link href="/stores/jiomart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Pepperfry Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON HOME DECOR</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded uppercase">HOME DECOR</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">Pepperfry Dusshera Sale – Up to 70% OFF on Home Decor</h3>
-                      <p className="text-xs text-gray-500 mt-1">Redecorate your home for the festive season! Shop furniture, lighting, decor & more.</p>
-                      <div className="mt-3">
-                        <button onClick={() => { document.getElementById('dsh-pf-1')?.classList.toggle('hidden'); }} className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none">
-                          <span>View Details</span><ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="dsh-pf-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected furniture and decor items.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1782749064/pepperfry-logo_fa8xlf.jpg" alt="Pepperfry" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.pepperfry.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">Get Deal <ArrowRight className="w-3.5 h-3.5" /></a>
-                      <Link href="/stores/pepperfry-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all"><span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" /></Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ADD MORE OFFER CARDS HERE */}
-
+                ))}
               </div>
             </section>
 

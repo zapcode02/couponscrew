@@ -20,6 +20,7 @@ import {
   Star,
   Calendar,
 } from 'lucide-react';
+import { NEW_YEAR_OFFERS_DATA } from './newYearOffersData';
 
 // ============================================================================
 // MAIN NEW YEAR OFFERS PAGE COMPONENT
@@ -28,6 +29,24 @@ export default function NewYearOffers() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [expandedOffers, setExpandedOffers] = useState<Record<string, boolean>>({});
+
+  const toggleDetails = (id: string) => {
+    setExpandedOffers((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const getCategoryBadgeClass = (category: string) => {
+    const cat = category.toLowerCase();
+    if (cat.includes('electronics')) return 'text-orange-700 bg-orange-100';
+    if (cat.includes('fashion')) return 'text-pink-700 bg-pink-100';
+    if (cat.includes('beauty')) return 'text-rose-700 bg-rose-100';
+    if (cat.includes('sports')) return 'text-blue-700 bg-blue-100';
+    if (cat.includes('eyewear')) return 'text-purple-700 bg-purple-100';
+    if (cat.includes('mobile') || cat.includes('mobiles')) return 'text-indigo-700 bg-indigo-100';
+    if (cat.includes('furniture')) return 'text-amber-700 bg-amber-100';
+    if (cat.includes('grocery') || cat.includes('food')) return 'text-emerald-700 bg-emerald-100';
+    return 'text-gray-700 bg-gray-100';
+  };
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -85,7 +104,7 @@ export default function NewYearOffers() {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="flex-1 space-y-4">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">
-                      New Year Offers 2026 — Best New Year Sale Deals on Flipkart, Amazon, Myntra & More
+                      New Year Offers 2027 — Best New Year Sale Deals on Flipkart, Amazon, Myntra & More
                     </h1>
                     <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
                       New Year is one of those rare occasions where the shopping calendar, the festive mood, and genuine retail clearance all line up at the same time. By late December, brands have inventory they need to clear before the new financial quarter. Shoppers have year-end bonuses, gift cards from Christmas, and a fresh mindset about upgrading things. And every major platform is competing for that spending. The result is a genuinely good window for deals — if you know where to look and what to buy.
@@ -177,163 +196,122 @@ export default function NewYearOffers() {
               </div>
 
               <div className="grid grid-cols-1 gap-4">
+                {NEW_YEAR_OFFERS_DATA.map((offer) => (
+                  <div
+                    key={offer.id}
+                    id={offer.id}
+                    className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative"
+                  >
+                    {/* Left: Purple Discount Block with Cut-Out Notch */}
+                    <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+                      <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">
+                        {offer.badgeType || 'UP TO'}
+                      </span>
+                      <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">
+                        {offer.discountValue
+                          ? offer.discountValue
+                            .replace('UP TO ', '')
+                            .replace('FLAT ', '')
+                            .replace(' OFF', '')
+                          : ''}
+                      </span>
+                      <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
+                      <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">
+                        {offer.scopeText || offer.category}
+                      </span>
 
-                {/* OFFER 1: Amazon New Year Electronics */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">70%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON ELECTRONICS</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">ELECTRONICS</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Amazon New Year Sale – Up to 70% OFF on Electronics
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Kick off 2027 with huge savings on mobiles, laptops, TVs &amp; accessories — no coupon code required.
-                      </p>
-                      <div className="mt-3">
-                        <button
-                          onClick={() => {
-                            document.getElementById('ny-offer-details-1')?.classList.toggle('hidden');
-                          }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
-                        >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="ny-offer-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on select categories as listed on the product page.</span></div>
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Minimum cart value might apply as specified on descriptions.</span></div>
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Covers selected brands and product collections.</span></div>
+                      {/* Notch Cutout Indicator (Visual Ticket Edge Curve) */}
+                      <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
+                    </div>
+
+                    {/* Middle: Details & Expandable Points */}
+                    <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
+                      <div>
+                        <div className="flex items-center gap-2 mb-2 flex-wrap">
+                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${typeof getCategoryBadgeClass === 'function' ? getCategoryBadgeClass(offer.category) : 'text-orange-700 bg-orange-100'}`}>
+                            {offer.category}
+                          </span>
+                          {offer.isVerified && (
+                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">
+                              VERIFIED
+                            </span>
+                          )}
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg" alt="Amazon" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/amazon-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
 
-                {/* Flipkart Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">80%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON SMARTPHONES</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded uppercase">MOBILES</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
+                        <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
+                          {offer.title}
+                        </h3>
+
+                        <p className="text-xs text-gray-500 mt-1 leading-relaxed">
+                          {offer.description}
+                        </p>
+
+                        {/* Accordion Toggle "View Details" */}
+                        {offer.points && offer.points.length > 0 && (
+                          <div className="mt-3">
+                            <button
+                              type="button"
+                              onClick={() => toggleDetails(offer.id)}
+                              className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none cursor-pointer"
+                            >
+                              <span>View Details</span>
+                              <ChevronDown
+                                className={`w-4 h-4 text-indigo-600 transition-transform duration-200 ${expandedOffers[offer.id] ? 'rotate-180' : ''
+                                  }`}
+                              />
+                            </button>
+                            {expandedOffers[offer.id] && (
+                              <div className="mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                                {offer.points.map((pt, pIdx) => (
+                                  <div key={pIdx} className="flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
+                                    <span>{pt}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Flipkart New Year Sale – Up to 80% OFF on Smartphones
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Start the New Year with the best deals on iPhones, Samsung, OnePlus & more.
-                      </p>
-                      <div className="mt-3">
-                        <button
-                          onClick={() => { document.getElementById('ny-fk-details-1')?.classList.toggle('hidden'); }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
+                    </div>
+
+                    {/* Right: Brand Logo & Actions */}
+                    <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
+                      <div className="flex flex-col items-center gap-1">
+                        <img
+                          src={offer.brandLogo || "https://res.cloudinary.com/dqjlffxja/image/upload/v1786210525/amazon-logo_snb5za.jpg"}
+                          alt={offer.brandName || "Brand"}
+                          className="h-9 w-auto object-contain max-w-[130px]"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+
+                      <div className="w-full space-y-2">
+                        {offer.code ? (
+                          <div className="w-full bg-slate-50 border border-dashed border-slate-300 text-center py-2.5 rounded-xl font-bold text-slate-800 text-sm">
+                            {offer.code}
+                          </div>
+                        ) : null}
+                        <a
+                          href={offer.dealUrl}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow sponsored"
+                          className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all"
                         >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="ny-fk-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid across top smartphone brands.</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/flipkart-logo_dyngc1.webp" alt="Flipkart" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/flipkart-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Myntra Offer Card */}
-                <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-all relative">
-                  <div className="w-full md:w-48 bg-[#5B4FBE] text-white flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
-                    <span className="text-[11px] uppercase font-bold tracking-wider opacity-90">UP TO</span>
-                    <span className="text-4xl md:text-5xl font-black tracking-tight leading-none my-1">90%</span>
-                    <span className="text-xs font-bold uppercase tracking-wider">OFF</span>
-                    <span className="text-[10px] uppercase font-medium tracking-wider opacity-80 mt-3">ON FASHION</span>
-                    <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between gap-4 border-b md:border-b-0 md:border-r border-dashed border-gray-300">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">FASHION</span>
-                        <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">VERIFIED</span>
-                      </div>
-                      <h3 className="font-extrabold text-lg text-gray-900 leading-snug">
-                        Myntra New Year Sale – Up to 90% OFF on Fashion
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Refresh your wardrobe for the New Year with huge savings on clothing, footwear & accessories.
-                      </p>
-                      <div className="mt-3">
-                        <button
-                          onClick={() => { document.getElementById('ny-myn-details-1')?.classList.toggle('hidden'); }}
-                          className="text-sm font-bold text-indigo-600 hover:underline flex items-center gap-1 focus:outline-none"
+                          <span>Get Deal</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
+                        <Link
+                          href={`/stores/${offer.storeSlug ?? `${offer.brandName.toLowerCase().replace(/\s+/g, '-')}-coupon-code`}`}
+                          className="w-full bg-white border border-gray-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all text-center justify-center"
                         >
-                          <span>View Details</span>
-                          <ChevronDown className="w-4 h-4 text-indigo-600" />
-                        </button>
-                        <div id="ny-myn-details-1" className="hidden mt-3 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                          <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span><span>Valid on selected collections only.</span></div>
-                        </div>
+                          <span>Visit Store</span>
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="w-full md:w-64 p-6 flex flex-col items-center justify-center gap-4 bg-white shrink-0">
-                    <div className="flex flex-col items-center gap-1">
-                      <img src="https://res.cloudinary.com/dqjlffxja/image/upload/v1786929943/myntra-logo_lbdivn.webp" alt="Myntra" className="h-9 w-auto object-contain" />
-                    </div>
-                    <div className="w-full space-y-2">
-                      <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer nofollow sponsored" className="w-full bg-[#FF5722] hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition-all">
-                        Get Deal <ArrowRight className="w-3.5 h-3.5" />
-                      </a>
-                      <Link href="/stores/myntra-coupon-code" className="w-full bg-white border border-blue-200 text-[#5B4FBE] hover:bg-purple-50 text-xs font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-1.5 transition-all">
-                        <span>Visit Store</span><ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ADD MORE OFFER CARDS HERE */}
-
+                ))}
               </div>
             </section>
           </div>
@@ -482,10 +460,10 @@ export default function NewYearOffers() {
               <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="w-1 h-6 bg-[#3B82F6] rounded-full block"></span>
-                  <span className="text-xs font-black text-[#3B82F6] uppercase tracking-widest">New Year Offers & Deals 2026/2027</span>
+                  <span className="text-xs font-black text-[#3B82F6] uppercase tracking-widest">New Year Offers & Deals 2027/2027</span>
                 </div>
                 <h2 className="text-2xl font-black text-[#1A1A2E] leading-tight">
-                  Verified New Year Offers 2026, Deals & Discounts Online Shopping
+                  Verified New Year Offers 2027, Deals & Discounts Online Shopping
                 </h2>
                 <div className="mt-4 space-y-4 text-sm text-[#4A4A6A] leading-relaxed">
                   <p>
@@ -501,7 +479,7 @@ export default function NewYearOffers() {
                     <strong>The practical categories to focus on:</strong>
                   </p>
                   <p>
-                    <strong>Electronics:</strong> Year-end is when laptops, TVs, and smartphones from earlier in 2026 see their lowest prices. January launches (like CES product announcements) give brands added reason to clear 2025–2026 inventory.
+                    <strong>Electronics:</strong> Year-end is when laptops, TVs, and smartphones from earlier in 2027 see their lowest prices. January launches (like CES product announcements) give brands added reason to clear 2025–2027 inventory.
                   </p>
                   <p>
                     <strong>Fashion:</strong> End-of-season winter clearance. Jackets, boots, woollens, and party wear from October–November collections all discount heavily.
@@ -522,9 +500,9 @@ export default function NewYearOffers() {
               </div>
 
               <div className="bg-white rounded-3xl border border-[#E8E8F0] p-8 shadow-sm space-y-8">
-                {/* Flipkart New Year Sale 2026 */}
+                {/* Flipkart New Year Sale 2027 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> New Year Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/flipkart-coupon-code" className="text-[#5B4FBE] hover:underline">Flipkart</Link> New Year Sale 2027</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Flipkart runs its Year End Sale and New Year Sale in the December 26–January 3 window. This is one of the better secondary sales on Flipkart — not as big as the Big Billion Days, but more consistent in discount depth because it is driven by inventory clearance rather than manufactured hype.
                   </p>
@@ -552,9 +530,9 @@ export default function NewYearOffers() {
                   </p>
                 </div>
 
-                {/* Amazon New Year Sale 2026 */}
+                {/* Amazon New Year Sale 2027 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link> New Year Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/amazon-coupon-code" className="text-[#5B4FBE] hover:underline">Amazon</Link> New Year Sale 2027</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Amazon India's Year End Sale runs from December 26 through January 1 or 2. It serves as an extension of the Great Indian Festival energy, but focused heavily on clearance, gifting, and new-year fresh-start buying.
                   </p>
@@ -579,9 +557,9 @@ export default function NewYearOffers() {
                   </ul>
                 </div>
 
-                {/* Myntra New Year Sale 2026 */}
+                {/* Myntra New Year Sale 2027 */}
                 <div className="p-6 bg-[#F8F8FF] rounded-2xl border border-[#E8E8F0]">
-                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link> New Year Sale 2026</h3>
+                  <h3 className="text-base font-bold text-[#1A1A2E]"><Link href="/stores/myntra-coupon-code" className="text-[#5B4FBE] hover:underline">Myntra</Link> New Year Sale 2027</h3>
                   <p className="mt-2 text-xs text-[#4A4A6A] leading-relaxed">
                     Myntra's End of Reason Sale (EORS) in December/January is consistently one of the two best fashion sales of the year in India (alongside the mid-year EORS in June).
                   </p>
@@ -759,7 +737,7 @@ export default function NewYearOffers() {
                 <div className="bg-white rounded-2xl border border-[#E8E8F0] p-5 shadow-sm">
                   <div className="mb-4 flex items-center gap-2">
                     <HelpCircle className="w-4 h-4 text-[#3B82F6]" />
-                    <h3 className="font-extrabold text-[#1A1A2E] text-sm">New Year FAQ 2026/2027</h3>
+                    <h3 className="font-extrabold text-[#1A1A2E] text-sm">New Year FAQ 2027/2027</h3>
                   </div>
 
                   <div className="space-y-2">
