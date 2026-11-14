@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import FirstCryStore from './_components/FirstCryStore'
-import { FIRSTCRY_COUPONS } from './_components/firstcryCoupons'
+import { FIRSTCRY_COUPONS } from './_components/firstCryCoupons'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),

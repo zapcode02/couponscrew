@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import FlixBusStore from './_components/FlixBusStore'
-import { FLIXBUS_COUPONS } from './_components/flixbusCoupons'
+import { FLIXBUS_COUPONS } from './_components/flixBusCoupons'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
