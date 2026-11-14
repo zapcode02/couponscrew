@@ -137,7 +137,7 @@ export default function MyntraStore() {
               {/* Action Buttons */}
               <div className="mt-8 pt-6 border-t border-[#E8E8F0] flex flex-wrap items-center gap-4">
                 <a
-                  href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                  href="https://myntr.it/y6bko1t"
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
                   className="bg-[#FF5722] hover:bg-[#E64A19] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
@@ -164,7 +164,7 @@ export default function MyntraStore() {
             {/* Promo Banner (Right 5 Columns) — desktop only, placeholder until a real banner image exists */}
             <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden rounded-3xl shadow-sm h-full aspect-[770/563] border border-[#5B4FBE]/20 group">
               <Link
-                href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                href="https://myntr.it/y6bko1t"
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 className="relative w-full h-full block"
@@ -699,7 +699,7 @@ export default function MyntraStore() {
                   </h3>
                   <div className="my-8">
                     <a
-                      href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                      href="https://myntr.it/y6bko1t"
                       target="_blank"
                       rel="noopener noreferrer nofollow sponsored"
                       className="inline-block hover:opacity-95 transition-opacity"
@@ -785,7 +785,7 @@ export default function MyntraStore() {
 
                   <div className="my-8">
                     <a
-                      href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                      href="https://myntr.it/y6bko1t"
                       target="_blank"
                       rel="noopener noreferrer nofollow sponsored"
                       className="inline-block hover:opacity-95 transition-opacity"
@@ -897,7 +897,7 @@ export default function MyntraStore() {
                   </h3>
                   <div className="my-8">
                     <a
-                      href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                      href="https://myntr.it/y6bko1t"
                       target="_blank"
                       rel="noopener noreferrer nofollow sponsored"
                       className="inline-block hover:opacity-95 transition-opacity"
@@ -970,7 +970,7 @@ export default function MyntraStore() {
                   </h3>
                   <div className="my-8">
                     <a
-                      href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                      href="https://myntr.it/y6bko1t"
                       target="_blank"
                       rel="noopener noreferrer nofollow sponsored"
                       className="inline-block hover:opacity-95 transition-opacity"
@@ -1087,7 +1087,7 @@ export default function MyntraStore() {
                   </h3>
                   <div className="my-8">
                     <a
-                      href="https://www.amazon.in?&linkCode=ll2&tag=mg0001-21&linkId=d7b0bddc0c649d25e3854778190edce6&ref_=as_li_ss_tl"
+                      href="https://myntr.it/y6bko1t"
                       target="_blank"
                       rel="noopener noreferrer nofollow sponsored"
                       className="inline-block hover:opacity-95 transition-opacity"
