@@ -344,29 +344,25 @@ export default function LenskartStore() {
               </p>
 
               {/* View Details Toggle */}
-              <button
-                onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
-              >
-                View Details
-                {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-              </button>
+              {coupon.points && coupon.points.length > 0 && (
+                <button
+                  onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
+                  className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
+                >
+                  View Details
+                  {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                </button>
+              )}
 
               {/* Details List */}
-              {isExpanded && (
+              {isExpanded && coupon.points && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                    <span>Valid on select eyewear categories.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                    <span>Minimum cart value might apply as specified on descriptions.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
-                    <span>Covers selected frames and lens collections.</span>
-                  </li>
+                  {coupon.points.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#5B4FBE]" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
                 </ul>
               )}
             </div>

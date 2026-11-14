@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
-import SonyLiveStore from './_components/SonyLiveStore'
+import SonyLiveStore from './_components/SonyliveStore'
 import { SONYLIVE_COUPONS } from './_components/sonyliveCoupons'
 
 export const metadata: Metadata = {

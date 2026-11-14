@@ -8,6 +8,7 @@ export interface Coupon {
   type: string;
   title: string;
   description: string;
+  points: string[];
   code: string;
   verified: string;
   userType: string;
@@ -17,17 +18,23 @@ export interface Coupon {
 export const VISTAPRINT_COUPONS: Coupon[] = [
   {
     id: 'coupon-1',
-    badge: '100 CARDS @ ₹200',
+    badge: '₹200 ONLY',
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'VISITING CARDS',
-    title: 'Vistaprint Coupon Code – 100 Visiting Cards at Just ₹200',
-    description: 'Get 100 premium-quality visiting cards for just ₹200.\nAdd your logo, contact info, and brand details to personalize them.\nA smart pick for startups, freelancers, and small business owners.\nOnline-only Vistaprint deal, available for a limited period.',
+    type: 'COUPON CODE',
+    title: 'Vistaprint Coupon Code – 100 Visiting Cards for ₹200',
+    description: 'Get 100 personalised visiting cards for just ₹200 with this limited-time Vistaprint offer.',
+    points: [
+      'Order 100 good-quality visiting cards for only ₹200.',
+      'Add your logo, contact details and branding to every card.',
+      'Perfect for startups, freelancers and small businesses.',
+      'This online-only deal is available for a limited time.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-2',
@@ -35,13 +42,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'CUSTOM APPAREL',
-    title: 'Vistaprint Coupon Code – Hoodies & Jackets With Your Own Design, Prices Begin at ₹850',
-    description: 'Custom hoodies, jackets, and team wear available from ₹850.\nPrint your company logo or own artwork on them.\nWorks well for corporate branding, events, and team outfits.\nMultiple fits, colours, and size options to pick from.',
+    type: 'COUPON CODE',
+    title: 'Vistaprint Coupon Code – Custom Hoodies & Jackets From ₹850',
+    description: 'Make custom hoodies and jackets for your team or business, starting at only ₹850.',
+    points: [
+      'Buy custom hoodies, jackets and team wear from ₹850.',
+      'Add your company logo or your own artwork on every item.',
+      'Pick from many colours, sizes and fits.',
+      'Great for office events, branding and staff uniforms.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-3',
@@ -49,13 +62,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'PHOTO ALBUMS',
-    title: 'Vistaprint Discount Code – Layflat Photo Albums Starting ₹2,500',
-    description: 'Design premium Layflat Photo Albums with prices starting at ₹2,500.\nKeep your special moments safe with sharp, high-quality prints.\nBest suited for weddings, trips, and family celebrations.\nFill every page with photos of your choice.',
+    type: 'PROMO CODE',
+    title: 'Vistaprint Promo Code – Layflat Photo Albums From ₹2,500',
+    description: 'Keep your memories safe in premium Layflat Photo Albums starting at ₹2,500.',
+    points: [
+      'Buy Layflat Photo Albums from ₹2,500.',
+      'Design every page with your favourite photos.',
+      'High-quality printing gives bright and long-lasting memories.',
+      'Best for weddings, holidays and family functions.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-4',
@@ -63,13 +82,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'OFFICE WEAR',
-    title: "Vistaprint Discount Code – Men's Half Sleeve Dress Shirts Starting ₹1,005",
-    description: "Men's Half Sleeve Dress Shirts available from ₹1,005 per piece.\nGet your company logo embroidered on them.\nA good fit for office wear, uniforms, and events.\nComes in several colors and sizes.",
+    type: 'PROMO CODE',
+    title: 'Vistaprint Promo Code – Men’s Dress Shirts From ₹1,005',
+    description: 'Customise professional men’s dress shirts starting at ₹1,005.',
+    points: [
+      'Men’s Half Sleeve Dress Shirts start from ₹1,005 each.',
+      'Add your company logo in embroidery for a neat, professional look.',
+      'Available in many colours and sizes.',
+      'Good for office uniforms, events and corporate teams.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-5',
@@ -77,13 +102,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'OFFICE WEAR',
-    title: "Vistaprint Promo Code – Men's Dress Shirts from ₹980",
-    description: "Men's Dress Shirts start at just ₹980 each.\nPersonalize them with custom embroidery or your company logo.\nMade for a professional, business-ready look.\nA great option for corporate branding and office staff.",
+    type: 'DISCOUNT CODE',
+    title: 'Vistaprint Discount Code – Men’s Dress Shirts From ₹980',
+    description: 'Get custom men’s dress shirts at low prices starting from ₹980.',
+    points: [
+      'Buy men’s dress shirts from just ₹980.',
+      'Add embroidery or your business logo on each shirt.',
+      'Made to give a smart and professional look.',
+      'A good choice for corporate branding and office wear.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-6',
@@ -91,13 +122,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'OFFICE WEAR',
-    title: "Vistaprint Promo Code – Women's Embroidered Dress Shirts Starting ₹980",
-    description: "Women's Embroidered Dress Shirts available from ₹980.\nAdd your own design or brand logo to each shirt.\nComfortable fit built for professional work settings.\nOffered in a variety of colors and sizes.",
+    type: 'DISCOUNT CODE',
+    title: 'Vistaprint Discount Code – Women’s Dress Shirts From ₹980',
+    description: 'Design custom women’s embroidered dress shirts starting at ₹980.',
+    points: [
+      'Women’s embroidered dress shirts are available from ₹980.',
+      'Add your logo or your own design easily.',
+      'Comfortable styles made for daily professional wear.',
+      'Pick from a range of colours and sizes.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-7',
@@ -105,13 +142,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'BUSINESS SUPPLIES',
-    title: 'Vistaprint Voucher – Self-Inking Stamps Starting ₹890',
-    description: 'Self-Inking Stamps (64mm × 44mm) available from ₹890.\nMake personalized stamps for office and business needs.\nGives sharp, uniform impressions every time.\nSimple to customize with the design you want.',
+    type: 'VOUCHER CODE',
+    title: 'Vistaprint Voucher Code – Self-Inking Stamps From ₹890',
+    description: 'Make personalised self-inking stamps starting at ₹890.',
+    points: [
+      'Buy self-inking stamps from ₹890.',
+      'Add your own text or design on the stamp.',
+      'Gives a clean and even print every time.',
+      'Good for office, business and admin work.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-8',
@@ -119,13 +162,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'PROMOTIONAL GIFTS',
-    title: 'Vistaprint Voucher – Eco-Friendly Bamboo Fiber Mugs from ₹390',
-    description: 'Bamboo Fiber Eco Mugs available at prices starting ₹390.\nGet your company logo or any custom graphic printed on each mug.\nA sustainable promotional item for businesses.\nMakes a thoughtful giveaway for clients, staff, and company functions.',
+    type: 'VOUCHER CODE',
+    title: 'Vistaprint Voucher Code – Bamboo Fiber Mugs From ₹390',
+    description: 'Customise eco-friendly bamboo fiber mugs starting at ₹390.',
+    points: [
+      'Eco-friendly bamboo fiber mugs start from ₹390.',
+      'Print your logo or your own artwork on every mug.',
+      'A useful gift for clients and employees.',
+      'Perfect for giveaways, events and corporate branding.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-9',
@@ -133,13 +182,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'LABELS & STICKERS',
-    title: 'Vistaprint Offers – Sticker Singles Starting ₹200',
-    description: 'Sticker Singles available from just ₹200.\nEach sticker is cut individually, great for packaging and branding.\nCustomize with your logo, product labels, or artwork.\nUseful for promotions, events, and business use.',
+    type: 'REFERRAL CODE',
+    title: 'Vistaprint Referral Code – Sticker Singles From ₹200',
+    description: 'Order custom sticker singles starting at just ₹200.',
+    points: [
+      'Sticker Singles are available from ₹200.',
+      'Add your logo, labels or your own artwork.',
+      'Great for product packaging and brand promotion.',
+      'Good for events, businesses and marketing campaigns.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-10',
@@ -147,13 +202,19 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'LABELS & STICKERS',
-    title: 'Vistaprint Offers – Sheet Stickers from ₹190',
-    description: 'Sheet Stickers start at only ₹190.\nGreat for packaging, branding, and product labelling.\nPick your own shapes and designs.\nComes in different sizes and finish options.',
+    type: 'REFERRAL CODE',
+    title: 'Vistaprint Referral Code – Sheet Stickers From ₹190',
+    description: 'Design custom sheet stickers starting at ₹190.',
+    points: [
+      'Buy sheet stickers from only ₹190.',
+      'Choose the shape, size and finish you like.',
+      'Perfect for packaging, branding and product labels.',
+      'Customise every design easily for your business.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   },
   {
     id: 'coupon-11',
@@ -161,12 +222,18 @@ export const VISTAPRINT_COUPONS: Coupon[] = [
     badgeType: 'FLAT',
     badgeColor: 'bg-[#FF5722]',
     color: '#FF5722',
-    type: 'LABELS & STICKERS',
-    title: 'Vistaprint Offers – Custom Window Stickers Starting ₹170',
-    description: 'Window Stickers available from ₹170.\nIdeal for shop fronts, offices, and promo displays.\nEasily personalize them with your business branding.\nStrong material that works both indoors and outdoors.',
+    type: 'CASHBACK OFFERS',
+    title: 'Vistaprint Cashback Offers – Window Stickers From ₹170',
+    description: 'Customise strong window stickers starting at just ₹170.',
+    points: [
+      'Window stickers are available from ₹170.',
+      'Add your business branding or your own artwork.',
+      'Good for shopfronts, offices and promotional displays.',
+      'Made for use both indoors and outdoors.',
+    ],
     code: '',
     verified: 'Verified',
     userType: 'All Users',
-    validTill: '30 Jun 2026'
+    validTill: '30 Nov 2026'
   }
 ];

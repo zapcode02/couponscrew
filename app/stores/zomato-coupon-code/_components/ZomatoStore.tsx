@@ -159,7 +159,7 @@ export default function ZomatoStore() {
                   href={AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
-                  className="bg-[#1C1C1C] hover:bg-[#333333] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+                  className="bg-[#FF5722] hover:bg-[#FF5722] text-white font-extrabold text-sm px-7 py-3.5 rounded-xl transition-all flex items-center gap-2 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
                 >
                   <span>Visit Zomato</span>
                   <ExternalLink size={16} />
@@ -276,9 +276,9 @@ export default function ZomatoStore() {
         {/* Main Flex Container */}
         <div className="flex flex-row items-stretch">
 
-          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#E23744) */}
+          {/* LEFT DISCOUNT SECTION - Deep Theme Primary (#5B4FBE) */}
           <div
-            className="w-24 sm:w-32 lg:w-40 bg-[#E23744] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
+            className="w-24 sm:w-32 lg:w-40 bg-[#5B4FBE] flex flex-col items-center justify-center py-6 px-2 text-white relative shrink-0"
           >
             {/* Ticket Cutout Circles */}
             <div className="absolute -right-3 -top-3 w-6 h-6 rounded-full bg-[#F8F9FA]"></div>
@@ -301,8 +301,8 @@ export default function ZomatoStore() {
             {/* CENTER CONTENT SECTION */}
             <div className="flex-1 p-4 sm:p-5 lg:p-6 flex flex-col justify-center">
               <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                {/* Soft Tint Badge using Accent (#1C1C1C) */}
-                <span className="bg-[#1C1C1C]/10 text-[#1C1C1C] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
+                {/* Soft Tint Badge using Accent (#5B4FBE) */}
+                <span className="bg-[#5B4FBE]/10 text-[#5B4FBE] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
                   {coupon.type || "Best Offer"}
                 </span>
                 <span className="bg-[#E6F7ED] text-[#00A854] text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">
@@ -319,29 +319,25 @@ export default function ZomatoStore() {
               </p>
 
               {/* View Details Toggle */}
-              <button
-                onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
-                className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#E23744] hover:opacity-80 w-fit transition-opacity"
-              >
-                View Details
-                {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-              </button>
+              {coupon.points && coupon.points.length > 0 && (
+                <button
+                  onClick={() => setExpandedCouponId(isExpanded ? null : coupon.id)}
+                  className="mt-3 flex items-center gap-1 text-xs sm:text-sm font-bold text-[#5B4FBE] hover:opacity-80 w-fit transition-opacity"
+                >
+                  View Details
+                  {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                </button>
+              )}
 
               {/* Details List */}
-              {isExpanded && (
+              {isExpanded && coupon.points && coupon.points.length > 0 && (
                 <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 border-t border-dashed border-slate-200 pt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
-                    <span>Valid on select restaurants and participating outlets.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
-                    <span>Minimum order value might apply as specified in offer terms.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
-                    <span>Offer availability may vary by location.</span>
-                  </li>
+                  {coupon.points.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#E23744]" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
                 </ul>
               )}
             </div>
@@ -357,7 +353,7 @@ export default function ZomatoStore() {
                 className={`w-full h-11 sm:h-12 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-sm ${
                   isCopied
                     ? "bg-green-600 text-white"
-                    : "bg-[#1C1C1C] hover:bg-[#333333] text-white"
+                    : "bg-[#FF5722] hover:bg-[#FF5722] text-white"
                 }`}
               >
                 {isCopied ? "Copied!" : "Get Deal"}
@@ -1114,7 +1110,7 @@ export default function ZomatoStore() {
                 target="_blank"
                 rel="noopener noreferrer nofollow sponsored"
                 onClick={() => setShowModal(false)}
-                className="w-full bg-[#1C1C1C] hover:bg-[#333333] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                className="w-full bg-[#5B4FBE] hover:bg-[#4a3fa8] text-white py-3.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Continue to Zomato</span>
                 <ExternalLink size={14} />
