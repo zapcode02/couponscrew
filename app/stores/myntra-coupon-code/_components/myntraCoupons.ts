@@ -16,6 +16,46 @@ export interface Coupon {
 
 export const MYNTRA_COUPONS: Coupon[] = [
   {
+    id: 'myntra-wedding-sale-1',
+    badge: 'UP TO 80% OFF',
+    badgeType: 'UP TO',
+    badgeColor: 'bg-[#5F4FBE]',
+    color: '#5F4FBE',
+    type: 'FASHION',
+    title: 'Myntra Coupon Code – Up to 80% Off Grand Wedding Sale',
+    description: 'Give your wedding wardrobe a fresh look with up to 80% off in the Myntra Grand Wedding Sale.',
+    code: '',
+    verified: 'Verified',
+    userType: 'All Users',
+    validTill: '30 Nov 2026',
+    bullets: [
+      'Save up to 80% on fashion, footwear, accessories and beauty products.',
+      'Find special Grand Wedding Sale deals for a limited time.',
+      'See top brands in men’s, women’s and kids’ collections.',
+      'Discounts are available only on selected products.'
+    ]
+  },
+  {
+    id: 'myntra-first-app-1',
+    badge: 'FLAT ₹300 OFF',
+    badgeType: 'FLAT',
+    badgeColor: 'bg-[#5F4FBE]',
+    color: '#5F4FBE',
+    type: 'NEW USER',
+    title: 'Myntra Coupon Code – Flat ₹300 Off First App Purchase',
+    description: 'New users can save ₹300 on their first order on the Myntra app.',
+    code: '',
+    verified: 'Verified',
+    userType: 'New Users',
+    validTill: '30 Nov 2026',
+    bullets: [
+      'Get a flat ₹300 discount on your first purchase through the Myntra app.',
+      'The offer is for eligible first-time app users.',
+      'Buy fashion, beauty and lifestyle products at lower prices.',
+      'The discount applies only on eligible orders.'
+    ]
+  },
+  {
     id: 'myntra-puma-1',
     badge: 'UP TO 70% OFF',
     badgeType: 'UP TO',

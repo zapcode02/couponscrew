@@ -20,6 +20,16 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'myntra-grand-wedding-sale-2026',
+    title: 'Myntra Grand Wedding Sale 2026: Shaadi Season Ke Liye Best Deals — Up to 80% OFF on Lehengas, Sherwanis & More',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1794759670/Myntra_Grand_Wedding_Sale_so8s5g.webp',
+    date: 'Nov 15, 2026',
+    readTime: '7 min read',
+    excerpt: "Myntra Grand Wedding Sale is live with up to 80% OFF on lehengas, sherwanis, sarees, and wedding accessories. Plus, flat ₹300 OFF on your first app purchase. Here's everything worth buying right now.",
+    tags: ['Myntra', 'Wedding Sale', 'Festival Offers'],
+  },
+  {
     slug: 'bhai-dooj-2026-best-gift-ideas',
     title: 'Bhai Dooj 2026: Best Gift Ideas for Brothers & Sisters — Watches, Perfumes & More',
     category: 'Festival Offers',

@@ -139,6 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/dhanteras-2026-best-deals`, lastModified: new Date('2026-11-03'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/diwali-2026-last-minute-deals-gifts-offers`, lastModified: new Date('2026-11-08'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/blog/bhai-dooj-2026-best-gift-ideas`, lastModified: new Date('2026-11-09'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog/myntra-grand-wedding-sale-2026`, lastModified: new Date('2026-11-15'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/faqs`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/feedback`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/about-us`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },

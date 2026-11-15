@@ -129,7 +129,7 @@ export default function MyntraStore() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                    Find the latest Myntra coupon code and Myntra discount code to save up to 70% OFF on top brands. Enjoy up to 70% OFF on Puma and HRX, up to 60% OFF on Jack & Jones, Roadster, Libas, and Wrogn, plus up to 50% OFF on U.S. Polo Assn. and Hidesign. Shop fashion, footwear, beauty, home essentials, and accessories at unbeatable prices. Apply a verified Myntra coupon code or discount code at checkout to maximize your savings on eligible orders.
+                    Use a Myntra Coupon Code or Myntra Discount Code to save on fashion, footwear, beauty, and accessories this Nov 2026. Our regularly updated offers include <strong>up to 80% off during the Grand Wedding Sale</strong> and a <strong>flat ₹300 off your first app purchase for new users</strong>. Whether you're refreshing your wardrobe or shopping for wedding styles, these verified deals help you spend less. Wondering how much you can save at Myntra? Check our latest offers before placing your order.
                   </p>
                 </div>
               </div>
