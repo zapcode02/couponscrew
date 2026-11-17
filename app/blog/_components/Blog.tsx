@@ -20,6 +20,16 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'him-science-ranveer-singh-aman-gupta-launch-2026',
+    title: "Ranveer Singh and Aman Gupta Just Launched H.I.M — A Men's Skincare Brand Built for the Indian Man",
+    category: 'Brand Launch',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1794930338/him-science-ranveer-singh-aman-gupta-launch-2026_m0jzzi.webp',
+    date: 'Nov 17, 2026',
+    readTime: '6 min read',
+    excerpt: "Ranveer Singh and boAt co-founder Aman Gupta have launched H.I.M (Handsome Indian Man) — a men's grooming brand with 8 products built specifically for Indian skin, Indian climate, and Indian biology.",
+    tags: ['HIM Science', 'Ranveer Singh', "Men's Grooming"],
+  },
+  {
     slug: 'myntra-grand-wedding-sale-2026',
     title: 'Myntra Grand Wedding Sale 2026: Shaadi Season Ke Liye Best Deals — Up to 80% OFF on Lehengas, Sherwanis & More',
     category: 'Festival Offers',

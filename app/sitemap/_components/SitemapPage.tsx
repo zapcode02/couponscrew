@@ -180,6 +180,7 @@ const BLOG_POSTS: SiteLink[] = [
   { label: 'Diwali 2026: Last Minute Deals, Gift Ideas & Offers You Can Still Get Today', href: '/blog/diwali-2026-last-minute-deals-gifts-offers' },
   { label: 'Bhai Dooj 2026: Best Gift Ideas for Brothers & Sisters — Watches, Perfumes & More', href: '/blog/bhai-dooj-2026-best-gift-ideas' },
   { label: 'Myntra Grand Wedding Sale 2026: Shaadi Season Ke Liye Best Deals — Up to 80% OFF', href: '/blog/myntra-grand-wedding-sale-2026' },
+  { label: "Ranveer Singh & Aman Gupta Just Launched H.I.M — A Men's Skincare Brand for the Indian Man", href: '/blog/him-science-ranveer-singh-aman-gupta-launch-2026' },
 ];
 
 const COMPANY_LEGAL: SiteLink[] = [
