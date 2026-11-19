@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import type React from 'react'
 import { Inter, Outfit, Fira_Code } from 'next/font/google'
+import Script from 'next/script'
 import AnalyticsLoader from '../src/components/AnalyticsLoader'
 import CookieConsentBanner from '../src/components/CookieConsentBanner'
 import FloatingContactWidget from '../src/components/FloatingContactWidget'
@@ -102,6 +103,20 @@ export default function RootLayout({
           type="speculationrules"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(speculationRules) }}
         />
+        <Script
+          src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+          strategy="afterInteractive"
+        />
+        <Script id="onesignal-init" strategy="afterInteractive">{`
+          window.OneSignalDeferred = window.OneSignalDeferred || [];
+          OneSignalDeferred.push(async function(OneSignal) {
+            await OneSignal.init({
+              appId: "bc7a3201-ab8d-4d78-9ba4-3f39c545d0aa",
+              safari_web_id: "web.onesignal.auto.28be2e0f-48c0-43fd-877a-95cc3c6fc0d9",
+              notifyButton: { enable: true },
+            });
+          });
+        `}</Script>
       </head>
       <body className="bg-[#F8F8FF] text-[#4A4A6A] selection:bg-[#5B4FBE] selection:text-white">
         {children}
