@@ -392,6 +392,11 @@ const getFestivalHref = (id: string) => {
     case 'super-saturday': return '/festival-offers/super-saturday-offers';
     case 'thanksgiving': return '/festival-offers/thanksgiving-offers';
     case 'veterans-day': return '/festival-offers/veterans-day-offers';
+    case 'womens-day': return '/festival-offers/womens-day-offers';
+    case 'mlk-day': return '/festival-offers/mlk-day-offers';
+    case 'st-patricks-day': return '/festival-offers/st-patricks-day-offers';
+    case 'easter': return '/festival-offers/easter-offers';
+    case 'mothers-day': return '/festival-offers/mothers-day-offers';
     default: return '#';
   }
 };
