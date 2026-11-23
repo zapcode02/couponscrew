@@ -154,7 +154,7 @@ const jsonLd = {
       description:
         'Complete list of top stores and brands with verified coupon codes on CouponsCrew.',
       url: 'https://www.couponscrew.com/stores',
-      numberOfItems: 29,
+      numberOfItems: 34,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
       itemListElement: [
         {
@@ -330,6 +330,36 @@ const jsonLd = {
           position: 29,
           name: 'ZEE5 Coupon Code',
           url: 'https://www.couponscrew.com/stores/zee5-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 30,
+          name: 'Croma Coupon Code',
+          url: 'https://www.couponscrew.com/stores/croma-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 31,
+          name: 'Asics Coupon Code',
+          url: 'https://www.couponscrew.com/stores/asics-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 32,
+          name: 'Cleartrip Coupon Code',
+          url: 'https://www.couponscrew.com/stores/cleartrip-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 33,
+          name: 'FNP Coupon Code',
+          url: 'https://www.couponscrew.com/stores/fnp-coupon-code',
+        },
+        {
+          '@type': 'ListItem',
+          position: 34,
+          name: 'boAt Coupon Code',
+          url: 'https://www.couponscrew.com/stores/boat-coupon-code',
         },
       ],
     },
