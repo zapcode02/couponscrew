@@ -14,13 +14,13 @@ Over 50,000 shoppers use Couponscrew to save on Amazon, Flipkart, Myntra, Swiggy
 
 ## Store Categories
 
-Couponscrew organizes its 500+ partner stores across these categories: Fashion, Beauty, Exercise & Fitness, Home & Kitchen, Clothing & Accessories, Electronics, Food & Grocery, Travel, Education, Entertainment, Finance, Web Hosting, Health, Sports, Software, Gaming, Jewellery, Eyewear, Furniture. Browse the full directory at https://www.couponscrew.com/stores/categories.
+Couponscrew organizes its 500+ partner stores across these categories: Fashion, Beauty, Exercise & Fitness, Home & Kitchen, Clothing & Accessories, Electronics, Food & Grocery, Travel, Education, Entertainment, Finance, Web Hosting, Health, Sports, Software, Gaming, Jewellery, Eyewear, Furniture, Gift. Browse the full directory at https://www.couponscrew.com/stores/categories.
 
 ## Key Pages
 
 - [Home](https://www.couponscrew.com/): Overview of Couponscrew, top coupons and deals, and how the verification process works.
 - [All Stores](https://www.couponscrew.com/stores): Browse all 500+ partner brands and stores with active, verified coupons.
-- [Store Categories](https://www.couponscrew.com/stores/categories): Browse stores by category — Fashion, Beauty, Exercise & Fitness, Home & Kitchen, Clothing & Accessories, Electronics, Food & Grocery, Travel, Education, Entertainment, Finance, Web Hosting, Health, Sports, Software, Gaming, Jewellery, Eyewear, Furniture.
+- [Store Categories](https://www.couponscrew.com/stores/categories): Browse stores by category — Fashion, Beauty, Exercise & Fitness, Home & Kitchen, Clothing & Accessories, Electronics, Food & Grocery, Travel, Education, Entertainment, Finance, Web Hosting, Health, Sports, Software, Gaming, Jewellery, Eyewear, Furniture, Gift.
 - [Products](https://www.couponscrew.com/products): Discounted products across categories with verified deal pricing.
 - [Product Categories](https://www.couponscrew.com/products/categories): Browse discounted products by category — Electronics, Home and Kitchen, Health and Household, Beauty and Personal Care, Sports and Outdoors, Toys and Games, Software, Video Games, Pet Supplies.
 - [Festival Offers](https://www.couponscrew.com/festival-offers): Verified festival coupon codes and sale offers for Diwali, Christmas, New Year, Holi, Black Friday, and 30+ other Indian and global shopping events.

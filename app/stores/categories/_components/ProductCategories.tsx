@@ -37,6 +37,7 @@ import {
   Gem,
   Glasses,
   Armchair,
+  Gift,
 } from 'lucide-react';
 import Navbar from '../../../../src/components/Navbar';
 import Footer from '../../../../src/components/Footer';
@@ -231,6 +232,16 @@ const PRODUCT_CATEGORIES = [
     color: '#92400E',
     bg: '#1a56db',
     image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1788091330/furniture_bvajgk.webp',
+  },
+  {
+    slug: 'gift',
+    name: 'Gift',
+    description: 'Personalized gifts, flowers, cakes and hampers from top gifting brands — verified deals.',
+    icon: Gift,
+    productCount: 2,
+    color: '#FF5722',
+    bg: '#1a56db',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1795438836/gift-category_vuaq5b.webp',
   },
 ];
 

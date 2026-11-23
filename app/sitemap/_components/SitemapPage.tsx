@@ -119,6 +119,7 @@ const STORE_CATEGORIES: SiteLink[] = [
   { label: 'Jewellery', href: '/stores/categories/jewellery' },
   { label: 'Eyewear', href: '/stores/categories/eyewear' },
   { label: 'Furniture', href: '/stores/categories/furniture' },
+  { label: 'Gift', href: '/stores/categories/gift' },
 ];
 
 const PRODUCT_CATEGORIES: SiteLink[] = [

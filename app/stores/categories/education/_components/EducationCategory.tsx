@@ -8,7 +8,7 @@ import {
   Sparkles, RefreshCw, Lock, HelpCircle,
   ShoppingBag, Heart, Dumbbell, Home, Shirt, Monitor, UtensilsCrossed, Plane,
   GraduationCap, Tv, Wallet, Globe, Activity, Trophy, Code, Gamepad2,
-  Gem, Glasses, Armchair,
+  Gem, Glasses, Armchair, Gift,
 } from 'lucide-react';
 import Navbar from '../../../../../src/components/Navbar';
 import Footer from '../../../../../src/components/Footer';
@@ -34,6 +34,7 @@ const ALL_CATEGORIES = [
   { name: 'Jewellery', slug: 'jewellery', icon: Gem },
   { name: 'Eyewear', slug: 'eyewear', icon: Glasses },
   { name: 'Furniture', slug: 'furniture', icon: Armchair },
+  { name: 'Gift', slug: 'gift', icon: Gift },
 ];
 
 export default function EducationCategory() {

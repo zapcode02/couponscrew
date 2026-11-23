@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
@@ -40,6 +40,7 @@ import {
   Gem, 
   Glasses, 
   Armchair,
+  Gift,
   X,
   ArrowRight
 } from 'lucide-react';
@@ -119,7 +120,8 @@ export default function Stores() {
   { id: 'cat-gaming', name: 'Gaming', icon: Gamepad2 },
   { id: 'cat-jewellery', name: 'Jewellery', icon: Gem },
   { id: 'cat-eyewear', name: 'Eyewear', icon: Glasses },
-  { id: 'cat-furniture', name: 'Furniture', icon: Armchair } // Note: Use 'Armchair' if 'Furniture' isn't exported by your version of lucide-react
+  { id: 'cat-furniture', name: 'Furniture', icon: Armchair },
+  { id: 'cat-gift', name: 'Gift', icon: Gift }
 ];
 
     const namedCounts = namedCategories.map((cat) => countFor(cat.name));

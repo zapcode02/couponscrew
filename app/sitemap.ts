@@ -90,6 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/stores/categories/jewellery`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/stores/categories/eyewear`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/stores/categories/furniture`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${baseUrl}/stores/categories/gift`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/products`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/festival-offers`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/festival-offers/amazongreatindiansale-offers`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
