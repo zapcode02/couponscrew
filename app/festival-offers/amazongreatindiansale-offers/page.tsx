@@ -23,9 +23,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/amazongreatindiansale-offers',
     },
   },
 

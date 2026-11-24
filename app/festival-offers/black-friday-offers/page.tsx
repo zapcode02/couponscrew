@@ -21,9 +21,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/black-friday-offers',
     languages: {
-      'en-US': 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/black-friday-offers',
+      'en-US': 'https://www.couponscrew.com/festival-offers/black-friday-offers',
     },
   },
 

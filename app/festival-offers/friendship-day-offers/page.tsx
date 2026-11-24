@@ -22,9 +22,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/friendship-day-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/friendship-day-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/friendship-day-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/friendship-day-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/friendship-day-offers',
     },
   },
 

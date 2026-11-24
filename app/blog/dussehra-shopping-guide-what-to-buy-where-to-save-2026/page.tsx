@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026',
       'en-IN': 'https://www.couponscrew.com/blog/dussehra-shopping-guide-what-to-buy-where-to-save-2026',
     },
   },

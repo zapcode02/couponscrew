@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.couponscrew.com/stores',
     // 💡 Add more locales below as you expand to new countries
     languages: {
+      'x-default': 'https://www.couponscrew.com/stores',
       'en-IN': 'https://www.couponscrew.com/stores',
       // 'en-US': 'https://www.couponsbit.us/stores',
       // 'en-GB': 'https://www.couponscrew.com/stores',

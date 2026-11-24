@@ -21,9 +21,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/christmas-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/christmas-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/christmas-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/christmas-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/christmas-offers',
     },
   },
 

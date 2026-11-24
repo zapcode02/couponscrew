@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/terms-conditions',
     languages: {
+      'x-default': 'https://www.couponscrew.com/terms-conditions',
       'en-IN': 'https://www.couponscrew.com/terms-conditions',
       // 💡 Uncomment when expanding to other markets:
       // 'en-US': 'https://www.couponscrew.com/us/terms',

@@ -53,7 +53,7 @@ const RELATED_POSTS = [
     slug: 'dussehra-shopping-guide-what-to-buy-where-to-save-2026',
     title: 'Dussehra Shopping Guide 2026: What to Buy & Where to Save',
     category: 'Festival Offers',
-    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1791376864/dussehra-shopping-guide-what-to-buy-where-to-save-2026_wz1dvb.webp',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1792237484/dussehra-shopping-guide-what-to-buy-where-to-save-2026_khbxak.webp',
     date: 'Oct 15, 2026',
     readTime: '8 min read',
     excerpt: 'Dussehra falls on October 20 — festive shopping breakdown across ethnic wear, home decor, pooja essentials, and gifts.',

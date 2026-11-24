@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
     // 💡 Add more locales below as you expand to new countries
     languages: {
+      'x-default': 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
       'en-IN': 'https://www.couponscrew.com/products/acnos-bangle-watch-pack-of-2',
       // 'en-US': 'https://www.couponsbit.us/products/acnos-bangle-watch-pack-of-2',
     },

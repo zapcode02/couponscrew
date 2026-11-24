@@ -22,9 +22,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/easter-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/easter-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/easter-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/easter-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/easter-offers',
     },
   },
 

@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit',
     // 💡 Add more locales below as you expand to new countries
     languages: {
+      'x-default': 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit',
       'en-IN': 'https://www.couponscrew.com/products/minimalist-anti-pigmentation-kit',
       // 'en-US': 'https://www.couponsbit.us/products/minimalist-anti-pigmentation-kit',
     },

@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/feedback',
     languages: {
+      'x-default': 'https://www.couponscrew.com/feedback',
       'en-IN': 'https://www.couponscrew.com/feedback',
     },
   },

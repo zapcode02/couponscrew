@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/amazon-great-indian-festival-2026-upcoming-sales',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/amazon-great-indian-festival-2026-upcoming-sales',
       'en-IN': 'https://www.couponscrew.com/blog/amazon-great-indian-festival-2026-upcoming-sales',
     },
   },

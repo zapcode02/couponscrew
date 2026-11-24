@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
       'en-IN': 'https://www.couponscrew.com/blog/raksha-bandhan-gift-ideas',
     },
   },

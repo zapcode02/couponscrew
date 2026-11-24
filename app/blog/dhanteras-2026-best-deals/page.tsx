@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/dhanteras-2026-best-deals',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/dhanteras-2026-best-deals',
       'en-IN': 'https://www.couponscrew.com/blog/dhanteras-2026-best-deals',
     },
   },

@@ -31,10 +31,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/privacy-policy',
     languages: {
+      'x-default': 'https://www.couponscrew.com/privacy-policy',
       'en-IN': 'https://www.couponscrew.com/privacy-policy',
-      // 💡 Uncomment when expanding to other markets:
-      // 'en-US': 'https://www.couponscrew.com/us/privacy-policy',
-      // 'en-GB': 'https://www.couponscrew.com/gb/privacy-policy',
     },
   },
 

@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/october-2026-sale-calendar-india',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/october-2026-sale-calendar-india',
       'en-IN': 'https://www.couponscrew.com/blog/october-2026-sale-calendar-india',
     },
   },

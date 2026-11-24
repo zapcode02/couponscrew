@@ -23,9 +23,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/super-saturday-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/super-saturday-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/super-saturday-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/super-saturday-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/super-saturday-offers',
     },
   },
 

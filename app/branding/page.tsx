@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/branding',
     languages: {
+      'x-default': 'https://www.couponscrew.com/branding',
       'en-IN': 'https://www.couponscrew.com/branding',
     },
   },

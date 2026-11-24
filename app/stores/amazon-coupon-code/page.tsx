@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     // 💡 Add more locales below as you expand to new countries
     // e.g. 'en-US': 'https://www.couponsbit.us/stores/amazon-coupon-code',
     languages: {
+      'x-default': 'https://www.couponscrew.com/stores/amazon-coupon-code',
       'en-IN': 'https://www.couponscrew.com/stores/amazon-coupon-code',
       // 'en-US': 'https://www.couponsbit.us/stores/amazon-coupon-code',
       // 'en-GB': 'https://www.couponscrew.com/stores/amazon-coupon-code',

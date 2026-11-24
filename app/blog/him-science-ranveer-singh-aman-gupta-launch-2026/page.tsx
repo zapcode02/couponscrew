@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/him-science-ranveer-singh-aman-gupta-launch-2026',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/him-science-ranveer-singh-aman-gupta-launch-2026',
       'en-IN': 'https://www.couponscrew.com/blog/him-science-ranveer-singh-aman-gupta-launch-2026',
     },
   },

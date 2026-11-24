@@ -22,9 +22,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/4th-of-july-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/4th-of-july-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/4th-of-july-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/4th-of-july-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/4th-of-july-offers',
     },
   },
 

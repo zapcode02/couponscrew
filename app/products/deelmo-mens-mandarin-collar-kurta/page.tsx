@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta',
     // 💡 Add more locales below as you expand to new countries
     languages: {
+      'x-default': 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta',
       'en-IN': 'https://www.couponscrew.com/products/deelmo-mens-mandarin-collar-kurta',
       // 'en-US': 'https://www.couponsbit.us/products/deelmo-mens-mandarin-collar-kurta',
     },

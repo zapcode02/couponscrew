@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board',
     // 💡 Add more locales below as you expand to new countries
     languages: {
+      'x-default': 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board',
       'en-IN': 'https://www.couponscrew.com/products/pulgos-15-in-1-pushup-board',
       // 'en-US': 'https://www.couponsbit.us/products/pulgos-15-in-1-pushup-board',
     },

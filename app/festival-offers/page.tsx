@@ -30,9 +30,10 @@ export const metadata: Metadata = {
 
   // ── Canonical + hreflang ───────────────────
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers',
     },
   },
 

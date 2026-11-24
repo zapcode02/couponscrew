@@ -23,9 +23,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/flipkartbigbilliondaysale-offers',
     },
   },
 

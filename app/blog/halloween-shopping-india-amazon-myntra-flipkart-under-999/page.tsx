@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/halloween-shopping-india-amazon-myntra-flipkart-under-999',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/halloween-shopping-india-amazon-myntra-flipkart-under-999',
       'en-IN': 'https://www.couponscrew.com/blog/halloween-shopping-india-amazon-myntra-flipkart-under-999',
     },
   },

@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/diwali-2026-last-minute-deals-gifts-offers',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/diwali-2026-last-minute-deals-gifts-offers',
       'en-IN': 'https://www.couponscrew.com/blog/diwali-2026-last-minute-deals-gifts-offers',
     },
   },

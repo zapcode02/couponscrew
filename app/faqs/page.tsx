@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/faqs',
     languages: {
+      'x-default': 'https://www.couponscrew.com/faqs',
       'en-IN': 'https://www.couponscrew.com/faqs',
       // 💡 Uncomment when expanding to other markets:
       // 'en-US': 'https://www.couponscrew.com/us/faqs',

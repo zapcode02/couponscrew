@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/buy-phone-now-or-wait-for-sale-2026',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/buy-phone-now-or-wait-for-sale-2026',
       'en-IN': 'https://www.couponscrew.com/blog/buy-phone-now-or-wait-for-sale-2026',
     },
   },

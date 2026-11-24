@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/dhanteras-diwali-november-2026-india-deals',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/dhanteras-diwali-november-2026-india-deals',
       'en-IN': 'https://www.couponscrew.com/blog/dhanteras-diwali-november-2026-india-deals',
     },
   },

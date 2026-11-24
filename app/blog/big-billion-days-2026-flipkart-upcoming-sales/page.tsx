@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/big-billion-days-2026-flipkart-upcoming-sales',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/big-billion-days-2026-flipkart-upcoming-sales',
       'en-IN': 'https://www.couponscrew.com/blog/big-billion-days-2026-flipkart-upcoming-sales',
     },
   },

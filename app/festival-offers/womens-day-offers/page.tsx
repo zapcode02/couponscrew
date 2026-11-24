@@ -22,9 +22,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/womens-day-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/womens-day-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/womens-day-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/womens-day-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/womens-day-offers',
     },
   },
 

@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/navratri-2026-colours-outfit-deals',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/navratri-2026-colours-outfit-deals',
       'en-IN': 'https://www.couponscrew.com/blog/navratri-2026-colours-outfit-deals',
     },
   },

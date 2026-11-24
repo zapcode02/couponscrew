@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
       'en-IN': 'https://www.couponscrew.com/blog/bigg-boss-season-20-where-to-watch-deals',
     },
   },

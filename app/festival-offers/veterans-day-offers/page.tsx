@@ -23,9 +23,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/veterans-day-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/veterans-day-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/veterans-day-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/veterans-day-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/veterans-day-offers',
     },
   },
 

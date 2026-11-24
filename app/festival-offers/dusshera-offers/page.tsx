@@ -25,9 +25,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/dusshera-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/dusshera-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/dusshera-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/dusshera-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/dusshera-offers',
     },
   },
 

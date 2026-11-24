@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/bhai-dooj-2026-best-gift-ideas',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/bhai-dooj-2026-best-gift-ideas',
       'en-IN': 'https://www.couponscrew.com/blog/bhai-dooj-2026-best-gift-ideas',
     },
   },

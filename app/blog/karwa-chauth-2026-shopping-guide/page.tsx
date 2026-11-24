@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/karwa-chauth-2026-shopping-guide',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/karwa-chauth-2026-shopping-guide',
       'en-IN': 'https://www.couponscrew.com/blog/karwa-chauth-2026-shopping-guide',
     },
   },

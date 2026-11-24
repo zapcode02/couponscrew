@@ -22,9 +22,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.couponscrew.com/festival-offers/fathers-day-offers/",
+    canonical: "https://www.couponscrew.com/festival-offers/fathers-day-offers",
     languages: {
-      'en-IN': "https://www.couponscrew.com/festival-offers/fathers-day-offers/",
+      'x-default': "https://www.couponscrew.com/festival-offers/fathers-day-offers",
+      'en-IN': "https://www.couponscrew.com/festival-offers/fathers-day-offers",
     },
   },
 

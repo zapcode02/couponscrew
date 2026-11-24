@@ -22,9 +22,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/st-patricks-day-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/st-patricks-day-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/st-patricks-day-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/st-patricks-day-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/st-patricks-day-offers',
     },
   },
 

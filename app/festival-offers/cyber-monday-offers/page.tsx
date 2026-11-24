@@ -21,9 +21,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: 'https://www.couponscrew.com/festival-offers/cyber-monday-offers/',
+    canonical: 'https://www.couponscrew.com/festival-offers/cyber-monday-offers',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/cyber-monday-offers/',
+      'x-default': 'https://www.couponscrew.com/festival-offers/cyber-monday-offers',
+      'en-IN': 'https://www.couponscrew.com/festival-offers/cyber-monday-offers',
     },
   },
 

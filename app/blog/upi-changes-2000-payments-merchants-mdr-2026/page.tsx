@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/blog/upi-changes-2000-payments-merchants-mdr-2026',
     languages: {
+      'x-default': 'https://www.couponscrew.com/blog/upi-changes-2000-payments-merchants-mdr-2026',
       'en-IN': 'https://www.couponscrew.com/blog/upi-changes-2000-payments-merchants-mdr-2026',
     },
   },
