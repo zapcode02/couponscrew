@@ -4,9 +4,9 @@ import BlackFridayOffers from './_components/BlackFridayOffers'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.couponscrew.com'),
 
-  title: 'Black Friday Offers 2026 — Up to 80% OFF Coupons, Bank Deals & Discounts | CouponsCrew',
+  title: 'Black Friday Coupons & Deals 2026: Save Up to 84% on Amazon Footwear',
   description:
-    'Save big on Black Friday 2026 with verified coupon codes, bank discount offers, and the biggest sales of the year from Amazon, Flipkart, Myntra, Nykaa, and 500+ top brands on CouponsCrew.',
+    'Grab the best Black Friday coupons and Black Friday deals with up to 84% off Amazon footwear. Shop verified offers on shoes and sandals in Nov 2026.',
 
   keywords: [
     'Black Friday offers 2026',
@@ -23,18 +23,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
     languages: {
-      'en-IN': 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
+      'en-US': 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
     },
   },
 
   openGraph: {
-    title: 'Black Friday Offers 2026 — Up to 80% OFF Coupons, Bank Deals & Discounts | CouponsCrew',
+    title: 'Black Friday Coupons & Deals 2026: Save Up to 84% on Amazon Footwear',
     description:
-      'Save big on Black Friday 2026 with verified coupon codes, bank discount offers, and the biggest sales of the year from Amazon, Flipkart, Myntra, Nykaa, and 500+ top brands on CouponsCrew.',
+      'Grab the best Black Friday coupons and Black Friday deals with up to 84% off Amazon footwear. Shop verified offers on shoes and sandals in Nov 2026.',
     url: 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
     siteName: 'CouponsCrew',
     type: 'website',
-    locale: 'en_IN',
+    locale: 'en_US',
     images: [
       {
         url: 'https://www.couponscrew.com/og-images/black-friday-offers.jpg',
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
   },
 
   other: {
-    'geo.region': 'IN',
-    'geo.country': 'IN',
-    language: 'en-IN',
-  },
+  'geo.region': 'US',
+  'geo.country': 'US',
+  language: 'en-US',
+},
 }
 
 const jsonLd = {
@@ -80,9 +80,9 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.couponscrew.com/festival-offers/black-friday-offers/#webpage',
       'url': 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
-      'name': 'Black Friday Offers 2026 — Up to 80% OFF Coupons, Bank Deals & Discounts | CouponsCrew',
-      'description': 'Save big on Black Friday 2026 with verified coupon codes, bank discount offers, and the biggest sales of the year from Amazon, Flipkart, Myntra, Nykaa, and 500+ top brands on CouponsCrew.',
-      'inLanguage': 'en-IN',
+      'name': 'Black Friday Coupons & Deals 2026: Save Up to 84% on Amazon Footwear',
+      'description': 'Grab the best Black Friday coupons and Black Friday deals with up to 84% off Amazon footwear. Shop verified offers on shoes and sandals in Nov 2026.',
+      'inLanguage': 'en-US',
       'isPartOf': { '@type': 'WebSite', '@id': 'https://www.couponscrew.com/#website', 'name': 'CouponsCrew', 'url': 'https://www.couponscrew.com' },
       'datePublished': '2026-09-22',
       'dateModified': '2026-09-22'
@@ -91,8 +91,8 @@ const jsonLd = {
       '@type': 'CollectionPage',
       '@id': 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
       'url': 'https://www.couponscrew.com/festival-offers/black-friday-offers/',
-      'name': 'Black Friday Offers 2026 — Up to 80% OFF Coupons, Bank Deals & Discounts | CouponsCrew',
-      'description': 'Save big on Black Friday 2026 with verified coupon codes, bank discount offers, and the biggest sales of the year from Amazon, Flipkart, Myntra, Nykaa, and 500+ top brands on CouponsCrew.',
+      'name': 'Black Friday Coupons & Deals 2026: Save Up to 84% on Amazon Footwear',
+      'description': 'Grab the best Black Friday coupons and Black Friday deals with up to 84% off Amazon footwear. Shop verified offers on shoes and sandals in Nov 2026.',
       'inLanguage': 'en-IN',
       'datePublished': '2026-09-22',
       'dateModified': '2026-09-22',

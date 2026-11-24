@@ -102,10 +102,10 @@ export default function BlackFridayOffers() {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="flex-1 space-y-4">
                     <h1 className="text-3xl font-black text-[#1A1A2E] tracking-tight">
-                      Black Friday 2026 — Best Black Friday Sales, Deals & Offers in India and the USA
+                      Black Friday Coupons & Deals 2026: Save Up to 84% on Amazon Footwear
                     </h1>
                     <p className="text-sm md:text-base leading-relaxed text-[#4A4A6A]">
-                      Black Friday is no longer just an American thing. It started in the United States, but over the last ten years it has become a genuine shopping event in India too — with Amazon India, Flipkart, Ajio, Zara, and dozens of other platforms running black friday deals in November every year. If you have never shopped a Black Friday sale before, this page covers everything: what it is, where it came from, which stores run it in 2026, and how to actually get the best deals rather than just the flashiest banners.
+                      Shop the biggest Black Friday coupons and unlock unbeatable Black Friday deals in Nov 2026. Verified offers include up to 84% off BRUTON EVA Lite Running Shoes, 84% off BlueBlaze Running Shoes, and 83% off BRUTON Wedge Sandals on Amazon. Looking for the best Black Friday savings? These regularly updated promotions cover running shoes, casual footwear, and women's sandals, helping you find limited-time discounts on popular styles before they sell out.
                     </p>
                   </div>
                 </div>

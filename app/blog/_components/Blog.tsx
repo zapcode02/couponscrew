@@ -20,6 +20,16 @@ import Footer from '../../../src/components/Footer';
 // ==========================================
 const posts = [
   {
+    slug: 'black-friday-india-2026-best-deals',
+    title: 'Black Friday India 2026: Best Deals on Tech, Fashion & More',
+    category: 'Festival Offers',
+    image: 'https://res.cloudinary.com/dqjlffxja/image/upload/v1795539520/Black_Friday_India_2026_Deals_pnubzc.webp',
+    date: 'Nov 24, 2026',
+    readTime: '8 min read',
+    excerpt: 'Black Friday 2026 is on November 27. Best deals on Amazon, Flipkart, Myntra, Hostinger, Puma, Nike & more — phones, laptops, fashion, fitness & web hosting.',
+    tags: ['Black Friday', 'Festival Offers', 'Shopping Guide'],
+  },
+  {
     slug: 'him-science-ranveer-singh-aman-gupta-launch-2026',
     title: "Ranveer Singh and Aman Gupta Just Launched H.I.M — A Men's Skincare Brand Built for the Indian Man",
     category: 'Brand Launch',

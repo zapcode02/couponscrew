@@ -397,6 +397,10 @@ const getFestivalHref = (id: string) => {
     case 'st-patricks-day': return '/festival-offers/st-patricks-day-offers';
     case 'easter': return '/festival-offers/easter-offers';
     case 'mothers-day': return '/festival-offers/mothers-day-offers';
+    case 'memorial-day': return '/festival-offers/memorial-day-offers';
+    case 'fathers-day': return '/festival-offers/fathers-day-offers';
+    case '4th-of-july': return '/festival-offers/4th-of-july-offers';
+    case 'friendship-day': return '/festival-offers/friendship-day-offers';
     default: return '#';
   }
 };
